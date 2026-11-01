@@ -1,6 +1,6 @@
 {
- "gebaut": "31.10.2026",
- "link_check": "31.10.2026",
+ "gebaut": "01.11.2026",
+ "link_check": "01.11.2026",
  "quelle": "https://github.com/jmp-collab/awesome-ai-tools",
  "tools": [
   {
@@ -294,7 +294,7 @@
   {
    "name": "LFM3 von Liquid AI",
    "url": "https://www.liquid.ai/blog/lfm3",
-   "beschreibung": "Familie offener Kleinmodelle für Text, Bild, Audio und Entscheidungen im 2-Milliarden-Bereich; das Textmodell braucht bei 4 Bit rund 1 GB Speicher.",
+   "beschreibung": "Familie offener Kleinmodelle für Text, Bild, Audio und Entscheidungen im 2-Milliarden-Bereich; das Textmodell braucht bei 4 Bit rund 1 GB Speicher. Ab 10 Millionen Dollar Jahresumsatz deckt die Lizenz kommerzielle Nutzung nicht mehr ab.",
    "kategorie": "Text und Sprache",
    "bereich": "Sprachmodelle und APIs",
    "eu": false,
@@ -578,6 +578,18 @@
    "neu": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gpt4all",
    "icon": "img/fav/github.com.png"
+  },
+  {
+   "name": "Unlimited OCR 2",
+   "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+   "beschreibung": "Offenes OCR-Modell von Baidu mit 3 Milliarden Parametern unter MIT-Lizenz, das lange, mehrseitige Dokumente in einem Durchgang ausliest. Für Belege, Verträge und Handbücher auf eigener Hardware; die Modellkarte nennt es nur „mehrsprachig“, deutsche Dokumente also vorher testen.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Lokal und privat mit Dokumenten chatten",
+   "eu": false,
+   "open_source": true,
+   "neu": true,
+   "seite": "ki-tools-text-und-sprache.html#tool-unlimited-ocr-2",
+   "icon": "img/fav/huggingface.co.png"
   },
   {
    "name": "DeepL Write",
@@ -1058,6 +1070,18 @@
    "neu": false,
    "seite": "ki-tools-text-und-sprache.html#tool-ai-character-for-gpt",
    "icon": "img/fav/chromewebstore.google.com.png"
+  },
+  {
+   "name": "Opera WebAI",
+   "url": "https://blogs.opera.com/news/2026/10/webai-local-ai-for-the-web-now-in-opera/",
+   "beschreibung": "Schnittstelle in Opera One, über die Websites und Erweiterungen ein KI-Modell direkt im Browser nutzen, ohne Server und API-Schlüssel. Für Entwickler von Erweiterungen und Web-Apps; bisher eine frühe Vorschau für Windows und Macs mit Apple-Chip, die du in den Einstellungen selbst einschaltest.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Browser-Erweiterungen und Add-ons",
+   "eu": false,
+   "open_source": false,
+   "neu": true,
+   "seite": "ki-tools-text-und-sprache.html#tool-opera-webai",
+   "icon": "img/fav/blogs.opera.com.png"
   },
   {
    "name": "Notion AI",
@@ -1922,6 +1946,18 @@
    "neu": true,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-goose",
    "icon": "img/fav/github.com.png"
+  },
+  {
+   "name": "Mage-VL-Cowork",
+   "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+   "beschreibung": "Offenes Modell von Microsoft mit 4 Milliarden Parametern, das einen Rechner bedient: Es klickt und tippt in Programmen oder führt Befehle im Terminal aus und wählt bei jedem Schritt selbst den Weg. Für Entwickler, die Desktop-Agenten selbst hosten wollen; es gibt nur Gewichte und einen technischen Bericht, keine fertige App, und die Gewichte belegen rund 9,5 GB.",
+   "kategorie": "Automatisierung und KI-Agenten",
+   "bereich": "",
+   "eu": false,
+   "open_source": true,
+   "neu": true,
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-mage-vl-cowork",
+   "icon": "img/fav/huggingface.co.png"
   },
   {
    "name": "LangChain",
@@ -3686,6 +3722,18 @@
    "neu": true,
    "seite": "ki-tools-audio.html#tool-voxtral-3",
    "icon": "img/fav/mistral.ai.png"
+  },
+  {
+   "name": "Nemotron 3.5 Transcribe",
+   "url": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/",
+   "beschreibung": "Offenes Transkriptionsmodell von NVIDIA für Aufnahmen bis zu einer Stunde in 40 Sprachen, auf Deutsch auch mit Sprecherzuordnung und Übersetzung ins Englische. Gedacht für Meeting- und Telefonmitschnitte auf eigenen Servern; live mitschreiben kann es nicht, und als Referenz-Hardware nennt NVIDIA eine H100 mit 80 GB.",
+   "kategorie": "Audio",
+   "bereich": "Sprache zu Text und Text zu Sprache",
+   "eu": false,
+   "open_source": false,
+   "neu": true,
+   "seite": "ki-tools-audio.html#tool-nemotron-35-transcribe",
+   "icon": "img/fav/research.nvidia.com.png"
   },
   {
    "name": "CreateEasily",
