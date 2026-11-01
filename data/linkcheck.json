@@ -3,7 +3,7 @@
  "urls_sha256": "704246cbad69fd6da3540328a4c16dbe026a72a73ab91acd579e526a729da3bf",
  "checked": 576,
  "ok": 576,
- "bot_protected": 94,
+ "bot_protected": 93,
  "dead": {},
  "method": "HTTP HEAD, bei Nicht-OK (auch 405) GET; 2xx/3xx und Bot-Schutz (401/403/429) gelten als erreichbar"
 }
