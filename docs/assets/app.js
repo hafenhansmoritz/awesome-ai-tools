@@ -612,6 +612,105 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") spClose(); });
     document.addEventListener("click", function (e) { if (!sp.contains(e.target) && e.target !== q) spHide(); });
   }
+  /* KI-Chat mit Werkstatt-Prompt (ops/llm-deeplinks.md): Der Button öffnet einen Dialog mit dem vollständigen Text.
+     Erst der Klick auf „In … öffnen“ gibt ihn an den Anbieter weiter, und zwar sichtbar in der Link-Adresse (?q=).
+     Vorher geht keine Anfrage raus, gespeichert wird nichts. Der Link entsteht immer aus genau dem Text im Feld. */
+  var LLM = jsonData("kw-llm");
+  if (LLM && LLM.prompts) (function () {
+    var targets = (LLM.targets || []).filter(function (t) { return t && /^[a-z0-9-]+$/.test(t.id) && /^https:\/\/[^\s"<>]+$/.test(t.url); });
+    var dlg = null, opener = null, cur = null, key = "", src = "";
+    function promptFor(k, id) { return String(LLM.prompts[k] || "").split("{src}").join(id); }
+    function focusables() {
+      return $$("a[href], button, textarea, input", dlg).filter(function (el) { return !el.disabled && !el.closest("[hidden]") && el.offsetParent !== null; });
+    }
+    function sync() {
+      var ta = $("#llm-txt", dlg), go = $("#llm-go", dlg);
+      go.hidden = !cur;
+      if (cur) { go.href = cur.url + encodeURIComponent(ta.value); go.lastChild.textContent = "In " + cur.name + (cur.sofort ? " öffnen und senden" : " öffnen"); }
+    }
+    function setTarget(t) {
+      var ta = $("#llm-txt", dlg), next = t ? t.id : "kopie";
+      // Anbieterwechsel: nur utm_source tauschen, eigene Änderungen am Text bleiben
+      ta.value = src && ta.value ? ta.value.split("utm_source=" + src + "&").join("utm_source=" + next + "&") : promptFor(key, next);
+      src = next; cur = t;
+      $(".llm-note", dlg).textContent = t ? (t.sofort ? "Wird sofort gesendet: " + t.name + " schickt den Text beim Öffnen gleich ab. " : "") + t.hinweis + " Stand des Tests: " + t.stand + "." : "";
+      $$(".llm-pick input", dlg).forEach(function (r) { r.checked = !!t && r.value === t.id; });
+      sync();
+    }
+    function close() {
+      if (!dlg || !dlg.open) return;
+      if (dlg.close) dlg.close(); else { dlg.removeAttribute("open"); after(); }
+    }
+    function after() { $(".llm-status", dlg).textContent = ""; if (opener) opener.focus(); }
+    function build() {
+      dlg = document.createElement("dialog");
+      dlg.className = "llm-dlg"; dlg.id = "llm-dlg";
+      dlg.setAttribute("role", "dialog"); dlg.setAttribute("aria-modal", "true");
+      dlg.setAttribute("aria-labelledby", "llm-h"); dlg.setAttribute("aria-describedby", "llm-d");
+      dlg.innerHTML = '<div class="llm-head"><h2 id="llm-h">' + svg("chat") + '<span></span></h2><button type="button" class="close" aria-label="Dialog schließen" title="Schließen">' + svg("x") + "</button></div>" +
+        '<p class="llm-d" id="llm-d">Das hier ist der komplette Text, nichts Verstecktes dabei. Er geht erst an den Anbieter, wenn du unten klickst, und zwar in der Adresse des Links. Ändern kannst du ihn vorher.</p>' +
+        '<fieldset class="llm-pick" hidden><legend>Welcher Chat?</legend><div class="chips"></div></fieldset>' +
+        '<label class="llm-lbl" for="llm-txt">Prompt</label><textarea id="llm-txt" rows="10" spellcheck="false"></textarea>' +
+        '<p class="llm-note"></p>' +
+        '<div class="llm-actions"><a class="btn btn-lime" id="llm-go" target="_blank" rel="noopener noreferrer">' + svg("arrow") + "<span></span></a>" +
+        '<button type="button" class="btn" id="llm-copy">' + svg("copy") + "<span>Prompt kopieren</span></button></div>" +
+        '<p class="llm-status" role="status" aria-live="polite"></p>' +
+        '<p class="llm-foot">Anderer Chat? Kopieren und dort einfügen. Die Werkstatt-Links im Text tragen UTM-Angaben zu Anbieter und Seite, sonst nichts.</p>';
+      document.body.appendChild(dlg);
+      $(".close", dlg).addEventListener("click", close);
+      $("#llm-txt", dlg).addEventListener("input", sync);
+      $(".llm-pick", dlg).addEventListener("change", function (e) {
+        var t = targets.filter(function (x) { return x.id === e.target.value; })[0]; if (t) setTarget(t);
+      });
+      $("#llm-go", dlg).addEventListener("click", function () { sync(); setTimeout(close, 0); });
+      $("#llm-copy", dlg).addEventListener("click", function () {
+        var ta = $("#llm-txt", dlg), st = $(".llm-status", dlg);
+        function done(ok) { st.textContent = ok ? "Kopiert. Jetzt im Chat deiner Wahl einfügen." : "Kopieren ging nicht. Markier den Text im Feld und kopier ihn von Hand."; }
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(function () { done(true); }, function () { done(false); });
+        else { ta.select(); var ok = false; try { ok = document.execCommand("copy"); } catch (e) {} done(ok); }
+      });
+      dlg.addEventListener("close", after);
+      // Fokusfalle: Tab und Umschalt+Tab bleiben im Dialog; Escape schließt (auch ohne natives <dialog>)
+      dlg.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") { e.preventDefault(); close(); return; }
+        if (e.key !== "Tab") return;
+        var f = focusables(); if (!f.length) return;
+        var first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      });
+      // Klick auf den abgedunkelten Rand schließt
+      dlg.addEventListener("click", function (e) {
+        if (e.target !== dlg) return;
+        var r = dlg.getBoundingClientRect();
+        if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) close();
+      });
+    }
+    function open(btn) {
+      if (!dlg) build();
+      opener = btn; key = btn.dataset.llm; src = "";
+      var fixed = btn.dataset.llmTo;
+      var list = fixed ? targets.filter(function (t) { return t.id === fixed; }) : targets;
+      $("#llm-h span", dlg).textContent = fixed && list[0] ? "Werkstatt-Prompt für " + list[0].name : "Mit KI durchgehen";
+      var pick = $(".llm-pick", dlg);
+      pick.hidden = list.length < 2;
+      $(".chips", pick).innerHTML = list.length < 2 ? "" : list.map(function (t) {
+        return '<label class="chip"><input type="radio" name="llm-to" value="' + escH(t.id) + '">' + escH(t.name) + "</label>";
+      }).join("");
+      $(".llm-status", dlg).textContent = "";
+      setTarget(list[0] || null);
+      if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+      // Fokus ins Feld, Anfang des Textes sichtbar: Herkunft und Aufgabe stehen oben
+      var ta = $("#llm-txt", dlg); ta.focus({ preventScroll: true }); ta.setSelectionRange(0, 0); ta.scrollTop = 0;
+      requestAnimationFrame(function () { ta.scrollTop = 0; });
+    }
+    $$("[data-llm]").forEach(function (b) {
+      if (!LLM.prompts[b.dataset.llm]) return;
+      b.hidden = false;
+      b.addEventListener("click", function () { open(b); });
+    });
+  })();
+
   /* Formulare: im Hintergrund an FormSubmit senden, mit Status und Mail-Ausweg, falls der Dienst hängt.
      Ohne JavaScript bleibt der normale POST an FormSubmit. */
   var FS_SLOW = 15000, FS_GIVEUP = 60000;
@@ -625,6 +724,11 @@
   function fsContext(form) {
     var here = location.pathname.split("/").pop() || "index.html", r = document.referrer, from = "direkt oder unbekannt";
     if (r) { try { var u = new URL(r); from = u.origin === location.origin ? (u.pathname.split("/").pop() || "index.html") : "extern: " + u.hostname; } catch (e) {} }
+    // Kam der Besuch über einen Werkstatt-Prompt (utm_medium=llm-prompt), steht Anbieter, Seitentyp und Seite dabei
+    if (/[?&]utm_medium=llm-prompt(&|$)/.test(location.search)) {
+      var utmv = function (k) { var m = new RegExp("[?&]" + k + "=([a-z0-9-]{1,40})(&|$)").exec(location.search); return m ? m[1] : "?"; };
+      here += " (über KI-Chat: " + utmv("utm_source") + ", " + utmv("utm_campaign") + ", " + utmv("utm_content") + ")";
+    }
     var a = form.querySelector("[name=seite]"), b = form.querySelector("[name=vorher]");
     if (a) a.value = here; if (b) b.value = from;
   }

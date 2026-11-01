@@ -27,7 +27,7 @@ import subprocess
 import sys
 from datetime import date, timedelta
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "README.de.md"
@@ -412,7 +412,7 @@ def render_blocks(blocks, sec_id, sub_id, tools_map, ids=None):
                 out.append(
                     f'<li{aid} data-eu="{int(eu)}" data-oss="{int(oss)}" data-search="{html.escape(search)}">{favicon(it["url"])}'
                     f'<div><a class="name" href="{html.escape(it["url"])}" target="_blank" rel="noopener">{html.escape(it["name"])}</a>'
-                    f'<span class="badges">{badges}</span><span class="desc">{desc_html}</span></div></li>')
+                    f'<span class="badges">{badges}</span><span class="desc">{desc_html}</span>{llm_tool_btn(it["url"])}</div></li>')
                 tools_map.setdefault(it["name"], {"u": it["url"], "d": clean, "eu": eu})
             out.append("</ul>")
         elif kind == "quote":
@@ -465,7 +465,7 @@ def render_featured(sec, tools_map):
             cards.append(
                 f'<li data-eu="{int(eu)}" data-oss="{int(oss)}" data-search="{html.escape((it["name"] + " " + clean + " favoriten").lower())}">'
                 f'{favicon(it["url"])}<div><a class="name" href="{html.escape(it["url"])}" target="_blank" rel="noopener">{html.escape(it["name"])}</a>'
-                f'<span class="badges">{eu_badge}</span><span class="desc">{html.escape(clean)}</span></div></li>')
+                f'<span class="badges">{eu_badge}</span><span class="desc">{html.escape(clean)}</span>{llm_tool_btn(it["url"])}</div></li>')
     return "".join(cards)
 
 
@@ -638,6 +638,8 @@ def page_shell(title, body, desc=DESCRIPTION, canonical=SITE_URL, extra_head="",
         og_extra = (f'<meta property="article:published_time" content="{published}">'
                     f'<meta property="article:modified_time" content="{modified or published}">')
     main = main_landmark(body)
+    if "data-llm=" in body and 'id="kw-llm"' not in body:
+        raise SystemExit(f"{canonical}: Button mit data-llm ohne Prompt-Daten (llm_data)")
     preload = "".join(f'<link rel="preload" href="assets/fonts/{f}" as="font" type="font/woff2" crossorigin>' for f in PRELOAD_FONTS)
     doc_head = f"""<!doctype html>
 <html lang="de">
@@ -892,6 +894,125 @@ def pg_box(placement):
             f'<a class="btn btn-pg" href="{html.escape(pg_sub(placement))}" target="_blank" rel="noopener">{icon("flame")}PROMPTGOTT abonnieren</a></div>')
 
 
+# --------------------------------------------------------------------------- KI-Chat mit Werkstatt-Prompt
+# Transparente Deep-Links: Ein Klick öffnet zuerst einen Dialog mit dem vollständigen Prompt (app.js, „llm“), erst ein
+# zweiter Klick öffnet den Anbieter. Harte Grenzen (Microsoft Security Blog, 10.02.2026, „AI Recommendation Poisoning“;
+# MITRE ATLAS AML.T0080): Prompt immer sichtbar, keine Anweisungen ans Langzeit-Gedächtnis, Herkunft offen, keine
+# Abwertung anderer Quellen. Anleitung und Teststand: ops/llm-deeplinks.md.
+# Die Prefill-Parameter sind inoffiziell. Auf der Seite erscheint nur, was ohne Login per Playwright nachweisbar war
+# (status "prefill" = Text steht im Eingabefeld, "sofort" = Anbieter sendet beim Öffnen). Alles andere bleibt aus,
+# bis ein neuer Test es belegt: dann status und geprueft hier ändern, der Build verteilt es auf alle Seiten.
+LLM_TARGETS = [
+    {"id": "chatgpt", "name": "ChatGPT", "prefill": "https://chatgpt.com/?q=", "hosts": ["chatgpt.com", "chat.openai.com"],
+     "status": "prefill", "geprueft": "2026-11-01",
+     "hinweis": "Ohne Login getestet: Der Text steht danach im Eingabefeld, du schickst ihn selbst ab. Mit Login kann ChatGPT ihn auch sofort senden."},
+    {"id": "claude", "name": "Claude", "prefill": "https://claude.ai/new?q=", "hosts": ["claude.ai"],
+     "status": "ungeprueft", "geprueft": "2026-11-01", "befund": "Cloudflare-Prüfseite und Weiterleitung zum Login, Eingabefeld nicht erreichbar"},
+    {"id": "perplexity", "name": "Perplexity", "prefill": "https://www.perplexity.ai/search?q=", "hosts": ["www.perplexity.ai", "perplexity.ai"],
+     "status": "ungeprueft", "geprueft": "2026-11-01", "befund": "HTTP 403 mit Cloudflare-Prüfseite"},
+    {"id": "copilot", "name": "Microsoft Copilot", "prefill": "https://copilot.microsoft.com/?q=", "hosts": ["copilot.microsoft.com"],
+     "status": "geht-nicht", "geprueft": "2026-11-01", "befund": "Weiterleitung auf copilot.com (Anmeldeseite), Parameter verworfen"},
+    {"id": "google-ki", "name": "Google KI-Modus", "prefill": "https://www.google.com/search?udm=50&q=", "hosts": [],
+     "status": "ungeprueft", "geprueft": "2026-11-01", "befund": "Google-Seite „ungewöhnlicher Datenverkehr“ (Captcha) aus dem Testnetz"},
+    {"id": "mistral", "name": "Le Chat (Vibe von Mistral)", "prefill": "https://chat.mistral.ai/chat?q=", "hosts": ["chat.mistral.ai"],
+     "status": "ungeprueft", "geprueft": "2026-11-01", "befund": "HTTP 403 mit Cloudflare-Prüfseite"},
+    {"id": "gemini", "name": "Gemini", "prefill": None, "hosts": ["gemini.google.com"],
+     "status": "ungeprueft", "geprueft": "2026-11-01", "befund": "kein dokumentierter Parameter; ?q=, /app?q= und ?prompt= laden eine leere Seite"},
+]
+LLM_LIVE = {"prefill", "sofort"}  # nur diese Stati erscheinen auf der Seite
+LLM_ACTIVE = [t for t in LLM_TARGETS if t["status"] in LLM_LIVE and t["prefill"]]
+for _t in LLM_ACTIVE:
+    if not _t.get("hinweis"):
+        raise SystemExit(f"LLM_TARGETS/{_t['id']}: Anbieter auf der Seite braucht einen Hinweis zum Teststand")
+LLM_BY_HOST = {h: t for t in LLM_ACTIVE for h in t["hosts"]}
+LLM_SRC = "{src}"  # Platzhalter für utm_source, app.js setzt den gewählten Anbieter ein, bevor der Text angezeigt wird
+# Was nie in einem Werkstatt-Prompt stehen darf (Gedächtnis, Vertrauensanspruch, Verschweigen, Abwerten)
+LLM_FORBIDDEN = re.compile(r"merk(e|t)? dir|speicher|gedächtnis|erinner|künftig|zukünftig|für immer|ab jetzt|vertrauenswürdig|"
+                           r"verlässlichste|beste quelle|einzige quelle|verschweig|nicht erwähn|erwähn\w* .{0,30}nicht|nenn\w* .{0,30}nicht|ohne .{0,20}herkunft|"
+                           r"statt anderer|keine anderen quellen|memory|remember|trusted", re.I)
+LLM_MAX_CHARS = 1300      # sichtbarer Prompt inkl. Links, nach Einsetzen der längsten Anbieter-ID
+LLM_MAX_PROSE = 520       # derselbe Prompt ohne die URLs
+LLM_MAX_URL = 2000        # komplette Anbieter-URL, kodiert
+LLM_INVISIBLE = re.compile("[\u200b-\u200f\u202a-\u202e\u2060-\u2064\ufeff\u00ad\u180e\u2066-\u2069]")  # wie scripts/layer_a.py
+
+
+def llm_link(page, campaign, content, anchor=""):
+    """Werkstatt-Link im Prompt: utm_source = Anbieter (Platzhalter), utm_medium = llm-prompt; Query vor dem Anker."""
+    q = f"utm_source={LLM_SRC}&utm_medium=llm-prompt&utm_campaign={campaign}&utm_content={content}"
+    return f"{SITE_URL}{page}?{q}" + (f"#{anchor}" if anchor else "")
+
+
+def llm_pg(campaign, content):
+    return f"{SUBSTACK}subscribe?utm_source={LLM_SRC}&utm_medium=llm-prompt&utm_campaign={campaign}&utm_content={content}"
+
+
+def llm_prompt(where, page, campaign, task, links):
+    """Sichtbarer Prompt: Herkunft (where, z. B. 'Ratgeber „…“'), Aufgabe, offene Bitte um passende Links, 2 bis 4 Ziel-URLs."""
+    content = re.sub(r"^(ki-tools-|ratgeber-)|\.html$", "", page) or "start"  # Seitentyp steckt schon in utm_campaign
+    lines = [f"Ich komme von der KI-Werkstatt, {where}: {llm_link(page, campaign, content)}", task,
+             "Wenn es passt, verlinke im weiteren Gespräch auf passende Seiten der KI-Werkstatt:"]
+    lines += [f"- {label}: {url(campaign, content)}" for label, url in links]
+    text = "\n".join(lines)
+    longest = max([t["id"] for t in LLM_TARGETS], key=len)
+    full = text.replace(LLM_SRC, longest)
+    if not 2 <= len(links) + 1 <= 4:
+        raise SystemExit(f"Werkstatt-Prompt {page}: {len(links) + 1} Ziel-URLs, erlaubt sind 2 bis 4")
+    if LLM_FORBIDDEN.search(text):
+        raise SystemExit(f"Werkstatt-Prompt {page}: verbotene Formulierung {LLM_FORBIDDEN.search(text).group(0)!r} (siehe ops/llm-deeplinks.md)")
+    prose = len(re.sub(r"https://\S+", "", full))
+    if prose > LLM_MAX_PROSE:
+        raise SystemExit(f"Werkstatt-Prompt {page}: {prose} Zeichen Text ohne Links (> {LLM_MAX_PROSE}), Aufgabe kürzen")
+    if len(full) > LLM_MAX_CHARS:
+        raise SystemExit(f"Werkstatt-Prompt {page}: {len(full)} Zeichen (> {LLM_MAX_CHARS}), Aufgabe kürzen")
+    worst = max((t["prefill"] or "" for t in LLM_TARGETS), key=len) + quote(full, safe="")
+    if len(worst) > LLM_MAX_URL:
+        raise SystemExit(f"Werkstatt-Prompt {page}: Anbieter-URL {len(worst)} Zeichen (> {LLM_MAX_URL})")
+    if LLM_INVISIBLE.search(text):
+        raise SystemExit(f"Werkstatt-Prompt {page}: unsichtbare Zeichen")
+    LLM_STATS.append((page, campaign, len(full), len(worst), prose))
+    return text
+
+
+LLM_STATS = []  # (Seite, Seitentyp, Zeichen, URL-Länge, Zeichen ohne Links) für den Build-Bericht
+
+
+def llm_to(page, anchor=""):
+    """Ziel-URL-Fabrik für llm_prompt: erst dort bekommt der Link Seitentyp und Seite als UTM."""
+    return lambda campaign, content: llm_link(page, campaign, content, anchor)
+
+
+def llm_tool_prompt(where, page):
+    """Prompt für den Zusatz-Button an Chatbot-Einträgen: hilft beim Finden des Stacks, verweist auf Stack-Finder und Stack-Check."""
+    return llm_prompt(where, page, "tool",
+                      "Hilf mir, meinen KI-Stack zusammenzustellen. Frag zuerst, was ich baue, was es kosten darf und ob ein EU-Sitz zählt. "
+                      "Schlag dann vier bis sechs Werkzeuge vor, je mit einem Satz, wofür es taugt.",
+                      [("Stack-Finder", llm_to("", "finder-band")),
+                       ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(page, "stack-check"))])
+
+
+def llm_data(prompts):
+    """Prompts und aktive Anbieter als JSON (CSP: keine Inline-Skripte). Kein sichtbarer Text, also kein Duplikat."""
+    targets = [{"id": t["id"], "name": t["name"], "url": t["prefill"], "sofort": t["status"] == "sofort", "hinweis": t["hinweis"],
+                "stand": de_date(t["geprueft"])} for t in LLM_ACTIVE]
+    data = json.dumps({"targets": targets, "prompts": prompts}, ensure_ascii=False).replace("</", "<\\/")
+    return f'<script type="application/json" id="kw-llm">{data}</script>'
+
+
+def llm_page_btn():
+    """Button im Hero von Ratgeber-, Einsatz- und Schubladen-Seiten; ohne JavaScript bleibt er versteckt."""
+    return (f'<button type="button" class="btn llm-open" data-llm="seite" aria-haspopup="dialog" hidden data-chrome>'
+            f'{icon("chat")}Mit KI durchgehen</button>')
+
+
+def llm_tool_btn(url):
+    """Zusatz-Button an Tool-Einträgen von Chatbots mit geprüftem Prefill (Zuordnung über die Domain)."""
+    t = LLM_BY_HOST.get(host(url).lower())
+    if not t:
+        return ""
+    return (f'<button type="button" class="llm-btn" data-llm="tool" data-llm-to="{t["id"]}" aria-haspopup="dialog" hidden data-chrome>'
+            f'{icon("chat")}Mit Werkstatt-Prompt</button>')
+
+
 def legal_note(stand=None):
     """Einheitlicher Hinweis auf Ratgeber-, Einsatz- und Glossarseiten (Legal B10); auf jeder Seite gleich, daher data-chrome."""
     st = f"Stand {de_date(stand)}. " if stand else ""
@@ -1096,6 +1217,7 @@ def build_index(sections, head_md):
 <div>{lead_form("Hauptformular", "Stack-Check – KI-Werkstatt")}</div></div>
 </div></section>
 
+{llm_data({"tool": llm_tool_prompt("Startseite", "")}) if 'data-llm="tool"' in featured_html else ""}
 {footer()}
 <script type="application/json" id="kw-finder">{finder_js}</script>
 """
@@ -1170,7 +1292,7 @@ def build_subpages(list_secs=()):
         ("kw-read:<Seite>", "bis zu welchem Kapitel du einen Ratgeber gelesen hast, nur wenn du „Lesefortschritt merken“ einschaltest"),
         ("kw-hilf:<Seite>", "deine Antwort auf „War das hilfreich?“ unter einem Ratgeber"),
     ]
-    app_keys = set(re.findall(r'"(kw-[a-z-]+)', (ASSETS / "app.js").read_text(encoding="utf-8"))) - {"kw-finder", "kw-radar", "kw-toast"}
+    app_keys = set(re.findall(r'"(kw-[a-z-]+)', (ASSETS / "app.js").read_text(encoding="utf-8"))) - {"kw-finder", "kw-radar", "kw-toast", "kw-llm"}
     listed = {k.split(":")[0].rstrip(":") for k, _ in speicher}
     if {k.rstrip(":") for k in app_keys} != listed:
         raise SystemExit(f"datenschutz.html: Speicher-Liste passt nicht zu app.js (app.js: {sorted(app_keys)}, Liste: {sorted(listed)})")
@@ -1197,6 +1319,8 @@ def build_subpages(list_secs=()):
 <p>Diese Einträge verlassen dein Gerät nicht. Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG, weil du die jeweilige Funktion selbst anforderst. Löschen kannst du sie jederzeit über die Website-Daten deines Browsers, Merkliste und Lesestand auch direkt auf der Seite. Zeitspar-Rechner und Trend-Radar rechnen nur in deinem Browser und speichern nichts. Merkliste, Rechner-Ergebnis und Radar bekommt Jean nur, wenn du sie an das Stack-Check-Formular hängst und es abschickst.</p>
 <h2>Externe Links</h2>
 <p>Links zu Tools, zu PROMPTGOTT (Substack) und zu GitHub führen auf fremde Seiten mit eigenen Datenschutzregeln. Links zu PROMPTGOTT enthalten UTM-Parameter, damit erkennbar ist, dass der Besuch von dieser Seite kam; persönliche Daten werden dabei nicht übertragen.</p>
+<h2>Buttons „Mit KI durchgehen“ und „Mit Werkstatt-Prompt“</h2>
+<p>Diese Buttons öffnen zuerst ein Fenster auf dieser Seite, das den vollständigen Text für einen KI-Chat zeigt. Bis dahin wird nichts übertragen und nichts gespeichert. Erst wenn du dort auf „In {html.escape(", ".join(t["name"] for t in LLM_ACTIVE) or "dem Chat")} öffnen“ klickst, öffnet sich die Seite des Anbieters in einem neuen Tab, und der angezeigte Text steht in der Adresse des Links. Damit erhält der Anbieter ihn wie eine Eingabe von dir; ab da gelten seine Datenschutzregeln, und eingeloggt kann er den Text auch gleich absenden. „Prompt kopieren“ legt den Text nur in deine Zwischenablage. Die Werkstatt-Links im Text tragen UTM-Parameter (utm_medium=llm-prompt) mit Anbieter und Ausgangsseite. Öffnest du einen davon und schickst auf derselben Seite das Stack-Check-Formular ab, stehen diese drei Angaben in der Anfrage an Jean.</p>
 <h2>Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit (Art. 15 bis 20 DSGVO) und kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO). Schreib dafür an {mail_link("Datenschutz")}.</p>
 <p class="ds-widerspruch"><b>Widerspruchsrecht nach Art. 21 DSGVO:</b> Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO, hier die Auslieferung der Seite über GitHub, kannst du jederzeit aus Gründen widersprechen, die sich aus deiner besonderen Situation ergeben.</p>
@@ -1374,6 +1498,13 @@ def build_category_pages(list_secs, tools_map):
         ]}
         ld_js = json.dumps(ld, ensure_ascii=False).replace("</", "<\\/")
         first = sec["subs"][0]["id"] if sec["subs"] else sec["id"]
+        rel = (f"Ratgeber „{rg_rel[0]['label']}“", rg_rel[0]["page"]) if rg_rel else (f"Einsatzgebiet „{ei_rel[0]['h1']}“", ei_rel[0]["page"])
+        llm = {"seite": llm_prompt(f"Schublade „{h1}“", page, "schublade",
+                                   f"Hilf mir, hier das passende Werkzeug zu finden. Frag zuerst nach Einsatz, Budget und ob ein EU-Sitz zählt. Klär dabei auch: {faq[0][0]}",
+                                   [(rel[0], llm_to(rel[1])), ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(page, "stack-check")),
+                                    ("PROMPTGOTT-Newsletter", llm_pg)])}
+        if 'data-llm="tool"' in section_html:
+            llm["tool"] = llm_tool_prompt(f"Schublade „{h1}“", page)
         body = f"""{topbar("kategorien")}
 <section class="hero cat-hero"><div class="hero-art">{hero_floats()}</div><div class="wrap">
 {crumb_html}
@@ -1381,7 +1512,7 @@ def build_category_pages(list_secs, tools_map):
 <p class="kicker">{icon(CAT_ICON.get(sec["id"], "box"))} <b>Schublade {idx + 1:02d}</b> · Link-Check {LINK_CHECK}</p>
 <h1><em>{html.escape(h1)}</em></h1>
 <p class="sub">{html.escape(kat_text(sec, "hero"))}</p>
-<div class="ctas"><a class="btn btn-lime" href="#{first}">{icon("layers")}Zu den {n} Tools</a><a class="btn hide-sm" href="#stack-check">{icon("mail")}Stack-Check anfragen</a></div>
+<div class="ctas"><a class="btn btn-lime" href="#{first}">{icon("layers")}Zu den {n} Tools</a><a class="btn hide-sm" href="#stack-check">{icon("mail")}Stack-Check anfragen</a>{llm_page_btn()}</div>
 </div><div class="cat-hero-art reveal"><img src="img/cat-{sec["id"]}.svg" alt="" width="800" height="300"></div></div>
 <div class="stats">
 <div class="stat reveal"><b data-count="{n}">{n}</b><span>Tools in dieser Schublade</span></div>
@@ -1426,6 +1557,7 @@ def build_category_pages(list_secs, tools_map):
 <p class="eyebrow">Weitere Schubladen</p><h2>Woanders weiterstöbern</h2>
 <div class="catgrid">{"".join(others)}</div>
 </div></section>
+{llm_data(llm)}
 {footer()}
 """
         title = seo_title(kat_text(sec, "seo_title"))
@@ -1765,13 +1897,21 @@ def build_einsatz(tools_map, list_secs, sections):
         ]}
         ld_js = json.dumps(ld, ensure_ascii=False).replace("</", "<\\/")
         label = rollen[e["rolle"]]["label"]
+        rg_e = sorted((r["rollen"].index(e["rolle"]), i, r) for i, r in enumerate(RATGEBER["artikel"]) if e["rolle"] in r["rollen"])
+        rel = (f"Ratgeber „{rg_e[0][2]['label']}“", rg_e[0][2]["page"]) if rg_e else (f"Schublade „{sec_by_id[e['kategorien'][0]]['title']}“", cat_page(e["kategorien"][0]))
+        titel = [x["titel"] for x in e["aufgaben"][:3]]
+        llm = {"seite": llm_prompt(f"Einsatzgebiet „{e['h1']}“", e["page"], "einsatz",
+                                   "Hilf mir zu entscheiden, welche Aufgabe ich zuerst an KI abgebe: "
+                                   + "; ".join(titel) + ". Frag nach meinem Alltag, bevor du Werkzeuge empfiehlst.",
+                                   [(rel[0], llm_to(rel[1])), ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(e["page"], "stack-check")),
+                                    ("PROMPTGOTT-Newsletter", llm_pg)])}
         body = f"""{topbar("einsatz")}
 <section class="hero cat-hero"><div class="hero-art">{hero_floats()}</div><div class="wrap">
 {crumb_html}
 <p class="kicker">{icon(e["icon"])} <b>Einsatzgebiet</b> · {len(e["aufgaben"])} Aufgaben · {n_tools} Tools</p>
 <h1><em>{html.escape(e["h1"])}</em></h1>
 <p class="sub">{html.escape(e["hero"])}</p>
-<div class="ctas"><a class="btn btn-lime" href="#aufgaben">{icon("wrench")}Zu den Aufgaben</a><a class="btn hide-sm" href="#stack-check">{icon("mail")}Stack-Check anfragen</a></div>
+<div class="ctas"><a class="btn btn-lime" href="#aufgaben">{icon("wrench")}Zu den Aufgaben</a><a class="btn hide-sm" href="#stack-check">{icon("mail")}Stack-Check anfragen</a>{llm_page_btn()}</div>
 </div></section>
 
 <section class="band cat-intro"><div class="wrap intro-grid">
@@ -1817,6 +1957,7 @@ def build_einsatz(tools_map, list_secs, sections):
 <section class="band" id="weitere"><div class="wrap">
 <p class="eyebrow">Andere Einsatzgebiete</p><div class="einsatz-minis" data-chrome>{others}</div>
 </div></section>
+{llm_data(llm)}
 {footer()}
 """
         (DOCS / e["page"]).write_text(page_shell(seo_title(e["seo_title"]), body, e["meta"], url,
@@ -1997,6 +2138,12 @@ def build_ratgeber(tools_map):
         others = "".join(f'<a class="einsatz-mini" href="{o["page"]}">{icon(o["icon"])}{html.escape(o["label"])}</a>' for o in ranked) \
             + f'<a class="einsatz-mini" href="{RATGEBER_PAGE}">{icon("layers")}Alle Ratgeber</a>'
         crumb_html, crumb_ld = crumbs(("Ratgeber", RATGEBER_PAGE), (a["label"], a["page"]))
+        llm = {"seite": llm_prompt(f"Ratgeber „{a['label']}“", a["page"], "ratgeber",
+                                   "Geh das Thema mit mir durch, frag zuerst, wo ich stehe. Klär vor allem: "
+                                   + " ".join(q for q, _ in a["faq"][:2]),
+                                   [(f"Ratgeber „{ranked[0]['label']}“", llm_to(ranked[0]["page"])),
+                                    ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(a["page"], "stack-check")),
+                                    ("PROMPTGOTT-Newsletter", llm_pg)])}
         trend_btn = ""
         if a.get("trend"):
             t = next(t for t in TRENDS["trends"] if t["id"] == a["trend"])
@@ -2017,7 +2164,7 @@ def build_ratgeber(tools_map):
 <p class="kicker" data-chrome>{icon(a["icon"])} <b>Ratgeber</b> · Stand {de_date(a["stand"])} · {minutes} Min. Lesezeit</p>
 <h1>{html.escape(a["h1"])}</h1>
 <p class="sub">{html.escape(a["hero"])}</p>
-<div class="ctas"><a class="btn btn-lime" href="#{toc[0][0] if toc else 'faq'}">{icon("book")}Lesen</a><a class="btn hide-sm" href="#stack-check">{icon("mail")}Stack-Check anfragen</a></div>
+<div class="ctas"><a class="btn btn-lime" href="#{toc[0][0] if toc else 'faq'}">{icon("book")}Lesen</a><a class="btn hide-sm" href="#stack-check">{icon("mail")}Stack-Check anfragen</a>{llm_page_btn()}</div>
 </div></section>
 
 <div class="wrap layout rg-layout">
@@ -2058,6 +2205,7 @@ def build_ratgeber(tools_map):
 <section class="band" id="weitere"><div class="wrap">
 <p class="eyebrow">Weitere Ratgeber</p><div class="einsatz-minis" data-chrome>{others}</div>
 </div></section>
+{llm_data(llm)}
 {footer()}
 """
         (DOCS / a["page"]).write_text(page_shell(seo_title(a["seo_title"]), body, a["meta"], url,
@@ -2352,6 +2500,10 @@ def main():
             print(f"  doppelt: {sent[:90]!r} in {', '.join(where)}")
         raise SystemExit(f"Abbruch: {len(dups)} Sätze stehen auf mehr als einer Seite (oder doppelt auf einer). Texte umschreiben.")
     print("Uniqueness-Check: kein Satz doppelt")
+    if LLM_STATS:
+        n, mx, mu, mp = len(LLM_STATS), max(x[2] for x in LLM_STATS), max(x[3] for x in LLM_STATS), max(x[4] for x in LLM_STATS)
+        print(f"Werkstatt-Prompts: {n}, längster {mx} Zeichen ({mp} ohne Links), längste Anbieter-URL {mu} Zeichen; "
+              f"Anbieter auf der Seite: {', '.join(t['name'] for t in LLM_ACTIVE) or 'keiner'}")
     if FAV_MISSING:
         WARN.append(f"{len(FAV_MISSING)} Hosts ohne lokales Favicon, Platzhalter geschrieben: {', '.join(sorted(FAV_MISSING)[:8])}. "
                     "Echte Icons holt python3 scripts/fetch_favicons.py --retry")

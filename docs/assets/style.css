@@ -888,3 +888,23 @@ html:not(.js) .wotd{display:none}
 .ds-kurz{background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);padding:12px 14px}
 .ds-widerspruch{border-left:4px solid var(--accent);background:var(--card);padding:12px 14px;border-radius:var(--r-s)}
 @media print{.legal-note{border-style:solid}}
+
+/* KI-Chat mit Werkstatt-Prompt: Zusatz-Button an Chatbot-Einträgen und Dialog mit dem vollständigen Prompt */
+.llm-btn{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:6px 11px;min-height:32px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--fg);font:600 12.5px var(--font-b);cursor:pointer}
+.llm-btn .ico{width:15px;height:15px;color:var(--accent)}
+.llm-btn:hover{border-color:var(--fg)}
+.llm-dlg{width:min(640px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;box-sizing:border-box;padding:18px 20px 20px;border:1px solid var(--line);border-radius:var(--r-l);background:var(--card);color:var(--fg);box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.llm-dlg::backdrop{background:rgba(14,17,22,.6)}
+.llm-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.llm-head h2{margin:0;font-size:20px;line-height:1.25;display:flex;gap:8px;align-items:center}
+.llm-head h2 .ico{color:var(--accent)}
+.llm-dlg .close{flex:none;background:none;border:0;color:var(--muted);cursor:pointer;min-width:44px;min-height:44px;display:grid;place-items:center;margin:-6px -10px 0 0}
+.llm-d,.llm-note,.llm-foot{font-size:14px;color:var(--muted);margin:10px 0}
+.llm-note:empty,.llm-status:empty{display:none}
+.llm-lbl{display:block;font:600 13px var(--font-b);margin:12px 0 4px}
+#llm-txt{display:block;width:100%;box-sizing:border-box;min-height:12em;font:13px/1.5 var(--font-m);padding:10px 12px;border:1.5px solid var(--field-line);border-radius:var(--r-s);background:var(--bg);color:var(--fg);resize:vertical;overflow-wrap:anywhere}
+.llm-pick{border:0;padding:0;margin:12px 0 0}.llm-pick legend{font:600 13px var(--font-b);padding:0;margin-bottom:6px}
+.llm-pick .chip{cursor:pointer}.llm-pick input{accent-color:var(--lime-ink);margin:0}
+.llm-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.llm-status{font-size:13.5px;font-weight:600;margin:10px 0 0}
+@media print{.llm-btn,.llm-open,.llm-dlg{display:none!important}}
