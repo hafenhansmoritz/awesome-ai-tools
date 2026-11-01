@@ -145,7 +145,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [privateGPT](https://github.com/imartinez/privateGPT) - Fragen an eigene Dokumente stellen, komplett ohne Internetverbindung. `OSS`
 - [quivr](https://github.com/StanGirard/quivr) - "Zweites Gehirn": Dateien ablegen und per LLM mit ihnen chatten. `OSS`
 - [gpt4all](https://github.com/nomic-ai/gpt4all) - Lokaler Chat-Client für offene Modelle, läuft auch ohne GPU. `OSS`
-- [Unlimited OCR 2](https://huggingface.co/baidu/Unlimited-OCR-2) - Offenes OCR-Modell von Baidu mit 3 Milliarden Parametern unter MIT-Lizenz, das lange, mehrseitige Dokumente in einem Durchgang ausliest. Für Belege, Verträge und Handbücher auf eigener Hardware; die Modellkarte nennt es nur „mehrsprachig“, deutsche Dokumente also vorher testen. `OSS`
+- [Unlimited OCR 2](https://huggingface.co/baidu/Unlimited-OCR-2) - Offenes OCR-Modell von Baidu mit 3 Milliarden Parametern unter MIT-Lizenz, das lange, mehrseitige Dokumente in einem Durchgang ausliest. Für Belege, Verträge und Handbücher auf eigenem Server mit NVIDIA-Grafikkarte (getestet hat Baidu auf einer A800 mit 80 GB); die Modellkarte nennt es nur „mehrsprachig“, deutsche Dokumente also vorher testen. `OSS`
 
 ### Schreibassistenten
 

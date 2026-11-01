@@ -582,7 +582,7 @@
   {
    "name": "Unlimited OCR 2",
    "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-   "beschreibung": "Offenes OCR-Modell von Baidu mit 3 Milliarden Parametern unter MIT-Lizenz, das lange, mehrseitige Dokumente in einem Durchgang ausliest. Für Belege, Verträge und Handbücher auf eigener Hardware; die Modellkarte nennt es nur „mehrsprachig“, deutsche Dokumente also vorher testen.",
+   "beschreibung": "Offenes OCR-Modell von Baidu mit 3 Milliarden Parametern unter MIT-Lizenz, das lange, mehrseitige Dokumente in einem Durchgang ausliest. Für Belege, Verträge und Handbücher auf eigenem Server mit NVIDIA-Grafikkarte (getestet hat Baidu auf einer A800 mit 80 GB); die Modellkarte nennt es nur „mehrsprachig“, deutsche Dokumente also vorher testen.",
    "kategorie": "Text und Sprache",
    "bereich": "Lokal und privat mit Dokumenten chatten",
    "eu": false,

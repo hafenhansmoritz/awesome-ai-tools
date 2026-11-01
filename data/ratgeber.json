@@ -282,7 +282,7 @@
     ],
     [
      "Gibt es eine Zeile, die KI-Training bei allen Anbietern verbietet?",
-     "Bald. Google, Microsoft und OpenAI haben am 30. Oktober 2026 angekündigt, die Gruppe __usage_ai-training in der robots.txt zu beachten. Umgesetzt ist das noch nicht: OpenAI plant es für die kommenden Monate, Microsoft ab Februar 2027, Google im Lauf des Jahres 2027. Bis dahin gelten die Regeln für die einzelnen Crawler."
+     "Nein, nur eine für die Anbieter, die mitmachen. Google, Microsoft und OpenAI haben am 30. Oktober 2026 angekündigt, die Gruppe __usage_ai-training in der robots.txt zu beachten; für alle anderen ist das freiwillig, für sie brauchst du weiter die Regeln der einzelnen Crawler. Umgesetzt ist das auch bei den dreien noch nicht: OpenAI plant es für die kommenden Monate, Microsoft ab Februar 2027, Google im Lauf des Jahres 2027. Bis dahin gelten die Regeln für die einzelnen Crawler."
     ]
    ],
    "quellen": [
