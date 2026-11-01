@@ -3730,7 +3730,7 @@
    "kategorie": "Audio",
    "bereich": "Sprache zu Text und Text zu Sprache",
    "eu": false,
-   "open_source": false,
+   "open_source": true,
    "neu": true,
    "seite": "ki-tools-audio.html#tool-nemotron-35-transcribe",
    "icon": "img/fav/research.nvidia.com.png"

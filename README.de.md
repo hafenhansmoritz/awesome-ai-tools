@@ -499,7 +499,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [EKHOS AI](https://ekhos.ai) - Transkription mit Korrekturfunktionen und Echtzeit-Aufnahme.
 - [Whisper API](https://whisper-api.com) - Transkriptions-API auf Basis von OpenAI Whisper, 5 kostenlose Transkriptionen pro Tag.
 - [Voxtral 3](https://mistral.ai/news/voxtral-3/) - 🇪🇺 Spracherkennung und Sprachausgabe von Mistral, mit Deutsch, Sprechererkennung und einem SDK für Sprachagenten.
-- [Nemotron 3.5 Transcribe](https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/) - Offenes Transkriptionsmodell von NVIDIA für Aufnahmen bis zu einer Stunde in 40 Sprachen, auf Deutsch auch mit Sprecherzuordnung und Übersetzung ins Englische. Gedacht für Meeting- und Telefonmitschnitte auf eigenen Servern; live mitschreiben kann es nicht, und als Referenz-Hardware nennt NVIDIA eine H100 mit 80 GB.
+- [Nemotron 3.5 Transcribe](https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/) - Offenes Transkriptionsmodell von NVIDIA für Aufnahmen bis zu einer Stunde in 40 Sprachen, auf Deutsch auch mit Sprecherzuordnung und Übersetzung ins Englische. Gedacht für Meeting- und Telefonmitschnitte auf eigenen Servern; live mitschreiben kann es nicht, und als Referenz-Hardware nennt NVIDIA eine H100 mit 80 GB. `OSS`
 - [CreateEasily](https://createeasily.com/) - Kostenlose Transkription von Audio- und Videodateien bis 2 GB.
 - [Transgate](https://transgate.ai/) - Sprache-zu-Text mit KI.
 
