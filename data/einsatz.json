@@ -1,5 +1,5 @@
 {
- "_hinweis": "Einsatz-Landingpages. rolle verweist auf data/trends.json rollen; Tools, Kisten, Kategorien, Glossarbegriffe und Rechner-Aufgaben prüft der Build.",
+ "_hinweis": "Einsatz-Landingpages. rolle verweist auf data/trends.json rollen; Tools, Kisten, Kategorien, Glossarbegriffe und Rechner-Aufgaben prüft der Build. Optional sprecher: kurbel für Roboter- und Schrauben-Zeilen in bubble (sonst spricht Hans). Aufgaben-Texte dürfen Links als [Text](Ziel) enthalten.",
  "titel": "KI nach Einsatzgebiet",
  "seiten": [
   {
@@ -8,8 +8,8 @@
    "page": "ki-fuer-online-shops.html",
    "h1": "KI für Online-Shops",
    "icon": "box",
-   "seo_title": "KI für Online-Shops: Produkttexte, Bilder, Übersetzungen, Support",
-   "meta": "KI für Online-Shops: welche Tools Produkttexte, Produktfotos, Übersetzungen, Absatzprognosen und Kundenanfragen übernehmen, mit Werkzeugkiste, Trends und kostenlosem Stack-Check.",
+   "seo_title": "KI im Online-Shop einsetzen: Aufgaben",
+   "meta": "Wo KI im Online-Shop mit anpackt: Produkttexte, Freisteller, Übersetzungen, Absatzprognose und Support, je Aufgabe mit passenden Werkzeugen und Hinweisen.",
    "teaser": "Produkttexte, Freisteller und Übersetzungen im Akkord, ohne dass die Retourenquote mitwächst.",
    "hero": "Produkttexte, Freisteller, Übersetzungen und die zwanzigste Frage nach der Lieferzeit: Hier steht, welches Werkzeug im Shop wirklich mit anpackt.",
    "intro": [
@@ -92,7 +92,7 @@
      "Sobald Kundendaten durch das Tool laufen, in aller Regel ja. Frag den Anbieter vor dem Start nach dem Vertrag zur Auftragsverarbeitung und nach dem Serverstandort. Diese Antwort ersetzt keine Rechtsberatung."
     ]
    ],
-   "lead_hook": "Erzähl Jean von deinem Shop. Zurück kommt die passende Werkzeugkiste.",
+   "lead_hook": "Welche Aufgabe im Shop nervt am meisten? Jean schickt dir ein Setup dafür.",
    "lead_text": "Sortiment, Shopsystem, Sprachen und die Aufgabe, die am meisten nervt: Mehr braucht es nicht für einen Vorschlag mit vier bis sechs Tools.",
    "bubble": "Ich hab schon mal die Freisteller-Schere geölt.",
    "form_rolle": "Shop-Betreiber"
@@ -103,12 +103,12 @@
    "page": "ki-im-marketing.html",
    "h1": "KI im Marketing",
    "icon": "megaphone",
-   "seo_title": "KI im Marketing: Tools für SEO, Content und Kampagnen",
-   "meta": "KI im Marketing: Werkzeuge für Keyword-Recherche, Briefings, SEO-Texte, Visuals und Sichtbarkeit in KI-Suchen, sortiert nach Aufgabe, mit Trends und kostenlosem Stack-Check.",
-   "teaser": "Recherche, Briefing, Varianten und Visuals, damit mehr Zeit für Ideen bleibt, die nur ihr habt.",
+   "seo_title": "KI im Marketing einsetzen: Aufgaben, Regeln",
+   "meta": "Wie KI im Marketing hilft: Recherche, Briefing, Texte mit Markenstimme, Visuals und Sichtbarkeit in KI-Antworten, mit Werkzeugen und Regeln je Aufgabe.",
+   "teaser": "Recherche, Briefing, Varianten und Visuals, damit mehr Zeit für Ideen bleibt, die nur du hast.",
    "hero": "Briefing, Entwurf, Grafik, Auswertung: Die KI schreibt im Marketing überall mit. Hier steht, wo sie wirklich hilft und wo sie nur Lärm macht.",
    "intro": [
-    "Marketing hat als Erstes gemerkt, dass Sprachmodelle schreiben können, und als Erstes gemerkt, dass alle anderen das auch können. Mehr Text ist deshalb selten der Engpass. Der Engpass ist Text, der nach euch klingt und etwas Neues sagt.",
+    "Marketing hat als Erstes gemerkt, dass Sprachmodelle schreiben können, und als Erstes gemerkt, dass alle anderen das auch können. Mehr Text ist deshalb selten der Engpass. Der Engpass ist Text, der nach deiner Marke klingt und etwas Neues sagt.",
     "Die stärksten Hebel liegen davor und danach: Recherche, Briefing und Gliederung vorne, Varianten, Visuals und Auswertung hinten. Dazwischen bleibt dein Kopf zuständig für Haltung, Fakten und das letzte Wort."
    ],
    "aufgaben": [
@@ -122,7 +122,7 @@
      ]
     },
     {
-     "titel": "Texte, die nach euch klingen",
+     "titel": "Texte mit eigener Stimme",
      "text": "Ein Assistent mit langem Kontext schreibt Entwürfe, wenn er Styleguide und gute Beispiele bekommt. Danach poliert ein Stilwerkzeug Grammatik und Ton, bevor ein Mensch freigibt.",
      "tools": [
       "Claude",
@@ -141,7 +141,7 @@
     },
     {
      "titel": "Sichtbar in KI-Antworten",
-     "text": "Wenn Kunden einen Assistenten fragen, statt zu googeln, zählt, ob er deine Marke nennt. Beobachte deshalb, wie Antwortmaschinen über euch sprechen, und liefere Inhalte, die sie zitieren können.",
+     "text": "Wenn Kunden einen Assistenten fragen, statt zu googeln, zählt, ob er deine Marke nennt. Beobachte deshalb, wie Antwortmaschinen über deine Marke sprechen, und liefere Inhalte, die sie zitieren können.",
      "tools": [
       "Semrush",
       "Perplexity",
@@ -166,7 +166,7 @@
     "EU AI Act"
    ],
    "rechner": "text",
-   "tipp": "Leg einen Ordner mit fünf Texten an, auf die ihr stolz seid, und häng ihn an jeden Schreibauftrag. Kein Prompt-Trick bringt so viel Markenstimme wie gute Vorbilder.",
+   "tipp": "Leg einen Ordner mit fünf Texten an, auf die du stolz bist, und häng ihn an jeden Schreibauftrag. Kein Prompt-Trick bringt so viel Markenstimme wie gute Vorbilder.",
    "faq": [
     [
      "Muss ich KI-generierte Werbung kennzeichnen?",
@@ -174,15 +174,15 @@
     ],
     [
      "Welches Tool nehme ich für SEO-Texte?",
-     "Erst die Recherche, dann das Schreibwerkzeug. Ein Briefing aus den Top-Ergebnissen plus ein starker Assistent schlägt jedes Tool, das Text auf Knopfdruck verspricht. Eine erprobte Kombination liegt im SEO-Stack der Werkstatt."
+     "Erst die Recherche, dann das Schreibwerkzeug. Ein Briefing aus den Top-Ergebnissen plus ein starker Assistent schlägt jedes Tool, das Text auf Knopfdruck verspricht. Eine erprobte Kombination liegt in der SEO-Kiste der Werkstatt."
     ],
     [
      "Wie verhindere ich, dass alle Texte gleich klingen?",
-     "Gib dem Modell Beispiele statt Adjektive, wechsle Perspektive und Einstieg und streich Floskeln konsequent. Ein fester System-Prompt mit euren Tabuwörtern hilft mehr als jedes Umschreib-Tool."
+     "Gib dem Modell Beispiele statt Adjektive, wechsle Perspektive und Einstieg und streich Floskeln konsequent. Ein fester System-Prompt mit deinen Tabuwörtern hilft mehr als jedes Umschreib-Tool."
     ]
    ],
-   "lead_hook": "Sag Jean, was dein Team im Monat produziert.",
-   "lead_text": "Kanäle, Teamgröße, Tool-Budget und das Format, das immer zu spät fertig wird: Daraus wird ein Stack, der zu eurem Redaktionsplan passt.",
+   "lead_hook": "Was produziert dein Team im Monat, und was davon kommt immer zu spät?",
+   "lead_text": "Nenn Kanäle, Teamgröße und Tool-Budget. Jean schlägt dir vier bis sechs Tools vor, die zu deinem Redaktionsplan passen.",
    "bubble": "Ich hätte noch ein Synonym für innovativ. Nein? Gut so.",
    "form_rolle": "Marketing / SEO"
   },
@@ -192,10 +192,10 @@
    "page": "ki-fuer-entwickler.html",
    "h1": "KI für Entwickler",
    "icon": "code",
-   "seo_title": "KI für Entwickler: Coding-Agenten, KI-Editoren, lokale Modelle",
-   "meta": "KI für Entwickler: Coding-Agenten, KI-Editoren, App-Baukästen und lokale Modelle im Überblick, mit Trends zu Agent Skills und MCP und kostenlosem Stack-Check.",
+   "seo_title": "KI für Entwickler: Agenten richtig einsetzen",
+   "meta": "Wie Entwickler Coding-Agenten, KI-Editoren, App-Baukästen und lokale Modelle sinnvoll einsetzen, mit Leitplanken, MCP und Agent Skills je Aufgabe erklärt.",
    "teaser": "Coding-Agenten, App-Baukästen und lokale Modelle, mit Leitplanken statt Blindflug.",
-   "hero": "Vom Autocomplete zum Kollegen mit eigenem Terminal: Coding-Agenten übernehmen ganze Tickets. Hier steht, welche, und wie du sie an die Leine nimmst.",
+   "hero": "Vom Autocomplete zum Agenten mit eigenem Terminal: Coding-Agenten übernehmen ganze Tickets. Hier steht, welche, und wie du sie an die Leine nimmst.",
    "intro": [
     "Programmieren ist das Feld, in dem Agenten am weitesten sind. Sie lesen ganze Repositories, führen Tests aus und schlagen Änderungen über mehrere Dateien vor. Der Engpass verschiebt sich vom Tippen zum Prüfen.",
     "Damit das gut geht, brauchen Agenten Kontext und Grenzen: eine saubere Testsuite, klare Arbeitsanweisungen und Rechte, die nur so weit reichen wie nötig. Offene Standards wie MCP und Agent Skills sorgen dafür, dass du diese Vorarbeit nicht bei jedem Anbieterwechsel wiederholst."
@@ -256,7 +256,7 @@
     "Kontextfenster"
    ],
    "rechner": "code",
-   "tipp": "Gib dem Agenten nie mehr Rechte als einem neuen Praktikanten in der ersten Woche. Schreibzugriff auf Produktion gehört nicht dazu, auch wenn er noch so höflich fragt.",
+   "tipp": "Gib dem Agenten nie mehr Rechte als jemandem in der ersten Arbeitswoche. Schreibzugriff auf Produktion gehört nicht dazu, auch wenn er noch so höflich fragt.",
    "faq": [
     [
      "Welcher Coding-Agent ist der beste?",
@@ -271,8 +271,8 @@
      "Für Vervollständigung, Erklärungen und vertraulichen Code oft ja. Bei großen Umbauten über viele Dateien liegen die großen Cloud-Modelle nach unserer Erfahrung klar vorne. Viele Teams kombinieren deshalb beides."
     ]
    ],
-   "lead_hook": "Zeig Jean deinen Stack, er sucht die passenden Agenten aus.",
-   "lead_text": "Sprache, Framework, Repo-Größe und was der Agent auf keinen Fall anfassen soll: Daraus entsteht ein Setup aus Editor, Agent und den passenden Anschlüssen.",
+   "lead_hook": "Welcher Agent darf an dein Repo, und was bleibt tabu?",
+   "lead_text": "Sprache, Framework und Repo-Größe genügen. Jean stellt dir daraus vier bis sechs Werkzeuge zusammen, von Editor über Agent bis zu den Anschlüssen.",
    "bubble": "Ich hab die Tests laufen lassen. Alle grün. Na gut, fast alle.",
    "form_rolle": "Entwickler / Maker"
   },
@@ -282,8 +282,8 @@
    "page": "ki-im-kundenservice.html",
    "h1": "KI im Kundenservice",
    "icon": "headset",
-   "seo_title": "KI im Kundenservice: Chatbots, Telefonagenten, Mail-Vorsortierung",
-   "meta": "KI im Kundenservice: Support-Bots, Telefonagenten, E-Mail-Vorsortierung und Gesprächsnotizen im Überblick, mit Hinweisen zu Kennzeichnung und DSGVO und kostenlosem Stack-Check.",
+   "seo_title": "KI im Kundenservice einsetzen: Bot, Telefon",
+   "meta": "Wo KI im Kundenservice entlastet: Support-Bot, Telefonagent, Postfach und Gesprächsnotizen, mit Hinweisen zu Kennzeichnung, Einwilligung und DSGVO.",
    "teaser": "Bots für Standardfragen, Menschen für den Rest, und eine saubere Übergabe dazwischen.",
    "hero": "Paketstatus, Öffnungszeiten, Rücksendeetikett: Solche Fragen beantwortet ein Bot. Die Beschwerde mit Vorgeschichte bleibt beim Menschen, und hier steht, wie du die Grenze sauber ziehst.",
    "intro": [
@@ -311,7 +311,7 @@
     },
     {
      "titel": "Postfach vorsortieren",
-     "text": "Eingehende Mails werden nach Thema und Dringlichkeit sortiert, Antwortentwürfe liegen schon bereit. Der Mensch prüft, ergänzt und schickt ab.",
+     "text": "Eingehende E-Mails werden nach Thema und Dringlichkeit sortiert, Antwortentwürfe liegen schon bereit. Der Mensch prüft, ergänzt und schickt ab.",
      "tools": [
       "EmailTriager",
       "Emilio",
@@ -360,9 +360,9 @@
      "Nur mit Vertrag zur Auftragsverarbeitung, passender Rechtsgrundlage und so wenig Daten wie nötig. EU-Anbieter oder eine EU-Region beim Hosting machen die Prüfung leichter, ersetzen sie aber nicht."
     ]
    ],
-   "lead_hook": "Beschreib Jean deine Anfragen, er zieht die Grenze für den Bot.",
+   "lead_hook": "Wo soll der Bot aufhören und ein Mensch übernehmen?",
    "lead_text": "Kanäle, Anfragen pro Woche, Shop- oder Ticketsystem und die drei häufigsten Fragen: Damit lässt sich sagen, wo ein Bot hilft und wo er stört.",
-   "bubble": "Piep. Ich bin übrigens ein Roboter. Das muss ich jetzt immer dazusagen.",
+   "bubble": "Ich hab dem Bot beigebracht, Tschüss zu sagen. Und wann er mich holen soll.",
    "form_rolle": "Kundenservice / Vertrieb"
   },
   {
@@ -371,8 +371,8 @@
    "page": "ki-fuer-content-creator.html",
    "h1": "KI für Content Creator",
    "icon": "image",
-   "seo_title": "KI für Content Creator: Bilder, Videos, Stimmen, Musik",
-   "meta": "KI für Content Creator: Bildgeneratoren, Videomodelle, Schnitt, Stimmen und Musik im Überblick, mit Lizenz- und Kennzeichnungshinweisen und kostenlosem Stack-Check.",
+   "seo_title": "KI für Content Creator: Bild, Clip, Ton",
+   "meta": "Wie Creator KI für Thumbnails, Clips, Voiceover und Musik einsetzen, welche Werkzeuge sich die Arbeit teilen und was bei Lizenz und Kennzeichnung gilt.",
    "teaser": "Bild, Clip, Stimme und Musik aus wenigen Werkzeugen, mit einem Auge auf Lizenz und Kennzeichnung.",
    "hero": "Thumbnail, Clip, Voiceover, Hintergrundmusik: Für jedes Stück Content gibt es inzwischen ein Modell. Hier steht, welche sich die Arbeit sinnvoll teilen.",
    "intro": [
@@ -448,9 +448,10 @@
      "Offene Modelle wie FLUX 3 Image Klein kommen in der kompakten Fassung mit einer Grafikkarte mit 8 GB Speicher aus. Kostenlos ist die Nutzung nur bis zu einer Umsatzgrenze, darüber brauchst du eine Lizenz oder die API."
     ]
    ],
-   "lead_hook": "Zeig Jean deinen Kanal, er packt dir die Kreativkiste.",
-   "lead_text": "Plattformen, Formate, Upload-Rhythmus und was dich gerade am meisten Zeit kostet: Daraus wird ein Set für Bild, Schnitt und Ton.",
+   "lead_hook": "Welcher Teil deiner Produktion frisst die meiste Zeit?",
+   "lead_text": "Schreib Plattformen, Formate und Upload-Rhythmus dazu. Jean schickt dir vier bis sechs Tools für Bild, Schnitt und Ton.",
    "bubble": "Ich hab einen Song über die übrige Schraube gemacht. Er ist sehr kurz.",
+   "sprecher": "kurbel",
    "form_rolle": "Content / Social Media"
   },
   {
@@ -459,10 +460,10 @@
    "page": "ki-im-buero.html",
    "h1": "KI im Büro",
    "icon": "building",
-   "seo_title": "KI im Büro: Assistenten, Meetings, E-Mails und Tabellen",
-   "meta": "KI im Büro: Assistenten für Recherche und Dokumente, Meeting-Protokolle, E-Mail und Tabellen, mit EU-Alternativen, Datenschutz-Hinweisen und kostenlosem Stack-Check.",
+   "seo_title": "KI im Büro einsetzen: Meetings, E-Mail, Daten",
+   "meta": "Wo KI im Büro Routine abnimmt: ein Assistent für alle, Protokolle, Recherche mit Belegen und Tabellen, mit EU-Alternativen und klaren Regeln für Daten.",
    "teaser": "Ein guter Assistent, Protokolle auf Autopilot und klare Regeln, welche Daten wohin dürfen.",
-   "hero": "Protokolle, Postfach, Tabellen, Recherchen: Im Büro steckt die meiste Routine. Hier steht, wo KI sie abnimmt, ohne dass euer Datenschutz Bauchschmerzen bekommt.",
+   "hero": "Protokolle, Postfach, Tabellen, Recherchen: Im Büro steckt die meiste Routine. Hier steht, wo KI sie abnimmt, ohne dass der Datenschutz Bauchschmerzen bekommt.",
    "intro": [
     "Im Büro entscheidet selten ein einzelnes Spezialtool. Meist reicht ein guter Assistent für alle, der Dokumente liest, zusammenfasst und Entwürfe schreibt, plus zwei, drei Helfer für Meetings und Postfach. Oft steckt so ein Assistent schon in Microsoft 365 oder Google Workspace.",
     "Die wichtigste Entscheidung ist deshalb keine Tool-Frage, sondern eine Regel: Welche Daten dürfen in welches System? Wer das einmal klärt, kann danach entspannt ausprobieren. Europäische Anbieter und Plattformen mit mehreren Modellen machen diese Regel leichter einzuhalten."
@@ -472,14 +473,14 @@
      "titel": "Ein Assistent für alle",
      "text": "Ein Chat-Assistent mit Dokument-Upload erledigt Zusammenfassungen, Entwürfe und erste Analysen. Für Teams mit strengen Datenschutzvorgaben gibt es Plattformen, die mehrere Modelle unter einer Oberfläche bündeln.",
      "tools": [
-      "Le Chat von Mistral",
+      "Vibe von Mistral",
       "Langdock",
       "Microsoft Copilot"
      ]
     },
     {
      "titel": "Meetings ohne Protokollführer",
-     "text": "Aufnahme, Transkript, Zusammenfassung und Aufgabenliste kommen automatisch nach dem Call. Sag allen Beteiligten vorher Bescheid, dass mitgeschrieben wird.",
+     "text": "Aufnahme, Transkript, Zusammenfassung und Aufgabenliste kommen automatisch nach dem Call. Vor der Aufnahme brauchst du die Einwilligung aller Beteiligten, ein bloßer Hinweis reicht nicht.",
      "tools": [
       "tl;dv",
       "Fireflies.ai",
@@ -524,7 +525,7 @@
     "KI-Suchmaschine"
    ],
    "rechner": "analyse",
-   "tipp": "Schreib eine Seite Regeln für KI im Team: welche Tools, welche Daten, wer fragt wen. Eine halbe Stunde Arbeit, die dir monatelange Grundsatzdebatten in der Kaffeeküche erspart.",
+   "tipp": "Schreib eine Seite Regeln für KI im Team: welche Tools, welche Daten, wer fragt wen. Eine halbe Stunde Arbeit, die dir monatelange Grundsatzdebatten auf dem Flur erspart.",
    "faq": [
     [
      "Darf ich Firmendokumente in einen KI-Chat laden?",
@@ -532,15 +533,15 @@
     ],
     [
      "Microsoft Copilot, Gemini oder ein europäischer Anbieter?",
-     "Meist gewinnt das Werkzeug, das in eure vorhandene Umgebung passt, weil es dort Mails, Kalender und Dokumente sieht. Ein europäischer Anbieter lohnt sich, wenn Datenstandort und Abhängigkeit für euch schwer wiegen. Der EU-Stack der Werkstatt zeigt eine mögliche Kombination."
+     "Meist gewinnt das Werkzeug, das in deine vorhandene Umgebung passt, weil es dort E-Mails, Kalender und Dokumente sieht. Ein europäischer Anbieter lohnt sich, wenn Datenstandort und Abhängigkeit für dich schwer wiegen. Die EU-Kiste der Werkstatt zeigt eine mögliche Kombination."
     ],
     [
      "Wie fange ich im Team an?",
      "Mit einer Pilotgruppe, einem klaren Anwendungsfall und vier Wochen Laufzeit. Danach weißt du, was gespart wurde und was genervt hat, und kannst ehrlich entscheiden."
     ]
    ],
-   "lead_hook": "Erzähl Jean, was im Büro jede Woche liegen bleibt.",
-   "lead_text": "Teamgröße, vorhandene Software, Datenschutzvorgaben und die drei zähesten Routinen: Daraus wird ein Setup, das ihr ohne IT-Großprojekt startet.",
+   "lead_hook": "Was bleibt im Büro jede Woche liegen?",
+   "lead_text": "Teamgröße, vorhandene Software, Datenschutzvorgaben und die drei zähesten Routinen reichen. Jean schlägt dir vier bis sechs Tools vor, die zu deiner Software passen.",
    "bubble": "Ich hab das Protokoll schon fertig. Das Meeting fängt erst gleich an.",
    "form_rolle": "Büro / Geschäftsführung"
   }

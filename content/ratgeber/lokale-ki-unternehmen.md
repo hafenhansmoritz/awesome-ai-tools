@@ -1,12 +1,12 @@
 > **Kurz gesagt:** Ein Sprachmodell auf dem eigenen Rechner kostet keine Token-Gebühren, funktioniert ohne Internet und lässt Kundendaten im Haus. Mit Ollama oder LM Studio läuft das erste Modell in einer Viertelstunde, mit Open WebUI bekommt das ganze Team eine Chat-Oberfläche. Die Grenzen sind Speicher, Qualität bei schweren Aufgaben und der eigene Betriebsaufwand. Dieser Ratgeber rechnet vor, wie viel Speicher ein Modell braucht, vergleicht die drei wichtigsten Werkzeuge, zeigt das Kleingedruckte in den Lizenzen und erklärt, wie ein Pilot in drei Wochen aussieht.
 
-Die Angaben stammen aus den Dokumentationen von Ollama, LM Studio, Open WebUI und llama.cpp, den Modellkarten von Liquid AI und NVIDIA sowie Papieren der Datenschutzkonferenz und der Allianz für Cybersicherheit, Stand 28. Oktober 2026. Einschätzungen zur Qualität sind als unsere gekennzeichnet.
+Die Angaben stammen aus den Dokumentationen von Ollama, LM Studio, Open WebUI und llama.cpp, den Modellkarten von Liquid AI und NVIDIA sowie Papieren der Datenschutzkonferenz und der Allianz für Cybersicherheit, Stand 29. Oktober 2026. Einschätzungen zur Qualität sind als unsere gekennzeichnet.
 
 ## Warum überhaupt lokal
 
 Der stärkste Grund ist Datenschutz. Die Datenschutzkonferenz unterscheidet in ihrer Orientierungshilfe zu KI zwischen offenen Systemen, die ein Anbieter für einen unbestimmten Nutzerkreis in der Cloud betreibt, und geschlossenen Systemen in einer technisch abgegrenzten Umgebung. Ihr Fazit steht dort wörtlich: „Technisch geschlossene Systeme sind daher aus datenschutzrechtlicher Sicht vorzugswürdig.“ Ein Modell auf dem eigenen Server ist genau so ein System, sofern du es richtig abschottest.
 
-Der zweite Grund ist Geld, allerdings mit Einschränkung. Lokal fällt keine Rechnung pro Token an, dafür Hardware, Strom und Arbeitszeit. Bei den heutigen Cloud-Preisen kleiner Modelle rechnet sich das selten über die Token-Kosten allein, sondern über Mengen, die sonst niemand freigeben würde: Tausende Supportmails, interne Protokolle, Personalunterlagen.
+Der zweite Grund ist Geld, allerdings mit Einschränkung. Lokal fällt keine Rechnung pro Token an, dafür Hardware, Strom und Arbeitszeit. Bei den heutigen Cloud-Preisen kleiner Modelle rechnet sich das selten über die Token-Kosten allein, sondern über Mengen, die sonst niemand freigeben würde: Tausende Support-E-Mails, interne Protokolle, Personalunterlagen.
 
 Der dritte Grund ist Unabhängigkeit. Ein lokales Modell ändert sich nicht über Nacht, wird nicht abgekündigt und funktioniert auch, wenn der Anbieter gerade eine Störung hat.
 
@@ -18,7 +18,7 @@ Unsere Einschätzung aus der Praxis, nicht aus Benchmarks:
 
 | Aufgabe | Lokal mit kleinem Modell | Anmerkung |
 |---|---|---|
-| Texte zusammenfassen, Mails vorsortieren | Gut | Klare, kurze Aufgaben liegen kleinen Modellen |
+| Texte zusammenfassen, E-Mails vorsortieren | Gut | Klare, kurze Aufgaben liegen kleinen Modellen |
 | Daten aus Dokumenten ziehen, etwa Rechnungsnummern | Gut | Ergebnis immer mit Stichproben prüfen |
 | Fragen an eigene Dokumente, also RAG | Mittel bis gut | Hängt stark an Aufbereitung und Suche |
 | Produkttexte entwerfen | Mittel | Stil und Fakten brauchen mehr Nacharbeit als bei großen Modellen |
@@ -41,13 +41,13 @@ Wie groß der Effekt ist, zeigen die Beispielzahlen aus derselben Dokumentation 
 
 Eine 4-Bit-Variante braucht also grob ein Siebtel des Platzes. Laut Hugging Face liegt das verbreitete Format Q4_K bei etwa 4,5 Bit pro Gewicht, Q8_0 bei 8 Bit. Für kleine Firmen heißt das: Modelle bis etwa 8 Milliarden Parameter passen auf normale Rechner, 70 Milliarden brauchen eine Workstation mit viel Speicher.
 
-Zum Modell selbst kommt der Kontext. Ollama weist ausdrücklich darauf hin, dass ein längerer Kontext mehr Speicher braucht, und passt die Voreinstellung an den Grafikspeicher an: unter 24 GB sind es 4.000 Token, zwischen 24 und 48 GB 32.000, darüber 256.000. Für Agenten und Programmieraufgaben empfiehlt Ollama mindestens 64.000 Token. Wer lange Dokumente verarbeiten will, plant deshalb Speicher über die reine Modellgröße hinaus ein.
+Zum Modell selbst kommt der Kontext. Ollama weist ausdrücklich darauf hin, dass ein längerer Kontext mehr Speicher braucht. Die Voreinstellung passt sich deshalb dem Grafikspeicher an: unter 24 GB sind es 4.000 Token, zwischen 24 und 48 GB 32.000, darüber 256.000. Für Agenten und Programmieraufgaben empfiehlt Ollama mindestens 64.000 Token. Wer lange Dokumente verarbeiten will, plant deshalb Speicher über die reine Modellgröße hinaus ein.
 
 ## Drei Hardware-Stufen
 
 **Stufe 1: der vorhandene Laptop.** LM Studio empfiehlt 16 GB Arbeitsspeicher, auf Windows dazu mindestens 4 GB eigenen Grafikspeicher. Auf Macs läuft LM Studio nur mit Apple-Chips ab macOS 14, Ollama unterstützt auf Apple-Chips Prozessor und Grafik, auf älteren Intel-Macs nur den Prozessor. Damit laufen Modelle wie LFM3, dessen Textmodell laut Liquid AI bei 4 Bit in rund 1 GB passt; die Datei auf Hugging Face ist 1,10 GB groß.
 
-**Stufe 2: ein Arbeitsplatz mit Grafikkarte.** Ein Papier aus dem Expertenkreis KI-Sicherheit der Allianz für Cybersicherheit, die das BSI betreibt, nennt als Richtwert einen modernen Gaming-PC mit mindestens 6 GB Grafikspeicher für kleine Modelle und 12 GB für relativ komplexe Anwendungen. Das Papier stammt von externen Fachleuten und ist keine offizielle Position des BSI, gibt aber eine gute Orientierung. In diese Klasse fällt Nemotron 3.5 Bolt E4B von NVIDIA, das laut NVIDIA in seinen Zielanwendungen mit rund 4 GB auskommt; die 4-Bit-Datei auf Hugging Face ist mit 6,18 GB allerdings größer.
+**Stufe 2: ein Arbeitsplatz mit Grafikkarte.** Ein Papier aus dem Expertenkreis KI-Sicherheit der Allianz für Cybersicherheit, die das BSI betreibt, nennt als Richtwert einen modernen Gaming-PC mit mindestens 6 GB Grafikspeicher für kleine Modelle und 12 GB für relativ komplexe Anwendungen. Das Papier stammt von externen Fachleuten und ist keine offizielle Position des BSI, gibt aber eine gute Orientierung. In diese Klasse fällt Nemotron 3.5 Bolt E4B von NVIDIA. In NVIDIAs Test auf einer RTX 5070 belegt es je nach Gesprächslänge 3,5 bis 4,3 GB Grafikspeicher, die 4-Bit-Datei auf Hugging Face ist mit 6,18 GB allerdings größer.
 
 **Stufe 3: ein Server fürs Team.** Wer Modelle mit 70 Milliarden Parametern betreiben oder viele Nutzer gleichzeitig bedienen will, braucht entsprechend Grafikspeicher, nach der Tabelle oben mindestens gut 43 GB plus Kontext. Das ist der Punkt, an dem ein Gespräch mit einem Systemhaus oder ein gemieteter GPU-Server in einem europäischen Rechenzentrum sinnvoll wird.
 
@@ -71,7 +71,7 @@ Lokal heißt nicht lizenzfrei. Vier Beispiele zeigen, warum sich ein Blick lohnt
 
 - **LFM3 von Liquid AI** steht unter der LFM Open License, die auf Apache 2.0 aufbaut. Das Recht zur kommerziellen Nutzung endet aber, sobald der Jahresumsatz des Unternehmens 10 Millionen Dollar übersteigt. Darüber braucht es eine kaufpflichtige Lizenz.
 - **Nemotron 3.5 Bolt** steht unter der OpenMDW-Lizenz 1.1, die Nutzung ohne Einschränkungen erlaubt, solange Lizenz und Hinweise erhalten bleiben. NVIDIA gibt das Modell ausdrücklich für kommerzielle Nutzung frei.
-- **Open WebUI** stand bis Version 0.6.5 unter reiner BSD-3-Lizenz. Seit Version 0.6.6 vom April 2025 verbietet ein Zusatz, den Namen und das Logo zu entfernen oder zu ersetzen, es sei denn, die Installation hat höchstens 50 Endnutzer in 30 Tagen, es gibt eine schriftliche Erlaubnis oder eine Enterprise-Lizenz.
+- **Open WebUI** stand bis Version 0.6.5 unter reiner BSD-3-Lizenz. Seit Version 0.6.6 vom April 2025 verbietet ein Zusatz, den Namen und das Logo zu entfernen oder zu ersetzen. Ausgenommen sind Installationen mit höchstens 50 Endnutzern in 30 Tagen, mit schriftlicher Erlaubnis oder mit Enterprise-Lizenz.
 - **LM Studio** ist kein Open Source. Für interne Nutzung ist es frei, als Grundlage für ein Angebot an Kunden nicht.
 
 Schreib die Lizenz jedes eingesetzten Modells in dein Verzeichnis der eingesetzten Software. Bei Modellen ändert sie sich mit neuen Versionen öfter als bei klassischer Software.
@@ -100,7 +100,7 @@ Die Funktion ist zunächst in Opera One verfügbar, für Opera GX und Neon angek
 
 ## Dein Pilot in drei Wochen
 
-1. **Woche 1:** Eine Aufgabe mit sensiblen Daten und klarer Erfolgsmessung wählen, etwa das Vorsortieren von Supportmails. LM Studio auf einem vorhandenen Rechner installieren und zwei bis drei kleine Modelle mit 30 echten, aber anonymisierten Beispielen testen.
+1. **Woche 1:** Eine Aufgabe mit sensiblen Daten und klarer Erfolgsmessung wählen, etwa das Vorsortieren von Support-E-Mails. LM Studio auf einem vorhandenen Rechner installieren und zwei bis drei kleine Modelle mit 30 echten, aber anonymisierten Beispielen testen.
 2. **Woche 2:** Das beste Modell über Ollama auf einem Rechner im internen Netz bereitstellen, Cloud-Funktionen abschalten, Open WebUI davorsetzen und fünf Kollegen Konten geben.
 3. **Woche 3:** Ergebnisse gegen die Arbeit von Hand vergleichen, Zeitersparnis und Fehlerquote notieren, Lizenzen und Datenschutz dokumentieren. Dann entscheiden: ausbauen, auf ein größeres Modell wechseln oder diese Aufgabe doch einem Business-Tarif in der Cloud geben.
 

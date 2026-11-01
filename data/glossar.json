@@ -4,7 +4,7 @@
   {
    "t": "Agent",
    "icon": "bot",
-   "d": "Ein Sprachmodell, das nicht nur antwortet, sondern Werkzeuge benutzt und mehrere Schritte selbst plant: suchen, klicken, Dateien schreiben, Mails verschicken. Je mehr ein Agent darf, desto wichtiger sind Freigaben und Protokolle.",
+   "d": "Ein Sprachmodell, das nicht nur antwortet, sondern Werkzeuge benutzt und mehrere Schritte selbst plant: suchen, klicken, Dateien schreiben, E-Mails verschicken. Je mehr ein Agent darf, desto wichtiger sind Freigaben und Protokolle.",
    "see": [
     "Tool Use",
     "MCP",
@@ -75,12 +75,17 @@
    ],
    "tools": [],
    "cat": "bilder",
-   "spruch": "Der Herkunftsstempel auf dem Bild. Hält, solange keiner ihn abschleift."
+   "spruch": "Der Herkunftsstempel auf dem Bild. Hält, solange keiner ihn abschleift.",
+   "auch": [
+    "Content Credentials",
+    "SynthID",
+    "IPTC"
+   ]
   },
   {
    "t": "Chatbot",
    "icon": "chat",
-   "d": "Programm, mit dem du per Text oder Sprache redest. Heute meist ein Sprachmodell mit Oberfläche, etwa ChatGPT, Claude oder Le Chat.",
+   "d": "Programm, mit dem du per Text oder Sprache redest. Heute meist ein Sprachmodell mit Oberfläche, etwa ChatGPT, Claude oder Vibe von Mistral.",
    "see": [
     "LLM",
     "System-Prompt"
@@ -88,10 +93,10 @@
    "tools": [
     "ChatGPT",
     "Claude",
-    "Le Chat von Mistral"
+    "Vibe von Mistral"
    ],
    "cat": "text-und-sprache",
-   "spruch": "Der Kollege am Tresen, der immer Zeit hat und nie Kaffeepause macht.",
+   "spruch": "Der Tresen, an dem immer jemand steht. Ob der Bescheid weiß, steht auf einem anderen Blatt.",
    "auch": [
     "Chatbots"
    ]
@@ -155,10 +160,12 @@
   {
    "t": "EU AI Act",
    "icon": "building",
-   "d": "EU-Verordnung über künstliche Intelligenz, in Kraft seit 1. August 2024 und stufenweise anwendbar. Sie teilt KI-Systeme nach Risiko ein. Seit Februar 2025 müssen Unternehmen, die KI einsetzen, für ausreichende KI-Kompetenz ihrer Leute sorgen.",
+   "d": "EU-Verordnung über künstliche Intelligenz, in Kraft seit 1. August 2024 und stufenweise anwendbar. Sie teilt KI-Systeme nach Risiko ein. Seit Februar 2025 gilt die Pflicht zur KI-Kompetenz, seit dem 2. August 2026 die Transparenzpflichten aus Artikel 50 für Chatbots, Deepfakes und KI-Texte. Der KI-Omnibus, Verordnung (EU) 2026/1744, hat die Pflichten für Hochrisiko-Systeme auf Dezember 2027 und August 2028 verschoben.",
    "see": [
     "DSGVO",
-    "Deepfake"
+    "Deepfake",
+    "KI-Kompetenz",
+    "Anbieter und Betreiber"
    ],
    "tools": [],
    "cat": "",
@@ -277,7 +284,7 @@
   {
    "t": "LLM",
    "icon": "cpu",
-   "d": "Large Language Model, auf Deutsch großes Sprachmodell. Trainiert auf riesigen Textmengen, sagt es das wahrscheinlich nächste Wortstück voraus. Darauf bauen ChatGPT, Claude, Gemini und Le Chat auf.",
+   "d": "Large Language Model, auf Deutsch großes Sprachmodell. Trainiert auf riesigen Textmengen, sagt es das wahrscheinlich nächste Wortstück voraus. Darauf bauen ChatGPT, Claude, Gemini und Vibe von Mistral auf.",
    "see": [
     "Token",
     "Chatbot",
@@ -327,7 +334,7 @@
   {
    "t": "MCP",
    "icon": "puzzle",
-   "d": "Model Context Protocol: offener Standard, über den KI-Anwendungen an Werkzeuge und Datenquellen angeschlossen werden, etwa Kalender, Datenbanken oder Shop-Systeme. 2024 von Anthropic vorgestellt, inzwischen von vielen Anbietern unterstützt.",
+   "d": "Model Context Protocol: offener Standard, über den KI-Anwendungen an Werkzeuge und Datenquellen angeschlossen werden, etwa Kalender, Datenbanken oder Shop-Systeme. 2024 von Anthropic vorgestellt, seit Dezember 2025 bei der Agentic AI Foundation der Linux Foundation und von vielen Anbietern unterstützt.",
    "see": [
     "Agent",
     "Tool Use",
@@ -407,7 +414,7 @@
   {
    "t": "Prompt Injection",
    "icon": "x",
-   "d": "Angriff, bei dem versteckte Anweisungen in einer Webseite, Mail oder Datei das Modell umsteuern. Gefährlich bei Agenten, die lesen und handeln dürfen.",
+   "d": "Angriff, bei dem versteckte Anweisungen in einer Webseite, E-Mail oder Datei das Modell umsteuern. Gefährlich bei Agenten, die lesen und handeln dürfen.",
    "see": [
     "Agent",
     "Guardrails"
@@ -470,7 +477,11 @@
    ],
    "tools": [],
    "cat": "",
-   "spruch": "Erst denken, dann reden. Kostet Zeit, spart Ausreden."
+   "spruch": "Erst denken, dann reden. Kostet Zeit, spart Ausreden.",
+   "auch": [
+    "Denk-Token",
+    "Denkphase"
+   ]
   },
   {
    "t": "Speech-to-Text",
@@ -613,7 +624,7 @@
     "Claude"
    ],
    "cat": "automatisierung-und-ki-agenten",
-   "spruch": "Der Praktikant darf jetzt an die Maus. Bleib in der Nähe."
+   "spruch": "Die KI bekommt die Maus. Du bleibst trotzdem im Raum."
   },
   {
    "t": "Mixture of Experts",
@@ -629,6 +640,157 @@
    ],
    "cat": "",
    "spruch": "Ein Großraumbüro, in dem bei jeder Frage nur die zuständigen Leute aufstehen."
+  },
+  {
+   "t": "Anbieter und Betreiber",
+   "icon": "building",
+   "d": "Die zwei Rollen im EU AI Act. Anbieter entwickeln ein KI-System oder bringen es unter eigenem Namen auf den Markt, Betreiber setzen es beruflich ein. Wer ein fremdes Modell in ein eigenes Tool für Kunden packt, wird selbst zum Anbieter.",
+   "see": [
+    "EU AI Act",
+    "Deepfake",
+    "KI-Kompetenz"
+   ],
+   "tools": [],
+   "cat": "",
+   "spruch": "Der eine baut die Leiter, der andere steigt drauf. Regeln gibt es für beide."
+  },
+  {
+   "t": "KI-Kompetenz",
+   "icon": "book",
+   "d": "Pflicht aus Artikel 4 des EU AI Act, gültig seit dem 2. Februar 2025: Wer KI anbietet oder im Betrieb einsetzt, sorgt dafür, dass die Leute daran genug darüber wissen, was die Systeme können und wo sie danebenliegen.",
+   "see": [
+    "EU AI Act",
+    "Halluzination",
+    "Anbieter und Betreiber"
+   ],
+   "tools": [],
+   "cat": "",
+   "spruch": "Die Einweisung an der Kreissäge, nur für Software.",
+   "auch": [
+    "KI-Schulung"
+   ]
+  },
+  {
+   "t": "Datenschutz-Folgenabschätzung",
+   "icon": "shield",
+   "d": "Pflichtprüfung nach Artikel 35 DSGVO, wenn eine Verarbeitung voraussichtlich ein hohes Risiko für die Betroffenen hat. Beim KI-Einsatz liegt das laut Datenschutzkonferenz vielfach vor, und du brauchst dafür Angaben des Anbieters zur Funktionsweise.",
+   "see": [
+    "DSGVO",
+    "AVV",
+    "Schatten-KI"
+   ],
+   "tools": [],
+   "cat": "",
+   "spruch": "Erst den Statiker fragen, dann die Wand rausnehmen.",
+   "auch": [
+    "Folgenabschätzung",
+    "DSFA"
+   ]
+  },
+  {
+   "t": "Schatten-KI",
+   "icon": "lock",
+   "d": "KI-Tools, die Beschäftigte auf eigene Faust nutzen, oft mit privaten Konten und ohne Vertrag mit dem Anbieter. Die Datenschutzkonferenz beschreibt genau diese eigenmächtige Nutzung als verbreitetes Problem.",
+   "see": [
+    "AVV",
+    "DSGVO",
+    "Datenschutz-Folgenabschätzung"
+   ],
+   "tools": [],
+   "cat": "",
+   "spruch": "Das Werkzeug, das jemand von zu Hause mitgebracht hat. Praktisch, bis keiner mehr weiß, wem es gehört."
+  },
+  {
+   "t": "Prompt-Caching",
+   "icon": "zap",
+   "d": "Der gleichbleibende Anfang vieler Anfragen, etwa Stilvorgaben oder ein Produktkatalog, wird beim Anbieter zwischengespeichert und bei der nächsten Anfrage günstiger gelesen. Damit das greift, gehört der feste Teil nach vorn und der wechselnde ans Ende.",
+   "see": [
+    "Token",
+    "API",
+    "Stapelverarbeitung"
+   ],
+   "tools": [],
+   "cat": "",
+   "spruch": "Die Werkzeugwand: Was du ständig brauchst, hängt griffbereit und muss nicht jedes Mal aus dem Keller.",
+   "auch": [
+    "Cache",
+    "Cache-Lesen"
+   ]
+  },
+  {
+   "t": "Stapelverarbeitung",
+   "icon": "clock",
+   "d": "Anfragen ohne Zeitdruck werden gesammelt und später abgearbeitet, dafür rechnen mehrere Anbieter günstiger ab. Passt zu Produkttexten, Übersetzungen oder Auswertungen über Nacht, nicht zum Chat mit Kunden.",
+   "see": [
+    "API",
+    "Prompt-Caching",
+    "Token"
+   ],
+   "tools": [],
+   "cat": "",
+   "spruch": "Alles in einen Korb und abends in die Waschmaschine.",
+   "auch": [
+    "Batch"
+   ]
+  },
+  {
+   "t": "hreflang",
+   "icon": "globe",
+   "d": "Angabe im HTML-Kopf, im HTTP-Header oder in der Sitemap, die Google sagt, welche Sprachversionen einer Seite zusammengehören. Fehlt der Rückverweis einer Version, wertet Google die Angaben nicht aus.",
+   "see": [
+    "AI Overviews",
+    "llms.txt"
+   ],
+   "tools": [],
+   "cat": "",
+   "spruch": "Das Türschild mit allen Sprachen, damit niemand im falschen Stockwerk landet."
+  },
+  {
+   "t": "AI Overviews",
+   "icon": "search",
+   "d": "KI-Antworten, die Google über den Suchergebnissen einblendet, mit Links zu den Quellen; AI Mode ist der ausführlichere Chat-Modus dazu. Laut Google reicht es, wenn eine Seite indexiert ist und mit Snippet erscheinen darf.",
+   "see": [
+    "KI-Suchmaschine",
+    "llms.txt",
+    "hreflang"
+   ],
+   "tools": [
+    "Gemini"
+   ],
+   "cat": "marketing-und-seo",
+   "spruch": "Der Beifahrer, der die Antwort vorliest, bevor du das Schild selbst gesehen hast.",
+   "auch": [
+    "AI Mode"
+   ]
+  },
+  {
+   "t": "llms.txt",
+   "icon": "text",
+   "d": "Vorgeschlagene Textdatei im Stammverzeichnis einer Website, die Sprachmodellen das Angebot in Kurzform erklären soll. Google sagt ausdrücklich, dass AI Overviews und AI Mode keine solche Datei brauchen.",
+   "see": [
+    "AI Overviews",
+    "KI-Suchmaschine"
+   ],
+   "tools": [],
+   "cat": "",
+   "spruch": "Der Zettel an der Werkstatttür. Ob ihn jemand liest, steht nicht drauf."
+  },
+  {
+   "t": "Vibe Coding",
+   "icon": "code",
+   "d": "Programmieren per Zuruf: Du beschreibst, was die App tun soll, und ein KI-Werkzeug schreibt den Code, oft ohne dass du ihn liest. Für Prototypen schnell, für Software mit Kundendaten nur mit Review durch jemanden, der den Code versteht.",
+   "see": [
+    "Agent",
+    "Prompt",
+    "Halluzination"
+   ],
+   "tools": [
+    "Lovable",
+    "Bolt.new",
+    "Capacity"
+   ],
+   "cat": "programmieren-mit-ki",
+   "spruch": "Bauen nach Gefühl. Die Statik prüft trotzdem jemand mit Zollstock."
   }
  ]
 }

@@ -1,0 +1,55 @@
+name: Wöchentlicher Link-Check
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"   # montags 05:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Per Commit-SHA gepinnt (ein Tag kann umgehängt werden); Token bleibt nicht in .git/config liegen.
+      # Kein setup-python: check_links.py braucht nur die Standardbibliothek, python3 liegt auf ubuntu-latest bereit.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - name: Links prüfen
+        id: check
+        run: |
+          # check_links.py endet bei toten Links mit Status 1; erst Ergebnis sichern, dann melden
+          status=0
+          python3 scripts/check_links.py > linkcheck.txt 2>&1 || status=$?
+          cat linkcheck.txt
+          if [ "$status" -ne 0 ] || grep -qE ', [1-9][0-9]* tot' linkcheck.txt; then echo "dead=1" >> "$GITHUB_OUTPUT"; fi
+      - name: Issue bei toten Links
+        if: steps.check.outputs.dead == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          {
+            echo "Der wöchentliche Link-Check vom $(date +%F) hat tote Links gefunden."
+            echo
+            echo '```'
+            tail -n 40 linkcheck.txt
+            echo '```'
+            echo
+            echo "Bitte die toten Links in README.de.md bzw. data/*.json ersetzen oder entfernen."
+          } > body.md
+          # Kein neues Issue pro Woche: steht schon eins offen, bekommt es einen Kommentar
+          open_issue=$(gh issue list --state open --search 'in:title "Tote Links"' --json number,title \
+            --jq '[.[] | select(.title | startswith("Tote Links"))][0].number // empty')
+          if [ -n "$open_issue" ]; then
+            gh issue comment "$open_issue" --body-file body.md
+          else
+            gh issue create --title "Tote Links $(date +%F)" --body-file body.md
+          fi
+      - name: Lauf als fehlgeschlagen markieren
+        if: steps.check.outputs.dead == '1'
+        run: exit 1

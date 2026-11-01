@@ -1,6 +1,6 @@
 > **Kurz gesagt:** Ob ein KI-Tool datenschutzrechtlich passt, entscheidet selten das Modell, sondern der Tarif. Die Business-Angebote von OpenAI, Anthropic und Google trainieren nach eigenen Angaben standardmäßig nicht mit deinen Eingaben und bieten einen Vertrag zur Auftragsverarbeitung. Bei kostenlosen und privaten Konten sieht das oft anders aus. Dieser Ratgeber zeigt, was die deutschen Aufsichtsbehörden erwarten, wo bei den großen Anbietern der Trainingsschalter sitzt, was „Datenstandort Europa“ wirklich abdeckt und welche zehn Fragen du jedem Anbieter vor dem Start stellst.
 
-Grundlage sind die Orientierungshilfe der Datenschutzkonferenz vom Mai 2024 sowie die Datenschutzseiten von OpenAI, Anthropic, Google, Mistral und DeepL, Stand 28. Oktober 2026. Das hier ist keine Rechtsberatung, sondern eine Arbeitshilfe. Für Personal-, Gesundheits- oder Kundendaten in großem Umfang gehört dein Datenschutzbeauftragter von Anfang an mit an den Tisch.
+Grundlage sind die Orientierungshilfe der Datenschutzkonferenz vom Mai 2024 sowie die Datenschutzseiten von OpenAI, Anthropic, Google, Mistral und DeepL, Stand 29. Oktober 2026. Das hier ist keine Rechtsberatung, sondern eine Arbeitshilfe. Für Personal-, Gesundheits- oder Kundendaten in großem Umfang gehört die Person, die bei dir den Datenschutz verantwortet, von Anfang an mit an den Tisch.
 
 ## Die erste Frage: Sind Personendaten im Spiel?
 
@@ -24,7 +24,7 @@ Die Orientierungshilfe „Künstliche Intelligenz und Datenschutz“ der DSK ist
 - **Datenschutzfreundlich voreinstellen:** Training und Verlauf schon beim Einrichten eines Kontos abschalten, statt es jedem Nutzer selbst zu überlassen.
 - **Ergebnisse prüfen:** Die DSK verlangt, Ergebnisse auf Richtigkeit und auf Diskriminierung zu prüfen, bevor sie genutzt werden.
 
-Inzwischen hat die DSK nachgelegt: im Juni 2025 mit einer Orientierungshilfe zu technischen und organisatorischen Maßnahmen bei KI-Systemen und im Oktober 2025 mit einem Papier zu den Besonderheiten von RAG, also KI-Systemen, die eigene Dokumente durchsuchen. Wer einen Chatbot auf das eigene Handbuch oder den Produktkatalog setzt, findet dort die passenden Hinweise.
+Inzwischen hat die DSK nachgelegt. Im Juni 2025 kam eine Orientierungshilfe zu technischen und organisatorischen Maßnahmen bei KI-Systemen, im Oktober 2025 ein Papier zu den Besonderheiten von RAG, also KI-Systemen, die eigene Dokumente durchsuchen. Wer einen Chatbot auf das eigene Handbuch oder den Produktkatalog setzt, findet dort die passenden Hinweise.
 
 ## Privat-Abo oder Business-Tarif: der größte Unterschied
 
@@ -53,7 +53,7 @@ Die Konsequenz ist einfach: Schreib in eure KI-Regeln, dass Gespräche mit Kunde
 Wer trotz allem ein Einzelkonto nutzt, etwa für eigene Recherchen ohne Kundendaten, sollte den Trainingsschalter kennen.
 
 - **Claude (Free, Pro, Max):** In den Einstellungen unter Privatsphäre den Punkt zur Verbesserung der KI-Modelle ausschalten. Laut Anthropic gilt das für neue und fortgesetzte Chats. Bereits laufendes oder abgeschlossenes Training bleibt davon unberührt, und Gespräche, die die Sicherheitsfilter markieren, können weiter für Sicherheitszwecke genutzt werden.
-- **Le Chat von Mistral:** Mistral führt den Chat in seiner Hilfe inzwischen unter dem Namen Vibe. Im Admin-Bereich unter Privatsphäre lässt sich die Nutzung der Interaktionen für Training abschalten, in den Apps über die Datenfreigabe in den Kontoeinstellungen. Wichtig: Der Schalter für Vibe und der für die API sind getrennt, beide müssen einzeln ausgeschaltet werden.
+- **Vibe von Mistral, früher Le Chat:** Seit August 2026 heißt der Chat von Mistral Vibe, Adresse und Konto sind geblieben. Im Admin-Bereich unter Privatsphäre lässt sich die Nutzung der Interaktionen für Training abschalten, in den Apps über die Datenfreigabe in den Kontoeinstellungen. Wichtig: Der Schalter für Vibe und der für die API sind getrennt, beide müssen einzeln ausgeschaltet werden.
 - **DeepL:** In der kostenlosen Version gibt es keinen solchen Schalter. Wer Texte mit Personenbezug übersetzen will, braucht laut Datenschutzerklärung einen Pro-Tarif.
 - **OpenAI-API und Business:** Hier ist Training ohnehin aus, solange du nicht aktiv zustimmst, etwa über die Freigabe im API-Dashboard.
 
@@ -83,7 +83,7 @@ Für dich als Kunde heißt das nicht, Cloud-KI zu meiden. Es heißt, dass auch g
 
 ## Zehn Fragen an jeden Anbieter
 
-Diese Fragen kannst du per Mail an den Vertrieb schicken oder auf den Datenschutzseiten nachschlagen. Fehlen Antworten, ist das bereits eine Antwort.
+Diese Fragen kannst du per E-Mail an den Vertrieb schicken oder auf den Datenschutzseiten nachschlagen. Fehlen Antworten, ist das bereits eine Antwort.
 
 1. Werden Ein- und Ausgaben in unserem Tarif für Training genutzt, und lässt sich das zentral für alle Konten abschalten?
 2. Gibt es Ausnahmen, etwa für Feedback, Fehlerberichte oder markierte Inhalte?

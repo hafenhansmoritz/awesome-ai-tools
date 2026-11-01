@@ -11,7 +11,7 @@
    "kurz": "Die neue Claude-Generation kostet bei gleicher Leistung deutlich weniger. Projekte, die an den API-Kosten gescheitert sind, gehören neu durchgerechnet.",
    "text": [
     "Anthropic hat im September Claude Opus 5.5 vorgestellt und gibt an, dass es bei typischen Aufgaben rund 40 Prozent weniger kostet als Opus 5. Im Oktober folgte Claude Haiku 5.5 für 0,10 Dollar pro Million Eingabe-Token und 0,50 Dollar pro Million Ausgabe-Token bei Eingaben bis 100.000 Token, laut Anthropic im Schnitt etwa 75 Prozent günstiger als der Vorgänger Haiku 4.5.",
-    "OpenAI zieht mit: GPT-6.1 Sol kostet laut OpenAI 2 Dollar pro Million Eingabe-Token und 10 Dollar pro Million Ausgabe-Token, das am 26. Oktober vorgestellte GPT-6.1 Terra die Hälfte davon. Google verlangt für Gemini 4 Argon bis zum 30. November einen Einführungspreis von 2 und 10 Dollar, danach 4 und 20 Dollar. Die Spitze wird also nicht billiger, aber die Mittelklasse rückt so nah heran, dass sie für die meiste Alltagsarbeit reicht."
+    "OpenAI zieht mit: GPT-6.1 Sol kostet laut OpenAI 2 Dollar pro Million Eingabe-Token und 10 Dollar pro Million Ausgabe-Token, das am 26. Oktober vorgestellte GPT-6.1 Terra die Hälfte davon. Google verlangt für Gemini 4 Argon bis zum 30. November 2026 einen Einführungspreis von 2 und 10 Dollar, danach 4 und 20 Dollar. Die Spitze wird also nicht billiger, aber die Mittelklasse rückt so nah heran, dass sie für die meiste Alltagsarbeit reicht."
    ],
    "fuer_dich": "Produkttexte in drei Sprachen, Support-Vorsortierung oder das Zusammenfassen von Handbüchern kosten bei kleinen Modellen jetzt Cent-Beträge pro Hundert Durchläufe. Rechne mit echten Mengen, bevor du ein Projekt wegen der Kosten beerdigst.",
    "urteil": "Erst das kleine Modell testen. Oft reicht der Haiku, wo du aus Gewohnheit den Opus bestellt hättest.",
@@ -65,10 +65,10 @@
    "id": "agenten-hintergrund",
    "titel": "Agenten arbeiten weiter, wenn du Feierabend hast",
    "icon": "bot",
-   "kurz": "Gemini hat einen Aufgaben-Modus, Claude Opus 5.5 hält stundenlange Arbeitsaufträge durch. Der Agent wird vom Chatpartner zum Kollegen mit eigenem Schreibtisch.",
+   "kurz": "Gemini hat einen Aufgaben-Modus, Claude Opus 5.5 hält stundenlange Arbeitsaufträge durch. Aus dem Chatpartner wird jemand mit eigenem Schreibtisch und eigener Aufgabenliste.",
    "text": [
     "Mit Gemini 4 Argon hat Google in der Gemini-App einen Schalter von Chat auf Aufgaben eingeführt. Gemini arbeitet dann weiter, während du nicht am Rechner sitzt, meldet Zwischenstände und verbindet sich mit über 40 Apps, darunter Shopify und Adobe. Zum Start gilt das für Abonnenten von Google AI Pro und Ultra. Wie stark Agenten auch Fachleute lenken, zeigt eine Studie von Anthropic vom 27. Oktober: 50 Analysten arbeiteten mit Agenten, die heimlich auf eine von zwei Optionen festgelegt waren. In 86 Prozent der Fälle folgten sie dieser Tendenz, und nur 15 Prozent nannten den Agenten als Quelle ihrer Argumente.",
-    "Anthropic beschreibt Claude Opus 5.5 ausdrücklich als Modell für mehrstündige, eigenständige Aufgaben und nennt als Beispiel eine 18 Stunden lange Entwicklungssitzung ohne Aufsicht. Laut Anthropic verteilt das Modell Arbeit außerdem besser an Unter-Agenten. Ab Ende Oktober stellt Anthropic die Claude-Apps für Pro, Max und Team zudem auf einen automatischen Modus um, in dem ein Prüfmodell riskante Schritte blockiert, statt jeden Schritt abfragen zu lassen. Auch IBM rüstet nach: Laut Ankündigung vom 27. Oktober vergibt HashiCorp Vault künftig Agenten eigene Identitäten mit kurzlebigen Zugangsdaten, knappen Rechten und Sperre in Echtzeit, sobald ein Agent etwas Unerlaubtes versucht."
+    "Anthropic beschreibt Claude Opus 5.5 ausdrücklich als Modell für mehrstündige, eigenständige Aufgaben und nennt als Beispiel eine 18 Stunden lange Entwicklungssitzung ohne Aufsicht. Laut Anthropic verteilt das Modell Arbeit außerdem besser an Unter-Agenten. Laut Ankündigung vom 22. Oktober wird der automatische Modus ab Ende Oktober in den meisten Claude-Apps für Pro, Max und Team zur Voreinstellung für neue Sitzungen. Darin blockiert ein Prüfmodell riskante Schritte, statt jeden Schritt abfragen zu lassen. Auch IBM rüstet nach: Laut Ankündigung vom 27. Oktober vergibt HashiCorp Vault künftig Agenten eigene Identitäten mit kurzlebigen Zugangsdaten, knappen Rechten und Sperre in Echtzeit, sobald ein Agent etwas Unerlaubtes versucht."
    ],
    "fuer_dich": "Recherchen, Datenpflege oder Code-Umbauten lassen sich über Nacht erledigen. Dafür brauchst du klare Grenzen: welche Konten der Agent nutzen darf, wann er fragen muss und wo er protokolliert, was er getan hat.",
    "urteil": "Ein Agent am langen Seil ist praktisch. Gib ihm trotzdem ein Seil.",
@@ -124,7 +124,7 @@
    "kurz": "MCP, Agent Skills und der Agent goose liegen jetzt bei einer neutralen Stiftung der Linux Foundation. Was du einmal für einen Agenten baust, läuft zunehmend auch beim nächsten.",
    "text": [
     "Am 22. Oktober hat Anthropic den Standard Agent Skills an die Agentic AI Foundation übergeben, die unter dem Dach der Linux Foundation arbeitet. Ein Skill ist ein Ordner mit einer Datei SKILL.md und optionalen Skripten. Laut Anthropic haben ihn bereits über 70 Agenten-Plattformen eingebaut, darunter ChatGPT, Cursor, GitHub Copilot und VS Code.",
-    "Dieselbe Stiftung verwaltet schon das Model Context Protocol und den quelloffenen Agenten goose, den Block eingebracht hat. Damit liegen die drei wichtigsten Bausteine für Agenten, also Werkzeuganschluss, Fachwissen und Laufzeit, bei einer herstellerneutralen Stelle. Auch Apple setzt auf MCP: Laut Apple sollen externe KI-Agenten ab November Inhalte in Keynote, Pages und Numbers lesen, bearbeiten und Abläufe automatisieren können, vorausgesetzt macOS 27 und ein Abo von Apple Creator Studio."
+    "Dieselbe Stiftung verwaltet schon das Model Context Protocol und den quelloffenen Agenten goose, den Block eingebracht hat. Damit liegen die drei wichtigsten Bausteine für Agenten, also Werkzeuganschluss, Fachwissen und Laufzeit, bei einer herstellerneutralen Stelle. Auch Apple setzt auf MCP: Laut Apple sollen externe KI-Agenten laut Ankündigung vom 27. Oktober ab November Inhalte in Keynote, Pages und Numbers lesen, bearbeiten und Abläufe automatisieren können, vorausgesetzt macOS 27 und ein Abo von Apple Creator Studio."
    ],
    "fuer_dich": "Baue Anbindungen an Shop, Warenwirtschaft oder Wiki als MCP-Server und Arbeitsanleitungen als Skills. So wechselst du den KI-Anbieter, ohne alles neu zu verdrahten.",
    "urteil": "Standards sind langweilig. Genau deshalb sparen sie dir später Geld und Nerven.",
@@ -169,7 +169,7 @@
    "icon": "building",
    "kurz": "Mistral bringt ein Modell mit einer Billion Parametern, trainiert in Europa, und eröffnet einen Standort in München. Für Firmen mit Datenbedenken wird die EU-Option ernst.",
    "text": [
-    "Am 6. Oktober hat Mistral eine öffentliche Vorschau von Mistral Large 4 gestartet: ein multimodales Modell mit einer Billion Parametern, von denen pro Anfrage 52 Milliarden arbeiten. Trainiert wurde es nach Angaben von Mistral in eigenen Rechenzentren in Europa, ein europäischer Betrieb aus einer Hand ist Teil des Angebots. Die Gewichte will Mistral bis Ende Oktober veröffentlichen.",
+    "Am 6. Oktober hat Mistral eine öffentliche Vorschau von Mistral Large 4 gestartet: ein multimodales Modell mit einer Billion Parametern, von denen pro Anfrage 52 Milliarden arbeiten. Trainiert wurde es nach Angaben von Mistral in eigenen Rechenzentren in Europa, ein europäischer Betrieb aus einer Hand ist Teil des Angebots. Am 29. Oktober hat Mistral die Gewichte einer nachtrainierten Fassung bei Hugging Face veröffentlicht. Die Lizenz ist eine abgewandelte MIT-Lizenz, nur wer das Modell als Dienst an Dritte verkauft, braucht eine eigene Vereinbarung mit Mistral.",
     "Schon Ende September hat Mistral einen Standort in München eröffnet, mit Forschung zu Industrie- und Physik-KI und Partnern wie BMW, Siemens Energy und der TU München. Dazu kommt laut Mistral eine Finanzierungsrunde über drei Milliarden Euro im September. Aus der Schweiz kommt seit dem 27. Oktober Giotto: Das Reasoning-Modell Alto ist im europäisch gehosteten Chat kostenlos nutzbar, Solo läuft auf einer einzigen Grafikkarte. Firmen können beide in einer dedizierten Cloud in der Schweiz oder der EU mieten oder über Integratoren im eigenen Rechenzentrum betreiben."
    ],
    "fuer_dich": "Wer Kundendaten nicht über den Atlantik schicken will, hat jetzt eine starke Alternative mit Betrieb in Europa. Der Firmensitz ersetzt trotzdem keinen Auftragsverarbeitungsvertrag und keinen Blick in die Einstellungen.",
@@ -177,7 +177,7 @@
    "tools": [
     "Mistral Large 4",
     "Mistral AI",
-    "Le Chat von Mistral",
+    "Vibe von Mistral",
     "Aleph Alpha",
     "Giotto Alto"
    ],
@@ -186,6 +186,11 @@
      "Mistral: Introducing Mistral Large 4",
      "https://mistral.ai/news/mistral-large-4/",
      "2026-10-06"
+    ],
+    [
+     "Mistral: Mistral Large 4 is now open weight",
+     "https://mistral.ai/news/mistral-large-4-oss/",
+     "2026-10-29"
     ],
     [
      "Mistral: Hallo, Deutschland!",
@@ -218,9 +223,9 @@
    "kurz": "Liquid AI und NVIDIA bringen offene Modelle, die mit ein bis vier Gigabyte Speicher auskommen. Vertrauliches muss damit seltener in die Cloud.",
    "text": [
     "Liquid AI hat am 27. Oktober die Modellfamilie LFM3 vorgestellt: sechs offene Modelle um zwei Milliarden Parameter für Text, Bild, Audio und schnelle Ja-Nein-Entscheidungen. Das Textmodell braucht bei 4 Bit laut Hersteller rund ein Gigabyte Speicher, verarbeitet bis zu 256.000 Token Kontext und lässt sich auf einer einzelnen Grafikkarte nachtrainieren.",
-    "NVIDIA hat am 23. Oktober Nemotron 3.5 Bolt E4B veröffentlicht, ein Kleinmodell auf Basis von Gemma 4 für Sprachassistenten und Werkzeugaufrufe. In NVIDIAs eigenem Test belegt es auf einer RTX 5070 rund 3,5 Gigabyte Grafikspeicher, Ollama hatte es noch am selben Tag im Angebot. Für Dokumente kam am 27. Oktober Unlimited OCR 2 von Baidu dazu: ein Modell mit offenen Gewichten unter MIT-Lizenz, das mehrseitige Dokumente in einem Durchgang ausliest und dabei laut Baidu Speicherbedarf und Wartezeit auch bei Hunderten Seiten nahezu konstant hält."
+    "NVIDIA hat am 23. Oktober Nemotron 3.5 Bolt E4B veröffentlicht, ein Kleinmodell auf Basis von Gemma 4 für Sprachassistenten und Werkzeugaufrufe. In NVIDIAs eigenem Test belegt es auf einer RTX 5070 je nach Gesprächslänge 3,5 bis 4,3 Gigabyte Grafikspeicher, Ollama hatte es noch am selben Tag im Angebot. Für Dokumente kam am 27. Oktober Unlimited OCR 2 von Baidu dazu: ein Modell mit offenen Gewichten unter MIT-Lizenz, das mehrseitige Dokumente in einem Durchgang ausliest und dabei laut Baidu Speicherbedarf und Wartezeit auch bei Hunderten Seiten nahezu konstant hält."
    ],
-   "fuer_dich": "Belege vorsortieren, Tickets einordnen oder interne Dokumente durchsuchen geht damit auf einem normalen Bürorechner. Für Fachwissen braucht ein Kleinmodell aber deine Daten oder eine Suche daneben, aus dem Gedächtnis weiß es wenig.",
+   "fuer_dich": "Belege vorsortieren, Tickets einordnen oder interne Dokumente durchsuchen geht damit auf dem eigenen Arbeitsplatzrechner, für Nemotron mit Grafikkarte. Für Fachwissen braucht ein Kleinmodell aber deine Daten oder eine Suche daneben, aus dem Gedächtnis weiß es wenig.",
    "urteil": "Klein heißt nicht dumm, nur spezialisiert. Gib ihm eine enge Aufgabe und keinen Weltfrieden.",
    "erster_schritt": "Installiere Ollama, lade ein Kleinmodell und lass es zehn echte Tickets oder Belege einsortieren, bevor du über Cloud-Kosten diskutierst.",
    "radar": {
@@ -267,13 +272,13 @@
    "icon": "globe",
    "kurz": "Firefox bekommt einen Assistenten mit Mistral-Modellen, die Claude-Werkzeuge können Browser steuern. Die KI sieht künftig, was in deinen Tabs steht.",
    "text": [
-    "Mozilla und Mistral haben im September angekündigt, dass Firefox Smart Window, der KI-Assistent im Browser, mit Mistral-Modellen läuft. Er hilft bei komplexen Suchen und findet Dinge anhand der offenen Tabs wieder. Gespräche werden laut Ankündigung standardmäßig nicht auf den Servern von Mozilla gespeichert. Zuerst startet das in Frankreich und Nordamerika, Deutschland soll später im Jahr 2026 folgen.",
+    "Mozilla und Mistral haben im September angekündigt, dass Firefox Smart Window, der KI-Assistent im Browser, mit Mistral-Modellen läuft. Er hilft bei komplexen Suchen und findet Dinge anhand der offenen Tabs wieder. Gespräche werden laut Ankündigung standardmäßig nicht auf den Servern von Mozilla gespeichert. Zuerst startet das in Frankreich und Nordamerika, Deutschland soll laut der Ankündigung vom September später im Jahr 2026 folgen.",
     "Bei Anthropic haben die Python- und TypeScript-Bibliotheken mit Haiku 5.5 eine Beta für Computer- und Browser-Steuerung bekommen. Damit wird der Browser zur Arbeitsfläche für Agenten, die Formulare ausfüllen und Seiten vergleichen. Opera geht am 27. Oktober einen Schritt weiter: Mit WebAI laufen KI-Modelle direkt im Browser, Webseiten und Erweiterungen nutzen sie ohne Server, API-Schlüssel und Kosten pro Anfrage. Die Vorschau startet in Opera One auf Windows und Macs mit Apple-Chip, eingeschaltet wird sie erst auf Wunsch in den Einstellungen."
    ],
    "fuer_dich": "Recherche und Vergleiche werden bequemer. Gleichzeitig liest der Assistent alles, was auf der Seite steht, auch versteckte Anweisungen. Für Kundenportale und Online-Banking gehört er ausgeschaltet.",
-   "urteil": "Der Browser wird zum Kollegen. Bring ihm bei, was er nicht lesen soll.",
+   "urteil": "Der Browser liest jetzt mit. Bring ihm bei, was er übersehen soll.",
    "tools": [
-    "Le Chat von Mistral",
+    "Vibe von Mistral",
     "Claude",
     "Perplexity"
    ],
@@ -382,11 +387,11 @@
     [
      "Google: Build real-time voice applications with Gemini 3.8 Live and 3.5 Transcribe",
      "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
-     ""
+     "2026-09-15"
     ]
    ],
    "label": "Sprache in Echtzeit",
-   "erster_schritt": "Sprich eine Testaufnahme mit euren Produktnamen und Fachbegriffen ein und vergleiche daran zwei Spracherkennungen.",
+   "erster_schritt": "Sprich eine Testaufnahme mit deinen Produktnamen und Fachbegriffen ein und vergleiche daran zwei Spracherkennungen.",
    "radar": {
     "shop": 2,
     "marketing": 1,
@@ -448,19 +453,19 @@
    "id": "ai-act",
    "titel": "EU AI Act: Hochrisiko später, Kennzeichnung jetzt",
    "icon": "shield",
-   "kurz": "Die EU hat die Pflichten für Hochrisiko-Systeme verschoben, aber die Transparenzpflichten nicht. Chatbots müssen sich als KI zeigen, täuschend echte KI-Inhalte brauchen ein Label.",
+   "kurz": "Die EU hat die Pflichten für Hochrisiko-Systeme verschoben. Chatbots müssen sich seit August als KI zeigen und Deepfakes ein Label tragen, nur die maschinenlesbare Markierung älterer Generatoren bekommt eine kurze Übergangsfrist.",
    "text": [
     "Die Verordnung (EU) 2026/1744, der sogenannte Digital Omnibus zur KI, ist am 24. Juli 2026 im Amtsblatt erschienen und am 27. Juli in Kraft getreten. Sie verschiebt die Pflichten für eigenständige Hochrisiko-Systeme nach Anhang III auf den 2. Dezember 2027 und für Hochrisiko-KI in Produkten nach Anhang I auf den 2. August 2028.",
-    "Unverändert gelten die Transparenzpflichten seit dem 2. August 2026. Ab dem 2. Dezember 2026 kommen gezielte Verbote für generative Systeme hinzu, die nicht einvernehmliche intime Bilder oder Darstellungen von Kindesmissbrauch erzeugen."
+    "Seit dem 2. August 2026 gelten die Transparenzpflichten: Chatbots legen offen, dass sie KI sind, und Betreiber kennzeichnen Deepfakes sichtbar. Nur für die maschinenlesbare Markierung durch Anbieter generativer Systeme, die schon vor diesem Tag auf dem Markt waren, gibt es laut Erwägungsgrund 38 eine Übergangsfrist von vier Monaten, also bis zum 2. Dezember 2026. Am selben Tag kommen gezielte Verbote für generative Systeme hinzu, die nicht einvernehmliche intime Bilder oder Darstellungen von Kindesmissbrauch erzeugen."
    ],
    "fuer_dich": "Achte darauf, dass deine Chatbots sich als KI zu erkennen geben, und kennzeichne täuschend echte KI-Inhalte schon jetzt. Wenn du KI etwa zum Sortieren von Bewerbungen einsetzt, hast du bis Dezember 2027 Zeit für die Hochrisiko-Pflichten. Diese Zusammenfassung ist keine Rechtsberatung.",
    "urteil": "Mehr Zeit für die schweren Fälle, keine Schonfrist fürs Kennzeichnen.",
    "tools": [],
    "quellen": [
     [
-     "ERTICO: Digital Omnibus on AI enters into force",
-     "https://ertico.com/digital-omnibus-on-ai-enters-into-force",
-     ""
+     "EU-Kommission: AI Omnibus enters into force",
+     "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+     "2026-07-27"
     ],
     [
      "EUR-Lex: Verordnung (EU) 2026/1744",

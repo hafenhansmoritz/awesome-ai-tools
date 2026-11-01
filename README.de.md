@@ -1,14 +1,15 @@
 # KI-Werkstatt: KI-Tools auf Deutsch
 
-> Über 400 KI-Tools. Geprüft. Sortiert. Ohne Zauberstab. Jedes Tool in einem Satz erklärt, tote Links aussortiert, EU-Anbieter markiert. Weniger Hype, mehr Hebel. Mit Praxis-Deep-Dives von **[PROMPTGOTT](https://promptgott.substack.com/?utm_source=github&utm_medium=referral&utm_campaign=awesome-ki-tools-de)**, dem Substack für AI-Use-Cases, Prompt Engineering und AI-SEO.
+> Über 400 KI-Tools auf Deutsch, sortiert nach Aufgaben. Jedes Tool in einem Satz erklärt, jeder Link regelmäßig abgefragt, EU-Anbieter markiert. Weniger Hype, mehr Hebel. Mit Praxis-Deep-Dives von **[PROMPTGOTT](https://promptgott.substack.com/?utm_source=github&utm_medium=referral&utm_campaign=awesome-ki-tools-de)**, dem Substack für AI-Use-Cases, Prompt Engineering und AI-SEO.
 
 🛠️ [Zur Seite mit Suche und Stack-Finder](https://jmp-collab.github.io/awesome-ai-tools/) · 🇬🇧 [About (English)](README.md) · 📬 [PROMPTGOTT abonnieren](https://promptgott.substack.com/subscribe?utm_source=github&utm_medium=referral&utm_campaign=awesome-ki-tools-de) · ➕ [Tool vorschlagen](#mitmachen)
 
 Gebaut für den deutschsprachigen Raum, auseinandergeschraubt, geputzt und nach Aufgaben sortiert:
 
 - **Ein Satz pro Tool.** Was es kann, wofür es taugt. Keine Werbetexte, die Beschreibungen bleiben sachlich. Gewitzelt wird drumherum.
-- **Link-Check (Stand: 28.10.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
-- **Namen auf Stand.** Bing Chat heißt Copilot, Metaphor heißt Exa. Aktuelle Standard-Tools sind ergänzt.
+- **Link-Check (Stand: 31.10.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
+- **Was „geprüft“ heißt.** Ein Skript fragt jeden Link ab, Bot-Schutz zählt als erreichbar. Jede Beschreibung ist von Hand geschrieben. Ein Praxistest jedes einzelnen Tools ist das nicht, und das sagen wir auch so.
+- **Namen auf Stand.** Bing Chat heißt Copilot, Metaphor heißt Exa, Le Chat heißt Vibe. Eingestellte Dienste fliegen raus, aktuelle Standard-Tools sind ergänzt.
 - **DACH-Fokus.** Eigene Abschnitte für Übersetzung, SEO und Automatisierung. Anbieter mit Sitz in der EU tragen ein 🇪🇺. Das ist ein Hinweis auf den Firmensitz, keine Datenschutz-Prüfung. Für DSGVO zählen AVV, Serverstandort und Einstellungen.
 - **PROMPTGOTT-Praxis.** Wo ein Deep Dive zeigt, wie man aus einer Tool-Kategorie Ergebnisse macht, steht ein 💡.
 
@@ -50,7 +51,7 @@ Zehn Werkzeuge, die bei uns nie in der Schublade verschwinden. Ein Tool pro typi
 
 - [ChatGPT](https://chatgpt.com) - Das Schweizer Taschenmesser: schreibt, rechnet, sucht und malt, selten Weltmeister in einer Disziplin, aber fast immer griffbereit.
 - [Claude](https://claude.ai/) - Der ruhige Kollege für lange Dokumente: liest den Vertrag bis zur letzten Seite und schreibt Code, den du auch morgen noch verstehst.
-- [Le Chat von Mistral](https://chat.mistral.ai) - 🇪🇺 Für alle, die in der Datenschutz-Runde nach einer europäischen Alternative gefragt werden: Assistent aus Paris, flott und mit Websuche.
+- [Vibe von Mistral](https://chat.mistral.ai) - 🇪🇺 Für alle, die in der Datenschutz-Runde nach einer europäischen Alternative gefragt werden: Assistent aus Paris, bis August 2026 als Le Chat bekannt.
 - [DeepL](https://www.deepl.com/translator) - 🇪🇺 Aus Köln, und das hört man: Übersetzungen ins Deutsche klingen hier meist nach Mensch statt nach Bedienungsanleitung.
 - [Perplexity](https://www.perplexity.ai/) - Für Recherchen, bei denen du hinterher sagen musst, woher du es hast: jede Antwort kommt mit Fußnoten.
 - [NotebookLM](https://notebooklm.google.com/) - Wirf deine PDFs rein und frag sie aus. Bonus: Daraus wird auf Wunsch ein Podcast für die Bahnfahrt.
@@ -95,16 +96,15 @@ Zehn Werkzeuge, die bei uns nie in der Schublade verschwinden. Ein Tool pro typi
 - [Llama](https://www.llama.com) - Metas Familie offener Sprachmodelle zum Selbsthosten und Feintunen. `OSS`
 - [DeepSeek](https://www.deepseek.com) - Chinesische Modellreihe mit offenen Gewichten, besonders günstig im Reasoning.
 - [Qwen](https://qwenlm.github.io) - Offene Modellfamilie von Alibaba, von klein bis sehr groß, stark mehrsprachig. `OSS`
-- [Bloom](https://huggingface.co/docs/transformers/model_doc/bloom) - Offenes, mehrsprachiges Modell aus dem BigScience-Projekt von Hugging Face (46 Sprachen). `OSS`
 - [Hugging Face](https://huggingface.co) - Die zentrale Plattform für offene Modelle, Datensätze und Demo-Apps (Spaces).
-- [Aleph Alpha](https://aleph-alpha.com) - 🇪🇺 Modelle und KI-Plattform aus Heidelberg, ausgelegt auf Behörden und Unternehmen.
+- [Aleph Alpha](https://aleph-alpha.com) - 🇪🇺 Entwickelt mit Behörden und Unternehmen spezialisierte Sprachmodelle und eine Plattform für den Betrieb unter eigener Kontrolle, aus Heidelberg. Kein Chat für Einzelne, sondern Projektgeschäft.
 - [Jina AI](https://jina.ai) - 🇪🇺 Embeddings, Reranker und Reader-APIs für Suche und RAG, aus Berlin.
 - [Nebius](https://nebius.com) - 🇪🇺 KI-Cloud mit GPU-Instanzen und Inferenz-Diensten, Sitz in Amsterdam.
 - [Scaleway](https://www.scaleway.com) - 🇪🇺 Französische Cloud mit GPU-Servern und Inferenz für offene Modelle.
 - [STACKIT](https://www.stackit.de) - 🇪🇺 Souveräne Cloud der Schwarz-Gruppe aus Deutschland mit KI-Modell-Hosting.
-- [Mistral Large 4](https://mistral.ai/news/mistral-large-4/) - 🇪🇺 Großes multimodales Modell von Mistral mit 1 Billion Parametern, davon 52 Milliarden aktiv, in Europa trainiert und betrieben; offene Gewichte sind angekündigt.
+- [Mistral Large 4](https://mistral.ai/news/mistral-large-4/) - 🇪🇺 Großes multimodales Modell von Mistral mit 1 Billion Parametern, davon 52 Milliarden aktiv, in Europa trainiert. Die Gewichte liegen seit dem 29. Oktober 2026 offen bei Hugging Face; wer das Modell als Dienst weiterverkauft, braucht eine eigene Lizenz.
 - [LFM3 von Liquid AI](https://www.liquid.ai/blog/lfm3) - Familie offener Kleinmodelle für Text, Bild, Audio und Entscheidungen im 2-Milliarden-Bereich; das Textmodell braucht bei 4 Bit rund 1 GB Speicher.
-- [Nemotron 3.5 Bolt](https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/) - Offenes Kleinmodell von NVIDIA für lokale Sprach- und Geräteassistenten mit Werkzeugaufrufen, läuft laut NVIDIA mit rund 4 GB Grafikspeicher und über Ollama.
+- [Nemotron 3.5 Bolt](https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/) - Offenes Kleinmodell von NVIDIA für lokale Sprach- und Geräteassistenten mit Werkzeugaufrufen. Belegt in NVIDIAs Test auf einer RTX 5070 je nach Gesprächslänge 3,5 bis 4,3 GB Grafikspeicher, läuft auch über Ollama.
 - [Giotto Alto](https://www.giotto.ai/) - Reasoning-Modell aus Lausanne, kostenlos im europäisch gehosteten Chat, dazu dedizierte Cloud in der Schweiz oder EU und Betrieb im eigenen Rechenzentrum.
 
 ### Chatbots und Assistenten
@@ -113,17 +113,12 @@ Zehn Werkzeuge, die bei uns nie in der Schublade verschwinden. Ein Tool pro typi
 - [Claude](https://claude.ai/) - Assistent von Anthropic, stark bei langen Dokumenten, Schreiben und Code.
 - [Gemini](https://gemini.google.com) - Googles Assistent, eng verzahnt mit Gmail, Docs und Drive.
 - [Microsoft Copilot](https://copilot.microsoft.com) - Microsofts Assistent (früher Bing Chat), integriert in Windows, Edge und Microsoft 365.
-- [Le Chat von Mistral](https://chat.mistral.ai) - 🇪🇺 Der Chat-Assistent von Mistral AI, schnell und mit Websuche.
+- [Vibe von Mistral](https://chat.mistral.ai) - 🇪🇺 Assistent von Mistral AI, bis August 2026 Le Chat genannt, mit eigenen Modi für Chat, Büroarbeit und Programmieren.
 - [Langdock](https://langdock.com) - 🇪🇺 KI-Plattform aus Deutschland, die Unternehmen mehrere Modelle in einer DSGVO-orientierten Oberfläche bereitstellt.
 - [DeepSeek](https://www.deepseek.com) - Kostenloser Chat mit den DeepSeek-Modellen, stark bei Mathe und Code.
-- [Character.AI](https://character.ai/) - Eigene Figuren erstellen und mit ihnen chatten.
 - [ChatPDF](https://www.chatpdf.com/) - PDF hochladen und Fragen dazu stellen.
 - [ChatSonic](https://writesonic.com/chat) - Assistent von Writesonic für Text- und Bilderstellung.
-- [Phind](https://www.phind.com/) - Suchmaschine und Assistent speziell für Programmierer, auch als VS-Code-Erweiterung.
-- [Tiledesk](https://tiledesk.com/) - No-Code-Framework für Chatbots mit LLM-Anbindung, Open Source. `OSS`
 - [AICamp](https://aicamp.so/) - ChatGPT-Arbeitsbereich für Teams.
-- [Gali Chat](https://www.galichat.com/) - KI-Support-Assistent für Websites, rund um die Uhr.
-- [dmwithme](https://dmwithme.com) - KI-Begleiter mit Emotionen, der auch widerspricht.
 - [Kimi](https://www.kimi.com) - Chat-Assistent von Moonshot AI mit sehr langem Kontext.
 - [Grok](https://grok.com) - Chat-Assistent von xAI mit Zugriff auf aktuelle Beiträge von X.
 
@@ -133,7 +128,6 @@ Zehn Werkzeuge, die bei uns nie in der Schublade verschwinden. Ein Tool pro typi
 
 - [Perplexity](https://www.perplexity.ai/) - Antwortmaschine mit Quellenangaben für schnelle, belegte Recherche.
 - [Exa](https://exa.ai) - Semantische Suche per API (früher Metaphor), gebaut für KI-Anwendungen und Agenten.
-- [Phind](https://phind.com/) - KI-Suche für Entwickler-Fragen.
 - [You.com](https://you.com/) - KI-Suchmaschine mit Fokus auf Privatsphäre und Anpassbarkeit.
 - [Komo AI](https://komo.ai/) - KI-Suche mit kurzen, schnellen Antworten.
 - [Telborg](https://telborg.com/) - KI-Recherche zum Klimawandel, ausschließlich mit Daten von Regierungen, Institutionen und Unternehmen.
@@ -159,18 +153,16 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 > 💡 **PROMPTGOTT-Praxis:** [Die Content Factory](https://promptgott.substack.com/p/die-content-factory?utm_source=github&utm_medium=referral&utm_campaign=awesome-ki-tools-de): Wie aus Schreib-Tools eine industrielle Informationsproduktion wird.
 
 - [DeepL Write](https://www.deepl.com/write) - 🇪🇺 Verbessert Stil, Grammatik und Tonalität deutscher und englischer Texte.
-- [neuroflash](https://neuroflash.com) - 🇪🇺 KI-Texter aus Hamburg, spezialisiert auf deutschsprachige Marketing-Texte.
-- [Jasper](https://www.jasper.ai/) - Content-Plattform für Marketing-Teams mit Markenstimme und Vorlagen.
 - [Compose AI](https://www.compose.ai/) - Chrome-Erweiterung mit KI-Autovervollständigung beim Schreiben.
 - [Rytr](https://rytr.me/) - Günstiger KI-Schreibassistent für kurze und mittellange Texte.
 - [Wordtune](https://www.wordtune.com/) - Formuliert Sätze um, kürzt oder erweitert sie.
 - [HyperWrite](https://hyperwriteai.com/) - Schreibassistent von der Idee bis zum fertigen Entwurf.
-- [Moonbeam](https://www.gomoonbeam.com/) - Längere Blogartikel in einem Bruchteil der Zeit.
-- [Copy.ai](https://www.copy.ai/) - Marketing-Texte und GTM-Workflows mit KI.
+- [Moonbeam](https://www.gomoonbeam.com/) - Schreibassistent für lange Texte wie Blogartikel, Essays und Anleitungen: macht aus Notizen eine Gliederung und aus der Gliederung Absätze. Vorlagen und Oberfläche auf Englisch.
+- [Copy.ai](https://www.copy.ai/) - Plattform für Vertrieb und Marketing: recherchiert Firmen und Kontakte, entwirft Akquise-E-Mails, Content und Übersetzungen und wertet Verkaufsgespräche aus. Gebaut für Vertriebsteams, nicht für einzelne Texter.
 - [Anyword](https://anyword.com/) - Werbetexte mit Performance-Vorhersage.
 - [Contenda](https://contenda.co/) - Macht aus vorhandenem Content (Videos, Talks) neue Formate.
 - [Hypotenuse AI](https://www.hypotenuse.ai/) - Aus wenigen Keywords Artikel, Produktbeschreibungen und Social-Posts; stark im E-Commerce.
-- [Lavender](https://www.lavender.ai/) - E-Mail-Coach für mehr Antworten auf Vertriebsmails.
+- [Lavender](https://www.lavender.ai/) - E-Mail-Coach für mehr Antworten auf Vertriebs-E-Mails.
 - [Lex](https://lex.page/) - Textverarbeitung mit eingebauter KI.
 - [Jenni](https://jenni.ai/) - Schreibassistent für wissenschaftliche Texte mit Zitaten.
 - [LAIKA](https://www.writewithlaika.com/) - Trainiert eine KI auf deinen eigenen Schreibstil, für kreatives Schreiben.
@@ -179,11 +171,9 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [RapidTextAI](https://app.rapidtextai.com/) - Artikel mit mehreren Modellen (GPT, Gemini, DeepSeek, Grok) erstellen.
 - [Copysmith](https://copysmith.ai/) - Content-Erstellung für Unternehmen und E-Commerce.
 - [Yomu](https://www.yomu.ai) - Schreibassistent für Studierende und Forschende.
-- [Quick Creator](https://quickcreator.io) - SEO-optimierte Blog-Plattform mit KI.
 - [Trolly.ai](https://trolly.ai/) - SEO-Artikel schneller erstellen.
 - [PulsePost](https://pulsepost.io/) - KI-Autor, der direkt auf die eigene Website veröffentlicht.
 - [Shy Editor](https://www.shyeditor.com) - Moderne KI-Schreibumgebung für Prosa aller Art.
-- [Headlinesai.pro](https://www.headlinesai.pro/) - Klickstarke Überschriften für YouTube, Medium, Reddit und mehr.
 - [GPTLocalhost](https://gptlocalhost.com/demo/) - Word-Add-in, das lokale LLMs in Microsoft Word nutzt, Alternative zu Copilot in Word.
 
 ### Übersetzung und Lokalisierung
@@ -191,11 +181,8 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 > 💡 **PROMPTGOTT-Praxis:** [Die Lokalisierungs-Bombe](https://promptgott.substack.com/p/die-lokalisierungs-bombe?utm_source=github&utm_medium=referral&utm_campaign=awesome-ki-tools-de): Warum jede Stadt ein Revenue-Node werden kann.
 
 - [DeepL Übersetzer](https://www.deepl.com/translator) - 🇪🇺 Übersetzt Texte und ganze Dokumente, mit Glossar für feste Begriffe.
-- [DeepL Write](https://www.deepl.com/write) - 🇪🇺 Glättet übersetzte Texte stilistisch nach.
 - [X-doc AI](https://x-doc.ai/) - KI-Übersetzer für Dokumente mit Erhalt des Layouts.
-- [ElevenLabs Dubbing](https://elevenlabs.io/) - Vertont Videos in andere Sprachen mit der Originalstimme.
-- [HeyGen](https://www.heygen.com) - Übersetzt Videos mit Lippensynchronisation.
-- [Lengoo](https://www.lengoo.com) - 🇪🇺 KI-Übersetzung mit menschlicher Nachbearbeitung für Unternehmen, aus Berlin.
+- [Lengoo](https://www.lengoo.com) - 🇪🇺 Baut Unternehmen eigene, auf Firmendaten trainierte Sprachmodelle für Übersetzung in über 50 Sprachen, Texte und Dokumentensuche, aus Berlin. Gedacht für Firmen mit viel Fachsprache, nicht für Einzelübersetzungen.
 - [Unbabel](https://www.unbabel.com) - 🇪🇺 Übersetzungsplattform aus Lissabon, KI plus Community-Lektorat.
 
 ### Browser-Erweiterungen und Add-ons
@@ -225,34 +212,27 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Gamma](https://gamma.app/) - Präsentationen, Dokumente und Webseiten aus einem Prompt.
 - [Mem](https://mem.ai/) - Notiz-App, die sich selbst organisiert.
 - [Taskade](https://www.taskade.com/) - Aufgaben, Teamarbeit und KI-Agenten in einem Workspace.
-- [Nekton AI](https://nekton.ai) - Workflows in Alltagssprache beschreiben und automatisieren.
 - [Elephas](https://elephas.app/) - Persönlicher KI-Schreibassistent für den Mac.
 - [Google Sheets Formula Generator](https://bettersheets.co/google-sheets-formula-generator) - Formeln für Google Sheets aus Text erzeugen.
-- [CreateEasily](https://createeasily.com/) - Kostenlose Transkription von Audio- und Videodateien bis 2 GB.
 - [Cosmos](https://meetcosmos.com/) - Lokale, offline KI-Suche in eigenen Fotos und Videos.
 - [aiPDF](https://aipdf.ai) - KI-Dokumentenassistent für PDFs.
 - [Summary With AI](https://www.summarywithai.com/) - Fasst lange PDFs über alle Seiten hinweg zusammen.
 - [Emilio](https://getemil.io) - Priorisiert und automatisiert E-Mails.
-- [Pieces](https://pieces.app/) - On-Device-Copilot für Entwickler, der Code-Schnipsel und Kontext speichert.
 - [Huntr AI Resume Builder](https://huntr.co/product/ai-resume-builder/) - ATS-freundliche Lebensläufe mit KI.
 - [Chat With PDF by Copilot.us](https://copilot.us/apps/chat-with-pdf) - Mit mehreren PDFs gleichzeitig chatten.
 - [Recall](https://www.getrecall.ai/) - Fasst Artikel, Videos und Podcasts zusammen und baut eine Wissensbasis.
 - [Talently AI](https://interview.talently.ai/) - KI-Interviewer für Bewerbungsgespräche mit Echtzeit-Bewertung.
 - [AnkiDecks AI](https://anki-decks.com) - Lernkarten aus Dateien oder Text erzeugen.
 - [AI for Google Slides](https://www.aiforgoogleslides.com/) - Präsentationen für Google Slides mit KI.
-- [FARSITE](https://far.site/) - Compliance-Software für US-Regierungsauftragnehmer.
 - [BrainSoup](https://www.nurgo-software.com/products/brainsoup) - Multi-Agenten-Client für mehrere LLMs mit Gedächtnis und Werkzeugen.
 - [MindPal](https://mindpal.space/) - "Zweites Gehirn" mit einem Team aus KI-Agenten.
 - [fabric](https://github.com/danielmiessler/fabric) - KI im Terminal mit einer Bibliothek bewährter Prompt-Muster. `OSS`
 - [SlidesWizard](https://slideswizard.io) - PowerPoint- und Google-Slides-Präsentationen zu jedem Thema.
-- [Transgate](https://transgate.ai/) - Sprache-zu-Text mit KI.
 - [RabbitHoles AI](https://www.rabbitholes.ai/) - Chat mit KI auf einer unendlichen Leinwand.
 - [Rember](https://www.rember.com/) - Spaced-Repetition-System zum besseren Merken.
 - [Qurate](https://qurate.appcradle.net/) - Findet passende Zitate zum Kontext.
 - [FirmOS](https://www.firmos.ai/) - Automatisierung für Steuer- und Buchhaltungskanzleien.
-- [Whisper API](https://whisper-api.com) - Transkriptions-API auf Basis von OpenAI Whisper, 5 kostenlose Transkriptionen pro Tag.
 - [Smmry](https://smmry.com/) - Fasst lange Inhalte in klare Kernaussagen zusammen.
-- [Nudge AI](https://getnudgeai.com/) - KI-Dokumentationsassistent für das Gesundheitswesen.
 - [Summara](https://summara.io/) - Widget für YouTube-Zusammenfassungen und Transkripte.
 - [Marblism](https://marblism.com) - KI-"Mitarbeiter" für kleine Unternehmen.
 - [Spell](https://spellapp.com) - KI-Alternative zu Google Docs.
@@ -262,6 +242,8 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Excelmatic](https://excelmatic.ai) - Excel-Daten per Chat analysieren und visualisieren, ohne Formeln.
 - [Langfa.st](https://langfa.st/) - Spielwiese ohne Anmeldung zum Testen und Teilen von Prompt-Vorlagen.
 - [SalesAgent Chat](https://www.salesagent.chat) - KI-Vertriebscoach mit Echtzeit-Unterstützung.
+- [fynk](https://fynk.com/) - 🇪🇺 KI-gestütztes Vertragsmanagement aus Österreich.
+- [Bricks](https://www.thebricks.com/) - Tabellenkalkulation mit eingebauter KI.
 
 ### Meeting-Assistenten
 
@@ -270,16 +252,16 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Otter.ai](https://otter.ai/) - Nimmt Meetings auf, schreibt mit und fasst zusammen.
 - [MeetGeek](https://meetgeek.ai/) - Nimmt Meetings auf, transkribiert und liefert Kernpunkte.
 - [Cogram](https://www.cogram.com/) - Automatische Notizen und Aufgaben aus virtuellen Meetings.
-- [Sybill](https://www.sybill.ai/) - Fasst Vertriebsgespräche zusammen, inklusive Pain Points und nächsten Schritten.
+- [Sybill](https://www.sybill.ai/) - Vertriebsassistent, der Calls, E-Mails und Slack-Verläufe mitliest, das CRM nach jedem Gespräch füllt und Fragen zum Stand eines Deals beantwortet. Wer Calls aufzeichnet, braucht vorher die Einwilligung der Gesprächspartner.
 - [Scribbl](https://www.scribbl.co) - KI-Meeting-Notizen für Google Meet.
+- [Teleprompter](https://github.com/danielgross/teleprompter) - Lokale KI, die in Meetings zuhört und Formulierungen vorschlägt. `OSS`
 
 ### Wissenschaft und Recherche
 
 - [Elicit](https://elicit.com) - Automatisiert Teile der Literaturrecherche.
 - [Consensus](https://consensus.app/search/) - Suchmaschine, die Antworten aus wissenschaftlichen Studien liefert.
 - [SciSpace](https://scispace.com/) - Chat mit wissenschaftlichen PDFs.
-- [NotebookLM](https://notebooklm.google.com/) - Chat mit eigenen Dokumenten, Links und Texten.
-- [genei](https://www.genei.io/) - Fasst Fachartikel in Sekunden zusammen.
+- [genei](https://www.genei.io/) - Fasst Fachartikel und Hintergrundlektüre zusammen, zieht Schlagwörter heraus und hilft, daraus Berichte und Blogartikel zu schreiben.
 - [Explainpaper](https://www.explainpaper.com/) - Unverständliche Stellen in Papers markieren und erklären lassen.
 - [Sourcely](https://www.sourcely.net/) - Findet passende Quellen und Zitate für wissenschaftliche Arbeiten.
 - [Mathos AI](https://www.mathgptpro.com/) - KI-Mathe-Löser und Tutor.
@@ -290,15 +272,15 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 
 - [SiteGPT](https://sitegpt.ai/) - Trainiert einen Support-Bot auf die eigene Website.
 - [GPTHelp.ai](https://gpthelp.ai/) - KI-Chatbot für den Website-Support.
-- [SiteSpeakAI](https://sitespeak.ai) - Automatisiert den Kundenservice mit KI.
+- [SiteSpeakAI](https://sitespeak.ai) - Support-Agent für die eigene Website, trainiert auf Seiten, Hilfetexte, PDFs und Videos: beantwortet Fragen, nimmt Leads auf und gibt schwierige Fälle an Menschen ab. Bestellstatus kann er nur mit angebundenem Shop nachschlagen.
 - [Dear AI](https://www.dearai.online) - Chatbot für Kundenservice und Vertrieb.
-- [Inline Help](https://inlinehelp.com) - Beantwortet Kundenfragen, bevor sie gestellt werden.
+- [Inline Help](https://inlinehelp.com) - Hilfe direkt in der eigenen Web-App: Tooltips, Chatbot und eine Erklär-Funktion für jedes Element, gespeist aus der Wissensdatenbank, auch auf Deutsch. Ohne gepflegte Hilfeartikel hat sie nichts zu erzählen.
 - [Aidbase](https://www.aidbase.ai) - KI-Support für SaaS-Startups.
-- [Twig](https://www.twig.so/) - Löst Kundenanfragen sofort, für Kunden und Support-Teams.
 - [EmailTriager](https://www.emailtriager.com/) - Entwirft E-Mail-Antworten automatisch im Hintergrund.
-- [Parloa](https://www.parloa.com) - 🇪🇺 KI-Agenten für Telefon und Chat im Kundenservice, aus Berlin.
-- [Cognigy](https://www.cognigy.com) - 🇪🇺 Agenten-Plattform für Contact Center, aus Düsseldorf.
 - [Rasa](https://www.rasa.com) - 🇪🇺 Framework für eigene Chat- und Sprachassistenten, aus Berlin. `OSS`
+- [Tiledesk](https://tiledesk.com/) - No-Code-Framework für Chatbots mit LLM-Anbindung, Open Source. `OSS`
+- [Gali Chat](https://www.galichat.com/) - KI-Support-Assistent für Websites, rund um die Uhr.
+- [Hexabot](https://hexabot.ai) - No-Code-Baukasten für mehrsprachige Chatbots und Agenten. `OSS`
 
 
 ## Automatisierung und KI-Agenten
@@ -311,7 +293,6 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Make](https://www.make.com) - 🇪🇺 Visuelle Automatisierungsplattform aus Prag mit Tausenden App-Anbindungen.
 - [Zapier](https://zapier.com) - Verbindet Tausende Apps per Automatisierung, inklusive KI-Schritten und Agenten.
 - [MindStudio](https://mindstudio.ai/) - KI-Agenten ohne Code bauen, mit über 100 Vorlagen.
-- [Taskade](https://www.taskade.com/) - Autonome KI-Agenten für Aufgaben und Team-Workflows.
 - [Nekton AI](https://nekton.ai) - Workflows Schritt für Schritt in Alltagssprache beschreiben.
 - [AI-Flow](https://ai-flow.net/) - Mehrere KI-Modelle visuell miteinander verbinden.
 - [Shotstack Workflows](https://shotstack.io/product/workflows/) - No-Code-Automatisierung für KI-Medienproduktion.
@@ -338,13 +319,11 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [SinglebaseCloud](https://singlebase.cloud) - Backend mit Vektor-DB, Dokument-DB und Auth für KI-Apps.
 - [Maxim AI](https://www.getmaxim.ai/) - Evaluation und Observability für generative KI.
 - [Wordware](https://www.wordware.ai) - Web-IDE, in der Fachleute und KI-Entwickler gemeinsam Agenten bauen; Prompting als Programmiersprache.
-- [Hexabot](https://hexabot.ai) - No-Code-Baukasten für mehrsprachige Chatbots und Agenten. `OSS`
 - [AI/ML API](https://aimlapi.com/) - Über 100 KI-Modelle über eine einzige API.
 - [Opik](https://www.comet.com/site/products/opik/) - Testen, Bewerten und Überwachen von LLM-Anwendungen. `OSS`
 - [Kiln](https://getkiln.ai) - Eigene Modelle bauen: synthetische Daten, Feintuning und Datensatz-Pflege ohne Code.
 - [Calmo](https://getcalmo.com/) - Produktionsfehler mit KI schneller debuggen.
 - [Cleanlab](https://help.cleanlab.ai/tlm/) - Erkennt und behebt Halluzinationen in LLM-Anwendungen.
-- [Amazon Q Developer CLI](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html) - Befehlsvervollständigung, Übersetzung von Absicht in Befehle und Agenten-Chat im Terminal.
 - [Agentic Radar](https://github.com/splx-ai/agentic-radar) - Sicherheits-Scanner für agentische Workflows. `OSS`
 - [VoltAgent](https://github.com/voltagent/voltagent) - TypeScript-Framework für KI-Agenten mit Werkzeugen und Gedächtnis. `OSS`
 - [TensorZero](https://www.tensorzero.com/) - LLM-Gateway, Observability, Optimierung und Evaluation in einem Framework. `OSS`
@@ -358,6 +337,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Context Data](https://contextdata.ai/) - Datenaufbereitung und ETL für generative KI.
 - [Agent Skills](https://agentskills.io) - Offener Standard für Agenten-Fähigkeiten: ein Ordner mit SKILL.md und Skripten, den über 70 Agenten-Plattformen lesen können.
 - [Timestral](https://mistral.ai/news/timestral/) - 🇪🇺 Kleine Zeitreihen-Modelle von Mistral für Prognosen zu Absatz, Energie oder Sensordaten, laufen ohne Grafikkarte. `OSS`
+- [Scale Spellbook](https://scale.com/spellbook) - LLM-Apps bauen, vergleichen und bereitstellen.
 
 
 ## Programmieren mit KI
@@ -374,7 +354,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Bolt.new](https://bolt.new) - Full-Stack-Web-Apps im Browser aus einem Prompt.
 - [v0](https://v0.app) - Erzeugt UI und Web-Apps mit React und Next.js aus Text.
 - [Kilo Code](https://kilocode.ai) - Open-Source-Coding-Assistent in VS Code zum Planen, Bauen und Fixen. `OSS`
-- [Amazon Q Developer](https://aws.amazon.com/q/developer/) - KI-Coding-Assistent für VS Code und IntelliJ mit Chat und Agenten-Workflows.
+- [Amazon Q Developer](https://aws.amazon.com/q/developer/) - KI-Coding-Assistent von AWS für VS Code und JetBrains mit Chat und Agenten. AWS beendet den Support für die IDE-Plugins am 30. April 2027 und verweist auf Kiro.
 - [Tabnine](https://www.tabnine.com/) - Code-Vervollständigung, auch als private On-Premise-Variante.
 - [Replit](https://replit.com) - Browser-IDE mit KI-Agent, der Apps baut und bereitstellt.
 - [GoCodeo](https://www.gocodeo.com/) - KI-Agent für Code und Tests.
@@ -386,7 +366,6 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Stenography](https://stenography.dev/) - Automatische Code-Dokumentation.
 - [AI2sql](https://www.ai2sql.io/) - SQL-Abfragen aus natürlicher Sprache.
 - [poorcoder](https://github.com/vgrichina/poorcoder) - Bash-Skripte, die das Terminal mit Web-Assistenten wie Claude oder Grok verbinden. `OSS`
-- [TurboPilot](https://github.com/ravenscroftj/turbopilot) - Selbst gehosteter Copilot-Klon, der mit 4 GB RAM läuft. `OSS`
 - [GPT-Code UI](https://github.com/ricklamers/gpt-code-ui) - Open-Source-Nachbau des ChatGPT Code Interpreter. `OSS`
 - [MetaGPT](https://github.com/geekan/MetaGPT) - Multi-Agenten-Framework: aus einer Anforderung werden PRD, Design, Aufgaben und Code. `OSS`
 - [Plandex](https://github.com/plandex-ai/plandex) - Terminal-basierte KI-Programmierumgebung für komplexe Aufgaben. `OSS`
@@ -395,11 +374,13 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [WhoDB](https://github.com/clidey/whodb) - Datenbank-Explorer für SQL, NoSQL, Graph und Cache mit KI-Chat. `OSS`
 - [DataPup](https://github.com/DataPupOrg/DataPup) - Datenbank-Client mit KI-Unterstützung für Abfragen. `OSS`
 - [FlexApp](https://flexapp.ai/) - Mobile Apps mit KI bauen, ohne Code.
-- [Capacity](https://capacity.so) - Aus Ideen in Minuten funktionierende Web-Apps.
+- [Capacity](https://capacity.so) - Baut aus einer Beschreibung in Alltagssprache eine Web-App mit Seiten, Datenbank und Anmeldung und stellt sie online. Den Code bekommst du dabei nie zu sehen, das ist Konzept und Grenze zugleich.
 - [Runcell](https://runcell.dev) - KI-Agent für Jupyter Lab, der Code schreibt, ausführt und Ergebnisse analysiert.
 - [Manifest](https://github.com/mnfst/manifest) - Backend-Alternative zu Supabase für KI-Code-Editoren und Vibe Coding. `OSS`
 - [Code to Flow](https://codetoflow.com) - Macht aus Code interaktive Flussdiagramme.
 - [Google Antigravity](https://antigravity.google/) - Agenten-Plattform von Google für Software-Entwicklung, für einzelne Entwickler kostenlos, auf macOS, Windows und Linux.
+- [Pieces](https://pieces.app/) - On-Device-Copilot für Entwickler, der Code-Schnipsel und Kontext speichert.
+- [Kiro](https://kiro.dev) - Agentische Entwicklungsumgebung von AWS, die aus einem Prompt Anforderungen, Entwurf und Aufgaben macht und sie mit parallelen Agenten umsetzt. Die frühere Amazon-Q-Kommandozeile heißt heute Kiro CLI.
 
 
 ## Bilder
@@ -410,26 +391,23 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 
 - [FLUX von Black Forest Labs](https://bfl.ai) - 🇪🇺 Bildmodelle aus Freiburg, stark bei Fotorealismus, Text im Bild und Bildbearbeitung.
 - [Midjourney](https://www.midjourney.com/) - Bildgenerator mit markantem, künstlerischem Stil.
-- [Stable Diffusion](https://huggingface.co/CompVis/stable-diffusion-v1-4) - Offenes Text-zu-Bild-Modell von Stability AI, lokal ausführbar. `OSS`
-- [Imagen](https://imagen.research.google/) - Googles Text-zu-Bild-Modell mit hohem Fotorealismus, inzwischen nur noch über Googles Cloud-Plattform statt der Gemini-API.
+- [Stable Diffusion](https://stability.ai/stable-image) - Bildmodelle von Stability AI, aktuell Version 3.5 in den Größen Large, Turbo und Medium, per API oder auf eigener Hardware. Für den Selbstbetrieb im Unternehmen gibt es eine eigene Lizenz.
+- [Nano Banana](https://deepmind.google/models/gemini-image/) - Googles Bildmodelle auf Gemini-Basis, die Bilder im Gespräch erzeugen und Schritt für Schritt nachbearbeiten. Das ältere Imagen ist in der Gemini-API abgeschaltet.
 - [Ideogram](https://ideogram.ai) - Bildgenerator, der besonders gut lesbare Schrift in Bildern erzeugt.
 - [Adobe Firefly](https://firefly.adobe.com) - Bildgenerierung von Adobe, trainiert auf lizenzierten Inhalten, integriert in Photoshop.
-- [DALL·E](https://openai.com/dall-e-2/) - Bildmodell von OpenAI, heute direkt in ChatGPT nutzbar.
+- [GPT Image](https://developers.openai.com/api/docs/guides/image-generation) - Bildmodelle von OpenAI zum Erzeugen und Bearbeiten per API, Nachfolger von DALL·E. Die Herkunftsdaten in der Datei gehen beim Weiterverarbeiten leicht verloren.
 - [DragGAN](https://github.com/XingangPan/DragGAN) - Bilder per Punkt-Ziehen interaktiv verformen. `OSS`
 - [FLUX 3 Image Klein](https://bfl.ai/blog/flux-3-image-klein) - 🇪🇺 Offenes Bildmodell aus Freiburg mit 5,6 Milliarden Parametern, erzeugt und bearbeitet Bilder bis 4K und läuft schon auf Grafikkarten mit 8 GB.
 
 ### Bild-Dienste
 
-- [Canva](https://www.canva.com/ai-image-generator/) - KI-Bilder direkt in der Design-Plattform erzeugen und bearbeiten.
 - [Leonardo.ai](https://leonardo.ai) - Bildgenerator mit vielen Stil-Modellen, beliebt für Game-Assets und Marketing.
 - [KREA](https://www.krea.ai/) - Echtzeit-Bildgenerierung, Upscaling und Video in einer Oberfläche.
 - [PhotoRoom](https://www.photoroom.com/) - 🇪🇺 Produktfotos per Smartphone: Hintergrund entfernen und ersetzen, aus Paris.
-- [ClipDrop](https://clipdrop.co/) - Professionelle Visuals ohne Fotostudio: freistellen, retuschieren, erweitern.
-- [Magic Eraser](https://www.magiceraser.io/) - Störende Objekte in Sekunden aus Bildern entfernen.
+- [ClipDrop](https://clipdrop.co/) - Bildwerkzeuge im Browser: Hintergrund entfernen oder ersetzen, Objekte wegretuschieren, Bilder erweitern und bis vierfach hochrechnen. Freistellen geht kostenlos.
+- [Magic Eraser](https://www.magiceraser.io/) - Entfernt Gegenstände, Personen oder Text aus Fotos per Pinselstrich, kostenlos und ohne Anmeldung, auch für bis zu 50 Bilder auf einmal.
 - [Craiyon](https://www.craiyon.com/) - Kostenloser Bildgenerator (früher DALL-E mini).
-- [DreamStudio](https://beta.dreamstudio.ai/) - Einfache Oberfläche für Stable Diffusion.
 - [Artbreeder](https://www.artbreeder.com/) - Bilder mischen und gemeinsam weiterentwickeln.
-- [GauGAN2](http://gaugan.org/gaugan2/) - Fotorealistische Landschaften aus Wörtern und Skizzen (NVIDIA).
 - [Magic Studio](https://magicstudio.com/imagine) - Bilder aus einer Beschreibung erzeugen.
 - [Patience.ai](https://www.patience.ai/) - App für Bilder mit Stable Diffusion.
 - [GenShare](https://www.genshare.io/) - Kostenlos Kunst generieren und teilen.
@@ -448,20 +426,19 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [AI Boost](https://boost.pictures/) - All-in-one: Upscaling, Face Swap, Avatare, virtuelle Anprobe, Hintergründe.
 - [PlantTattoosAI](https://www.planttattoosai.com/) - Tattoo-Designs mit Pflanzen und Blumen.
 - [Recraft](https://www.recraft.ai) - Bildgenerator mit Stil-Kontrolle, erzeugt auch Vektorgrafiken.
+- [Rupert AI](https://www.getrupert.com/) - Macht aus Produktdaten Katalogbilder, Texte und Katalogdaten, spezialisiert auf Möbelmarken. Darunter arbeiten fremde Modelle wie Nano Banana, Flux und Veo.
 
 ### Grafikdesign
 
-- [Gamma](https://gamma.app/) - Präsentationen und Webseiten ohne Formatierungsarbeit.
-- [Microsoft Designer](https://designer.microsoft.com/) - Designs für Social Media und Einladungen in Sekunden.
-- [Canva](https://www.canva.com/) - Design-Plattform mit KI-Funktionen zum Erzeugen und Bearbeiten.
+- [Microsoft Designer](https://designer.microsoft.com/) - Designs für Social Media und Einladungen aus einer Textbeschreibung.
+- [Canva](https://www.canva.com/) - Design-Plattform mit KI-Funktionen, die Bilder erzeugt und bearbeitet und daraus fertige Formate für Social Media, Druck und Präsentationen macht.
 - [Brandmark](https://brandmark.io/) - Logo-Design mit KI.
 - [Text2Infographic](https://text2infographic.com/) - Infografiken aus Text generieren und bearbeiten.
-- [Seede.ai](https://seede.ai/) - Poster in einer Minute.
+- [Seede.ai](https://seede.ai/) - Macht aus Text Poster, Social-Media-Grafiken, Infografiken und Folien. Die Ebenen bleiben getrennt, Texte und Bilder lassen sich danach einzeln ändern.
 - [Magic Patterns](https://www.magicpatterns.com/) - UI-Entwürfe mit Figma-Export und React-Code.
 
 ### Bildarchive und Prompt-Sammlungen
 
-- [KREA](https://www.krea.ai/) - Millionen KI-Bilder durchsuchen und Prompt-Sammlungen anlegen.
 - [OpenArt](https://openart.ai/) - Über 10 Millionen Prompts durchsuchen und selbst generieren.
 - [Phygital](https://app.phygital.plus/) - Vorlagen zum Erzeugen und Bearbeiten von Bildern.
 - [PublicPrompts](https://publicprompts.art/) - Kostenlose Prompts für Stable Diffusion.
@@ -485,12 +462,11 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [HeyGen](https://www.heygen.com) - Avatar-Videos und Video-Übersetzung mit Lippensynchronisation.
 - [D-ID](https://www.d-id.com/) - Sprechende, interaktive Avatare per Klick.
 - [Descript](https://www.descript.com) - Videos und Podcasts bearbeiten wie ein Textdokument.
-- [Opus Clip](https://www.opus.pro) - Schneidet lange Videos automatisch in virale Shorts.
-- [Clipwing](https://clipwing.pro/) - Zerlegt lange Videos in Dutzende kurze Clips.
+- [Opus Clip](https://www.opus.pro) - Sucht in langen Videos passende Stellen, schneidet sie zu kurzen Clips und bringt sie ins Hochformat, wobei das Motiv im Bild bleibt. Welche Stelle zählt, entscheidet die KI, also vor dem Posten drüberschauen.
 - [Recast Studio](https://recast.studio) - KI-Assistent für Podcast-Marketing.
-- [Based AI](https://www.basedlabs.ai/) - Intuitive Oberfläche für KI-Videos.
-- [Sisif](https://sisif.ai/) - Aus Text in Sekunden ein Video.
-- [Melies](https://melies.co) - Software für KI-Filmproduktion.
+- [Based AI](https://www.basedlabs.ai/) - Sammelt über 50 Bild- und Videomodelle anderer Hersteller wie Kling, Veo und Nano Banana unter einem Konto. Bezahlt wird mit Kryptowährung oder Telegram Stars, nicht per Karte.
+- [Sisif](https://sisif.ai/) - Macht aus Text oder einem Foto kurze Clips, etwa ein Produkt, das sich dreht, für einen Dollar je fünf Sekunden. Ohne Wasserzeichen, deshalb liegt die Kennzeichnung täuschend echter Clips bei dir.
+- [Melies](https://melies.co) - Studio für KI-Kurzfilme vom Drehbuch über Storyboard und KI-Darsteller bis zu Ton und Musik, die Videos kommen von Modellen wie Kling, Runway und Luma. Ein Clip ist höchstens zehn Sekunden lang.
 - [FLUX 3 Video](https://bfl.ai/blog/flux-3-video) - 🇪🇺 Videomodell von Black Forest Labs, erzeugt Clips bis 20 Sekunden mit passendem Ton.
 
 
@@ -501,7 +477,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 *Umfangreichere Liste: [Awesome AI Music](https://github.com/xaramore/awesome-ai-music)*
 
 - [ElevenLabs](https://elevenlabs.io/) - Sehr realistische Stimmen, Voice Cloning und Vertonung in vielen Sprachen inklusive Deutsch.
-- [Murf AI](https://murf.ai/) - Einfache Plattform für hochwertige Voiceover, beliebt im Marketing.
+- [Murf AI](https://murf.ai/) - Sprecherstimmen für Erklärvideos, E-Learning und Marketing, dazu eine Sprach-API und Telefonagenten für Unternehmen.
 - [Descript Overdub](https://www.descript.com/overdub) - Voice Cloning direkt im Schnitt- und Transkriptionswerkzeug von Descript.
 - [Respeecher](https://www.respeecher.com/) - Professionelles Voice Cloning für Film und Fernsehen.
 - [Resemble AI](https://www.resemble.ai/) - Echtzeit-Sprachsynthese und Voice Cloning mit vielen Anpassungen.
@@ -518,24 +494,26 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Bark](https://github.com/suno-ai/bark) - Transformer-Modell für Text zu Audio. `OSS`
 - [CustomPod.io](https://custompod.io) - Tägliche News-Podcasts nur zu deinen Themen.
 - [EKHOS AI](https://ekhos.ai) - Transkription mit Korrekturfunktionen und Echtzeit-Aufnahme.
-- [Whisper API](https://whisper-api.com) - Transkriptions-API auf Basis von OpenAI Whisper.
+- [Whisper API](https://whisper-api.com) - Transkriptions-API auf Basis von OpenAI Whisper, 5 kostenlose Transkriptionen pro Tag.
 - [Voxtral 3](https://mistral.ai/news/voxtral-3/) - 🇪🇺 Spracherkennung und Sprachausgabe von Mistral, mit Deutsch, Sprechererkennung und einem SDK für Sprachagenten.
+- [CreateEasily](https://createeasily.com/) - Kostenlose Transkription von Audio- und Videodateien bis 2 GB.
+- [Transgate](https://transgate.ai/) - Sprache-zu-Text mit KI.
 
 ### Musik
 
 - [Suno](https://suno.com) - Komplette Songs mit Gesang aus einem Prompt, auch auf Deutsch.
-- [Udio](https://www.udio.com) - Songs und Instrumentals in hoher Klangqualität generieren.
+- [Udio](https://www.udio.com) - Songs und Instrumentals aus einer Beschreibung generieren.
 - [AIVA](https://www.aiva.ai) - KI-Komponist für klassische und cineastische Musik.
-- [Mubert](https://www.mubert.com) - Lizenzfreie, generative Musik in Echtzeit für Creator und Marken.
+- [Mubert](https://www.mubert.com) - Erzeugt lizenzfreie Hintergrundmusik passend zu Stimmung und Länge eines Videos, dazu Werkzeuge für Podcast-Schnitt und eine Prüfung, ob ein Song auf YouTube einen Urheberrechtsanspruch auslösen dürfte.
 - [Soundraw](https://soundraw.io) - Musik nach Stimmung und Stil anpassen.
-- [Beatoven.ai](https://www.beatoven.ai) - Hintergrundmusik, die gezielt Emotionen erzeugt.
+- [Beatoven.ai](https://www.beatoven.ai) - Hintergrundmusik und Soundeffekte aus einer Beschreibung, als MP3 oder WAV mit Lizenz zur Monetarisierung bei jedem Download. Das Modell ist als Fairly Trained zertifiziert.
 - [Boomy](https://www.boomy.com) - Schnell Songs erstellen und veröffentlichen.
 - [Ecrett Music](https://www.ecrettmusic.com) - Lizenzfreie Musik für Videos.
 - [Loudly](https://www.loudly.com) - KI-Musik mit Community-Funktionen.
-- [Soundful](https://www.soundful.com) - Hochwertige, lizenzfreie Musik für Content Creator.
-- [AI Song Maker](https://www.aisongmaker.io) - Songs mit KI erstellen.
+- [Soundful](https://www.soundful.com) - Musik aus dem Generator, auf Wunsch zusammen mit Produzenten zur eigenen Markenklangfarbe ausgebaut. In den kleinen Tarifen sind Tracks nicht exklusiv, andere dürfen denselben Sound nutzen.
+- [AI Song Maker](https://www.aisongmaker.io) - Songs aus Text oder eigenem Liedtext, wahlweise nur instrumental, mit Stil, Stimme und Tempo zur Auswahl. Kostenlos sind 20 Credits am Tag, das reicht für vier Songs.
 - [Harmonai](https://www.harmonai.org/) - Community für Open-Source-Audiowerkzeuge.
-- [MusicLM](https://google-research.github.io/seanet/musiclm/examples/) - Googles Forschungsmodell für Musik aus Text.
+- [Lyria](https://deepmind.google/models/lyria/) - Musikmodell von Google DeepMind, erzeugt Songs mit Gesang bis drei Minuten Länge, auch aus einem Bild als Vorlage.
 - [Remusic](https://remusic.ai/en) - Kostenloser Musikgenerator und Lernplattform.
 
 
@@ -559,25 +537,23 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [MarketMuse](https://www.marketmuse.com/) - Themen-Planung und Content-Optimierung mit KI.
 - [Luthor](https://luthor.ai/) - Programmatisches Content-Marketing in großem Umfang.
 - [Quick Creator](https://quickcreator.io) - KI-Blogplattform, die Beiträge entlang von Suchbegriffen aufbaut.
-- [Headlinesai.pro](https://www.headlinesai.pro/) - Überschriften für verschiedene Plattformen optimieren.
 
 ### Werbung, Social und Personalisierung
 
 - [Jasper](https://www.jasper.ai/) - Marketing-Content wie Blogs, E-Mails und Anzeigen mit Markenstimme.
 - [neuroflash](https://neuroflash.com) - 🇪🇺 Deutschsprachige Marketing-Texte mit Markenrichtlinien.
-- [Mutiny](https://www.mutinyhq.com/) - Personalisiert Websites mit KI für mehr Conversions.
-- [Clearbit](https://clearbit.com/) - Lead-Anreicherung und Firmendaten (heute Teil von HubSpot).
+- [Mutiny](https://www.mutinyhq.com/) - Vertriebsassistent, der aus Meeting-Notizen Follow-up-E-Mails und Angebote entwirft und nächste Schritte ins CRM schreibt. Früher ein Werkzeug zur Personalisierung von Websites.
+- [Clearbit](https://clearbit.com/) - Firmen- und Kontaktdaten zum Anreichern von Leads. Gehört zu HubSpot und steckt dort als Breeze Intelligence im CRM.
 - [Seventh Sense](https://www.theseventhsense.com/) - Optimiert den Versandzeitpunkt von E-Mails.
 - [Smartly.io](https://www.smartly.io/) - 🇪🇺 Automatisiert Erstellung und Optimierung von Social Ads, aus Helsinki.
 - [Adzooma](https://www.adzooma.com/) - KI-gestützte Verwaltung von PPC-Kampagnen.
-- [Phrasee](https://www.phrasee.co/) - Optimierte Marketing-Texte für E-Mail, Push und Social.
+- [Jacquard](https://www.jacquard.com/) - Früher Phrasee: Agenten, die Marketing-Texte für E-Mail, Push und Social in der Markenstimme schreiben, vorab bewerten und nur mit Freigabe des Teams verschicken.
 - [Brandwatch](https://www.brandwatch.com) - Social Listening und Sentiment-Analyse (inklusive des früheren Crimson Hexagon).
 - [Chatfuel](https://www.chatfuel.com/) - Chatbots für Messenger, Instagram und WhatsApp.
-- [LogicBalls](https://logicballs.com/) - KI-Schreibwerkzeug für jede Art von Content.
-- [Rupert AI](https://www.getrupert.com/) - KI-Werkzeuge für Designer und Marketer.
+- [LogicBalls](https://logicballs.com/) - Sammlung von Tausenden kleinen Schreibwerkzeugen für einzelne Textsorten, die vor dem Schreiben Rückfragen stellen. Gratis sind 10.000 Wörter im Monat.
 - [Publish7](https://publish7.com/) - KI-Agenten für digitales Marketing im Handel und E-Commerce.
-- [Keyla.AI](https://keyla.ai/) - Video-Anzeigen in Minuten.
-- [Persuva](https://persuva.ai) - Überzeugende, konversionsstarke Anzeigentexte in großem Umfang.
+- [Keyla.AI](https://keyla.ai/) - Baut aus Logo und Produktfotos Bild- und Videoanzeigen, in denen KI-Darsteller das Produkt halten oder tragen. Solche KI-Menschen brauchen nach den EU-Leitlinien zum AI Act ein sichtbares Label.
+- [Persuva](https://persuva.ai) - Erzeugt Produktseiten, Landingpages und Advertorials für Shopify-Shops, gebaut für Dropshipping. Läuft nur mit Shopify.
 - [Taplio](https://taplio.com/) - All-in-one-Tool für LinkedIn mit KI.
 - [Socialsonic](https://socialsonic.com) - LinkedIn-Coach: Content, Trends und Planung.
 - [Podify.io](https://podify.io) - Wachstum auf LinkedIn mit KI und Community.
@@ -587,10 +563,14 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 
 ## KI-Telefonagenten
 
-- [AICaller.io](https://aicaller.io/) - Automatisierte Massenanrufe mit generativer KI, etwa für Lead-Qualifizierung, mit API.
+- [AICaller.io](https://aicaller.io/) - Automatisierte Massenanrufe mit generativer KI, etwa für Lead-Qualifizierung, mit API. In Deutschland nur mit vorheriger ausdrücklicher Einwilligung der Angerufenen, das verlangt § 7 UWG für Werbeanrufe bei Verbrauchern.
 - [DialLink AI Voice Agents](https://diallink.com/) - Sprachagenten für Geschäftsanrufe und Routineaufgaben.
 - [Cald.ai](https://cald.ai) - KI-Anrufagenten für ein- und ausgehende Telefonate.
 - [Rosie](https://heyrosie.com/) - KI-Telefonservice, der Anrufe entgegennimmt.
+- [Parloa](https://www.parloa.com) - 🇪🇺 KI-Agenten für Telefon und Chat im Kundenservice, aus Berlin.
+- [Cognigy](https://www.cognigy.com) - 🇪🇺 Agenten-Plattform für Contact Center, aus Düsseldorf.
+- [Twig](https://www.twig.so/) - KI-Empfang für Telefon, SMS und Website-Chat, der Fragen beantwortet und Termine in den Kalender einträgt. Angebot, Preise und Beispiele richten sich an Betriebe in den USA.
+- [ElevenLabs Agents](https://elevenlabs.io/agents) - Sprach- und Chat-Agenten von ElevenLabs für Support, Terminvergabe und Vertrieb, in über 90 Sprachen. Zur Minute kommen die Kosten für das Sprachmodell dazu.
 
 
 ## Weitere KI-Tools
@@ -602,9 +582,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [This Image Does Not Exist](https://thisimagedoesnotexist.com/) - Teste, ob du KI-Bilder von echten unterscheiden kannst.
 - [Taranify](https://www.taranify.com) - Findet Spotify-Playlists, Serien, Bücher und Essen nach deinem Geschmack.
 - [AI Dungeon](https://aidungeon.io/) - Textadventure, das die KI live weitererzählt.
-- [Scale Spellbook](https://scale.com/spellbook) - LLM-Apps bauen, vergleichen und bereitstellen.
 - [Scenario](https://www.scenario.com/) - KI-generierte Assets für Spiele.
-- [Teleprompter](https://github.com/danielgross/teleprompter) - Lokale KI, die in Meetings zuhört und Formulierungen vorschlägt. `OSS`
 - [FinChat](https://finchat.io/) - Beantwortet Fragen zu börsennotierten Unternehmen und Investoren.
 - [FairyTailAI](https://fairytailai.com/) - Personalisierte Gute-Nacht-Geschichten.
 - [GradGPT](https://www.gradgpt.com/) - Hilfe bei Uni-Bewerbungen: Essays, Anforderungen, Hochschulsuche.
@@ -613,16 +591,14 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Interviews Chat](https://www.interviews.chat/) - Vorbereitung und Copilot für Vorstellungsgespräche.
 - [ezJobs](https://www.getezjobs.com/) - Automatisierte Jobsuche und Bewerbung.
 - [Compass](https://www.getwhys.io/compass) - KI-Antworten auf SaaS-Recherchefragen.
-- [Interview Solver](https://interviewsolver.com) - KI-Copilot für Live-Coding-Interviews.
-- [AI Watermark Remover](https://aiwatermarkremover.io/) - Wasserzeichen aus Bildern und Videos entfernen.
 - [AISaver](https://aisaver.io) - Sammlung von KI-Video- und Fototools.
 - [LangMagic](https://easytolearn.io) - Sprachen mit Inhalten von Muttersprachlern lernen.
-- [fynk](https://fynk.com/) - 🇪🇺 KI-gestütztes Vertragsmanagement aus Österreich.
 - [LooksMax AI](https://looksmax.ai) - Bewertet Fotos von dir per KI.
 - [ResumeDive](https://resumedive.com) - Lebenslauf-Optimierung mit KI.
-- [Bricks](https://www.thebricks.com/) - Tabellenkalkulation mit eingebauter KI.
 - [Daruy](https://daruy.space/) - Personalisierte Geschenkideen.
 - [NVIDIA Omniverse AI Animal Explorer](https://docs.omniverse.nvidia.com/extensions/latest/ext_animal-explorer.html#installation) - Omniverse-Erweiterung für schnelle 3D-Tier-Prototypen.
+- [Character.AI](https://character.ai/) - Eigene Figuren erstellen und mit ihnen chatten.
+- [dmwithme](https://dmwithme.com) - KI-Begleiter mit Emotionen, der auch widerspricht.
 
 
 ## Lernen: Prompting und KI-Grundlagen
@@ -671,6 +647,8 @@ Neues Tool, toter Link oder bessere Beschreibung? Pull Requests sind willkommen:
 2. Format: `- [Name](https://url) - Ein Satz auf Deutsch, wofür das Tool gut ist.` Ohne Affiliate- oder Referral-Parameter.
 3. Ans Ende der passenden Kategorie setzen. 🇪🇺 nur, wenn der Anbieter seinen Sitz in der EU hat. `OSS` nur bei echtem Open-Source-Code.
 4. Link vorher prüfen: Das Tool muss erreichbar und nutzbar sein.
+5. Keine Tools, deren Hauptzweck Täuschung ist oder das Umgehen von Kennzeichnung, etwa Wasserzeichen-Entferner oder Schummelhilfen für Prüfungen und Bewerbungsgespräche.
+6. Jedes Tool steht in genau einer Schublade, nämlich der, in der man es zuerst suchen würde.
 
 ---
 

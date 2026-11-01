@@ -1,6 +1,6 @@
 > **Kurz gesagt:** Im Herbst 2026 liegen zwischen dem günstigsten und dem teuersten Sprachmodell der großen Anbieter rund Faktor hundert beim Preis pro Token. Für die meiste Alltagsarbeit im Unternehmen reicht die Mittelklasse, für Sortieren, Extrahieren und Zusammenfassen oft ein Kleinmodell. Entscheidend ist nicht der Listenpreis, sondern was eine erledigte Aufgabe kostet. Dieser Ratgeber zeigt die aktuellen Preise, rechnet ein Beispiel durch und erklärt, wann ein lokales Modell die bessere Wahl ist.
 
-Alle Preise stammen aus den Ankündigungen und Preisseiten der Hersteller, Stand 28. Oktober 2026, in US-Dollar pro Million Token. Leistungsvergleiche sind Herstellerangaben, die mit unterschiedlichen Einstellungen gemessen wurden. Wir geben sie wieder, damit du weißt, womit die Anbieter werben, nicht weil wir sie für neutral halten.
+Alle Preise stammen aus den Ankündigungen und Preisseiten der Hersteller, Stand 29. Oktober 2026, in US-Dollar pro Million Token. Leistungsvergleiche sind Herstellerangaben, die mit unterschiedlichen Einstellungen gemessen wurden. Wir geben sie wieder, damit du weißt, womit die Anbieter werben, nicht weil wir sie für neutral halten.
 
 ## Was ein Token ist und warum der Preis pro Token täuscht
 
@@ -8,7 +8,7 @@ Sprachmodelle rechnen in Token, also Wortstücken. Ein deutscher Satz mit zwölf
 
 Der Listenpreis sagt aber nur die halbe Wahrheit. Modelle mit Denkphase schreiben vor der eigentlichen Antwort interne Überlegungen, und diese Denk-Token werden in der Regel als Ausgabe abgerechnet. Ein Modell, das pro Token günstig ist, aber dreimal so viel denkt, kann am Ende teurer sein als ein teureres, das schneller zum Punkt kommt. Die Hersteller haben das erkannt und vergleichen inzwischen lieber Kosten pro Aufgabe.
 
-Zwei Beispiele aus den Ankündigungen: Anthropic gibt an, dass Claude Sonnet 5.5 zum gleichen Listenpreis wie Sonnet 5 pro Aufgabe bis zu 30 Prozent weniger kostet, weil es weniger Token braucht. OpenAI wirbt damit, dass GPT-6.1 Terra in einem Test zur Computerarbeit bei maximaler Denktiefe dreimal so sparsam mit Token umgeht wie Claude Opus 5.5 und ein Viertel des Preises pro Token kostet, was zusammen etwa ein Neuntel der Kosten pro Aufgabe ergebe. Beides sind Werbeaussagen, aber sie zeigen, worauf es ankommt.
+Zwei Beispiele aus den Ankündigungen: Anthropic gibt an, dass Claude Sonnet 5.5 zum gleichen Listenpreis wie Sonnet 5 pro Aufgabe bis zu 30 Prozent weniger kostet, weil es weniger Token braucht. OpenAI wirbt damit, dass GPT-6.1 Terra in einem Test zur Computerarbeit bei maximaler Denktiefe dreimal so sparsam mit Token umgeht wie Claude Opus 5.5. Dazu koste es ein Viertel pro Token, zusammen also etwa ein Neuntel pro Aufgabe. Beides sind Werbeaussagen, aber sie zeigen, worauf es ankommt.
 
 ## Die Preisliste im Herbst 2026
 
@@ -20,12 +20,12 @@ Zwei Beispiele aus den Ankündigungen: Anthropic gibt an, dass Claude Sonnet 5.5
 | Claude Sonnet 5.5 | Anthropic | 2,00 | 10,00 | 0,10 |
 | Gemini 4 Argon, Einführungspreis bis 30.11. | Google | 2,00 | 10,00 | 95 % Rabatt |
 | Gemini 4 Argon, ab 1.12. | Google | 4,00 | 20,00 | 95 % Rabatt |
-| Mistral Large 4, öffentliche Vorschau | Mistral | 1,36 | 4,18 | 0,14 |
 | GPT-6.1 Terra | OpenAI | 1,00 | 5,00 | 0,05 |
+| Mistral Large 4, ab 29.10. | Mistral | 0,70 | 2,10 | 0,07 |
 | Claude Haiku 5.5, Eingaben bis 100.000 Token | Anthropic | 0,10 | 0,50 | k. A. |
 | GPT-6 Luna | OpenAI | 0,10 | 0,50 | 0,01 |
 
-Drei Dinge fallen auf. Erstens kosten die Mittelklasse-Modelle von OpenAI, Anthropic und Google fast exakt dasselbe, der Wettbewerb läuft über Leistung und Token-Verbrauch. Zweitens liegt Mistral mit Large 4, einem Modell aus Europa mit angekündigten offenen Gewichten, pro Token sogar unter der Mittelklasse. Am 28. Oktober waren sie noch nicht veröffentlicht. Drittens sind die Kleinmodelle so billig geworden, dass bei vielen Aufgaben die Entwicklungszeit teurer ist als der Betrieb.
+Drei Dinge fallen auf. Erstens kosten die Mittelklasse-Modelle von OpenAI, Anthropic und Google fast exakt dasselbe, der Wettbewerb läuft über Leistung und Token-Verbrauch. Zweitens liegt Mistral mit Large 4, einem Modell aus Europa mit offenen Gewichten, pro Token deutlich unter der Mittelklasse. Mit der Freigabe der Gewichte am 29. Oktober hat Mistral auch die API-Preise gesenkt. Drittens sind die Kleinmodelle so billig geworden, dass bei vielen Aufgaben die Entwicklungszeit teurer ist als der Betrieb.
 
 ## Rechenbeispiel: 2.000 Produkttexte
 
@@ -34,7 +34,7 @@ Angenommen, ein Shop lässt 2.000 Produktbeschreibungen schreiben. Pro Text schi
 | Modell | Rechnung | Kosten für 2.000 Texte |
 |---|---|---|
 | GPT-6 Luna oder Claude Haiku 5.5 | 1,2 × 0,10 + 0,8 × 0,50 | 0,52 Dollar |
-| Mistral Large 4 | 1,2 × 1,36 + 0,8 × 4,18 | 4,98 Dollar |
+| Mistral Large 4 | 1,2 × 0,70 + 0,8 × 2,10 | 2,52 Dollar |
 | GPT-6.1 Terra | 1,2 × 1,00 + 0,8 × 5,00 | 5,20 Dollar |
 | GPT-6.1 Sol, Sonnet 5.5 oder Argon zum Einführungspreis | 1,2 × 2,00 + 0,8 × 10,00 | 10,40 Dollar |
 | Claude Opus 5.5 oder Argon ab Dezember | 1,2 × 4,00 + 0,8 × 20,00 | 20,80 Dollar |
@@ -60,13 +60,13 @@ Damit der Cache greift, muss der gleichbleibende Teil am Anfang der Anfrage steh
 
 Im Oktober sind zwei Kleinmodelle erschienen, die auf normaler Hardware laufen. LFM3 von Liquid AI umfasst sechs offene Modelle um zwei Milliarden Parameter für Text, Bild, Audio und schnelle Entscheidungen. Das Textmodell braucht bei 4 Bit laut Hersteller rund ein Gigabyte Speicher und verarbeitet bis zu 256.000 Token Kontext. Die Modellkarte rät allerdings selbst davon ab, es für komplexes Programmieren oder vielstufiges Schlussfolgern zu nutzen.
 
-Nemotron 3.5 Bolt E4B von NVIDIA ist auf Sprachassistenten und Werkzeugaufrufe zugeschnitten. In NVIDIAs Test belegt es auf einer Grafikkarte vom Typ RTX 5070 rund 3,5 Gigabyte Speicher und liefert gut 130 Token pro Sekunde. Über Ollama lässt es sich mit einem einzigen Befehl starten, und auch LM Studio führt solche Modelle ohne Kommandozeile aus.
+Nemotron 3.5 Bolt E4B von NVIDIA ist auf Sprachassistenten und Werkzeugaufrufe zugeschnitten. In NVIDIAs Test belegt es auf einer Grafikkarte vom Typ RTX 5070 je nach Gesprächslänge 3,5 bis 4,3 Gigabyte Speicher und liefert bei kurzen Gesprächen gut 130 Token pro Sekunde. Über Ollama lässt es sich mit einem einzigen Befehl starten, und auch LM Studio führt solche Modelle ohne Kommandozeile aus.
 
 Ein lokales Modell kostet keine Gebühren pro Token, dafür Hardware, Strom und vor allem Betreuung. Es lohnt sich, wenn drei Dinge zusammenkommen: vertrauliche Daten, die das Haus nicht verlassen sollen, eine eng umrissene Aufgabe und eine hohe Stückzahl. Ein lokales Kleinmodell, das Eingangsrechnungen nach Lieferant und Kostenstelle sortiert, ist ein gutes Beispiel. Ein lokales Modell als Ersatz für einen klugen Allround-Assistenten ist in der Regel eine Enttäuschung.
 
 ## Die Europa-Frage
 
-Für Unternehmen mit strengen Datenschutzvorgaben zählt neben dem Preis, wo ein Modell betrieben wird. Mistral bietet Large 4 nach eigenen Angaben auch in einer europäischen Variante an, die das Unternehmen vollständig selbst betreibt, unabhängig von anderen Dienstleistern und unter europäischem Recht. Sobald die offenen Gewichte erscheinen, lässt sich das Modell außerdem auf eigenen Servern betreiben, vorausgesetzt, die Lizenz erlaubt den geplanten Einsatz.
+Für Unternehmen mit strengen Datenschutzvorgaben zählt neben dem Preis, wo ein Modell betrieben wird. Mistral bietet Large 4 nach eigenen Angaben auch in einer europäischen Variante an, die das Unternehmen vollständig selbst betreibt, unabhängig von anderen Dienstleistern und unter europäischem Recht. Seit dem 29. Oktober liegen die offenen Gewichte bei Hugging Face, das Modell lässt sich also auch auf eigenen Servern betreiben. Die Lizenz ist eine abgewandelte MIT-Lizenz: Frei nutzen, anpassen und kommerziell einsetzen darfst du es, nur wer es als Dienst an Dritte verkauft, braucht eine eigene Lizenz von Mistral.
 
 Ein europäischer Firmensitz ersetzt dabei keine Prüfung. Auch bei Mistral brauchst du einen Vertrag zur Auftragsverarbeitung und solltest die Einstellungen zur Datennutzung kontrollieren. Umgekehrt lassen sich Modelle der US-Anbieter teils auch über europäische Cloud-Regionen beziehen. Was zählt, ist der Vertrag und nicht die Flagge auf der Website.
 

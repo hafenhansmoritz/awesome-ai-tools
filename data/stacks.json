@@ -3,7 +3,7 @@
     {
       "id": "seo",
       "icon": "search",
-      "title": "SEO-Stack",
+      "title": "SEO-Kiste",
       "for": "Sichtbarkeit in Google und in KI-Antworten",
       "tools": [
         ["Semrush", "Keywords, Wettbewerber, Audits. Die Datenbasis."],
@@ -18,7 +18,7 @@
     {
       "id": "content",
       "icon": "pen",
-      "title": "Content-Stack",
+      "title": "Content-Kiste",
       "for": "Texte, Grafiken und Präsentationen in Serie",
       "tools": [
         ["Claude", "Langer Kontext, sauberer Stil."],
@@ -33,7 +33,7 @@
     {
       "id": "shop",
       "icon": "box",
-      "title": "Shop-Stack",
+      "title": "Shop-Kiste",
       "for": "Produkttexte, Produktbilder, Mehrsprachigkeit, Support",
       "tools": [
         ["Hypotenuse AI", "Produktbeschreibungen aus Keywords, stark im E-Commerce."],
@@ -41,17 +41,17 @@
         ["DeepL Übersetzer", "Shop-Texte mit Glossar in andere Märkte."],
         ["HeyGen", "Produktvideos mit Lippensynchronisation übersetzen."],
         ["SiteGPT", "Support-Bot, trainiert auf die eigene Website."],
-        ["Zapier", "Bestellungen, Mails und Tabellen verbinden."]
+        ["Zapier", "Bestellungen, E-Mails und Tabellen verbinden."]
       ],
       "promptgott": ["The Merchant Brain", "https://promptgott.substack.com/p/the-merchant-brain"]
     },
     {
       "id": "eu",
       "icon": "shield",
-      "title": "EU-Stack",
+      "title": "EU-Kiste",
       "for": "Anbieter mit Sitz in der EU, wenn der Datenschutz mitentscheidet",
       "tools": [
-        ["Le Chat von Mistral", "Chat-Assistent aus Paris."],
+        ["Vibe von Mistral", "Chat-Assistent aus Paris."],
         ["DeepL Übersetzer", "Übersetzung aus Köln."],
         ["Langdock", "Mehrere Modelle in einer Unternehmensoberfläche aus Deutschland."],
         ["Aleph Alpha", "Modelle und Plattform aus Heidelberg."],
@@ -64,7 +64,7 @@
     {
       "id": "bauen",
       "icon": "code",
-      "title": "Bauen-Stack",
+      "title": "App-Kiste",
       "for": "Apps, Tools und Prototypen per Chat und Agent",
       "tools": [
         ["Cursor", "Editor mit Agent, der die ganze Codebasis kennt."],
@@ -79,7 +79,7 @@
     {
       "id": "lokal",
       "icon": "cpu",
-      "title": "Lokal-Stack",
+      "title": "Lokal-Kiste",
       "for": "Nichts verlässt den eigenen Rechner",
       "tools": [
         ["Ollama", "Modelle mit einem Befehl lokal starten."],
@@ -93,7 +93,7 @@
     {
       "id": "team",
       "icon": "users",
-      "title": "Team-Stack",
+      "title": "Team-Kiste",
       "for": "Meetings, Notizen, Aufgaben, Wissen",
       "tools": [
         ["tl;dv", "Aufzeichnen, transkribieren, zusammenfassen."],
@@ -146,18 +146,18 @@
       "recherche": ["Perplexity", "NotebookLM", "Elicit", "Consensus", "Exa", "Recall"]
     },
     "eu_swap": {
-      "Claude": "Le Chat von Mistral",
+      "Claude": "Vibe von Mistral",
       "Zapier": "n8n",
       "Midjourney": "PhotoRoom",
       "Canva": "PhotoRoom",
-      "Perplexity": "Le Chat von Mistral",
+      "Perplexity": "Vibe von Mistral",
       "GitHub Copilot": "Mistral AI"
     },
     "firma_add": ["Langdock", "Aleph Alpha"],
     "notes": {
       "solo": "Fang mit zwei Tools an, nicht mit sechs. Die meisten hier haben einen kostenlosen Einstieg, prüf das auf der Anbieterseite.",
       "team": "Ein gemeinsamer Arbeitsbereich spart mehr als das beste Einzeltool. Langdock oder Notion AI als Klammer lohnen sich ab drei Leuten.",
-      "firma": "Mit IT im Haus lohnt sich ein Blick auf Langdock, Aleph Alpha oder selbst gehostetes n8n. Vertragsfragen (AVV) klärt ihr vor dem Rollout.",
+      "firma": "Mit IT im Haus lohnt sich ein Blick auf Langdock, Aleph Alpha oder selbst gehostetes n8n. Vertragsfragen (AVV) gehören vor den Rollout.",
       "eu": "EU-Sitz ist ein Hinweis, keine Freigabe. AVV, Serverstandort und Einstellungen entscheiden."
     }
   }

@@ -6,7 +6,7 @@
   "voice_principles": [
     "Du, nie Sie.",
     "Ein Satz, ein Gedanke. Lieber zwei kurze Sätze als ein langer.",
-    "Zahl schlägt Adjektiv: '411 geprüfte Tools' statt 'riesige Auswahl'.",
+    "Zahl schlägt Adjektiv: 'über 400 Tools, Links geprüft am 28.10.' statt 'riesige Auswahl'. Die genaue Zahl setzt der Build ein, nie die Hand.",
     "Testen statt hypen. Was wir nicht geprüft haben, sagen wir dazu.",
     "Haltung zeigen, nicht belehren. Wir sagen, was wir empfehlen und warum. Der Leser entscheidet.",
     "Keine Verkaufssprache. Ein Lead entsteht, weil die Seite nützlich war.",
@@ -17,7 +17,7 @@
     "Jeder Text nur einmal: kein Satz steht auf zwei Seiten (scripts/check_unique.py prüft das)."
   ],
   "do_say": [
-    "geprüft",
+    "Links geprüft",
     "Setup",
     "Werkzeugkiste",
     "Stack",
@@ -56,10 +56,10 @@
     "abgefahrenste (PROMPTGOTT-Ton)"
   ],
   "catchphrases": [
-    "Geprüft. Sortiert. Auf Deutsch.",
+    "Sortiert. Links geprüft. Auf Deutsch.",
     "Weniger Hype, mehr Hebel.",
     "Kein Zauberstab. Werkzeug.",
-    "Erst testen, dann empfehlen.",
+    "Erst prüfen, dann empfehlen.",
     "Welches Werkzeug? Kommt drauf an, was du baust.",
     "Tote Links sind keine Tools."
   ],
@@ -111,14 +111,14 @@
     "Macher, die lieber bauen als lesen: Vibe Coder, Automatisierer"
   ],
   "proof_sources": [
-    "Link-Check mit Datum und Methode (HTTP-Status, Bot-Schutz gilt als erreichbar)",
+    "Link-Check mit Datum und Methode (HTTP-Status, Bot-Schutz gilt als erreichbar); kein Praxistest jedes Tools",
     "Anzahl Tools und Kategorien direkt aus README.de.md gezählt",
     "EU-Sitz = Hinweis auf den Firmensitz, keine Datenschutz-Prüfung",
     "PROMPTGOTT-Deep-Dives als Praxisquelle, klar als extern markiert"
   ],
   "lead_offer": {
     "name": "Stack-Check",
-    "promise": "Du sagst, was du baust. Jean schaut drauf und schickt dir ein Setup aus 4 bis 6 Tools, das zu deinem Fall passt. Kostenlos, per Mail, ohne Pitch.",
+    "promise": "Du sagst, was du baust. Jean schaut drauf und schickt dir ein Setup aus 4 bis 6 Tools, das zu deinem Fall passt. Kostenlos, per E-Mail, ohne Pitch.",
     "recipient": "jeanmauriceport@gmail.com"
   },
   "tagline": "Weniger Hype, mehr Hebel.",
@@ -130,7 +130,7 @@
       "Die Schublade klemmt (Fehler, leere Ergebnisse)",
       "Panzertape-Lösung (Provisorien)",
       "Erst Kaffee, dann Kabel (Geduld)",
-      "Hans Moritz testet zuerst, Kurbel sortiert danach die Schrauben"
+      "Hans Moritz sortiert ein, Kurbel sucht danach die übrige Schraube"
     ],
     "no_go": [
       "Witze über Leser oder Zielgruppen",
@@ -142,7 +142,7 @@
   "mascots": [
     {
       "name": "Hans Moritz",
-      "rolle": "Werkstattmeister. Probiert jedes Werkzeug aus, bevor es in eine Schublade darf, und sagt in einem Satz, wofür es taugt. Ruhig, trocken, freundlich, ein Schmunzeln im Bart.",
+      "rolle": "Werkstattmeister. Prüft und sortiert jedes Werkzeug, bevor es in eine Schublade darf, und sagt in einem Satz, wofür es taugt. Ausprobiert hat er nicht jedes, und das sagt er auch. Den Stack-Check macht Jean. Ruhig, trocken, freundlich, ein Schmunzeln im Bart.",
       "einsatz": [
         "Hero der Startseite",
         "Sprechblasen neben Stack-Check und Lead-Formularen",

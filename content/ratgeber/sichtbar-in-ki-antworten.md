@@ -16,7 +16,7 @@ Ausdrücklich heißt es dort, dass du keine neuen maschinenlesbaren Dateien, kei
 
 Spannend ist eine technische Beschreibung: Beide Formate können eine Technik nutzen, die Google „Query Fan-out“ nennt. Dabei schickt das System zu einer Frage mehrere verwandte Suchen zu Unterthemen los und stellt daraus die Antwort zusammen. Für dich heißt das, dass nicht nur die eine Hauptseite zählt, sondern auch die Seiten zu Teilfragen, Vergleichen und Details.
 
-Als Grundlagen, die sich weiterhin lohnen, nennt Google unter anderem: Crawling in der robots.txt und beim CDN erlauben, Inhalte über interne Links auffindbar machen, eine gute Nutzererfahrung bieten, wichtige Inhalte als Text bereitstellen, strukturierte Daten passend zum sichtbaren Text halten und die Angaben im Merchant Center und im Unternehmensprofil aktuell halten. Das liest sich wie eine gewöhnliche SEO-Checkliste, und genau das ist die Botschaft.
+Als Grundlagen, die sich weiterhin lohnen, nennt Google unter anderem: Crawling in der robots.txt und beim CDN erlauben, Inhalte über interne Links auffindbar machen und eine gute Nutzererfahrung bieten. Dazu kommen wichtige Inhalte als Text, strukturierte Daten passend zum sichtbaren Text und aktuelle Angaben im Merchant Center und im Unternehmensprofil. Das liest sich wie eine gewöhnliche SEO-Checkliste, und genau das ist die Botschaft.
 
 ## Der neue Schalter in der Search Console
 

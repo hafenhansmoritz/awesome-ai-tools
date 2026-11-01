@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+# Build-Zwischenstände (z. B. Vorlage für og.png), nie Teil der Website
+.build/

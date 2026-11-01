@@ -18,7 +18,7 @@ from pathlib import Path
 MIN_WORDS = 6
 SKIP_TAGS = {"header", "footer", "nav", "form", "script", "style", "svg", "noscript", "template", "button", "select", "textarea", "title", "head"}
 SKIP_IDS = {"merk", "merk-pill", "stickybar", "totop", "searchpanel"}
-SKIP_CLASSES = {"fab", "stickybar", "merk", "btn", "filters"}  # Buttons und Filter sind Bedienung, kein Inhalt
+SKIP_CLASSES = {"stickybar", "merk", "btn", "filters"}  # Buttons und Filter sind Bedienung, kein Inhalt
 # Nur echte Block-Grenzen beenden einen Satz; Inline-Elemente (a, b, em, span, small …) gehören zum Satz
 BLOCK = {"p", "li", "ol", "ul", "dl", "dd", "dt", "h1", "h2", "h3", "h4", "h5", "h6", "td", "th", "tr", "table", "summary", "details",
          "div", "aside", "section", "article", "main", "blockquote", "figure", "figcaption", "body", "html"}

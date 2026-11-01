@@ -23,7 +23,7 @@ Die Unterscheidung entscheidet, welche Pflichten dich treffen. Die Offenlegung v
 
 ## Chatbots und KI-Agenten
 
-Ein Chat-Widget im Shop, ein Telefonagent an der Hotline oder ein E-Mail-Assistent, der selbstständig antwortet: Alle müssen sich als KI zu erkennen geben, wenn das für die Menschen auf der anderen Seite nicht schon klar ist. Rechtlich liegt diese Pflicht beim Anbieter. Er muss das System so bauen, dass der Hinweis laut Kommission ab der ersten Interaktion klar erkennbar und barrierefrei erscheint.
+Ein Chat-Widget im Shop, ein Telefonagent an der Hotline oder ein E-Mail-Assistent, der selbstständig antwortet: Alle müssen sich als KI zu erkennen geben. Ausnahme ist nur, wenn das für die Menschen auf der anderen Seite ohnehin klar ist. Rechtlich liegt diese Pflicht beim Anbieter. Er muss das System so bauen, dass der Hinweis laut Kommission ab der ersten Interaktion klar erkennbar und barrierefrei erscheint.
 
 Kaufst du ein fertiges Widget oder einen Telefonagenten ein, bist du Betreiber. Dann muss der Hinweis vom Hersteller kommen, und deine Aufgabe ist, ihn eingeschaltet zu lassen und nicht mit einem Fantasienamen zu entwerten, der einen echten Mitarbeiter vortäuscht. Baust du den Bot selbst oder bietest ihn unter eigenem Namen an, wirst du selbst zum Anbieter und trägst die Pflicht direkt.
 
@@ -65,7 +65,7 @@ Ausdrücklich von der maschinenlesbaren Markierung ausgenommen sind laut finalen
 
 Die maschinenlesbare Markierung ist Aufgabe der Anbieter, also der Hersteller von Bild-, Video-, Audio- und Textgeneratoren. Der Verhaltenskodex der Kommission beschreibt, wie das in der Praxis aussehen soll. Nach der Auswertung von Bird & Bird verlangt er zwei Ebenen: digital signierte, zeitgestempelte Metadaten, für die sich der Standard C2PA etabliert hat, und ein unsichtbares Wasserzeichen, das Komprimierung und Zuschneiden übersteht.
 
-Für Texte ist die Hürde neu. Freie Texte mit mehr als 200 Token sollen laut finalem Kodex ein unsichtbares Wasserzeichen tragen. Anbieter müssen außerdem eine kostenlose Möglichkeit bereitstellen, die Markierung zu prüfen, und bis zum 2. Februar 2027 eine Lösung schaffen, mit der sich Wasserzeichen verschiedener Hersteller gemeinsam erkennen lassen. Für generative Systeme, die schon vor dem 2. August 2026 auf dem Markt waren, gilt nach dem KI-Omnibus eine Übergangsfrist für die Markierung bis zum 2. Dezember 2026.
+Für Texte ist die Hürde neu. Freie Texte mit mehr als 200 Token sollen laut finalem Kodex ein unsichtbares Wasserzeichen tragen. Anbieter müssen außerdem eine kostenlose Möglichkeit bereitstellen, die Markierung zu prüfen, und bis zum 2. Februar 2027 eine Lösung schaffen, mit der sich Wasserzeichen verschiedener Hersteller gemeinsam erkennen lassen. Für generative Systeme, die schon vor dem 2. August 2026 auf dem Markt waren, gilt nach dem KI-Omnibus eine Übergangsfrist für die maschinenlesbare Markierung bis zum 2. Dezember 2026. Die sichtbare Kennzeichnung durch Betreiber und die Offenlegung von Chatbots gelten dagegen schon seit August.
 
 Für dich als Betreiber folgt daraus eine einfache Regel: Entferne keine Markierungen. Exportiere Bilder nicht über Wege, die Metadaten absichtlich löschen, und lass dir von Agenturen bestätigen, dass sie es auch nicht tun. Der Kodex sieht vor, dass unterzeichnende Anbieter das Manipulieren von Markierungen in ihren Nutzungsbedingungen verbieten. Wer Markierungen bewusst entfernt, handelt also nicht nur gegen den Geist des Gesetzes, sondern unter Umständen auch gegen die Bedingungen seines Tools.
 
@@ -84,7 +84,7 @@ Die Kommission ermutigt dazu, ältere Inhalte trotzdem zu kennzeichnen, erwartet
 ## Checkliste für dein Team
 
 1. **Inventur machen:** Wo entstehen bei euch Bilder, Videos, Stimmen oder Texte mit KI, und wo spricht ein Bot mit Kunden? Eine einfache Tabelle reicht.
-2. **Bots prüfen:** Zeigen Chat-Widget, Telefonagent und Mail-Assistent gleich zu Beginn, dass eine KI antwortet? Bei gekauften Tools ist das Pflicht des Herstellers, bei selbst gebauten deine. Lass den Hinweis in jedem Fall aktiv.
+2. **Bots prüfen:** Zeigen Chat-Widget, Telefonagent und E-Mail-Assistent gleich zu Beginn, dass eine KI antwortet? Bei gekauften Tools ist das Pflicht des Herstellers, bei selbst gebauten deine. Lass den Hinweis in jedem Fall aktiv.
 3. **Bildregel festlegen:** Hintergrund tauschen geht ohne Label. Realistische Menschen, Orte, Ereignisse oder ein geschöntes Produkt bekommen eins.
 4. **Textfreigabe dokumentieren:** Für Texte zu öffentlichen Themen eine verantwortliche Person benennen und die Prüfung festhalten, sonst sichtbar kennzeichnen.
 5. **Markierungen schützen:** Keine Exportwege nutzen, die Metadaten bewusst entfernen, und das auch von Dienstleistern verlangen.

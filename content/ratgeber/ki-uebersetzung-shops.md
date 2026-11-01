@@ -4,7 +4,7 @@ Die Fakten zu Suchmaschinen stammen aus der Dokumentation von Google Search Cent
 
 ## Warum gerade jetzt
 
-Maschinelle Übersetzung ist nicht neu. Neu ist, dass große Sprachmodelle nicht mehr Satz für Satz übertragen, sondern den ganzen Kontext einer Seite verstehen: dass „Kolben“ im Motorradshop kein Laborgerät ist, dass eine Größentabelle Zahlen statt Wörter braucht und dass eine Produktbeschreibung auf Niederländisch anders klingen sollte als auf Schwedisch. Spezialisierte Dienste wie DeepL Übersetzer und allgemeine Modelle wie ChatGPT, Claude, Gemini oder Le Chat von Mistral liefern dabei inzwischen Rohfassungen, die für viele Seitentypen fast fertig sind.
+Maschinelle Übersetzung ist nicht neu. Neu ist, dass große Sprachmodelle nicht mehr Satz für Satz übertragen, sondern den ganzen Kontext einer Seite verstehen. Sie erkennen, dass „Kolben“ im Motorradshop kein Laborgerät ist, dass eine Größentabelle Zahlen statt Wörter braucht und dass eine Produktbeschreibung auf Niederländisch anders klingen sollte als auf Schwedisch. Spezialisierte Dienste wie DeepL Übersetzer und allgemeine Modelle wie ChatGPT, Claude, Gemini oder Vibe von Mistral liefern dabei inzwischen Rohfassungen, die für viele Seitentypen fast fertig sind.
 
 Fast fertig ist das Problem. Ein falsch übersetzter Fachbegriff in einer Einbauanleitung kostet Vertrauen, ein vertauschter Markenname kostet Rankings, und eine vollautomatisch übersetzte Seite, die niemand je gelesen hat, ist genau die Art Inhalt, vor der Google warnt.
 
@@ -89,7 +89,7 @@ Bei DeepL zahlst du statt nach Token nach Tarif. Der Tarif Individual kostet lau
 
 ## Datenschutz nicht vergessen
 
-Produkttexte enthalten selten Personendaten, Kundenbewertungen, Supportmails und Händlerkorrespondenz dagegen schon. Hier kommt es wieder auf den Tarif an. Die kostenlose Version von DeepL nutzt eingegebene Texte und Korrekturen laut Datenschutzerklärung zum Training, und die Nutzungsbedingungen untersagen dort Texte mit personenbezogenen Daten. In den Pro-Tarifen werden Texte nach der Übersetzung gelöscht und nicht zum Training verwendet, für Personendaten ist ein Vertrag zur Auftragsverarbeitung vorgesehen. Dokumente verarbeitet DeepL nach eigener Angabe auf der eigenen Infrastruktur im Europäischen Wirtschaftsraum.
+Produkttexte enthalten selten Personendaten, Kundenbewertungen, Support-E-Mails und Händlerkorrespondenz dagegen schon. Hier kommt es wieder auf den Tarif an. Die kostenlose Version von DeepL nutzt eingegebene Texte und Korrekturen laut Datenschutzerklärung zum Training, und die Nutzungsbedingungen untersagen dort Texte mit personenbezogenen Daten. In den Pro-Tarifen werden Texte nach der Übersetzung gelöscht und nicht zum Training verwendet, für Personendaten ist ein Vertrag zur Auftragsverarbeitung vorgesehen. Dokumente verarbeitet DeepL nach eigener Angabe auf der eigenen Infrastruktur im Europäischen Wirtschaftsraum.
 
 Für allgemeine Sprachmodelle gilt dasselbe Muster: Business-Tarif oder API ja, privates Konto nein. Die Details stehen im Ratgeber zum Datenschutz bei KI-Tools.
 

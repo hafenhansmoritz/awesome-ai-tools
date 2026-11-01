@@ -8,16 +8,15 @@
    "icon": "shield",
    "h1": "KI-Inhalte kennzeichnen: Was Shops, Marketing und Creator seit August 2026 tun müssen",
    "label": "KI-Inhalte kennzeichnen",
-   "seo_title": "KI-Inhalte kennzeichnen nach AI Act: Leitfaden für Shops und Marketing",
-   "meta": "Artikel 50 AI Act verständlich erklärt: wann Chatbots, KI-Bilder, Deepfakes und KI-Texte ein Label brauchen, was der Verhaltenskodex verlangt und eine Checkliste für dein Team. Stand Oktober 2026.",
+   "seo_title": "KI-Inhalte kennzeichnen: AI Act Artikel 50",
+   "meta": "Wann Chatbots, KI-Bilder, Deepfakes und KI-Texte nach Artikel 50 AI Act ein Label brauchen, was Anbieter und Betreiber tun müssen, mit Checkliste.",
    "teaser": "Chatbot, KI-Model, geschöntes Produktfoto, automatischer Blogtext: Wo seit August ein Label nötig ist und wo nicht, mit Beispielen und Checkliste.",
    "hero": "Seit dem 2. August 2026 gelten die Transparenzregeln des AI Act. Hier steht, welche KI-Inhalte ein Label brauchen, welche nicht, und wie du das in einem Nachmittag organisierst.",
    "stand": "2026-10-28",
    "rollen": [
-    "shop",
     "marketing",
     "kreativ",
-    "service"
+    "buero"
    ],
    "trend": "ai-act",
    "tools": [
@@ -55,6 +54,11 @@
    ],
    "quellen": [
     [
+     "EUR-Lex: Verordnung (EU) 2026/1744 (KI-Omnibus), Erwägungsgrund 38",
+     "https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng",
+     "2026-07-24"
+    ],
+    [
      "EU-Kommission: Code of Practice on Transparency of AI-generated Content",
      "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
      ""
@@ -91,8 +95,8 @@
     ]
    ],
    "lead_hook": "Unsicher, welche Inhalte bei dir ein Label brauchen?",
-   "lead_text": "Schick Jean, welche KI-Tools ihr für Bilder, Texte und Kundenkontakt nutzt. Zurück kommt eine Einschätzung, wo ihr kennzeichnen solltet und welche Werkzeuge dabei helfen. Keine Rechtsberatung, aber ein klarer Startpunkt.",
-   "bubble": "Ich trage mein Label mit Stolz. Steht ja auch Roboter drauf."
+   "lead_text": "Liste auf, welche KI-Tools du für Bilder, Texte und Kundenkontakt nutzt. Jean schätzt ein, wo ein Label fällig sein dürfte und welche Werkzeuge beim Kennzeichnen helfen. Keine Rechtsberatung, aber ein klarer Startpunkt.",
+   "bubble": "Ich lese inzwischen jedes Etikett. Seit August auch die auf KI-Bildern."
   },
   {
    "id": "ki-modelle-preise",
@@ -100,15 +104,14 @@
    "icon": "calc",
    "h1": "KI-Modelle im Preischeck: Welches Modell für welchen Job im Herbst 2026",
    "label": "KI-Modelle im Preischeck",
-   "seo_title": "KI-Modelle Preise 2026: GPT-6, Claude 5.5, Gemini 4, Mistral im Vergleich",
-   "meta": "Aktuelle API-Preise von OpenAI, Anthropic, Google und Mistral im Vergleich, ein durchgerechnetes Beispiel mit 2.000 Produkttexten, Spartipps mit Cache und wann sich lokale Modelle lohnen. Stand 28. Oktober 2026.",
+   "seo_title": "KI-API-Preise 2026: Modelle im Vergleich",
+   "meta": "API-Preise von OpenAI, Anthropic, Google und Mistral im Vergleich, ein Rechenbeispiel mit 2.000 Produkttexten und wann sich ein lokales Modell rechnet.",
    "teaser": "Zehn Modelle, eine Preistabelle, ein Rechenbeispiel mit 2.000 Produkttexten und die Frage, wann ein lokales Modell die Rechnung schlägt.",
    "hero": "Zwischen dem günstigsten und dem teuersten Modell liegt Faktor hundert. Hier steht, welches Modell für welche Arbeit reicht und wie du in einer Stunde selbst testest.",
-   "stand": "2026-10-28",
+   "stand": "2026-10-29",
    "rollen": [
     "entwicklung",
-    "buero",
-    "shop",
+    "service",
     "marketing"
    ],
    "trend": "preisrutsch",
@@ -195,6 +198,11 @@
      "2026-10-06"
     ],
     [
+     "Mistral: Mistral Large 4 is now open weight, mit neuen API-Preisen",
+     "https://mistral.ai/news/mistral-large-4-oss/",
+     "2026-10-29"
+    ],
+    [
      "Liquid AI: Introducing LFM3",
      "https://www.liquid.ai/blog/lfm3",
      "2026-10-27"
@@ -211,8 +219,8 @@
     ]
    ],
    "lead_hook": "Welches Modell passt zu deinem Volumen?",
-   "lead_text": "Schreib Jean, welche Aufgaben ihr automatisieren wollt und in welcher Menge. Zurück kommt ein Vorschlag mit Modellklasse, Werkzeug und grober Kostenschätzung pro Monat.",
-   "bubble": "Ich rechne in Schrauben pro Million Token. Ist erstaunlich stabil."
+   "lead_text": "Welche Aufgaben willst du automatisieren, und wie oft fallen sie an? Jean schlägt dir eine Modellklasse und ein Werkzeug vor, dazu die Preisseiten, auf denen du selbst nachrechnest.",
+   "bubble": "Ich rechne in Kabelbindern pro Million Token. Ist erstaunlich stabil."
   },
   {
    "id": "sichtbar-in-ki-antworten",
@@ -220,15 +228,14 @@
    "icon": "search",
    "h1": "Sichtbar in KI-Antworten: Wie Shops und Marken in Google AI Mode, ChatGPT und Gemini auftauchen",
    "label": "Sichtbar in KI-Antworten",
-   "seo_title": "AI-SEO 2026: So erscheinen Shops in Google AI Mode und ChatGPT",
-   "meta": "Was Google, OpenAI und Co. offiziell zu KI-Suchen sagen: Voraussetzungen für AI Overviews und AI Mode, der neue Schalter in der Search Console, Crawler von ChatGPT, Shopping im Chat und eine Checkliste für Shops. Stand Oktober 2026.",
+   "seo_title": "AI-SEO: Sichtbar in AI Mode und ChatGPT",
+   "meta": "Was Google und OpenAI offiziell zu KI-Suchen sagen: Voraussetzungen für AI Overviews, der Schalter in der Search Console, ChatGPT-Crawler, Checkliste.",
    "teaser": "Kein Geheimtrick, aber ein neuer Schalter in der Search Console, drei ChatGPT-Crawler und Produktdaten, die plötzlich in der Antwort stehen.",
    "hero": "KI-Suchen verlinken Quellen und vergleichen Produkte direkt in der Antwort. Hier steht, was Google und OpenAI dafür offiziell verlangen, was du steuern kannst und wie du deine Sichtbarkeit misst.",
    "stand": "2026-10-28",
    "rollen": [
     "marketing",
-    "shop",
-    "kreativ"
+    "shop"
    ],
    "trend": "ki-suche",
    "tools": [
@@ -322,7 +329,7 @@
    ],
    "lead_hook": "Wo taucht deine Marke in KI-Antworten auf?",
    "lead_text": "Schick Jean deine Domain und fünf Fragen, die deine Kunden wirklich stellen. Zurück kommt ein kurzer Befund, wer dort als Quelle genannt wird, und welche Seiten bei dir fehlen.",
-   "bubble": "Ich hab mich selbst gegoogelt. Die KI kannte nur meine Schraube."
+   "bubble": "Ich hab mich selbst gegoogelt. Die KI kannte nur meinen Bart."
   },
   {
    "id": "ki-agenten-sicher",
@@ -330,16 +337,15 @@
    "icon": "bot",
    "h1": "KI-Agenten sicher einsetzen: Rechte, Freigaben und Protokolle für kleine Teams",
    "label": "KI-Agenten sicher einsetzen",
-   "seo_title": "KI-Agenten sicher einsetzen: Rechte, Freigaben, Prompt Injection",
-   "meta": "Wie Unternehmen KI-Agenten wie Gemini, Claude und ChatGPT sicher arbeiten lassen: fünf Schalter von Aufgabe bis Notbremse, was der AISI-Zwischenfall lehrt, Prompt Injection, automatische Freigaben und ein Einstieg in vier Wochen.",
+   "seo_title": "KI-Agenten sicher einsetzen: 5 Schalter",
+   "meta": "Wie du KI-Agenten sicher arbeiten lässt: Aufgabe, Rechte, Freigaben, Protokolle und Notbremse, dazu Prompt Injection und ein Fahrplan in vier Wochen.",
    "teaser": "Fünf Schalter von der Aufgabe bis zur Notbremse, die Lehren aus einem ernsten Zwischenfall und ein Fahrplan für die ersten vier Wochen.",
    "hero": "Agenten erledigen ganze Aufgaben selbstständig. Hier steht, wie du ihnen Arbeit gibst, ohne ihnen die Schlüssel zum ganzen Haus zu überlassen.",
-   "stand": "2026-10-28",
+   "stand": "2026-10-29",
    "rollen": [
     "entwicklung",
     "buero",
-    "service",
-    "shop"
+    "service"
    ],
    "trend": "agenten-hintergrund",
    "tools": [
@@ -379,6 +385,11 @@
     ]
    ],
    "quellen": [
+    [
+     "Simon Willison: The lethal trifecta for AI agents",
+     "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+     "2025-06-16"
+    ],
     [
      "UK AISI: Incident report, unsanctioned agent behaviour during cyber testing",
      "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
@@ -426,7 +437,7 @@
     ]
    ],
    "lead_hook": "Welche Aufgabe soll dein erster Agent übernehmen?",
-   "lead_text": "Beschreib Jean den Ablauf, der euch jede Woche Zeit frisst, und welche Systeme daran hängen. Zurück kommt ein Vorschlag für Werkzeug, Rechte und Freigaben, mit dem ihr sicher startet.",
+   "lead_text": "Welcher Ablauf frisst dir jede Woche Zeit, und welche Systeme hängen daran? Jean antwortet mit einem Vorschlag für Werkzeug, Rechte und Freigaben.",
    "bubble": "Ich frage vor jedem Löschen. Auch vor dem Löschen meiner eigenen Fragen."
   },
   {
@@ -435,23 +446,21 @@
    "icon": "lock",
    "h1": "Datenschutz bei KI-Tools: Training, Datenstandort und AVV für Firmen im Klartext",
    "label": "Datenschutz bei KI-Tools",
-   "seo_title": "Datenschutz bei KI-Tools: Training abschalten, AVV, Datenstandort",
-   "meta": "Was die Datenschutzkonferenz beim KI-Einsatz erwartet, wie OpenAI, Anthropic, Google, Mistral und DeepL mit Eingaben umgehen, was Datenstandort Europa abdeckt, zehn Fragen an jeden Anbieter und eine Regelseite fürs Team.",
+   "seo_title": "Datenschutz bei KI-Tools: Training, AVV, EU",
+   "meta": "Was die Datenschutzkonferenz beim KI-Einsatz erwartet, wo bei OpenAI, Anthropic, Google, Mistral und DeepL der Trainingsschalter sitzt, plus zehn Fragen.",
    "teaser": "Business-Tarif oder Privat-Abo, Trainingsschalter, Datenstandort und Vertrag: was die Aufsicht erwartet und welche zehn Fragen du jedem Anbieter stellst.",
    "hero": "Dasselbe Modell, zwei Tarife, zwei völlig verschiedene Antworten auf die Frage, was mit deinen Daten passiert. Hier steht, worauf es ankommt.",
-   "stand": "2026-10-28",
+   "stand": "2026-10-29",
    "rollen": [
     "buero",
-    "service",
-    "shop",
-    "marketing"
+    "service"
    ],
    "trend": "europa",
    "tools": [
     "ChatGPT",
     "Claude",
     "Gemini",
-    "Le Chat von Mistral",
+    "Vibe von Mistral",
     "DeepL Übersetzer",
     "Ollama",
     "LM Studio",
@@ -561,7 +570,7 @@
     ]
    ],
    "lead_hook": "Welche KI-Tools nutzt dein Team wirklich?",
-   "lead_text": "Schick Jean die Liste eurer KI-Tools und wofür ihr sie einsetzt. Zurück kommt eine Einschätzung, welche Tarife passen, wo der Trainingsschalter sitzt und welche Fragen ihr den Anbietern noch stellen solltet. Keine Rechtsberatung, aber eine klare Ordnung.",
+   "lead_text": "Schick Jean die Liste deiner KI-Tools und wofür dein Team sie nutzt. Du erfährst, welche Tarife passen, wo der Trainingsschalter sitzt und welche Fragen an die Anbieter noch offen sind. Keine Rechtsberatung, aber eine klare Ordnung.",
    "bubble": "Ich vergesse gern. Leider nur, wenn mir das jemand vertraglich erlaubt."
   },
   {
@@ -570,16 +579,14 @@
    "icon": "globe",
    "h1": "KI-Übersetzung für Shops und Websites: Qualität, Glossar, hreflang und Kosten",
    "label": "KI-Übersetzung für Shops",
-   "seo_title": "KI-Übersetzung für Shops: Glossar, hreflang, SEO und Kosten",
-   "meta": "Wie Shops und Websites mit DeepL, ChatGPT, Claude oder Gemini mehrsprachig werden: was Google zu übersetzten Seiten sagt, eigene URLs und hreflang, Glossare, welche Seiten Menschen prüfen sollten, Kosten pro Sprache und ein Fahrplan in vier Wochen.",
+   "seo_title": "KI-Übersetzung für Shops: hreflang, Glossar",
+   "meta": "Wie Shops mit DeepL oder Sprachmodellen mehrsprachig werden: was Google zu Übersetzungen sagt, URLs und hreflang, Glossar, Prüfstufen und Kosten.",
    "teaser": "Was Google zu maschinell übersetzten Seiten sagt, wie hreflang richtig sitzt, warum das Glossar das halbe Projekt ist und was eine Sprache wirklich kostet.",
    "hero": "Die Maschine übersetzt in Minuten. Ob daraus Kunden in Amsterdam, Stockholm oder Mailand werden, entscheiden Glossar, Prüfung und Technik.",
    "stand": "2026-10-28",
    "rollen": [
     "shop",
-    "marketing",
-    "entwicklung",
-    "kreativ"
+    "marketing"
    ],
    "tools": [
     "DeepL Übersetzer",
@@ -587,7 +594,7 @@
     "ChatGPT",
     "Claude",
     "Gemini",
-    "Le Chat von Mistral",
+    "Vibe von Mistral",
     "GPT for Sheets and Docs"
    ],
    "glossar": [
@@ -654,7 +661,7 @@
     ]
    ],
    "lead_hook": "In welche Sprache soll dein Shop als Nächstes?",
-   "lead_text": "Schick Jean Zielmarkt, Shopsystem und ungefähre Seitenzahl. Zurück kommt ein Vorschlag für URL-Aufbau, Werkzeug, Glossar und Prüfstufen, mit dem die erste Sprache in vier Wochen online geht.",
+   "lead_text": "Nenn Jean Zielmarkt, Shopsystem und ungefähre Seitenzahl. Du bekommst einen Vorschlag für URL-Aufbau, Werkzeug, Glossar und Prüfstufen.",
    "bubble": "Ich übersetze alles. Außer Markennamen. Die stehen in meinem Glossar unter Finger weg."
   },
   {
@@ -663,15 +670,15 @@
    "icon": "cpu",
    "h1": "Lokale KI im Unternehmen: Hardware, Werkzeuge, Lizenzen und Grenzen",
    "label": "Lokale KI im Unternehmen",
-   "seo_title": "Lokale KI im Unternehmen: Ollama, LM Studio, Open WebUI, Hardware",
-   "meta": "Wie Firmen Sprachmodelle auf eigenen Rechnern betreiben: Speicherbedarf und Quantisierung, drei Hardware-Stufen, Ollama, LM Studio und Open WebUI im Vergleich, Lizenzfallen, Cloud-Hintertüren, sicherer Betrieb und ein Pilot in drei Wochen.",
+   "seo_title": "Lokale KI im Unternehmen: Ollama und Co.",
+   "meta": "Sprachmodelle auf eigenen Rechnern: Speicher und Quantisierung, drei Hardware-Stufen, Ollama, LM Studio und Open WebUI im Vergleich, Lizenzen und Pilot.",
    "teaser": "Wie viel Speicher ein Modell braucht, welches Werkzeug für wen passt, wo die Lizenzen zwicken und wie ein Pilot in drei Wochen läuft.",
    "hero": "Keine Token-Rechnung, kein Datenabfluss, kein Internet nötig. Dafür gehört dir der Server, und mit ihm die Verantwortung.",
-   "stand": "2026-10-28",
+   "stand": "2026-10-29",
    "rollen": [
     "entwicklung",
     "buero",
-    "service"
+    "shop"
    ],
    "trend": "lokal",
    "tools": [
@@ -802,7 +809,7 @@
     ]
    ],
    "lead_hook": "Welche Aufgabe soll zuerst im Haus bleiben?",
-   "lead_text": "Schick Jean die Aufgabe, die vorhandene Hardware und wie viele Leute mitarbeiten sollen. Zurück kommt ein Vorschlag für Modell, Werkzeug und Aufbau, mit dem ein Pilot in drei Wochen läuft.",
+   "lead_text": "Schreib Jean die Aufgabe, deine Hardware und wie viele Leute mitmachen. Jean schlägt Modell, Werkzeug und Aufbau für einen ersten Pilotversuch vor.",
    "bubble": "Mein Server steht im Keller. Kurbel sagt, er schnurrt."
   },
   {
@@ -811,14 +818,13 @@
    "icon": "phone",
    "h1": "KI-Telefonagenten für Kundenservice und Shops: Kosten, Anbieter und Pflichten",
    "label": "KI-Telefonagenten",
-   "seo_title": "KI-Telefonagenten: Preise, Anbieter, AI-Act-Hinweis, Aufzeichnung",
-   "meta": "Was Sprachagenten am Telefon können, was Mistral, ElevenLabs, Google und OpenAI pro Minute kosten, wie der KI-Hinweis nach Artikel 50 AI Act klingen sollte, wann Aufzeichnung strafbar ist und wie ein Start in vier Wochen gelingt.",
+   "seo_title": "KI-Telefonagenten: Preise, Pflichten, Start",
+   "meta": "Was Sprachagenten am Telefon kosten, wie der KI-Hinweis nach AI Act klingen sollte, wann eine Aufzeichnung strafbar ist und wie du in vier Wochen startest.",
    "teaser": "Preise pro Minute, der KI-Hinweis nach AI Act, die Regeln zur Aufzeichnung und warum die Übergabe an Menschen der wichtigste Baustein ist.",
    "hero": "Der Agent geht um drei Uhr nachts ans Telefon. Damit er das darf, muss er drei Dinge können: sich ehrlich vorstellen, nicht heimlich mitschneiden und rechtzeitig einen Menschen holen.",
-   "stand": "2026-10-28",
+   "stand": "2026-10-29",
    "rollen": [
     "service",
-    "shop",
     "buero"
    ],
    "trend": "sprache",
@@ -930,7 +936,7 @@
     ]
    ],
    "lead_hook": "Welche Anrufe soll dein Agent übernehmen?",
-   "lead_text": "Schick Jean die häufigsten Anrufgründe und dein Telefonsystem. Zurück kommt ein Vorschlag für Anbieter, Ansage und Übergaberegeln, mit dem du außerhalb der Geschäftszeiten sicher startest.",
+   "lead_text": "Nenn Jean die drei häufigsten Anrufgründe und dein Telefonsystem. Die Antwort sagt dir, welcher Agent sie schafft, wie die Ansage klingt und wann er besser einen Menschen holt.",
    "bubble": "Ich geh ran. Und wenn es knifflig wird, hol ich den Chef. Also mich."
   },
   {
@@ -939,16 +945,14 @@
    "icon": "puzzle",
    "h1": "MCP und Agent Skills: Shop, Warenwirtschaft und Wissen an KI-Agenten anschließen",
    "label": "MCP und Agent Skills",
-   "seo_title": "MCP und Agent Skills erklärt: Shop an KI-Agenten anschließen",
-   "meta": "Was das Model Context Protocol und Agent Skills sind, welche Programme sie unterstützen, welche offiziellen Anschlüsse Shopify, Shopware, Stripe, PayPal und Google liefern, welche Sicherheitsregeln gelten und wie der erste Anschluss in drei Wochen läuft.",
+   "seo_title": "MCP und Agent Skills: Shop an KI anschließen",
+   "meta": "Was MCP und Agent Skills sind, welche Anschlüsse Shopify, Shopware, Stripe und PayPal liefern, welche Sicherheitsregeln gelten und wie du startest.",
    "teaser": "Der Stecker für KI-Agenten und das Handbuch dazu: welche Programme MCP sprechen, welche Shop-Anschlüsse es gibt und wie du sie sicher einsetzt.",
    "hero": "Ein Standard, damit jeder KI-Assistent an deinen Shop kommt. Und eine Anleitung, damit er dort nicht macht, was er will.",
    "stand": "2026-10-28",
    "rollen": [
     "entwicklung",
-    "shop",
-    "buero",
-    "marketing"
+    "shop"
    ],
    "trend": "offene-standards",
    "tools": [
@@ -1100,7 +1104,7 @@
     ]
    ],
    "lead_hook": "Welches System soll dein KI-Assistent zuerst lesen dürfen?",
-   "lead_text": "Schick Jean dein Shopsystem, die Tools im Alltag und eine Aufgabe, die du gern an einen Agenten gibst. Zurück kommt ein Vorschlag für Server, Rechte und den ersten Skill, mit dem ihr sicher startet.",
+   "lead_text": "Schick Jean dein Shopsystem, deine Alltags-Tools und eine Aufgabe, die du gern an einen Agenten abgibst. Zurück kommt ein Vorschlag für Server, Rechte und den ersten Skill.",
    "bubble": "Ich hab Kurbel einen Skill geschrieben. Seitdem fragt er vor jeder Schraube nach."
   },
   {
@@ -1109,15 +1113,15 @@
    "icon": "image",
    "h1": "KI-Produktbilder und -Videos für Shops: Regeln, Kennzeichnung, Werkzeuge und Kosten",
    "label": "KI-Produktbilder für Shops",
-   "seo_title": "KI-Produktbilder: Merchant Center, Amazon, AI Act und Werkzeuge",
-   "meta": "Was Google Merchant Center, Amazon und eBay bei KI-Produktbildern erlauben, welche Metadaten drinbleiben müssen, was AI Act und UWG verlangen, eine Ampel für den Bild-Workflow, Preise von Gemini, OpenAI, FLUX und Firefly und ein Fahrplan.",
+   "seo_title": "KI-Produktbilder: Regeln, Recht, Werkzeuge",
+   "meta": "Was Merchant Center, Amazon und eBay bei KI-Produktbildern erlauben, welche Metadaten bleiben müssen, was AI Act und UWG sagen und was Werkzeuge kosten.",
    "teaser": "Welche Metadaten Google verlangt, wann ein KI-Bild ein Deepfake ist, eine Ampel für den Bild-Workflow und was ein Bild wirklich kostet.",
    "hero": "Ein neuer Hintergrund ist schnell gemacht. Ob das Bild danach noch ehrlich ist und durch den Feed kommt, entscheidet das Kleingedruckte.",
    "stand": "2026-10-28",
    "rollen": [
     "shop",
-    "marketing",
-    "kreativ"
+    "kreativ",
+    "marketing"
    ],
    "trend": "bild-video",
    "tools": [
@@ -1243,7 +1247,7 @@
     ],
     [
      "IPTC: Digital Source Type vocabulary",
-     "http://cv.iptc.org/newscodes/digitalsourcetype/",
+     "https://cv.iptc.org/newscodes/digitalsourcetype/",
      ""
     ],
     [
@@ -1253,7 +1257,7 @@
     ]
    ],
    "lead_hook": "Welche Bilder sollen schneller fertig werden?",
-   "lead_text": "Schick Jean deine Bildtypen, das Shopsystem und die Kanäle, in die du lieferst. Zurück kommt ein Vorschlag für Werkzeuge, Ampelregeln und den Metadaten-Check, mit dem deine KI-Bilder durch jeden Feed kommen.",
+   "lead_text": "Welche Bildtypen hast du, und in welche Kanäle lieferst du? Mit dem Shopsystem dazu schlägt Jean Werkzeuge, Ampelregeln und einen Metadaten-Check für deine Feeds vor.",
    "bubble": "Ich hab das Bild nur aufgeräumt. Der Kratzer ist trotzdem echt."
   }
  ]

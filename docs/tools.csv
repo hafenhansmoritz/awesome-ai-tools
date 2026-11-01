@@ -1,417 +1,405 @@
 ﻿name;url;beschreibung;kategorie;bereich;eu;open_source;neu;seite
-ChatGPT;https://chatgpt.com;Der Chat-Assistent von OpenAI für Text, Analyse, Bilder und Websuche.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Claude;https://claude.ai/;Assistent von Anthropic, stark bei langen Dokumenten, Schreiben und Code.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Le Chat von Mistral;https://chat.mistral.ai;Der Chat-Assistent von Mistral AI, schnell und mit Websuche.;Text und Sprache;Chatbots und Assistenten;ja;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-DeepL Übersetzer;https://www.deepl.com/translator;Übersetzt Texte und ganze Dokumente, mit Glossar für feste Begriffe.;Text und Sprache;Übersetzung und Lokalisierung;ja;nein;nein;ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung
-Perplexity;https://www.perplexity.ai/;Antwortmaschine mit Quellenangaben für schnelle, belegte Recherche.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-NotebookLM;https://notebooklm.google.com/;Chat, Zusammenfassungen und Audio-Überblicke aus eigenen Quellen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-n8n;https://n8n.io;Workflow-Automatisierung aus Berlin, selbst hostbar (fair-code), mit KI-Agenten-Knoten.;Automatisierung und KI-Agenten;;ja;nein;nein;ki-tools-automatisierung-und-ki-agenten.html
-FLUX von Black Forest Labs;https://bfl.ai;Bildmodelle aus Freiburg, stark bei Fotorealismus, Text im Bild und Bildbearbeitung.;Bilder;Bildmodelle;ja;nein;nein;ki-tools-bilder.html#bildmodelle
-ElevenLabs Dubbing;https://elevenlabs.io/;Vertont Videos in andere Sprachen mit der Originalstimme.;Text und Sprache;Übersetzung und Lokalisierung;nein;nein;nein;ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung
-Cursor;https://cursor.com;KI-Code-Editor mit Agent, der ganze Codebasen versteht und ändert.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-OpenAI API;https://platform.openai.com;Zugriff auf die GPT-Modelle für eigene Anwendungen, Automatisierungen und Agenten.;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Anthropic API;https://docs.anthropic.com;Die Claude-Modelle per API, stark bei langen Kontexten, Werkzeugnutzung und Code.;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Google Gemini API;https://ai.google.dev;Gemini-Modelle über Google AI Studio und die Gemini API, multimodal (Text, Bild, Audio, Video).;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Mistral AI;https://mistral.ai;Offene und kommerzielle Modelle aus Paris, per API oder selbst gehostet.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Llama;https://www.llama.com;Metas Familie offener Sprachmodelle zum Selbsthosten und Feintunen.;Text und Sprache;Sprachmodelle und APIs;nein;ja;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-DeepSeek;https://www.deepseek.com;Chinesische Modellreihe mit offenen Gewichten, besonders günstig im Reasoning.;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Qwen;https://qwenlm.github.io;Offene Modellfamilie von Alibaba, von klein bis sehr groß, stark mehrsprachig.;Text und Sprache;Sprachmodelle und APIs;nein;ja;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Bloom;https://huggingface.co/docs/transformers/model_doc/bloom;Offenes, mehrsprachiges Modell aus dem BigScience-Projekt von Hugging Face (46 Sprachen).;Text und Sprache;Sprachmodelle und APIs;nein;ja;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Hugging Face;https://huggingface.co;Die zentrale Plattform für offene Modelle, Datensätze und Demo-Apps (Spaces).;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Aleph Alpha;https://aleph-alpha.com;Modelle und KI-Plattform aus Heidelberg, ausgelegt auf Behörden und Unternehmen.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Jina AI;https://jina.ai;Embeddings, Reranker und Reader-APIs für Suche und RAG, aus Berlin.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Nebius;https://nebius.com;KI-Cloud mit GPU-Instanzen und Inferenz-Diensten, Sitz in Amsterdam.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Scaleway;https://www.scaleway.com;Französische Cloud mit GPU-Servern und Inferenz für offene Modelle.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-STACKIT;https://www.stackit.de;Souveräne Cloud der Schwarz-Gruppe aus Deutschland mit KI-Modell-Hosting.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Mistral Large 4;https://mistral.ai/news/mistral-large-4/;"Großes multimodales Modell von Mistral mit 1 Billion Parametern, davon 52 Milliarden aktiv, in Europa trainiert und betrieben; offene Gewichte sind angekündigt.";Text und Sprache;Sprachmodelle und APIs;ja;nein;ja;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-LFM3 von Liquid AI;https://www.liquid.ai/blog/lfm3;"Familie offener Kleinmodelle für Text, Bild, Audio und Entscheidungen im 2-Milliarden-Bereich; das Textmodell braucht bei 4 Bit rund 1 GB Speicher.";Text und Sprache;Sprachmodelle und APIs;nein;nein;ja;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Nemotron 3.5 Bolt;https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/;Offenes Kleinmodell von NVIDIA für lokale Sprach- und Geräteassistenten mit Werkzeugaufrufen, läuft laut NVIDIA mit rund 4 GB Grafikspeicher und über Ollama.;Text und Sprache;Sprachmodelle und APIs;nein;nein;ja;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Giotto Alto;https://www.giotto.ai/;Reasoning-Modell aus Lausanne, kostenlos im europäisch gehosteten Chat, dazu dedizierte Cloud in der Schweiz oder EU und Betrieb im eigenen Rechenzentrum.;Text und Sprache;Sprachmodelle und APIs;nein;nein;ja;ki-tools-text-und-sprache.html#sprachmodelle-und-apis
-Gemini;https://gemini.google.com;Googles Assistent, eng verzahnt mit Gmail, Docs und Drive.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Microsoft Copilot;https://copilot.microsoft.com;Microsofts Assistent (früher Bing Chat), integriert in Windows, Edge und Microsoft 365.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Langdock;https://langdock.com;KI-Plattform aus Deutschland, die Unternehmen mehrere Modelle in einer DSGVO-orientierten Oberfläche bereitstellt.;Text und Sprache;Chatbots und Assistenten;ja;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Character.AI;https://character.ai/;Eigene Figuren erstellen und mit ihnen chatten.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-ChatPDF;https://www.chatpdf.com/;PDF hochladen und Fragen dazu stellen.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-ChatSonic;https://writesonic.com/chat;Assistent von Writesonic für Text- und Bilderstellung.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Phind;https://www.phind.com/;Suchmaschine und Assistent speziell für Programmierer, auch als VS-Code-Erweiterung.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Tiledesk;https://tiledesk.com/;No-Code-Framework für Chatbots mit LLM-Anbindung, Open Source.;Text und Sprache;Chatbots und Assistenten;nein;ja;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-AICamp;https://aicamp.so/;ChatGPT-Arbeitsbereich für Teams.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Gali Chat;https://www.galichat.com/;KI-Support-Assistent für Websites, rund um die Uhr.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-dmwithme;https://dmwithme.com;KI-Begleiter mit Emotionen, der auch widerspricht.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Kimi;https://www.kimi.com;Chat-Assistent von Moonshot AI mit sehr langem Kontext.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Grok;https://grok.com;Chat-Assistent von xAI mit Zugriff auf aktuelle Beiträge von X.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#chatbots-und-assistenten
-Exa;https://exa.ai;Semantische Suche per API (früher Metaphor), gebaut für KI-Anwendungen und Agenten.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-Phind;https://phind.com/;KI-Suche für Entwickler-Fragen.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-You.com;https://you.com/;KI-Suchmaschine mit Fokus auf Privatsphäre und Anpassbarkeit.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-Komo AI;https://komo.ai/;KI-Suche mit kurzen, schnellen Antworten.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-Telborg;https://telborg.com/;KI-Recherche zum Klimawandel, ausschließlich mit Daten von Regierungen, Institutionen und Unternehmen.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-MemFree;https://github.com/memfreeme/memfree;Hybride KI-Suche über Web, Lesezeichen, Notizen und Dokumente.;Text und Sprache;KI-Suchmaschinen;nein;ja;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-Refinder AI;https://refinder.ai/;Universelle KI-Suche über alle Arbeitswerkzeuge.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-Agentset.ai;https://agentset.ai/;Semantische Suche und RAG für eigene Daten.;Text und Sprache;KI-Suchmaschinen;nein;ja;nein;ki-tools-text-und-sprache.html#ki-suchmaschinen
-Ollama;https://ollama.com/;Sprachmodelle mit einem Befehl lokal auf dem eigenen Rechner ausführen.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten
-LM Studio;https://lmstudio.ai;Desktop-App, um offene Modelle lokal herunterzuladen und offline zu nutzen.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;nein;nein;ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten
-Open WebUI;https://openwebui.com;Selbst gehostete ChatGPT-ähnliche Oberfläche für lokale und API-Modelle.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten
-privateGPT;https://github.com/imartinez/privateGPT;Fragen an eigene Dokumente stellen, komplett ohne Internetverbindung.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten
-quivr;https://github.com/StanGirard/quivr;"""Zweites Gehirn"": Dateien ablegen und per LLM mit ihnen chatten.";Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten
-gpt4all;https://github.com/nomic-ai/gpt4all;Lokaler Chat-Client für offene Modelle, läuft auch ohne GPU.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten
-DeepL Write;https://www.deepl.com/write;Verbessert Stil, Grammatik und Tonalität deutscher und englischer Texte.;Text und Sprache;Schreibassistenten;ja;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-neuroflash;https://neuroflash.com;KI-Texter aus Hamburg, spezialisiert auf deutschsprachige Marketing-Texte.;Text und Sprache;Schreibassistenten;ja;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Jasper;https://www.jasper.ai/;Content-Plattform für Marketing-Teams mit Markenstimme und Vorlagen.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Compose AI;https://www.compose.ai/;Chrome-Erweiterung mit KI-Autovervollständigung beim Schreiben.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Rytr;https://rytr.me/;Günstiger KI-Schreibassistent für kurze und mittellange Texte.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Wordtune;https://www.wordtune.com/;Formuliert Sätze um, kürzt oder erweitert sie.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-HyperWrite;https://hyperwriteai.com/;Schreibassistent von der Idee bis zum fertigen Entwurf.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Moonbeam;https://www.gomoonbeam.com/;Längere Blogartikel in einem Bruchteil der Zeit.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Copy.ai;https://www.copy.ai/;Marketing-Texte und GTM-Workflows mit KI.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Anyword;https://anyword.com/;Werbetexte mit Performance-Vorhersage.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Contenda;https://contenda.co/;Macht aus vorhandenem Content (Videos, Talks) neue Formate.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Hypotenuse AI;https://www.hypotenuse.ai/;"Aus wenigen Keywords Artikel, Produktbeschreibungen und Social-Posts; stark im E-Commerce.";Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Lavender;https://www.lavender.ai/;E-Mail-Coach für mehr Antworten auf Vertriebsmails.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Lex;https://lex.page/;Textverarbeitung mit eingebauter KI.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Jenni;https://jenni.ai/;Schreibassistent für wissenschaftliche Texte mit Zitaten.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-LAIKA;https://www.writewithlaika.com/;Trainiert eine KI auf deinen eigenen Schreibstil, für kreatives Schreiben.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-QuillBot;https://quillbot.com;Paraphrasieren, Zusammenfassen und Grammatikprüfung.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Postwise;https://postwise.ai/;Posts für X/Twitter schreiben und planen.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-RapidTextAI;https://app.rapidtextai.com/;Artikel mit mehreren Modellen (GPT, Gemini, DeepSeek, Grok) erstellen.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Copysmith;https://copysmith.ai/;Content-Erstellung für Unternehmen und E-Commerce.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Yomu;https://www.yomu.ai;Schreibassistent für Studierende und Forschende.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Quick Creator;https://quickcreator.io;SEO-optimierte Blog-Plattform mit KI.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Trolly.ai;https://trolly.ai/;SEO-Artikel schneller erstellen.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-PulsePost;https://pulsepost.io/;KI-Autor, der direkt auf die eigene Website veröffentlicht.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Shy Editor;https://www.shyeditor.com;Moderne KI-Schreibumgebung für Prosa aller Art.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-Headlinesai.pro;https://www.headlinesai.pro/;Klickstarke Überschriften für YouTube, Medium, Reddit und mehr.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-GPTLocalhost;https://gptlocalhost.com/demo/;Word-Add-in, das lokale LLMs in Microsoft Word nutzt, Alternative zu Copilot in Word.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#schreibassistenten
-X-doc AI;https://x-doc.ai/;KI-Übersetzer für Dokumente mit Erhalt des Layouts.;Text und Sprache;Übersetzung und Lokalisierung;nein;nein;nein;ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung
-HeyGen;https://www.heygen.com;Übersetzt Videos mit Lippensynchronisation.;Text und Sprache;Übersetzung und Lokalisierung;nein;nein;nein;ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung
-Lengoo;https://www.lengoo.com;KI-Übersetzung mit menschlicher Nachbearbeitung für Unternehmen, aus Berlin.;Text und Sprache;Übersetzung und Lokalisierung;ja;nein;nein;ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung
-Unbabel;https://www.unbabel.com;Übersetzungsplattform aus Lissabon, KI plus Community-Lektorat.;Text und Sprache;Übersetzung und Lokalisierung;ja;nein;nein;ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung
-Merlin;https://merlin.foyer.work/;KI-Assistent auf jeder Website, per Tastenkürzel.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-Gist AI;https://www.gistai.tech;Kostenlose Zusammenfassungen für Websites, YouTube und PDFs.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-WebChatGPT;https://chrome.google.com/webstore/detail/webchatgpt-chatgpt-with-i/lpfemeioodjbpieminkklglpmhlngfcn;Ergänzt ChatGPT-Prompts um aktuelle Web-Ergebnisse.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-GPT for Sheets and Docs;https://workspace.google.com/marketplace/app/gpt_for_sheets_and_docs/677318054654;KI-Funktionen direkt in Google Sheets und Docs, ideal für Massen-Texte in Tabellen.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-YouTube Summary with ChatGPT;https://chrome.google.com/webstore/detail/youtube-summary-with-chat/nmmicjeknamkfloonkhhcjmomieiodli;Fasst YouTube-Videos zusammen.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-ChatGPT Prompt Genius;https://chrome.google.com/webstore/detail/chatgpt-prompt-genius/jjdnakkfjnnbbckhifcfchagnpofjffo;Prompts entdecken, teilen und Chat-Verlauf lokal speichern.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-ChatGPT for Search Engines;https://chrome.google.com/webstore/detail/chatgpt-for-search-engine/feeonheemodpkdckaljcjogdncpiiban;Zeigt KI-Antworten neben Google-, Bing- und DuckDuckGo-Ergebnissen.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-ShareGPT;https://sharegpt.com/;ChatGPT-Unterhaltungen teilen und entdecken.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-ChatGPT Writer;https://chatgptwriter.ai/;Komplette E-Mails und Nachrichten per KI schreiben.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-ChatGPT for Jupyter;https://github.com/TiesdeKok/chat-gpt-jupyter-extension;KI-Hilfsfunktionen in Jupyter Notebook und Jupyter Lab.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;ja;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-editGPT;https://www.editgpt.app/;Korrekturlesen mit Änderungsverfolgung in ChatGPT.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-Chatbot UI;https://github.com/mckaywrigley/chatbot-ui;Open-Source-Oberfläche für ChatGPT und andere Modelle.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;ja;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-Forefront;https://www.forefront.ai/;Alternative Oberfläche für Chat-Modelle.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-AI Character for GPT;https://chromewebstore.google.com/detail/ai-character-for-gpt/daoeioifimkjegafelcaljboknjkkohh;Rollen für ChatGPT und andere Bots per Klick, für bessere Antworten.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons
-Notion AI;https://www.notion.so/product/ai;Schreiben, Zusammenfassen und Fragen an den eigenen Notion-Workspace.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Napkin;https://www.napkin.ai/;Verwandelt Text in Diagramme und Grafiken.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Gamma;https://gamma.app/;Präsentationen, Dokumente und Webseiten aus einem Prompt.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Mem;https://mem.ai/;Notiz-App, die sich selbst organisiert.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Taskade;https://www.taskade.com/;Aufgaben, Teamarbeit und KI-Agenten in einem Workspace.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Nekton AI;https://nekton.ai;Workflows in Alltagssprache beschreiben und automatisieren.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Elephas;https://elephas.app/;Persönlicher KI-Schreibassistent für den Mac.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Google Sheets Formula Generator;https://bettersheets.co/google-sheets-formula-generator;Formeln für Google Sheets aus Text erzeugen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-CreateEasily;https://createeasily.com/;Kostenlose Transkription von Audio- und Videodateien bis 2 GB.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Cosmos;https://meetcosmos.com/;Lokale, offline KI-Suche in eigenen Fotos und Videos.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-aiPDF;https://aipdf.ai;KI-Dokumentenassistent für PDFs.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Summary With AI;https://www.summarywithai.com/;Fasst lange PDFs über alle Seiten hinweg zusammen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Emilio;https://getemil.io;Priorisiert und automatisiert E-Mails.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Pieces;https://pieces.app/;On-Device-Copilot für Entwickler, der Code-Schnipsel und Kontext speichert.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Huntr AI Resume Builder;https://huntr.co/product/ai-resume-builder/;ATS-freundliche Lebensläufe mit KI.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Chat With PDF by Copilot.us;https://copilot.us/apps/chat-with-pdf;Mit mehreren PDFs gleichzeitig chatten.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Recall;https://www.getrecall.ai/;Fasst Artikel, Videos und Podcasts zusammen und baut eine Wissensbasis.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Talently AI;https://interview.talently.ai/;KI-Interviewer für Bewerbungsgespräche mit Echtzeit-Bewertung.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-AnkiDecks AI;https://anki-decks.com;Lernkarten aus Dateien oder Text erzeugen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-AI for Google Slides;https://www.aiforgoogleslides.com/;Präsentationen für Google Slides mit KI.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-FARSITE;https://far.site/;Compliance-Software für US-Regierungsauftragnehmer.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-BrainSoup;https://www.nurgo-software.com/products/brainsoup;Multi-Agenten-Client für mehrere LLMs mit Gedächtnis und Werkzeugen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-MindPal;https://mindpal.space/;"""Zweites Gehirn"" mit einem Team aus KI-Agenten.";Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-fabric;https://github.com/danielmiessler/fabric;KI im Terminal mit einer Bibliothek bewährter Prompt-Muster.;Text und Sprache;Produktivität;nein;ja;nein;ki-tools-text-und-sprache.html#produktivität
-SlidesWizard;https://slideswizard.io;PowerPoint- und Google-Slides-Präsentationen zu jedem Thema.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Transgate;https://transgate.ai/;Sprache-zu-Text mit KI.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-RabbitHoles AI;https://www.rabbitholes.ai/;Chat mit KI auf einer unendlichen Leinwand.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Rember;https://www.rember.com/;Spaced-Repetition-System zum besseren Merken.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Qurate;https://qurate.appcradle.net/;Findet passende Zitate zum Kontext.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-FirmOS;https://www.firmos.ai/;Automatisierung für Steuer- und Buchhaltungskanzleien.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Whisper API;https://whisper-api.com;Transkriptions-API auf Basis von OpenAI Whisper, 5 kostenlose Transkriptionen pro Tag.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Smmry;https://smmry.com/;Fasst lange Inhalte in klare Kernaussagen zusammen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Nudge AI;https://getnudgeai.com/;KI-Dokumentationsassistent für das Gesundheitswesen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Summara;https://summara.io/;Widget für YouTube-Zusammenfassungen und Transkripte.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Marblism;https://marblism.com;"KI-""Mitarbeiter"" für kleine Unternehmen.";Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Spell;https://spellapp.com;KI-Alternative zu Google Docs.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Kosmik;https://www.kosmik.app;KI-Moodboards und visuelle Recherche.;Text und Sprache;Produktivität;ja;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Magic Potion;https://www.magicpotion.app;Visueller Prompt-Editor.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-MinusX;https://minusx.ai/;KI-Analyst, der Datenfragen in Metabase beantwortet.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Excelmatic;https://excelmatic.ai;Excel-Daten per Chat analysieren und visualisieren, ohne Formeln.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-Langfa.st;https://langfa.st/;Spielwiese ohne Anmeldung zum Testen und Teilen von Prompt-Vorlagen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-SalesAgent Chat;https://www.salesagent.chat;KI-Vertriebscoach mit Echtzeit-Unterstützung.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#produktivität
-"tl;dv";https://tldv.io;Zeichnet Zoom, Teams und Google Meet auf, transkribiert und fasst zusammen, auch auf Deutsch.;Text und Sprache;Meeting-Assistenten;ja;nein;nein;ki-tools-text-und-sprache.html#meeting-assistenten
-Fireflies.ai;https://fireflies.ai;Meeting-Notizen, Transkripte und Suche über alle Calls.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#meeting-assistenten
-Otter.ai;https://otter.ai/;Nimmt Meetings auf, schreibt mit und fasst zusammen.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#meeting-assistenten
-MeetGeek;https://meetgeek.ai/;Nimmt Meetings auf, transkribiert und liefert Kernpunkte.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#meeting-assistenten
-Cogram;https://www.cogram.com/;Automatische Notizen und Aufgaben aus virtuellen Meetings.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#meeting-assistenten
-Sybill;https://www.sybill.ai/;Fasst Vertriebsgespräche zusammen, inklusive Pain Points und nächsten Schritten.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#meeting-assistenten
-Scribbl;https://www.scribbl.co;KI-Meeting-Notizen für Google Meet.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#meeting-assistenten
-Elicit;https://elicit.com;Automatisiert Teile der Literaturrecherche.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#wissenschaft-und-recherche
-Consensus;https://consensus.app/search/;Suchmaschine, die Antworten aus wissenschaftlichen Studien liefert.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#wissenschaft-und-recherche
-SciSpace;https://scispace.com/;Chat mit wissenschaftlichen PDFs.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#wissenschaft-und-recherche
-genei;https://www.genei.io/;Fasst Fachartikel in Sekunden zusammen.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#wissenschaft-und-recherche
-Explainpaper;https://www.explainpaper.com/;Unverständliche Stellen in Papers markieren und erklären lassen.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#wissenschaft-und-recherche
-Sourcely;https://www.sourcely.net/;Findet passende Quellen und Zitate für wissenschaftliche Arbeiten.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#wissenschaft-und-recherche
-Mathos AI;https://www.mathgptpro.com/;KI-Mathe-Löser und Tutor.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#wissenschaft-und-recherche
-SiteGPT;https://sitegpt.ai/;Trainiert einen Support-Bot auf die eigene Website.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-GPTHelp.ai;https://gpthelp.ai/;KI-Chatbot für den Website-Support.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-SiteSpeakAI;https://sitespeak.ai;Automatisiert den Kundenservice mit KI.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-Dear AI;https://www.dearai.online;Chatbot für Kundenservice und Vertrieb.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-Inline Help;https://inlinehelp.com;Beantwortet Kundenfragen, bevor sie gestellt werden.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-Aidbase;https://www.aidbase.ai;KI-Support für SaaS-Startups.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-Twig;https://www.twig.so/;Löst Kundenanfragen sofort, für Kunden und Support-Teams.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-EmailTriager;https://www.emailtriager.com/;Entwirft E-Mail-Antworten automatisch im Hintergrund.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-Parloa;https://www.parloa.com;KI-Agenten für Telefon und Chat im Kundenservice, aus Berlin.;Text und Sprache;Kundenservice;ja;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-Cognigy;https://www.cognigy.com;Agenten-Plattform für Contact Center, aus Düsseldorf.;Text und Sprache;Kundenservice;ja;nein;nein;ki-tools-text-und-sprache.html#kundenservice
-Rasa;https://www.rasa.com;Framework für eigene Chat- und Sprachassistenten, aus Berlin.;Text und Sprache;Kundenservice;ja;ja;nein;ki-tools-text-und-sprache.html#kundenservice
-Make;https://www.make.com;Visuelle Automatisierungsplattform aus Prag mit Tausenden App-Anbindungen.;Automatisierung und KI-Agenten;;ja;nein;nein;ki-tools-automatisierung-und-ki-agenten.html
-Zapier;https://zapier.com;Verbindet Tausende Apps per Automatisierung, inklusive KI-Schritten und Agenten.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html
-MindStudio;https://mindstudio.ai/;KI-Agenten ohne Code bauen, mit über 100 Vorlagen.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html
-AI-Flow;https://ai-flow.net/;Mehrere KI-Modelle visuell miteinander verbinden.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html
-Shotstack Workflows;https://shotstack.io/product/workflows/;No-Code-Automatisierung für KI-Medienproduktion.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html
-Hyperbrowser;https://hyperbrowser.ai/;Browser-Infrastruktur für KI-Agenten mit Proxys und Session-Aufzeichnung.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html
-Notte;https://github.com/nottelabs/notte;Framework für Agenten, die den Browser bedienen.;Automatisierung und KI-Agenten;;nein;ja;nein;ki-tools-automatisierung-und-ki-agenten.html
-goose;https://github.com/aaif-goose/goose;Offener KI-Agent als Desktop-App und Kommandozeile, bindet Erweiterungen per MCP an und liegt heute bei der Agentic AI Foundation der Linux Foundation.;Automatisierung und KI-Agenten;;nein;ja;ja;ki-tools-automatisierung-und-ki-agenten.html
-LangChain;https://langchain.com/;Framework für Anwendungen und Agenten auf Basis von Sprachmodellen.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-LlamaIndex;https://www.llamaindex.ai/;Daten-Framework für LLM-Anwendungen mit eigenen Daten (RAG).;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Haystack;https://haystack.deepset.ai/;Framework aus Berlin für Agenten, semantische Suche und Frage-Antwort-Systeme.;Entwickler-Tools und LLMOps;;ja;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Cohere;https://cohere.com/;Sprachmodelle und Embeddings für Unternehmen, stark bei Suche und Reranking.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Langfuse;https://langfuse.com/;LLM-Engineering-Plattform aus Berlin zum Debuggen, Tracen und Bewerten.;Entwickler-Tools und LLMOps;;ja;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Keploy;https://keploy.io/;Wandelt echten Nutzer-Traffic in Testfälle und Datenstubs um.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Portia AI;https://www.portialabs.ai/;Agenten-Framework, bei dem Agenten ihre geplanten Schritte offenlegen und unterbrechbar bleiben.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-LMQL;https://lmql.ai/;Abfragesprache für Sprachmodelle.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Phoenix;https://phoenix.arize.com/;Observability für LLM- und ML-Modelle im Notebook.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Prediction Guard;https://www.predictionguard.com/;Private, kontrollierte und compliance-konforme LLM-Nutzung.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Portkey;https://portkey.ai/;LLMOps-Plattform zum Überwachen, Steuern und Verbessern von LLM-Apps.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-OpenAI Downtime Monitor;https://status.portkey.ai/;Kostenloses Monitoring von Verfügbarkeit und Latenz verschiedener LLM-Anbieter.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-ChatWithCloud;https://chatwithcloud.ai/;AWS per natürlicher Sprache im Terminal steuern.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-SinglebaseCloud;https://singlebase.cloud;Backend mit Vektor-DB, Dokument-DB und Auth für KI-Apps.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Maxim AI;https://www.getmaxim.ai/;Evaluation und Observability für generative KI.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Wordware;https://www.wordware.ai;"Web-IDE, in der Fachleute und KI-Entwickler gemeinsam Agenten bauen; Prompting als Programmiersprache.";Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Hexabot;https://hexabot.ai;No-Code-Baukasten für mehrsprachige Chatbots und Agenten.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-AI/ML API;https://aimlapi.com/;Über 100 KI-Modelle über eine einzige API.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Opik;https://www.comet.com/site/products/opik/;Testen, Bewerten und Überwachen von LLM-Anwendungen.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Kiln;https://getkiln.ai;Eigene Modelle bauen: synthetische Daten, Feintuning und Datensatz-Pflege ohne Code.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Calmo;https://getcalmo.com/;Produktionsfehler mit KI schneller debuggen.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Cleanlab;https://help.cleanlab.ai/tlm/;Erkennt und behebt Halluzinationen in LLM-Anwendungen.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Amazon Q Developer CLI;https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html;Befehlsvervollständigung, Übersetzung von Absicht in Befehle und Agenten-Chat im Terminal.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Agentic Radar;https://github.com/splx-ai/agentic-radar;Sicherheits-Scanner für agentische Workflows.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-VoltAgent;https://github.com/voltagent/voltagent;TypeScript-Framework für KI-Agenten mit Werkzeugen und Gedächtnis.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-TensorZero;https://www.tensorzero.com/;LLM-Gateway, Observability, Optimierung und Evaluation in einem Framework.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-ToolHive;https://github.com/stacklok/toolhive;Passende MCP-Server finden und per Klick bereitstellen.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-AgentDock;https://agentdock.ai;Ein API-Schlüssel für alle Dienste, die ein Agent braucht.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Codeflash;https://www.codeflash.ai/;Optimiert Python-Code automatisch auf Geschwindigkeit.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Agenta;https://agenta.ai/;Prompt-Management, Evaluation und Observability.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Pagerly;https://www.pagerly.io;Operations-Copilot für Slack und Teams, unterstützt die Rufbereitschaft beim Debuggen.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Harbor;https://github.com/av/harbor;LLM-Backends, APIs und Oberflächen mit einem Befehl starten.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Petals;https://github.com/bigscience-workshop/petals;Große Modelle verteilt im BitTorrent-Stil ausführen.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html
-Context Data;https://contextdata.ai/;Datenaufbereitung und ETL für generative KI.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html
-Agent Skills;https://agentskills.io;Offener Standard für Agenten-Fähigkeiten: ein Ordner mit SKILL.md und Skripten, den über 70 Agenten-Plattformen lesen können.;Entwickler-Tools und LLMOps;;nein;nein;ja;ki-tools-entwickler-tools-und-llmops.html
-Timestral;https://mistral.ai/news/timestral/;Kleine Zeitreihen-Modelle von Mistral für Prognosen zu Absatz, Energie oder Sensordaten, laufen ohne Grafikkarte.;Entwickler-Tools und LLMOps;;ja;ja;ja;ki-tools-entwickler-tools-und-llmops.html
-Claude Code;https://www.anthropic.com/claude-code;Agentisches Coding-Tool von Anthropic für Terminal, IDE und Web.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-GitHub Copilot;https://github.com/features/copilot;Code-Vorschläge, Chat und Coding-Agent direkt im Editor und auf GitHub.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Windsurf;https://www.windsurf.com;KI-Code-Editor mit agentischem Assistenten.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Lovable;https://lovable.dev;Web-Apps per Chat bauen, aus Stockholm.;Programmieren mit KI;;ja;nein;nein;ki-tools-programmieren-mit-ki.html
-Bolt.new;https://bolt.new;Full-Stack-Web-Apps im Browser aus einem Prompt.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-v0;https://v0.app;Erzeugt UI und Web-Apps mit React und Next.js aus Text.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Kilo Code;https://kilocode.ai;Open-Source-Coding-Assistent in VS Code zum Planen, Bauen und Fixen.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-Amazon Q Developer;https://aws.amazon.com/q/developer/;KI-Coding-Assistent für VS Code und IntelliJ mit Chat und Agenten-Workflows.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Tabnine;https://www.tabnine.com/;Code-Vervollständigung, auch als private On-Premise-Variante.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Replit;https://replit.com;Browser-IDE mit KI-Agent, der Apps baut und bereitstellt.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-GoCodeo;https://www.gocodeo.com/;KI-Agent für Code und Tests.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-CodeRabbit;https://coderabbit.ai/;Automatische KI-Code-Reviews für Pull Requests.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-PR-Agent;https://github.com/Codium-ai/pr-agent;Automatische PR-Analyse, Feedback und Vorschläge.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-Gito;https://github.com/Nayjest/Gito;KI-Code-Reviewer für GitHub Actions oder lokal, mit jedem LLM nutzbar.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-CodiumAI / Qodo;https://www.codium.ai/;Schlägt sinnvolle Tests direkt in der IDE vor.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Mintlify;https://mintlify.com/;KI-gestützte Dokumentation für Entwickler.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Stenography;https://stenography.dev/;Automatische Code-Dokumentation.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-AI2sql;https://www.ai2sql.io/;SQL-Abfragen aus natürlicher Sprache.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-poorcoder;https://github.com/vgrichina/poorcoder;Bash-Skripte, die das Terminal mit Web-Assistenten wie Claude oder Grok verbinden.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-TurboPilot;https://github.com/ravenscroftj/turbopilot;Selbst gehosteter Copilot-Klon, der mit 4 GB RAM läuft.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-GPT-Code UI;https://github.com/ricklamers/gpt-code-ui;Open-Source-Nachbau des ChatGPT Code Interpreter.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-MetaGPT;https://github.com/geekan/MetaGPT;Multi-Agenten-Framework: aus einer Anforderung werden PRD, Design, Aufgaben und Code.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-Plandex;https://github.com/plandex-ai/plandex;Terminal-basierte KI-Programmierumgebung für komplexe Aufgaben.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-MutahunterAI;https://github.com/codeintegrity-ai/mutahunter;Mutationstests mit KI für bessere Testabdeckung.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-AI Kernel Explorer;https://github.com/mathiscode/ai-kernel-explorer;Linux-Kernel-Quellcode mit KI-Zusammenfassungen erkunden.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-WhoDB;https://github.com/clidey/whodb;Datenbank-Explorer für SQL, NoSQL, Graph und Cache mit KI-Chat.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-DataPup;https://github.com/DataPupOrg/DataPup;Datenbank-Client mit KI-Unterstützung für Abfragen.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-FlexApp;https://flexapp.ai/;Mobile Apps mit KI bauen, ohne Code.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Capacity;https://capacity.so;Aus Ideen in Minuten funktionierende Web-Apps.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Runcell;https://runcell.dev;KI-Agent für Jupyter Lab, der Code schreibt, ausführt und Ergebnisse analysiert.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Manifest;https://github.com/mnfst/manifest;Backend-Alternative zu Supabase für KI-Code-Editoren und Vibe Coding.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html
-Code to Flow;https://codetoflow.com;Macht aus Code interaktive Flussdiagramme.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html
-Google Antigravity;https://antigravity.google/;Agenten-Plattform von Google für Software-Entwicklung, für einzelne Entwickler kostenlos, auf macOS, Windows und Linux.;Programmieren mit KI;;nein;nein;ja;ki-tools-programmieren-mit-ki.html
-Midjourney;https://www.midjourney.com/;Bildgenerator mit markantem, künstlerischem Stil.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#bildmodelle
-Stable Diffusion;https://huggingface.co/CompVis/stable-diffusion-v1-4;Offenes Text-zu-Bild-Modell von Stability AI, lokal ausführbar.;Bilder;Bildmodelle;nein;ja;nein;ki-tools-bilder.html#bildmodelle
-Imagen;https://imagen.research.google/;Googles Text-zu-Bild-Modell mit hohem Fotorealismus, inzwischen nur noch über Googles Cloud-Plattform statt der Gemini-API.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#bildmodelle
-Ideogram;https://ideogram.ai;Bildgenerator, der besonders gut lesbare Schrift in Bildern erzeugt.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#bildmodelle
-Adobe Firefly;https://firefly.adobe.com;Bildgenerierung von Adobe, trainiert auf lizenzierten Inhalten, integriert in Photoshop.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#bildmodelle
-DALL·E;https://openai.com/dall-e-2/;Bildmodell von OpenAI, heute direkt in ChatGPT nutzbar.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#bildmodelle
-DragGAN;https://github.com/XingangPan/DragGAN;Bilder per Punkt-Ziehen interaktiv verformen.;Bilder;Bildmodelle;nein;ja;nein;ki-tools-bilder.html#bildmodelle
-FLUX 3 Image Klein;https://bfl.ai/blog/flux-3-image-klein;Offenes Bildmodell aus Freiburg mit 5,6 Milliarden Parametern, erzeugt und bearbeitet Bilder bis 4K und läuft schon auf Grafikkarten mit 8 GB.;Bilder;Bildmodelle;ja;nein;ja;ki-tools-bilder.html#bildmodelle
-Canva;https://www.canva.com/ai-image-generator/;KI-Bilder direkt in der Design-Plattform erzeugen und bearbeiten.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Leonardo.ai;https://leonardo.ai;Bildgenerator mit vielen Stil-Modellen, beliebt für Game-Assets und Marketing.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-KREA;https://www.krea.ai/;Echtzeit-Bildgenerierung, Upscaling und Video in einer Oberfläche.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-PhotoRoom;https://www.photoroom.com/;Produktfotos per Smartphone: Hintergrund entfernen und ersetzen, aus Paris.;Bilder;Bild-Dienste;ja;nein;nein;ki-tools-bilder.html#bild-dienste
-ClipDrop;https://clipdrop.co/;Professionelle Visuals ohne Fotostudio: freistellen, retuschieren, erweitern.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Magic Eraser;https://www.magiceraser.io/;Störende Objekte in Sekunden aus Bildern entfernen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Craiyon;https://www.craiyon.com/;Kostenloser Bildgenerator (früher DALL-E mini).;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-DreamStudio;https://beta.dreamstudio.ai/;Einfache Oberfläche für Stable Diffusion.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Artbreeder;https://www.artbreeder.com/;Bilder mischen und gemeinsam weiterentwickeln.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-GauGAN2;http://gaugan.org/gaugan2/;Fotorealistische Landschaften aus Wörtern und Skizzen (NVIDIA).;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Magic Studio;https://magicstudio.com/imagine;Bilder aus einer Beschreibung erzeugen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Patience.ai;https://www.patience.ai/;App für Bilder mit Stable Diffusion.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-GenShare;https://www.genshare.io/;Kostenlos Kunst generieren und teilen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Playground AI;https://playgroundai.com/;Kostenloser Bildgenerator für Social Posts, Poster und Logos.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Avatar AI;https://avatarai.me/;Eigene KI-Avatare erstellen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-RunDiffusion;https://rundiffusion.com/;Cloud-Arbeitsplatz für KI-Kunst.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Human Generator;https://generated.photos/human-generator;Realistische Fotos von Menschen, die es nicht gibt.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-VectorArt.ai;https://vectorart.ai;Vektorgrafiken mit KI erzeugen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Room Reinvented;https://roomreinvented.com;Raumfoto hochladen und über 30 Einrichtungsstile ausprobieren.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Gensbot;https://gensbot.com;Personalisiertes Merchandise aus einem Prompt.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-PlantPhotoAI;https://www.plantphotoai.com/;Kostenlose KI-Pflanzenbilder.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Black Headshots;https://www.blackheadshots.com;KI-Bewerbungsfotos für Schwarze Berufstätige.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-iColoring;https://icoloring.ai;Kostenlose Ausmalbilder mit KI.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Suit me Up;https://suitmeup.pictures/;Fotos von dir im Anzug erzeugen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-AI Photo Forge;https://aiphotoforge.com/;Telegram-Bot für KI-Fotos von dir.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-AI Boost;https://boost.pictures/;All-in-one: Upscaling, Face Swap, Avatare, virtuelle Anprobe, Hintergründe.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-PlantTattoosAI;https://www.planttattoosai.com/;Tattoo-Designs mit Pflanzen und Blumen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Recraft;https://www.recraft.ai;Bildgenerator mit Stil-Kontrolle, erzeugt auch Vektorgrafiken.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#bild-dienste
-Microsoft Designer;https://designer.microsoft.com/;Designs für Social Media und Einladungen in Sekunden.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#grafikdesign
-Canva;https://www.canva.com/;Design-Plattform mit KI-Funktionen zum Erzeugen und Bearbeiten.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#grafikdesign
-Brandmark;https://brandmark.io/;Logo-Design mit KI.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#grafikdesign
-Text2Infographic;https://text2infographic.com/;Infografiken aus Text generieren und bearbeiten.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#grafikdesign
-Seede.ai;https://seede.ai/;Poster in einer Minute.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#grafikdesign
-Magic Patterns;https://www.magicpatterns.com/;UI-Entwürfe mit Figma-Export und React-Code.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#grafikdesign
-OpenArt;https://openart.ai/;Über 10 Millionen Prompts durchsuchen und selbst generieren.;Bilder;Bildarchive und Prompt-Sammlungen;nein;nein;nein;ki-tools-bilder.html#bildarchive-und-prompt-sammlungen
-Phygital;https://app.phygital.plus/;Vorlagen zum Erzeugen und Bearbeiten von Bildern.;Bilder;Bildarchive und Prompt-Sammlungen;nein;nein;nein;ki-tools-bilder.html#bildarchive-und-prompt-sammlungen
-PublicPrompts;https://publicprompts.art/;Kostenlose Prompts für Stable Diffusion.;Bilder;Bildarchive und Prompt-Sammlungen;nein;nein;nein;ki-tools-bilder.html#bildarchive-und-prompt-sammlungen
-Civitai;https://civitai.com/;Community-Plattform für Bildmodelle und LoRAs.;Bilder;Modell-Bibliotheken und Stable-Diffusion-Ressourcen;nein;nein;nein;ki-tools-bilder.html#modell-bibliotheken-und-stable-diffusion-ressourcen
-Stable Diffusion Models;https://rentry.org/sdmodels;Umfangreiche Liste von Stable-Diffusion-Checkpoints.;Bilder;Modell-Bibliotheken und Stable-Diffusion-Ressourcen;nein;nein;nein;ki-tools-bilder.html#modell-bibliotheken-und-stable-diffusion-ressourcen
-Stable Horde;https://stablehorde.net/;Verteiltes Community-Cluster für Stable Diffusion.;Bilder;Modell-Bibliotheken und Stable-Diffusion-Ressourcen;nein;nein;nein;ki-tools-bilder.html#modell-bibliotheken-und-stable-diffusion-ressourcen
-Hugging Face Diffusion Models Course;https://github.com/huggingface/diffusion-models-class;Kostenloser Kurs zu Diffusionsmodellen in Python.;Bilder;Modell-Bibliotheken und Stable-Diffusion-Ressourcen;nein;ja;nein;ki-tools-bilder.html#modell-bibliotheken-und-stable-diffusion-ressourcen
-Google Veo;https://deepmind.google/models/veo/;Googles Videomodell für realistische Clips mit Ton.;Video;;nein;nein;nein;ki-tools-video.html
-Kling AI;https://app.klingai.com/global/;Bild- und Videogenerierung mit sehr flüssiger Bewegung.;Video;;nein;nein;nein;ki-tools-video.html
-RunwayML;https://runwayml.com/;Kreativ-Suite für KI-Video, Bearbeitung und Effekte.;Video;;nein;nein;nein;ki-tools-video.html
-Luma Dream Machine;https://lumalabs.ai;Videos aus Text und Bildern mit realistischer Physik.;Video;;nein;nein;nein;ki-tools-video.html
-Pika;https://pika.art;Kurze, verspielte KI-Videos und Effekte.;Video;;nein;nein;nein;ki-tools-video.html
-Synthesia;https://www.synthesia.io/;Videos mit KI-Sprechern aus reinem Text, über 100 Sprachen inklusive Deutsch.;Video;;nein;nein;nein;ki-tools-video.html
-D-ID;https://www.d-id.com/;Sprechende, interaktive Avatare per Klick.;Video;;nein;nein;nein;ki-tools-video.html
-Descript;https://www.descript.com;Videos und Podcasts bearbeiten wie ein Textdokument.;Video;;nein;nein;nein;ki-tools-video.html
-Opus Clip;https://www.opus.pro;Schneidet lange Videos automatisch in virale Shorts.;Video;;nein;nein;nein;ki-tools-video.html
-Clipwing;https://clipwing.pro/;Zerlegt lange Videos in Dutzende kurze Clips.;Video;;nein;nein;nein;ki-tools-video.html
-Recast Studio;https://recast.studio;KI-Assistent für Podcast-Marketing.;Video;;nein;nein;nein;ki-tools-video.html
-Based AI;https://www.basedlabs.ai/;Intuitive Oberfläche für KI-Videos.;Video;;nein;nein;nein;ki-tools-video.html
-Sisif;https://sisif.ai/;Aus Text in Sekunden ein Video.;Video;;nein;nein;nein;ki-tools-video.html
-Melies;https://melies.co;Software für KI-Filmproduktion.;Video;;nein;nein;nein;ki-tools-video.html
-FLUX 3 Video;https://bfl.ai/blog/flux-3-video;Videomodell von Black Forest Labs, erzeugt Clips bis 20 Sekunden mit passendem Ton.;Video;;ja;nein;ja;ki-tools-video.html
-Murf AI;https://murf.ai/;Einfache Plattform für hochwertige Voiceover, beliebt im Marketing.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-Descript Overdub;https://www.descript.com/overdub;Voice Cloning direkt im Schnitt- und Transkriptionswerkzeug von Descript.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-Respeecher;https://www.respeecher.com/;Professionelles Voice Cloning für Film und Fernsehen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-Resemble AI;https://www.resemble.ai/;Echtzeit-Sprachsynthese und Voice Cloning mit vielen Anpassungen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-WellSaid Labs;https://www.wellsaidlabs.com/;Natürliche Sprecherstimmen für E-Learning und Unternehmensvideos.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-iSpeech;https://www.ispeech.org/;Sprachsynthese in vielen Sprachen für Unternehmensanwendungen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-Microsoft Azure Neural TTS;https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/;Skalierbare Sprachsynthese für Unternehmensanwendungen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-Zenmic.com;https://zenmic.com;Erzeugt Podcast-Folgen (Skript und Audio) mit KI.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-Audify AI;https://audify-ai.ahmedtokyo.com;Sprachsynthese mit anpassbaren Stimmen und Anweisungen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-TTS WebUI;https://github.com/rsxdalv/tts-generation-webui;Oberfläche für über 15 Sprach- und Musikmodelle.;Audio;Stimmen und Voice Cloning;nein;ja;nein;ki-tools-audio.html#stimmen-und-voice-cloning
-TorToiSe;https://github.com/neonbjb/tortoise-tts;Text-zu-Sprache mit mehreren Stimmen und Fokus auf Qualität.;Audio;Sprache zu Text und Text zu Sprache;nein;ja;nein;ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache
-Bark;https://github.com/suno-ai/bark;Transformer-Modell für Text zu Audio.;Audio;Sprache zu Text und Text zu Sprache;nein;ja;nein;ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache
-CustomPod.io;https://custompod.io;Tägliche News-Podcasts nur zu deinen Themen.;Audio;Sprache zu Text und Text zu Sprache;nein;nein;nein;ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache
-EKHOS AI;https://ekhos.ai;Transkription mit Korrekturfunktionen und Echtzeit-Aufnahme.;Audio;Sprache zu Text und Text zu Sprache;nein;nein;nein;ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache
-Voxtral 3;https://mistral.ai/news/voxtral-3/;Spracherkennung und Sprachausgabe von Mistral, mit Deutsch, Sprechererkennung und einem SDK für Sprachagenten.;Audio;Sprache zu Text und Text zu Sprache;ja;nein;ja;ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache
-Suno;https://suno.com;Komplette Songs mit Gesang aus einem Prompt, auch auf Deutsch.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Udio;https://www.udio.com;Songs und Instrumentals in hoher Klangqualität generieren.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-AIVA;https://www.aiva.ai;KI-Komponist für klassische und cineastische Musik.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Mubert;https://www.mubert.com;Lizenzfreie, generative Musik in Echtzeit für Creator und Marken.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Soundraw;https://soundraw.io;Musik nach Stimmung und Stil anpassen.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Beatoven.ai;https://www.beatoven.ai;Hintergrundmusik, die gezielt Emotionen erzeugt.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Boomy;https://www.boomy.com;Schnell Songs erstellen und veröffentlichen.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Ecrett Music;https://www.ecrettmusic.com;Lizenzfreie Musik für Videos.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Loudly;https://www.loudly.com;KI-Musik mit Community-Funktionen.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Soundful;https://www.soundful.com;Hochwertige, lizenzfreie Musik für Content Creator.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-AI Song Maker;https://www.aisongmaker.io;Songs mit KI erstellen.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Harmonai;https://www.harmonai.org/;Community für Open-Source-Audiowerkzeuge.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-MusicLM;https://google-research.github.io/seanet/musiclm/examples/;Googles Forschungsmodell für Musik aus Text.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Remusic;https://remusic.ai/en;Kostenloser Musikgenerator und Lernplattform.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#musik
-Semrush;https://www.semrush.com;SEO-Suite für Keywords, Wettbewerber und Site-Audits, mit KI-Funktionen und Sichtbarkeits-Tracking in KI-Suchen.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#seo-und-content-optimierung
-Ahrefs;https://www.ahrefs.com;SEO-Suite mit großem Backlink-Index und KI-Content-Werkzeugen.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#seo-und-content-optimierung
-Surfer;https://surferseo.com;Optimiert Texte datenbasiert auf Suchintention und Konkurrenz.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#seo-und-content-optimierung
-Frase;https://frase.io;SEO-Briefings und Content-Optimierung aus den Top-Suchergebnissen.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#seo-und-content-optimierung
-MarketMuse;https://www.marketmuse.com/;Themen-Planung und Content-Optimierung mit KI.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#seo-und-content-optimierung
-Luthor;https://luthor.ai/;Programmatisches Content-Marketing in großem Umfang.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#seo-und-content-optimierung
-Mutiny;https://www.mutinyhq.com/;Personalisiert Websites mit KI für mehr Conversions.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Clearbit;https://clearbit.com/;Lead-Anreicherung und Firmendaten (heute Teil von HubSpot).;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Seventh Sense;https://www.theseventhsense.com/;Optimiert den Versandzeitpunkt von E-Mails.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Smartly.io;https://www.smartly.io/;Automatisiert Erstellung und Optimierung von Social Ads, aus Helsinki.;Marketing und SEO;Werbung, Social und Personalisierung;ja;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Adzooma;https://www.adzooma.com/;KI-gestützte Verwaltung von PPC-Kampagnen.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Phrasee;https://www.phrasee.co/;Optimierte Marketing-Texte für E-Mail, Push und Social.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Brandwatch;https://www.brandwatch.com;Social Listening und Sentiment-Analyse (inklusive des früheren Crimson Hexagon).;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Chatfuel;https://www.chatfuel.com/;Chatbots für Messenger, Instagram und WhatsApp.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-LogicBalls;https://logicballs.com/;KI-Schreibwerkzeug für jede Art von Content.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Rupert AI;https://www.getrupert.com/;KI-Werkzeuge für Designer und Marketer.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Publish7;https://publish7.com/;KI-Agenten für digitales Marketing im Handel und E-Commerce.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Keyla.AI;https://keyla.ai/;Video-Anzeigen in Minuten.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Persuva;https://persuva.ai;Überzeugende, konversionsstarke Anzeigentexte in großem Umfang.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Taplio;https://taplio.com/;All-in-one-Tool für LinkedIn mit KI.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Socialsonic;https://socialsonic.com;LinkedIn-Coach: Content, Trends und Planung.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-Podify.io;https://podify.io;Wachstum auf LinkedIn mit KI und Community.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-PressPulse AI;https://www.presspulse.ai/;Jeden Morgen passende Medien-Anfragen für PR.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-GummySearch;https://gummysearch.com/;Kundenrecherche auf Reddit: Probleme, Stimmungen und Kaufinteresse finden.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung
-AICaller.io;https://aicaller.io/;Automatisierte Massenanrufe mit generativer KI, etwa für Lead-Qualifizierung, mit API.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html
-DialLink AI Voice Agents;https://diallink.com/;Sprachagenten für Geschäftsanrufe und Routineaufgaben.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html
-Cald.ai;https://cald.ai;KI-Anrufagenten für ein- und ausgehende Telefonate.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html
-Rosie;https://heyrosie.com/;KI-Telefonservice, der Anrufe entgegennimmt.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html
-PromptBase;https://promptbase.com/;Marktplatz zum Kaufen und Verkaufen von Prompts.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Promptly;https://searchpromptly.com/;Prompts entdecken, erstellen und teilen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Myriad;https://www.namepepper.com/free-tools/ai-content-prompt-tool;Prompts für alle Content-Arten bauen und verfeinern.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Have I Been Trained?;https://haveibeentrained.com/;Prüfen, ob eigene Bilder zum Training von KI-Modellen verwendet wurden.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-This Image Does Not Exist;https://thisimagedoesnotexist.com/;Teste, ob du KI-Bilder von echten unterscheiden kannst.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Taranify;https://www.taranify.com;Findet Spotify-Playlists, Serien, Bücher und Essen nach deinem Geschmack.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-AI Dungeon;https://aidungeon.io/;Textadventure, das die KI live weitererzählt.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Scale Spellbook;https://scale.com/spellbook;LLM-Apps bauen, vergleichen und bereitstellen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Scenario;https://www.scenario.com/;KI-generierte Assets für Spiele.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Teleprompter;https://github.com/danielgross/teleprompter;Lokale KI, die in Meetings zuhört und Formulierungen vorschlägt.;Weitere KI-Tools;;nein;ja;nein;ki-tools-weitere-ki-tools.html
-FinChat;https://finchat.io/;Beantwortet Fragen zu börsennotierten Unternehmen und Investoren.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-FairyTailAI;https://fairytailai.com/;Personalisierte Gute-Nacht-Geschichten.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-GradGPT;https://www.gradgpt.com/;Hilfe bei Uni-Bewerbungen: Essays, Anforderungen, Hochschulsuche.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Architecture Helper;https://architecturehelper.com;Architekturstile analysieren und eigene erzeugen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-AI Wedding Toast;https://aiweddingtoast.com;Persönliche Hochzeitsrede mit KI.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Interviews Chat;https://www.interviews.chat/;Vorbereitung und Copilot für Vorstellungsgespräche.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-ezJobs;https://www.getezjobs.com/;Automatisierte Jobsuche und Bewerbung.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Compass;https://www.getwhys.io/compass;KI-Antworten auf SaaS-Recherchefragen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Interview Solver;https://interviewsolver.com;KI-Copilot für Live-Coding-Interviews.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-AI Watermark Remover;https://aiwatermarkremover.io/;Wasserzeichen aus Bildern und Videos entfernen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-AISaver;https://aisaver.io;Sammlung von KI-Video- und Fototools.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-LangMagic;https://easytolearn.io;Sprachen mit Inhalten von Muttersprachlern lernen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-fynk;https://fynk.com/;KI-gestütztes Vertragsmanagement aus Österreich.;Weitere KI-Tools;;ja;nein;nein;ki-tools-weitere-ki-tools.html
-LooksMax AI;https://looksmax.ai;Bewertet Fotos von dir per KI.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-ResumeDive;https://resumedive.com;Lebenslauf-Optimierung mit KI.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Bricks;https://www.thebricks.com/;Tabellenkalkulation mit eingebauter KI.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-Daruy;https://daruy.space/;Personalisierte Geschenkideen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-NVIDIA Omniverse AI Animal Explorer;https://docs.omniverse.nvidia.com/extensions/latest/ext_animal-explorer.html#installation;Omniverse-Erweiterung für schnelle 3D-Tier-Prototypen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html
-PROMPTGOTT;https://promptgott.substack.com/?utm_source=github-pages&utm_medium=referral&utm_campaign=awesome-ki-tools-de;Deutschsprachiger Substack mit abgefahrenen AI-Use-Cases, Prompt-Engineering-Tricks und AI-SEO-Systemen. Einstieg: Der Greyhat-Eid.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-Learn Prompting;https://learnprompting.org/;Kostenloser Open-Source-Kurs zur Kommunikation mit KI.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-Prompt Engineering Guide;https://github.com/dair-ai/Prompt-Engineering-Guide;Leitfaden und Ressourcen zum Prompt Engineering.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-ChatGPT Prompt Engineering for Developers;https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/;Kurzkurs von Isa Fulford (OpenAI) und Andrew Ng (DeepLearning.AI).;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-OpenAI Cookbook;https://github.com/openai/openai-cookbook;Beispiele und Anleitungen zur OpenAI API.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-Robert Miles AI Safety;https://www.youtube.com/@RobertMilesAI;YouTube-Kanal über KI-Sicherheit.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-Machine Learning Roadmap;https://github.com/mrdbourke/machine-learning-roadmap;Landkarte der wichtigsten ML-Konzepte, mit Lernwegen und Werkzeugen.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-Andrew Ngs Machine Learning (Stanford);https://www.coursera.org/learn/machine-learning;Einsteigerfreundlicher Grundlagenkurs.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-Sebastian Thruns Intro to Machine Learning;https://www.udacity.com/course/intro-to-machine-learning--ud120;Solide Einführung von einem der Pioniere autonomen Fahrens.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-AI and Machine Learning Roadmaps;https://www.scaler.com/blog/category/artificial-intelligence-machine-learning/;Lernpfade mit Konzepten, Methoden und Werkzeugen.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-How To Learn Artificial Intelligence;https://www.appliedaicourse.com/blog/how-to-learn-artificial-intelligence-ai/;Schritt-für-Schritt-Anleitung von Python und Mathe bis Deep Learning.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-fast.ai;https://www.fast.ai/;Praxisnahe, kostenlose Deep-Learning-Kurse von Jeremy Howard.;Lernen: Prompting und KI-Grundlagen;Deep Learning;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-Coursera Deep Learning Specialization (Notizen);https://github.com/pratham5368/coursera-deep-learning-specialization;Notizen, Aufgaben und Quizze zur Spezialisierung von deeplearning.ai.;Lernen: Prompting und KI-Grundlagen;Deep Learning;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-PyTorch-Notizen;https://github.com/pratham5368/Tecnologies-I-Learn/tree/main/31-pytorch;PyTorch-Grundlagen mit Beispielen in Google Colab.;Lernen: Prompting und KI-Grundlagen;Deep Learning;nein;nein;nein;./#lernen-prompting-und-ki-grundlagen
-AI For Developers;https://aifordevelopers.org;Liste von KI-Entwicklerwerkzeugen.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
-Best of AI;https://github.com/best-of-ai/best-of-ai;Eine Art Michelin-Führer für KI.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
-Awesome AI Models;https://github.com/dariubs/awesome-ai-models;Kuratierte Liste von KI-Modellen und LLMs.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
-Awesome AI Coding Tools;https://github.com/ai-for-developers/awesome-ai-coding-tools;KI-Werkzeuge für Entwickler.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
-Awesome Vibe Coding;https://github.com/dariubs/awesome-vibe-coding;Werkzeuge und Ressourcen für Vibe Coding.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
-AI for Productivity;https://productivity.directory/category/ai;KI-Apps für Produktivität.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
-Awesome Workflow Automation;https://github.com/dariubs/awesome-workflow-automation;Werkzeuge für Workflow-Automatisierung.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
-Awesome Marketing;https://github.com/marketingtoolslist/awesome-marketing;Marketing-Werkzeuge.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
-Top AI Directories;https://github.com/best-of-ai/ai-directories;Verzeichnisse, in die man KI-Tools eintragen kann.;Verwandte Listen;;nein;nein;nein;./#verwandte-listen
+ChatGPT;https://chatgpt.com;Der Chat-Assistent von OpenAI für Text, Analyse, Bilder und Websuche.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-chatgpt
+Claude;https://claude.ai/;Assistent von Anthropic, stark bei langen Dokumenten, Schreiben und Code.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-claude
+Vibe von Mistral;https://chat.mistral.ai;Assistent von Mistral AI, bis August 2026 Le Chat genannt, mit eigenen Modi für Chat, Büroarbeit und Programmieren.;Text und Sprache;Chatbots und Assistenten;ja;nein;nein;ki-tools-text-und-sprache.html#tool-vibe-von-mistral
+DeepL Übersetzer;https://www.deepl.com/translator;Übersetzt Texte und ganze Dokumente, mit Glossar für feste Begriffe.;Text und Sprache;Übersetzung und Lokalisierung;ja;nein;nein;ki-tools-text-und-sprache.html#tool-deepl-übersetzer
+Perplexity;https://www.perplexity.ai/;Antwortmaschine mit Quellenangaben für schnelle, belegte Recherche.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#tool-perplexity
+NotebookLM;https://notebooklm.google.com/;Chat, Zusammenfassungen und Audio-Überblicke aus eigenen Quellen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-notebooklm
+n8n;https://n8n.io;Workflow-Automatisierung aus Berlin, selbst hostbar (fair-code), mit KI-Agenten-Knoten.;Automatisierung und KI-Agenten;;ja;nein;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-n8n
+FLUX von Black Forest Labs;https://bfl.ai;Bildmodelle aus Freiburg, stark bei Fotorealismus, Text im Bild und Bildbearbeitung.;Bilder;Bildmodelle;ja;nein;nein;ki-tools-bilder.html#tool-flux-von-black-forest-labs
+ElevenLabs;https://elevenlabs.io/;Sehr realistische Stimmen, Voice Cloning und Vertonung in vielen Sprachen inklusive Deutsch.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-elevenlabs
+Cursor;https://cursor.com;KI-Code-Editor mit Agent, der ganze Codebasen versteht und ändert.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-cursor
+OpenAI API;https://platform.openai.com;Zugriff auf die GPT-Modelle für eigene Anwendungen, Automatisierungen und Agenten.;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#tool-openai-api
+Anthropic API;https://docs.anthropic.com;Die Claude-Modelle per API, stark bei langen Kontexten, Werkzeugnutzung und Code.;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#tool-anthropic-api
+Google Gemini API;https://ai.google.dev;Gemini-Modelle über Google AI Studio und die Gemini API, multimodal (Text, Bild, Audio, Video).;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#tool-google-gemini-api
+Mistral AI;https://mistral.ai;Offene und kommerzielle Modelle aus Paris, per API oder selbst gehostet.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#tool-mistral-ai
+Llama;https://www.llama.com;Metas Familie offener Sprachmodelle zum Selbsthosten und Feintunen.;Text und Sprache;Sprachmodelle und APIs;nein;ja;nein;ki-tools-text-und-sprache.html#tool-llama
+DeepSeek;https://www.deepseek.com;Chinesische Modellreihe mit offenen Gewichten, besonders günstig im Reasoning.;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#tool-deepseek
+Qwen;https://qwenlm.github.io;Offene Modellfamilie von Alibaba, von klein bis sehr groß, stark mehrsprachig.;Text und Sprache;Sprachmodelle und APIs;nein;ja;nein;ki-tools-text-und-sprache.html#tool-qwen
+Hugging Face;https://huggingface.co;Die zentrale Plattform für offene Modelle, Datensätze und Demo-Apps (Spaces).;Text und Sprache;Sprachmodelle und APIs;nein;nein;nein;ki-tools-text-und-sprache.html#tool-hugging-face
+Aleph Alpha;https://aleph-alpha.com;Entwickelt mit Behörden und Unternehmen spezialisierte Sprachmodelle und eine Plattform für den Betrieb unter eigener Kontrolle, aus Heidelberg. Kein Chat für Einzelne, sondern Projektgeschäft.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#tool-aleph-alpha
+Jina AI;https://jina.ai;Embeddings, Reranker und Reader-APIs für Suche und RAG, aus Berlin.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#tool-jina-ai
+Nebius;https://nebius.com;KI-Cloud mit GPU-Instanzen und Inferenz-Diensten, Sitz in Amsterdam.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#tool-nebius
+Scaleway;https://www.scaleway.com;Französische Cloud mit GPU-Servern und Inferenz für offene Modelle.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#tool-scaleway
+STACKIT;https://www.stackit.de;Souveräne Cloud der Schwarz-Gruppe aus Deutschland mit KI-Modell-Hosting.;Text und Sprache;Sprachmodelle und APIs;ja;nein;nein;ki-tools-text-und-sprache.html#tool-stackit
+Mistral Large 4;https://mistral.ai/news/mistral-large-4/;"Großes multimodales Modell von Mistral mit 1 Billion Parametern, davon 52 Milliarden aktiv, in Europa trainiert. Die Gewichte liegen seit dem 29. Oktober 2026 offen bei Hugging Face; wer das Modell als Dienst weiterverkauft, braucht eine eigene Lizenz.";Text und Sprache;Sprachmodelle und APIs;ja;nein;ja;ki-tools-text-und-sprache.html#tool-mistral-large-4
+LFM3 von Liquid AI;https://www.liquid.ai/blog/lfm3;"Familie offener Kleinmodelle für Text, Bild, Audio und Entscheidungen im 2-Milliarden-Bereich; das Textmodell braucht bei 4 Bit rund 1 GB Speicher.";Text und Sprache;Sprachmodelle und APIs;nein;nein;ja;ki-tools-text-und-sprache.html#tool-lfm3-von-liquid-ai
+Nemotron 3.5 Bolt;https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/;Offenes Kleinmodell von NVIDIA für lokale Sprach- und Geräteassistenten mit Werkzeugaufrufen. Belegt in NVIDIAs Test auf einer RTX 5070 je nach Gesprächslänge 3,5 bis 4,3 GB Grafikspeicher, läuft auch über Ollama.;Text und Sprache;Sprachmodelle und APIs;nein;nein;ja;ki-tools-text-und-sprache.html#tool-nemotron-35-bolt
+Giotto Alto;https://www.giotto.ai/;Reasoning-Modell aus Lausanne, kostenlos im europäisch gehosteten Chat, dazu dedizierte Cloud in der Schweiz oder EU und Betrieb im eigenen Rechenzentrum.;Text und Sprache;Sprachmodelle und APIs;nein;nein;ja;ki-tools-text-und-sprache.html#tool-giotto-alto
+Gemini;https://gemini.google.com;Googles Assistent, eng verzahnt mit Gmail, Docs und Drive.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-gemini
+Microsoft Copilot;https://copilot.microsoft.com;Microsofts Assistent (früher Bing Chat), integriert in Windows, Edge und Microsoft 365.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-microsoft-copilot
+Langdock;https://langdock.com;KI-Plattform aus Deutschland, die Unternehmen mehrere Modelle in einer DSGVO-orientierten Oberfläche bereitstellt.;Text und Sprache;Chatbots und Assistenten;ja;nein;nein;ki-tools-text-und-sprache.html#tool-langdock
+ChatPDF;https://www.chatpdf.com/;PDF hochladen und Fragen dazu stellen.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-chatpdf
+ChatSonic;https://writesonic.com/chat;Assistent von Writesonic für Text- und Bilderstellung.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-chatsonic
+AICamp;https://aicamp.so/;ChatGPT-Arbeitsbereich für Teams.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-aicamp
+Kimi;https://www.kimi.com;Chat-Assistent von Moonshot AI mit sehr langem Kontext.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-kimi
+Grok;https://grok.com;Chat-Assistent von xAI mit Zugriff auf aktuelle Beiträge von X.;Text und Sprache;Chatbots und Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-grok
+Exa;https://exa.ai;Semantische Suche per API (früher Metaphor), gebaut für KI-Anwendungen und Agenten.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#tool-exa
+You.com;https://you.com/;KI-Suchmaschine mit Fokus auf Privatsphäre und Anpassbarkeit.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#tool-youcom
+Komo AI;https://komo.ai/;KI-Suche mit kurzen, schnellen Antworten.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#tool-komo-ai
+Telborg;https://telborg.com/;KI-Recherche zum Klimawandel, ausschließlich mit Daten von Regierungen, Institutionen und Unternehmen.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#tool-telborg
+MemFree;https://github.com/memfreeme/memfree;Hybride KI-Suche über Web, Lesezeichen, Notizen und Dokumente.;Text und Sprache;KI-Suchmaschinen;nein;ja;nein;ki-tools-text-und-sprache.html#tool-memfree
+Refinder AI;https://refinder.ai/;Universelle KI-Suche über alle Arbeitswerkzeuge.;Text und Sprache;KI-Suchmaschinen;nein;nein;nein;ki-tools-text-und-sprache.html#tool-refinder-ai
+Agentset.ai;https://agentset.ai/;Semantische Suche und RAG für eigene Daten.;Text und Sprache;KI-Suchmaschinen;nein;ja;nein;ki-tools-text-und-sprache.html#tool-agentsetai
+Ollama;https://ollama.com/;Sprachmodelle mit einem Befehl lokal auf dem eigenen Rechner ausführen.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#tool-ollama
+LM Studio;https://lmstudio.ai;Desktop-App, um offene Modelle lokal herunterzuladen und offline zu nutzen.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-lm-studio
+Open WebUI;https://openwebui.com;Selbst gehostete ChatGPT-ähnliche Oberfläche für lokale und API-Modelle.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#tool-open-webui
+privateGPT;https://github.com/imartinez/privateGPT;Fragen an eigene Dokumente stellen, komplett ohne Internetverbindung.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#tool-privategpt
+quivr;https://github.com/StanGirard/quivr;"""Zweites Gehirn"": Dateien ablegen und per LLM mit ihnen chatten.";Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#tool-quivr
+gpt4all;https://github.com/nomic-ai/gpt4all;Lokaler Chat-Client für offene Modelle, läuft auch ohne GPU.;Text und Sprache;Lokal und privat mit Dokumenten chatten;nein;ja;nein;ki-tools-text-und-sprache.html#tool-gpt4all
+DeepL Write;https://www.deepl.com/write;Verbessert Stil, Grammatik und Tonalität deutscher und englischer Texte.;Text und Sprache;Schreibassistenten;ja;nein;nein;ki-tools-text-und-sprache.html#tool-deepl-write
+Compose AI;https://www.compose.ai/;Chrome-Erweiterung mit KI-Autovervollständigung beim Schreiben.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-compose-ai
+Rytr;https://rytr.me/;Günstiger KI-Schreibassistent für kurze und mittellange Texte.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-rytr
+Wordtune;https://www.wordtune.com/;Formuliert Sätze um, kürzt oder erweitert sie.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-wordtune
+HyperWrite;https://hyperwriteai.com/;Schreibassistent von der Idee bis zum fertigen Entwurf.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-hyperwrite
+Moonbeam;https://www.gomoonbeam.com/;Schreibassistent für lange Texte wie Blogartikel, Essays und Anleitungen: macht aus Notizen eine Gliederung und aus der Gliederung Absätze. Vorlagen und Oberfläche auf Englisch.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-moonbeam
+Copy.ai;https://www.copy.ai/;Plattform für Vertrieb und Marketing: recherchiert Firmen und Kontakte, entwirft Akquise-E-Mails, Content und Übersetzungen und wertet Verkaufsgespräche aus. Gebaut für Vertriebsteams, nicht für einzelne Texter.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-copyai
+Anyword;https://anyword.com/;Werbetexte mit Performance-Vorhersage.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-anyword
+Contenda;https://contenda.co/;Macht aus vorhandenem Content (Videos, Talks) neue Formate.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-contenda
+Hypotenuse AI;https://www.hypotenuse.ai/;"Aus wenigen Keywords Artikel, Produktbeschreibungen und Social-Posts; stark im E-Commerce.";Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-hypotenuse-ai
+Lavender;https://www.lavender.ai/;E-Mail-Coach für mehr Antworten auf Vertriebs-E-Mails.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-lavender
+Lex;https://lex.page/;Textverarbeitung mit eingebauter KI.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-lex
+Jenni;https://jenni.ai/;Schreibassistent für wissenschaftliche Texte mit Zitaten.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-jenni
+LAIKA;https://www.writewithlaika.com/;Trainiert eine KI auf deinen eigenen Schreibstil, für kreatives Schreiben.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-laika
+QuillBot;https://quillbot.com;Paraphrasieren, Zusammenfassen und Grammatikprüfung.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-quillbot
+Postwise;https://postwise.ai/;Posts für X/Twitter schreiben und planen.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-postwise
+RapidTextAI;https://app.rapidtextai.com/;Artikel mit mehreren Modellen (GPT, Gemini, DeepSeek, Grok) erstellen.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-rapidtextai
+Copysmith;https://copysmith.ai/;Content-Erstellung für Unternehmen und E-Commerce.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-copysmith
+Yomu;https://www.yomu.ai;Schreibassistent für Studierende und Forschende.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-yomu
+Trolly.ai;https://trolly.ai/;SEO-Artikel schneller erstellen.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-trollyai
+PulsePost;https://pulsepost.io/;KI-Autor, der direkt auf die eigene Website veröffentlicht.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-pulsepost
+Shy Editor;https://www.shyeditor.com;Moderne KI-Schreibumgebung für Prosa aller Art.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-shy-editor
+GPTLocalhost;https://gptlocalhost.com/demo/;Word-Add-in, das lokale LLMs in Microsoft Word nutzt, Alternative zu Copilot in Word.;Text und Sprache;Schreibassistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-gptlocalhost
+X-doc AI;https://x-doc.ai/;KI-Übersetzer für Dokumente mit Erhalt des Layouts.;Text und Sprache;Übersetzung und Lokalisierung;nein;nein;nein;ki-tools-text-und-sprache.html#tool-x-doc-ai
+Lengoo;https://www.lengoo.com;Baut Unternehmen eigene, auf Firmendaten trainierte Sprachmodelle für Übersetzung in über 50 Sprachen, Texte und Dokumentensuche, aus Berlin. Gedacht für Firmen mit viel Fachsprache, nicht für Einzelübersetzungen.;Text und Sprache;Übersetzung und Lokalisierung;ja;nein;nein;ki-tools-text-und-sprache.html#tool-lengoo
+Unbabel;https://www.unbabel.com;Übersetzungsplattform aus Lissabon, KI plus Community-Lektorat.;Text und Sprache;Übersetzung und Lokalisierung;ja;nein;nein;ki-tools-text-und-sprache.html#tool-unbabel
+Merlin;https://merlin.foyer.work/;KI-Assistent auf jeder Website, per Tastenkürzel.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-merlin
+Gist AI;https://www.gistai.tech;Kostenlose Zusammenfassungen für Websites, YouTube und PDFs.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-gist-ai
+WebChatGPT;https://chrome.google.com/webstore/detail/webchatgpt-chatgpt-with-i/lpfemeioodjbpieminkklglpmhlngfcn;Ergänzt ChatGPT-Prompts um aktuelle Web-Ergebnisse.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-webchatgpt
+GPT for Sheets and Docs;https://workspace.google.com/marketplace/app/gpt_for_sheets_and_docs/677318054654;KI-Funktionen direkt in Google Sheets und Docs, ideal für Massen-Texte in Tabellen.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-gpt-for-sheets-and-docs
+YouTube Summary with ChatGPT;https://chrome.google.com/webstore/detail/youtube-summary-with-chat/nmmicjeknamkfloonkhhcjmomieiodli;Fasst YouTube-Videos zusammen.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-youtube-summary-with-chatgpt
+ChatGPT Prompt Genius;https://chrome.google.com/webstore/detail/chatgpt-prompt-genius/jjdnakkfjnnbbckhifcfchagnpofjffo;Prompts entdecken, teilen und Chat-Verlauf lokal speichern.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-chatgpt-prompt-genius
+ChatGPT for Search Engines;https://chrome.google.com/webstore/detail/chatgpt-for-search-engine/feeonheemodpkdckaljcjogdncpiiban;Zeigt KI-Antworten neben Google-, Bing- und DuckDuckGo-Ergebnissen.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-chatgpt-for-search-engines
+ShareGPT;https://sharegpt.com/;ChatGPT-Unterhaltungen teilen und entdecken.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-sharegpt
+ChatGPT Writer;https://chatgptwriter.ai/;Komplette E-Mails und Nachrichten per KI schreiben.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-chatgpt-writer
+ChatGPT for Jupyter;https://github.com/TiesdeKok/chat-gpt-jupyter-extension;KI-Hilfsfunktionen in Jupyter Notebook und Jupyter Lab.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;ja;nein;ki-tools-text-und-sprache.html#tool-chatgpt-for-jupyter
+editGPT;https://www.editgpt.app/;Korrekturlesen mit Änderungsverfolgung in ChatGPT.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-editgpt
+Chatbot UI;https://github.com/mckaywrigley/chatbot-ui;Open-Source-Oberfläche für ChatGPT und andere Modelle.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;ja;nein;ki-tools-text-und-sprache.html#tool-chatbot-ui
+Forefront;https://www.forefront.ai/;Alternative Oberfläche für Chat-Modelle.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-forefront
+AI Character for GPT;https://chromewebstore.google.com/detail/ai-character-for-gpt/daoeioifimkjegafelcaljboknjkkohh;Rollen für ChatGPT und andere Bots per Klick, für bessere Antworten.;Text und Sprache;Browser-Erweiterungen und Add-ons;nein;nein;nein;ki-tools-text-und-sprache.html#tool-ai-character-for-gpt
+Notion AI;https://www.notion.so/product/ai;Schreiben, Zusammenfassen und Fragen an den eigenen Notion-Workspace.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-notion-ai
+Napkin;https://www.napkin.ai/;Verwandelt Text in Diagramme und Grafiken.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-napkin
+Gamma;https://gamma.app/;Präsentationen, Dokumente und Webseiten aus einem Prompt.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-gamma
+Mem;https://mem.ai/;Notiz-App, die sich selbst organisiert.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-mem
+Taskade;https://www.taskade.com/;Aufgaben, Teamarbeit und KI-Agenten in einem Workspace.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-taskade
+Elephas;https://elephas.app/;Persönlicher KI-Schreibassistent für den Mac.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-elephas
+Google Sheets Formula Generator;https://bettersheets.co/google-sheets-formula-generator;Formeln für Google Sheets aus Text erzeugen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-google-sheets-formula-generator
+Cosmos;https://meetcosmos.com/;Lokale, offline KI-Suche in eigenen Fotos und Videos.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-cosmos
+aiPDF;https://aipdf.ai;KI-Dokumentenassistent für PDFs.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-aipdf
+Summary With AI;https://www.summarywithai.com/;Fasst lange PDFs über alle Seiten hinweg zusammen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-summary-with-ai
+Emilio;https://getemil.io;Priorisiert und automatisiert E-Mails.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-emilio
+Huntr AI Resume Builder;https://huntr.co/product/ai-resume-builder/;ATS-freundliche Lebensläufe mit KI.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-huntr-ai-resume-builder
+Chat With PDF by Copilot.us;https://copilot.us/apps/chat-with-pdf;Mit mehreren PDFs gleichzeitig chatten.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-chat-with-pdf-by-copilotus
+Recall;https://www.getrecall.ai/;Fasst Artikel, Videos und Podcasts zusammen und baut eine Wissensbasis.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-recall
+Talently AI;https://interview.talently.ai/;KI-Interviewer für Bewerbungsgespräche mit Echtzeit-Bewertung.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-talently-ai
+AnkiDecks AI;https://anki-decks.com;Lernkarten aus Dateien oder Text erzeugen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-ankidecks-ai
+AI for Google Slides;https://www.aiforgoogleslides.com/;Präsentationen für Google Slides mit KI.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-ai-for-google-slides
+BrainSoup;https://www.nurgo-software.com/products/brainsoup;Multi-Agenten-Client für mehrere LLMs mit Gedächtnis und Werkzeugen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-brainsoup
+MindPal;https://mindpal.space/;"""Zweites Gehirn"" mit einem Team aus KI-Agenten.";Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-mindpal
+fabric;https://github.com/danielmiessler/fabric;KI im Terminal mit einer Bibliothek bewährter Prompt-Muster.;Text und Sprache;Produktivität;nein;ja;nein;ki-tools-text-und-sprache.html#tool-fabric
+SlidesWizard;https://slideswizard.io;PowerPoint- und Google-Slides-Präsentationen zu jedem Thema.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-slideswizard
+RabbitHoles AI;https://www.rabbitholes.ai/;Chat mit KI auf einer unendlichen Leinwand.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-rabbitholes-ai
+Rember;https://www.rember.com/;Spaced-Repetition-System zum besseren Merken.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-rember
+Qurate;https://qurate.appcradle.net/;Findet passende Zitate zum Kontext.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-qurate
+FirmOS;https://www.firmos.ai/;Automatisierung für Steuer- und Buchhaltungskanzleien.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-firmos
+Smmry;https://smmry.com/;Fasst lange Inhalte in klare Kernaussagen zusammen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-smmry
+Summara;https://summara.io/;Widget für YouTube-Zusammenfassungen und Transkripte.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-summara
+Marblism;https://marblism.com;"KI-""Mitarbeiter"" für kleine Unternehmen.";Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-marblism
+Spell;https://spellapp.com;KI-Alternative zu Google Docs.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-spell
+Kosmik;https://www.kosmik.app;KI-Moodboards und visuelle Recherche.;Text und Sprache;Produktivität;ja;nein;nein;ki-tools-text-und-sprache.html#tool-kosmik
+Magic Potion;https://www.magicpotion.app;Visueller Prompt-Editor.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-magic-potion
+MinusX;https://minusx.ai/;KI-Analyst, der Datenfragen in Metabase beantwortet.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-minusx
+Excelmatic;https://excelmatic.ai;Excel-Daten per Chat analysieren und visualisieren, ohne Formeln.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-excelmatic
+Langfa.st;https://langfa.st/;Spielwiese ohne Anmeldung zum Testen und Teilen von Prompt-Vorlagen.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-langfast
+SalesAgent Chat;https://www.salesagent.chat;KI-Vertriebscoach mit Echtzeit-Unterstützung.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-salesagent-chat
+fynk;https://fynk.com/;KI-gestütztes Vertragsmanagement aus Österreich.;Text und Sprache;Produktivität;ja;nein;nein;ki-tools-text-und-sprache.html#tool-fynk
+Bricks;https://www.thebricks.com/;Tabellenkalkulation mit eingebauter KI.;Text und Sprache;Produktivität;nein;nein;nein;ki-tools-text-und-sprache.html#tool-bricks
+"tl;dv";https://tldv.io;Zeichnet Zoom, Teams und Google Meet auf, transkribiert und fasst zusammen, auch auf Deutsch.;Text und Sprache;Meeting-Assistenten;ja;nein;nein;ki-tools-text-und-sprache.html#tool-tldv
+Fireflies.ai;https://fireflies.ai;Meeting-Notizen, Transkripte und Suche über alle Calls.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-firefliesai
+Otter.ai;https://otter.ai/;Nimmt Meetings auf, schreibt mit und fasst zusammen.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-otterai
+MeetGeek;https://meetgeek.ai/;Nimmt Meetings auf, transkribiert und liefert Kernpunkte.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-meetgeek
+Cogram;https://www.cogram.com/;Automatische Notizen und Aufgaben aus virtuellen Meetings.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-cogram
+Sybill;https://www.sybill.ai/;Vertriebsassistent, der Calls, E-Mails und Slack-Verläufe mitliest, das CRM nach jedem Gespräch füllt und Fragen zum Stand eines Deals beantwortet. Wer Calls aufzeichnet, braucht vorher die Einwilligung der Gesprächspartner.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-sybill
+Scribbl;https://www.scribbl.co;KI-Meeting-Notizen für Google Meet.;Text und Sprache;Meeting-Assistenten;nein;nein;nein;ki-tools-text-und-sprache.html#tool-scribbl
+Teleprompter;https://github.com/danielgross/teleprompter;Lokale KI, die in Meetings zuhört und Formulierungen vorschlägt.;Text und Sprache;Meeting-Assistenten;nein;ja;nein;ki-tools-text-und-sprache.html#tool-teleprompter
+Elicit;https://elicit.com;Automatisiert Teile der Literaturrecherche.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#tool-elicit
+Consensus;https://consensus.app/search/;Suchmaschine, die Antworten aus wissenschaftlichen Studien liefert.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#tool-consensus
+SciSpace;https://scispace.com/;Chat mit wissenschaftlichen PDFs.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#tool-scispace
+genei;https://www.genei.io/;Fasst Fachartikel und Hintergrundlektüre zusammen, zieht Schlagwörter heraus und hilft, daraus Berichte und Blogartikel zu schreiben.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#tool-genei
+Explainpaper;https://www.explainpaper.com/;Unverständliche Stellen in Papers markieren und erklären lassen.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#tool-explainpaper
+Sourcely;https://www.sourcely.net/;Findet passende Quellen und Zitate für wissenschaftliche Arbeiten.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#tool-sourcely
+Mathos AI;https://www.mathgptpro.com/;KI-Mathe-Löser und Tutor.;Text und Sprache;Wissenschaft und Recherche;nein;nein;nein;ki-tools-text-und-sprache.html#tool-mathos-ai
+SiteGPT;https://sitegpt.ai/;Trainiert einen Support-Bot auf die eigene Website.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#tool-sitegpt
+GPTHelp.ai;https://gpthelp.ai/;KI-Chatbot für den Website-Support.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#tool-gpthelpai
+SiteSpeakAI;https://sitespeak.ai;Support-Agent für die eigene Website, trainiert auf Seiten, Hilfetexte, PDFs und Videos: beantwortet Fragen, nimmt Leads auf und gibt schwierige Fälle an Menschen ab. Bestellstatus kann er nur mit angebundenem Shop nachschlagen.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#tool-sitespeakai
+Dear AI;https://www.dearai.online;Chatbot für Kundenservice und Vertrieb.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#tool-dear-ai
+Inline Help;https://inlinehelp.com;Hilfe direkt in der eigenen Web-App: Tooltips, Chatbot und eine Erklär-Funktion für jedes Element, gespeist aus der Wissensdatenbank, auch auf Deutsch. Ohne gepflegte Hilfeartikel hat sie nichts zu erzählen.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#tool-inline-help
+Aidbase;https://www.aidbase.ai;KI-Support für SaaS-Startups.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#tool-aidbase
+EmailTriager;https://www.emailtriager.com/;Entwirft E-Mail-Antworten automatisch im Hintergrund.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#tool-emailtriager
+Rasa;https://www.rasa.com;Framework für eigene Chat- und Sprachassistenten, aus Berlin.;Text und Sprache;Kundenservice;ja;ja;nein;ki-tools-text-und-sprache.html#tool-rasa
+Tiledesk;https://tiledesk.com/;No-Code-Framework für Chatbots mit LLM-Anbindung, Open Source.;Text und Sprache;Kundenservice;nein;ja;nein;ki-tools-text-und-sprache.html#tool-tiledesk
+Gali Chat;https://www.galichat.com/;KI-Support-Assistent für Websites, rund um die Uhr.;Text und Sprache;Kundenservice;nein;nein;nein;ki-tools-text-und-sprache.html#tool-gali-chat
+Hexabot;https://hexabot.ai;No-Code-Baukasten für mehrsprachige Chatbots und Agenten.;Text und Sprache;Kundenservice;nein;ja;nein;ki-tools-text-und-sprache.html#tool-hexabot
+Make;https://www.make.com;Visuelle Automatisierungsplattform aus Prag mit Tausenden App-Anbindungen.;Automatisierung und KI-Agenten;;ja;nein;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-make
+Zapier;https://zapier.com;Verbindet Tausende Apps per Automatisierung, inklusive KI-Schritten und Agenten.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-zapier
+MindStudio;https://mindstudio.ai/;KI-Agenten ohne Code bauen, mit über 100 Vorlagen.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-mindstudio
+Nekton AI;https://nekton.ai;Workflows Schritt für Schritt in Alltagssprache beschreiben.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-nekton-ai
+AI-Flow;https://ai-flow.net/;Mehrere KI-Modelle visuell miteinander verbinden.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-ai-flow
+Shotstack Workflows;https://shotstack.io/product/workflows/;No-Code-Automatisierung für KI-Medienproduktion.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-shotstack-workflows
+Hyperbrowser;https://hyperbrowser.ai/;Browser-Infrastruktur für KI-Agenten mit Proxys und Session-Aufzeichnung.;Automatisierung und KI-Agenten;;nein;nein;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-hyperbrowser
+Notte;https://github.com/nottelabs/notte;Framework für Agenten, die den Browser bedienen.;Automatisierung und KI-Agenten;;nein;ja;nein;ki-tools-automatisierung-und-ki-agenten.html#tool-notte
+goose;https://github.com/aaif-goose/goose;Offener KI-Agent als Desktop-App und Kommandozeile, bindet Erweiterungen per MCP an und liegt heute bei der Agentic AI Foundation der Linux Foundation.;Automatisierung und KI-Agenten;;nein;ja;ja;ki-tools-automatisierung-und-ki-agenten.html#tool-goose
+LangChain;https://langchain.com/;Framework für Anwendungen und Agenten auf Basis von Sprachmodellen.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-langchain
+LlamaIndex;https://www.llamaindex.ai/;Daten-Framework für LLM-Anwendungen mit eigenen Daten (RAG).;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-llamaindex
+Haystack;https://haystack.deepset.ai/;Framework aus Berlin für Agenten, semantische Suche und Frage-Antwort-Systeme.;Entwickler-Tools und LLMOps;;ja;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-haystack
+Cohere;https://cohere.com/;Sprachmodelle und Embeddings für Unternehmen, stark bei Suche und Reranking.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-cohere
+Langfuse;https://langfuse.com/;LLM-Engineering-Plattform aus Berlin zum Debuggen, Tracen und Bewerten.;Entwickler-Tools und LLMOps;;ja;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-langfuse
+Keploy;https://keploy.io/;Wandelt echten Nutzer-Traffic in Testfälle und Datenstubs um.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-keploy
+Portia AI;https://www.portialabs.ai/;Agenten-Framework, bei dem Agenten ihre geplanten Schritte offenlegen und unterbrechbar bleiben.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-portia-ai
+LMQL;https://lmql.ai/;Abfragesprache für Sprachmodelle.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-lmql
+Phoenix;https://phoenix.arize.com/;Observability für LLM- und ML-Modelle im Notebook.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-phoenix
+Prediction Guard;https://www.predictionguard.com/;Private, kontrollierte und compliance-konforme LLM-Nutzung.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-prediction-guard
+Portkey;https://portkey.ai/;LLMOps-Plattform zum Überwachen, Steuern und Verbessern von LLM-Apps.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-portkey
+OpenAI Downtime Monitor;https://status.portkey.ai/;Kostenloses Monitoring von Verfügbarkeit und Latenz verschiedener LLM-Anbieter.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-openai-downtime-monitor
+ChatWithCloud;https://chatwithcloud.ai/;AWS per natürlicher Sprache im Terminal steuern.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-chatwithcloud
+SinglebaseCloud;https://singlebase.cloud;Backend mit Vektor-DB, Dokument-DB und Auth für KI-Apps.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-singlebasecloud
+Maxim AI;https://www.getmaxim.ai/;Evaluation und Observability für generative KI.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-maxim-ai
+Wordware;https://www.wordware.ai;"Web-IDE, in der Fachleute und KI-Entwickler gemeinsam Agenten bauen; Prompting als Programmiersprache.";Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-wordware
+AI/ML API;https://aimlapi.com/;Über 100 KI-Modelle über eine einzige API.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-aiml-api
+Opik;https://www.comet.com/site/products/opik/;Testen, Bewerten und Überwachen von LLM-Anwendungen.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-opik
+Kiln;https://getkiln.ai;Eigene Modelle bauen: synthetische Daten, Feintuning und Datensatz-Pflege ohne Code.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-kiln
+Calmo;https://getcalmo.com/;Produktionsfehler mit KI schneller debuggen.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-calmo
+Cleanlab;https://help.cleanlab.ai/tlm/;Erkennt und behebt Halluzinationen in LLM-Anwendungen.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-cleanlab
+Agentic Radar;https://github.com/splx-ai/agentic-radar;Sicherheits-Scanner für agentische Workflows.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-agentic-radar
+VoltAgent;https://github.com/voltagent/voltagent;TypeScript-Framework für KI-Agenten mit Werkzeugen und Gedächtnis.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-voltagent
+TensorZero;https://www.tensorzero.com/;LLM-Gateway, Observability, Optimierung und Evaluation in einem Framework.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-tensorzero
+ToolHive;https://github.com/stacklok/toolhive;Passende MCP-Server finden und per Klick bereitstellen.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-toolhive
+AgentDock;https://agentdock.ai;Ein API-Schlüssel für alle Dienste, die ein Agent braucht.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-agentdock
+Codeflash;https://www.codeflash.ai/;Optimiert Python-Code automatisch auf Geschwindigkeit.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-codeflash
+Agenta;https://agenta.ai/;Prompt-Management, Evaluation und Observability.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-agenta
+Pagerly;https://www.pagerly.io;Operations-Copilot für Slack und Teams, unterstützt die Rufbereitschaft beim Debuggen.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-pagerly
+Harbor;https://github.com/av/harbor;LLM-Backends, APIs und Oberflächen mit einem Befehl starten.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-harbor
+Petals;https://github.com/bigscience-workshop/petals;Große Modelle verteilt im BitTorrent-Stil ausführen.;Entwickler-Tools und LLMOps;;nein;ja;nein;ki-tools-entwickler-tools-und-llmops.html#tool-petals
+Context Data;https://contextdata.ai/;Datenaufbereitung und ETL für generative KI.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-context-data
+Agent Skills;https://agentskills.io;Offener Standard für Agenten-Fähigkeiten: ein Ordner mit SKILL.md und Skripten, den über 70 Agenten-Plattformen lesen können.;Entwickler-Tools und LLMOps;;nein;nein;ja;ki-tools-entwickler-tools-und-llmops.html#tool-agent-skills
+Timestral;https://mistral.ai/news/timestral/;Kleine Zeitreihen-Modelle von Mistral für Prognosen zu Absatz, Energie oder Sensordaten, laufen ohne Grafikkarte.;Entwickler-Tools und LLMOps;;ja;ja;ja;ki-tools-entwickler-tools-und-llmops.html#tool-timestral
+Scale Spellbook;https://scale.com/spellbook;LLM-Apps bauen, vergleichen und bereitstellen.;Entwickler-Tools und LLMOps;;nein;nein;nein;ki-tools-entwickler-tools-und-llmops.html#tool-scale-spellbook
+Claude Code;https://www.anthropic.com/claude-code;Agentisches Coding-Tool von Anthropic für Terminal, IDE und Web.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-claude-code
+GitHub Copilot;https://github.com/features/copilot;Code-Vorschläge, Chat und Coding-Agent direkt im Editor und auf GitHub.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-github-copilot
+Windsurf;https://www.windsurf.com;KI-Code-Editor mit agentischem Assistenten.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-windsurf
+Lovable;https://lovable.dev;Web-Apps per Chat bauen, aus Stockholm.;Programmieren mit KI;;ja;nein;nein;ki-tools-programmieren-mit-ki.html#tool-lovable
+Bolt.new;https://bolt.new;Full-Stack-Web-Apps im Browser aus einem Prompt.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-boltnew
+v0;https://v0.app;Erzeugt UI und Web-Apps mit React und Next.js aus Text.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-v0
+Kilo Code;https://kilocode.ai;Open-Source-Coding-Assistent in VS Code zum Planen, Bauen und Fixen.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-kilo-code
+Amazon Q Developer;https://aws.amazon.com/q/developer/;KI-Coding-Assistent von AWS für VS Code und JetBrains mit Chat und Agenten. AWS beendet den Support für die IDE-Plugins am 30. April 2027 und verweist auf Kiro.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-amazon-q-developer
+Tabnine;https://www.tabnine.com/;Code-Vervollständigung, auch als private On-Premise-Variante.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-tabnine
+Replit;https://replit.com;Browser-IDE mit KI-Agent, der Apps baut und bereitstellt.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-replit
+GoCodeo;https://www.gocodeo.com/;KI-Agent für Code und Tests.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-gocodeo
+CodeRabbit;https://coderabbit.ai/;Automatische KI-Code-Reviews für Pull Requests.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-coderabbit
+PR-Agent;https://github.com/Codium-ai/pr-agent;Automatische PR-Analyse, Feedback und Vorschläge.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-pr-agent
+Gito;https://github.com/Nayjest/Gito;KI-Code-Reviewer für GitHub Actions oder lokal, mit jedem LLM nutzbar.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-gito
+CodiumAI / Qodo;https://www.codium.ai/;Schlägt sinnvolle Tests direkt in der IDE vor.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-codiumai--qodo
+Mintlify;https://mintlify.com/;KI-gestützte Dokumentation für Entwickler.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-mintlify
+Stenography;https://stenography.dev/;Automatische Code-Dokumentation.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-stenography
+AI2sql;https://www.ai2sql.io/;SQL-Abfragen aus natürlicher Sprache.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-ai2sql
+poorcoder;https://github.com/vgrichina/poorcoder;Bash-Skripte, die das Terminal mit Web-Assistenten wie Claude oder Grok verbinden.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-poorcoder
+GPT-Code UI;https://github.com/ricklamers/gpt-code-ui;Open-Source-Nachbau des ChatGPT Code Interpreter.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-gpt-code-ui
+MetaGPT;https://github.com/geekan/MetaGPT;Multi-Agenten-Framework: aus einer Anforderung werden PRD, Design, Aufgaben und Code.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-metagpt
+Plandex;https://github.com/plandex-ai/plandex;Terminal-basierte KI-Programmierumgebung für komplexe Aufgaben.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-plandex
+MutahunterAI;https://github.com/codeintegrity-ai/mutahunter;Mutationstests mit KI für bessere Testabdeckung.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-mutahunterai
+AI Kernel Explorer;https://github.com/mathiscode/ai-kernel-explorer;Linux-Kernel-Quellcode mit KI-Zusammenfassungen erkunden.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-ai-kernel-explorer
+WhoDB;https://github.com/clidey/whodb;Datenbank-Explorer für SQL, NoSQL, Graph und Cache mit KI-Chat.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-whodb
+DataPup;https://github.com/DataPupOrg/DataPup;Datenbank-Client mit KI-Unterstützung für Abfragen.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-datapup
+FlexApp;https://flexapp.ai/;Mobile Apps mit KI bauen, ohne Code.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-flexapp
+Capacity;https://capacity.so;Baut aus einer Beschreibung in Alltagssprache eine Web-App mit Seiten, Datenbank und Anmeldung und stellt sie online. Den Code bekommst du dabei nie zu sehen, das ist Konzept und Grenze zugleich.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-capacity
+Runcell;https://runcell.dev;KI-Agent für Jupyter Lab, der Code schreibt, ausführt und Ergebnisse analysiert.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-runcell
+Manifest;https://github.com/mnfst/manifest;Backend-Alternative zu Supabase für KI-Code-Editoren und Vibe Coding.;Programmieren mit KI;;nein;ja;nein;ki-tools-programmieren-mit-ki.html#tool-manifest
+Code to Flow;https://codetoflow.com;Macht aus Code interaktive Flussdiagramme.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-code-to-flow
+Google Antigravity;https://antigravity.google/;Agenten-Plattform von Google für Software-Entwicklung, für einzelne Entwickler kostenlos, auf macOS, Windows und Linux.;Programmieren mit KI;;nein;nein;ja;ki-tools-programmieren-mit-ki.html#tool-google-antigravity
+Pieces;https://pieces.app/;On-Device-Copilot für Entwickler, der Code-Schnipsel und Kontext speichert.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-pieces
+Kiro;https://kiro.dev;Agentische Entwicklungsumgebung von AWS, die aus einem Prompt Anforderungen, Entwurf und Aufgaben macht und sie mit parallelen Agenten umsetzt. Die frühere Amazon-Q-Kommandozeile heißt heute Kiro CLI.;Programmieren mit KI;;nein;nein;nein;ki-tools-programmieren-mit-ki.html#tool-kiro
+Midjourney;https://www.midjourney.com/;Bildgenerator mit markantem, künstlerischem Stil.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#tool-midjourney
+Stable Diffusion;https://stability.ai/stable-image;Bildmodelle von Stability AI, aktuell Version 3.5 in den Größen Large, Turbo und Medium, per API oder auf eigener Hardware. Für den Selbstbetrieb im Unternehmen gibt es eine eigene Lizenz.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#tool-stable-diffusion
+Nano Banana;https://deepmind.google/models/gemini-image/;Googles Bildmodelle auf Gemini-Basis, die Bilder im Gespräch erzeugen und Schritt für Schritt nachbearbeiten. Das ältere Imagen ist in der Gemini-API abgeschaltet.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#tool-nano-banana
+Ideogram;https://ideogram.ai;Bildgenerator, der besonders gut lesbare Schrift in Bildern erzeugt.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#tool-ideogram
+Adobe Firefly;https://firefly.adobe.com;Bildgenerierung von Adobe, trainiert auf lizenzierten Inhalten, integriert in Photoshop.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#tool-adobe-firefly
+GPT Image;https://developers.openai.com/api/docs/guides/image-generation;Bildmodelle von OpenAI zum Erzeugen und Bearbeiten per API, Nachfolger von DALL·E. Die Herkunftsdaten in der Datei gehen beim Weiterverarbeiten leicht verloren.;Bilder;Bildmodelle;nein;nein;nein;ki-tools-bilder.html#tool-gpt-image
+DragGAN;https://github.com/XingangPan/DragGAN;Bilder per Punkt-Ziehen interaktiv verformen.;Bilder;Bildmodelle;nein;ja;nein;ki-tools-bilder.html#tool-draggan
+FLUX 3 Image Klein;https://bfl.ai/blog/flux-3-image-klein;Offenes Bildmodell aus Freiburg mit 5,6 Milliarden Parametern, erzeugt und bearbeitet Bilder bis 4K und läuft schon auf Grafikkarten mit 8 GB.;Bilder;Bildmodelle;ja;nein;ja;ki-tools-bilder.html#tool-flux-3-image-klein
+Leonardo.ai;https://leonardo.ai;Bildgenerator mit vielen Stil-Modellen, beliebt für Game-Assets und Marketing.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-leonardoai
+KREA;https://www.krea.ai/;Echtzeit-Bildgenerierung, Upscaling und Video in einer Oberfläche.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-krea
+PhotoRoom;https://www.photoroom.com/;Produktfotos per Smartphone: Hintergrund entfernen und ersetzen, aus Paris.;Bilder;Bild-Dienste;ja;nein;nein;ki-tools-bilder.html#tool-photoroom
+ClipDrop;https://clipdrop.co/;Bildwerkzeuge im Browser: Hintergrund entfernen oder ersetzen, Objekte wegretuschieren, Bilder erweitern und bis vierfach hochrechnen. Freistellen geht kostenlos.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-clipdrop
+Magic Eraser;https://www.magiceraser.io/;Entfernt Gegenstände, Personen oder Text aus Fotos per Pinselstrich, kostenlos und ohne Anmeldung, auch für bis zu 50 Bilder auf einmal.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-magic-eraser
+Craiyon;https://www.craiyon.com/;Kostenloser Bildgenerator (früher DALL-E mini).;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-craiyon
+Artbreeder;https://www.artbreeder.com/;Bilder mischen und gemeinsam weiterentwickeln.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-artbreeder
+Magic Studio;https://magicstudio.com/imagine;Bilder aus einer Beschreibung erzeugen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-magic-studio
+Patience.ai;https://www.patience.ai/;App für Bilder mit Stable Diffusion.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-patienceai
+GenShare;https://www.genshare.io/;Kostenlos Kunst generieren und teilen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-genshare
+Playground AI;https://playgroundai.com/;Kostenloser Bildgenerator für Social Posts, Poster und Logos.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-playground-ai
+Avatar AI;https://avatarai.me/;Eigene KI-Avatare erstellen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-avatar-ai
+RunDiffusion;https://rundiffusion.com/;Cloud-Arbeitsplatz für KI-Kunst.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-rundiffusion
+Human Generator;https://generated.photos/human-generator;Realistische Fotos von Menschen, die es nicht gibt.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-human-generator
+VectorArt.ai;https://vectorart.ai;Vektorgrafiken mit KI erzeugen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-vectorartai
+Room Reinvented;https://roomreinvented.com;Raumfoto hochladen und über 30 Einrichtungsstile ausprobieren.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-room-reinvented
+Gensbot;https://gensbot.com;Personalisiertes Merchandise aus einem Prompt.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-gensbot
+PlantPhotoAI;https://www.plantphotoai.com/;Kostenlose KI-Pflanzenbilder.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-plantphotoai
+Black Headshots;https://www.blackheadshots.com;KI-Bewerbungsfotos für Schwarze Berufstätige.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-black-headshots
+iColoring;https://icoloring.ai;Kostenlose Ausmalbilder mit KI.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-icoloring
+Suit me Up;https://suitmeup.pictures/;Fotos von dir im Anzug erzeugen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-suit-me-up
+AI Photo Forge;https://aiphotoforge.com/;Telegram-Bot für KI-Fotos von dir.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-ai-photo-forge
+AI Boost;https://boost.pictures/;All-in-one: Upscaling, Face Swap, Avatare, virtuelle Anprobe, Hintergründe.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-ai-boost
+PlantTattoosAI;https://www.planttattoosai.com/;Tattoo-Designs mit Pflanzen und Blumen.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-planttattoosai
+Recraft;https://www.recraft.ai;Bildgenerator mit Stil-Kontrolle, erzeugt auch Vektorgrafiken.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-recraft
+Rupert AI;https://www.getrupert.com/;Macht aus Produktdaten Katalogbilder, Texte und Katalogdaten, spezialisiert auf Möbelmarken. Darunter arbeiten fremde Modelle wie Nano Banana, Flux und Veo.;Bilder;Bild-Dienste;nein;nein;nein;ki-tools-bilder.html#tool-rupert-ai
+Microsoft Designer;https://designer.microsoft.com/;Designs für Social Media und Einladungen aus einer Textbeschreibung.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#tool-microsoft-designer
+Canva;https://www.canva.com/;Design-Plattform mit KI-Funktionen, die Bilder erzeugt und bearbeitet und daraus fertige Formate für Social Media, Druck und Präsentationen macht.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#tool-canva
+Brandmark;https://brandmark.io/;Logo-Design mit KI.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#tool-brandmark
+Text2Infographic;https://text2infographic.com/;Infografiken aus Text generieren und bearbeiten.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#tool-text2infographic
+Seede.ai;https://seede.ai/;Macht aus Text Poster, Social-Media-Grafiken, Infografiken und Folien. Die Ebenen bleiben getrennt, Texte und Bilder lassen sich danach einzeln ändern.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#tool-seedeai
+Magic Patterns;https://www.magicpatterns.com/;UI-Entwürfe mit Figma-Export und React-Code.;Bilder;Grafikdesign;nein;nein;nein;ki-tools-bilder.html#tool-magic-patterns
+OpenArt;https://openart.ai/;Über 10 Millionen Prompts durchsuchen und selbst generieren.;Bilder;Bildarchive und Prompt-Sammlungen;nein;nein;nein;ki-tools-bilder.html#tool-openart
+Phygital;https://app.phygital.plus/;Vorlagen zum Erzeugen und Bearbeiten von Bildern.;Bilder;Bildarchive und Prompt-Sammlungen;nein;nein;nein;ki-tools-bilder.html#tool-phygital
+PublicPrompts;https://publicprompts.art/;Kostenlose Prompts für Stable Diffusion.;Bilder;Bildarchive und Prompt-Sammlungen;nein;nein;nein;ki-tools-bilder.html#tool-publicprompts
+Civitai;https://civitai.com/;Community-Plattform für Bildmodelle und LoRAs.;Bilder;Modell-Bibliotheken und Stable-Diffusion-Ressourcen;nein;nein;nein;ki-tools-bilder.html#tool-civitai
+Stable Diffusion Models;https://rentry.org/sdmodels;Umfangreiche Liste von Stable-Diffusion-Checkpoints.;Bilder;Modell-Bibliotheken und Stable-Diffusion-Ressourcen;nein;nein;nein;ki-tools-bilder.html#tool-stable-diffusion-models
+Stable Horde;https://stablehorde.net/;Verteiltes Community-Cluster für Stable Diffusion.;Bilder;Modell-Bibliotheken und Stable-Diffusion-Ressourcen;nein;nein;nein;ki-tools-bilder.html#tool-stable-horde
+Hugging Face Diffusion Models Course;https://github.com/huggingface/diffusion-models-class;Kostenloser Kurs zu Diffusionsmodellen in Python.;Bilder;Modell-Bibliotheken und Stable-Diffusion-Ressourcen;nein;ja;nein;ki-tools-bilder.html#tool-hugging-face-diffusion-models-course
+Google Veo;https://deepmind.google/models/veo/;Googles Videomodell für realistische Clips mit Ton.;Video;;nein;nein;nein;ki-tools-video.html#tool-google-veo
+Kling AI;https://app.klingai.com/global/;Bild- und Videogenerierung mit sehr flüssiger Bewegung.;Video;;nein;nein;nein;ki-tools-video.html#tool-kling-ai
+RunwayML;https://runwayml.com/;Kreativ-Suite für KI-Video, Bearbeitung und Effekte.;Video;;nein;nein;nein;ki-tools-video.html#tool-runwayml
+Luma Dream Machine;https://lumalabs.ai;Videos aus Text und Bildern mit realistischer Physik.;Video;;nein;nein;nein;ki-tools-video.html#tool-luma-dream-machine
+Pika;https://pika.art;Kurze, verspielte KI-Videos und Effekte.;Video;;nein;nein;nein;ki-tools-video.html#tool-pika
+Synthesia;https://www.synthesia.io/;Videos mit KI-Sprechern aus reinem Text, über 100 Sprachen inklusive Deutsch.;Video;;nein;nein;nein;ki-tools-video.html#tool-synthesia
+HeyGen;https://www.heygen.com;Avatar-Videos und Video-Übersetzung mit Lippensynchronisation.;Video;;nein;nein;nein;ki-tools-video.html#tool-heygen
+D-ID;https://www.d-id.com/;Sprechende, interaktive Avatare per Klick.;Video;;nein;nein;nein;ki-tools-video.html#tool-d-id
+Descript;https://www.descript.com;Videos und Podcasts bearbeiten wie ein Textdokument.;Video;;nein;nein;nein;ki-tools-video.html#tool-descript
+Opus Clip;https://www.opus.pro;Sucht in langen Videos passende Stellen, schneidet sie zu kurzen Clips und bringt sie ins Hochformat, wobei das Motiv im Bild bleibt. Welche Stelle zählt, entscheidet die KI, also vor dem Posten drüberschauen.;Video;;nein;nein;nein;ki-tools-video.html#tool-opus-clip
+Recast Studio;https://recast.studio;KI-Assistent für Podcast-Marketing.;Video;;nein;nein;nein;ki-tools-video.html#tool-recast-studio
+Based AI;https://www.basedlabs.ai/;Sammelt über 50 Bild- und Videomodelle anderer Hersteller wie Kling, Veo und Nano Banana unter einem Konto. Bezahlt wird mit Kryptowährung oder Telegram Stars, nicht per Karte.;Video;;nein;nein;nein;ki-tools-video.html#tool-based-ai
+Sisif;https://sisif.ai/;Macht aus Text oder einem Foto kurze Clips, etwa ein Produkt, das sich dreht, für einen Dollar je fünf Sekunden. Ohne Wasserzeichen, deshalb liegt die Kennzeichnung täuschend echter Clips bei dir.;Video;;nein;nein;nein;ki-tools-video.html#tool-sisif
+Melies;https://melies.co;Studio für KI-Kurzfilme vom Drehbuch über Storyboard und KI-Darsteller bis zu Ton und Musik, die Videos kommen von Modellen wie Kling, Runway und Luma. Ein Clip ist höchstens zehn Sekunden lang.;Video;;nein;nein;nein;ki-tools-video.html#tool-melies
+FLUX 3 Video;https://bfl.ai/blog/flux-3-video;Videomodell von Black Forest Labs, erzeugt Clips bis 20 Sekunden mit passendem Ton.;Video;;ja;nein;ja;ki-tools-video.html#tool-flux-3-video
+Murf AI;https://murf.ai/;Sprecherstimmen für Erklärvideos, E-Learning und Marketing, dazu eine Sprach-API und Telefonagenten für Unternehmen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-murf-ai
+Descript Overdub;https://www.descript.com/overdub;Voice Cloning direkt im Schnitt- und Transkriptionswerkzeug von Descript.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-descript-overdub
+Respeecher;https://www.respeecher.com/;Professionelles Voice Cloning für Film und Fernsehen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-respeecher
+Resemble AI;https://www.resemble.ai/;Echtzeit-Sprachsynthese und Voice Cloning mit vielen Anpassungen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-resemble-ai
+WellSaid Labs;https://www.wellsaidlabs.com/;Natürliche Sprecherstimmen für E-Learning und Unternehmensvideos.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-wellsaid-labs
+iSpeech;https://www.ispeech.org/;Sprachsynthese in vielen Sprachen für Unternehmensanwendungen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-ispeech
+Microsoft Azure Neural TTS;https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/;Skalierbare Sprachsynthese für Unternehmensanwendungen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-microsoft-azure-neural-tts
+Zenmic.com;https://zenmic.com;Erzeugt Podcast-Folgen (Skript und Audio) mit KI.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-zenmiccom
+Audify AI;https://audify-ai.ahmedtokyo.com;Sprachsynthese mit anpassbaren Stimmen und Anweisungen.;Audio;Stimmen und Voice Cloning;nein;nein;nein;ki-tools-audio.html#tool-audify-ai
+TTS WebUI;https://github.com/rsxdalv/tts-generation-webui;Oberfläche für über 15 Sprach- und Musikmodelle.;Audio;Stimmen und Voice Cloning;nein;ja;nein;ki-tools-audio.html#tool-tts-webui
+TorToiSe;https://github.com/neonbjb/tortoise-tts;Text-zu-Sprache mit mehreren Stimmen und Fokus auf Qualität.;Audio;Sprache zu Text und Text zu Sprache;nein;ja;nein;ki-tools-audio.html#tool-tortoise
+Bark;https://github.com/suno-ai/bark;Transformer-Modell für Text zu Audio.;Audio;Sprache zu Text und Text zu Sprache;nein;ja;nein;ki-tools-audio.html#tool-bark
+CustomPod.io;https://custompod.io;Tägliche News-Podcasts nur zu deinen Themen.;Audio;Sprache zu Text und Text zu Sprache;nein;nein;nein;ki-tools-audio.html#tool-custompodio
+EKHOS AI;https://ekhos.ai;Transkription mit Korrekturfunktionen und Echtzeit-Aufnahme.;Audio;Sprache zu Text und Text zu Sprache;nein;nein;nein;ki-tools-audio.html#tool-ekhos-ai
+Whisper API;https://whisper-api.com;Transkriptions-API auf Basis von OpenAI Whisper, 5 kostenlose Transkriptionen pro Tag.;Audio;Sprache zu Text und Text zu Sprache;nein;nein;nein;ki-tools-audio.html#tool-whisper-api
+Voxtral 3;https://mistral.ai/news/voxtral-3/;Spracherkennung und Sprachausgabe von Mistral, mit Deutsch, Sprechererkennung und einem SDK für Sprachagenten.;Audio;Sprache zu Text und Text zu Sprache;ja;nein;ja;ki-tools-audio.html#tool-voxtral-3
+CreateEasily;https://createeasily.com/;Kostenlose Transkription von Audio- und Videodateien bis 2 GB.;Audio;Sprache zu Text und Text zu Sprache;nein;nein;nein;ki-tools-audio.html#tool-createeasily
+Transgate;https://transgate.ai/;Sprache-zu-Text mit KI.;Audio;Sprache zu Text und Text zu Sprache;nein;nein;nein;ki-tools-audio.html#tool-transgate
+Suno;https://suno.com;Komplette Songs mit Gesang aus einem Prompt, auch auf Deutsch.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-suno
+Udio;https://www.udio.com;Songs und Instrumentals aus einer Beschreibung generieren.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-udio
+AIVA;https://www.aiva.ai;KI-Komponist für klassische und cineastische Musik.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-aiva
+Mubert;https://www.mubert.com;Erzeugt lizenzfreie Hintergrundmusik passend zu Stimmung und Länge eines Videos, dazu Werkzeuge für Podcast-Schnitt und eine Prüfung, ob ein Song auf YouTube einen Urheberrechtsanspruch auslösen dürfte.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-mubert
+Soundraw;https://soundraw.io;Musik nach Stimmung und Stil anpassen.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-soundraw
+Beatoven.ai;https://www.beatoven.ai;Hintergrundmusik und Soundeffekte aus einer Beschreibung, als MP3 oder WAV mit Lizenz zur Monetarisierung bei jedem Download. Das Modell ist als Fairly Trained zertifiziert.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-beatovenai
+Boomy;https://www.boomy.com;Schnell Songs erstellen und veröffentlichen.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-boomy
+Ecrett Music;https://www.ecrettmusic.com;Lizenzfreie Musik für Videos.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-ecrett-music
+Loudly;https://www.loudly.com;KI-Musik mit Community-Funktionen.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-loudly
+Soundful;https://www.soundful.com;Musik aus dem Generator, auf Wunsch zusammen mit Produzenten zur eigenen Markenklangfarbe ausgebaut. In den kleinen Tarifen sind Tracks nicht exklusiv, andere dürfen denselben Sound nutzen.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-soundful
+AI Song Maker;https://www.aisongmaker.io;Songs aus Text oder eigenem Liedtext, wahlweise nur instrumental, mit Stil, Stimme und Tempo zur Auswahl. Kostenlos sind 20 Credits am Tag, das reicht für vier Songs.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-ai-song-maker
+Harmonai;https://www.harmonai.org/;Community für Open-Source-Audiowerkzeuge.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-harmonai
+Lyria;https://deepmind.google/models/lyria/;Musikmodell von Google DeepMind, erzeugt Songs mit Gesang bis drei Minuten Länge, auch aus einem Bild als Vorlage.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-lyria
+Remusic;https://remusic.ai/en;Kostenloser Musikgenerator und Lernplattform.;Audio;Musik;nein;nein;nein;ki-tools-audio.html#tool-remusic
+Semrush;https://www.semrush.com;SEO-Suite für Keywords, Wettbewerber und Site-Audits, mit KI-Funktionen und Sichtbarkeits-Tracking in KI-Suchen.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-semrush
+Ahrefs;https://www.ahrefs.com;SEO-Suite mit großem Backlink-Index und KI-Content-Werkzeugen.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-ahrefs
+Surfer;https://surferseo.com;Optimiert Texte datenbasiert auf Suchintention und Konkurrenz.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-surfer
+Frase;https://frase.io;SEO-Briefings und Content-Optimierung aus den Top-Suchergebnissen.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-frase
+MarketMuse;https://www.marketmuse.com/;Themen-Planung und Content-Optimierung mit KI.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-marketmuse
+Luthor;https://luthor.ai/;Programmatisches Content-Marketing in großem Umfang.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-luthor
+Quick Creator;https://quickcreator.io;KI-Blogplattform, die Beiträge entlang von Suchbegriffen aufbaut.;Marketing und SEO;SEO und Content-Optimierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-quick-creator
+Jasper;https://www.jasper.ai/;Marketing-Content wie Blogs, E-Mails und Anzeigen mit Markenstimme.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-jasper
+neuroflash;https://neuroflash.com;Deutschsprachige Marketing-Texte mit Markenrichtlinien.;Marketing und SEO;Werbung, Social und Personalisierung;ja;nein;nein;ki-tools-marketing-und-seo.html#tool-neuroflash
+Mutiny;https://www.mutinyhq.com/;Vertriebsassistent, der aus Meeting-Notizen Follow-up-E-Mails und Angebote entwirft und nächste Schritte ins CRM schreibt. Früher ein Werkzeug zur Personalisierung von Websites.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-mutiny
+Clearbit;https://clearbit.com/;Firmen- und Kontaktdaten zum Anreichern von Leads. Gehört zu HubSpot und steckt dort als Breeze Intelligence im CRM.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-clearbit
+Seventh Sense;https://www.theseventhsense.com/;Optimiert den Versandzeitpunkt von E-Mails.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-seventh-sense
+Smartly.io;https://www.smartly.io/;Automatisiert Erstellung und Optimierung von Social Ads, aus Helsinki.;Marketing und SEO;Werbung, Social und Personalisierung;ja;nein;nein;ki-tools-marketing-und-seo.html#tool-smartlyio
+Adzooma;https://www.adzooma.com/;KI-gestützte Verwaltung von PPC-Kampagnen.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-adzooma
+Jacquard;https://www.jacquard.com/;Früher Phrasee: Agenten, die Marketing-Texte für E-Mail, Push und Social in der Markenstimme schreiben, vorab bewerten und nur mit Freigabe des Teams verschicken.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-jacquard
+Brandwatch;https://www.brandwatch.com;Social Listening und Sentiment-Analyse (inklusive des früheren Crimson Hexagon).;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-brandwatch
+Chatfuel;https://www.chatfuel.com/;Chatbots für Messenger, Instagram und WhatsApp.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-chatfuel
+LogicBalls;https://logicballs.com/;Sammlung von Tausenden kleinen Schreibwerkzeugen für einzelne Textsorten, die vor dem Schreiben Rückfragen stellen. Gratis sind 10.000 Wörter im Monat.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-logicballs
+Publish7;https://publish7.com/;KI-Agenten für digitales Marketing im Handel und E-Commerce.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-publish7
+Keyla.AI;https://keyla.ai/;Baut aus Logo und Produktfotos Bild- und Videoanzeigen, in denen KI-Darsteller das Produkt halten oder tragen. Solche KI-Menschen brauchen nach den EU-Leitlinien zum AI Act ein sichtbares Label.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-keylaai
+Persuva;https://persuva.ai;Erzeugt Produktseiten, Landingpages und Advertorials für Shopify-Shops, gebaut für Dropshipping. Läuft nur mit Shopify.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-persuva
+Taplio;https://taplio.com/;All-in-one-Tool für LinkedIn mit KI.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-taplio
+Socialsonic;https://socialsonic.com;LinkedIn-Coach: Content, Trends und Planung.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-socialsonic
+Podify.io;https://podify.io;Wachstum auf LinkedIn mit KI und Community.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-podifyio
+PressPulse AI;https://www.presspulse.ai/;Jeden Morgen passende Medien-Anfragen für PR.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-presspulse-ai
+GummySearch;https://gummysearch.com/;Kundenrecherche auf Reddit: Probleme, Stimmungen und Kaufinteresse finden.;Marketing und SEO;Werbung, Social und Personalisierung;nein;nein;nein;ki-tools-marketing-und-seo.html#tool-gummysearch
+AICaller.io;https://aicaller.io/;Automatisierte Massenanrufe mit generativer KI, etwa für Lead-Qualifizierung, mit API. In Deutschland nur mit vorheriger ausdrücklicher Einwilligung der Angerufenen, das verlangt § 7 UWG für Werbeanrufe bei Verbrauchern.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html#tool-aicallerio
+DialLink AI Voice Agents;https://diallink.com/;Sprachagenten für Geschäftsanrufe und Routineaufgaben.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html#tool-diallink-ai-voice-agents
+Cald.ai;https://cald.ai;KI-Anrufagenten für ein- und ausgehende Telefonate.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html#tool-caldai
+Rosie;https://heyrosie.com/;KI-Telefonservice, der Anrufe entgegennimmt.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html#tool-rosie
+Parloa;https://www.parloa.com;KI-Agenten für Telefon und Chat im Kundenservice, aus Berlin.;KI-Telefonagenten;;ja;nein;nein;ki-tools-ki-telefonagenten.html#tool-parloa
+Cognigy;https://www.cognigy.com;Agenten-Plattform für Contact Center, aus Düsseldorf.;KI-Telefonagenten;;ja;nein;nein;ki-tools-ki-telefonagenten.html#tool-cognigy
+Twig;https://www.twig.so/;KI-Empfang für Telefon, SMS und Website-Chat, der Fragen beantwortet und Termine in den Kalender einträgt. Angebot, Preise und Beispiele richten sich an Betriebe in den USA.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html#tool-twig
+ElevenLabs Agents;https://elevenlabs.io/agents;Sprach- und Chat-Agenten von ElevenLabs für Support, Terminvergabe und Vertrieb, in über 90 Sprachen. Zur Minute kommen die Kosten für das Sprachmodell dazu.;KI-Telefonagenten;;nein;nein;nein;ki-tools-ki-telefonagenten.html#tool-elevenlabs-agents
+PromptBase;https://promptbase.com/;Marktplatz zum Kaufen und Verkaufen von Prompts.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-promptbase
+Promptly;https://searchpromptly.com/;Prompts entdecken, erstellen und teilen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-promptly
+Myriad;https://www.namepepper.com/free-tools/ai-content-prompt-tool;Prompts für alle Content-Arten bauen und verfeinern.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-myriad
+Have I Been Trained?;https://haveibeentrained.com/;Prüfen, ob eigene Bilder zum Training von KI-Modellen verwendet wurden.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-have-i-been-trained
+This Image Does Not Exist;https://thisimagedoesnotexist.com/;Teste, ob du KI-Bilder von echten unterscheiden kannst.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-this-image-does-not-exist
+Taranify;https://www.taranify.com;Findet Spotify-Playlists, Serien, Bücher und Essen nach deinem Geschmack.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-taranify
+AI Dungeon;https://aidungeon.io/;Textadventure, das die KI live weitererzählt.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-ai-dungeon
+Scenario;https://www.scenario.com/;KI-generierte Assets für Spiele.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-scenario
+FinChat;https://finchat.io/;Beantwortet Fragen zu börsennotierten Unternehmen und Investoren.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-finchat
+FairyTailAI;https://fairytailai.com/;Personalisierte Gute-Nacht-Geschichten.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-fairytailai
+GradGPT;https://www.gradgpt.com/;Hilfe bei Uni-Bewerbungen: Essays, Anforderungen, Hochschulsuche.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-gradgpt
+Architecture Helper;https://architecturehelper.com;Architekturstile analysieren und eigene erzeugen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-architecture-helper
+AI Wedding Toast;https://aiweddingtoast.com;Persönliche Hochzeitsrede mit KI.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-ai-wedding-toast
+Interviews Chat;https://www.interviews.chat/;Vorbereitung und Copilot für Vorstellungsgespräche.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-interviews-chat
+ezJobs;https://www.getezjobs.com/;Automatisierte Jobsuche und Bewerbung.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-ezjobs
+Compass;https://www.getwhys.io/compass;KI-Antworten auf SaaS-Recherchefragen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-compass
+AISaver;https://aisaver.io;Sammlung von KI-Video- und Fototools.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-aisaver
+LangMagic;https://easytolearn.io;Sprachen mit Inhalten von Muttersprachlern lernen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-langmagic
+LooksMax AI;https://looksmax.ai;Bewertet Fotos von dir per KI.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-looksmax-ai
+ResumeDive;https://resumedive.com;Lebenslauf-Optimierung mit KI.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-resumedive
+Daruy;https://daruy.space/;Personalisierte Geschenkideen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-daruy
+NVIDIA Omniverse AI Animal Explorer;https://docs.omniverse.nvidia.com/extensions/latest/ext_animal-explorer.html#installation;Omniverse-Erweiterung für schnelle 3D-Tier-Prototypen.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-nvidia-omniverse-ai-animal-explorer
+Character.AI;https://character.ai/;Eigene Figuren erstellen und mit ihnen chatten.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-characterai
+dmwithme;https://dmwithme.com;KI-Begleiter mit Emotionen, der auch widerspricht.;Weitere KI-Tools;;nein;nein;nein;ki-tools-weitere-ki-tools.html#tool-dmwithme
+PROMPTGOTT;https://promptgott.substack.com/?utm_source=github-pages&utm_medium=referral&utm_campaign=awesome-ki-tools-de;Deutschsprachiger Substack mit abgefahrenen AI-Use-Cases, Prompt-Engineering-Tricks und AI-SEO-Systemen. Einstieg: Der Greyhat-Eid.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+Learn Prompting;https://learnprompting.org/;Kostenloser Open-Source-Kurs zur Kommunikation mit KI.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+Prompt Engineering Guide;https://github.com/dair-ai/Prompt-Engineering-Guide;Leitfaden und Ressourcen zum Prompt Engineering.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+ChatGPT Prompt Engineering for Developers;https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/;Kurzkurs von Isa Fulford (OpenAI) und Andrew Ng (DeepLearning.AI).;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+OpenAI Cookbook;https://github.com/openai/openai-cookbook;Beispiele und Anleitungen zur OpenAI API.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+Robert Miles AI Safety;https://www.youtube.com/@RobertMilesAI;YouTube-Kanal über KI-Sicherheit.;Lernen: Prompting und KI-Grundlagen;;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+Machine Learning Roadmap;https://github.com/mrdbourke/machine-learning-roadmap;Landkarte der wichtigsten ML-Konzepte, mit Lernwegen und Werkzeugen.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+Andrew Ngs Machine Learning (Stanford);https://www.coursera.org/learn/machine-learning;Einsteigerfreundlicher Grundlagenkurs.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+Sebastian Thruns Intro to Machine Learning;https://www.udacity.com/course/intro-to-machine-learning--ud120;Solide Einführung von einem der Pioniere autonomen Fahrens.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+AI and Machine Learning Roadmaps;https://www.scaler.com/blog/category/artificial-intelligence-machine-learning/;Lernpfade mit Konzepten, Methoden und Werkzeugen.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+How To Learn Artificial Intelligence;https://www.appliedaicourse.com/blog/how-to-learn-artificial-intelligence-ai/;Schritt-für-Schritt-Anleitung von Python und Mathe bis Deep Learning.;Lernen: Prompting und KI-Grundlagen;Machine Learning;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+fast.ai;https://www.fast.ai/;Praxisnahe, kostenlose Deep-Learning-Kurse von Jeremy Howard.;Lernen: Prompting und KI-Grundlagen;Deep Learning;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+Coursera Deep Learning Specialization (Notizen);https://github.com/pratham5368/coursera-deep-learning-specialization;Notizen, Aufgaben und Quizze zur Spezialisierung von deeplearning.ai.;Lernen: Prompting und KI-Grundlagen;Deep Learning;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+PyTorch-Notizen;https://github.com/pratham5368/Tecnologies-I-Learn/tree/main/31-pytorch;PyTorch-Grundlagen mit Beispielen in Google Colab.;Lernen: Prompting und KI-Grundlagen;Deep Learning;nein;nein;nein;ki-glossar.html#lernen-prompting-und-ki-grundlagen
+AI For Developers;https://aifordevelopers.org;Liste von KI-Entwicklerwerkzeugen.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen
+Best of AI;https://github.com/best-of-ai/best-of-ai;Eine Art Michelin-Führer für KI.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen
+Awesome AI Models;https://github.com/dariubs/awesome-ai-models;Kuratierte Liste von KI-Modellen und LLMs.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen
+Awesome AI Coding Tools;https://github.com/ai-for-developers/awesome-ai-coding-tools;KI-Werkzeuge für Entwickler.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen
+Awesome Vibe Coding;https://github.com/dariubs/awesome-vibe-coding;Werkzeuge und Ressourcen für Vibe Coding.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen
+AI for Productivity;https://productivity.directory/category/ai;KI-Apps für Produktivität.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen
+Awesome Workflow Automation;https://github.com/dariubs/awesome-workflow-automation;Werkzeuge für Workflow-Automatisierung.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen
+Awesome Marketing;https://github.com/marketingtoolslist/awesome-marketing;Marketing-Werkzeuge.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen
+Top AI Directories;https://github.com/best-of-ai/ai-directories;Verzeichnisse, in die man KI-Tools eintragen kann.;Verwandte Listen;;nein;nein;nein;ki-glossar.html#verwandte-listen

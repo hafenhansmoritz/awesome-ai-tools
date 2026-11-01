@@ -4,7 +4,7 @@ Grundlage sind die Spezifikation auf modelcontextprotocol.io, die Seite agentski
 
 ## Zwei Standards, zwei Aufgaben
 
-MCP beschreibt die Spezifikation als offenes Protokoll, das Anwendungen mit Sprachmodellen nahtlos an externe Datenquellen und Werkzeuge anbindet. Technisch gibt es drei Rollen: Der Host ist die KI-Anwendung, etwa Claude Desktop oder VS Code. Für jeden angeschlossenen Dienst erzeugt der Host einen Client mit einer eigenen Verbindung. Und der Server ist das Programm, das einen Dienst wie den Shop oder die Buchhaltung für die KI zugänglich macht.
+Die Spezifikation beschreibt MCP als offenes Protokoll, das Anwendungen mit Sprachmodellen an externe Datenquellen und Werkzeuge anbindet. Technisch gibt es drei Rollen: Der Host ist die KI-Anwendung, etwa Claude Desktop oder VS Code. Für jeden angeschlossenen Dienst erzeugt der Host einen Client mit einer eigenen Verbindung. Und der Server ist das Programm, das einen Dienst wie den Shop oder die Buchhaltung für die KI zugänglich macht.
 
 Ein Server bietet drei Arten von Bausteinen an. Werkzeuge sind Funktionen, die das Modell ausführen kann, etwa „Bestellung suchen“. Ressourcen sind Inhalte und Daten, die als Kontext dienen. Prompts sind vorbereitete Vorlagen für wiederkehrende Abläufe. Lokale Server laufen über die Standardein- und -ausgabe auf demselben Rechner, entfernte Server über HTTP.
 
@@ -67,12 +67,12 @@ MCP verbindet ein Sprachmodell, das sich von Texten beeinflussen lässt, mit Sys
 Die wichtigsten Angriffswege, die Microsoft, OWASP und die Hersteller beschreiben:
 
 - **Vergiftete Werkzeuge:** Versteckte Anweisungen in der Beschreibung eines Werkzeugs, die das Modell befolgt, ohne dass der Nutzer sie sieht. Microsoft nennt dazu den Fall, dass ein Server seine Werkzeuge nach der Freigabe still verändert.
-- **Prompt Injection über Inhalte:** Ein Agent liest eine Kundenmail oder Produktbewertung mit eingeschleusten Befehlen und führt sie mit seinen Rechten aus. Stripe warnt ausdrücklich davor, seinen Server zusammen mit anderen Servern zu nutzen, ohne diese Gefahr zu bedenken.
+- **Prompt Injection über Inhalte:** Ein Agent liest eine Kunden-E-Mail oder Produktbewertung mit eingeschleusten Befehlen und führt sie mit seinen Rechten aus. Stripe warnt ausdrücklich davor, seinen Server zusammen mit anderen Servern zu nutzen, ohne diese Gefahr zu bedenken.
 - **Zu viele Rechte:** Die OWASP-Liste der zehn größten Risiken für agentische Anwendungen von 2026 nennt Missbrauch von Werkzeugen sowie von Identitäten und Rechten auf den Plätzen zwei und drei. Als Gegenmittel empfiehlt sie eine menschliche Bestätigung für folgenreiche Aktionen, mit Probelauf und Vorher-nachher-Vergleich.
 - **Lokale Server mit Schadcode:** VS Code fragt beim ersten Start eines lokalen Servers nach, weil solche Server beliebigen Code auf dem Rechner ausführen können, und rät, nur Server aus vertrauenswürdigen Quellen einzubinden.
 - **Weitergereichte Zugangsdaten:** Die Spezifikation verbietet es Servern, Token anzunehmen, die nicht ausdrücklich für sie ausgestellt wurden.
 
-Für Skills gilt dasselbe. Anthropic rät, Skills nur aus vertrauenswürdigen Quellen zu nutzen, alle Dateien vorher zu prüfen und die Installation eines Skills wie die Installation von Software zu behandeln, denn ein bösartiger Skill kann den Agenten dazu bringen, Werkzeuge aufzurufen oder Code auszuführen.
+Für Skills gilt dasselbe. Anthropic rät, Skills nur aus vertrauenswürdigen Quellen zu nutzen, alle Dateien vorher zu prüfen und die Installation eines Skills wie die Installation von Software zu behandeln. Ein bösartiger Skill kann den Agenten nämlich dazu bringen, Werkzeuge aufzurufen oder Code auszuführen.
 
 ## Woran du vertrauenswürdige Server erkennst
 

@@ -1,6 +1,6 @@
 {
- "gebaut": "28.10.2026",
- "link_check": "28.10.2026",
+ "gebaut": "31.10.2026",
+ "link_check": "31.10.2026",
  "quelle": "https://github.com/jmp-collab/awesome-ai-tools",
  "tools": [
   {
@@ -12,7 +12,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-chatgpt",
+   "icon": "img/fav/chatgpt.com.png"
   },
   {
    "name": "Claude",
@@ -23,18 +24,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-claude",
+   "icon": "img/fav/claude.ai.png"
   },
   {
-   "name": "Le Chat von Mistral",
+   "name": "Vibe von Mistral",
    "url": "https://chat.mistral.ai",
-   "beschreibung": "Der Chat-Assistent von Mistral AI, schnell und mit Websuche.",
+   "beschreibung": "Assistent von Mistral AI, bis August 2026 Le Chat genannt, mit eigenen Modi für Chat, Büroarbeit und Programmieren.",
    "kategorie": "Text und Sprache",
    "bereich": "Chatbots und Assistenten",
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-vibe-von-mistral",
+   "icon": "img/fav/chat.mistral.ai.png"
   },
   {
    "name": "DeepL Übersetzer",
@@ -45,7 +48,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung"
+   "seite": "ki-tools-text-und-sprache.html#tool-deepl-übersetzer",
+   "icon": "img/fav/www.deepl.com.png"
   },
   {
    "name": "Perplexity",
@@ -56,7 +60,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
+   "seite": "ki-tools-text-und-sprache.html#tool-perplexity",
+   "icon": "img/fav/www.perplexity.ai.png"
   },
   {
    "name": "NotebookLM",
@@ -67,7 +72,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-notebooklm",
+   "icon": "img/fav/notebooklm.google.com.png"
   },
   {
    "name": "n8n",
@@ -78,7 +84,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-n8n",
+   "icon": "img/fav/n8n.io.png"
   },
   {
    "name": "FLUX von Black Forest Labs",
@@ -89,18 +96,20 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildmodelle"
+   "seite": "ki-tools-bilder.html#tool-flux-von-black-forest-labs",
+   "icon": "img/fav/bfl.ai.png"
   },
   {
-   "name": "ElevenLabs Dubbing",
+   "name": "ElevenLabs",
    "url": "https://elevenlabs.io/",
-   "beschreibung": "Vertont Videos in andere Sprachen mit der Originalstimme.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Übersetzung und Lokalisierung",
+   "beschreibung": "Sehr realistische Stimmen, Voice Cloning und Vertonung in vielen Sprachen inklusive Deutsch.",
+   "kategorie": "Audio",
+   "bereich": "Stimmen und Voice Cloning",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung"
+   "seite": "ki-tools-audio.html#tool-elevenlabs",
+   "icon": "img/fav/elevenlabs.io.png"
   },
   {
    "name": "Cursor",
@@ -111,7 +120,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-cursor",
+   "icon": "img/fav/cursor.com.png"
   },
   {
    "name": "OpenAI API",
@@ -122,7 +132,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-openai-api",
+   "icon": "img/fav/platform.openai.com.png"
   },
   {
    "name": "Anthropic API",
@@ -133,7 +144,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-anthropic-api",
+   "icon": "img/fav/docs.anthropic.com.png"
   },
   {
    "name": "Google Gemini API",
@@ -144,7 +156,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-google-gemini-api",
+   "icon": "img/fav/ai.google.dev.png"
   },
   {
    "name": "Mistral AI",
@@ -155,7 +168,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-mistral-ai",
+   "icon": "img/fav/mistral.ai.png"
   },
   {
    "name": "Llama",
@@ -166,7 +180,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-llama",
+   "icon": "img/fav/www.llama.com.png"
   },
   {
    "name": "DeepSeek",
@@ -177,7 +192,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-deepseek",
+   "icon": "img/fav/www.deepseek.com.png"
   },
   {
    "name": "Qwen",
@@ -188,18 +204,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
-  },
-  {
-   "name": "Bloom",
-   "url": "https://huggingface.co/docs/transformers/model_doc/bloom",
-   "beschreibung": "Offenes, mehrsprachiges Modell aus dem BigScience-Projekt von Hugging Face (46 Sprachen).",
-   "kategorie": "Text und Sprache",
-   "bereich": "Sprachmodelle und APIs",
-   "eu": false,
-   "open_source": true,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-qwen",
+   "icon": "img/fav/qwenlm.github.io.png"
   },
   {
    "name": "Hugging Face",
@@ -210,18 +216,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-hugging-face",
+   "icon": "img/fav/huggingface.co.png"
   },
   {
    "name": "Aleph Alpha",
    "url": "https://aleph-alpha.com",
-   "beschreibung": "Modelle und KI-Plattform aus Heidelberg, ausgelegt auf Behörden und Unternehmen.",
+   "beschreibung": "Entwickelt mit Behörden und Unternehmen spezialisierte Sprachmodelle und eine Plattform für den Betrieb unter eigener Kontrolle, aus Heidelberg. Kein Chat für Einzelne, sondern Projektgeschäft.",
    "kategorie": "Text und Sprache",
    "bereich": "Sprachmodelle und APIs",
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-aleph-alpha",
+   "icon": "img/fav/aleph-alpha.com.png"
   },
   {
    "name": "Jina AI",
@@ -232,7 +240,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-jina-ai",
+   "icon": "img/fav/jina.ai.png"
   },
   {
    "name": "Nebius",
@@ -243,7 +252,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-nebius",
+   "icon": "img/fav/nebius.com.png"
   },
   {
    "name": "Scaleway",
@@ -254,7 +264,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-scaleway",
+   "icon": "img/fav/www.scaleway.com.png"
   },
   {
    "name": "STACKIT",
@@ -265,18 +276,20 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-stackit",
+   "icon": "img/fav/www.stackit.de.png"
   },
   {
    "name": "Mistral Large 4",
    "url": "https://mistral.ai/news/mistral-large-4/",
-   "beschreibung": "Großes multimodales Modell von Mistral mit 1 Billion Parametern, davon 52 Milliarden aktiv, in Europa trainiert und betrieben; offene Gewichte sind angekündigt.",
+   "beschreibung": "Großes multimodales Modell von Mistral mit 1 Billion Parametern, davon 52 Milliarden aktiv, in Europa trainiert. Die Gewichte liegen seit dem 29. Oktober 2026 offen bei Hugging Face; wer das Modell als Dienst weiterverkauft, braucht eine eigene Lizenz.",
    "kategorie": "Text und Sprache",
    "bereich": "Sprachmodelle und APIs",
    "eu": true,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-mistral-large-4",
+   "icon": "img/fav/mistral.ai.png"
   },
   {
    "name": "LFM3 von Liquid AI",
@@ -287,18 +300,20 @@
    "eu": false,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-lfm3-von-liquid-ai",
+   "icon": "img/fav/www.liquid.ai.png"
   },
   {
    "name": "Nemotron 3.5 Bolt",
    "url": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/",
-   "beschreibung": "Offenes Kleinmodell von NVIDIA für lokale Sprach- und Geräteassistenten mit Werkzeugaufrufen, läuft laut NVIDIA mit rund 4 GB Grafikspeicher und über Ollama.",
+   "beschreibung": "Offenes Kleinmodell von NVIDIA für lokale Sprach- und Geräteassistenten mit Werkzeugaufrufen. Belegt in NVIDIAs Test auf einer RTX 5070 je nach Gesprächslänge 3,5 bis 4,3 GB Grafikspeicher, läuft auch über Ollama.",
    "kategorie": "Text und Sprache",
    "bereich": "Sprachmodelle und APIs",
    "eu": false,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-nemotron-35-bolt",
+   "icon": "img/fav/research.nvidia.com.png"
   },
   {
    "name": "Giotto Alto",
@@ -309,7 +324,8 @@
    "eu": false,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-text-und-sprache.html#sprachmodelle-und-apis"
+   "seite": "ki-tools-text-und-sprache.html#tool-giotto-alto",
+   "icon": "img/fav/www.giotto.ai.png"
   },
   {
    "name": "Gemini",
@@ -320,7 +336,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-gemini",
+   "icon": "img/fav/gemini.google.com.png"
   },
   {
    "name": "Microsoft Copilot",
@@ -331,7 +348,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-microsoft-copilot",
+   "icon": "img/fav/copilot.microsoft.com.svg"
   },
   {
    "name": "Langdock",
@@ -342,18 +360,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
-  },
-  {
-   "name": "Character.AI",
-   "url": "https://character.ai/",
-   "beschreibung": "Eigene Figuren erstellen und mit ihnen chatten.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Chatbots und Assistenten",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-langdock",
+   "icon": "img/fav/langdock.com.png"
   },
   {
    "name": "ChatPDF",
@@ -364,7 +372,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-chatpdf",
+   "icon": "img/fav/www.chatpdf.com.png"
   },
   {
    "name": "ChatSonic",
@@ -375,29 +384,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
-  },
-  {
-   "name": "Phind",
-   "url": "https://www.phind.com/",
-   "beschreibung": "Suchmaschine und Assistent speziell für Programmierer, auch als VS-Code-Erweiterung.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Chatbots und Assistenten",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
-  },
-  {
-   "name": "Tiledesk",
-   "url": "https://tiledesk.com/",
-   "beschreibung": "No-Code-Framework für Chatbots mit LLM-Anbindung, Open Source.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Chatbots und Assistenten",
-   "eu": false,
-   "open_source": true,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-chatsonic",
+   "icon": "img/fav/writesonic.com.png"
   },
   {
    "name": "AICamp",
@@ -408,29 +396,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
-  },
-  {
-   "name": "Gali Chat",
-   "url": "https://www.galichat.com/",
-   "beschreibung": "KI-Support-Assistent für Websites, rund um die Uhr.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Chatbots und Assistenten",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
-  },
-  {
-   "name": "dmwithme",
-   "url": "https://dmwithme.com",
-   "beschreibung": "KI-Begleiter mit Emotionen, der auch widerspricht.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Chatbots und Assistenten",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-aicamp",
+   "icon": "img/fav/aicamp.so.png"
   },
   {
    "name": "Kimi",
@@ -441,7 +408,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-kimi",
+   "icon": "img/fav/www.kimi.com.jpg"
   },
   {
    "name": "Grok",
@@ -452,7 +420,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#chatbots-und-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-grok",
+   "icon": "img/fav/grok.com.png"
   },
   {
    "name": "Exa",
@@ -463,18 +432,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
-  },
-  {
-   "name": "Phind",
-   "url": "https://phind.com/",
-   "beschreibung": "KI-Suche für Entwickler-Fragen.",
-   "kategorie": "Text und Sprache",
-   "bereich": "KI-Suchmaschinen",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
+   "seite": "ki-tools-text-und-sprache.html#tool-exa",
+   "icon": "img/fav/exa.ai.png"
   },
   {
    "name": "You.com",
@@ -485,7 +444,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
+   "seite": "ki-tools-text-und-sprache.html#tool-youcom",
+   "icon": "img/fav/you.com.png"
   },
   {
    "name": "Komo AI",
@@ -496,7 +456,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
+   "seite": "ki-tools-text-und-sprache.html#tool-komo-ai",
+   "icon": "img/fav/komo.ai.png"
   },
   {
    "name": "Telborg",
@@ -507,7 +468,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
+   "seite": "ki-tools-text-und-sprache.html#tool-telborg",
+   "icon": "img/fav/telborg.com.png"
   },
   {
    "name": "MemFree",
@@ -518,7 +480,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
+   "seite": "ki-tools-text-und-sprache.html#tool-memfree",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Refinder AI",
@@ -529,7 +492,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
+   "seite": "ki-tools-text-und-sprache.html#tool-refinder-ai",
+   "icon": "img/fav/refinder.ai.png"
   },
   {
    "name": "Agentset.ai",
@@ -540,7 +504,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#ki-suchmaschinen"
+   "seite": "ki-tools-text-und-sprache.html#tool-agentsetai",
+   "icon": "img/fav/agentset.ai.png"
   },
   {
    "name": "Ollama",
@@ -551,7 +516,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten"
+   "seite": "ki-tools-text-und-sprache.html#tool-ollama",
+   "icon": "img/fav/ollama.com.png"
   },
   {
    "name": "LM Studio",
@@ -562,7 +528,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten"
+   "seite": "ki-tools-text-und-sprache.html#tool-lm-studio",
+   "icon": "img/fav/lmstudio.ai.png"
   },
   {
    "name": "Open WebUI",
@@ -573,7 +540,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten"
+   "seite": "ki-tools-text-und-sprache.html#tool-open-webui",
+   "icon": "img/fav/openwebui.com.png"
   },
   {
    "name": "privateGPT",
@@ -584,7 +552,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten"
+   "seite": "ki-tools-text-und-sprache.html#tool-privategpt",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "quivr",
@@ -595,7 +564,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten"
+   "seite": "ki-tools-text-und-sprache.html#tool-quivr",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "gpt4all",
@@ -606,7 +576,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#lokal-und-privat-mit-dokumenten-chatten"
+   "seite": "ki-tools-text-und-sprache.html#tool-gpt4all",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "DeepL Write",
@@ -617,29 +588,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
-  },
-  {
-   "name": "neuroflash",
-   "url": "https://neuroflash.com",
-   "beschreibung": "KI-Texter aus Hamburg, spezialisiert auf deutschsprachige Marketing-Texte.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Schreibassistenten",
-   "eu": true,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
-  },
-  {
-   "name": "Jasper",
-   "url": "https://www.jasper.ai/",
-   "beschreibung": "Content-Plattform für Marketing-Teams mit Markenstimme und Vorlagen.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Schreibassistenten",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-deepl-write",
+   "icon": "img/fav/www.deepl.com.png"
   },
   {
    "name": "Compose AI",
@@ -650,7 +600,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-compose-ai",
+   "icon": "img/fav/www.compose.ai.png"
   },
   {
    "name": "Rytr",
@@ -661,7 +612,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-rytr",
+   "icon": "img/fav/rytr.me.png"
   },
   {
    "name": "Wordtune",
@@ -672,7 +624,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-wordtune",
+   "icon": "img/fav/www.wordtune.com.png"
   },
   {
    "name": "HyperWrite",
@@ -683,29 +636,32 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-hyperwrite",
+   "icon": "img/fav/hyperwriteai.com.png"
   },
   {
    "name": "Moonbeam",
    "url": "https://www.gomoonbeam.com/",
-   "beschreibung": "Längere Blogartikel in einem Bruchteil der Zeit.",
+   "beschreibung": "Schreibassistent für lange Texte wie Blogartikel, Essays und Anleitungen: macht aus Notizen eine Gliederung und aus der Gliederung Absätze. Vorlagen und Oberfläche auf Englisch.",
    "kategorie": "Text und Sprache",
    "bereich": "Schreibassistenten",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-moonbeam",
+   "icon": "img/fav/www.gomoonbeam.com.png"
   },
   {
    "name": "Copy.ai",
    "url": "https://www.copy.ai/",
-   "beschreibung": "Marketing-Texte und GTM-Workflows mit KI.",
+   "beschreibung": "Plattform für Vertrieb und Marketing: recherchiert Firmen und Kontakte, entwirft Akquise-E-Mails, Content und Übersetzungen und wertet Verkaufsgespräche aus. Gebaut für Vertriebsteams, nicht für einzelne Texter.",
    "kategorie": "Text und Sprache",
    "bereich": "Schreibassistenten",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-copyai",
+   "icon": "img/fav/www.copy.ai.png"
   },
   {
    "name": "Anyword",
@@ -716,7 +672,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-anyword",
+   "icon": "img/fav/anyword.com.png"
   },
   {
    "name": "Contenda",
@@ -727,7 +684,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-contenda",
+   "icon": "img/fav/contenda.co.png"
   },
   {
    "name": "Hypotenuse AI",
@@ -738,18 +696,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-hypotenuse-ai",
+   "icon": "img/fav/www.hypotenuse.ai.png"
   },
   {
    "name": "Lavender",
    "url": "https://www.lavender.ai/",
-   "beschreibung": "E-Mail-Coach für mehr Antworten auf Vertriebsmails.",
+   "beschreibung": "E-Mail-Coach für mehr Antworten auf Vertriebs-E-Mails.",
    "kategorie": "Text und Sprache",
    "bereich": "Schreibassistenten",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-lavender",
+   "icon": "img/fav/www.lavender.ai.png"
   },
   {
    "name": "Lex",
@@ -760,7 +720,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-lex",
+   "icon": "img/fav/lex.page.png"
   },
   {
    "name": "Jenni",
@@ -771,7 +732,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-jenni",
+   "icon": "img/fav/jenni.ai.png"
   },
   {
    "name": "LAIKA",
@@ -782,7 +744,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-laika",
+   "icon": "img/fav/www.writewithlaika.com.png"
   },
   {
    "name": "QuillBot",
@@ -793,7 +756,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-quillbot",
+   "icon": "img/fav/quillbot.com.png"
   },
   {
    "name": "Postwise",
@@ -804,7 +768,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-postwise",
+   "icon": "img/fav/postwise.ai.png"
   },
   {
    "name": "RapidTextAI",
@@ -815,7 +780,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-rapidtextai",
+   "icon": "img/fav/app.rapidtextai.com.png"
   },
   {
    "name": "Copysmith",
@@ -826,7 +792,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-copysmith",
+   "icon": "img/fav/copysmith.ai.png"
   },
   {
    "name": "Yomu",
@@ -837,18 +804,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
-  },
-  {
-   "name": "Quick Creator",
-   "url": "https://quickcreator.io",
-   "beschreibung": "SEO-optimierte Blog-Plattform mit KI.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Schreibassistenten",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-yomu",
+   "icon": "img/fav/www.yomu.ai.png"
   },
   {
    "name": "Trolly.ai",
@@ -859,7 +816,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-trollyai",
+   "icon": "img/fav/trolly.ai.png"
   },
   {
    "name": "PulsePost",
@@ -870,7 +828,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-pulsepost",
+   "icon": "img/fav/pulsepost.io.png"
   },
   {
    "name": "Shy Editor",
@@ -881,18 +840,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
-  },
-  {
-   "name": "Headlinesai.pro",
-   "url": "https://www.headlinesai.pro/",
-   "beschreibung": "Klickstarke Überschriften für YouTube, Medium, Reddit und mehr.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Schreibassistenten",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-shy-editor",
+   "icon": "img/fav/www.shyeditor.com.png"
   },
   {
    "name": "GPTLocalhost",
@@ -903,7 +852,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#schreibassistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-gptlocalhost",
+   "icon": "img/fav/gptlocalhost.com.svg"
   },
   {
    "name": "X-doc AI",
@@ -914,29 +864,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung"
-  },
-  {
-   "name": "HeyGen",
-   "url": "https://www.heygen.com",
-   "beschreibung": "Übersetzt Videos mit Lippensynchronisation.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Übersetzung und Lokalisierung",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung"
+   "seite": "ki-tools-text-und-sprache.html#tool-x-doc-ai",
+   "icon": "img/fav/x-doc.ai.png"
   },
   {
    "name": "Lengoo",
    "url": "https://www.lengoo.com",
-   "beschreibung": "KI-Übersetzung mit menschlicher Nachbearbeitung für Unternehmen, aus Berlin.",
+   "beschreibung": "Baut Unternehmen eigene, auf Firmendaten trainierte Sprachmodelle für Übersetzung in über 50 Sprachen, Texte und Dokumentensuche, aus Berlin. Gedacht für Firmen mit viel Fachsprache, nicht für Einzelübersetzungen.",
    "kategorie": "Text und Sprache",
    "bereich": "Übersetzung und Lokalisierung",
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung"
+   "seite": "ki-tools-text-und-sprache.html#tool-lengoo",
+   "icon": "img/fav/www.lengoo.com.png"
   },
   {
    "name": "Unbabel",
@@ -947,7 +888,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#übersetzung-und-lokalisierung"
+   "seite": "ki-tools-text-und-sprache.html#tool-unbabel",
+   "icon": "img/fav/www.unbabel.com.jpg"
   },
   {
    "name": "Merlin",
@@ -958,7 +900,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-merlin",
+   "icon": "img/fav/merlin.foyer.work.png"
   },
   {
    "name": "Gist AI",
@@ -969,7 +912,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-gist-ai",
+   "icon": "img/fav/www.gistai.tech.jpg"
   },
   {
    "name": "WebChatGPT",
@@ -980,7 +924,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-webchatgpt",
+   "icon": "img/fav/chrome.google.com.png"
   },
   {
    "name": "GPT for Sheets and Docs",
@@ -991,7 +936,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-gpt-for-sheets-and-docs",
+   "icon": "img/fav/workspace.google.com.png"
   },
   {
    "name": "YouTube Summary with ChatGPT",
@@ -1002,7 +948,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-youtube-summary-with-chatgpt",
+   "icon": "img/fav/chrome.google.com.png"
   },
   {
    "name": "ChatGPT Prompt Genius",
@@ -1013,7 +960,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-chatgpt-prompt-genius",
+   "icon": "img/fav/chrome.google.com.png"
   },
   {
    "name": "ChatGPT for Search Engines",
@@ -1024,7 +972,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-chatgpt-for-search-engines",
+   "icon": "img/fav/chrome.google.com.png"
   },
   {
    "name": "ShareGPT",
@@ -1035,7 +984,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-sharegpt",
+   "icon": "img/fav/sharegpt.com.png"
   },
   {
    "name": "ChatGPT Writer",
@@ -1046,7 +996,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-chatgpt-writer",
+   "icon": "img/fav/chatgptwriter.ai.png"
   },
   {
    "name": "ChatGPT for Jupyter",
@@ -1057,7 +1008,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-chatgpt-for-jupyter",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "editGPT",
@@ -1068,7 +1020,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-editgpt",
+   "icon": "img/fav/www.editgpt.app.png"
   },
   {
    "name": "Chatbot UI",
@@ -1079,7 +1032,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-chatbot-ui",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Forefront",
@@ -1090,7 +1044,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-forefront",
+   "icon": "img/fav/www.forefront.ai.png"
   },
   {
    "name": "AI Character for GPT",
@@ -1101,7 +1056,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#browser-erweiterungen-und-add-ons"
+   "seite": "ki-tools-text-und-sprache.html#tool-ai-character-for-gpt",
+   "icon": "img/fav/chromewebstore.google.com.png"
   },
   {
    "name": "Notion AI",
@@ -1112,7 +1068,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-notion-ai",
+   "icon": "img/fav/www.notion.so.png"
   },
   {
    "name": "Napkin",
@@ -1123,7 +1080,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-napkin",
+   "icon": "img/fav/www.napkin.ai.png"
   },
   {
    "name": "Gamma",
@@ -1134,7 +1092,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-gamma",
+   "icon": "img/fav/gamma.app.jpg"
   },
   {
    "name": "Mem",
@@ -1145,7 +1104,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-mem",
+   "icon": "img/fav/mem.ai.png"
   },
   {
    "name": "Taskade",
@@ -1156,18 +1116,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
-  },
-  {
-   "name": "Nekton AI",
-   "url": "https://nekton.ai",
-   "beschreibung": "Workflows in Alltagssprache beschreiben und automatisieren.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Produktivität",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-taskade",
+   "icon": "img/fav/www.taskade.com.png"
   },
   {
    "name": "Elephas",
@@ -1178,7 +1128,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-elephas",
+   "icon": "img/fav/elephas.app.png"
   },
   {
    "name": "Google Sheets Formula Generator",
@@ -1189,18 +1140,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
-  },
-  {
-   "name": "CreateEasily",
-   "url": "https://createeasily.com/",
-   "beschreibung": "Kostenlose Transkription von Audio- und Videodateien bis 2 GB.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Produktivität",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-google-sheets-formula-generator",
+   "icon": "img/fav/bettersheets.co.jpg"
   },
   {
    "name": "Cosmos",
@@ -1211,7 +1152,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-cosmos",
+   "icon": "img/fav/meetcosmos.com.jpg"
   },
   {
    "name": "aiPDF",
@@ -1222,7 +1164,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-aipdf",
+   "icon": "img/fav/aipdf.ai.png"
   },
   {
    "name": "Summary With AI",
@@ -1233,7 +1176,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-summary-with-ai",
+   "icon": "img/fav/www.summarywithai.com.svg"
   },
   {
    "name": "Emilio",
@@ -1244,18 +1188,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
-  },
-  {
-   "name": "Pieces",
-   "url": "https://pieces.app/",
-   "beschreibung": "On-Device-Copilot für Entwickler, der Code-Schnipsel und Kontext speichert.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Produktivität",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-emilio",
+   "icon": "img/fav/getemil.io.png"
   },
   {
    "name": "Huntr AI Resume Builder",
@@ -1266,7 +1200,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-huntr-ai-resume-builder",
+   "icon": "img/fav/huntr.co.png"
   },
   {
    "name": "Chat With PDF by Copilot.us",
@@ -1277,7 +1212,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-chat-with-pdf-by-copilotus",
+   "icon": "img/fav/copilot.us.png"
   },
   {
    "name": "Recall",
@@ -1288,7 +1224,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-recall",
+   "icon": "img/fav/www.getrecall.ai.png"
   },
   {
    "name": "Talently AI",
@@ -1299,7 +1236,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-talently-ai",
+   "icon": "img/fav/interview.talently.ai.png"
   },
   {
    "name": "AnkiDecks AI",
@@ -1310,7 +1248,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-ankidecks-ai",
+   "icon": "img/fav/anki-decks.com.png"
   },
   {
    "name": "AI for Google Slides",
@@ -1321,18 +1260,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
-  },
-  {
-   "name": "FARSITE",
-   "url": "https://far.site/",
-   "beschreibung": "Compliance-Software für US-Regierungsauftragnehmer.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Produktivität",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-ai-for-google-slides",
+   "icon": "img/fav/www.aiforgoogleslides.com.png"
   },
   {
    "name": "BrainSoup",
@@ -1343,7 +1272,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-brainsoup",
+   "icon": "img/fav/www.nurgo-software.com.png"
   },
   {
    "name": "MindPal",
@@ -1354,7 +1284,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-mindpal",
+   "icon": "img/fav/mindpal.space.png"
   },
   {
    "name": "fabric",
@@ -1365,7 +1296,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-fabric",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "SlidesWizard",
@@ -1376,18 +1308,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
-  },
-  {
-   "name": "Transgate",
-   "url": "https://transgate.ai/",
-   "beschreibung": "Sprache-zu-Text mit KI.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Produktivität",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-slideswizard",
+   "icon": "img/fav/slideswizard.io.png"
   },
   {
    "name": "RabbitHoles AI",
@@ -1398,7 +1320,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-rabbitholes-ai",
+   "icon": "img/fav/www.rabbitholes.ai.png"
   },
   {
    "name": "Rember",
@@ -1409,7 +1332,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-rember",
+   "icon": "img/fav/www.rember.com.png"
   },
   {
    "name": "Qurate",
@@ -1420,7 +1344,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-qurate",
+   "icon": "img/fav/qurate.appcradle.net.png"
   },
   {
    "name": "FirmOS",
@@ -1431,18 +1356,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
-  },
-  {
-   "name": "Whisper API",
-   "url": "https://whisper-api.com",
-   "beschreibung": "Transkriptions-API auf Basis von OpenAI Whisper, 5 kostenlose Transkriptionen pro Tag.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Produktivität",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-firmos",
+   "icon": "img/fav/www.firmos.ai.png"
   },
   {
    "name": "Smmry",
@@ -1453,18 +1368,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
-  },
-  {
-   "name": "Nudge AI",
-   "url": "https://getnudgeai.com/",
-   "beschreibung": "KI-Dokumentationsassistent für das Gesundheitswesen.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Produktivität",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-smmry",
+   "icon": "img/fav/smmry.com.png"
   },
   {
    "name": "Summara",
@@ -1475,7 +1380,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-summara",
+   "icon": "img/fav/summara.io.png"
   },
   {
    "name": "Marblism",
@@ -1486,7 +1392,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-marblism",
+   "icon": "img/fav/marblism.com.png"
   },
   {
    "name": "Spell",
@@ -1497,7 +1404,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-spell",
+   "icon": "img/fav/spellapp.com.png"
   },
   {
    "name": "Kosmik",
@@ -1508,7 +1416,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-kosmik",
+   "icon": "img/fav/www.kosmik.app.png"
   },
   {
    "name": "Magic Potion",
@@ -1519,7 +1428,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-magic-potion",
+   "icon": "img/fav/www.magicpotion.app.png"
   },
   {
    "name": "MinusX",
@@ -1530,7 +1440,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-minusx",
+   "icon": "img/fav/minusx.ai.png"
   },
   {
    "name": "Excelmatic",
@@ -1541,7 +1452,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-excelmatic",
+   "icon": "img/fav/excelmatic.ai.png"
   },
   {
    "name": "Langfa.st",
@@ -1552,7 +1464,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-langfast",
+   "icon": "img/fav/langfa.st.png"
   },
   {
    "name": "SalesAgent Chat",
@@ -1563,7 +1476,32 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#produktivität"
+   "seite": "ki-tools-text-und-sprache.html#tool-salesagent-chat",
+   "icon": "img/fav/www.salesagent.chat.png"
+  },
+  {
+   "name": "fynk",
+   "url": "https://fynk.com/",
+   "beschreibung": "KI-gestütztes Vertragsmanagement aus Österreich.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Produktivität",
+   "eu": true,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-text-und-sprache.html#tool-fynk",
+   "icon": "img/fav/fynk.com.png"
+  },
+  {
+   "name": "Bricks",
+   "url": "https://www.thebricks.com/",
+   "beschreibung": "Tabellenkalkulation mit eingebauter KI.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Produktivität",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-text-und-sprache.html#tool-bricks",
+   "icon": "img/fav/www.thebricks.com.png"
   },
   {
    "name": "tl;dv",
@@ -1574,7 +1512,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#meeting-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-tldv",
+   "icon": "img/fav/tldv.io.png"
   },
   {
    "name": "Fireflies.ai",
@@ -1585,7 +1524,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#meeting-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-firefliesai",
+   "icon": "img/fav/fireflies.ai.png"
   },
   {
    "name": "Otter.ai",
@@ -1596,7 +1536,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#meeting-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-otterai",
+   "icon": "img/fav/otter.ai.png"
   },
   {
    "name": "MeetGeek",
@@ -1607,7 +1548,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#meeting-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-meetgeek",
+   "icon": "img/fav/meetgeek.ai.png"
   },
   {
    "name": "Cogram",
@@ -1618,18 +1560,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#meeting-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-cogram",
+   "icon": "img/fav/www.cogram.com.png"
   },
   {
    "name": "Sybill",
    "url": "https://www.sybill.ai/",
-   "beschreibung": "Fasst Vertriebsgespräche zusammen, inklusive Pain Points und nächsten Schritten.",
+   "beschreibung": "Vertriebsassistent, der Calls, E-Mails und Slack-Verläufe mitliest, das CRM nach jedem Gespräch füllt und Fragen zum Stand eines Deals beantwortet. Wer Calls aufzeichnet, braucht vorher die Einwilligung der Gesprächspartner.",
    "kategorie": "Text und Sprache",
    "bereich": "Meeting-Assistenten",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#meeting-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-sybill",
+   "icon": "img/fav/www.sybill.ai.png"
   },
   {
    "name": "Scribbl",
@@ -1640,7 +1584,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#meeting-assistenten"
+   "seite": "ki-tools-text-und-sprache.html#tool-scribbl",
+   "icon": "img/fav/www.scribbl.co.png"
+  },
+  {
+   "name": "Teleprompter",
+   "url": "https://github.com/danielgross/teleprompter",
+   "beschreibung": "Lokale KI, die in Meetings zuhört und Formulierungen vorschlägt.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Meeting-Assistenten",
+   "eu": false,
+   "open_source": true,
+   "neu": false,
+   "seite": "ki-tools-text-und-sprache.html#tool-teleprompter",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Elicit",
@@ -1651,7 +1608,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#wissenschaft-und-recherche"
+   "seite": "ki-tools-text-und-sprache.html#tool-elicit",
+   "icon": "img/fav/elicit.com.png"
   },
   {
    "name": "Consensus",
@@ -1662,7 +1620,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#wissenschaft-und-recherche"
+   "seite": "ki-tools-text-und-sprache.html#tool-consensus",
+   "icon": "img/fav/consensus.app.png"
   },
   {
    "name": "SciSpace",
@@ -1673,18 +1632,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#wissenschaft-und-recherche"
+   "seite": "ki-tools-text-und-sprache.html#tool-scispace",
+   "icon": "img/fav/scispace.com.png"
   },
   {
    "name": "genei",
    "url": "https://www.genei.io/",
-   "beschreibung": "Fasst Fachartikel in Sekunden zusammen.",
+   "beschreibung": "Fasst Fachartikel und Hintergrundlektüre zusammen, zieht Schlagwörter heraus und hilft, daraus Berichte und Blogartikel zu schreiben.",
    "kategorie": "Text und Sprache",
    "bereich": "Wissenschaft und Recherche",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#wissenschaft-und-recherche"
+   "seite": "ki-tools-text-und-sprache.html#tool-genei",
+   "icon": "img/fav/www.genei.io.png"
   },
   {
    "name": "Explainpaper",
@@ -1695,7 +1656,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#wissenschaft-und-recherche"
+   "seite": "ki-tools-text-und-sprache.html#tool-explainpaper",
+   "icon": "img/fav/www.explainpaper.com.png"
   },
   {
    "name": "Sourcely",
@@ -1706,7 +1668,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#wissenschaft-und-recherche"
+   "seite": "ki-tools-text-und-sprache.html#tool-sourcely",
+   "icon": "img/fav/www.sourcely.net.png"
   },
   {
    "name": "Mathos AI",
@@ -1717,7 +1680,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#wissenschaft-und-recherche"
+   "seite": "ki-tools-text-und-sprache.html#tool-mathos-ai",
+   "icon": "img/fav/www.mathgptpro.com.png"
   },
   {
    "name": "SiteGPT",
@@ -1728,7 +1692,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
+   "seite": "ki-tools-text-und-sprache.html#tool-sitegpt",
+   "icon": "img/fav/sitegpt.ai.png"
   },
   {
    "name": "GPTHelp.ai",
@@ -1739,18 +1704,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
+   "seite": "ki-tools-text-und-sprache.html#tool-gpthelpai",
+   "icon": "img/fav/gpthelp.ai.png"
   },
   {
    "name": "SiteSpeakAI",
    "url": "https://sitespeak.ai",
-   "beschreibung": "Automatisiert den Kundenservice mit KI.",
+   "beschreibung": "Support-Agent für die eigene Website, trainiert auf Seiten, Hilfetexte, PDFs und Videos: beantwortet Fragen, nimmt Leads auf und gibt schwierige Fälle an Menschen ab. Bestellstatus kann er nur mit angebundenem Shop nachschlagen.",
    "kategorie": "Text und Sprache",
    "bereich": "Kundenservice",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
+   "seite": "ki-tools-text-und-sprache.html#tool-sitespeakai",
+   "icon": "img/fav/sitespeak.ai.png"
   },
   {
    "name": "Dear AI",
@@ -1761,18 +1728,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
+   "seite": "ki-tools-text-und-sprache.html#tool-dear-ai",
+   "icon": "img/fav/www.dearai.online.png"
   },
   {
    "name": "Inline Help",
    "url": "https://inlinehelp.com",
-   "beschreibung": "Beantwortet Kundenfragen, bevor sie gestellt werden.",
+   "beschreibung": "Hilfe direkt in der eigenen Web-App: Tooltips, Chatbot und eine Erklär-Funktion für jedes Element, gespeist aus der Wissensdatenbank, auch auf Deutsch. Ohne gepflegte Hilfeartikel hat sie nichts zu erzählen.",
    "kategorie": "Text und Sprache",
    "bereich": "Kundenservice",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
+   "seite": "ki-tools-text-und-sprache.html#tool-inline-help",
+   "icon": "img/fav/inlinehelp.com.png"
   },
   {
    "name": "Aidbase",
@@ -1783,18 +1752,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
-  },
-  {
-   "name": "Twig",
-   "url": "https://www.twig.so/",
-   "beschreibung": "Löst Kundenanfragen sofort, für Kunden und Support-Teams.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Kundenservice",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
+   "seite": "ki-tools-text-und-sprache.html#tool-aidbase",
+   "icon": "img/fav/www.aidbase.ai.png"
   },
   {
    "name": "EmailTriager",
@@ -1805,29 +1764,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
-  },
-  {
-   "name": "Parloa",
-   "url": "https://www.parloa.com",
-   "beschreibung": "KI-Agenten für Telefon und Chat im Kundenservice, aus Berlin.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Kundenservice",
-   "eu": true,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
-  },
-  {
-   "name": "Cognigy",
-   "url": "https://www.cognigy.com",
-   "beschreibung": "Agenten-Plattform für Contact Center, aus Düsseldorf.",
-   "kategorie": "Text und Sprache",
-   "bereich": "Kundenservice",
-   "eu": true,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
+   "seite": "ki-tools-text-und-sprache.html#tool-emailtriager",
+   "icon": "img/fav/www.emailtriager.com.png"
   },
   {
    "name": "Rasa",
@@ -1838,7 +1776,44 @@
    "eu": true,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-text-und-sprache.html#kundenservice"
+   "seite": "ki-tools-text-und-sprache.html#tool-rasa",
+   "icon": "img/fav/www.rasa.com.png"
+  },
+  {
+   "name": "Tiledesk",
+   "url": "https://tiledesk.com/",
+   "beschreibung": "No-Code-Framework für Chatbots mit LLM-Anbindung, Open Source.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Kundenservice",
+   "eu": false,
+   "open_source": true,
+   "neu": false,
+   "seite": "ki-tools-text-und-sprache.html#tool-tiledesk",
+   "icon": "img/fav/tiledesk.com.png"
+  },
+  {
+   "name": "Gali Chat",
+   "url": "https://www.galichat.com/",
+   "beschreibung": "KI-Support-Assistent für Websites, rund um die Uhr.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Kundenservice",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-text-und-sprache.html#tool-gali-chat",
+   "icon": "img/fav/www.galichat.com.png"
+  },
+  {
+   "name": "Hexabot",
+   "url": "https://hexabot.ai",
+   "beschreibung": "No-Code-Baukasten für mehrsprachige Chatbots und Agenten.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Kundenservice",
+   "eu": false,
+   "open_source": true,
+   "neu": false,
+   "seite": "ki-tools-text-und-sprache.html#tool-hexabot",
+   "icon": "img/fav/hexabot.ai.png"
   },
   {
    "name": "Make",
@@ -1849,7 +1824,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-make",
+   "icon": "img/fav/www.make.com.png"
   },
   {
    "name": "Zapier",
@@ -1860,7 +1836,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-zapier",
+   "icon": "img/fav/zapier.com.png"
   },
   {
    "name": "MindStudio",
@@ -1871,7 +1848,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-mindstudio",
+   "icon": "img/fav/mindstudio.ai.png"
+  },
+  {
+   "name": "Nekton AI",
+   "url": "https://nekton.ai",
+   "beschreibung": "Workflows Schritt für Schritt in Alltagssprache beschreiben.",
+   "kategorie": "Automatisierung und KI-Agenten",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-nekton-ai",
+   "icon": "img/fav/nekton.ai.png"
   },
   {
    "name": "AI-Flow",
@@ -1882,7 +1872,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-ai-flow",
+   "icon": "img/fav/ai-flow.net.png"
   },
   {
    "name": "Shotstack Workflows",
@@ -1893,7 +1884,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-shotstack-workflows",
+   "icon": "img/fav/shotstack.io.png"
   },
   {
    "name": "Hyperbrowser",
@@ -1904,7 +1896,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-hyperbrowser",
+   "icon": "img/fav/hyperbrowser.ai.png"
   },
   {
    "name": "Notte",
@@ -1915,7 +1908,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-notte",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "goose",
@@ -1926,7 +1920,8 @@
    "eu": false,
    "open_source": true,
    "neu": true,
-   "seite": "ki-tools-automatisierung-und-ki-agenten.html"
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-goose",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "LangChain",
@@ -1937,7 +1932,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-langchain",
+   "icon": "img/fav/langchain.com.png"
   },
   {
    "name": "LlamaIndex",
@@ -1948,7 +1944,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-llamaindex",
+   "icon": "img/fav/www.llamaindex.ai.png"
   },
   {
    "name": "Haystack",
@@ -1959,7 +1956,8 @@
    "eu": true,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-haystack",
+   "icon": "img/fav/haystack.deepset.ai.png"
   },
   {
    "name": "Cohere",
@@ -1970,7 +1968,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-cohere",
+   "icon": "img/fav/cohere.com.png"
   },
   {
    "name": "Langfuse",
@@ -1981,7 +1980,8 @@
    "eu": true,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-langfuse",
+   "icon": "img/fav/langfuse.com.png"
   },
   {
    "name": "Keploy",
@@ -1992,7 +1992,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-keploy",
+   "icon": "img/fav/keploy.io.png"
   },
   {
    "name": "Portia AI",
@@ -2003,7 +2004,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-portia-ai",
+   "icon": "img/fav/www.portialabs.ai.png"
   },
   {
    "name": "LMQL",
@@ -2014,7 +2016,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-lmql",
+   "icon": "img/fav/lmql.ai.svg"
   },
   {
    "name": "Phoenix",
@@ -2025,7 +2028,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-phoenix",
+   "icon": "img/fav/phoenix.arize.com.png"
   },
   {
    "name": "Prediction Guard",
@@ -2036,7 +2040,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-prediction-guard",
+   "icon": "img/fav/www.predictionguard.com.png"
   },
   {
    "name": "Portkey",
@@ -2047,7 +2052,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-portkey",
+   "icon": "img/fav/portkey.ai.png"
   },
   {
    "name": "OpenAI Downtime Monitor",
@@ -2058,7 +2064,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-openai-downtime-monitor",
+   "icon": "img/fav/status.portkey.ai.svg"
   },
   {
    "name": "ChatWithCloud",
@@ -2069,7 +2076,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-chatwithcloud",
+   "icon": "img/fav/chatwithcloud.ai.jpg"
   },
   {
    "name": "SinglebaseCloud",
@@ -2080,7 +2088,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-singlebasecloud",
+   "icon": "img/fav/singlebase.cloud.png"
   },
   {
    "name": "Maxim AI",
@@ -2091,7 +2100,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-maxim-ai",
+   "icon": "img/fav/www.getmaxim.ai.jpg"
   },
   {
    "name": "Wordware",
@@ -2102,18 +2112,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
-  },
-  {
-   "name": "Hexabot",
-   "url": "https://hexabot.ai",
-   "beschreibung": "No-Code-Baukasten für mehrsprachige Chatbots und Agenten.",
-   "kategorie": "Entwickler-Tools und LLMOps",
-   "bereich": "",
-   "eu": false,
-   "open_source": true,
-   "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-wordware",
+   "icon": "img/fav/www.wordware.ai.png"
   },
   {
    "name": "AI/ML API",
@@ -2124,7 +2124,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-aiml-api",
+   "icon": "img/fav/aimlapi.com.png"
   },
   {
    "name": "Opik",
@@ -2135,7 +2136,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-opik",
+   "icon": "img/fav/www.comet.com.png"
   },
   {
    "name": "Kiln",
@@ -2146,7 +2148,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-kiln",
+   "icon": "img/fav/getkiln.ai.png"
   },
   {
    "name": "Calmo",
@@ -2157,7 +2160,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-calmo",
+   "icon": "img/fav/getcalmo.com.png"
   },
   {
    "name": "Cleanlab",
@@ -2168,18 +2172,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
-  },
-  {
-   "name": "Amazon Q Developer CLI",
-   "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html",
-   "beschreibung": "Befehlsvervollständigung, Übersetzung von Absicht in Befehle und Agenten-Chat im Terminal.",
-   "kategorie": "Entwickler-Tools und LLMOps",
-   "bereich": "",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-cleanlab",
+   "icon": "img/fav/help.cleanlab.ai.png"
   },
   {
    "name": "Agentic Radar",
@@ -2190,7 +2184,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-agentic-radar",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "VoltAgent",
@@ -2201,7 +2196,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-voltagent",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "TensorZero",
@@ -2212,7 +2208,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-tensorzero",
+   "icon": "img/fav/www.tensorzero.com.png"
   },
   {
    "name": "ToolHive",
@@ -2223,7 +2220,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-toolhive",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "AgentDock",
@@ -2234,7 +2232,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-agentdock",
+   "icon": "img/fav/agentdock.ai.png"
   },
   {
    "name": "Codeflash",
@@ -2245,7 +2244,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-codeflash",
+   "icon": "img/fav/www.codeflash.ai.png"
   },
   {
    "name": "Agenta",
@@ -2256,7 +2256,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-agenta",
+   "icon": "img/fav/agenta.ai.png"
   },
   {
    "name": "Pagerly",
@@ -2267,7 +2268,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-pagerly",
+   "icon": "img/fav/www.pagerly.io.png"
   },
   {
    "name": "Harbor",
@@ -2278,7 +2280,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-harbor",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Petals",
@@ -2289,7 +2292,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-petals",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Context Data",
@@ -2300,7 +2304,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-context-data",
+   "icon": "img/fav/contextdata.ai.png"
   },
   {
    "name": "Agent Skills",
@@ -2311,7 +2316,8 @@
    "eu": false,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-agent-skills",
+   "icon": "img/fav/agentskills.io.png"
   },
   {
    "name": "Timestral",
@@ -2322,7 +2328,20 @@
    "eu": true,
    "open_source": true,
    "neu": true,
-   "seite": "ki-tools-entwickler-tools-und-llmops.html"
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-timestral",
+   "icon": "img/fav/mistral.ai.png"
+  },
+  {
+   "name": "Scale Spellbook",
+   "url": "https://scale.com/spellbook",
+   "beschreibung": "LLM-Apps bauen, vergleichen und bereitstellen.",
+   "kategorie": "Entwickler-Tools und LLMOps",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-scale-spellbook",
+   "icon": "img/fav/scale.com.png"
   },
   {
    "name": "Claude Code",
@@ -2333,7 +2352,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-claude-code",
+   "icon": "img/fav/www.anthropic.com.png"
   },
   {
    "name": "GitHub Copilot",
@@ -2344,7 +2364,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-github-copilot",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Windsurf",
@@ -2355,7 +2376,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-windsurf",
+   "icon": "img/fav/www.windsurf.com.png"
   },
   {
    "name": "Lovable",
@@ -2366,7 +2388,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-lovable",
+   "icon": "img/fav/lovable.dev.png"
   },
   {
    "name": "Bolt.new",
@@ -2377,7 +2400,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-boltnew",
+   "icon": "img/fav/bolt.new.png"
   },
   {
    "name": "v0",
@@ -2388,7 +2412,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-v0",
+   "icon": "img/fav/v0.app.png"
   },
   {
    "name": "Kilo Code",
@@ -2399,18 +2424,20 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-kilo-code",
+   "icon": "img/fav/kilocode.ai.png"
   },
   {
    "name": "Amazon Q Developer",
    "url": "https://aws.amazon.com/q/developer/",
-   "beschreibung": "KI-Coding-Assistent für VS Code und IntelliJ mit Chat und Agenten-Workflows.",
+   "beschreibung": "KI-Coding-Assistent von AWS für VS Code und JetBrains mit Chat und Agenten. AWS beendet den Support für die IDE-Plugins am 30. April 2027 und verweist auf Kiro.",
    "kategorie": "Programmieren mit KI",
    "bereich": "",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-amazon-q-developer",
+   "icon": "img/fav/aws.amazon.com.png"
   },
   {
    "name": "Tabnine",
@@ -2421,7 +2448,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-tabnine",
+   "icon": "img/fav/www.tabnine.com.png"
   },
   {
    "name": "Replit",
@@ -2432,7 +2460,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-replit",
+   "icon": "img/fav/replit.com.png"
   },
   {
    "name": "GoCodeo",
@@ -2443,7 +2472,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-gocodeo",
+   "icon": "img/fav/www.gocodeo.com.png"
   },
   {
    "name": "CodeRabbit",
@@ -2454,7 +2484,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-coderabbit",
+   "icon": "img/fav/coderabbit.ai.png"
   },
   {
    "name": "PR-Agent",
@@ -2465,7 +2496,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-pr-agent",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Gito",
@@ -2476,7 +2508,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-gito",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "CodiumAI / Qodo",
@@ -2487,7 +2520,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-codiumai--qodo",
+   "icon": "img/fav/www.codium.ai.png"
   },
   {
    "name": "Mintlify",
@@ -2498,7 +2532,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-mintlify",
+   "icon": "img/fav/mintlify.com.png"
   },
   {
    "name": "Stenography",
@@ -2509,7 +2544,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-stenography",
+   "icon": "img/fav/stenography.dev.png"
   },
   {
    "name": "AI2sql",
@@ -2520,7 +2556,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-ai2sql",
+   "icon": "img/fav/www.ai2sql.io.png"
   },
   {
    "name": "poorcoder",
@@ -2531,18 +2568,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
-  },
-  {
-   "name": "TurboPilot",
-   "url": "https://github.com/ravenscroftj/turbopilot",
-   "beschreibung": "Selbst gehosteter Copilot-Klon, der mit 4 GB RAM läuft.",
-   "kategorie": "Programmieren mit KI",
-   "bereich": "",
-   "eu": false,
-   "open_source": true,
-   "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-poorcoder",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "GPT-Code UI",
@@ -2553,7 +2580,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-gpt-code-ui",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "MetaGPT",
@@ -2564,7 +2592,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-metagpt",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Plandex",
@@ -2575,7 +2604,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-plandex",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "MutahunterAI",
@@ -2586,7 +2616,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-mutahunterai",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "AI Kernel Explorer",
@@ -2597,7 +2628,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-ai-kernel-explorer",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "WhoDB",
@@ -2608,7 +2640,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-whodb",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "DataPup",
@@ -2619,7 +2652,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-datapup",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "FlexApp",
@@ -2630,18 +2664,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-flexapp",
+   "icon": "img/fav/flexapp.ai.png"
   },
   {
    "name": "Capacity",
    "url": "https://capacity.so",
-   "beschreibung": "Aus Ideen in Minuten funktionierende Web-Apps.",
+   "beschreibung": "Baut aus einer Beschreibung in Alltagssprache eine Web-App mit Seiten, Datenbank und Anmeldung und stellt sie online. Den Code bekommst du dabei nie zu sehen, das ist Konzept und Grenze zugleich.",
    "kategorie": "Programmieren mit KI",
    "bereich": "",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-capacity",
+   "icon": "img/fav/capacity.so.png"
   },
   {
    "name": "Runcell",
@@ -2652,7 +2688,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-runcell",
+   "icon": "img/fav/runcell.dev.png"
   },
   {
    "name": "Manifest",
@@ -2663,7 +2700,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-manifest",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Code to Flow",
@@ -2674,7 +2712,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-code-to-flow",
+   "icon": "img/fav/codetoflow.com.png"
   },
   {
    "name": "Google Antigravity",
@@ -2685,7 +2724,32 @@
    "eu": false,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-programmieren-mit-ki.html"
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-google-antigravity",
+   "icon": "img/fav/antigravity.google.jpg"
+  },
+  {
+   "name": "Pieces",
+   "url": "https://pieces.app/",
+   "beschreibung": "On-Device-Copilot für Entwickler, der Code-Schnipsel und Kontext speichert.",
+   "kategorie": "Programmieren mit KI",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-pieces",
+   "icon": "img/fav/pieces.app.png"
+  },
+  {
+   "name": "Kiro",
+   "url": "https://kiro.dev",
+   "beschreibung": "Agentische Entwicklungsumgebung von AWS, die aus einem Prompt Anforderungen, Entwurf und Aufgaben macht und sie mit parallelen Agenten umsetzt. Die frühere Amazon-Q-Kommandozeile heißt heute Kiro CLI.",
+   "kategorie": "Programmieren mit KI",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-programmieren-mit-ki.html#tool-kiro",
+   "icon": "img/fav/kiro.dev.png"
   },
   {
    "name": "Midjourney",
@@ -2696,29 +2760,32 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildmodelle"
+   "seite": "ki-tools-bilder.html#tool-midjourney",
+   "icon": "img/fav/www.midjourney.com.png"
   },
   {
    "name": "Stable Diffusion",
-   "url": "https://huggingface.co/CompVis/stable-diffusion-v1-4",
-   "beschreibung": "Offenes Text-zu-Bild-Modell von Stability AI, lokal ausführbar.",
-   "kategorie": "Bilder",
-   "bereich": "Bildmodelle",
-   "eu": false,
-   "open_source": true,
-   "neu": false,
-   "seite": "ki-tools-bilder.html#bildmodelle"
-  },
-  {
-   "name": "Imagen",
-   "url": "https://imagen.research.google/",
-   "beschreibung": "Googles Text-zu-Bild-Modell mit hohem Fotorealismus, inzwischen nur noch über Googles Cloud-Plattform statt der Gemini-API.",
+   "url": "https://stability.ai/stable-image",
+   "beschreibung": "Bildmodelle von Stability AI, aktuell Version 3.5 in den Größen Large, Turbo und Medium, per API oder auf eigener Hardware. Für den Selbstbetrieb im Unternehmen gibt es eine eigene Lizenz.",
    "kategorie": "Bilder",
    "bereich": "Bildmodelle",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildmodelle"
+   "seite": "ki-tools-bilder.html#tool-stable-diffusion",
+   "icon": "img/fav/stability.ai.png"
+  },
+  {
+   "name": "Nano Banana",
+   "url": "https://deepmind.google/models/gemini-image/",
+   "beschreibung": "Googles Bildmodelle auf Gemini-Basis, die Bilder im Gespräch erzeugen und Schritt für Schritt nachbearbeiten. Das ältere Imagen ist in der Gemini-API abgeschaltet.",
+   "kategorie": "Bilder",
+   "bereich": "Bildmodelle",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-bilder.html#tool-nano-banana",
+   "icon": "img/fav/deepmind.google.png"
   },
   {
    "name": "Ideogram",
@@ -2729,7 +2796,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildmodelle"
+   "seite": "ki-tools-bilder.html#tool-ideogram",
+   "icon": "img/fav/ideogram.ai.png"
   },
   {
    "name": "Adobe Firefly",
@@ -2740,18 +2808,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildmodelle"
+   "seite": "ki-tools-bilder.html#tool-adobe-firefly",
+   "icon": "img/fav/firefly.adobe.com.png"
   },
   {
-   "name": "DALL·E",
-   "url": "https://openai.com/dall-e-2/",
-   "beschreibung": "Bildmodell von OpenAI, heute direkt in ChatGPT nutzbar.",
+   "name": "GPT Image",
+   "url": "https://developers.openai.com/api/docs/guides/image-generation",
+   "beschreibung": "Bildmodelle von OpenAI zum Erzeugen und Bearbeiten per API, Nachfolger von DALL·E. Die Herkunftsdaten in der Datei gehen beim Weiterverarbeiten leicht verloren.",
    "kategorie": "Bilder",
    "bereich": "Bildmodelle",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildmodelle"
+   "seite": "ki-tools-bilder.html#tool-gpt-image",
+   "icon": "img/fav/developers.openai.com.png"
   },
   {
    "name": "DragGAN",
@@ -2762,7 +2832,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildmodelle"
+   "seite": "ki-tools-bilder.html#tool-draggan",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "FLUX 3 Image Klein",
@@ -2773,18 +2844,8 @@
    "eu": true,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-bilder.html#bildmodelle"
-  },
-  {
-   "name": "Canva",
-   "url": "https://www.canva.com/ai-image-generator/",
-   "beschreibung": "KI-Bilder direkt in der Design-Plattform erzeugen und bearbeiten.",
-   "kategorie": "Bilder",
-   "bereich": "Bild-Dienste",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-flux-3-image-klein",
+   "icon": "img/fav/bfl.ai.png"
   },
   {
    "name": "Leonardo.ai",
@@ -2795,7 +2856,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-leonardoai",
+   "icon": "img/fav/leonardo.ai.png"
   },
   {
    "name": "KREA",
@@ -2806,7 +2868,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-krea",
+   "icon": "img/fav/www.krea.ai.png"
   },
   {
    "name": "PhotoRoom",
@@ -2817,29 +2880,32 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-photoroom",
+   "icon": "img/fav/www.photoroom.com.png"
   },
   {
    "name": "ClipDrop",
    "url": "https://clipdrop.co/",
-   "beschreibung": "Professionelle Visuals ohne Fotostudio: freistellen, retuschieren, erweitern.",
+   "beschreibung": "Bildwerkzeuge im Browser: Hintergrund entfernen oder ersetzen, Objekte wegretuschieren, Bilder erweitern und bis vierfach hochrechnen. Freistellen geht kostenlos.",
    "kategorie": "Bilder",
    "bereich": "Bild-Dienste",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-clipdrop",
+   "icon": "img/fav/clipdrop.co.png"
   },
   {
    "name": "Magic Eraser",
    "url": "https://www.magiceraser.io/",
-   "beschreibung": "Störende Objekte in Sekunden aus Bildern entfernen.",
+   "beschreibung": "Entfernt Gegenstände, Personen oder Text aus Fotos per Pinselstrich, kostenlos und ohne Anmeldung, auch für bis zu 50 Bilder auf einmal.",
    "kategorie": "Bilder",
    "bereich": "Bild-Dienste",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-magic-eraser",
+   "icon": "img/fav/www.magiceraser.io.jpg"
   },
   {
    "name": "Craiyon",
@@ -2850,18 +2916,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
-  },
-  {
-   "name": "DreamStudio",
-   "url": "https://beta.dreamstudio.ai/",
-   "beschreibung": "Einfache Oberfläche für Stable Diffusion.",
-   "kategorie": "Bilder",
-   "bereich": "Bild-Dienste",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-craiyon",
+   "icon": "img/fav/www.craiyon.com.png"
   },
   {
    "name": "Artbreeder",
@@ -2872,18 +2928,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
-  },
-  {
-   "name": "GauGAN2",
-   "url": "http://gaugan.org/gaugan2/",
-   "beschreibung": "Fotorealistische Landschaften aus Wörtern und Skizzen (NVIDIA).",
-   "kategorie": "Bilder",
-   "bereich": "Bild-Dienste",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-artbreeder",
+   "icon": "img/fav/www.artbreeder.com.png"
   },
   {
    "name": "Magic Studio",
@@ -2894,7 +2940,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-magic-studio",
+   "icon": "img/fav/magicstudio.com.jpg"
   },
   {
    "name": "Patience.ai",
@@ -2905,7 +2952,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-patienceai",
+   "icon": "img/fav/www.patience.ai.svg"
   },
   {
    "name": "GenShare",
@@ -2916,7 +2964,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-genshare",
+   "icon": "img/fav/www.genshare.io.jpg"
   },
   {
    "name": "Playground AI",
@@ -2927,7 +2976,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-playground-ai",
+   "icon": "img/fav/playgroundai.com.png"
   },
   {
    "name": "Avatar AI",
@@ -2938,7 +2988,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-avatar-ai",
+   "icon": "img/fav/avatarai.me.png"
   },
   {
    "name": "RunDiffusion",
@@ -2949,7 +3000,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-rundiffusion",
+   "icon": "img/fav/rundiffusion.com.png"
   },
   {
    "name": "Human Generator",
@@ -2960,7 +3012,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-human-generator",
+   "icon": "img/fav/generated.photos.png"
   },
   {
    "name": "VectorArt.ai",
@@ -2971,7 +3024,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-vectorartai",
+   "icon": "img/fav/vectorart.ai.png"
   },
   {
    "name": "Room Reinvented",
@@ -2982,7 +3036,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-room-reinvented",
+   "icon": "img/fav/roomreinvented.com.png"
   },
   {
    "name": "Gensbot",
@@ -2993,7 +3048,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-gensbot",
+   "icon": "img/fav/gensbot.com.png"
   },
   {
    "name": "PlantPhotoAI",
@@ -3004,7 +3060,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-plantphotoai",
+   "icon": "img/fav/www.plantphotoai.com.png"
   },
   {
    "name": "Black Headshots",
@@ -3015,7 +3072,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-black-headshots",
+   "icon": "img/fav/www.blackheadshots.com.png"
   },
   {
    "name": "iColoring",
@@ -3026,7 +3084,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-icoloring",
+   "icon": "img/fav/icoloring.ai.png"
   },
   {
    "name": "Suit me Up",
@@ -3037,7 +3096,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-suit-me-up",
+   "icon": "img/fav/suitmeup.pictures.png"
   },
   {
    "name": "AI Photo Forge",
@@ -3048,7 +3108,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-ai-photo-forge",
+   "icon": "img/fav/aiphotoforge.com.png"
   },
   {
    "name": "AI Boost",
@@ -3059,7 +3120,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-ai-boost",
+   "icon": "img/fav/boost.pictures.png"
   },
   {
    "name": "PlantTattoosAI",
@@ -3070,7 +3132,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-planttattoosai",
+   "icon": "img/fav/www.planttattoosai.com.png"
   },
   {
    "name": "Recraft",
@@ -3081,29 +3144,44 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bild-dienste"
+   "seite": "ki-tools-bilder.html#tool-recraft",
+   "icon": "img/fav/www.recraft.ai.png"
+  },
+  {
+   "name": "Rupert AI",
+   "url": "https://www.getrupert.com/",
+   "beschreibung": "Macht aus Produktdaten Katalogbilder, Texte und Katalogdaten, spezialisiert auf Möbelmarken. Darunter arbeiten fremde Modelle wie Nano Banana, Flux und Veo.",
+   "kategorie": "Bilder",
+   "bereich": "Bild-Dienste",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-bilder.html#tool-rupert-ai",
+   "icon": "img/fav/www.getrupert.com.png"
   },
   {
    "name": "Microsoft Designer",
    "url": "https://designer.microsoft.com/",
-   "beschreibung": "Designs für Social Media und Einladungen in Sekunden.",
+   "beschreibung": "Designs für Social Media und Einladungen aus einer Textbeschreibung.",
    "kategorie": "Bilder",
    "bereich": "Grafikdesign",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#grafikdesign"
+   "seite": "ki-tools-bilder.html#tool-microsoft-designer",
+   "icon": "img/fav/designer.microsoft.com.png"
   },
   {
    "name": "Canva",
    "url": "https://www.canva.com/",
-   "beschreibung": "Design-Plattform mit KI-Funktionen zum Erzeugen und Bearbeiten.",
+   "beschreibung": "Design-Plattform mit KI-Funktionen, die Bilder erzeugt und bearbeitet und daraus fertige Formate für Social Media, Druck und Präsentationen macht.",
    "kategorie": "Bilder",
    "bereich": "Grafikdesign",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#grafikdesign"
+   "seite": "ki-tools-bilder.html#tool-canva",
+   "icon": "img/fav/www.canva.com.png"
   },
   {
    "name": "Brandmark",
@@ -3114,7 +3192,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#grafikdesign"
+   "seite": "ki-tools-bilder.html#tool-brandmark",
+   "icon": "img/fav/brandmark.io.png"
   },
   {
    "name": "Text2Infographic",
@@ -3125,18 +3204,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#grafikdesign"
+   "seite": "ki-tools-bilder.html#tool-text2infographic",
+   "icon": "img/fav/text2infographic.com.jpg"
   },
   {
    "name": "Seede.ai",
    "url": "https://seede.ai/",
-   "beschreibung": "Poster in einer Minute.",
+   "beschreibung": "Macht aus Text Poster, Social-Media-Grafiken, Infografiken und Folien. Die Ebenen bleiben getrennt, Texte und Bilder lassen sich danach einzeln ändern.",
    "kategorie": "Bilder",
    "bereich": "Grafikdesign",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#grafikdesign"
+   "seite": "ki-tools-bilder.html#tool-seedeai",
+   "icon": "img/fav/seede.ai.png"
   },
   {
    "name": "Magic Patterns",
@@ -3147,7 +3228,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#grafikdesign"
+   "seite": "ki-tools-bilder.html#tool-magic-patterns",
+   "icon": "img/fav/www.magicpatterns.com.png"
   },
   {
    "name": "OpenArt",
@@ -3158,7 +3240,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildarchive-und-prompt-sammlungen"
+   "seite": "ki-tools-bilder.html#tool-openart",
+   "icon": "img/fav/openart.ai.png"
   },
   {
    "name": "Phygital",
@@ -3169,7 +3252,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildarchive-und-prompt-sammlungen"
+   "seite": "ki-tools-bilder.html#tool-phygital",
+   "icon": "img/fav/app.phygital.plus.png"
   },
   {
    "name": "PublicPrompts",
@@ -3180,7 +3264,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#bildarchive-und-prompt-sammlungen"
+   "seite": "ki-tools-bilder.html#tool-publicprompts",
+   "icon": "img/fav/publicprompts.art.png"
   },
   {
    "name": "Civitai",
@@ -3191,7 +3276,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#modell-bibliotheken-und-stable-diffusion-ressourcen"
+   "seite": "ki-tools-bilder.html#tool-civitai",
+   "icon": "img/fav/civitai.com.png"
   },
   {
    "name": "Stable Diffusion Models",
@@ -3202,7 +3288,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#modell-bibliotheken-und-stable-diffusion-ressourcen"
+   "seite": "ki-tools-bilder.html#tool-stable-diffusion-models",
+   "icon": "img/fav/rentry.org.png"
   },
   {
    "name": "Stable Horde",
@@ -3213,7 +3300,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-bilder.html#modell-bibliotheken-und-stable-diffusion-ressourcen"
+   "seite": "ki-tools-bilder.html#tool-stable-horde",
+   "icon": "img/fav/stablehorde.net.png"
   },
   {
    "name": "Hugging Face Diffusion Models Course",
@@ -3224,7 +3312,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-bilder.html#modell-bibliotheken-und-stable-diffusion-ressourcen"
+   "seite": "ki-tools-bilder.html#tool-hugging-face-diffusion-models-course",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Google Veo",
@@ -3235,7 +3324,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-google-veo",
+   "icon": "img/fav/deepmind.google.png"
   },
   {
    "name": "Kling AI",
@@ -3246,7 +3336,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-kling-ai",
+   "icon": "img/fav/app.klingai.com.png"
   },
   {
    "name": "RunwayML",
@@ -3257,7 +3348,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-runwayml",
+   "icon": "img/fav/runwayml.com.png"
   },
   {
    "name": "Luma Dream Machine",
@@ -3268,7 +3360,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-luma-dream-machine",
+   "icon": "img/fav/lumalabs.ai.png"
   },
   {
    "name": "Pika",
@@ -3279,7 +3372,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-pika",
+   "icon": "img/fav/pika.art.png"
   },
   {
    "name": "Synthesia",
@@ -3290,7 +3384,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-synthesia",
+   "icon": "img/fav/www.synthesia.io.png"
+  },
+  {
+   "name": "HeyGen",
+   "url": "https://www.heygen.com",
+   "beschreibung": "Avatar-Videos und Video-Übersetzung mit Lippensynchronisation.",
+   "kategorie": "Video",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-video.html#tool-heygen",
+   "icon": "img/fav/www.heygen.com.png"
   },
   {
    "name": "D-ID",
@@ -3301,7 +3408,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-d-id",
+   "icon": "img/fav/www.d-id.com.png"
   },
   {
    "name": "Descript",
@@ -3312,29 +3420,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-descript",
+   "icon": "img/fav/www.descript.com.png"
   },
   {
    "name": "Opus Clip",
    "url": "https://www.opus.pro",
-   "beschreibung": "Schneidet lange Videos automatisch in virale Shorts.",
+   "beschreibung": "Sucht in langen Videos passende Stellen, schneidet sie zu kurzen Clips und bringt sie ins Hochformat, wobei das Motiv im Bild bleibt. Welche Stelle zählt, entscheidet die KI, also vor dem Posten drüberschauen.",
    "kategorie": "Video",
    "bereich": "",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
-  },
-  {
-   "name": "Clipwing",
-   "url": "https://clipwing.pro/",
-   "beschreibung": "Zerlegt lange Videos in Dutzende kurze Clips.",
-   "kategorie": "Video",
-   "bereich": "",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-opus-clip",
+   "icon": "img/fav/www.opus.pro.png"
   },
   {
    "name": "Recast Studio",
@@ -3345,40 +3444,44 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-recast-studio",
+   "icon": "img/fav/recast.studio.png"
   },
   {
    "name": "Based AI",
    "url": "https://www.basedlabs.ai/",
-   "beschreibung": "Intuitive Oberfläche für KI-Videos.",
+   "beschreibung": "Sammelt über 50 Bild- und Videomodelle anderer Hersteller wie Kling, Veo und Nano Banana unter einem Konto. Bezahlt wird mit Kryptowährung oder Telegram Stars, nicht per Karte.",
    "kategorie": "Video",
    "bereich": "",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-based-ai",
+   "icon": "img/fav/www.basedlabs.ai.jpg"
   },
   {
    "name": "Sisif",
    "url": "https://sisif.ai/",
-   "beschreibung": "Aus Text in Sekunden ein Video.",
+   "beschreibung": "Macht aus Text oder einem Foto kurze Clips, etwa ein Produkt, das sich dreht, für einen Dollar je fünf Sekunden. Ohne Wasserzeichen, deshalb liegt die Kennzeichnung täuschend echter Clips bei dir.",
    "kategorie": "Video",
    "bereich": "",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-sisif",
+   "icon": "img/fav/sisif.ai.png"
   },
   {
    "name": "Melies",
    "url": "https://melies.co",
-   "beschreibung": "Software für KI-Filmproduktion.",
+   "beschreibung": "Studio für KI-Kurzfilme vom Drehbuch über Storyboard und KI-Darsteller bis zu Ton und Musik, die Videos kommen von Modellen wie Kling, Runway und Luma. Ein Clip ist höchstens zehn Sekunden lang.",
    "kategorie": "Video",
    "bereich": "",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-melies",
+   "icon": "img/fav/melies.co.png"
   },
   {
    "name": "FLUX 3 Video",
@@ -3389,18 +3492,20 @@
    "eu": true,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-video.html"
+   "seite": "ki-tools-video.html#tool-flux-3-video",
+   "icon": "img/fav/bfl.ai.png"
   },
   {
    "name": "Murf AI",
    "url": "https://murf.ai/",
-   "beschreibung": "Einfache Plattform für hochwertige Voiceover, beliebt im Marketing.",
+   "beschreibung": "Sprecherstimmen für Erklärvideos, E-Learning und Marketing, dazu eine Sprach-API und Telefonagenten für Unternehmen.",
    "kategorie": "Audio",
    "bereich": "Stimmen und Voice Cloning",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-murf-ai",
+   "icon": "img/fav/murf.ai.png"
   },
   {
    "name": "Descript Overdub",
@@ -3411,7 +3516,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-descript-overdub",
+   "icon": "img/fav/www.descript.com.png"
   },
   {
    "name": "Respeecher",
@@ -3422,7 +3528,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-respeecher",
+   "icon": "img/fav/www.respeecher.com.png"
   },
   {
    "name": "Resemble AI",
@@ -3433,7 +3540,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-resemble-ai",
+   "icon": "img/fav/www.resemble.ai.png"
   },
   {
    "name": "WellSaid Labs",
@@ -3444,7 +3552,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-wellsaid-labs",
+   "icon": "img/fav/www.wellsaidlabs.com.png"
   },
   {
    "name": "iSpeech",
@@ -3455,7 +3564,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-ispeech",
+   "icon": "img/fav/www.ispeech.org.png"
   },
   {
    "name": "Microsoft Azure Neural TTS",
@@ -3466,7 +3576,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-microsoft-azure-neural-tts",
+   "icon": "img/fav/azure.microsoft.com.png"
   },
   {
    "name": "Zenmic.com",
@@ -3477,7 +3588,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-zenmiccom",
+   "icon": "img/fav/zenmic.com.png"
   },
   {
    "name": "Audify AI",
@@ -3488,7 +3600,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-audify-ai",
+   "icon": "img/fav/audify-ai.ahmedtokyo.com.svg"
   },
   {
    "name": "TTS WebUI",
@@ -3499,7 +3612,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-audio.html#stimmen-und-voice-cloning"
+   "seite": "ki-tools-audio.html#tool-tts-webui",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "TorToiSe",
@@ -3510,7 +3624,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache"
+   "seite": "ki-tools-audio.html#tool-tortoise",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Bark",
@@ -3521,7 +3636,8 @@
    "eu": false,
    "open_source": true,
    "neu": false,
-   "seite": "ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache"
+   "seite": "ki-tools-audio.html#tool-bark",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "CustomPod.io",
@@ -3532,7 +3648,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache"
+   "seite": "ki-tools-audio.html#tool-custompodio",
+   "icon": "img/fav/custompod.io.png"
   },
   {
    "name": "EKHOS AI",
@@ -3543,7 +3660,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache"
+   "seite": "ki-tools-audio.html#tool-ekhos-ai",
+   "icon": "img/fav/ekhos.ai.png"
+  },
+  {
+   "name": "Whisper API",
+   "url": "https://whisper-api.com",
+   "beschreibung": "Transkriptions-API auf Basis von OpenAI Whisper, 5 kostenlose Transkriptionen pro Tag.",
+   "kategorie": "Audio",
+   "bereich": "Sprache zu Text und Text zu Sprache",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-audio.html#tool-whisper-api",
+   "icon": "img/fav/whisper-api.com.png"
   },
   {
    "name": "Voxtral 3",
@@ -3554,7 +3684,32 @@
    "eu": true,
    "open_source": false,
    "neu": true,
-   "seite": "ki-tools-audio.html#sprache-zu-text-und-text-zu-sprache"
+   "seite": "ki-tools-audio.html#tool-voxtral-3",
+   "icon": "img/fav/mistral.ai.png"
+  },
+  {
+   "name": "CreateEasily",
+   "url": "https://createeasily.com/",
+   "beschreibung": "Kostenlose Transkription von Audio- und Videodateien bis 2 GB.",
+   "kategorie": "Audio",
+   "bereich": "Sprache zu Text und Text zu Sprache",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-audio.html#tool-createeasily",
+   "icon": "img/fav/createeasily.com.svg"
+  },
+  {
+   "name": "Transgate",
+   "url": "https://transgate.ai/",
+   "beschreibung": "Sprache-zu-Text mit KI.",
+   "kategorie": "Audio",
+   "bereich": "Sprache zu Text und Text zu Sprache",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-audio.html#tool-transgate",
+   "icon": "img/fav/transgate.ai.png"
   },
   {
    "name": "Suno",
@@ -3565,18 +3720,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-suno",
+   "icon": "img/fav/suno.com.png"
   },
   {
    "name": "Udio",
    "url": "https://www.udio.com",
-   "beschreibung": "Songs und Instrumentals in hoher Klangqualität generieren.",
+   "beschreibung": "Songs und Instrumentals aus einer Beschreibung generieren.",
    "kategorie": "Audio",
    "bereich": "Musik",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-udio",
+   "icon": "img/fav/www.udio.com.png"
   },
   {
    "name": "AIVA",
@@ -3587,18 +3744,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-aiva",
+   "icon": "img/fav/www.aiva.ai.png"
   },
   {
    "name": "Mubert",
    "url": "https://www.mubert.com",
-   "beschreibung": "Lizenzfreie, generative Musik in Echtzeit für Creator und Marken.",
+   "beschreibung": "Erzeugt lizenzfreie Hintergrundmusik passend zu Stimmung und Länge eines Videos, dazu Werkzeuge für Podcast-Schnitt und eine Prüfung, ob ein Song auf YouTube einen Urheberrechtsanspruch auslösen dürfte.",
    "kategorie": "Audio",
    "bereich": "Musik",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-mubert",
+   "icon": "img/fav/www.mubert.com.png"
   },
   {
    "name": "Soundraw",
@@ -3609,18 +3768,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-soundraw",
+   "icon": "img/fav/soundraw.io.png"
   },
   {
    "name": "Beatoven.ai",
    "url": "https://www.beatoven.ai",
-   "beschreibung": "Hintergrundmusik, die gezielt Emotionen erzeugt.",
+   "beschreibung": "Hintergrundmusik und Soundeffekte aus einer Beschreibung, als MP3 oder WAV mit Lizenz zur Monetarisierung bei jedem Download. Das Modell ist als Fairly Trained zertifiziert.",
    "kategorie": "Audio",
    "bereich": "Musik",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-beatovenai",
+   "icon": "img/fav/www.beatoven.ai.png"
   },
   {
    "name": "Boomy",
@@ -3631,7 +3792,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-boomy",
+   "icon": "img/fav/www.boomy.com.png"
   },
   {
    "name": "Ecrett Music",
@@ -3642,7 +3804,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-ecrett-music",
+   "icon": "img/fav/www.ecrettmusic.com.png"
   },
   {
    "name": "Loudly",
@@ -3653,29 +3816,32 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-loudly",
+   "icon": "img/fav/www.loudly.com.png"
   },
   {
    "name": "Soundful",
    "url": "https://www.soundful.com",
-   "beschreibung": "Hochwertige, lizenzfreie Musik für Content Creator.",
+   "beschreibung": "Musik aus dem Generator, auf Wunsch zusammen mit Produzenten zur eigenen Markenklangfarbe ausgebaut. In den kleinen Tarifen sind Tracks nicht exklusiv, andere dürfen denselben Sound nutzen.",
    "kategorie": "Audio",
    "bereich": "Musik",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-soundful",
+   "icon": "img/fav/www.soundful.com.png"
   },
   {
    "name": "AI Song Maker",
    "url": "https://www.aisongmaker.io",
-   "beschreibung": "Songs mit KI erstellen.",
+   "beschreibung": "Songs aus Text oder eigenem Liedtext, wahlweise nur instrumental, mit Stil, Stimme und Tempo zur Auswahl. Kostenlos sind 20 Credits am Tag, das reicht für vier Songs.",
    "kategorie": "Audio",
    "bereich": "Musik",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-ai-song-maker",
+   "icon": "img/fav/www.aisongmaker.io.png"
   },
   {
    "name": "Harmonai",
@@ -3686,18 +3852,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-harmonai",
+   "icon": "img/fav/www.harmonai.org.png"
   },
   {
-   "name": "MusicLM",
-   "url": "https://google-research.github.io/seanet/musiclm/examples/",
-   "beschreibung": "Googles Forschungsmodell für Musik aus Text.",
+   "name": "Lyria",
+   "url": "https://deepmind.google/models/lyria/",
+   "beschreibung": "Musikmodell von Google DeepMind, erzeugt Songs mit Gesang bis drei Minuten Länge, auch aus einem Bild als Vorlage.",
    "kategorie": "Audio",
    "bereich": "Musik",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-lyria",
+   "icon": "img/fav/deepmind.google.png"
   },
   {
    "name": "Remusic",
@@ -3708,7 +3876,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-audio.html#musik"
+   "seite": "ki-tools-audio.html#tool-remusic",
+   "icon": "img/fav/remusic.ai.png"
   },
   {
    "name": "Semrush",
@@ -3719,7 +3888,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#seo-und-content-optimierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-semrush",
+   "icon": "img/fav/www.semrush.com.png"
   },
   {
    "name": "Ahrefs",
@@ -3730,7 +3900,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#seo-und-content-optimierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-ahrefs",
+   "icon": "img/fav/www.ahrefs.com.png"
   },
   {
    "name": "Surfer",
@@ -3741,7 +3912,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#seo-und-content-optimierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-surfer",
+   "icon": "img/fav/surferseo.com.png"
   },
   {
    "name": "Frase",
@@ -3752,7 +3924,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#seo-und-content-optimierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-frase",
+   "icon": "img/fav/frase.io.png"
   },
   {
    "name": "MarketMuse",
@@ -3763,7 +3936,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#seo-und-content-optimierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-marketmuse",
+   "icon": "img/fav/www.marketmuse.com.png"
   },
   {
    "name": "Luthor",
@@ -3774,29 +3948,68 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#seo-und-content-optimierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-luthor",
+   "icon": "img/fav/luthor.ai.png"
+  },
+  {
+   "name": "Quick Creator",
+   "url": "https://quickcreator.io",
+   "beschreibung": "KI-Blogplattform, die Beiträge entlang von Suchbegriffen aufbaut.",
+   "kategorie": "Marketing und SEO",
+   "bereich": "SEO und Content-Optimierung",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-marketing-und-seo.html#tool-quick-creator",
+   "icon": "img/fav/quickcreator.io.png"
+  },
+  {
+   "name": "Jasper",
+   "url": "https://www.jasper.ai/",
+   "beschreibung": "Marketing-Content wie Blogs, E-Mails und Anzeigen mit Markenstimme.",
+   "kategorie": "Marketing und SEO",
+   "bereich": "Werbung, Social und Personalisierung",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-marketing-und-seo.html#tool-jasper",
+   "icon": "img/fav/www.jasper.ai.png"
+  },
+  {
+   "name": "neuroflash",
+   "url": "https://neuroflash.com",
+   "beschreibung": "Deutschsprachige Marketing-Texte mit Markenrichtlinien.",
+   "kategorie": "Marketing und SEO",
+   "bereich": "Werbung, Social und Personalisierung",
+   "eu": true,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-marketing-und-seo.html#tool-neuroflash",
+   "icon": "img/fav/neuroflash.com.png"
   },
   {
    "name": "Mutiny",
    "url": "https://www.mutinyhq.com/",
-   "beschreibung": "Personalisiert Websites mit KI für mehr Conversions.",
+   "beschreibung": "Vertriebsassistent, der aus Meeting-Notizen Follow-up-E-Mails und Angebote entwirft und nächste Schritte ins CRM schreibt. Früher ein Werkzeug zur Personalisierung von Websites.",
    "kategorie": "Marketing und SEO",
    "bereich": "Werbung, Social und Personalisierung",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-mutiny",
+   "icon": "img/fav/www.mutinyhq.com.png"
   },
   {
    "name": "Clearbit",
    "url": "https://clearbit.com/",
-   "beschreibung": "Lead-Anreicherung und Firmendaten (heute Teil von HubSpot).",
+   "beschreibung": "Firmen- und Kontaktdaten zum Anreichern von Leads. Gehört zu HubSpot und steckt dort als Breeze Intelligence im CRM.",
    "kategorie": "Marketing und SEO",
    "bereich": "Werbung, Social und Personalisierung",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-clearbit",
+   "icon": "img/fav/clearbit.com.png"
   },
   {
    "name": "Seventh Sense",
@@ -3807,7 +4020,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-seventh-sense",
+   "icon": "img/fav/www.theseventhsense.com.png"
   },
   {
    "name": "Smartly.io",
@@ -3818,7 +4032,8 @@
    "eu": true,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-smartlyio",
+   "icon": "img/fav/www.smartly.io.jpg"
   },
   {
    "name": "Adzooma",
@@ -3829,18 +4044,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-adzooma",
+   "icon": "img/fav/www.adzooma.com.png"
   },
   {
-   "name": "Phrasee",
-   "url": "https://www.phrasee.co/",
-   "beschreibung": "Optimierte Marketing-Texte für E-Mail, Push und Social.",
+   "name": "Jacquard",
+   "url": "https://www.jacquard.com/",
+   "beschreibung": "Früher Phrasee: Agenten, die Marketing-Texte für E-Mail, Push und Social in der Markenstimme schreiben, vorab bewerten und nur mit Freigabe des Teams verschicken.",
    "kategorie": "Marketing und SEO",
    "bereich": "Werbung, Social und Personalisierung",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-jacquard",
+   "icon": "img/fav/www.jacquard.com.png"
   },
   {
    "name": "Brandwatch",
@@ -3851,7 +4068,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-brandwatch",
+   "icon": "img/fav/www.brandwatch.com.png"
   },
   {
    "name": "Chatfuel",
@@ -3862,29 +4080,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-chatfuel",
+   "icon": "img/fav/www.chatfuel.com.png"
   },
   {
    "name": "LogicBalls",
    "url": "https://logicballs.com/",
-   "beschreibung": "KI-Schreibwerkzeug für jede Art von Content.",
+   "beschreibung": "Sammlung von Tausenden kleinen Schreibwerkzeugen für einzelne Textsorten, die vor dem Schreiben Rückfragen stellen. Gratis sind 10.000 Wörter im Monat.",
    "kategorie": "Marketing und SEO",
    "bereich": "Werbung, Social und Personalisierung",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
-  },
-  {
-   "name": "Rupert AI",
-   "url": "https://www.getrupert.com/",
-   "beschreibung": "KI-Werkzeuge für Designer und Marketer.",
-   "kategorie": "Marketing und SEO",
-   "bereich": "Werbung, Social und Personalisierung",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-logicballs",
+   "icon": "img/fav/logicballs.com.png"
   },
   {
    "name": "Publish7",
@@ -3895,29 +4104,32 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-publish7",
+   "icon": "img/fav/publish7.com.png"
   },
   {
    "name": "Keyla.AI",
    "url": "https://keyla.ai/",
-   "beschreibung": "Video-Anzeigen in Minuten.",
+   "beschreibung": "Baut aus Logo und Produktfotos Bild- und Videoanzeigen, in denen KI-Darsteller das Produkt halten oder tragen. Solche KI-Menschen brauchen nach den EU-Leitlinien zum AI Act ein sichtbares Label.",
    "kategorie": "Marketing und SEO",
    "bereich": "Werbung, Social und Personalisierung",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-keylaai",
+   "icon": "img/fav/keyla.ai.png"
   },
   {
    "name": "Persuva",
    "url": "https://persuva.ai",
-   "beschreibung": "Überzeugende, konversionsstarke Anzeigentexte in großem Umfang.",
+   "beschreibung": "Erzeugt Produktseiten, Landingpages und Advertorials für Shopify-Shops, gebaut für Dropshipping. Läuft nur mit Shopify.",
    "kategorie": "Marketing und SEO",
    "bereich": "Werbung, Social und Personalisierung",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-persuva",
+   "icon": "img/fav/persuva.ai.png"
   },
   {
    "name": "Taplio",
@@ -3928,7 +4140,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-taplio",
+   "icon": "img/fav/taplio.com.png"
   },
   {
    "name": "Socialsonic",
@@ -3939,7 +4152,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-socialsonic",
+   "icon": "img/fav/socialsonic.com.png"
   },
   {
    "name": "Podify.io",
@@ -3950,7 +4164,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-podifyio",
+   "icon": "img/fav/podify.io.png"
   },
   {
    "name": "PressPulse AI",
@@ -3961,7 +4176,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-presspulse-ai",
+   "icon": "img/fav/www.presspulse.ai.png"
   },
   {
    "name": "GummySearch",
@@ -3972,18 +4188,20 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-marketing-und-seo.html#werbung-social-und-personalisierung"
+   "seite": "ki-tools-marketing-und-seo.html#tool-gummysearch",
+   "icon": "img/fav/gummysearch.com.png"
   },
   {
    "name": "AICaller.io",
    "url": "https://aicaller.io/",
-   "beschreibung": "Automatisierte Massenanrufe mit generativer KI, etwa für Lead-Qualifizierung, mit API.",
+   "beschreibung": "Automatisierte Massenanrufe mit generativer KI, etwa für Lead-Qualifizierung, mit API. In Deutschland nur mit vorheriger ausdrücklicher Einwilligung der Angerufenen, das verlangt § 7 UWG für Werbeanrufe bei Verbrauchern.",
    "kategorie": "KI-Telefonagenten",
    "bereich": "",
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-ki-telefonagenten.html"
+   "seite": "ki-tools-ki-telefonagenten.html#tool-aicallerio",
+   "icon": "img/fav/aicaller.io.png"
   },
   {
    "name": "DialLink AI Voice Agents",
@@ -3994,7 +4212,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-ki-telefonagenten.html"
+   "seite": "ki-tools-ki-telefonagenten.html#tool-diallink-ai-voice-agents",
+   "icon": "img/fav/diallink.com.png"
   },
   {
    "name": "Cald.ai",
@@ -4005,7 +4224,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-ki-telefonagenten.html"
+   "seite": "ki-tools-ki-telefonagenten.html#tool-caldai",
+   "icon": "img/fav/cald.ai.png"
   },
   {
    "name": "Rosie",
@@ -4016,7 +4236,56 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-ki-telefonagenten.html"
+   "seite": "ki-tools-ki-telefonagenten.html#tool-rosie",
+   "icon": "img/fav/heyrosie.com.jpg"
+  },
+  {
+   "name": "Parloa",
+   "url": "https://www.parloa.com",
+   "beschreibung": "KI-Agenten für Telefon und Chat im Kundenservice, aus Berlin.",
+   "kategorie": "KI-Telefonagenten",
+   "bereich": "",
+   "eu": true,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-ki-telefonagenten.html#tool-parloa",
+   "icon": "img/fav/www.parloa.com.png"
+  },
+  {
+   "name": "Cognigy",
+   "url": "https://www.cognigy.com",
+   "beschreibung": "Agenten-Plattform für Contact Center, aus Düsseldorf.",
+   "kategorie": "KI-Telefonagenten",
+   "bereich": "",
+   "eu": true,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-ki-telefonagenten.html#tool-cognigy",
+   "icon": "img/fav/www.cognigy.com.png"
+  },
+  {
+   "name": "Twig",
+   "url": "https://www.twig.so/",
+   "beschreibung": "KI-Empfang für Telefon, SMS und Website-Chat, der Fragen beantwortet und Termine in den Kalender einträgt. Angebot, Preise und Beispiele richten sich an Betriebe in den USA.",
+   "kategorie": "KI-Telefonagenten",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-ki-telefonagenten.html#tool-twig",
+   "icon": "img/fav/www.twig.so.png"
+  },
+  {
+   "name": "ElevenLabs Agents",
+   "url": "https://elevenlabs.io/agents",
+   "beschreibung": "Sprach- und Chat-Agenten von ElevenLabs für Support, Terminvergabe und Vertrieb, in über 90 Sprachen. Zur Minute kommen die Kosten für das Sprachmodell dazu.",
+   "kategorie": "KI-Telefonagenten",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-ki-telefonagenten.html#tool-elevenlabs-agents",
+   "icon": "img/fav/elevenlabs.io.png"
   },
   {
    "name": "PromptBase",
@@ -4027,7 +4296,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-promptbase",
+   "icon": "img/fav/promptbase.com.png"
   },
   {
    "name": "Promptly",
@@ -4038,7 +4308,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-promptly",
+   "icon": "img/fav/searchpromptly.com.png"
   },
   {
    "name": "Myriad",
@@ -4049,7 +4320,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-myriad",
+   "icon": "img/fav/www.namepepper.com.png"
   },
   {
    "name": "Have I Been Trained?",
@@ -4060,7 +4332,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-have-i-been-trained",
+   "icon": "img/fav/haveibeentrained.com.svg"
   },
   {
    "name": "This Image Does Not Exist",
@@ -4071,7 +4344,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-this-image-does-not-exist",
+   "icon": "img/fav/thisimagedoesnotexist.com.png"
   },
   {
    "name": "Taranify",
@@ -4082,7 +4356,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-taranify",
+   "icon": "img/fav/www.taranify.com.png"
   },
   {
    "name": "AI Dungeon",
@@ -4093,18 +4368,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
-  },
-  {
-   "name": "Scale Spellbook",
-   "url": "https://scale.com/spellbook",
-   "beschreibung": "LLM-Apps bauen, vergleichen und bereitstellen.",
-   "kategorie": "Weitere KI-Tools",
-   "bereich": "",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-ai-dungeon",
+   "icon": "img/fav/aidungeon.io.png"
   },
   {
    "name": "Scenario",
@@ -4115,18 +4380,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
-  },
-  {
-   "name": "Teleprompter",
-   "url": "https://github.com/danielgross/teleprompter",
-   "beschreibung": "Lokale KI, die in Meetings zuhört und Formulierungen vorschlägt.",
-   "kategorie": "Weitere KI-Tools",
-   "bereich": "",
-   "eu": false,
-   "open_source": true,
-   "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-scenario",
+   "icon": "img/fav/www.scenario.com.png"
   },
   {
    "name": "FinChat",
@@ -4137,7 +4392,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-finchat",
+   "icon": "img/fav/finchat.io.png"
   },
   {
    "name": "FairyTailAI",
@@ -4148,7 +4404,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-fairytailai",
+   "icon": "img/fav/fairytailai.com.png"
   },
   {
    "name": "GradGPT",
@@ -4159,7 +4416,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-gradgpt",
+   "icon": "img/fav/www.gradgpt.com.png"
   },
   {
    "name": "Architecture Helper",
@@ -4170,7 +4428,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-architecture-helper",
+   "icon": "img/fav/architecturehelper.com.svg"
   },
   {
    "name": "AI Wedding Toast",
@@ -4181,7 +4440,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-ai-wedding-toast",
+   "icon": "img/fav/aiweddingtoast.com.png"
   },
   {
    "name": "Interviews Chat",
@@ -4192,7 +4452,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-interviews-chat",
+   "icon": "img/fav/www.interviews.chat.png"
   },
   {
    "name": "ezJobs",
@@ -4203,7 +4464,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-ezjobs",
+   "icon": "img/fav/www.getezjobs.com.png"
   },
   {
    "name": "Compass",
@@ -4214,29 +4476,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
-  },
-  {
-   "name": "Interview Solver",
-   "url": "https://interviewsolver.com",
-   "beschreibung": "KI-Copilot für Live-Coding-Interviews.",
-   "kategorie": "Weitere KI-Tools",
-   "bereich": "",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
-  },
-  {
-   "name": "AI Watermark Remover",
-   "url": "https://aiwatermarkremover.io/",
-   "beschreibung": "Wasserzeichen aus Bildern und Videos entfernen.",
-   "kategorie": "Weitere KI-Tools",
-   "bereich": "",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-compass",
+   "icon": "img/fav/www.getwhys.io.png"
   },
   {
    "name": "AISaver",
@@ -4247,7 +4488,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-aisaver",
+   "icon": "img/fav/aisaver.io.png"
   },
   {
    "name": "LangMagic",
@@ -4258,18 +4500,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
-  },
-  {
-   "name": "fynk",
-   "url": "https://fynk.com/",
-   "beschreibung": "KI-gestütztes Vertragsmanagement aus Österreich.",
-   "kategorie": "Weitere KI-Tools",
-   "bereich": "",
-   "eu": true,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-langmagic",
+   "icon": "img/fav/easytolearn.io.png"
   },
   {
    "name": "LooksMax AI",
@@ -4280,7 +4512,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-looksmax-ai",
+   "icon": "img/fav/looksmax.ai.jpg"
   },
   {
    "name": "ResumeDive",
@@ -4291,18 +4524,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
-  },
-  {
-   "name": "Bricks",
-   "url": "https://www.thebricks.com/",
-   "beschreibung": "Tabellenkalkulation mit eingebauter KI.",
-   "kategorie": "Weitere KI-Tools",
-   "bereich": "",
-   "eu": false,
-   "open_source": false,
-   "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-resumedive",
+   "icon": "img/fav/resumedive.com.png"
   },
   {
    "name": "Daruy",
@@ -4313,7 +4536,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-daruy",
+   "icon": "img/fav/daruy.space.svg"
   },
   {
    "name": "NVIDIA Omniverse AI Animal Explorer",
@@ -4324,7 +4548,32 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "ki-tools-weitere-ki-tools.html"
+   "seite": "ki-tools-weitere-ki-tools.html#tool-nvidia-omniverse-ai-animal-explorer",
+   "icon": "img/fav/docs.omniverse.nvidia.com.png"
+  },
+  {
+   "name": "Character.AI",
+   "url": "https://character.ai/",
+   "beschreibung": "Eigene Figuren erstellen und mit ihnen chatten.",
+   "kategorie": "Weitere KI-Tools",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-weitere-ki-tools.html#tool-characterai",
+   "icon": "img/fav/character.ai.png"
+  },
+  {
+   "name": "dmwithme",
+   "url": "https://dmwithme.com",
+   "beschreibung": "KI-Begleiter mit Emotionen, der auch widerspricht.",
+   "kategorie": "Weitere KI-Tools",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": false,
+   "seite": "ki-tools-weitere-ki-tools.html#tool-dmwithme",
+   "icon": "img/fav/dmwithme.com.png"
   },
   {
    "name": "PROMPTGOTT",
@@ -4335,7 +4584,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/promptgott.substack.com.svg"
   },
   {
    "name": "Learn Prompting",
@@ -4346,7 +4596,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/learnprompting.org.png"
   },
   {
    "name": "Prompt Engineering Guide",
@@ -4357,7 +4608,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "ChatGPT Prompt Engineering for Developers",
@@ -4368,7 +4620,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/www.deeplearning.ai.png"
   },
   {
    "name": "OpenAI Cookbook",
@@ -4379,7 +4632,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Robert Miles AI Safety",
@@ -4390,7 +4644,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/www.youtube.com.png"
   },
   {
    "name": "Machine Learning Roadmap",
@@ -4401,7 +4656,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Andrew Ngs Machine Learning (Stanford)",
@@ -4412,7 +4668,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/www.coursera.org.png"
   },
   {
    "name": "Sebastian Thruns Intro to Machine Learning",
@@ -4423,7 +4680,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/www.udacity.com.png"
   },
   {
    "name": "AI and Machine Learning Roadmaps",
@@ -4434,7 +4692,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/www.scaler.com.png"
   },
   {
    "name": "How To Learn Artificial Intelligence",
@@ -4445,7 +4704,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/www.appliedaicourse.com.png"
   },
   {
    "name": "fast.ai",
@@ -4456,7 +4716,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/www.fast.ai.svg"
   },
   {
    "name": "Coursera Deep Learning Specialization (Notizen)",
@@ -4467,7 +4728,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "PyTorch-Notizen",
@@ -4478,7 +4740,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#lernen-prompting-und-ki-grundlagen"
+   "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "AI For Developers",
@@ -4489,7 +4752,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/aifordevelopers.org.png"
   },
   {
    "name": "Best of AI",
@@ -4500,7 +4764,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Awesome AI Models",
@@ -4511,7 +4776,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Awesome AI Coding Tools",
@@ -4522,7 +4788,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Awesome Vibe Coding",
@@ -4533,7 +4800,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "AI for Productivity",
@@ -4544,7 +4812,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/productivity.directory.png"
   },
   {
    "name": "Awesome Workflow Automation",
@@ -4555,7 +4824,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Awesome Marketing",
@@ -4566,7 +4836,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/github.com.png"
   },
   {
    "name": "Top AI Directories",
@@ -4577,7 +4848,8 @@
    "eu": false,
    "open_source": false,
    "neu": false,
-   "seite": "./#verwandte-listen"
+   "seite": "ki-glossar.html#verwandte-listen",
+   "icon": "img/fav/github.com.png"
   }
  ]
 }

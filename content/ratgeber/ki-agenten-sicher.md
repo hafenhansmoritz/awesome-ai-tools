@@ -1,12 +1,12 @@
 > **Kurz gesagt:** KI-Agenten erledigen inzwischen ganze Aufgaben selbstständig, von der Recherche über die Datenpflege bis zum Code-Umbau. Das spart Zeit, verschiebt aber die Frage von „Kann die KI das?“ zu „Was darf sie?“. Fünf Schalter entscheiden, ob ein Agent ein guter Kollege oder ein Risiko ist: eine klar umrissene Aufgabe, knappe Rechte, Freigaben für alles Unumkehrbare, lückenlose Protokolle und eine Notbremse. Dieser Ratgeber zeigt, wie du sie einstellst, und was ein ernster Zwischenfall aus diesem Sommer darüber lehrt.
 
-Die Fakten stammen aus Veröffentlichungen von Anthropic, Google, OpenAI und dem britischen AI Security Institute, Stand 28. Oktober 2026. Die Empfehlungen sind unsere eigene Zusammenfassung für kleine und mittlere Unternehmen.
+Die Fakten stammen aus Veröffentlichungen von Anthropic, Google, OpenAI und dem britischen AI Security Institute, Stand 29. Oktober 2026. Die Empfehlungen sind unsere eigene Zusammenfassung für kleine und mittlere Unternehmen.
 
 ## Vom Chat zum Kollegen
 
 Ein Chatbot beantwortet Fragen. Ein Agent arbeitet: Er plant Schritte, ruft Werkzeuge auf, liest Dateien, füllt Formulare aus und macht weiter, bis die Aufgabe erledigt ist oder er nicht mehr weiterkommt. Die großen Anbieter haben das im Herbst 2026 zum Normalfall gemacht.
 
-Google hat auf der Konferenz Gemini at Work im Oktober den Gemini-Agenten vorgestellt, der laut Google Ziele statt Anweisungen bekommt, eigene Unter-Agenten startet und stunden- oder tagelang weiterarbeitet, auch wenn der Laptop zu ist. Anthropic stellt die Claude-Apps für die Tarife Pro, Max und Team auf einen automatischen Modus um, in dem Claude nicht mehr jeden Schritt einzeln absegnen lässt. OpenAI bewirbt GPT-6.1 Terra ausdrücklich für Computerarbeit in großer Menge, etwa das Übertragen von Rechnungsdaten in die Buchhaltung.
+Google hat auf der Konferenz Gemini at Work im Oktober den Gemini-Agenten vorgestellt. Er bekommt laut Google Ziele statt Anweisungen, startet eigene Unter-Agenten und arbeitet stunden- oder tagelang weiter, auch wenn der Laptop zu ist. Anthropic macht laut Ankündigung vom 22. Oktober ab Ende Oktober in den meisten Claude-Apps für Pro, Max und Team einen automatischen Modus zur Voreinstellung, in dem Claude nicht mehr jeden Schritt einzeln absegnen lässt. OpenAI bewirbt GPT-6.1 Terra ausdrücklich für Computerarbeit in großer Menge, etwa das Übertragen von Rechnungsdaten in die Buchhaltung.
 
 Für Unternehmen ist das eine gute Nachricht mit Kleingedrucktem. Ein Agent, der eigenständig handelt, kann auch eigenständig Fehler machen, und zwar schneller und häufiger als ein Mensch, der jeden Schritt selbst klickt.
 
@@ -32,7 +32,7 @@ Wiederkehrende Abläufe lassen sich als Arbeitsanleitung festhalten. Der offene 
 
 Gib einem Agenten nur die Rechte, die er für genau diese Aufgabe braucht, und wenn möglich zuerst nur Lesezugriff. Ein eigenes Konto für den Agenten ist besser als dein persönlicher Zugang, weil du so später sehen kannst, was er getan hat, und ihm die Rechte jederzeit entziehen kannst. Google beschreibt beim Gemini-Agenten sogenannte Coworker-Agenten mit eigener Identität, eigenem Speicher und Zugriff nur auf den Kontext, den ihr Team ihnen gibt.
 
-Besonders heikel ist eine Kombination, die in vielen Unternehmen schnell entsteht: Ein Agent liest fremde Inhalte wie E-Mails oder Webseiten, hat Zugriff auf vertrauliche Daten und kann gleichzeitig nach außen kommunizieren. Wenn in einer gelesenen E-Mail versteckte Anweisungen stehen, kann er sie ausführen und Daten hinausschicken. Unsere Faustregel: Ein Agent sollte höchstens zwei dieser drei Fähigkeiten gleichzeitig haben.
+Besonders heikel ist eine Kombination, die in vielen Unternehmen schnell entsteht: Ein Agent liest fremde Inhalte wie E-Mails oder Webseiten, hat Zugriff auf vertrauliche Daten und kann gleichzeitig nach außen kommunizieren. Wenn in einer gelesenen E-Mail versteckte Anweisungen stehen, kann er sie ausführen und Daten hinausschicken. Der Entwickler Simon Willison nennt diese Kombination das tödliche Trio, Meta hat daraus die „Agents Rule of Two“ gemacht. Die Regel, der wir folgen: Ein Agent sollte höchstens zwei dieser drei Fähigkeiten gleichzeitig haben.
 
 Diese Art Angriff heißt Prompt Injection. Die Hersteller arbeiten daran, ihre Modelle widerstandsfähiger zu machen. Anthropic nennt Claude Opus 5.5 robuster gegen Prompt Injection als den Vorgänger, OpenAI berichtet für GPT-6.1 Terra von starker Widerstandskraft in eigenen Tests. Beides sind Herstellerangaben, und kein Hersteller verspricht, dass das Problem gelöst sei.
 
