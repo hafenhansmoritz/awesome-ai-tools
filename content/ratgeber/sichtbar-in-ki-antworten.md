@@ -1,6 +1,6 @@
 > **Kurz gesagt:** Für Google AI Overviews und AI Mode gibt es keinen Geheimtrick. Google sagt selbst, dass eine Seite nur indexiert und mit Snippet ausspielbar sein muss, und dass weder spezielle Markups noch KI-Textdateien nötig sind. Für ChatGPT entscheidet vor allem, ob du den Such-Crawler OAI-SearchBot zulässt, und bei Produkten, wie vollständig deine Produktdaten sind. Wer sauberes SEO macht, vollständige Produktdaten pflegt und Fragen wirklich beantwortet, ist für KI-Suchen schon gut aufgestellt. Der Rest ist Messen und bewusstes Entscheiden.
 
-Dieser Ratgeber stützt sich auf die Dokumentation von Google Search Central, die Hilfeseiten der Search Console und die Entwicklerseiten von OpenAI, Stand 28. Oktober 2026. Wo wir eigene Erfahrungen oder Einschätzungen ergänzen, steht das dabei.
+Dieser Ratgeber stützt sich auf die Dokumentation von Google Search Central, die Hilfeseiten der Search Console und die Entwicklerseiten von OpenAI, Stand 28. Oktober 2026. Der Abschnitt zum gemeinsamen Trainingssignal stützt sich auf die Ankündigungen von Google, Microsoft und OpenAI sowie den Entwurf bei der IETF, Stand 1. November 2026. Wo wir eigene Erfahrungen oder Einschätzungen ergänzen, steht das dabei.
 
 ## Was sich geändert hat
 
@@ -46,6 +46,16 @@ Die Trennung ist für viele Unternehmen die eigentliche Nachricht. Du kannst in 
 
 Prüf außerdem, ob dein CDN oder deine Firewall die Crawler aus Versehen blockiert. Bot-Schutz, der jeden unbekannten Besucher aussperrt, sperrt oft auch genau die Crawler, die du eigentlich haben willst. OpenAI veröffentlicht dafür die IP-Bereiche seiner Crawler, die du freigeben kannst.
 
+## Ein gemeinsames Nein zum Training
+
+Bisher musstest du jedem KI-Anbieter einzeln sagen, ob er deine Inhalte fürs Training nutzen darf: GPTBot für OpenAI, Google-Extended für Google und so weiter. Am 30. Oktober 2026 haben Google, Microsoft und OpenAI angekündigt, zusätzlich eine gemeinsame Gruppe in der robots.txt zu beachten. Sie beginnt mit `User-Agent: __usage_ai-training`, darunter stehen wie gewohnt `Disallow: /` für die ganze Website und bei Bedarf `Allow:`-Zeilen für Bereiche, die ins Training dürfen, etwa eine Pressemappe.
+
+Drei Punkte aus dem Entwurf bei der IETF solltest du kennen. Die Gruppe drückt einen Wunsch zur Nutzung aus und regelt nicht, wer crawlen darf; dafür bleiben die Regeln für die einzelnen Crawler zuständig. Eine Regel unter `User-Agent: *` zählt nicht als Nein zum Training. Und der Entwurf ist bisher ein Einzelentwurf, den die IETF nicht offiziell trägt.
+
+Bei keinem der drei Anbieter wirkt das Signal schon. OpenAI will es in den kommenden Monaten umsetzen, Google im Jahr 2027, Microsoft ab dem 1. Februar 2027. Google wertet ein Nein über die gemeinsame Gruppe als Sperre für Google-Extended, sofern du Google-Extended nicht ausdrücklich regelst. Microsoft ergänzt eine eigene Angabe pro Seite für das sogenannte Grounding, also dafür, ob eine Seite KI-Antworten etwa in Copilot speisen darf. Wer bei Bing bisher NoArchive oder NoCache gesetzt hat, braucht bis zum 1. März 2027 zwei Schritte: die neue Angabe `ai-grounding:disallow` auf jeder Seite (als Meta-Tag `Bingbot` oder als X-Robots-Tag) und zusätzlich eine vorläufige Grounding-Präferenz in den Bing Webmaster Tools, die sich ab dem 15. Dezember 2026 eintragen lässt. Fehlt der zweite Schritt, gelten diese Seiten nach der Frist so lange als fürs Grounding freigegeben, bis Bing sie neu gecrawlt hat.
+
+Unsere Einschätzung: Das Signal ist bequem, ersetzt aber nicht die Entscheidung pro Anbieter. Google schreibt, dass Websites, die Google-Extended ausdrücklich erlauben, über Grounding in Antworten der Gemini-App auftauchen und Klicks bekommen können. Ein pauschales Nein trennt also womöglich mehr ab, als du wolltest.
+
 ## Einkaufen im Chat
 
 OpenAI hat im März 2026 die Produktsuche in ChatGPT umgebaut. Nutzer vergleichen Produkte nebeneinander mit Preis, Bewertungen und Eigenschaften und können Bilder als Vorlage hochladen. Laut Hilfeseite wählt ChatGPT die Produktergebnisse selbst aus, sie sind keine Anzeigen und nicht von Partnerschaften beeinflusst. Berücksichtigt werden strukturierte Daten von Händlern und Drittanbietern, etwa Preis und Beschreibung.
@@ -82,7 +92,7 @@ Für ChatGPT und andere Assistenten gibt es noch keine vergleichbare offizielle 
 ## Checkliste für die nächsten zwei Wochen
 
 1. **Search Console öffnen:** den Bericht für generative KI ansehen und prüfen, ob die Website eingeschlossen ist.
-2. **robots.txt prüfen:** Googlebot und OAI-SearchBot erlauben, über GPTBot und Google-Extended bewusst entscheiden.
+2. **robots.txt prüfen:** Googlebot und OAI-SearchBot erlauben, über GPTBot, Google-Extended und die neue gemeinsame Trainingsgruppe bewusst entscheiden.
 3. **Firewall und CDN testen:** sicherstellen, dass Bot-Schutz die gewünschten Crawler durchlässt.
 4. **Merchant Center abgleichen:** Preise, Verfügbarkeit und Varianten mit dem Shop vergleichen und Abweichungen beheben.
 5. **Zehn Kundenfragen testen:** in ChatGPT, Gemini und Perplexity stellen und notieren, wer als Quelle erscheint.

@@ -1,7 +1,7 @@
 {
- "stand": "2026-10-28",
+ "stand": "2026-11-01",
  "titel": "KI-Trends Herbst 2026",
- "intro": "Was sich zwischen Juli und Oktober 2026 wirklich bewegt hat, nachgelesen beim Hersteller statt beim Hörensagen. Zehn Entwicklungen, jede mit Einordnung für Leute, die damit arbeiten wollen, und mit Quellen zum Selbstprüfen.",
+ "intro": "Was sich zwischen Juli und Anfang November 2026 wirklich bewegt hat, nachgelesen beim Hersteller statt beim Hörensagen. Elf Entwicklungen, jede mit Einordnung für Leute, die damit arbeiten wollen, und mit Quellen zum Selbstprüfen.",
  "methode": "Jede Aussage stammt aus der Ankündigung des Herstellers oder, beim EU AI Act, aus der Meldung zur Veröffentlichung im Amtsblatt. Leistungs- und Benchmarkwerte sind Herstellerangaben. Tracker und Newsblogs haben wir nur genutzt, um Kandidaten zu finden, nie als Beleg.",
  "trends": [
   {
@@ -11,7 +11,7 @@
    "kurz": "Die neue Claude-Generation kostet bei gleicher Leistung deutlich weniger. Projekte, die an den API-Kosten gescheitert sind, gehören neu durchgerechnet.",
    "text": [
     "Anthropic hat im September Claude Opus 5.5 vorgestellt und gibt an, dass es bei typischen Aufgaben rund 40 Prozent weniger kostet als Opus 5. Im Oktober folgte Claude Haiku 5.5 für 0,10 Dollar pro Million Eingabe-Token und 0,50 Dollar pro Million Ausgabe-Token bei Eingaben bis 100.000 Token, laut Anthropic im Schnitt etwa 75 Prozent günstiger als der Vorgänger Haiku 4.5.",
-    "OpenAI zieht mit: GPT-6.1 Sol kostet laut OpenAI 2 Dollar pro Million Eingabe-Token und 10 Dollar pro Million Ausgabe-Token, das am 26. Oktober vorgestellte GPT-6.1 Terra die Hälfte davon. Google verlangt für Gemini 4 Argon bis zum 30. November 2026 einen Einführungspreis von 2 und 10 Dollar, danach 4 und 20 Dollar. Die Spitze wird also nicht billiger, aber die Mittelklasse rückt so nah heran, dass sie für die meiste Alltagsarbeit reicht."
+    "OpenAI zieht mit: GPT-6.1 Sol kostet laut OpenAI 2 Dollar pro Million Eingabe-Token und 10 Dollar pro Million Ausgabe-Token, das am 26. Oktober vorgestellte GPT-6.1 Terra die Hälfte davon. Google verlangt für Gemini 4 Argon bis zum 30. November 2026 einen Einführungspreis von 2 und 10 Dollar, danach 4 und 20 Dollar. Das am 28. Oktober vorgestellte Gemini 4 Carbon soll mit demselben Einführungspreis starten, ist aber vorerst nur für ausgewählte Teams aus der Cyberabwehr freigeschaltet; einen Termin für Entwickler und Firmen nennt Google nicht. Die Spitze wird also nicht billiger, aber die Mittelklasse rückt so nah heran, dass sie für die meiste Alltagsarbeit reicht."
    ],
    "fuer_dich": "Produkttexte in drei Sprachen, Support-Vorsortierung oder das Zusammenfassen von Handbüchern kosten bei kleinen Modellen jetzt Cent-Beträge pro Hundert Durchläufe. Rechne mit echten Mengen, bevor du ein Projekt wegen der Kosten beerdigst.",
    "urteil": "Erst das kleine Modell testen. Oft reicht der Haiku, wo du aus Gewohnheit den Opus bestellt hättest.",
@@ -47,6 +47,16 @@
      "Google: Gemini 4 Argon",
      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
      "2026-10-13"
+    ],
+    [
+     "Google: Gemini 4 Carbon, our next frontier model",
+     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+     "2026-10-28"
+    ],
+    [
+     "Google: Gemini API Pricing",
+     "https://ai.google.dev/gemini-api/docs/pricing",
+     ""
     ]
    ],
    "label": "Preisrutsch",
@@ -68,7 +78,7 @@
    "kurz": "Gemini hat einen Aufgaben-Modus, Claude Opus 5.5 hält stundenlange Arbeitsaufträge durch. Aus dem Chatpartner wird jemand mit eigenem Schreibtisch und eigener Aufgabenliste.",
    "text": [
     "Mit Gemini 4 Argon hat Google in der Gemini-App einen Schalter von Chat auf Aufgaben eingeführt. Gemini arbeitet dann weiter, während du nicht am Rechner sitzt, meldet Zwischenstände und verbindet sich mit über 40 Apps, darunter Shopify und Adobe. Zum Start gilt das für Abonnenten von Google AI Pro und Ultra. Wie stark Agenten auch Fachleute lenken, zeigt eine Studie von Anthropic vom 27. Oktober: 50 Analysten arbeiteten mit Agenten, die heimlich auf eine von zwei Optionen festgelegt waren. In 86 Prozent der Fälle folgten sie dieser Tendenz, und nur 15 Prozent nannten den Agenten als Quelle ihrer Argumente.",
-    "Anthropic beschreibt Claude Opus 5.5 ausdrücklich als Modell für mehrstündige, eigenständige Aufgaben und nennt als Beispiel eine 18 Stunden lange Entwicklungssitzung ohne Aufsicht. Laut Anthropic verteilt das Modell Arbeit außerdem besser an Unter-Agenten. Laut Ankündigung vom 22. Oktober wird der automatische Modus ab Ende Oktober in den meisten Claude-Apps für Pro, Max und Team zur Voreinstellung für neue Sitzungen. Darin blockiert ein Prüfmodell riskante Schritte, statt jeden Schritt abfragen zu lassen. Auch IBM rüstet nach: Laut Ankündigung vom 27. Oktober vergibt HashiCorp Vault künftig Agenten eigene Identitäten mit kurzlebigen Zugangsdaten, knappen Rechten und Sperre in Echtzeit, sobald ein Agent etwas Unerlaubtes versucht."
+    "Anthropic beschreibt Claude Opus 5.5 ausdrücklich als Modell für mehrstündige, eigenständige Aufgaben und nennt als Beispiel eine 18 Stunden lange Entwicklungssitzung ohne Aufsicht. Laut Anthropic verteilt das Modell Arbeit außerdem besser an Unter-Agenten. Am 22. Oktober kündigte Anthropic an, den automatischen Modus ab der Folgewoche in den meisten Claude-Apps für Pro, Max und Team als Voreinstellung für neue Sitzungen auszurollen. Darin blockiert ein Prüfmodell riskante Schritte, statt jeden Schritt abfragen zu lassen. Auch IBM rüstet nach: Laut Ankündigung vom 27. Oktober vergibt HashiCorp Vault künftig Agenten eigene Identitäten mit kurzlebigen Zugangsdaten, knappen Rechten und Sperre in Echtzeit, sobald ein Agent etwas Unerlaubtes versucht. GitHub hat am 28. Oktober Copilot Projects als öffentliche Vorschau gestartet: Du gibst ein Ziel vor, Copilot verteilt die Arbeit auf so viele Agenten und Repositories wie nötig und meldet sich, wenn es dich braucht. Google berichtet zu Gemini 4 Carbon, interne Teams hätten das Modell tagelang an mehrstufigen Entwicklungsaufgaben arbeiten lassen."
    ],
    "fuer_dich": "Recherchen, Datenpflege oder Code-Umbauten lassen sich über Nacht erledigen. Dafür brauchst du klare Grenzen: welche Konten der Agent nutzen darf, wann er fragen muss und wo er protokolliert, was er getan hat.",
    "urteil": "Ein Agent am langen Seil ist praktisch. Gib ihm trotzdem ein Seil.",
@@ -76,7 +86,8 @@
     "Gemini",
     "Claude",
     "Claude Code",
-    "n8n"
+    "n8n",
+    "GitHub Copilot"
    ],
    "quellen": [
     [
@@ -103,6 +114,16 @@
      "Anthropic: When agents make judgment calls",
      "https://www.anthropic.com/research/agents-judgment-calls",
      "2026-10-27"
+    ],
+    [
+     "GitHub Changelog: GitHub Copilot app, Universe releases",
+     "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/",
+     "2026-10-28"
+    ],
+    [
+     "Google: Gemini 4 Carbon, our next frontier model",
+     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+     "2026-10-28"
     ]
    ],
    "label": "Agenten im Hintergrund",
@@ -124,7 +145,7 @@
    "kurz": "MCP, Agent Skills und der Agent goose liegen jetzt bei einer neutralen Stiftung der Linux Foundation. Was du einmal für einen Agenten baust, läuft zunehmend auch beim nächsten.",
    "text": [
     "Am 22. Oktober hat Anthropic den Standard Agent Skills an die Agentic AI Foundation übergeben, die unter dem Dach der Linux Foundation arbeitet. Ein Skill ist ein Ordner mit einer Datei SKILL.md und optionalen Skripten. Laut Anthropic haben ihn bereits über 70 Agenten-Plattformen eingebaut, darunter ChatGPT, Cursor, GitHub Copilot und VS Code.",
-    "Dieselbe Stiftung verwaltet schon das Model Context Protocol und den quelloffenen Agenten goose, den Block eingebracht hat. Damit liegen die drei wichtigsten Bausteine für Agenten, also Werkzeuganschluss, Fachwissen und Laufzeit, bei einer herstellerneutralen Stelle. Auch Apple setzt auf MCP: Laut Apple sollen externe KI-Agenten laut Ankündigung vom 27. Oktober ab November Inhalte in Keynote, Pages und Numbers lesen, bearbeiten und Abläufe automatisieren können, vorausgesetzt macOS 27 und ein Abo von Apple Creator Studio."
+    "Dieselbe Stiftung verwaltet schon das Model Context Protocol und den quelloffenen Agenten goose, den Block eingebracht hat. Damit liegen die drei wichtigsten Bausteine für Agenten, also Werkzeuganschluss, Fachwissen und Laufzeit, bei einer herstellerneutralen Stelle. Auch Apple setzt auf MCP: Laut Ankündigung vom 27. Oktober sollen externe KI-Agenten Inhalte in Keynote, Pages und Numbers lesen, bearbeiten und Abläufe automatisieren können. Das Update soll im November im App Store erscheinen und braucht laut Apple macOS 27; ob die MCP-Anbindung zusätzlich ein Abo von Apple Creator Studio verlangt, lässt die Ankündigung offen. Google hat am 29. Oktober einen Plugin-Marktplatz für Antigravity gestartet, dessen Pakete Skills im SKILL.md-Format und MCP-Server zusammen installieren."
    ],
    "fuer_dich": "Baue Anbindungen an Shop, Warenwirtschaft oder Wiki als MCP-Server und Arbeitsanleitungen als Skills. So wechselst du den KI-Anbieter, ohne alles neu zu verdrahten.",
    "urteil": "Standards sind langweilig. Genau deshalb sparen sie dir später Geld und Nerven.",
@@ -132,7 +153,8 @@
     "Agent Skills",
     "goose",
     "Cursor",
-    "GitHub Copilot"
+    "GitHub Copilot",
+    "Google Antigravity"
    ],
    "quellen": [
     [
@@ -149,6 +171,11 @@
      "Apple: Apple Creator Studio adds powerful new AI features",
      "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
      "2026-10-27"
+    ],
+    [
+     "Google Antigravity Blog: Plugin Marketplace in Antigravity",
+     "https://antigravity.google/blog/plugin-marketplace-in-antigravity/",
+     "2026-10-29"
     ]
    ],
    "label": "Offene Standards",
@@ -222,10 +249,10 @@
    "titel": "Kleine Modelle ziehen auf den eigenen Rechner",
    "kurz": "Liquid AI und NVIDIA bringen offene Modelle, die mit ein bis vier Gigabyte Speicher auskommen. Vertrauliches muss damit seltener in die Cloud.",
    "text": [
-    "Liquid AI hat am 27. Oktober die Modellfamilie LFM3 vorgestellt: sechs offene Modelle um zwei Milliarden Parameter für Text, Bild, Audio und schnelle Ja-Nein-Entscheidungen. Das Textmodell braucht bei 4 Bit laut Hersteller rund ein Gigabyte Speicher, verarbeitet bis zu 256.000 Token Kontext und lässt sich auf einer einzelnen Grafikkarte nachtrainieren.",
-    "NVIDIA hat am 23. Oktober Nemotron 3.5 Bolt E4B veröffentlicht, ein Kleinmodell auf Basis von Gemma 4 für Sprachassistenten und Werkzeugaufrufe. In NVIDIAs eigenem Test belegt es auf einer RTX 5070 je nach Gesprächslänge 3,5 bis 4,3 Gigabyte Grafikspeicher, Ollama hatte es noch am selben Tag im Angebot. Für Dokumente kam am 27. Oktober Unlimited OCR 2 von Baidu dazu: ein Modell mit offenen Gewichten unter MIT-Lizenz, das mehrseitige Dokumente in einem Durchgang ausliest und dabei laut Baidu Speicherbedarf und Wartezeit auch bei Hunderten Seiten nahezu konstant hält."
+    "Liquid AI hat am 27. Oktober die Modellfamilie LFM3 vorgestellt: sechs offene Modelle um zwei Milliarden Parameter für Text, Bild, Audio und schnelle Ja-Nein-Entscheidungen. Das Textmodell braucht bei 4 Bit laut Hersteller rund ein Gigabyte Speicher, verarbeitet bis zu 256.000 Token Kontext und lässt sich auf einer einzelnen Grafikkarte nachtrainieren. Deutsch steht auf der Sprachliste, die Lizenz hat aber eine Grenze: Ab 10 Millionen Dollar Jahresumsatz deckt sie die kommerzielle Nutzung nicht mehr ab.",
+    "NVIDIA hat am 23. Oktober Nemotron 3.5 Bolt E4B veröffentlicht, ein Kleinmodell auf Basis von Gemma 4 für Sprachassistenten und Werkzeugaufrufe. In NVIDIAs eigenem Test belegt es auf einer RTX 5070 je nach Gesprächslänge 3,5 bis 4,3 Gigabyte Grafikspeicher, Ollama hatte es noch am selben Tag im Angebot. Für Dokumente kam am 27. Oktober Unlimited OCR 2 von Baidu dazu: ein Modell mit offenen Gewichten unter MIT-Lizenz, das mehrseitige Dokumente in einem Durchgang ausliest. Laut Baidu bleiben Speicherbedarf und Rechenzeit pro Ausgabeschritt auch bei Hunderten Seiten nahezu konstant; die Gesamtdauer wächst mit der Seitenzahl trotzdem, und getestet hat Baidu auf einer Rechenzentrums-GPU mit 80 GB. Microsoft legte am 30. Oktober Mage-VL-Cowork unter Apache-2.0-Lizenz nach: ein Modell mit vier Milliarden Parametern, das am Bildschirm klickt und tippt oder Befehle im Terminal ausführt, mit rund 9,5 Gigabyte Gewichten in voller Genauigkeit."
    ],
-   "fuer_dich": "Belege vorsortieren, Tickets einordnen oder interne Dokumente durchsuchen geht damit auf dem eigenen Arbeitsplatzrechner, für Nemotron mit Grafikkarte. Für Fachwissen braucht ein Kleinmodell aber deine Daten oder eine Suche daneben, aus dem Gedächtnis weiß es wenig.",
+   "fuer_dich": "Belege vorsortieren, Tickets einordnen oder interne Dokumente durchsuchen geht damit auf dem eigenen Arbeitsplatzrechner, für Nemotron mit Grafikkarte. Unlimited OCR 2 gehört eher auf einen Server mit großer NVIDIA-Karte. Für Fachwissen braucht ein Kleinmodell aber deine Daten oder eine Suche daneben, aus dem Gedächtnis weiß es wenig.",
    "urteil": "Klein heißt nicht dumm, nur spezialisiert. Gib ihm eine enge Aufgabe und keinen Weltfrieden.",
    "erster_schritt": "Installiere Ollama, lade ein Kleinmodell und lass es zehn echte Tickets oder Belege einsortieren, bevor du über Cloud-Kosten diskutierst.",
    "radar": {
@@ -240,7 +267,9 @@
     "LFM3 von Liquid AI",
     "Nemotron 3.5 Bolt",
     "Ollama",
-    "LM Studio"
+    "LM Studio",
+    "Mage-VL-Cowork",
+    "Unlimited OCR 2"
    ],
    "quellen": [
     [
@@ -262,6 +291,16 @@
      "Hugging Face: baidu/Unlimited-OCR-2",
      "https://huggingface.co/baidu/Unlimited-OCR-2",
      "2026-10-27"
+    ],
+    [
+     "Hugging Face: LiquidAI/LFM3-1.7B (Modellkarte und Lizenz)",
+     "https://huggingface.co/LiquidAI/LFM3-1.7B",
+     ""
+    ],
+    [
+     "Hugging Face: microsoft/Mage-VL-Cowork",
+     "https://huggingface.co/microsoft/Mage-VL-Cowork",
+     "2026-10-30"
     ]
    ],
    "ratgeber": "lokale-ki-unternehmen"
@@ -272,7 +311,7 @@
    "icon": "globe",
    "kurz": "Firefox bekommt einen Assistenten mit Mistral-Modellen, die Claude-Werkzeuge können Browser steuern. Die KI sieht künftig, was in deinen Tabs steht.",
    "text": [
-    "Mozilla und Mistral haben im September angekündigt, dass Firefox Smart Window, der KI-Assistent im Browser, mit Mistral-Modellen läuft. Er hilft bei komplexen Suchen und findet Dinge anhand der offenen Tabs wieder. Gespräche werden laut Ankündigung standardmäßig nicht auf den Servern von Mozilla gespeichert. Zuerst startet das in Frankreich und Nordamerika, Deutschland soll laut der Ankündigung vom September später im Jahr 2026 folgen.",
+    "Mozilla und Mistral haben im September angekündigt, dass Firefox Smart Window, der KI-Assistent im Browser, mit Mistral-Modellen läuft. Er hilft bei komplexen Suchen und findet Dinge anhand der offenen Tabs wieder. Gespräche werden laut Ankündigung standardmäßig nicht auf den Servern von Mozilla gespeichert. Laut Mozilla-Blog, zuletzt aktualisiert am 16. September, läuft die Beta in Nordamerika und Frankreich. Deutschland soll laut Mistral später im Jahr 2026 folgen, ein Datum nennen beide nicht.",
     "Bei Anthropic haben die Python- und TypeScript-Bibliotheken mit Haiku 5.5 eine Beta für Computer- und Browser-Steuerung bekommen. Damit wird der Browser zur Arbeitsfläche für Agenten, die Formulare ausfüllen und Seiten vergleichen. Opera geht am 27. Oktober einen Schritt weiter: Mit WebAI laufen KI-Modelle direkt im Browser, Webseiten und Erweiterungen nutzen sie ohne Server, API-Schlüssel und Kosten pro Anfrage. Die Vorschau startet in Opera One auf Windows und Macs mit Apple-Chip, eingeschaltet wird sie erst auf Wunsch in den Einstellungen."
    ],
    "fuer_dich": "Recherche und Vergleiche werden bequemer. Gleichzeitig liest der Assistent alles, was auf der Seite steht, auch versteckte Anweisungen. Für Kundenportale und Online-Banking gehört er ausgeschaltet.",
@@ -280,12 +319,18 @@
    "tools": [
     "Vibe von Mistral",
     "Claude",
-    "Perplexity"
+    "Perplexity",
+    "Opera WebAI"
    ],
    "quellen": [
     [
      "Mistral: Mistral and Mozilla bring AI to your web browser",
      "https://mistral.ai/news/mistral-x-mozilla/",
+     "2026-09-16"
+    ],
+    [
+     "Mozilla: Smart Window, privacy-first, AI-powered browsing with Firefox",
+     "https://blog.mozilla.org/en/firefox/firefox-smart-window/",
      "2026-09-16"
     ],
     [
@@ -318,7 +363,7 @@
    "kurz": "Google lässt Websites seit Ende August selbst entscheiden, ob sie in AI Overviews und AI Mode erscheinen, und liefert Zahlen dazu. Sichtbarkeit in KI-Antworten wird messbar.",
    "text": [
     "Seit dem 31. August 2026 gibt es in der Search Console weltweit eine Einstellung, mit der Website-Betreiber ihre Inhalte in AI Overviews, AI Mode und den KI-Funktionen von Discover zulassen oder ausschließen. Dazu kommt ein Bericht, der zeigt, welche Seiten in KI-Antworten erscheinen und wie viele Impressionen sie dort sammeln.",
-    "Bei ChatGPT steuern Betreiber die Sichtbarkeit über die Crawler-Kennungen: OAI-SearchBot für die Suche, GPTBot für das Training. Die Produktsuche in ChatGPT zeigt Händler, deren Daten über Feeds oder Shopify angebunden sind, ist aber vorerst nur in den USA freigeschaltet. Shopify hat am 26. Oktober seine Knowledge Base in den Admin geholt, in der Händler Fakten über ihren Shop für KI-Agenten pflegen. Was Shopify selbst aus dem Shop vorschlägt, bleibt unveröffentlicht, bis der Händler es freigibt."
+    "Microsoft führt bei Bing eine eigene Angabe pro Seite ein, mit der du festlegst, ob deine Inhalte KI-Antworten in Copilot und anderen Diensten speisen dürfen, ohne dass sich an der Bing-Suche etwas ändert. Sie gilt ab dem 1. Februar 2027. Wer bisher NoArchive oder NoCache nutzt, setzt bis zum 1. März 2027 die neue Angabe auf jeder Seite und trägt zusätzlich eine vorläufige Präferenz in den Bing Webmaster Tools ein, möglich ab dem 15. Dezember 2026; ohne diesen Eintrag sind solche Seiten bis zum nächsten Crawl fürs Grounding offen. Bei ChatGPT steuern Betreiber die Sichtbarkeit über die Crawler-Kennungen: OAI-SearchBot für die Suche, GPTBot für das Training. Die Produktsuche in ChatGPT zeigt Händler, deren Daten über Feeds oder Shopify angebunden sind, ist aber vorerst nur in den USA freigeschaltet. Shopify hat am 26. Oktober seine Knowledge Base in den Admin geholt, in der Händler Fakten über ihren Shop für KI-Agenten pflegen. Was Shopify selbst aus dem Shop vorschlägt, bleibt unveröffentlicht, bis der Händler es freigibt."
    ],
    "fuer_dich": "Wer seine Inhalte in KI-Antworten sehen will, muss nichts Neues bauen, aber bewusst entscheiden und messen. Die robots.txt und der neue Bericht in der Search Console sind die zwei Stellen, an denen das passiert.",
    "urteil": "Endlich Zahlen statt Bauchgefühl. Schau erst rein, bevor du irgendwas abschaltest.",
@@ -335,7 +380,8 @@
     "Semrush",
     "Perplexity",
     "ChatGPT",
-    "Gemini"
+    "Gemini",
+    "Microsoft Copilot"
    ],
    "ratgeber": "sichtbar-in-ki-antworten",
    "quellen": [
@@ -358,6 +404,57 @@
      "Shopify Changelog: Knowledge base is now available in your admin",
      "https://changelog.shopify.com/posts/knowledge-base-is-now-available-in-your-admin",
      "2026-10-26"
+    ],
+    [
+     "Bing Blog: Clearer preferences for training and grounding",
+     "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+     "2026-10-30"
+    ]
+   ]
+  },
+  {
+   "id": "training-optout",
+   "label": "Nein zum Training",
+   "icon": "lock",
+   "titel": "Ein Nein zum KI-Training, das alle verstehen sollen",
+   "kurz": "Google, Microsoft und OpenAI wollen eine gemeinsame Gruppe in der robots.txt beachten, mit der Websites KI-Training ablehnen. Eine Regel für alle drei statt einer pro Crawler, nur die Starttermine liegen auseinander.",
+   "text": [
+    "Am 30. Oktober haben Google, Microsoft und OpenAI angekündigt, ein gemeinsames Signal gegen KI-Training zu beachten. Es steht in der robots.txt als eigene Gruppe mit der Kennung __usage_ai-training, darunter wie gewohnt Disallow- und Allow-Zeilen. Der Entwurf dazu liegt seit demselben Tag bei der IETF, ist aber ein Einzelentwurf ohne offiziellen Status.",
+    "Die Zeitpläne gehen auseinander: OpenAI will das Signal in den kommenden Monaten umsetzen, Google im Jahr 2027, Microsoft ab dem 1. Februar 2027. Google wertet ein Nein über die neue Gruppe wie eine Sperre für Google-Extended, solange du Google-Extended nicht selbst regelst. Laut Entwurf steuert die Gruppe nicht, wer crawlen darf, und eine allgemeine Regel für alle Bots zählt nicht als Präferenz. Bestehende Regeln für GPTBot oder Google-Extended gelten weiter."
+   ],
+   "fuer_dich": "Wer Texte und Produktbilder aus dem Training heraushalten will, braucht für diese drei Anbieter bald nur noch eine Gruppe in der robots.txt; für alle anderen KI-Crawler bleiben die einzelnen Regeln nötig. Sichtbarkeit in KI-Antworten ist eine eigene Entscheidung: Google nennt ausdrücklich, dass Websites mit erlaubtem Google-Extended über Grounding in Antworten der Gemini-App erscheinen können. Ein pauschales Nein kann also mehr kosten, als es auf den ersten Blick aussieht.",
+   "urteil": "Ein Schild am Werkstatttor statt fünf. Ob jeder Lieferant es liest, steht auf einem anderen Blatt.",
+   "erster_schritt": "Öffne deine robots.txt und schreib auf, welche KI-Crawler du heute einzeln sperrst oder erlaubst und warum, bevor du die neue Gruppe ergänzt.",
+   "radar": {
+    "shop": 2,
+    "marketing": 3,
+    "entwicklung": 2,
+    "service": 0,
+    "kreativ": 3,
+    "buero": 1
+   },
+   "tools": [],
+   "ratgeber": "sichtbar-in-ki-antworten",
+   "quellen": [
+    [
+     "OpenAI: Making it easier for websites to express AI training preferences",
+     "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+     "2026-10-30"
+    ],
+    [
+     "Google Search Central Blog: Supporting a shared AI training control for websites",
+     "https://developers.google.com/search/blog/2026/10/ai-training-control",
+     "2026-10-30"
+    ],
+    [
+     "Bing Blog: Clearer preferences for training and grounding",
+     "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+     "2026-10-30"
+    ],
+    [
+     "IETF: draft-kelley-aipref-training-preference-signal-00",
+     "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+     "2026-10-30"
     ]
    ]
   },
@@ -368,7 +465,7 @@
    "kurz": "Neue Sprachmodelle schreiben in Echtzeit mit und sprechen über 35 Sprachen. Telefonagenten und Meeting-Protokolle werden damit zum Massenprodukt.",
    "text": [
     "Mistral hat im Oktober Voxtral 3 veröffentlicht: Spracherkennung für über 50 Sprachen, eine Echtzeit-Variante für über 35 Sprachen, Sprachausgabe in über 35 Sprachen und ein Baukasten für Sprachagenten auf Basis von LiveKit. Deutsch funktioniert in beide Richtungen, die Transkription kostet in der kleinen Variante 0,0035 Dollar pro Minute.",
-    "Google hat für Entwickler Gemini 3.8 Live und 3.5 Transcribe vorgestellt, gedacht für Sprach-Apps in Echtzeit. Spracherkennung, Antwort und Stimme wachsen damit zu einer Kette zusammen, für die niemand mehr eine eigene Spracherkennung trainieren muss."
+    "Google hat für Entwickler Gemini 3.8 Live und 3.5 Transcribe vorgestellt, gedacht für Sprach-Apps in Echtzeit. Spracherkennung, Antwort und Stimme wachsen damit zu einer Kette zusammen, für die niemand mehr eine eigene Spracherkennung trainieren muss. Für Mitschnitte, die das Haus nicht verlassen sollen, hat NVIDIA am 28. Oktober Nemotron 3.5 Transcribe mit offenen Gewichten veröffentlicht: Aufnahmen bis zu einer Stunde in 40 Sprachen, auf Deutsch mit Sprecherzuordnung, allerdings nur für fertige Dateien und nicht live."
    ],
    "fuer_dich": "Ein Telefonagent für Öffnungszeiten und Terminbuchung oder automatische Protokolle für jedes Meeting sind keine Großprojekte mehr. Wichtig bleibt die Kennzeichnung: Wer mit einer KI spricht, muss das erkennen können.",
    "urteil": "Die Stimme aus der Dose klingt nicht mehr nach Dose. Sag trotzdem dazu, dass es eine ist.",
@@ -376,7 +473,8 @@
     "Voxtral 3",
     "ElevenLabs",
     "Whisper API",
-    "Gemini"
+    "Gemini",
+    "Nemotron 3.5 Transcribe"
    ],
    "quellen": [
     [
@@ -388,6 +486,11 @@
      "Google: Build real-time voice applications with Gemini 3.8 Live and 3.5 Transcribe",
      "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
      "2026-09-15"
+    ],
+    [
+     "NVIDIA: Nemotron 3.5 Transcribe",
+     "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/",
+     "2026-10-28"
     ]
    ],
    "label": "Sprache in Echtzeit",

@@ -108,7 +108,7 @@
    "meta": "API-Preise von OpenAI, Anthropic, Google und Mistral im Vergleich, ein Rechenbeispiel mit 2.000 Produkttexten und wann sich ein lokales Modell rechnet.",
    "teaser": "Zehn Modelle, eine Preistabelle, ein Rechenbeispiel mit 2.000 Produkttexten und die Frage, wann ein lokales Modell die Rechnung schlägt.",
    "hero": "Zwischen dem günstigsten und dem teuersten Modell liegt Faktor hundert. Hier steht, welches Modell für welche Arbeit reicht und wie du in einer Stunde selbst testest.",
-   "stand": "2026-10-29",
+   "stand": "2026-11-01",
    "rollen": [
     "entwicklung",
     "service",
@@ -216,6 +216,16 @@
      "NVIDIA: Nemotron 3.5 Bolt E4B 4GB",
      "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/",
      "2026-10-23"
+    ],
+    [
+     "Google: Gemini 4 Carbon, our next frontier model",
+     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+     "2026-10-28"
+    ],
+    [
+     "Google: Gemini API Pricing",
+     "https://ai.google.dev/gemini-api/docs/pricing",
+     ""
     ]
    ],
    "lead_hook": "Welches Modell passt zu deinem Volumen?",
@@ -232,7 +242,7 @@
    "meta": "Was Google und OpenAI offiziell zu KI-Suchen sagen: Voraussetzungen für AI Overviews, der Schalter in der Search Console, ChatGPT-Crawler, Checkliste.",
    "teaser": "Kein Geheimtrick, aber ein neuer Schalter in der Search Console, drei ChatGPT-Crawler und Produktdaten, die plötzlich in der Antwort stehen.",
    "hero": "KI-Suchen verlinken Quellen und vergleichen Produkte direkt in der Antwort. Hier steht, was Google und OpenAI dafür offiziell verlangen, was du steuern kannst und wie du deine Sichtbarkeit misst.",
-   "stand": "2026-10-28",
+   "stand": "2026-11-01",
    "rollen": [
     "marketing",
     "shop"
@@ -244,7 +254,8 @@
     "ChatGPT",
     "Gemini",
     "Frase",
-    "Surfer"
+    "Surfer",
+    "Microsoft Copilot"
    ],
    "glossar": [
     "KI-Suchmaschine",
@@ -268,6 +279,10 @@
     [
      "Werden meine Produkte schon in ChatGPT angezeigt?",
      "Wenn du über Shopify oder Etsy verkaufst, sind deine Produktdaten laut OpenAI bereits angebunden. Die Einkaufsfunktion ist aber derzeit nur für Nutzer in den USA freigeschaltet, für alle anderen Händler gibt es eine Warteliste für direkte Feeds."
+    ],
+    [
+     "Gibt es eine Zeile, die KI-Training bei allen Anbietern verbietet?",
+     "Nein, nur eine für die Anbieter, die mitmachen. Google, Microsoft und OpenAI haben am 30. Oktober 2026 angekündigt, die Gruppe __usage_ai-training in der robots.txt zu beachten; für alle anderen ist das freiwillig, für sie brauchst du weiter die Regeln der einzelnen Crawler. Umgesetzt ist das auch bei den dreien noch nicht: OpenAI plant es für die kommenden Monate, Microsoft ab Februar 2027, Google im Lauf des Jahres 2027. Bis dahin gelten die Regeln für die einzelnen Crawler."
     ]
    ],
    "quellen": [
@@ -325,6 +340,26 @@
      "Google: New Gemini tools for small business owners",
      "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
      "2026-10-20"
+    ],
+    [
+     "OpenAI: Making it easier for websites to express AI training preferences",
+     "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+     "2026-10-30"
+    ],
+    [
+     "Google Search Central Blog: Supporting a shared AI training control for websites",
+     "https://developers.google.com/search/blog/2026/10/ai-training-control",
+     "2026-10-30"
+    ],
+    [
+     "Bing Blog: Clearer preferences for training and grounding",
+     "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+     "2026-10-30"
+    ],
+    [
+     "IETF: draft-kelley-aipref-training-preference-signal-00",
+     "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+     "2026-10-30"
     ]
    ],
    "lead_hook": "Wo taucht deine Marke in KI-Antworten auf?",
@@ -341,7 +376,7 @@
    "meta": "Wie du KI-Agenten sicher arbeiten lässt: Aufgabe, Rechte, Freigaben, Protokolle und Notbremse, dazu Prompt Injection und ein Fahrplan in vier Wochen.",
    "teaser": "Fünf Schalter von der Aufgabe bis zur Notbremse, die Lehren aus einem ernsten Zwischenfall und ein Fahrplan für die ersten vier Wochen.",
    "hero": "Agenten erledigen ganze Aufgaben selbstständig. Hier steht, wie du ihnen Arbeit gibst, ohne ihnen die Schlüssel zum ganzen Haus zu überlassen.",
-   "stand": "2026-10-29",
+   "stand": "2026-11-01",
    "rollen": [
     "entwicklung",
     "buero",
@@ -434,6 +469,11 @@
      "Reed Smith: Final Article 50 Guidelines (Abschnitt KI-Agenten)",
      "https://www.reedsmith.com/our-insights/blogs/viewpoints/102nbz0/transparency-obligations-for-ai-generated-content-the-code-of-practice-adequacy/",
      "2026-07-28"
+    ],
+    [
+     "Claude Help Center: Release notes",
+     "https://support.claude.com/en/articles/12138966-release-notes",
+     ""
     ]
    ],
    "lead_hook": "Welche Aufgabe soll dein erster Agent übernehmen?",
@@ -949,7 +989,7 @@
    "meta": "Was MCP und Agent Skills sind, welche Anschlüsse Shopify, Shopware, Stripe und PayPal liefern, welche Sicherheitsregeln gelten und wie du startest.",
    "teaser": "Der Stecker für KI-Agenten und das Handbuch dazu: welche Programme MCP sprechen, welche Shop-Anschlüsse es gibt und wie du sie sicher einsetzt.",
    "hero": "Ein Standard, damit jeder KI-Assistent an deinen Shop kommt. Und eine Anleitung, damit er dort nicht macht, was er will.",
-   "stand": "2026-10-28",
+   "stand": "2026-11-01",
    "rollen": [
     "entwicklung",
     "shop"
@@ -963,7 +1003,8 @@
     "GitHub Copilot",
     "Cursor",
     "Zapier",
-    "n8n"
+    "n8n",
+    "Google Antigravity"
    ],
    "glossar": [
     "MCP",
@@ -1101,6 +1142,16 @@
      "Anthropic: Agent Skills overview",
      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
      ""
+    ],
+    [
+     "Apple: Apple Creator Studio adds powerful new AI features",
+     "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
+     "2026-10-27"
+    ],
+    [
+     "Google Antigravity Blog: Plugin Marketplace in Antigravity",
+     "https://antigravity.google/blog/plugin-marketplace-in-antigravity/",
+     "2026-10-29"
     ]
    ],
    "lead_hook": "Welches System soll dein KI-Assistent zuerst lesen dürfen?",

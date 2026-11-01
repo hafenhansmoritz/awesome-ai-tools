@@ -1,6 +1,6 @@
 > **Kurz gesagt:** Das Model Context Protocol, kurz MCP, ist der Stecker, über den KI-Assistenten wie Claude, ChatGPT, Gemini oder GitHub Copilot auf Shop, Warenwirtschaft, Zahlungsdienst und Wissensdatenbank zugreifen. Agent Skills sind die Arbeitsanleitungen, die einem Agenten sagen, wie er eine Aufgabe in deinem Haus erledigt. Beide Standards liegen inzwischen bei einer neutralen Stiftung unter dem Dach der Linux Foundation. Dieser Ratgeber erklärt, wie die Bausteine zusammenpassen, welche Shop- und Zahlungsanbieter schon Anschlüsse liefern, wo die Sicherheitsrisiken liegen und wie du in drei Wochen den ersten Anschluss sauber in Betrieb nimmst.
 
-Grundlage sind die Spezifikation auf modelcontextprotocol.io, die Seite agentskills.io sowie die Dokumentationen von Anthropic, OpenAI, Google, Microsoft, GitHub, Shopify, Shopware, Stripe, PayPal, Zapier und n8n, Stand 28. Oktober 2026.
+Grundlage sind die Spezifikation auf modelcontextprotocol.io, die Seite agentskills.io sowie die Dokumentationen von Anthropic, OpenAI, Google, Microsoft, GitHub, Shopify, Shopware, Stripe, PayPal, Zapier und n8n, Stand 28. Oktober 2026, die Tabelle der Programme mit Stand 1. November 2026.
 
 ## Zwei Standards, zwei Aufgaben
 
@@ -29,7 +29,8 @@ Fast jedes große KI-Werkzeug kann inzwischen MCP-Server einbinden. Die wichtigs
 | Google Gemini Enterprise | Eigene MCP-Server als Datenquelle | In der Business-Edition noch Vorabversion |
 | Microsoft Copilot Studio | Assistent zum Einbinden bestehender Server mit API-Schlüssel oder OAuth | Für Agenten, die Firmen selbst bauen |
 | GitHub Copilot, VS Code, Cursor | MCP in Editor, Kommandozeile und Cloud-Agent | In Business- und Enterprise-Tarifen muss der Admin MCP freischalten |
-| Keynote, Pages, Numbers | Externe Agenten lesen und bearbeiten Dokumente | Laut Apple ab macOS 27 |
+| Keynote, Pages, Numbers | Externe Agenten lesen und bearbeiten Dokumente | Laut Apple mit dem Update im November und ab macOS 27; ob dafür ein Abo von Apple Creator Studio nötig ist, sagt Apple nicht |
+| Google Antigravity | Plugins aus dem Marktplatz bringen Skills und MCP-Server als ein Paket mit | Seit dem 29. Oktober 2026 in App und Kommandozeile |
 
 Ein Server, den du einmal baust oder einrichtest, funktioniert also in mehreren dieser Programme. Genau das ist der Wert eines Standards: Du wechselst den KI-Anbieter, ohne die Anbindung an deine Systeme neu zu bauen.
 
