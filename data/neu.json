@@ -3,6 +3,48 @@
  "tage": 60,
  "tools": [
   {
+   "name": "Nemotron 3.5 Transcribe",
+   "seit": "2026-11-01",
+   "trend": "sprache",
+   "notiz": "Schreibt Meetings auf Deutsch mit und weiß, wer gesprochen hat, auf deinem eigenen Server."
+  },
+  {
+   "name": "Mage-VL-Cowork",
+   "seit": "2026-11-01",
+   "trend": "lokal",
+   "notiz": "Microsofts Kleinmodell, das selbst klickt, tippt und das Terminal bedient."
+  },
+  {
+   "name": "Unlimited OCR 2",
+   "seit": "2026-11-01",
+   "trend": "lokal",
+   "notiz": "Liest lange, mehrseitige Dokumente in einem Rutsch, frei unter MIT-Lizenz."
+  },
+  {
+   "name": "Opera WebAI",
+   "seit": "2026-11-01",
+   "trend": "browser",
+   "notiz": "KI im Browser für Websites und Erweiterungen, ganz ohne API-Schlüssel."
+  },
+  {
+   "name": "LFM3 von Liquid AI",
+   "seit": "2026-10-28",
+   "trend": "lokal",
+   "notiz": "Sechs offene Zwerge für Text, Bild und Ton, das Textmodell passt in ein Gigabyte."
+  },
+  {
+   "name": "Nemotron 3.5 Bolt",
+   "seit": "2026-10-28",
+   "trend": "lokal",
+   "notiz": "NVIDIAs Sprachassistent zum Selberhosten, startet per Ollama mit einem Befehl."
+  },
+  {
+   "name": "Giotto Alto",
+   "seit": "2026-10-28",
+   "trend": "europa",
+   "notiz": "Schweizer Denkmodell, das du auch im eigenen Rechenzentrum laufen lassen kannst."
+  },
+  {
    "name": "Mistral Large 4",
    "seit": "2026-10-27",
    "trend": "europa",
@@ -49,24 +91,6 @@
    "seit": "2026-10-27",
    "trend": "europa",
    "notiz": "Prognosen für Absatz und Lager, rechnet auf einem normalen Prozessor."
-  },
-  {
-   "name": "LFM3 von Liquid AI",
-   "seit": "2026-10-28",
-   "trend": "lokal",
-   "notiz": "Sechs offene Zwerge für Text, Bild und Ton, das Textmodell passt in ein Gigabyte."
-  },
-  {
-   "name": "Nemotron 3.5 Bolt",
-   "seit": "2026-10-28",
-   "trend": "lokal",
-   "notiz": "NVIDIAs Sprachassistent zum Selberhosten, startet per Ollama mit einem Befehl."
-  },
-  {
-   "name": "Giotto Alto",
-   "seit": "2026-10-28",
-   "trend": "europa",
-   "notiz": "Schweizer Denkmodell, das du auch im eigenen Rechenzentrum laufen lassen kannst."
   }
  ]
 }

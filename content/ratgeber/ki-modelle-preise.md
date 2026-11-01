@@ -27,6 +27,8 @@ Zwei Beispiele aus den Ankündigungen: Anthropic gibt an, dass Claude Sonnet 5.5
 
 Drei Dinge fallen auf. Erstens kosten die Mittelklasse-Modelle von OpenAI, Anthropic und Google fast exakt dasselbe, der Wettbewerb läuft über Leistung und Token-Verbrauch. Zweitens liegt Mistral mit Large 4, einem Modell aus Europa mit offenen Gewichten, pro Token deutlich unter der Mittelklasse. Mit der Freigabe der Gewichte am 29. Oktober hat Mistral auch die API-Preise gesenkt. Drittens sind die Kleinmodelle so billig geworden, dass bei vielen Aufgaben die Entwicklungszeit teurer ist als der Betrieb.
 
+Nachtrag vom 1. November: Google hat am 28. Oktober Gemini 4 Carbon vorgestellt, den Nachfolger von Argon. Laut Google startet es zum selben Einführungspreis von 2 und 10 Dollar und kostet danach 4 und 20 Dollar, ein Enddatum für die Einführungsphase nennt Google nicht. In der Tabelle fehlt es, weil es vorerst nur ausgewählte Teams aus der Cyberabwehr nutzen dürfen und es auf der Preisseite der Gemini API noch nicht steht.
+
 ## Rechenbeispiel: 2.000 Produkttexte
 
 Angenommen, ein Shop lässt 2.000 Produktbeschreibungen schreiben. Pro Text schickt er rund 600 Token Eingabe, also Datenblatt, Stilvorgaben und ein Beispiel, und bekommt rund 400 Token Ausgabe zurück. Das sind zusammen 1,2 Millionen Eingabe-Token und 0,8 Millionen Ausgabe-Token. Die Werte sind eine Annahme für die Rechnung, keine Messung, und Denk-Token sind nicht eingerechnet.

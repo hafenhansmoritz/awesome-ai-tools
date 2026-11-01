@@ -7,7 +7,7 @@
 Gebaut für den deutschsprachigen Raum, auseinandergeschraubt, geputzt und nach Aufgaben sortiert:
 
 - **Ein Satz pro Tool.** Was es kann, wofür es taugt. Keine Werbetexte, die Beschreibungen bleiben sachlich. Gewitzelt wird drumherum.
-- **Link-Check (Stand: 31.10.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
+- **Link-Check (Stand: 01.11.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
 - **Was „geprüft“ heißt.** Ein Skript fragt jeden Link ab, Bot-Schutz zählt als erreichbar. Jede Beschreibung ist von Hand geschrieben. Ein Praxistest jedes einzelnen Tools ist das nicht, und das sagen wir auch so.
 - **Namen auf Stand.** Bing Chat heißt Copilot, Metaphor heißt Exa, Le Chat heißt Vibe. Eingestellte Dienste fliegen raus, aktuelle Standard-Tools sind ergänzt.
 - **DACH-Fokus.** Eigene Abschnitte für Übersetzung, SEO und Automatisierung. Anbieter mit Sitz in der EU tragen ein 🇪🇺. Das ist ein Hinweis auf den Firmensitz, keine Datenschutz-Prüfung. Für DSGVO zählen AVV, Serverstandort und Einstellungen.
@@ -103,7 +103,7 @@ Zehn Werkzeuge, die bei uns nie in der Schublade verschwinden. Ein Tool pro typi
 - [Scaleway](https://www.scaleway.com) - 🇪🇺 Französische Cloud mit GPU-Servern und Inferenz für offene Modelle.
 - [STACKIT](https://www.stackit.de) - 🇪🇺 Souveräne Cloud der Schwarz-Gruppe aus Deutschland mit KI-Modell-Hosting.
 - [Mistral Large 4](https://mistral.ai/news/mistral-large-4/) - 🇪🇺 Großes multimodales Modell von Mistral mit 1 Billion Parametern, davon 52 Milliarden aktiv, in Europa trainiert. Die Gewichte liegen seit dem 29. Oktober 2026 offen bei Hugging Face; wer das Modell als Dienst weiterverkauft, braucht eine eigene Lizenz.
-- [LFM3 von Liquid AI](https://www.liquid.ai/blog/lfm3) - Familie offener Kleinmodelle für Text, Bild, Audio und Entscheidungen im 2-Milliarden-Bereich; das Textmodell braucht bei 4 Bit rund 1 GB Speicher.
+- [LFM3 von Liquid AI](https://www.liquid.ai/blog/lfm3) - Familie offener Kleinmodelle für Text, Bild, Audio und Entscheidungen im 2-Milliarden-Bereich; das Textmodell braucht bei 4 Bit rund 1 GB Speicher. Ab 10 Millionen Dollar Jahresumsatz deckt die Lizenz kommerzielle Nutzung nicht mehr ab.
 - [Nemotron 3.5 Bolt](https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/) - Offenes Kleinmodell von NVIDIA für lokale Sprach- und Geräteassistenten mit Werkzeugaufrufen. Belegt in NVIDIAs Test auf einer RTX 5070 je nach Gesprächslänge 3,5 bis 4,3 GB Grafikspeicher, läuft auch über Ollama.
 - [Giotto Alto](https://www.giotto.ai/) - Reasoning-Modell aus Lausanne, kostenlos im europäisch gehosteten Chat, dazu dedizierte Cloud in der Schweiz oder EU und Betrieb im eigenen Rechenzentrum.
 
@@ -145,6 +145,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [privateGPT](https://github.com/imartinez/privateGPT) - Fragen an eigene Dokumente stellen, komplett ohne Internetverbindung. `OSS`
 - [quivr](https://github.com/StanGirard/quivr) - "Zweites Gehirn": Dateien ablegen und per LLM mit ihnen chatten. `OSS`
 - [gpt4all](https://github.com/nomic-ai/gpt4all) - Lokaler Chat-Client für offene Modelle, läuft auch ohne GPU. `OSS`
+- [Unlimited OCR 2](https://huggingface.co/baidu/Unlimited-OCR-2) - Offenes OCR-Modell von Baidu mit 3 Milliarden Parametern unter MIT-Lizenz, das lange, mehrseitige Dokumente in einem Durchgang ausliest. Für Belege, Verträge und Handbücher auf eigener Hardware; die Modellkarte nennt es nur „mehrsprachig“, deutsche Dokumente also vorher testen. `OSS`
 
 ### Schreibassistenten
 
@@ -201,6 +202,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Chatbot UI](https://github.com/mckaywrigley/chatbot-ui) - Open-Source-Oberfläche für ChatGPT und andere Modelle. `OSS`
 - [Forefront](https://www.forefront.ai/) - Alternative Oberfläche für Chat-Modelle.
 - [AI Character for GPT](https://chromewebstore.google.com/detail/ai-character-for-gpt/daoeioifimkjegafelcaljboknjkkohh) - Rollen für ChatGPT und andere Bots per Klick, für bessere Antworten.
+- [Opera WebAI](https://blogs.opera.com/news/2026/10/webai-local-ai-for-the-web-now-in-opera/) - Schnittstelle in Opera One, über die Websites und Erweiterungen ein KI-Modell direkt im Browser nutzen, ohne Server und API-Schlüssel. Für Entwickler von Erweiterungen und Web-Apps; bisher eine frühe Vorschau für Windows und Macs mit Apple-Chip, die du in den Einstellungen selbst einschaltest.
 
 ### Produktivität
 
@@ -299,6 +301,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Hyperbrowser](https://hyperbrowser.ai/) - Browser-Infrastruktur für KI-Agenten mit Proxys und Session-Aufzeichnung.
 - [Notte](https://github.com/nottelabs/notte) - Framework für Agenten, die den Browser bedienen. `OSS`
 - [goose](https://github.com/aaif-goose/goose) - Offener KI-Agent als Desktop-App und Kommandozeile, bindet Erweiterungen per MCP an und liegt heute bei der Agentic AI Foundation der Linux Foundation. `OSS`
+- [Mage-VL-Cowork](https://huggingface.co/microsoft/Mage-VL-Cowork) - Offenes Modell von Microsoft mit 4 Milliarden Parametern, das einen Rechner bedient: Es klickt und tippt in Programmen oder führt Befehle im Terminal aus und wählt bei jedem Schritt selbst den Weg. Für Entwickler, die Desktop-Agenten selbst hosten wollen; es gibt nur Gewichte und einen technischen Bericht, keine fertige App, und die Gewichte belegen rund 9,5 GB. `OSS`
 
 
 ## Entwickler-Tools und LLMOps
@@ -496,6 +499,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [EKHOS AI](https://ekhos.ai) - Transkription mit Korrekturfunktionen und Echtzeit-Aufnahme.
 - [Whisper API](https://whisper-api.com) - Transkriptions-API auf Basis von OpenAI Whisper, 5 kostenlose Transkriptionen pro Tag.
 - [Voxtral 3](https://mistral.ai/news/voxtral-3/) - 🇪🇺 Spracherkennung und Sprachausgabe von Mistral, mit Deutsch, Sprechererkennung und einem SDK für Sprachagenten.
+- [Nemotron 3.5 Transcribe](https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/) - Offenes Transkriptionsmodell von NVIDIA für Aufnahmen bis zu einer Stunde in 40 Sprachen, auf Deutsch auch mit Sprecherzuordnung und Übersetzung ins Englische. Gedacht für Meeting- und Telefonmitschnitte auf eigenen Servern; live mitschreiben kann es nicht, und als Referenz-Hardware nennt NVIDIA eine H100 mit 80 GB.
 - [CreateEasily](https://createeasily.com/) - Kostenlose Transkription von Audio- und Videodateien bis 2 GB.
 - [Transgate](https://transgate.ai/) - Sprache-zu-Text mit KI.
 
