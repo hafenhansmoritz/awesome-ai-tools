@@ -497,9 +497,11 @@ def render_stacks(tools_map, stacks=None):
                        f'<span>{html.escape(why)}</span></div></li>')
         pg = ""
         if st.get("promptgott"):
-            pg = f'<p class="pgline">💡 PROMPTGOTT dazu: <a href="{html.escape(retag(check_url(st["promptgott"][1], "data/stacks.json") + "?" + utm("kiste-" + st["id"])))}" target="_blank" rel="noopener">{html.escape(st["promptgott"][0])}</a></p>'
-        if st.get("note"):
-            pg = f'<p class="pgline">{html.escape(st["note"])}</p>'
+            pg_url = check_url(st["promptgott"][1], "data/stacks.json")
+            pg_url += ("&" if "?" in pg_url else "?") + utm("kiste-" + st["id"])
+            pg = f'<p class="pgline">💡 PROMPTGOTT dazu: <a href="{html.escape(retag(pg_url))}" target="_blank" rel="noopener">{html.escape(st["promptgott"][0])}</a></p>'
+        if st.get("note"):  # Notiz ergänzt den PROMPTGOTT-Link, statt ihn zu ersetzen
+            pg += f'<p class="pgline">{html.escape(st["note"])}</p>'
         out.append(f'<article class="stack reveal" id="kiste-{st["id"]}"><div class="head">{icon(st["icon"])}<div><h3>{html.escape(st["title"])}</h3>'
                    f'<p class="for">{html.escape(st["for"])}</p></div></div><ol>{"".join(lis)}</ol>{pg}</article>')
     return "".join(out)
@@ -971,6 +973,12 @@ def llm_prompt(where, page, campaign, task, links):
         raise SystemExit(f"Werkstatt-Prompt {page}: unsichtbare Zeichen")
     LLM_STATS.append((page, campaign, len(full), len(worst), prose))
     return text
+
+
+def llm_ok(snippet):
+    """Redaktionelle Bausteine (FAQ-Fragen, Aufgaben) nur übernehmen, wenn sie den Wächter nicht auslösen.
+    So bricht eine harmlose Frage wie „Wo speichern die Tools meine Daten?“ nicht den Build ab; der fertige Prompt wird trotzdem streng geprüft."""
+    return not LLM_FORBIDDEN.search(snippet) and not LLM_INVISIBLE.search(snippet)
 
 
 LLM_STATS = []  # (Seite, Seitentyp, Zeichen, URL-Länge, Zeichen ohne Links) für den Build-Bericht
@@ -1499,8 +1507,10 @@ def build_category_pages(list_secs, tools_map):
         ld_js = json.dumps(ld, ensure_ascii=False).replace("</", "<\\/")
         first = sec["subs"][0]["id"] if sec["subs"] else sec["id"]
         rel = (f"Ratgeber „{rg_rel[0]['label']}“", rg_rel[0]["page"]) if rg_rel else (f"Einsatzgebiet „{ei_rel[0]['h1']}“", ei_rel[0]["page"])
+        faq_q = next((q for q, _ in faq if llm_ok(q)), "")
         llm = {"seite": llm_prompt(f"Schublade „{h1}“", page, "schublade",
-                                   f"Hilf mir, hier das passende Werkzeug zu finden. Frag zuerst nach Einsatz, Budget und ob ein EU-Sitz zählt. Klär dabei auch: {faq[0][0]}",
+                                   "Hilf mir, hier das passende Werkzeug zu finden. Frag zuerst nach Einsatz, Budget und ob ein EU-Sitz zählt."
+                                   + (f" Klär dabei auch: {faq_q}" if faq_q else ""),
                                    [(rel[0], llm_to(rel[1])), ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(page, "stack-check")),
                                     ("PROMPTGOTT-Newsletter", llm_pg)])}
         if 'data-llm="tool"' in section_html:
@@ -1899,7 +1909,7 @@ def build_einsatz(tools_map, list_secs, sections):
         label = rollen[e["rolle"]]["label"]
         rg_e = sorted((r["rollen"].index(e["rolle"]), i, r) for i, r in enumerate(RATGEBER["artikel"]) if e["rolle"] in r["rollen"])
         rel = (f"Ratgeber „{rg_e[0][2]['label']}“", rg_e[0][2]["page"]) if rg_e else (f"Schublade „{sec_by_id[e['kategorien'][0]]['title']}“", cat_page(e["kategorien"][0]))
-        titel = [x["titel"] for x in e["aufgaben"][:3]]
+        titel = [x["titel"] for x in e["aufgaben"] if llm_ok(x["titel"])][:3]
         llm = {"seite": llm_prompt(f"Einsatzgebiet „{e['h1']}“", e["page"], "einsatz",
                                    "Hilf mir zu entscheiden, welche Aufgabe ich zuerst an KI abgebe: "
                                    + "; ".join(titel) + ". Frag nach meinem Alltag, bevor du Werkzeuge empfiehlst.",
@@ -2138,9 +2148,10 @@ def build_ratgeber(tools_map):
         others = "".join(f'<a class="einsatz-mini" href="{o["page"]}">{icon(o["icon"])}{html.escape(o["label"])}</a>' for o in ranked) \
             + f'<a class="einsatz-mini" href="{RATGEBER_PAGE}">{icon("layers")}Alle Ratgeber</a>'
         crumb_html, crumb_ld = crumbs(("Ratgeber", RATGEBER_PAGE), (a["label"], a["page"]))
+        rq = [q for q, _ in a["faq"] if llm_ok(q)][:2]
         llm = {"seite": llm_prompt(f"Ratgeber „{a['label']}“", a["page"], "ratgeber",
-                                   "Geh das Thema mit mir durch, frag zuerst, wo ich stehe. Klär vor allem: "
-                                   + " ".join(q for q, _ in a["faq"][:2]),
+                                   "Geh das Thema mit mir durch, frag zuerst, wo ich stehe."
+                                   + (" Klär vor allem: " + " ".join(rq) if rq else ""),
                                    [(f"Ratgeber „{ranked[0]['label']}“", llm_to(ranked[0]["page"])),
                                     ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(a["page"], "stack-check")),
                                     ("PROMPTGOTT-Newsletter", llm_pg)])}
@@ -2471,10 +2482,13 @@ svg.w{{position:absolute;right:-60px;bottom:-80px;width:520px;height:520px;fill:
     (DOCS / "og.html").unlink(missing_ok=True)
     # og.png aus der Vorlage rendern, damit Social-Vorschau und Seite dieselben Zahlen zeigen
     if shutil.which("node"):
-        env = dict(os.environ, NODE_PATH=os.environ.get("NODE_PATH") or subprocess.run(["npm", "root", "-g"], capture_output=True, text=True).stdout.strip())
-        r = subprocess.run(["node", str(ROOT / "scripts" / "render_og.js"), str(OG_SRC)], env=env, capture_output=True, text=True)
+        node_path = os.environ.get("NODE_PATH") or ""
+        if not node_path and shutil.which("npm"):
+            node_path = subprocess.run(["npm", "root", "-g"], capture_output=True, text=True).stdout.strip()
+        r = subprocess.run(["node", str(ROOT / "scripts" / "render_og.js"), str(OG_SRC)], env=dict(os.environ, NODE_PATH=node_path), capture_output=True, text=True)
         if r.returncode:
-            print("WARNUNG: og.png nicht aktualisiert (" + r.stderr.strip().splitlines()[-1] + "). Manuell: node scripts/render_og.js")
+            last = (r.stderr.strip() or r.stdout.strip() or f"Exit-Code {r.returncode}").splitlines()[-1]
+            print("WARNUNG: og.png nicht aktualisiert (" + last + "). Manuell: node scripts/render_og.js")
     else:
         print("WARNUNG: node fehlt, og.png nicht aktualisiert. Manuell: node scripts/render_og.js")
 

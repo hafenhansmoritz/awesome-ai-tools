@@ -99,7 +99,7 @@
         while (hd && !hd.classList.contains("sub") && !hd.classList.contains("cat-head")) hd = hd.previousElementSibling;
         if (hd && hd.classList.contains("sub")) hd.classList.toggle("hidden", filtering && !has);
       });
-      $$("aside, p, .table, ul.plain, ol.plain, .cat-art", sec).forEach(function (el) { el.classList.toggle("hidden", filtering); });
+      $$("aside, p:not(.cat-title), .table, ul.plain, ol.plain, .cat-art", sec).forEach(function (el) { el.classList.toggle("hidden", filtering); });
     });
     var shown = uniq(items.filter(function (li) { return !li.classList.contains("hidden"); }));
     if (lcount) lcount.textContent = filtering ? shown + " von " + uniq(items) + " Tools" : uniq(items) + " Tools";
@@ -638,7 +638,7 @@
       sync();
     }
     function close() {
-      if (!dlg || !dlg.open) return;
+      if (!dlg || !(dlg.open || dlg.hasAttribute("open"))) return; // ohne natives <dialog> gibt es kein .open
       if (dlg.close) dlg.close(); else { dlg.removeAttribute("open"); after(); }
     }
     function after() { $(".llm-status", dlg).textContent = ""; if (opener) opener.focus(); }
@@ -672,7 +672,7 @@
       dlg.addEventListener("close", after);
       // Fokusfalle: Tab und Umschalt+Tab bleiben im Dialog; Escape schließt (auch ohne natives <dialog>)
       dlg.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") { e.preventDefault(); close(); return; }
+        if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); close(); return; } // sonst schließen Suche, Merkliste und Menü mit
         if (e.key !== "Tab") return;
         var f = focusables(); if (!f.length) return;
         var first = f[0], last = f[f.length - 1];
@@ -977,8 +977,8 @@
   // 12 Danke-Seite: passende Fassung je Formular (?typ=check|finder) und einmal Funken zum Empfang
   var dk = $(".page-danke");
   if (dk) {
-    var typ = new URLSearchParams(location.search).get("typ");
-    if (typ && $("[data-typ='" + typ.replace(/[^a-z]/g, "") + "']", dk)) $$("[data-typ]", dk).forEach(function (el) { el.hidden = el.dataset.typ !== typ; });
+    var typ = (new URLSearchParams(location.search).get("typ") || "").replace(/[^a-z]/g, "");
+    if (typ && $("[data-typ='" + typ + "']", dk)) $$("[data-typ]", dk).forEach(function (el) { el.hidden = el.dataset.typ !== typ; });
     setTimeout(function () { sparksAt($(".page-danke .hans"), 36); }, 400);
   }
 
