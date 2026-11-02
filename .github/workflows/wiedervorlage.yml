@@ -1,0 +1,46 @@
+name: Monatliche Wiedervorlage
+
+on:
+  schedule:
+    - cron: "23 6 1 * *"   # am 1. jedes Monats, 06:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  wiedervorlage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Per Commit-SHA gepinnt wie in linkcheck.yml; Token bleibt nicht in .git/config liegen.
+      # Kein setup-python: due.py braucht nur die Standardbibliothek.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - name: Fällige Punkte suchen
+        id: due
+        run: |
+          # Überfälliges und alles mit Stichtag in diesem Monat; ohne fällige Punkte bleibt due.md leer
+          python3 scripts/due.py --monat --markdown > due.md
+          cat due.md
+          if [ -s due.md ]; then
+            echo "faellig=1" >> "$GITHUB_OUTPUT"
+            echo "titel=$(python3 scripts/due.py --titel)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Issue anlegen oder ergänzen
+        if: steps.due.outputs.faellig == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          TITEL: ${{ steps.due.outputs.titel }}
+        run: |
+          # Steht noch ein offenes Wiedervorlage-Issue, bekommt es einen Kommentar statt eines neuen Issues
+          open_issue=$(gh issue list --state open --search 'in:title "Wiedervorlage"' --json number,title \
+            --jq '[.[] | select(.title | startswith("Wiedervorlage"))][0].number // empty')
+          if [ -n "$open_issue" ]; then
+            gh issue comment "$open_issue" --body-file due.md
+          else
+            gh issue create --title "$TITEL" --body-file due.md
+          fi

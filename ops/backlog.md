@@ -51,6 +51,8 @@ Status: `[ ]` offen, `[~]` in Arbeit, `[x]` erledigt (mit Datum und PR). Wer: **
 
 Zeitgebundene Aussagen auf der Seite. Am Stichtag die Primärquelle prüfen, alle genannten Stellen gemeinsam anpassen, Zeile abhaken.
 
+Automatisch: `python3 scripts/due.py` zeigt fällige offene Zeilen (`--tage N` für die nächsten N Tage). Der Workflow `.github/workflows/wiedervorlage.yml` läuft am 1. jedes Monats und legt ein Issue „Wiedervorlage <Monat>“ an (oder kommentiert ein noch offenes), wenn etwas bis Monatsende fällig ist. Format der Zeilen beibehalten: `| [ ] TT.MM.JJJJ | Wo | Was prüfen |`.
+
 | Stichtag | Wo | Was prüfen |
 |---|---|---|
 | [x] 01.11.2026 | `data/trends.json` (browser, offene-standards), `content/ratgeber/mcp-agent-skills.md` (Tabelle Keynote/Pages/Numbers) | Firefox Smart Window in Deutschland gestartet? Apple-MCP in Keynote, Pages, Numbers ab November verfügbar? (Mozilla-Blog, Apple Newsroom). **Erledigt 01.11.2026:** Mozilla-Blog (Update 16.09.) nennt nur Nordamerika und Frankreich, kein Deutschland-Termin; Apple-Update weiter „im November“ angekündigt. Unbelegte Abo-Voraussetzung für MCP gestrichen, Stand in Trend und Ratgeber datiert. Neue Wiedervorlage 01.12.2026. |
