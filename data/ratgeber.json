@@ -1,5 +1,5 @@
 {
- "_hinweis": "Long-Form-Ratgeber. Text in content/ratgeber/<id>.md (## für Kapitel, > für Kästen, Tabellen und Listen). Tools, Glossarbegriffe, Rollen und Quellen prüft der Build.",
+ "_hinweis": "Long-Form-Ratgeber. Text in content/ratgeber/<id>.md (## für Kapitel, > für Kästen, Tabellen und Listen). Tools, Glossarbegriffe, Rollen und Quellen prüft der Build. Ein Stand-Datum gibt es hier nicht: Stand, datePublished und dateModified kommen aus der Git-Historie von Text und Eintrag (scripts/source_dates.py).",
  "titel": "Ratgeber aus der Werkstatt",
  "artikel": [
   {
@@ -12,7 +12,6 @@
    "meta": "Wann Chatbots, KI-Bilder, Deepfakes und KI-Texte nach Artikel 50 AI Act ein Label brauchen, was Anbieter und Betreiber tun müssen, mit Checkliste.",
    "teaser": "Chatbot, KI-Model, geschöntes Produktfoto, automatischer Blogtext: Wo seit August ein Label nötig ist und wo nicht, mit Beispielen und Checkliste.",
    "hero": "Seit dem 2. August 2026 gelten die Transparenzregeln des AI Act. Hier steht, welche KI-Inhalte ein Label brauchen, welche nicht, und wie du das in einem Nachmittag organisierst.",
-   "stand": "2026-10-28",
    "rollen": [
     "marketing",
     "kreativ",
@@ -108,7 +107,6 @@
    "meta": "API-Preise von OpenAI, Anthropic, Google und Mistral im Vergleich, ein Rechenbeispiel mit 2.000 Produkttexten und wann sich ein lokales Modell rechnet.",
    "teaser": "Zehn Modelle, eine Preistabelle, ein Rechenbeispiel mit 2.000 Produkttexten und die Frage, wann ein lokales Modell die Rechnung schlägt.",
    "hero": "Zwischen dem günstigsten und dem teuersten Modell liegt Faktor hundert. Hier steht, welches Modell für welche Arbeit reicht und wie du in einer Stunde selbst testest.",
-   "stand": "2026-11-01",
    "rollen": [
     "entwicklung",
     "service",
@@ -242,7 +240,6 @@
    "meta": "Was Google und OpenAI offiziell zu KI-Suchen sagen: Voraussetzungen für AI Overviews, der Schalter in der Search Console, ChatGPT-Crawler, Checkliste.",
    "teaser": "Kein Geheimtrick, aber ein neuer Schalter in der Search Console, drei ChatGPT-Crawler und Produktdaten, die plötzlich in der Antwort stehen.",
    "hero": "KI-Suchen verlinken Quellen und vergleichen Produkte direkt in der Antwort. Hier steht, was Google und OpenAI dafür offiziell verlangen, was du steuern kannst und wie du deine Sichtbarkeit misst.",
-   "stand": "2026-11-01",
    "rollen": [
     "marketing",
     "shop"
@@ -377,7 +374,6 @@
    "meta": "Wie du KI-Agenten sicher arbeiten lässt: Aufgabe, Rechte, Freigaben, Protokolle und Notbremse, dazu Prompt Injection und ein Fahrplan in vier Wochen.",
    "teaser": "Fünf Schalter von der Aufgabe bis zur Notbremse, die Lehren aus einem ernsten Zwischenfall und ein Fahrplan für die ersten vier Wochen.",
    "hero": "Agenten erledigen ganze Aufgaben selbstständig. Hier steht, wie du ihnen Arbeit gibst, ohne ihnen die Schlüssel zum ganzen Haus zu überlassen.",
-   "stand": "2026-11-01",
    "rollen": [
     "entwicklung",
     "buero",
@@ -491,7 +487,6 @@
    "meta": "Was die Datenschutzkonferenz beim KI-Einsatz erwartet, wo bei OpenAI, Anthropic, Google, Mistral und DeepL der Trainingsschalter sitzt, plus zehn Fragen.",
    "teaser": "Business-Tarif oder Privat-Abo, Trainingsschalter, Datenstandort und Vertrag: was die Aufsicht erwartet und welche zehn Fragen du jedem Anbieter stellst.",
    "hero": "Dasselbe Modell, zwei Tarife, zwei völlig verschiedene Antworten auf die Frage, was mit deinen Daten passiert. Hier steht, worauf es ankommt.",
-   "stand": "2026-10-29",
    "rollen": [
     "buero",
     "service"
@@ -624,7 +619,6 @@
    "meta": "Wie Shops mit DeepL oder Sprachmodellen mehrsprachig werden: was Google zu Übersetzungen sagt, URLs und hreflang, Glossar, Prüfstufen und Kosten.",
    "teaser": "Was Google zu maschinell übersetzten Seiten sagt, wie hreflang richtig sitzt, warum das Glossar das halbe Projekt ist und was eine Sprache wirklich kostet.",
    "hero": "Die Maschine übersetzt in Minuten. Ob daraus Kunden in Amsterdam, Stockholm oder Mailand werden, entscheiden Glossar, Prüfung und Technik.",
-   "stand": "2026-10-28",
    "rollen": [
     "shop",
     "marketing"
@@ -721,7 +715,6 @@
    "meta": "Sprachmodelle auf eigenen Rechnern: Speicher und Quantisierung, drei Hardware-Stufen, Ollama, LM Studio und Open WebUI im Vergleich, Lizenzen und Pilot.",
    "teaser": "Wie viel Speicher ein Modell braucht, welches Werkzeug für wen passt, wo die Lizenzen zwicken und wie ein Pilot in drei Wochen läuft.",
    "hero": "Keine Token-Rechnung, kein Datenabfluss, kein Internet nötig. Dafür gehört dir der Server, und mit ihm die Verantwortung.",
-   "stand": "2026-10-29",
    "rollen": [
     "entwicklung",
     "buero",
@@ -869,7 +862,6 @@
    "meta": "Was Sprachagenten am Telefon kosten, wie der KI-Hinweis nach AI Act klingen sollte, wann eine Aufzeichnung strafbar ist und wie du in vier Wochen startest.",
    "teaser": "Preise pro Minute, der KI-Hinweis nach AI Act, die Regeln zur Aufzeichnung und warum die Übergabe an Menschen der wichtigste Baustein ist.",
    "hero": "Der Agent geht um drei Uhr nachts ans Telefon. Damit er das darf, muss er drei Dinge können: sich ehrlich vorstellen, nicht heimlich mitschneiden und rechtzeitig einen Menschen holen.",
-   "stand": "2026-10-29",
    "rollen": [
     "service",
     "buero"
@@ -997,7 +989,6 @@
    "meta": "Was MCP und Agent Skills sind, welche Anschlüsse Shopify, Shopware, Stripe und PayPal liefern, welche Sicherheitsregeln gelten und wie du startest.",
    "teaser": "Der Stecker für KI-Agenten und das Handbuch dazu: welche Programme MCP sprechen, welche Shop-Anschlüsse es gibt und wie du sie sicher einsetzt.",
    "hero": "Ein Standard, damit jeder KI-Assistent an deinen Shop kommt. Und eine Anleitung, damit er dort nicht macht, was er will.",
-   "stand": "2026-11-01",
    "rollen": [
     "entwicklung",
     "shop"
@@ -1177,7 +1168,6 @@
    "meta": "Was Merchant Center, Amazon und eBay bei KI-Produktbildern erlauben, welche Metadaten bleiben müssen, was AI Act und UWG sagen und was Werkzeuge kosten.",
    "teaser": "Welche Metadaten Google verlangt, wann ein KI-Bild ein Deepfake ist, eine Ampel für den Bild-Workflow und was ein Bild wirklich kostet.",
    "hero": "Ein neuer Hintergrund ist schnell gemacht. Ob das Bild danach noch ehrlich ist und durch den Feed kommt, entscheidet das Kleingedruckte.",
-   "stand": "2026-10-28",
    "rollen": [
     "shop",
     "kreativ",
@@ -1330,7 +1320,6 @@
    "meta": "GPTBot, ClaudeBot, Google-Extended und Co.: welche KI-Crawler wofür abrufen, drei Vorlagen für die robots.txt, die Fristen bei Bing und eine Checkliste.",
    "teaser": "Training, Suche, Abruf auf Zuruf: drei Zwecke, ein gutes Dutzend Kennungen und drei Vorlagen zum Anpassen.",
    "hero": "OpenAI, Google, Anthropic, Microsoft, Perplexity, Apple und Common Crawl trennen Training und Suche unterschiedlich. Hier steht, welche Kennung was regelt, wie die robots.txt für dein Ziel aussieht und was sie nicht kann.",
-   "stand": "2026-11-02",
    "rollen": [
     "marketing",
     "shop",
