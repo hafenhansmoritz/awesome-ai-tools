@@ -1,126 +1,130 @@
 {
  "index.html": {
-  "date": "2026-11-01",
-  "hash": "d867857fdd0fe162"
+  "date": "2026-11-02",
+  "hash": "2ed99a698191bc76"
  },
  "ki-einsatz.html": {
-  "date": "2026-10-31",
-  "hash": "7b4f6ce6b8348a62"
+  "date": "2026-11-02",
+  "hash": "e1d9b41a94e8331e"
  },
  "ki-fuer-content-creator.html": {
-  "date": "2026-11-01",
-  "hash": "bb99eab5b366e696"
+  "date": "2026-11-02",
+  "hash": "a382902035454453"
  },
  "ki-fuer-entwickler.html": {
-  "date": "2026-11-01",
-  "hash": "864dfdfe7ebca038"
+  "date": "2026-11-02",
+  "hash": "a8c485182ea35a00"
  },
  "ki-fuer-online-shops.html": {
-  "date": "2026-11-01",
-  "hash": "f4db5b35ed958f16"
+  "date": "2026-11-02",
+  "hash": "d5a1a30537434b1d"
  },
  "ki-glossar.html": {
-  "date": "2026-10-31",
-  "hash": "e827b54943f026e5"
+  "date": "2026-11-02",
+  "hash": "a20d31d0c04e95f1"
  },
  "ki-im-buero.html": {
-  "date": "2026-11-01",
-  "hash": "486515cb92c6ab0a"
+  "date": "2026-11-02",
+  "hash": "89cfae3e0091c7f0"
  },
  "ki-im-kundenservice.html": {
-  "date": "2026-11-01",
-  "hash": "d1641230d6f80840"
+  "date": "2026-11-02",
+  "hash": "99eb0afaf66ed159"
  },
  "ki-im-marketing.html": {
-  "date": "2026-11-01",
-  "hash": "a58348bcf006a57a"
+  "date": "2026-11-02",
+  "hash": "13ce5ee733996c1f"
  },
  "ki-tools-audio.html": {
-  "date": "2026-11-01",
-  "hash": "0c3e45285f20cb7a"
+  "date": "2026-11-02",
+  "hash": "ffcb526e71f5f72d"
  },
  "ki-tools-automatisierung-und-ki-agenten.html": {
-  "date": "2026-11-01",
-  "hash": "39a234b5cdecde1c"
+  "date": "2026-11-02",
+  "hash": "de88cdb71f2cf25a"
  },
  "ki-tools-bilder.html": {
-  "date": "2026-11-01",
-  "hash": "028574b57e9d69e8"
+  "date": "2026-11-02",
+  "hash": "2577a6ddda565133"
  },
  "ki-tools-entwickler-tools-und-llmops.html": {
-  "date": "2026-11-01",
-  "hash": "fc1d6cc88fe4a3d1"
+  "date": "2026-11-02",
+  "hash": "e2bb36dd8f616565"
  },
  "ki-tools-ki-telefonagenten.html": {
-  "date": "2026-11-01",
-  "hash": "8308714dac27606c"
+  "date": "2026-11-02",
+  "hash": "369ba7a9576a7af9"
  },
  "ki-tools-marketing-und-seo.html": {
-  "date": "2026-11-01",
-  "hash": "e2722f0d36dc0900"
+  "date": "2026-11-02",
+  "hash": "1171c91b2436faf1"
  },
  "ki-tools-programmieren-mit-ki.html": {
-  "date": "2026-11-01",
-  "hash": "c485fa7f3d9a27fc"
+  "date": "2026-11-02",
+  "hash": "46776bdb1acb89c5"
  },
  "ki-tools-text-und-sprache.html": {
-  "date": "2026-11-01",
-  "hash": "56e0fd9eb5ddcf53"
+  "date": "2026-11-02",
+  "hash": "4615c0f85a2eca51"
  },
  "ki-tools-video.html": {
-  "date": "2026-11-01",
-  "hash": "ef6088af1b91181d"
+  "date": "2026-11-02",
+  "hash": "ac16142d5f4c0242"
  },
  "ki-tools-weitere-ki-tools.html": {
-  "date": "2026-11-01",
-  "hash": "642966efb0983f8e"
+  "date": "2026-11-02",
+  "hash": "bd52ab035113fa2e"
  },
  "ki-trends.html": {
-  "date": "2026-11-01",
-  "hash": "7e66bd67a1ad0098"
+  "date": "2026-11-02",
+  "hash": "015980d58521c0f7"
  },
  "ratgeber-datenschutz-ki-tools.html": {
-  "date": "2026-11-01",
-  "hash": "0364ce463dd9d796"
+  "date": "2026-11-02",
+  "hash": "a56279f31645055b"
  },
  "ratgeber-ki-agenten-sicher.html": {
-  "date": "2026-11-01",
-  "hash": "3ec65e31cc058249"
+  "date": "2026-11-02",
+  "hash": "cd97538cd6a883de"
+ },
+ "ratgeber-ki-crawler-robots-txt.html": {
+  "date": "2026-11-02",
+  "hash": "5abe57a463058e17"
  },
  "ratgeber-ki-inhalte-kennzeichnen.html": {
-  "date": "2026-11-01",
-  "hash": "8328e71f12c446ec"
+  "date": "2026-11-02",
+  "hash": "b1a3318c7ee6bd80"
  },
  "ratgeber-ki-modelle-preise.html": {
-  "date": "2026-11-01",
-  "hash": "c847f2a88fa528e0"
+  "date": "2026-11-02",
+  "hash": "10af54aca14db0fe"
  },
  "ratgeber-ki-produktbilder-shops.html": {
-  "date": "2026-11-01",
-  "hash": "6103a62090995055"
+  "date": "2026-11-02",
+  "hash": "bcfbf5fd17ee6a10"
  },
  "ratgeber-ki-telefonagenten.html": {
-  "date": "2026-11-01",
-  "hash": "34eaf7bcd9cf2c91"
+  "date": "2026-11-02",
+  "hash": "43aedab4f017f675"
  },
  "ratgeber-ki-uebersetzung-shops.html": {
-  "date": "2026-11-01",
-  "hash": "89967eda7c7c4852"
+  "date": "2026-11-02",
+  "hash": "1a3e4c863e8dd773"
  },
  "ratgeber-lokale-ki-unternehmen.html": {
-  "date": "2026-11-01",
-  "hash": "44a855a60aa00673"
+  "date": "2026-11-02",
+  "hash": "617cdbabe22a495b"
  },
  "ratgeber-mcp-agent-skills.html": {
-  "date": "2026-11-01",
-  "hash": "24df0846fd6305b0"
+  "date": "2026-11-02",
+  "hash": "c39e4303c06d2bbd"
  },
  "ratgeber-sichtbar-in-ki-antworten.html": {
-  "date": "2026-11-01",
-  "hash": "056153b8aa8ed577"
+  "date": "2026-11-02",
+  "hash": "fe2793ae0359c7ee"
  },
  "ratgeber.html": {
-  "date": "2026-11-01",
-  "hash": "6c87c75e51fafa32"
+  "date": "2026-11-02",
+  "hash": "6e4423d5ff81e9ba"
  }
 }

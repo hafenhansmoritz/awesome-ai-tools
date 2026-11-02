@@ -1,6 +1,6 @@
 {
- "gebaut": "01.11.2026",
- "link_check": "01.11.2026",
+ "gebaut": "02.11.2026",
+ "link_check": "02.11.2026",
  "quelle": "https://github.com/jmp-collab/awesome-ai-tools",
  "tools": [
   {
@@ -12,6 +12,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chatgpt",
    "icon": "img/fav/chatgpt.com.png"
   },
@@ -24,6 +25,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-claude",
    "icon": "img/fav/claude.ai.png"
   },
@@ -36,6 +38,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-vibe-von-mistral",
    "icon": "img/fav/chat.mistral.ai.png"
   },
@@ -48,6 +51,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-deepl-übersetzer",
    "icon": "img/fav/www.deepl.com.png"
   },
@@ -60,6 +64,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-perplexity",
    "icon": "img/fav/www.perplexity.ai.png"
   },
@@ -72,6 +77,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-notebooklm",
    "icon": "img/fav/notebooklm.google.com.png"
   },
@@ -84,6 +90,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-n8n",
    "icon": "img/fav/n8n.io.png"
   },
@@ -96,6 +103,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-flux-von-black-forest-labs",
    "icon": "img/fav/bfl.ai.png"
   },
@@ -108,6 +116,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-elevenlabs",
    "icon": "img/fav/elevenlabs.io.png"
   },
@@ -120,6 +129,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-cursor",
    "icon": "img/fav/cursor.com.png"
   },
@@ -132,6 +142,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-openai-api",
    "icon": "img/fav/platform.openai.com.png"
   },
@@ -144,6 +155,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-anthropic-api",
    "icon": "img/fav/docs.anthropic.com.png"
   },
@@ -156,6 +168,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-google-gemini-api",
    "icon": "img/fav/ai.google.dev.png"
   },
@@ -168,6 +181,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-mistral-ai",
    "icon": "img/fav/mistral.ai.png"
   },
@@ -180,6 +194,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-llama",
    "icon": "img/fav/www.llama.com.png"
   },
@@ -192,6 +207,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-deepseek",
    "icon": "img/fav/www.deepseek.com.png"
   },
@@ -204,6 +220,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-qwen",
    "icon": "img/fav/qwenlm.github.io.png"
   },
@@ -216,6 +233,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-hugging-face",
    "icon": "img/fav/huggingface.co.png"
   },
@@ -228,6 +246,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-aleph-alpha",
    "icon": "img/fav/aleph-alpha.com.png"
   },
@@ -240,6 +259,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-jina-ai",
    "icon": "img/fav/jina.ai.png"
   },
@@ -252,6 +272,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-nebius",
    "icon": "img/fav/nebius.com.png"
   },
@@ -264,6 +285,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-scaleway",
    "icon": "img/fav/www.scaleway.com.png"
   },
@@ -276,6 +298,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-stackit",
    "icon": "img/fav/www.stackit.de.png"
   },
@@ -288,6 +311,7 @@
    "eu": true,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-mistral-large-4",
    "icon": "img/fav/mistral.ai.png"
   },
@@ -300,6 +324,7 @@
    "eu": false,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-lfm3-von-liquid-ai",
    "icon": "img/fav/www.liquid.ai.png"
   },
@@ -312,6 +337,7 @@
    "eu": false,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-nemotron-35-bolt",
    "icon": "img/fav/research.nvidia.com.png"
   },
@@ -324,6 +350,7 @@
    "eu": false,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-giotto-alto",
    "icon": "img/fav/www.giotto.ai.png"
   },
@@ -336,6 +363,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gemini",
    "icon": "img/fav/gemini.google.com.png"
   },
@@ -348,6 +376,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-microsoft-copilot",
    "icon": "img/fav/copilot.microsoft.com.svg"
   },
@@ -360,6 +389,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-langdock",
    "icon": "img/fav/langdock.com.png"
   },
@@ -372,6 +402,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chatpdf",
    "icon": "img/fav/www.chatpdf.com.png"
   },
@@ -384,6 +415,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chatsonic",
    "icon": "img/fav/writesonic.com.png"
   },
@@ -396,6 +428,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-aicamp",
    "icon": "img/fav/aicamp.so.png"
   },
@@ -408,6 +441,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-kimi",
    "icon": "img/fav/www.kimi.com.jpg"
   },
@@ -420,6 +454,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-grok",
    "icon": "img/fav/grok.com.png"
   },
@@ -432,6 +467,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-exa",
    "icon": "img/fav/exa.ai.png"
   },
@@ -444,6 +480,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-youcom",
    "icon": "img/fav/you.com.png"
   },
@@ -456,6 +493,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-komo-ai",
    "icon": "img/fav/komo.ai.png"
   },
@@ -468,6 +506,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-telborg",
    "icon": "img/fav/telborg.com.png"
   },
@@ -480,6 +519,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-memfree",
    "icon": "img/fav/github.com.png"
   },
@@ -492,6 +532,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-refinder-ai",
    "icon": "img/fav/refinder.ai.png"
   },
@@ -504,6 +545,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-agentsetai",
    "icon": "img/fav/agentset.ai.png"
   },
@@ -516,6 +558,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-ollama",
    "icon": "img/fav/ollama.com.png"
   },
@@ -528,6 +571,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-lm-studio",
    "icon": "img/fav/lmstudio.ai.png"
   },
@@ -540,6 +584,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-open-webui",
    "icon": "img/fav/openwebui.com.png"
   },
@@ -552,6 +597,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-privategpt",
    "icon": "img/fav/github.com.png"
   },
@@ -564,6 +610,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-quivr",
    "icon": "img/fav/github.com.png"
   },
@@ -576,6 +623,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gpt4all",
    "icon": "img/fav/github.com.png"
   },
@@ -588,6 +636,7 @@
    "eu": false,
    "open_source": true,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-unlimited-ocr-2",
    "icon": "img/fav/huggingface.co.png"
   },
@@ -600,6 +649,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-deepl-write",
    "icon": "img/fav/www.deepl.com.png"
   },
@@ -612,6 +662,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-compose-ai",
    "icon": "img/fav/www.compose.ai.png"
   },
@@ -624,6 +675,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-rytr",
    "icon": "img/fav/rytr.me.png"
   },
@@ -636,6 +688,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-wordtune",
    "icon": "img/fav/www.wordtune.com.png"
   },
@@ -648,6 +701,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-hyperwrite",
    "icon": "img/fav/hyperwriteai.com.png"
   },
@@ -660,6 +714,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-moonbeam",
    "icon": "img/fav/www.gomoonbeam.com.png"
   },
@@ -672,6 +727,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-copyai",
    "icon": "img/fav/www.copy.ai.png"
   },
@@ -684,6 +740,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-anyword",
    "icon": "img/fav/anyword.com.png"
   },
@@ -696,6 +753,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-contenda",
    "icon": "img/fav/contenda.co.png"
   },
@@ -708,6 +766,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-hypotenuse-ai",
    "icon": "img/fav/www.hypotenuse.ai.png"
   },
@@ -720,6 +779,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-lavender",
    "icon": "img/fav/www.lavender.ai.png"
   },
@@ -732,6 +792,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-lex",
    "icon": "img/fav/lex.page.png"
   },
@@ -744,6 +805,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-jenni",
    "icon": "img/fav/jenni.ai.png"
   },
@@ -756,6 +818,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-laika",
    "icon": "img/fav/www.writewithlaika.com.png"
   },
@@ -768,6 +831,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-quillbot",
    "icon": "img/fav/quillbot.com.png"
   },
@@ -780,6 +844,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-postwise",
    "icon": "img/fav/postwise.ai.png"
   },
@@ -792,6 +857,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-rapidtextai",
    "icon": "img/fav/app.rapidtextai.com.png"
   },
@@ -804,6 +870,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-copysmith",
    "icon": "img/fav/copysmith.ai.png"
   },
@@ -816,6 +883,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-yomu",
    "icon": "img/fav/www.yomu.ai.png"
   },
@@ -828,6 +896,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-trollyai",
    "icon": "img/fav/trolly.ai.png"
   },
@@ -840,6 +909,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-pulsepost",
    "icon": "img/fav/pulsepost.io.png"
   },
@@ -852,6 +922,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-shy-editor",
    "icon": "img/fav/www.shyeditor.com.png"
   },
@@ -864,6 +935,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gptlocalhost",
    "icon": "img/fav/gptlocalhost.com.svg"
   },
@@ -876,6 +948,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-x-doc-ai",
    "icon": "img/fav/x-doc.ai.png"
   },
@@ -888,6 +961,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-lengoo",
    "icon": "img/fav/www.lengoo.com.png"
   },
@@ -900,6 +974,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-unbabel",
    "icon": "img/fav/www.unbabel.com.jpg"
   },
@@ -912,6 +987,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-merlin",
    "icon": "img/fav/merlin.foyer.work.png"
   },
@@ -924,6 +1000,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gist-ai",
    "icon": "img/fav/www.gistai.tech.jpg"
   },
@@ -936,6 +1013,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-webchatgpt",
    "icon": "img/fav/chrome.google.com.png"
   },
@@ -948,6 +1026,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gpt-for-sheets-and-docs",
    "icon": "img/fav/workspace.google.com.png"
   },
@@ -960,6 +1039,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-youtube-summary-with-chatgpt",
    "icon": "img/fav/chrome.google.com.png"
   },
@@ -972,6 +1052,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chatgpt-prompt-genius",
    "icon": "img/fav/chrome.google.com.png"
   },
@@ -984,6 +1065,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chatgpt-for-search-engines",
    "icon": "img/fav/chrome.google.com.png"
   },
@@ -996,6 +1078,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-sharegpt",
    "icon": "img/fav/sharegpt.com.png"
   },
@@ -1008,6 +1091,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chatgpt-writer",
    "icon": "img/fav/chatgptwriter.ai.png"
   },
@@ -1020,6 +1104,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chatgpt-for-jupyter",
    "icon": "img/fav/github.com.png"
   },
@@ -1032,6 +1117,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-editgpt",
    "icon": "img/fav/www.editgpt.app.png"
   },
@@ -1044,6 +1130,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chatbot-ui",
    "icon": "img/fav/github.com.png"
   },
@@ -1056,6 +1143,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-forefront",
    "icon": "img/fav/www.forefront.ai.png"
   },
@@ -1068,6 +1156,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-ai-character-for-gpt",
    "icon": "img/fav/chromewebstore.google.com.png"
   },
@@ -1080,6 +1169,7 @@
    "eu": false,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-opera-webai",
    "icon": "img/fav/blogs.opera.com.png"
   },
@@ -1092,6 +1182,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-notion-ai",
    "icon": "img/fav/www.notion.so.png"
   },
@@ -1104,6 +1195,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-napkin",
    "icon": "img/fav/www.napkin.ai.png"
   },
@@ -1116,6 +1208,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gamma",
    "icon": "img/fav/gamma.app.jpg"
   },
@@ -1128,6 +1221,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-mem",
    "icon": "img/fav/mem.ai.png"
   },
@@ -1140,6 +1234,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-taskade",
    "icon": "img/fav/www.taskade.com.png"
   },
@@ -1152,6 +1247,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-elephas",
    "icon": "img/fav/elephas.app.png"
   },
@@ -1164,6 +1260,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-google-sheets-formula-generator",
    "icon": "img/fav/bettersheets.co.jpg"
   },
@@ -1176,6 +1273,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-cosmos",
    "icon": "img/fav/meetcosmos.com.jpg"
   },
@@ -1188,6 +1286,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-aipdf",
    "icon": "img/fav/aipdf.ai.png"
   },
@@ -1200,6 +1299,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-summary-with-ai",
    "icon": "img/fav/www.summarywithai.com.svg"
   },
@@ -1212,6 +1312,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-emilio",
    "icon": "img/fav/getemil.io.png"
   },
@@ -1224,6 +1325,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-huntr-ai-resume-builder",
    "icon": "img/fav/huntr.co.png"
   },
@@ -1236,6 +1338,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-chat-with-pdf-by-copilotus",
    "icon": "img/fav/copilot.us.png"
   },
@@ -1248,6 +1351,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-recall",
    "icon": "img/fav/www.getrecall.ai.png"
   },
@@ -1260,6 +1364,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-talently-ai",
    "icon": "img/fav/interview.talently.ai.png"
   },
@@ -1272,6 +1377,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-ankidecks-ai",
    "icon": "img/fav/anki-decks.com.png"
   },
@@ -1284,6 +1390,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-ai-for-google-slides",
    "icon": "img/fav/www.aiforgoogleslides.com.png"
   },
@@ -1296,6 +1403,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-brainsoup",
    "icon": "img/fav/www.nurgo-software.com.png"
   },
@@ -1308,6 +1416,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-mindpal",
    "icon": "img/fav/mindpal.space.png"
   },
@@ -1320,6 +1429,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-fabric",
    "icon": "img/fav/github.com.png"
   },
@@ -1332,6 +1442,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-slideswizard",
    "icon": "img/fav/slideswizard.io.png"
   },
@@ -1344,6 +1455,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-rabbitholes-ai",
    "icon": "img/fav/www.rabbitholes.ai.png"
   },
@@ -1356,6 +1468,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-rember",
    "icon": "img/fav/www.rember.com.png"
   },
@@ -1368,6 +1481,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-qurate",
    "icon": "img/fav/qurate.appcradle.net.png"
   },
@@ -1380,6 +1494,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-firmos",
    "icon": "img/fav/www.firmos.ai.png"
   },
@@ -1392,6 +1507,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-smmry",
    "icon": "img/fav/smmry.com.png"
   },
@@ -1404,6 +1520,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-summara",
    "icon": "img/fav/summara.io.png"
   },
@@ -1416,6 +1533,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-marblism",
    "icon": "img/fav/marblism.com.png"
   },
@@ -1428,6 +1546,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-spell",
    "icon": "img/fav/spellapp.com.png"
   },
@@ -1440,6 +1559,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-kosmik",
    "icon": "img/fav/www.kosmik.app.png"
   },
@@ -1452,6 +1572,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-magic-potion",
    "icon": "img/fav/www.magicpotion.app.png"
   },
@@ -1464,6 +1585,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-minusx",
    "icon": "img/fav/minusx.ai.png"
   },
@@ -1476,6 +1598,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-excelmatic",
    "icon": "img/fav/excelmatic.ai.png"
   },
@@ -1488,6 +1611,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-langfast",
    "icon": "img/fav/langfa.st.png"
   },
@@ -1500,6 +1624,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-salesagent-chat",
    "icon": "img/fav/www.salesagent.chat.png"
   },
@@ -1512,6 +1637,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-fynk",
    "icon": "img/fav/fynk.com.png"
   },
@@ -1524,6 +1650,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-bricks",
    "icon": "img/fav/www.thebricks.com.png"
   },
@@ -1536,6 +1663,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-tldv",
    "icon": "img/fav/tldv.io.png"
   },
@@ -1548,6 +1676,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-firefliesai",
    "icon": "img/fav/fireflies.ai.png"
   },
@@ -1560,6 +1689,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-otterai",
    "icon": "img/fav/otter.ai.png"
   },
@@ -1572,6 +1702,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-meetgeek",
    "icon": "img/fav/meetgeek.ai.png"
   },
@@ -1584,6 +1715,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-cogram",
    "icon": "img/fav/www.cogram.com.png"
   },
@@ -1596,6 +1728,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-sybill",
    "icon": "img/fav/www.sybill.ai.png"
   },
@@ -1608,6 +1741,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-scribbl",
    "icon": "img/fav/www.scribbl.co.png"
   },
@@ -1620,8 +1754,22 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-teleprompter",
    "icon": "img/fav/github.com.png"
+  },
+  {
+   "name": "Bluedot",
+   "url": "https://www.bluedothq.com",
+   "beschreibung": "Schreibt Meetings in Zoom, Google Meet und Teams ohne Bot im Call mit, dazu Telefonate und Gespräche vor Ort, fasst auch auf Deutsch zusammen und schickt die Notizen etwa ins CRM oder nach Notion. Gratis sind fünf Meetings insgesamt, nicht pro Monat, und weil kein Bot sichtbar ist, kündigst du die Aufnahme selbst an.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Meeting-Assistenten",
+   "eu": false,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-text-und-sprache.html#tool-bluedot",
+   "icon": "img/fav/www.bluedothq.com.png"
   },
   {
    "name": "Elicit",
@@ -1632,6 +1780,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-elicit",
    "icon": "img/fav/elicit.com.png"
   },
@@ -1644,6 +1793,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-consensus",
    "icon": "img/fav/consensus.app.png"
   },
@@ -1656,6 +1806,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-scispace",
    "icon": "img/fav/scispace.com.png"
   },
@@ -1668,6 +1819,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-genei",
    "icon": "img/fav/www.genei.io.png"
   },
@@ -1680,6 +1832,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-explainpaper",
    "icon": "img/fav/www.explainpaper.com.png"
   },
@@ -1692,6 +1845,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-sourcely",
    "icon": "img/fav/www.sourcely.net.png"
   },
@@ -1704,6 +1858,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-mathos-ai",
    "icon": "img/fav/www.mathgptpro.com.png"
   },
@@ -1716,6 +1871,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-sitegpt",
    "icon": "img/fav/sitegpt.ai.png"
   },
@@ -1728,6 +1884,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gpthelpai",
    "icon": "img/fav/gpthelp.ai.png"
   },
@@ -1740,6 +1897,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-sitespeakai",
    "icon": "img/fav/sitespeak.ai.png"
   },
@@ -1752,6 +1910,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-dear-ai",
    "icon": "img/fav/www.dearai.online.png"
   },
@@ -1764,6 +1923,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-inline-help",
    "icon": "img/fav/inlinehelp.com.png"
   },
@@ -1776,6 +1936,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-aidbase",
    "icon": "img/fav/www.aidbase.ai.png"
   },
@@ -1788,6 +1949,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-emailtriager",
    "icon": "img/fav/www.emailtriager.com.png"
   },
@@ -1800,6 +1962,7 @@
    "eu": true,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-rasa",
    "icon": "img/fav/www.rasa.com.png"
   },
@@ -1812,6 +1975,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-tiledesk",
    "icon": "img/fav/tiledesk.com.png"
   },
@@ -1824,6 +1988,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-gali-chat",
    "icon": "img/fav/www.galichat.com.png"
   },
@@ -1836,8 +2001,22 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-text-und-sprache.html#tool-hexabot",
    "icon": "img/fav/hexabot.ai.png"
+  },
+  {
+   "name": "Tidio",
+   "url": "https://www.tidio.com",
+   "beschreibung": "Live-Chat und Helpdesk für Shops mit dem KI-Agenten Lyro, der aus Shopdaten, FAQ und Website antwortet, den Bestellstatus nennt, Produkte empfiehlt und unsichere Fälle ans Team gibt. Läuft unter anderem mit Shopify, WordPress und Wix; die Gespräche, die Lyro führt, zählen gegen ein eigenes Monatskontingent.",
+   "kategorie": "Text und Sprache",
+   "bereich": "Kundenservice",
+   "eu": false,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-text-und-sprache.html#tool-tidio",
+   "icon": "img/fav/www.tidio.com.png"
   },
   {
    "name": "Make",
@@ -1848,6 +2027,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-make",
    "icon": "img/fav/www.make.com.png"
   },
@@ -1860,6 +2040,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-zapier",
    "icon": "img/fav/zapier.com.png"
   },
@@ -1872,6 +2053,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-mindstudio",
    "icon": "img/fav/mindstudio.ai.png"
   },
@@ -1884,6 +2066,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-nekton-ai",
    "icon": "img/fav/nekton.ai.png"
   },
@@ -1896,6 +2079,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-ai-flow",
    "icon": "img/fav/ai-flow.net.png"
   },
@@ -1908,6 +2092,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-shotstack-workflows",
    "icon": "img/fav/shotstack.io.png"
   },
@@ -1920,6 +2105,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-hyperbrowser",
    "icon": "img/fav/hyperbrowser.ai.png"
   },
@@ -1932,6 +2118,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-notte",
    "icon": "img/fav/github.com.png"
   },
@@ -1944,6 +2131,7 @@
    "eu": false,
    "open_source": true,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-goose",
    "icon": "img/fav/github.com.png"
   },
@@ -1956,8 +2144,22 @@
    "eu": false,
    "open_source": true,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-mage-vl-cowork",
    "icon": "img/fav/huggingface.co.png"
+  },
+  {
+   "name": "Apify",
+   "url": "https://apify.com",
+   "beschreibung": "Plattform aus Prag mit Tausenden fertigen Programmen („Actors“), die Websites auslesen und Abläufe im Web automatisieren, startbar per API oder über einen MCP-Server direkt aus KI-Agenten. Viele Actors stammen von Drittentwicklern; gratis gibt es jeden Monat Guthaben für fünf Dollar, danach pausiert das Konto statt zu kosten.",
+   "kategorie": "Automatisierung und KI-Agenten",
+   "bereich": "",
+   "eu": true,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-automatisierung-und-ki-agenten.html#tool-apify",
+   "icon": "img/fav/apify.com.png"
   },
   {
    "name": "LangChain",
@@ -1968,6 +2170,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-langchain",
    "icon": "img/fav/langchain.com.png"
   },
@@ -1980,6 +2183,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-llamaindex",
    "icon": "img/fav/www.llamaindex.ai.png"
   },
@@ -1992,6 +2196,7 @@
    "eu": true,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-haystack",
    "icon": "img/fav/haystack.deepset.ai.png"
   },
@@ -2004,6 +2209,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-cohere",
    "icon": "img/fav/cohere.com.png"
   },
@@ -2016,6 +2222,7 @@
    "eu": true,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-langfuse",
    "icon": "img/fav/langfuse.com.png"
   },
@@ -2028,6 +2235,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-keploy",
    "icon": "img/fav/keploy.io.png"
   },
@@ -2040,6 +2248,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-portia-ai",
    "icon": "img/fav/www.portialabs.ai.png"
   },
@@ -2052,6 +2261,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-lmql",
    "icon": "img/fav/lmql.ai.svg"
   },
@@ -2064,6 +2274,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-phoenix",
    "icon": "img/fav/phoenix.arize.com.png"
   },
@@ -2076,6 +2287,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-prediction-guard",
    "icon": "img/fav/www.predictionguard.com.png"
   },
@@ -2088,6 +2300,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-portkey",
    "icon": "img/fav/portkey.ai.png"
   },
@@ -2100,6 +2313,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-openai-downtime-monitor",
    "icon": "img/fav/status.portkey.ai.svg"
   },
@@ -2112,6 +2326,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-chatwithcloud",
    "icon": "img/fav/chatwithcloud.ai.jpg"
   },
@@ -2124,6 +2339,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-singlebasecloud",
    "icon": "img/fav/singlebase.cloud.png"
   },
@@ -2136,6 +2352,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-maxim-ai",
    "icon": "img/fav/www.getmaxim.ai.jpg"
   },
@@ -2148,6 +2365,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-wordware",
    "icon": "img/fav/www.wordware.ai.png"
   },
@@ -2160,6 +2378,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-aiml-api",
    "icon": "img/fav/aimlapi.com.png"
   },
@@ -2172,6 +2391,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-opik",
    "icon": "img/fav/www.comet.com.png"
   },
@@ -2184,6 +2404,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-kiln",
    "icon": "img/fav/getkiln.ai.png"
   },
@@ -2196,6 +2417,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-calmo",
    "icon": "img/fav/getcalmo.com.png"
   },
@@ -2208,6 +2430,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-cleanlab",
    "icon": "img/fav/help.cleanlab.ai.png"
   },
@@ -2220,6 +2443,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-agentic-radar",
    "icon": "img/fav/github.com.png"
   },
@@ -2232,6 +2456,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-voltagent",
    "icon": "img/fav/github.com.png"
   },
@@ -2244,6 +2469,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-tensorzero",
    "icon": "img/fav/www.tensorzero.com.png"
   },
@@ -2256,6 +2482,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-toolhive",
    "icon": "img/fav/github.com.png"
   },
@@ -2268,6 +2495,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-agentdock",
    "icon": "img/fav/agentdock.ai.png"
   },
@@ -2280,6 +2508,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-codeflash",
    "icon": "img/fav/www.codeflash.ai.png"
   },
@@ -2292,6 +2521,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-agenta",
    "icon": "img/fav/agenta.ai.png"
   },
@@ -2304,6 +2534,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-pagerly",
    "icon": "img/fav/www.pagerly.io.png"
   },
@@ -2316,6 +2547,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-harbor",
    "icon": "img/fav/github.com.png"
   },
@@ -2328,6 +2560,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-petals",
    "icon": "img/fav/github.com.png"
   },
@@ -2340,6 +2573,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-context-data",
    "icon": "img/fav/contextdata.ai.png"
   },
@@ -2352,6 +2586,7 @@
    "eu": false,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-agent-skills",
    "icon": "img/fav/agentskills.io.png"
   },
@@ -2364,6 +2599,7 @@
    "eu": true,
    "open_source": true,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-timestral",
    "icon": "img/fav/mistral.ai.png"
   },
@@ -2376,8 +2612,22 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-scale-spellbook",
    "icon": "img/fav/scale.com.png"
+  },
+  {
+   "name": "Firecrawl",
+   "url": "https://www.firecrawl.dev",
+   "beschreibung": "API, die Websites für KI-Anwendungen durchsucht, ausliest und als Markdown oder JSON zurückgibt, mit MCP-Server für Claude, Cursor und andere Agenten. Hält sich standardmäßig an die robots.txt; auch Seiten, die mit 403 oder 404 antworten, kosten einen Credit.",
+   "kategorie": "Entwickler-Tools und LLMOps",
+   "bereich": "",
+   "eu": false,
+   "open_source": true,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-entwickler-tools-und-llmops.html#tool-firecrawl",
+   "icon": "img/fav/www.firecrawl.dev.png"
   },
   {
    "name": "Claude Code",
@@ -2388,6 +2638,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-claude-code",
    "icon": "img/fav/www.anthropic.com.png"
   },
@@ -2400,6 +2651,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-github-copilot",
    "icon": "img/fav/github.com.png"
   },
@@ -2412,6 +2664,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-windsurf",
    "icon": "img/fav/www.windsurf.com.png"
   },
@@ -2424,6 +2677,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-lovable",
    "icon": "img/fav/lovable.dev.png"
   },
@@ -2436,6 +2690,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-boltnew",
    "icon": "img/fav/bolt.new.png"
   },
@@ -2448,6 +2703,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-v0",
    "icon": "img/fav/v0.app.png"
   },
@@ -2460,6 +2716,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-kilo-code",
    "icon": "img/fav/kilocode.ai.png"
   },
@@ -2472,6 +2729,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-amazon-q-developer",
    "icon": "img/fav/aws.amazon.com.png"
   },
@@ -2484,6 +2742,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-tabnine",
    "icon": "img/fav/www.tabnine.com.png"
   },
@@ -2496,6 +2755,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-replit",
    "icon": "img/fav/replit.com.png"
   },
@@ -2508,6 +2768,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-gocodeo",
    "icon": "img/fav/www.gocodeo.com.png"
   },
@@ -2520,6 +2781,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-coderabbit",
    "icon": "img/fav/coderabbit.ai.png"
   },
@@ -2532,6 +2794,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-pr-agent",
    "icon": "img/fav/github.com.png"
   },
@@ -2544,6 +2807,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-gito",
    "icon": "img/fav/github.com.png"
   },
@@ -2556,6 +2820,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-codiumai--qodo",
    "icon": "img/fav/www.codium.ai.png"
   },
@@ -2568,6 +2833,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-mintlify",
    "icon": "img/fav/mintlify.com.png"
   },
@@ -2580,6 +2846,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-stenography",
    "icon": "img/fav/stenography.dev.png"
   },
@@ -2592,6 +2859,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-ai2sql",
    "icon": "img/fav/www.ai2sql.io.png"
   },
@@ -2604,6 +2872,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-poorcoder",
    "icon": "img/fav/github.com.png"
   },
@@ -2616,6 +2885,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-gpt-code-ui",
    "icon": "img/fav/github.com.png"
   },
@@ -2628,6 +2898,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-metagpt",
    "icon": "img/fav/github.com.png"
   },
@@ -2640,6 +2911,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-plandex",
    "icon": "img/fav/github.com.png"
   },
@@ -2652,6 +2924,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-mutahunterai",
    "icon": "img/fav/github.com.png"
   },
@@ -2664,6 +2937,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-ai-kernel-explorer",
    "icon": "img/fav/github.com.png"
   },
@@ -2676,6 +2950,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-whodb",
    "icon": "img/fav/github.com.png"
   },
@@ -2688,6 +2963,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-datapup",
    "icon": "img/fav/github.com.png"
   },
@@ -2700,6 +2976,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-flexapp",
    "icon": "img/fav/flexapp.ai.png"
   },
@@ -2712,6 +2989,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-capacity",
    "icon": "img/fav/capacity.so.png"
   },
@@ -2724,6 +3002,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-runcell",
    "icon": "img/fav/runcell.dev.png"
   },
@@ -2736,6 +3015,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-manifest",
    "icon": "img/fav/github.com.png"
   },
@@ -2748,6 +3028,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-code-to-flow",
    "icon": "img/fav/codetoflow.com.png"
   },
@@ -2760,6 +3041,7 @@
    "eu": false,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-google-antigravity",
    "icon": "img/fav/antigravity.google.jpg"
   },
@@ -2772,6 +3054,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-pieces",
    "icon": "img/fav/pieces.app.png"
   },
@@ -2784,6 +3067,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-programmieren-mit-ki.html#tool-kiro",
    "icon": "img/fav/kiro.dev.png"
   },
@@ -2796,6 +3080,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-midjourney",
    "icon": "img/fav/www.midjourney.com.png"
   },
@@ -2808,6 +3093,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-stable-diffusion",
    "icon": "img/fav/stability.ai.png"
   },
@@ -2820,6 +3106,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-nano-banana",
    "icon": "img/fav/deepmind.google.png"
   },
@@ -2832,6 +3119,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-ideogram",
    "icon": "img/fav/ideogram.ai.png"
   },
@@ -2844,6 +3132,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-adobe-firefly",
    "icon": "img/fav/firefly.adobe.com.png"
   },
@@ -2856,6 +3145,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-gpt-image",
    "icon": "img/fav/developers.openai.com.png"
   },
@@ -2868,6 +3158,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-draggan",
    "icon": "img/fav/github.com.png"
   },
@@ -2880,6 +3171,7 @@
    "eu": true,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-flux-3-image-klein",
    "icon": "img/fav/bfl.ai.png"
   },
@@ -2892,6 +3184,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-leonardoai",
    "icon": "img/fav/leonardo.ai.png"
   },
@@ -2904,6 +3197,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-krea",
    "icon": "img/fav/www.krea.ai.png"
   },
@@ -2916,6 +3210,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-photoroom",
    "icon": "img/fav/www.photoroom.com.png"
   },
@@ -2928,6 +3223,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-clipdrop",
    "icon": "img/fav/clipdrop.co.png"
   },
@@ -2940,6 +3236,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-magic-eraser",
    "icon": "img/fav/www.magiceraser.io.jpg"
   },
@@ -2952,6 +3249,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-craiyon",
    "icon": "img/fav/www.craiyon.com.png"
   },
@@ -2964,6 +3262,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-artbreeder",
    "icon": "img/fav/www.artbreeder.com.png"
   },
@@ -2976,6 +3275,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-magic-studio",
    "icon": "img/fav/magicstudio.com.jpg"
   },
@@ -2988,6 +3288,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-patienceai",
    "icon": "img/fav/www.patience.ai.svg"
   },
@@ -3000,6 +3301,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-genshare",
    "icon": "img/fav/www.genshare.io.jpg"
   },
@@ -3012,6 +3314,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-playground-ai",
    "icon": "img/fav/playgroundai.com.png"
   },
@@ -3024,6 +3327,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-avatar-ai",
    "icon": "img/fav/avatarai.me.png"
   },
@@ -3036,6 +3340,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-rundiffusion",
    "icon": "img/fav/rundiffusion.com.png"
   },
@@ -3048,6 +3353,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-human-generator",
    "icon": "img/fav/generated.photos.png"
   },
@@ -3060,6 +3366,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-vectorartai",
    "icon": "img/fav/vectorart.ai.png"
   },
@@ -3072,6 +3379,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-room-reinvented",
    "icon": "img/fav/roomreinvented.com.png"
   },
@@ -3084,6 +3392,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-gensbot",
    "icon": "img/fav/gensbot.com.png"
   },
@@ -3096,6 +3405,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-plantphotoai",
    "icon": "img/fav/www.plantphotoai.com.png"
   },
@@ -3108,6 +3418,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-black-headshots",
    "icon": "img/fav/www.blackheadshots.com.png"
   },
@@ -3120,6 +3431,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-icoloring",
    "icon": "img/fav/icoloring.ai.png"
   },
@@ -3132,6 +3444,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-suit-me-up",
    "icon": "img/fav/suitmeup.pictures.png"
   },
@@ -3144,6 +3457,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-ai-photo-forge",
    "icon": "img/fav/aiphotoforge.com.png"
   },
@@ -3156,6 +3470,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-ai-boost",
    "icon": "img/fav/boost.pictures.png"
   },
@@ -3168,6 +3483,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-planttattoosai",
    "icon": "img/fav/www.planttattoosai.com.png"
   },
@@ -3180,6 +3496,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-recraft",
    "icon": "img/fav/www.recraft.ai.png"
   },
@@ -3192,8 +3509,22 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-rupert-ai",
    "icon": "img/fav/www.getrupert.com.png"
+  },
+  {
+   "name": "Claid.ai",
+   "url": "https://claid.ai",
+   "beschreibung": "Fotostudio für Produktbilder: stellt frei, rechnet hoch, korrigiert Licht und setzt Produkte in KI-Szenen oder Kleidung an KI-Models, per API auch für ganze Kataloge. Gratis sind 50 Credits, ein KI-Fotoshooting kostet vier davon.",
+   "kategorie": "Bilder",
+   "bereich": "Bild-Dienste",
+   "eu": false,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-bilder.html#tool-claidai",
+   "icon": "img/fav/claid.ai.png"
   },
   {
    "name": "Microsoft Designer",
@@ -3204,6 +3535,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-microsoft-designer",
    "icon": "img/fav/designer.microsoft.com.png"
   },
@@ -3216,6 +3548,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-canva",
    "icon": "img/fav/www.canva.com.png"
   },
@@ -3228,6 +3561,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-brandmark",
    "icon": "img/fav/brandmark.io.png"
   },
@@ -3240,6 +3574,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-text2infographic",
    "icon": "img/fav/text2infographic.com.jpg"
   },
@@ -3252,6 +3587,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-seedeai",
    "icon": "img/fav/seede.ai.png"
   },
@@ -3264,8 +3600,22 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-magic-patterns",
    "icon": "img/fav/www.magicpatterns.com.png"
+  },
+  {
+   "name": "Kittl",
+   "url": "https://www.kittl.com",
+   "beschreibung": "Design-Plattform aus Berlin mit Vorlagen, Text-Effekten, Mockups und KI-Generatoren für Bilder und Vektoren, gedacht für Merch, Etiketten, Logos und Social Posts. Was im Gratis-Tarif entsteht, darfst du nur privat nutzen, nicht verkaufen.",
+   "kategorie": "Bilder",
+   "bereich": "Grafikdesign",
+   "eu": true,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-bilder.html#tool-kittl",
+   "icon": "img/fav/www.kittl.com.png"
   },
   {
    "name": "OpenArt",
@@ -3276,6 +3626,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-openart",
    "icon": "img/fav/openart.ai.png"
   },
@@ -3288,6 +3639,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-phygital",
    "icon": "img/fav/app.phygital.plus.png"
   },
@@ -3300,6 +3652,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-publicprompts",
    "icon": "img/fav/publicprompts.art.png"
   },
@@ -3312,6 +3665,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-civitai",
    "icon": "img/fav/civitai.com.png"
   },
@@ -3324,6 +3678,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-stable-diffusion-models",
    "icon": "img/fav/rentry.org.png"
   },
@@ -3336,6 +3691,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-stable-horde",
    "icon": "img/fav/stablehorde.net.png"
   },
@@ -3348,6 +3704,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-bilder.html#tool-hugging-face-diffusion-models-course",
    "icon": "img/fav/github.com.png"
   },
@@ -3360,6 +3717,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-google-veo",
    "icon": "img/fav/deepmind.google.png"
   },
@@ -3372,6 +3730,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-kling-ai",
    "icon": "img/fav/app.klingai.com.png"
   },
@@ -3384,6 +3743,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-runwayml",
    "icon": "img/fav/runwayml.com.png"
   },
@@ -3396,6 +3756,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-luma-dream-machine",
    "icon": "img/fav/lumalabs.ai.png"
   },
@@ -3408,6 +3769,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-pika",
    "icon": "img/fav/pika.art.png"
   },
@@ -3420,6 +3782,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-synthesia",
    "icon": "img/fav/www.synthesia.io.png"
   },
@@ -3432,6 +3795,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-heygen",
    "icon": "img/fav/www.heygen.com.png"
   },
@@ -3444,6 +3808,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-d-id",
    "icon": "img/fav/www.d-id.com.png"
   },
@@ -3456,6 +3821,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-descript",
    "icon": "img/fav/www.descript.com.png"
   },
@@ -3468,6 +3834,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-opus-clip",
    "icon": "img/fav/www.opus.pro.png"
   },
@@ -3480,6 +3847,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-recast-studio",
    "icon": "img/fav/recast.studio.png"
   },
@@ -3492,6 +3860,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-based-ai",
    "icon": "img/fav/www.basedlabs.ai.jpg"
   },
@@ -3504,6 +3873,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-sisif",
    "icon": "img/fav/sisif.ai.png"
   },
@@ -3516,6 +3886,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-melies",
    "icon": "img/fav/melies.co.png"
   },
@@ -3528,6 +3899,7 @@
    "eu": true,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-video.html#tool-flux-3-video",
    "icon": "img/fav/bfl.ai.png"
   },
@@ -3540,6 +3912,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-murf-ai",
    "icon": "img/fav/murf.ai.png"
   },
@@ -3552,6 +3925,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-descript-overdub",
    "icon": "img/fav/www.descript.com.png"
   },
@@ -3564,6 +3938,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-respeecher",
    "icon": "img/fav/www.respeecher.com.png"
   },
@@ -3576,6 +3951,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-resemble-ai",
    "icon": "img/fav/www.resemble.ai.png"
   },
@@ -3588,6 +3964,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-wellsaid-labs",
    "icon": "img/fav/www.wellsaidlabs.com.png"
   },
@@ -3600,6 +3977,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-ispeech",
    "icon": "img/fav/www.ispeech.org.png"
   },
@@ -3612,6 +3990,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-microsoft-azure-neural-tts",
    "icon": "img/fav/azure.microsoft.com.png"
   },
@@ -3624,6 +4003,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-zenmiccom",
    "icon": "img/fav/zenmic.com.png"
   },
@@ -3636,6 +4016,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-audify-ai",
    "icon": "img/fav/audify-ai.ahmedtokyo.com.svg"
   },
@@ -3648,6 +4029,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-tts-webui",
    "icon": "img/fav/github.com.png"
   },
@@ -3660,6 +4042,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-tortoise",
    "icon": "img/fav/github.com.png"
   },
@@ -3672,6 +4055,7 @@
    "eu": false,
    "open_source": true,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-bark",
    "icon": "img/fav/github.com.png"
   },
@@ -3684,6 +4068,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-custompodio",
    "icon": "img/fav/custompod.io.png"
   },
@@ -3696,6 +4081,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-ekhos-ai",
    "icon": "img/fav/ekhos.ai.png"
   },
@@ -3708,6 +4094,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-whisper-api",
    "icon": "img/fav/whisper-api.com.png"
   },
@@ -3720,6 +4107,7 @@
    "eu": true,
    "open_source": false,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-voxtral-3",
    "icon": "img/fav/mistral.ai.png"
   },
@@ -3732,6 +4120,7 @@
    "eu": false,
    "open_source": true,
    "neu": true,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-nemotron-35-transcribe",
    "icon": "img/fav/research.nvidia.com.png"
   },
@@ -3744,6 +4133,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-createeasily",
    "icon": "img/fav/createeasily.com.svg"
   },
@@ -3756,6 +4146,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-transgate",
    "icon": "img/fav/transgate.ai.png"
   },
@@ -3768,6 +4159,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-suno",
    "icon": "img/fav/suno.com.png"
   },
@@ -3780,6 +4172,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-udio",
    "icon": "img/fav/www.udio.com.png"
   },
@@ -3792,6 +4185,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-aiva",
    "icon": "img/fav/www.aiva.ai.png"
   },
@@ -3804,6 +4198,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-mubert",
    "icon": "img/fav/www.mubert.com.png"
   },
@@ -3816,6 +4211,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-soundraw",
    "icon": "img/fav/soundraw.io.png"
   },
@@ -3828,6 +4224,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-beatovenai",
    "icon": "img/fav/www.beatoven.ai.png"
   },
@@ -3840,6 +4237,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-boomy",
    "icon": "img/fav/www.boomy.com.png"
   },
@@ -3852,6 +4250,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-ecrett-music",
    "icon": "img/fav/www.ecrettmusic.com.png"
   },
@@ -3864,6 +4263,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-loudly",
    "icon": "img/fav/www.loudly.com.png"
   },
@@ -3876,6 +4276,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-soundful",
    "icon": "img/fav/www.soundful.com.png"
   },
@@ -3888,6 +4289,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-ai-song-maker",
    "icon": "img/fav/www.aisongmaker.io.png"
   },
@@ -3900,6 +4302,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-harmonai",
    "icon": "img/fav/www.harmonai.org.png"
   },
@@ -3912,6 +4315,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-lyria",
    "icon": "img/fav/deepmind.google.png"
   },
@@ -3924,6 +4328,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-audio.html#tool-remusic",
    "icon": "img/fav/remusic.ai.png"
   },
@@ -3936,6 +4341,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-semrush",
    "icon": "img/fav/www.semrush.com.png"
   },
@@ -3948,6 +4354,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-ahrefs",
    "icon": "img/fav/www.ahrefs.com.png"
   },
@@ -3960,6 +4367,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-surfer",
    "icon": "img/fav/surferseo.com.png"
   },
@@ -3972,6 +4380,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-frase",
    "icon": "img/fav/frase.io.png"
   },
@@ -3984,6 +4393,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-marketmuse",
    "icon": "img/fav/www.marketmuse.com.png"
   },
@@ -3996,6 +4406,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-luthor",
    "icon": "img/fav/luthor.ai.png"
   },
@@ -4008,8 +4419,35 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-quick-creator",
    "icon": "img/fav/quickcreator.io.png"
+  },
+  {
+   "name": "SE Ranking",
+   "url": "https://seranking.com",
+   "beschreibung": "SEO-Suite mit Rank-Tracking, Keyword- und Backlink-Recherche und Site-Audit; das Modul SE Visible verfolgt, wie oft deine Marke in AI Overviews, AI Mode, ChatGPT und Gemini auftaucht. Für Agenturen und Inhouse-Teams; der kleinste Tarif kostet 129 Dollar im Monat und prüft 25 Prompts am Tag.",
+   "kategorie": "Marketing und SEO",
+   "bereich": "SEO und Content-Optimierung",
+   "eu": false,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-marketing-und-seo.html#tool-se-ranking",
+   "icon": "img/fav/seranking.com.png"
+  },
+  {
+   "name": "NeuronWriter",
+   "url": "https://neuronwriter.com",
+   "beschreibung": "Content-Editor aus Polen, der Texte gegen die Top-Ergebnisse auf fehlende Begriffe prüft, Entwürfe schreibt und verfolgt, ob deine Marke in KI-Antworten genannt wird. Gedacht für Selbstständige und kleine Agenturen; der kleinste Tarif umfasst 25 Dokumente und fünf überwachte KI-Fragen.",
+   "kategorie": "Marketing und SEO",
+   "bereich": "SEO und Content-Optimierung",
+   "eu": true,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-marketing-und-seo.html#tool-neuronwriter",
+   "icon": "img/fav/neuronwriter.com.png"
   },
   {
    "name": "Jasper",
@@ -4020,6 +4458,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-jasper",
    "icon": "img/fav/www.jasper.ai.png"
   },
@@ -4032,6 +4471,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-neuroflash",
    "icon": "img/fav/neuroflash.com.png"
   },
@@ -4044,6 +4484,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-mutiny",
    "icon": "img/fav/www.mutinyhq.com.png"
   },
@@ -4056,6 +4497,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-clearbit",
    "icon": "img/fav/clearbit.com.png"
   },
@@ -4068,6 +4510,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-seventh-sense",
    "icon": "img/fav/www.theseventhsense.com.png"
   },
@@ -4080,6 +4523,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-smartlyio",
    "icon": "img/fav/www.smartly.io.jpg"
   },
@@ -4092,6 +4536,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-adzooma",
    "icon": "img/fav/www.adzooma.com.png"
   },
@@ -4104,6 +4549,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-jacquard",
    "icon": "img/fav/www.jacquard.com.png"
   },
@@ -4116,6 +4562,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-brandwatch",
    "icon": "img/fav/www.brandwatch.com.png"
   },
@@ -4128,6 +4575,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-chatfuel",
    "icon": "img/fav/www.chatfuel.com.png"
   },
@@ -4140,6 +4588,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-logicballs",
    "icon": "img/fav/logicballs.com.png"
   },
@@ -4152,6 +4601,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-publish7",
    "icon": "img/fav/publish7.com.png"
   },
@@ -4164,6 +4614,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-keylaai",
    "icon": "img/fav/keyla.ai.png"
   },
@@ -4176,6 +4627,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-persuva",
    "icon": "img/fav/persuva.ai.png"
   },
@@ -4188,6 +4640,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-taplio",
    "icon": "img/fav/taplio.com.png"
   },
@@ -4200,6 +4653,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-socialsonic",
    "icon": "img/fav/socialsonic.com.png"
   },
@@ -4212,6 +4666,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-podifyio",
    "icon": "img/fav/podify.io.png"
   },
@@ -4224,6 +4679,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-presspulse-ai",
    "icon": "img/fav/www.presspulse.ai.png"
   },
@@ -4236,8 +4692,22 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-marketing-und-seo.html#tool-gummysearch",
    "icon": "img/fav/gummysearch.com.png"
+  },
+  {
+   "name": "Brevo",
+   "url": "https://www.brevo.com",
+   "beschreibung": "Newsletter, Transaktions-E-Mails, SMS und WhatsApp mit CRM aus Paris, früher Sendinblue, mit KI für Betreffzeilen und Texte und einem MCP-Zugang für ChatGPT und Claude. Im Gratis-Tarif gehen höchstens 300 E-Mails am Tag raus, und erst, nachdem Brevo das Konto freigegeben hat.",
+   "kategorie": "Marketing und SEO",
+   "bereich": "Werbung, Social und Personalisierung",
+   "eu": true,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-marketing-und-seo.html#tool-brevo",
+   "icon": "img/fav/www.brevo.com.png"
   },
   {
    "name": "AICaller.io",
@@ -4248,6 +4718,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-ki-telefonagenten.html#tool-aicallerio",
    "icon": "img/fav/aicaller.io.png"
   },
@@ -4260,6 +4731,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-ki-telefonagenten.html#tool-diallink-ai-voice-agents",
    "icon": "img/fav/diallink.com.png"
   },
@@ -4272,6 +4744,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-ki-telefonagenten.html#tool-caldai",
    "icon": "img/fav/cald.ai.png"
   },
@@ -4284,6 +4757,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-ki-telefonagenten.html#tool-rosie",
    "icon": "img/fav/heyrosie.com.jpg"
   },
@@ -4296,6 +4770,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-ki-telefonagenten.html#tool-parloa",
    "icon": "img/fav/www.parloa.com.png"
   },
@@ -4308,6 +4783,7 @@
    "eu": true,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-ki-telefonagenten.html#tool-cognigy",
    "icon": "img/fav/www.cognigy.com.png"
   },
@@ -4320,6 +4796,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-ki-telefonagenten.html#tool-twig",
    "icon": "img/fav/www.twig.so.png"
   },
@@ -4332,8 +4809,22 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-ki-telefonagenten.html#tool-elevenlabs-agents",
    "icon": "img/fav/elevenlabs.io.png"
+  },
+  {
+   "name": "Retell AI",
+   "url": "https://www.retellai.com",
+   "beschreibung": "Baukasten für Telefonagenten, die Anrufe annehmen, Termine buchen, an Menschen weiterverbinden und Tastenmenüs bedienen, angebunden etwa über Twilio, Vonage, n8n oder HubSpot. Abgerechnet wird pro Minute ohne Jahresvertrag; welche Sprachen gehen, hängt vom gewählten Stimm- und Spracherkennungsanbieter ab, Deutsch also vorher testen.",
+   "kategorie": "KI-Telefonagenten",
+   "bereich": "",
+   "eu": false,
+   "open_source": false,
+   "neu": true,
+   "partner": false,
+   "seite": "ki-tools-ki-telefonagenten.html#tool-retell-ai",
+   "icon": "img/fav/www.retellai.com.png"
   },
   {
    "name": "PromptBase",
@@ -4344,6 +4835,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-promptbase",
    "icon": "img/fav/promptbase.com.png"
   },
@@ -4356,6 +4848,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-promptly",
    "icon": "img/fav/searchpromptly.com.png"
   },
@@ -4368,6 +4861,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-myriad",
    "icon": "img/fav/www.namepepper.com.png"
   },
@@ -4380,6 +4874,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-have-i-been-trained",
    "icon": "img/fav/haveibeentrained.com.svg"
   },
@@ -4392,6 +4887,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-this-image-does-not-exist",
    "icon": "img/fav/thisimagedoesnotexist.com.png"
   },
@@ -4404,6 +4900,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-taranify",
    "icon": "img/fav/www.taranify.com.png"
   },
@@ -4416,6 +4913,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-ai-dungeon",
    "icon": "img/fav/aidungeon.io.png"
   },
@@ -4428,6 +4926,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-scenario",
    "icon": "img/fav/www.scenario.com.png"
   },
@@ -4440,6 +4939,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-finchat",
    "icon": "img/fav/finchat.io.png"
   },
@@ -4452,6 +4952,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-fairytailai",
    "icon": "img/fav/fairytailai.com.png"
   },
@@ -4464,6 +4965,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-gradgpt",
    "icon": "img/fav/www.gradgpt.com.png"
   },
@@ -4476,6 +4978,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-architecture-helper",
    "icon": "img/fav/architecturehelper.com.svg"
   },
@@ -4488,6 +4991,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-ai-wedding-toast",
    "icon": "img/fav/aiweddingtoast.com.png"
   },
@@ -4500,6 +5004,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-interviews-chat",
    "icon": "img/fav/www.interviews.chat.png"
   },
@@ -4512,6 +5017,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-ezjobs",
    "icon": "img/fav/www.getezjobs.com.png"
   },
@@ -4524,6 +5030,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-compass",
    "icon": "img/fav/www.getwhys.io.png"
   },
@@ -4536,6 +5043,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-aisaver",
    "icon": "img/fav/aisaver.io.png"
   },
@@ -4548,6 +5056,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-langmagic",
    "icon": "img/fav/easytolearn.io.png"
   },
@@ -4560,6 +5069,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-looksmax-ai",
    "icon": "img/fav/looksmax.ai.jpg"
   },
@@ -4572,6 +5082,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-resumedive",
    "icon": "img/fav/resumedive.com.png"
   },
@@ -4584,6 +5095,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-daruy",
    "icon": "img/fav/daruy.space.svg"
   },
@@ -4596,6 +5108,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-nvidia-omniverse-ai-animal-explorer",
    "icon": "img/fav/docs.omniverse.nvidia.com.png"
   },
@@ -4608,6 +5121,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-characterai",
    "icon": "img/fav/character.ai.png"
   },
@@ -4620,6 +5134,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-tools-weitere-ki-tools.html#tool-dmwithme",
    "icon": "img/fav/dmwithme.com.png"
   },
@@ -4632,6 +5147,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/promptgott.substack.com.svg"
   },
@@ -4644,6 +5160,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/learnprompting.org.png"
   },
@@ -4656,6 +5173,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/github.com.png"
   },
@@ -4668,6 +5186,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/www.deeplearning.ai.png"
   },
@@ -4680,6 +5199,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/github.com.png"
   },
@@ -4692,6 +5212,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/www.youtube.com.png"
   },
@@ -4704,6 +5225,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/github.com.png"
   },
@@ -4716,6 +5238,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/www.coursera.org.png"
   },
@@ -4728,6 +5251,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/www.udacity.com.png"
   },
@@ -4740,6 +5264,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/www.scaler.com.png"
   },
@@ -4752,6 +5277,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/www.appliedaicourse.com.png"
   },
@@ -4764,6 +5290,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/www.fast.ai.svg"
   },
@@ -4776,6 +5303,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/github.com.png"
   },
@@ -4788,6 +5316,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#lernen-prompting-und-ki-grundlagen",
    "icon": "img/fav/github.com.png"
   },
@@ -4800,6 +5329,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/aifordevelopers.org.png"
   },
@@ -4812,6 +5342,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/github.com.png"
   },
@@ -4824,6 +5355,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/github.com.png"
   },
@@ -4836,6 +5368,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/github.com.png"
   },
@@ -4848,6 +5381,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/github.com.png"
   },
@@ -4860,6 +5394,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/productivity.directory.png"
   },
@@ -4872,6 +5407,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/github.com.png"
   },
@@ -4884,6 +5420,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/github.com.png"
   },
@@ -4896,6 +5433,7 @@
    "eu": false,
    "open_source": false,
    "neu": false,
+   "partner": false,
    "seite": "ki-glossar.html#verwandte-listen",
    "icon": "img/fav/github.com.png"
   }
