@@ -50,8 +50,22 @@
     root.setAttribute("data-theme", next); store.set("kw-theme", next); tSync();
   });
 
-  /* Basis-URL aus dem eigenen Skript-Pfad: Such-Panel und Links funktionieren so auch auf der 404-Seite in beliebiger Tiefe */
+  /* Basis-URL aus dem eigenen Skript-Pfad: Such-Panel und Links funktionieren so auch auf der 404-Seite in beliebiger Tiefe.
+     Einzige Basis für alle Pfade aus Daten (tools.json, seiten.json, Favicons, Schubladen-Links). */
   var SITE = (document.currentScript && document.currentScript.src || "").replace(/assets\/app\.js.*$/, "") || "./";
+  // Escape und Icon: ein Helfer für alles, was als HTML-String gebaut wird (auch Icon-IDs aus Daten werden escaped)
+  function escH(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function svg(id) { return '<svg class="ico" aria-hidden="true"><use href="#i-' + escH(id) + '"/></svg>'; }
+  // Schublade eines Tools aus tools.json ("ki-tools-x.html#tool-y" oder "./#fach"), überall gleich aufgelöst
+  function toolPage(t) { return SITE + String(t.seite || "").replace(/^\.\//, ""); }
+  // tools.json genau einmal pro Seite laden (Werkzeug des Tages, Such-Panel, Trefferzahl, 404-Überraschung teilen sich die Antwort);
+  // schlägt der Abruf fehl, darf der nächste Versuch neu laden
+  var toolsP = null;
+  function toolsLoad() {
+    if (!toolsP) toolsP = fetch(SITE + "tools.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { return j.tools; }, function (e) { toolsP = null; throw e; });
+    return toolsP;
+  }
   // Favicons liegen lokal (img/fav/, Pfad aus tools.json bzw. den Finder-Daten); kein fremder Icon-Dienst
   function favImg(path, size) {
     if (!/^img\/fav\/[a-z0-9.-]+\.(png|jpg|svg)$/.test(String(path || ""))) return "";
@@ -214,15 +228,13 @@
     var ans = {}, stepIdx = 0;
     var qEl = $(".finder-q", finder), optsEl = $(".opts", finder), dots = $(".dots", finder), back = $(".back", finder), res = $(".finder-result", finder), stepLbl = $(".steplbl", finder);
     qEl.setAttribute("tabindex", "-1"); stepLbl.setAttribute("aria-live", "polite");
-    function icon(id) { return '<svg class="ico" aria-hidden="true"><use href="#i-' + esc(id) + '"/></svg>'; }
-    function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
     // focus: nach einer Antwort springt der Fokus auf die nächste Frage, sonst landet er auf <body>
     function render(focus) {
       var step = F.questions[stepIdx];
       res.classList.add("hidden"); qEl.classList.remove("hidden"); optsEl.classList.remove("hidden");
       qEl.textContent = step.q;
       optsEl.innerHTML = step.options.map(function (o) {
-        return '<button type="button" class="opt' + (ans[step.id] === o[0] ? " on" : "") + '" data-v="' + esc(o[0]) + '">' + icon(o[2]) + '<span>' + esc(o[1]) + '</span></button>';
+        return '<button type="button" class="opt' + (ans[step.id] === o[0] ? " on" : "") + '" data-v="' + escH(o[0]) + '">' + svg(o[2]) + '<span>' + escH(o[1]) + '</span></button>';
       }).join("");
       dots.innerHTML = F.questions.map(function (_, i) { return "<i" + (i <= stepIdx ? ' class="on"' : "") + "></i>"; }).join("");
       stepLbl.textContent = "Frage " + (stepIdx + 1) + " von " + F.questions.length;
@@ -242,12 +254,12 @@
       list = list.filter(function (n, i) { return list.indexOf(n) === i; });
       var cards = list.map(function (n) {
         var t = TOOLS[n]; if (!t) return "";
-        return '<a href="' + esc(safeUrl(t.u)) + '" target="_blank" rel="noopener">' + favImg(t.i, 28) + '<span><b>' + esc(n) + (t.eu ? ' <span class="badge eu">EU</span>' : "") + '</b><small>' + esc(t.d) + '</small></span></a>';
+        return '<a href="' + escH(safeUrl(t.u)) + '" target="_blank" rel="noopener">' + favImg(t.i, 28) + '<span><b>' + escH(n) + (t.eu ? ' <span class="badge eu">EU</span>' : "") + '</b><small>' + escH(t.d) + '</small></span></a>';
       }).join("");
-      var notes = [F.notes[ans.team], ans.daten === "eu" ? F.notes.eu : ""].filter(Boolean).map(function (n) { return '<p class="note">' + esc(n) + "</p>"; }).join("");
+      var notes = [F.notes[ans.team], ans.daten === "eu" ? F.notes.eu : ""].filter(Boolean).map(function (n) { return '<p class="note">' + escH(n) + "</p>"; }).join("");
       res.innerHTML = '<p class="eyebrow">Dein Setup</p><h3 class="finder-q" tabindex="-1">' + list.length + ' Tools, die zu deinem Fall passen</h3>' +
         '<div class="result-tools">' + cards + "</div>" + notes +
-        '<p style="margin-top:14px"><button type="button" class="btn btn-sm restart">' + icon("arrow") + 'Noch mal von vorn</button></p>';
+        '<p style="margin-top:14px"><button type="button" class="btn btn-sm restart">' + svg("arrow") + 'Noch mal von vorn</button></p>';
       // Formular samt Einwilligungstext steht einmal im HTML (<template>, vom Generator); hier nur klonen und befüllen
       var tpl = document.getElementById("finder-form-tpl"), fForm = tpl && tpl.content && tpl.content.querySelector("form");
       if (fForm) {
@@ -266,8 +278,6 @@
     render(false);
   }
   /* Gemeinsame Hilfen für Merkliste, Rechner und Formular-Anhänge */
-  function escH(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
-  function svg(id) { return '<svg class="ico" aria-hidden="true"><use href="#i-' + id + '"/></svg>'; }
   function attach(fieldId, text, label) {
     var f = document.getElementById(fieldId); if (!f) return false;
     f.value = text || "";
@@ -495,8 +505,8 @@
       if (DATA) return Promise.resolve(DATA);
       // Seitenindex ist eine Zugabe: fehlt er, sucht das Panel wie bisher nur in den Tools
       var pagesP = fetch(SITE + "seiten.json").then(function (r) { return r.ok ? r.json() : { seiten: [] }; }).then(function (j) { PAGES = j.seiten || []; }, function () { PAGES = []; });
-      if (!loading) loading = Promise.all([fetch(SITE + "tools.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }), pagesP]).then(function (res) {
-        DATA = res[0].tools.map(function (t, i) {
+      if (!loading) loading = Promise.all([toolsLoad(), pagesP]).then(function (res) {
+        DATA = res[0].map(function (t, i) {
           t._i = i; t._n = t.name.toLowerCase(); t._c = (t.kategorie + " " + t.bereich).toLowerCase(); t._d = t.beschreibung.toLowerCase();
           t._s = [t._n, t._d, t._c].join(" "); return t;
         });
@@ -559,7 +569,7 @@
     function spRow(t) {
       var badges = (t.eu ? '<span class="badge eu">EU</span>' : "") + (t.open_source ? '<span class="badge oss">OSS</span>' : "") + (t.neu ? '<span class="badge neu">NEU</span>' : "");
       return '<li>' + favImg(t.icon, 28) + '<div><a class="name" href="' + escH(safeUrl(t.url)) + '" target="_blank" rel="noopener">' + escH(t.name) + "</a> " + badges +
-        '<span class="desc">' + escH(t.beschreibung) + '</span><a class="sp-cat" href="' + escH(SITE + t.seite.replace(/^\.\//, "")) + '">' + svg("layers") + escH(t.kategorie) + (t.bereich ? " · " + escH(t.bereich) : "") + "</a></div></li>";
+        '<span class="desc">' + escH(t.beschreibung) + '</span><a class="sp-cat" href="' + escH(toolPage(t)) + '">' + svg("layers") + escH(t.kategorie) + (t.bereich ? " · " + escH(t.bereich) : "") + "</a></div></li>";
     }
     // Treffer in Portionen anhängen; der Knopf am Ende holt die nächsten, bis alle sichtbar sind
     function spMore() {
@@ -807,13 +817,7 @@
   (function () {
 
   /* ---------------------------------------------------------------- Liebevolle Details */
-  // Basis-URL aus dem eigenen Skript-Pfad, damit tools.json auch auf der 404-Seite (beliebige Tiefe) gefunden wird
-  var BASE = (document.currentScript && document.currentScript.src || "").replace(/assets\/app\.js.*$/, "") || "./";
-  var toolsP = null;
-  function tools() {
-    if (!toolsP) toolsP = fetch(BASE + "tools.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (j) { return j.tools; });
-    return toolsP;
-  }
+  // Basis-URL (SITE), Escape/Icon (escH, svg), Schubladen-Link (toolPage) und tools.json (toolsLoad) kommen von oben
 
   // Hinweis unten am Rand, für Bildschirmleser per aria-live
   var toastEl, toastT;
@@ -897,12 +901,12 @@
   // tools.json (die ganze Liste) erst nach dem Laden, im Leerlauf und wenn die Box in der Nähe ist; der Platz ist reserviert
   var wotd = $("#wotd");
   function wotdFill() {
-    tools().then(function (list) {
+    toolsLoad().then(function (list) {
       if (!list.length) return;
       var day = Math.floor((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate())) / 864e5);
       var t = list[(day * 37) % list.length];
       wotd.innerHTML = favImg(t.icon, 28) + '<div><span class="k">Hans’ Werkzeug des Tages</span><br><b><a href="' + escH(safeUrl(t.url)) + '" target="_blank" rel="noopener">' + escH(t.name) + '</a></b>' +
-        '<p class="d">' + escH(t.beschreibung) + '</p><p><a href="' + escH(t.seite) + '">Zur Schublade</a> · Morgen liegt ein anderes auf der Werkbank.</p></div>';
+        '<p class="d">' + escH(t.beschreibung) + '</p><p><a href="' + escH(toolPage(t)) + '">Zur Schublade</a> · Morgen liegt ein anderes auf der Werkbank.</p></div>';
     }).catch(function () { wotd.hidden = true; });
   }
   function whenIdle(fn) {
@@ -1051,9 +1055,9 @@
   if (sBtn && sBox) {
     sBtn.hidden = false;
     sBtn.addEventListener("click", function () {
-      tools().then(function (list) {
+      toolsLoad().then(function (list) {
         var t = list[Math.floor(Math.random() * list.length)];
-        sBox.innerHTML = favImg(t.icon, 28) + '<div><span class="k">Kurbel hat stattdessen das hier gefunden</span><br><b><a href="' + escH(safeUrl(t.url)) + '" target="_blank" rel="noopener">' + escH(t.name) + '</a></b><p>' + escH(t.beschreibung) + ' <a href="' + escH(BASE + t.seite.replace(/^\.\//, "")) + '">Zur Schublade</a></p></div>';
+        sBox.innerHTML = favImg(t.icon, 28) + '<div><span class="k">Kurbel hat stattdessen das hier gefunden</span><br><b><a href="' + escH(safeUrl(t.url)) + '" target="_blank" rel="noopener">' + escH(t.name) + '</a></b><p>' + escH(t.beschreibung) + ' <a href="' + escH(toolPage(t)) + '">Zur Schublade</a></p></div>';
         sBox.hidden = false; sBtn.lastChild.textContent = "Noch eins"; sparksAt(sBtn, 12);
       }).catch(function () { toast("Die Schublade klemmt gerade. Versuch es gleich noch mal."); });
     });
