@@ -8,7 +8,7 @@ Gebaut für den deutschsprachigen Raum, auseinandergeschraubt, geputzt und nach 
 
 - **Ein Satz pro Tool.** Was es kann, wofür es taugt. Keine Werbetexte, die Beschreibungen bleiben sachlich. Gewitzelt wird drumherum.
 - **Link-Check (Stand: 02.11.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
-- **Was „geprüft“ heißt.** Ein Skript fragt jeden Link ab, Bot-Schutz zählt als erreichbar. Jede Beschreibung ist von Hand geschrieben. Ein Praxistest jedes einzelnen Tools ist das nicht, und das sagen wir auch so.
+- **Was „geprüft“ heißt.** Ein Skript fragt jeden Link ab, Bot-Schutz zählt als erreichbar. Jede Beschreibung ist auf Deutsch formuliert und an der Herstellerseite abgeglichen. Ein Praxistest jedes einzelnen Tools ist das nicht, und das sagen wir auch so.
 - **Namen auf Stand.** Bing Chat heißt Copilot, Metaphor heißt Exa, Le Chat heißt Vibe. Eingestellte Dienste fliegen raus, aktuelle Standard-Tools sind ergänzt.
 - **DACH-Fokus.** Eigene Abschnitte für Übersetzung, SEO und Automatisierung. Anbieter mit Sitz in der EU tragen ein 🇪🇺. Das ist ein Hinweis auf den Firmensitz, keine Datenschutz-Prüfung. Für DSGVO zählen AVV, Serverstandort und Einstellungen.
 - **PROMPTGOTT-Praxis.** Wo ein Deep Dive zeigt, wie man aus einer Tool-Kategorie Ergebnisse macht, steht ein 💡.
@@ -297,7 +297,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Make](https://www.make.com) - 🇪🇺 Visuelle Automatisierungsplattform aus Prag mit Tausenden App-Anbindungen.
 - [Zapier](https://zapier.com) - Verbindet Tausende Apps per Automatisierung, inklusive KI-Schritten und Agenten.
 - [MindStudio](https://mindstudio.ai/) - KI-Agenten ohne Code bauen, mit über 100 Vorlagen.
-- [Nekton AI](https://nekton.ai) - Workflows Schritt für Schritt in Alltagssprache beschreiben.
+- [Nekton AI](https://nekton.ai) - Workflows in Alltagssprache beschreiben, einen Arbeitsschritt nach dem anderen.
 - [AI-Flow](https://ai-flow.net/) - Mehrere KI-Modelle visuell miteinander verbinden.
 - [Shotstack Workflows](https://shotstack.io/product/workflows/) - No-Code-Automatisierung für KI-Medienproduktion.
 - [Hyperbrowser](https://hyperbrowser.ai/) - Browser-Infrastruktur für KI-Agenten mit Proxys und Session-Aufzeichnung.
@@ -399,7 +399,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [FLUX von Black Forest Labs](https://bfl.ai) - 🇪🇺 Bildmodelle aus Freiburg, stark bei Fotorealismus, Text im Bild und Bildbearbeitung.
 - [Midjourney](https://www.midjourney.com/) - Bildgenerator mit markantem, künstlerischem Stil.
 - [Stable Diffusion](https://stability.ai/stable-image) - Bildmodelle von Stability AI, aktuell Version 3.5 in den Größen Large, Turbo und Medium, per API oder auf eigener Hardware. Für den Selbstbetrieb im Unternehmen gibt es eine eigene Lizenz.
-- [Nano Banana](https://deepmind.google/models/gemini-image/) - Googles Bildmodelle auf Gemini-Basis, die Bilder im Gespräch erzeugen und Schritt für Schritt nachbearbeiten. Das ältere Imagen ist in der Gemini-API abgeschaltet.
+- [Nano Banana](https://deepmind.google/models/gemini-image/) - Googles Bildmodelle auf Gemini-Basis, die Bilder im Gespräch erzeugen und über mehrere Rückfragen nachbearbeiten. Das ältere Imagen ist in der Gemini-API abgeschaltet.
 - [Ideogram](https://ideogram.ai) - Bildgenerator, der besonders gut lesbare Schrift in Bildern erzeugt.
 - [Adobe Firefly](https://firefly.adobe.com) - Bildgenerierung von Adobe, trainiert auf lizenzierten Inhalten, integriert in Photoshop.
 - [GPT Image](https://developers.openai.com/api/docs/guides/image-generation) - Bildmodelle von OpenAI zum Erzeugen und Bearbeiten per API, Nachfolger von DALL·E. Die Herkunftsdaten in der Datei gehen beim Weiterverarbeiten leicht verloren.

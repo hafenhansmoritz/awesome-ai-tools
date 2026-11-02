@@ -1,6 +1,6 @@
 # KI-Werkstatt: AI tools, in German
 
-A German-language, hand-checked directory of 400+ AI tools, sorted by task, with dead links removed and EU-based vendors marked.
+A curated, link-checked German-language directory of 400+ AI tools, sorted by task, with dead links removed and EU-based vendors marked.
 
 - **Website:** https://jmp-collab.github.io/awesome-ai-tools/ (search, stack finder, trends, glossary, use-case pages)
 - **The list:** [README.de.md](README.de.md) (German)

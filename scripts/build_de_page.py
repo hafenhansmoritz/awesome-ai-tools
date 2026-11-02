@@ -23,6 +23,12 @@ Pflichtprüfungen nach jeder Änderung an Generator, Daten, app.js oder style.cs
     python3 scripts/seo_check.py                     # Title/Description, h1, Canonical, interne Links und Anker,
                                                      # Sitemap, Waisen, JSON-LD; Exit 1 bei Fehlern
     python3 scripts/check_links.py                   # nur wenn sich Links in README.de.md/data geändert haben
+    python3 scripts/footprint_scan.py docs --repo . --accept data/footprint_accept.json
+                                                     # Webroot-Hygiene, Datums-Uniformität, Bild-Metadaten, Floskeln;
+                                                     # Exit 1 bei hohen Befunden, die nicht in der Accept-Datei stehen
+
+Datum je Seite (Sitemap lastmod, JSON-LD, Feed, „Stand“ der Ratgeber): letzte inhaltliche Änderung der Quellen laut
+Git-Historie (page_dates, scripts/source_dates.py), nie das Build-Datum. Erst die Quellen committen, dann bauen.
 """
 import base64
 import csv
@@ -82,7 +88,6 @@ LEAD_TO_ENT = "".join(f"&#{ord(c)};" for c in LEAD_TO)
 def mail_link(subject=""):
     q = f"?subject={html.escape(subject)}" if subject else ""
     return f'<a href="mailto:{LEAD_TO_ENT}{q}">{LEAD_TO_ENT}</a>'
-TODAY = date.today().strftime("%d.%m.%Y")  # Build-Datum (Sitemap, Export)
 _LC = json.loads((ROOT / "data" / "linkcheck.json").read_text(encoding="utf-8"))
 LINK_CHECK = date.fromisoformat(_LC["date"]).strftime("%d.%m.%Y")  # setzt nur scripts/check_links.py
 LINK_CHECK_N = _LC["checked"]
@@ -816,7 +821,7 @@ def footer(bar=True):
     out = f"""<footer><div class="wrap">
 <nav class="cols" aria-label="Alle Seiten">{"".join(cols)}</nav>
 <p class="screws" id="screws" hidden></p>
-<p>Letzter Link-Check: {LINK_CHECK} ({LINK_CHECK_N} Links). {FOOT_PARTNER} Tool-Namen und -Logos bezeichnen nur das jeweilige Produkt, Marken und Logos gehören ihren Inhabern; die Favicons liegen als Kopie auf dieser Seite. {FOOT_VERBINDUNG} <a href="impressum.html#werkstatt">So entsteht die KI-Werkstatt</a></p>
+<p>Letzter Link-Check: {LINK_CHECK} ({LINK_CHECK_N} Links). {FOOT_PARTNER} Tool-Namen und -Logos bezeichnen nur das jeweilige Produkt, Marken und Logos gehören ihren Inhabern; die Favicons liegen als Kopie auf dieser Seite. {FOOT_VERBINDUNG} <a href="impressum.html#werkstatt">Redaktion und Prüfung</a></p>
 </div>
 <button id="totop" type="button" title="Nach oben" aria-label="Nach oben">{icon("up")}</button></footer>"""
     if not bar:
@@ -1264,9 +1269,9 @@ def build_index(sections, head_md):
 </div>
 <aside class="method-box reveal" id="methode"><h3>{icon("ruler")}Was „geprüft“ hier heißt</h3><ul>
 <li>{icon("check")}<span><b>Link-Check:</b> Jeder Link wird automatisch abgefragt, zuletzt am {LINK_CHECK}. Ob ein Tool gut ist, sagt das noch nicht.</span></li>
-<li>{icon("check")}<span><b>Beschreibung:</b> Jede ist von Hand auf Deutsch geschrieben und an der Herstellerseite abgeglichen.</span></li>
+<li>{icon("check")}<span><b>Beschreibung:</b> Jede ist auf Deutsch formuliert und an der Herstellerseite abgeglichen.</span></li>
 <li>{icon("x")}<span><b>Kein Praxistest:</b> Nicht jedes Tool wurde ausprobiert. EU-Sitz und Open Source stehen so da, wie die Anbieter sie angeben.</span></li>
-<li>{icon("user")}<span><b>Entstehung:</b> Recherche und Entwürfe laufen mit KI-Unterstützung, jede Seite prüft und verantwortet ein Mensch. Mehr im <a href="impressum.html#werkstatt">Impressum</a>.</span></li>
+<li>{icon("user")}<span><b>Verantwortung:</b> Jede Seite wird vor der Veröffentlichung redaktionell geprüft, verantwortlich ist Jean. Mehr im <a href="impressum.html#werkstatt">Impressum</a>.</span></li>
 </ul></aside></div></section>
 
 <section class="band" id="werkzeugkisten"><div class="wrap">
@@ -1376,9 +1381,9 @@ def build_subpages(list_secs=()):
 <p id="kontakt"><b>Kontakt</b><br>E-Mail: {mail_link()}<br>[TELEFON, optional]</p>
 <p><b>Verantwortlich für den Inhalt</b> nach § 18 Abs. 2 MStV: [NAME, ANSCHRIFT wie oben]</p>
 <p><b>Umsatzsteuer</b>: [USt-IdNr., falls vorhanden, sonst Zeile löschen]</p>
-<h2 id="werkstatt">So entsteht die KI-Werkstatt</h2>
-<p>Recherche und Textentwürfe entstehen mit KI-Unterstützung. Vor der Veröffentlichung wird jede Seite von einem Menschen geprüft und redaktionell verantwortet.</p>
-<p>„Geprüft“ heißt bei der Tool-Liste: Ein Skript fragt jeden Link regelmäßig ab, zuletzt am {LINK_CHECK}, und jede Beschreibung ist von Hand geschrieben. Ausprobiert wurde nicht jedes Tool. Angaben zu EU-Sitz und Open Source stammen von den Anbietern.</p>
+<h2 id="werkstatt">Redaktion und Prüfung</h2>
+<p>Vor der Veröffentlichung wird jede Seite redaktionell geprüft. Die redaktionelle Verantwortung für alle Inhalte trägt Jean, die Angaben dazu stehen oben.</p>
+<p>„Geprüft“ heißt bei der Tool-Liste: Ein Skript fragt jeden Link regelmäßig ab, zuletzt am {LINK_CHECK}, und jede Beschreibung ist auf Deutsch formuliert und mit der Herstellerseite abgeglichen. Ausprobiert wurde nicht jedes Tool. Angaben zu EU-Sitz und Open Source stammen von den Anbietern.</p>
 <h2 id="unabhaengigkeit">Unabhängigkeit und Werbung</h2>
 <p>{imp_partner} Links zu PROMPTGOTT (Substack) tragen UTM-Parameter, damit dort erkennbar ist, dass der Besuch von hier kam. <b>[NEEDS_REVIEW: Verhältnis zu PROMPTGOTT bestätigen, etwa „PROMPTGOTT ist Jeans eigener Newsletter; Links dorthin sind Eigenwerbung.“]</b>{imp_später}</p>
 <h2>Haftung für Links</h2>
@@ -1415,7 +1420,7 @@ def build_subpages(list_secs=()):
     ds = f"""{topbar("sub")}
 <div class="page legal"><p class="eyebrow">Rechtliches</p><h1>Datenschutz</h1>{needs_ds}
 <p><b>Verantwortlicher:</b> [NAME, ANSCHRIFT wie im Impressum], E-Mail: {mail_link("Datenschutz")}</p>
-<p class="ds-kurz">Kurz gesagt: keine Cookies, kein Tracking, keine Analyse-Tools, keine fremden Skripte, Schriften oder Bilder. Persönliche Angaben verlassen deinen Browser nur, wenn du ein Formular abschickst.</p>
+<p class="ds-kurz">Keine Cookies, kein Tracking, keine Analyse-Tools, keine fremden Skripte, Schriften oder Bilder. Persönliche Angaben verlassen deinen Browser nur, wenn du ein Formular abschickst.</p>
 <h2>Hosting (GitHub Pages)</h2>
 <p>Die Seite wird über GitHub Pages ausgeliefert (GitHub, Inc., USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie IP-Adresse, Zeitpunkt und aufgerufene Adresse, um die Seite auszuliefern und vor Angriffen zu schützen. Wie lange GitHub diese Protokolle aufbewahrt, legt GitHub fest (<a href="{gh_privacy}" target="_blank" rel="noopener">GitHub-Datenschutzerklärung</a>). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, das berechtigte Interesse an einer sicheren Auslieferung der Seite.</p>
 <p>GitHub gibt in dieser Datenschutzerklärung an, nach dem EU-US Data Privacy Framework zertifiziert zu sein. Die Übermittlung in die USA stützt sich damit auf den Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO).</p>
@@ -1811,7 +1816,7 @@ def neu_band(list_secs):
 <a class="neu-trend" href="{TRENDS_PAGE}#{t['trend']}">{icon("spark")}{html.escape(trend_ids[t["trend"]]["label"])}</a></li>""" for t in NEU_AKTIV[:6])
     neu_html = f"""<div class="neu-box reveal"><h3>{icon("plus")}Frisch in den Schubladen</h3><ul class="neu-list">{neu}</ul></div>""" if neu else ""
     return f"""<section class="band" id="neu-und-trends"><div class="wrap">
-<p class="eyebrow">Neu &amp; im Trend · Stand {de_date(TRENDS["stand"])}</p><h2>Frisch in der Werkstatt angekommen</h2>
+<p class="eyebrow">Neu &amp; im Trend · Stand {de_date(DATES[TRENDS_PAGE][1])}</p><h2>Frisch in der Werkstatt angekommen</h2>
 <p class="intro">{ZAHLWORT.get(len(TRENDS["trends"]), str(len(TRENDS["trends"])))} Entwicklungen, die wir beim Hersteller nachgelesen haben, und die Tools, die deshalb neu in der Liste stehen. Die ausführliche Einordnung mit Quellen liegt auf der Trend-Seite.</p>
 <div class="trend-cards">{cards}</div>
 {neu_html}
@@ -1846,7 +1851,7 @@ def gl_autolink(txt, used):
 
 
 def build_trends(tools_map, list_secs):
-    stand = de_date(TRENDS["stand"])
+    stand = de_date(DATES[TRENDS_PAGE][1])  # dasselbe Datum wie dateModified und sitemap-lastmod
     url = SITE_URL + TRENDS_PAGE
     n = len(TRENDS["trends"])
     ids = [t["id"] for t in TRENDS["trends"]]
@@ -1887,7 +1892,7 @@ def build_trends(tools_map, list_secs):
 </article>""")
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "Article", "@id": url, "url": url, "headline": TRENDS["titel"], "description": TRENDS["intro"], "inLanguage": "de-DE",
-         "datePublished": TRENDS["stand"], "dateModified": TRENDS["stand"], "mainEntityOfPage": url,
+         "datePublished": DATES[TRENDS_PAGE][0], "dateModified": DATES[TRENDS_PAGE][1], "mainEntityOfPage": url,
          "author": {"@type": "Organization", "name": "KI-Werkstatt", "url": SITE_URL},
          "publisher": {"@type": "Organization", "name": "KI-Werkstatt", "url": SITE_URL},
          "citation": [u for t in TRENDS["trends"] for _, u, _ in t["quellen"]]},
@@ -2112,9 +2117,15 @@ def rg_words(md):
     return len(re.findall(r"\w+", md))
 
 
+def rg_md(a):
+    """Ratgeber-Markdown ohne das alte Kasten-Etikett „Kurz gesagt:“ (Vorlage, kein Inhalt: der Kasten spricht für sich)."""
+    md = (RG_DIR / f"{a['id']}.md").read_text(encoding="utf-8")
+    return re.sub(r"\A> \*\*Kurz gesagt:\*\* ", "> ", md)
+
+
 def rg_total_words(a):
     """Wörter aus Text und FAQ; Grundlage für Lesezeit auf Karte und Seite."""
-    md = (RG_DIR / f"{a['id']}.md").read_text(encoding="utf-8")
+    md = rg_md(a)
     return rg_words(md) + sum(rg_words(q + " " + x) for q, x in a["faq"])
 
 
@@ -2247,12 +2258,13 @@ def build_ratgeber(tools_map):
             raise SystemExit(f"{where}: Trend '{a['trend']}' fehlt")
         if not a["quellen"]:
             raise SystemExit(f"{where}: keine Quellen")
-        md = (RG_DIR / f"{a['id']}.md").read_text(encoding="utf-8")
+        md = rg_md(a)
         body_html, toc = render_md(md)
         body_html = gl_autolink_html(body_html, set())
         words = rg_total_words(a)
         minutes = max(1, round(words / 200))
         url = SITE_URL + a["page"]
+        pub, mod = DATES[a["page"]]  # erstes Erscheinen und letzte inhaltliche Änderung laut Git (page_dates)
         faq = [tuple(x) for x in a["faq"]]
         toc_html = "".join(f'<a href="#{i}">{html.escape(t)}</a>' for i, t in toc) + f'<a href="#faq">Fragen</a><a href="#quellen">Quellen</a>'
         tool_chips = "".join(tool_chip(n, tools_map) for n in a["tools"])
@@ -2282,7 +2294,7 @@ def build_ratgeber(tools_map):
             trend_btn = f'<a class="btn" href="{TRENDS_PAGE}#{t["id"]}">{icon("chart")}Zum Trend: {html.escape(t["label"])}</a>'
         ld = {"@context": "https://schema.org", "@graph": [
             {"@type": "Article", "@id": url, "url": url, "headline": a["h1"], "description": a["meta"], "inLanguage": "de-DE",
-             "datePublished": a["stand"], "dateModified": a["stand"], "wordCount": words, "mainEntityOfPage": url,
+             "datePublished": pub, "dateModified": mod, "wordCount": words, "mainEntityOfPage": url,
              "author": {"@type": "Organization", "name": "KI-Werkstatt", "url": SITE_URL},
              "publisher": {"@type": "Organization", "name": "KI-Werkstatt", "url": SITE_URL},
              "citation": [u for _, u, _ in a["quellen"]]},
@@ -2293,7 +2305,7 @@ def build_ratgeber(tools_map):
         body = f"""{topbar("ratgeber")}
 <section class="hero rg-hero"><div class="hero-art">{hero_floats()}</div><div class="wrap">
 {crumb_html}
-<p class="kicker" data-chrome>{icon(a["icon"])} <b>Ratgeber</b> · Stand {de_date(a["stand"])} · {minutes} Min. Lesezeit</p>
+<p class="kicker" data-chrome>{icon(a["icon"])} <b>Ratgeber</b> · Stand {de_date(mod)} · {minutes} Min. Lesezeit</p>
 <h1>{html.escape(a["h1"])}</h1>
 <p class="sub">{html.escape(a["hero"])}</p>
 <div class="ctas"><a class="btn btn-lime" href="#{toc[0][0] if toc else 'faq'}">{icon("book")}Lesen</a><a class="btn hide-sm" href="#stack-check">{icon("mail")}Stack-Check anfragen</a>{llm_page_btn()}</div>
@@ -2303,7 +2315,7 @@ def build_ratgeber(tools_map):
 <nav class="rail" aria-label="Inhalt" data-chrome><div class="in"><p class="rail-h">Inhalt</p>{toc_html}
 <div class="lead-mini"><p>Kostet nichts außer zwei Minuten.</p><a class="btn btn-sm" href="#stack-check">{icon("mail")}Stack-Check anfragen</a></div></div></nav>
 <article class="content rg-body">
-<div class="print-head" data-chrome>{hans("hm-sm", label="")}<span>KI-Werkstatt · Ratgeber · Stand {de_date(a["stand"])}</span></div>
+<div class="print-head" data-chrome>{hans("hm-sm", label="")}<span>KI-Werkstatt · Ratgeber · Stand {de_date(mod)}</span></div>
 <details class="toc-m" data-chrome><summary>{icon("book")}Inhalt · {len(toc)} Abschnitte</summary><nav aria-label="Inhalt (kompakt)">{toc_html}</nav></details>
 {body_html}
 <section class="rg-extras">
@@ -2314,7 +2326,7 @@ def build_ratgeber(tools_map):
 </section>
 <p class="rg-trend">{trend_btn}</p>
 <section id="faq" class="rg-faq"><h2>Häufige Fragen</h2><div class="faq-list">{faq_html(faq)}</div></section>
-<section id="quellen" class="rg-quellen" data-chrome><h2>Quellen</h2><ol>{quellen}</ol>{quellen_note()}{legal_note(a["stand"])}</section>
+<section id="quellen" class="rg-quellen" data-chrome><h2>Quellen</h2><ol>{quellen}</ol>{quellen_note()}{legal_note(mod)}</section>
 <section class="rg-done reveal" id="geschafft" data-chrome>{hans("hm-md", label="Hans Moritz zeigt den Daumen hoch", thumb=True)}<div>
 <h2>Geschafft. Respekt.</h2>
 <p>Du hast dich durch {f"{words:,}".replace(",", ".")} Wörter Werkstatt-Wissen gearbeitet. Hol dir einen Kaffee, den hast du dir verdient.</p>
@@ -2342,7 +2354,7 @@ def build_ratgeber(tools_map):
 """
         (DOCS / a["page"]).write_text(page_shell(seo_title(a["seo_title"]), body, a["meta"], url,
                                                 f'<script type="application/ld+json">{ld_js}</script>', og_type="article",
-                                                published=a["stand"], modified=a["stand"]), encoding="utf-8")
+                                                published=pub, modified=mod), encoding="utf-8")
         pages.append(a["page"])
     return pages
 
@@ -2360,17 +2372,17 @@ def build_hubs():
         raise SystemExit(f"ratgeber.html: Rollen {unknown} fehlen in HUB_ROLLEN_CSS und in style.css (.rg-hub:has(#rolle-…:checked))")
     arts = RATGEBER["artikel"]
     n = len(arts)
-    stand = max(a["stand"] for a in arts)
+    stand = DATES[RATGEBER_PAGE][1]
     rlabel = {r["id"]: r["label"] for r in rollen}
     used = [r for r in rollen if any(r["id"] in a["rollen"] for a in arts)]
     radios = f'<label class="chip rg-opt"><input type="radio" name="rolle" id="rolle-alle" checked><span>Alle ({n})</span></label>' + "".join(
         f'<label class="chip rg-opt"><input type="radio" name="rolle" id="rolle-{r["id"]}"><span>{icon(r["icon"])}{html.escape(r["label"])} '
         f'({sum(r["id"] in a["rollen"] for a in arts)})</span></label>' for r in used)
     cards = []
-    for a in sorted(arts, key=lambda a: a["stand"], reverse=True):
+    for a in sorted(arts, key=lambda a: DATES[a["page"]][1], reverse=True):
         minutes = max(1, round(rg_total_words(a) / 200))
         cards.append(f"""<article class="rg-card hub-card reveal" data-rollen="{" ".join(a["rollen"])}"><span class="term-ico">{icon(a["icon"])}</span>
-<div><p class="trend-no" data-chrome>Stand {de_date(a["stand"])} · {minutes} Min. Lesezeit</p><h2><a href="{a["page"]}">{html.escape(a["label"])}</a></h2>
+<div><p class="trend-no" data-chrome>Stand {de_date(DATES[a["page"]][1])} · {minutes} Min. Lesezeit</p><h2><a href="{a["page"]}">{html.escape(a["label"])}</a></h2>
 <p>{html.escape(a["meta"])}</p>
 <p class="hub-roles" data-chrome>Für: {", ".join(html.escape(rlabel[x]) for x in a["rollen"] if x in rlabel)}</p></div></article>""")
     crumb_html, crumb_ld = crumbs(("Ratgeber", RATGEBER_PAGE))
@@ -2451,19 +2463,23 @@ def build_feed(list_secs):
     home = tool_home(list_secs)
     # Nur bereits gestartete Neuzugänge; abgelaufene bleiben als Historie im Feed
     neu = [t for t in NEU["tools"] if date.fromisoformat(t["seit"]) <= date.today()]
-    stamp = max([TRENDS["stand"]] + [t["seit"] for t in neu] + [a["stand"] for a in RATGEBER["artikel"]]) + "T00:00:00Z"
+    # Je Eintrag das echte Datum: erstes Erscheinen und letzte Änderung des Eintrags laut Git (page_dates)
+    stamp = max([TREND_DATES[t["id"]][1] for t in TRENDS["trends"]] + [NEU_DATES[t["name"]][1] for t in neu]
+                + [DATES[a["page"]][1] for a in RATGEBER["artikel"]]) + "T00:00:00Z"
     x = html.escape
     entries = []
     for t in TRENDS["trends"]:
         u = f"{SITE_URL}{TRENDS_PAGE}#{t['id']}"
-        entries.append(f'<entry><title>{x(t["titel"])}</title><link href="{x(u)}"/><id>{x(u)}</id><updated>{TRENDS["stand"]}T00:00:00Z</updated><summary>{x(t["kurz"])}</summary></entry>')
+        entries.append(f'<entry><title>{x(t["titel"])}</title><link href="{x(u)}"/><id>{x(u)}</id><published>{TREND_DATES[t["id"]][0]}T00:00:00Z</published>'
+                       f'<updated>{TREND_DATES[t["id"]][1]}T00:00:00Z</updated><summary>{x(t["kurz"])}</summary></entry>')
     for a in RATGEBER["artikel"]:
         u = SITE_URL + a["page"]
-        entries.append(f'<entry><title>{x(a["h1"])}</title><link href="{x(u)}"/><id>{x(u)}</id><updated>{a["stand"]}T00:00:00Z</updated><summary>{x(a["teaser"])}</summary></entry>')
+        entries.append(f'<entry><title>{x(a["h1"])}</title><link href="{x(u)}"/><id>{x(u)}</id><published>{DATES[a["page"]][0]}T00:00:00Z</published>'
+                       f'<updated>{DATES[a["page"]][1]}T00:00:00Z</updated><summary>{x(a["teaser"])}</summary></entry>')
     for t in neu:
         u = SITE_URL + home[t["name"]]
         entries.append(f'<entry><title>Neu in der Liste: {x(t["name"])}</title><link href="{x(u)}"/><id>{x(SITE_URL)}neu/{slug(t["name"])}</id>'
-                       f'<updated>{t["seit"]}T00:00:00Z</updated><summary>{x(t["notiz"])}</summary></entry>')
+                       f'<published>{t["seit"]}T00:00:00Z</published><updated>{NEU_DATES[t["name"]][1]}T00:00:00Z</updated><summary>{x(t["notiz"])}</summary></entry>')
     (DOCS / "feed.xml").write_text(f"""<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><title>KI-Werkstatt: Trends und Neuzugänge</title>
 <link href="{SITE_URL}feed.xml" rel="self"/><link href="{SITE_URL}{TRENDS_PAGE}"/><id>{SITE_URL}feed.xml</id><updated>{stamp}</updated>
@@ -2504,35 +2520,170 @@ def build_search_index():
 
 
 LASTMOD = ROOT / "data" / "lastmod.json"
+DATES = {}  # Seite -> (erstes Erscheinen, letzte inhaltliche Änderung), füllt page_dates()
+TREND_DATES = {}  # Trend-ID -> (erstes Erscheinen, letzte Änderung des Eintrags), für den Feed
 
 
-def page_lastmod(pages):
-    """lastmod je Seite aus einem Hash des Inhalts in <main>: Datum nur fortschreiben, wenn sich der Inhalt geändert hat.
-    Ausgeblendet werden Build- und Link-Check-Datum sowie Asset-Versionen, die sich sonst bei jedem Lauf ändern.
-    Der Stand liegt in data/lastmod.json (vom Build gepflegt, mit committen); neue Ratgeber starten mit ihrem Stand."""
+def _json_part(get):
+    """Extraktor für source_dates: Ausschnitt einer JSON-Datei, sortiert serialisiert (None = nicht vorhanden)."""
+    def ex(txt):
+        v = get(json.loads(txt))
+        return None if v is None else json.dumps(v, ensure_ascii=False, sort_keys=True)
+    return ex
+
+
+def _entry(list_key, eid, drop=(), keep=None):
+    def get(d):
+        for x in d.get(list_key) or []:
+            if isinstance(x, dict) and x.get("id") == eid:
+                return {k: v for k, v in x.items() if k not in drop and (keep is None or k in keep)}
+        return None
+    return get
+
+
+def _readme(*ids):
+    """README-Abschnitte (## Titel) nach Slug; ohne ids die ganze Datei."""
+    def ex(txt):
+        if not ids:
+            return txt
+        parts = {slug(c.split("\n", 1)[0]): c for c in re.split(r"(?m)^## ", txt)[1:]}
+        found = [parts[i] for i in ids if i in parts]
+        return "\n".join(found) if found else None
+    return ex
+
+
+_COPY_CACHE = {}
+
+
+def _copy(*funcs):
+    """Extraktor für Seitentext, der direkt im Generator steht: nur Zeichenketten mit Leerraum (sichtbarer Text, HTML)
+    aus den genannten Funktionen. Code-Umbauten, Schlüssel und Bezeichner zählen nicht. Funktion fehlt in einer alten
+    Fassung: None."""
+    import ast
+    import hashlib as _h
+
+    def ex(txt):
+        key = _h.sha1(txt.encode("utf-8")).hexdigest()
+        if key not in _COPY_CACHE:
+            found = {}
+            for n in ast.parse(txt).body:
+                if isinstance(n, ast.FunctionDef):
+                    doc = n.body[0].value if n.body and isinstance(n.body[0], ast.Expr) and isinstance(n.body[0].value, ast.Constant) else None
+                    text = "\n".join(c.value for c in ast.walk(n) if isinstance(c, ast.Constant) and isinstance(c.value, str)
+                                      and c is not doc and re.search(r"\s", c.value))  # Text und HTML, keine Schlüssel/Bezeichner
+                    found[n.name] = re.sub(r"(?is)<(script|style)\b.*?</\1>", "", text)  # Inline-Code ist kein sichtbarer Text
+            _COPY_CACHE[key] = found
+        parts = [_COPY_CACHE[key].get(f) for f in funcs]
+        return None if any(x is None for x in parts) else "\n".join(parts)
+    return ex
+
+
+# Seiten mit eigenem Text im Generator (nur seiteneigene Funktionen; gemeinsame Vorlagen wie Fußzeile zählen nicht)
+PAGE_COPY = {"index.html": ("build_index", "rechner_band", "einsatz_band", "neu_band", "ratgeber_band"),
+             GLOSSAR_PAGE: ("build_glossar",), TRENDS_PAGE: ("build_trends",),
+             EINSATZ_PAGE: ("build_hubs",), RATGEBER_PAGE: ("build_hubs",)}
+NEU_DATES = {}  # Tool -> (seit, letzte Änderung des NEU-Eintrags), für den Feed
+
+
+def page_dates(sections):
+    """Datum je Seite aus der Git-Historie ihrer Quellen (scripts/source_dates.py), nie aus dem Build-Datum.
+
+    Kategorie-Seite: ihr README-Abschnitt und ihr Eintrag in data/kategorien.json. Glossar: data/glossar.json und die
+    Lernen-Abschnitte der README. Trends: data/trends.json und die Neuzugänge. Einsatz- und Ratgeber-Seite: ihr Eintrag
+    in data/einsatz.json bzw. data/ratgeber.json (ohne Feld "stand"), beim Ratgeber dazu content/ratgeber/<id>.md.
+    Übersichten (Ratgeber, Einsatzgebiete) und Startseite: jüngstes Datum ihrer Teile. Querverweise zwischen Seiten
+    (Kästen „Weitere Ratgeber“ u. ä.), Fußzeile und Generator-Chrome zählen nicht. Ohne Git-Historie gilt der zuletzt
+    gespeicherte Stand aus data/lastmod.json. Ergebnis in DATES und data/lastmod.json ("erschienen" = erstes Erscheinen
+    der ältesten Quelle, "geaendert" = letzte inhaltliche Änderung; JSON-LD datePublished/dateModified, Feed und
+    das sichtbare „Stand“ der Ratgeber nutzen dieselben Werte)."""
+    from source_dates import History
+    hist = History(ROOT)
     try:
-        old = json.loads(LASTMOD.read_text(encoding="utf-8"))
+        stored = json.loads(LASTMOD.read_text(encoding="utf-8"))
     except (FileNotFoundError, ValueError):
-        old = {}
-    seed = {a["page"]: a["stand"] for a in RATGEBER["artikel"]}
-    seed[TRENDS_PAGE] = TRENDS["stand"]
-    today = date.today().isoformat()
-    out, res = {}, {}
-    for pg in pages:
-        doc = (DOCS / pg).read_text(encoding="utf-8")
-        m = re.search(r"<main\b.*?</main>", doc, re.S)
-        txt = m.group(0) if m else doc
-        for volatile in (LINK_CHECK, TODAY, f"{LINK_CHECK_N} Links"):
-            txt = txt.replace(volatile, "")
-        txt = re.sub(r"\?v=[0-9a-f]{8}", "", txt)
-        h = hashlib.sha1(txt.encode("utf-8")).hexdigest()[:16]
-        prev = old.get(pg, {})
-        day = prev["date"] if prev.get("hash") == h else (today if prev else seed.get(pg, today))
-        out[pg] = {"hash": h, "date": day}
-        res[pg] = day
-    if out != old:
+        stored = {}
+    whole = _json_part(lambda d: d)
+    data = ("stacks", "rechner", "glossar", "kategorien", "trends", "neu", "einsatz", "ratgeber")
+    specs = {"index.html": [("README.de.md", _readme())] + [(f"data/{n}.json", whole) for n in data]}
+    for sec in (x for x in sections if x["id"] in KAT):  # nur Schubladen mit eigener Seite
+        specs[cat_page(sec["id"])] = [("README.de.md", _readme(sec["id"])), ("data/kategorien.json", _json_part(lambda d, i=sec["id"]: d.get(i)))]
+    specs[GLOSSAR_PAGE] = [("data/glossar.json", whole), ("README.de.md", _readme(*LERNEN_IDS))]
+    specs[TRENDS_PAGE] = [("data/trends.json", whole), ("data/neu.json", _json_part(lambda d: d.get("tools")))]
+    hub_e = ("page", "h1", "meta", "icon", "rolle", "aufgaben")
+    specs[EINSATZ_PAGE] = [("data/einsatz.json", _json_part(lambda d: [{k: e.get(k) for k in hub_e} for e in d.get("seiten", [])]))]
+    for e in EINSATZ["seiten"]:
+        specs[e["page"]] = [("data/einsatz.json", _json_part(_entry("seiten", e["id"])))]
+    hub_r = ("page", "label", "meta", "icon", "rollen")
+    specs[RATGEBER_PAGE] = [("data/ratgeber.json", _json_part(lambda d: [{k: a.get(k) for k in hub_r} for a in d.get("artikel", [])]))]
+    for a in RATGEBER["artikel"]:
+        specs[a["page"]] = [(f"content/ratgeber/{a['id']}.md", lambda t: t), ("data/ratgeber.json", _json_part(_entry("artikel", a["id"], drop=("stand",))))]
+        specs[RATGEBER_PAGE] += specs[a["page"]]
+    for e in RATGEBER["artikel"] + EINSATZ["seiten"]:
+        specs["index.html"] += specs[e["page"]][:1]
+    for pg, funcs in PAGE_COPY.items():
+        specs[pg] = specs[pg] + [("scripts/build_de_page.py", _copy(*funcs))]
+    out, trends_out, neu_out = {}, {}, {}
+    stored_trends, stored_neu = stored.get("_trends", {}), stored.get("_neu", {})
+    for t in NEU["tools"]:
+        r = hist.dates("data/neu.json", _json_part(lambda d, n=t["name"]: next((x for x in d.get("tools") or [] if x.get("name") == n), None)))
+        last = r[1] if r else stored_neu.get(t["name"], {}).get("geaendert", t["seit"])
+        NEU_DATES[t["name"]] = (t["seit"], max(t["seit"], last))  # Eintrag erscheint am „seit“-Tag, nie früher
+        neu_out[t["name"]] = {"erschienen": NEU_DATES[t["name"]][0], "geaendert": NEU_DATES[t["name"]][1]}
+    for t in TRENDS["trends"]:
+        r = hist.dates("data/trends.json", _json_part(_entry("trends", t["id"])))
+        if not r and t["id"] in stored_trends:  # ohne Historie: gespeichertes Datum je Trend, nicht das Seitendatum
+            r = (stored_trends[t["id"]]["erschienen"], stored_trends[t["id"]]["geaendert"])
+        TREND_DATES[t["id"]] = r or (TRENDS["stand"], TRENDS["stand"])
+        trends_out[t["id"]] = {"erschienen": TREND_DATES[t["id"]][0], "geaendert": TREND_DATES[t["id"]][1]}
+    # NEU-Badge: Ein- und Ausblenden ändern den sichtbaren Inhalt jeder Seite, die das Tool zeigt (Tool-Liste, Chips,
+    # Neu-Band). Diese Tage zählen als Änderung, aber nur bis heute.
+    today = date.today()
+    badge_days = {}
+    for t in NEU["tools"]:
+        start = date.fromisoformat(t["seit"])
+        days = [d for d in (start, start + timedelta(days=NEU["tage"])) if d <= today]
+        if days:
+            badge_days[t["name"]] = max(days).isoformat()
+    tool_names = {it["name"] for _, _, it in all_items(sections)} | {t["name"] for t in NEU["tools"]}
+
+    def current(path, ex):
+        try:
+            return ex((ROOT / path).read_text(encoding="utf-8")) or ""
+        except (FileNotFoundError, ValueError):
+            return ""
+    for pg in specs:
+        res = [hist.dates(path, ex) for path, ex in specs[pg]]
+        if res and all(res):
+            first, last = min(r[0] for r in res), max(r[1] for r in res)
+        elif pg in stored and "geaendert" in stored[pg]:
+            first, last = stored[pg].get("erschienen", stored[pg]["geaendert"]), stored[pg]["geaendert"]
+            WARN.append(f"{pg}: Datum aus data/lastmod.json (keine Git-Historie für die Quellen)")
+        else:
+            first = last = today.isoformat()
+            WARN.append(f"{pg}: weder Git-Historie noch gespeichertes Datum, heutiges Datum als Erscheinen gesetzt")
+        # Welche Tools die Seite zeigt, nur aus Inhaltsquellen (Generator-Text nennt Tools auch beiläufig)
+        src = "\n".join(current(path, ex) for path, ex in specs[pg] if path != "scripts/build_de_page.py")
+        shown = sorted(n for n in tool_names if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", src))
+        if shown:
+            # Git-Historie der NEU-Einträge dieser Tools (auch Entfernen und geänderte Dauer); nur "zuletzt" zählt,
+            # das Erscheinen der Seite bleibt bei ihren eigenen Quellen
+            def neu_part(d, s=set(shown)):  # wirksamer Zustand: nur Einträge der gezeigten Tools, Dauer nur wenn es welche gibt
+                tools = [x for x in d.get("tools") or [] if x.get("name") in s]
+                return {"tage": d.get("tage"), "tools": tools} if tools else {"tools": []}
+            r = hist.dates("data/neu.json", _json_part(neu_part), missing='{"tools": []}')
+            # Partnerlinks ändern Ziel, rel, Badge und Hinweistexte der gezeigten Tools
+            # (wirksam nur bei aktiv=true; Anlegen der inaktiven Datei ändert keine Seite)
+            rp = hist.dates("data/partner.json", _json_part(lambda d, s=set(shown): {"links": {k: v for k, v in (d.get("links") or {}).items()
+                            if k in s} if d.get("aktiv") else {}}), missing='{"links": {}}')
+            hits = [d for n, d in badge_days.items() if n in shown] + [x[1] for x in (r, rp) if x and x[1]]
+            if hits:
+                last = max([last] + hits)
+        DATES[pg] = (first, last)
+        out[pg] = {"erschienen": first, "geaendert": last}
+    out["_trends"], out["_neu"] = trends_out, neu_out
+    if out != stored:
         LASTMOD.write_text(json.dumps(out, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
-    return res
+    return DATES
 
 
 def build_data(uniq, sections, pages=(), list_secs=()):
@@ -2555,15 +2706,14 @@ def build_data(uniq, sections, pages=(), list_secs=()):
             seite = f"./#{s['id']}"
         rows.append({"name": it["name"], "url": it["url"], "beschreibung": clean, "kategorie": s["title"], "bereich": sub["title"] if sub else "",
                      "eu": eu, "open_source": oss, "neu": it["name"] in NEU_NAMES, "partner": tool_href(it["name"], it["url"])[2], "seite": seite, "icon": fav_src(it["url"])})
-    (DOCS / "tools.json").write_text(json.dumps({"gebaut": TODAY, "link_check": LINK_CHECK, "quelle": REPO_URL, "tools": rows}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (DOCS / "tools.json").write_text(json.dumps({"stand": de_date(DATES["index.html"][1]), "link_check": LINK_CHECK, "quelle": REPO_URL, "tools": rows}, ensure_ascii=False, indent=1), encoding="utf-8")
     with (DOCS / "tools.csv").open("w", encoding="utf-8-sig", newline="") as f:  # ohne Icon-Pfad: der hilft nur der Seite
         w = csv.DictWriter(f, fieldnames=[k for k in rows[0] if k != "icon"], delimiter=";", extrasaction="ignore")
         w.writeheader()
         for r in rows:
             w.writerow({k: ("ja" if v is True else "nein" if v is False else csv_safe(v)) for k, v in r.items()})
     build_search_index()
-    lastmod = page_lastmod(("index.html",) + tuple(pages))
-    urls = "".join(f"<url><loc>{SITE_URL}{pg}</loc><lastmod>{lastmod['index.html' if not pg else pg]}</lastmod></url>" for pg in ("",) + tuple(pages))
+    urls = "".join(f"<url><loc>{SITE_URL}{pg}</loc><lastmod>{DATES['index.html' if not pg else pg][1]}</lastmod></url>" for pg in ("",) + tuple(pages))
     (DOCS / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
                                       f"{urls}</urlset>\n", encoding="utf-8")
     (DOCS / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}sitemap.xml\n", encoding="utf-8")
@@ -2660,6 +2810,7 @@ svg.w{{position:absolute;right:-60px;bottom:-80px;width:520px;height:520px;fill:
 
 def main():
     sections, head_md = parse(SRC.read_text(encoding="utf-8"))
+    page_dates(sections)
     uniq, n_tools, n_cats, list_secs, tools_map = build_index(sections, head_md)
     pages = build_category_pages(list_secs, tools_map)
     pages.append(build_glossar(tools_map, list_secs, sections))

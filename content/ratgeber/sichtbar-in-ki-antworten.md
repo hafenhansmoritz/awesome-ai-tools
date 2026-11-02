@@ -14,7 +14,7 @@ Google Search Central beschreibt die Lage ungewöhnlich klar: Für AI Overviews 
 
 Ausdrücklich heißt es dort, dass du keine neuen maschinenlesbaren Dateien, keine KI-Textdateien und kein spezielles Markup brauchst, auch keine besonderen schema.org-Auszeichnungen. Wer gerade eine llms.txt baut, nur um in Googles KI-Antworten aufzutauchen, kann sich die Arbeit also sparen. Für andere Systeme mag so eine Datei nützlich sein, für Google ist sie laut eigener Doku kein Kriterium.
 
-Spannend ist eine technische Beschreibung: Beide Formate können eine Technik nutzen, die Google „Query Fan-out“ nennt. Dabei schickt das System zu einer Frage mehrere verwandte Suchen zu Unterthemen los und stellt daraus die Antwort zusammen. Für dich heißt das, dass nicht nur die eine Hauptseite zählt, sondern auch die Seiten zu Teilfragen, Vergleichen und Details.
+Weiter hilft eine technische Beschreibung: Beide Formate können eine Technik nutzen, die Google „Query Fan-out“ nennt. Dabei schickt das System zu einer Frage mehrere verwandte Suchen zu Unterthemen los und stellt daraus die Antwort zusammen. Für dich heißt das, dass nicht nur die eine Hauptseite zählt, sondern auch die Seiten zu Teilfragen, Vergleichen und Details.
 
 Als Grundlagen, die sich weiterhin lohnen, nennt Google unter anderem: Crawling in der robots.txt und beim CDN erlauben, Inhalte über interne Links auffindbar machen und eine gute Nutzererfahrung bieten. Dazu kommen wichtige Inhalte als Text, strukturierte Daten passend zum sichtbaren Text und aktuelle Angaben im Merchant Center und im Unternehmensprofil. Das liest sich wie eine gewöhnliche SEO-Checkliste, und genau das ist die Botschaft.
 

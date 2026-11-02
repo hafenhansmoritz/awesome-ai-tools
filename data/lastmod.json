@@ -1,130 +1,278 @@
 {
+ "_neu": {
+  "Agent Skills": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-27"
+  },
+  "Apify": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "Bluedot": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "Brevo": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "Claid.ai": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "FLUX 3 Image Klein": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-27"
+  },
+  "FLUX 3 Video": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-27"
+  },
+  "Firecrawl": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "Giotto Alto": {
+   "erschienen": "2026-10-28",
+   "geaendert": "2026-10-28"
+  },
+  "Google Antigravity": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-27"
+  },
+  "Kittl": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "LFM3 von Liquid AI": {
+   "erschienen": "2026-10-28",
+   "geaendert": "2026-10-28"
+  },
+  "Mage-VL-Cowork": {
+   "erschienen": "2026-11-01",
+   "geaendert": "2026-11-01"
+  },
+  "Mistral Large 4": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-31"
+  },
+  "Nemotron 3.5 Bolt": {
+   "erschienen": "2026-10-28",
+   "geaendert": "2026-10-28"
+  },
+  "Nemotron 3.5 Transcribe": {
+   "erschienen": "2026-11-01",
+   "geaendert": "2026-11-01"
+  },
+  "NeuronWriter": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "Opera WebAI": {
+   "erschienen": "2026-11-01",
+   "geaendert": "2026-11-01"
+  },
+  "Retell AI": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "SE Ranking": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "Tidio": {
+   "erschienen": "2026-11-02",
+   "geaendert": "2026-11-02"
+  },
+  "Timestral": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-27"
+  },
+  "Unlimited OCR 2": {
+   "erschienen": "2026-11-01",
+   "geaendert": "2026-11-01"
+  },
+  "Voxtral 3": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-27"
+  },
+  "goose": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-27"
+  }
+ },
+ "_trends": {
+  "agenten-hintergrund": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "ai-act": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-31"
+  },
+  "bild-video": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-28"
+  },
+  "browser": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "europa": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-31"
+  },
+  "ki-suche": {
+   "erschienen": "2026-10-28",
+   "geaendert": "2026-11-01"
+  },
+  "lokal": {
+   "erschienen": "2026-10-28",
+   "geaendert": "2026-11-01"
+  },
+  "offene-standards": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "preisrutsch": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "sprache": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "training-optout": {
+   "erschienen": "2026-11-01",
+   "geaendert": "2026-11-02"
+  }
+ },
  "index.html": {
-  "date": "2026-11-02",
-  "hash": "0c9725ecc07af001"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-02"
  },
  "ki-einsatz.html": {
-  "date": "2026-11-02",
-  "hash": "e1d9b41a94e8331e"
+  "erschienen": "2026-10-27",
+  "geaendert": "2026-10-31"
  },
  "ki-fuer-content-creator.html": {
-  "date": "2026-11-02",
-  "hash": "6905a0fa03a3aed7"
+  "erschienen": "2026-10-27",
+  "geaendert": "2026-10-31"
  },
  "ki-fuer-entwickler.html": {
-  "date": "2026-11-02",
-  "hash": "7657358ed9cadfca"
+  "erschienen": "2026-10-27",
+  "geaendert": "2026-10-31"
  },
  "ki-fuer-online-shops.html": {
-  "date": "2026-11-02",
-  "hash": "f1bcb2b212fadf8c"
+  "erschienen": "2026-10-27",
+  "geaendert": "2026-10-31"
  },
  "ki-glossar.html": {
-  "date": "2026-11-02",
-  "hash": "7f3e0f212de33a43"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-02"
  },
  "ki-im-buero.html": {
-  "date": "2026-11-02",
-  "hash": "afacb4d7ad796113"
+  "erschienen": "2026-10-27",
+  "geaendert": "2026-10-31"
  },
  "ki-im-kundenservice.html": {
-  "date": "2026-11-02",
-  "hash": "419c9c24b2f67513"
+  "erschienen": "2026-10-27",
+  "geaendert": "2026-10-31"
  },
  "ki-im-marketing.html": {
-  "date": "2026-11-02",
-  "hash": "9f597db658fb8f00"
+  "erschienen": "2026-10-27",
+  "geaendert": "2026-10-31"
  },
  "ki-tools-audio.html": {
-  "date": "2026-11-02",
-  "hash": "590ab4192f57ed39"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-01"
  },
  "ki-tools-automatisierung-und-ki-agenten.html": {
-  "date": "2026-11-02",
-  "hash": "f0338da31d81ecf0"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-02"
  },
  "ki-tools-bilder.html": {
-  "date": "2026-11-02",
-  "hash": "5c5c14613d7379a2"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-02"
  },
  "ki-tools-entwickler-tools-und-llmops.html": {
-  "date": "2026-11-02",
-  "hash": "150a52a6419d4f18"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-02"
  },
  "ki-tools-ki-telefonagenten.html": {
-  "date": "2026-11-02",
-  "hash": "4af5081cabe787fa"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-02"
  },
  "ki-tools-marketing-und-seo.html": {
-  "date": "2026-11-02",
-  "hash": "8c9296e5b71d6b84"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-02"
  },
  "ki-tools-programmieren-mit-ki.html": {
-  "date": "2026-11-02",
-  "hash": "25a70eacc2eb65c7"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-10-31"
  },
  "ki-tools-text-und-sprache.html": {
-  "date": "2026-11-02",
-  "hash": "4ec02ae21cc97d09"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-11-02"
  },
  "ki-tools-video.html": {
-  "date": "2026-11-02",
-  "hash": "0bfed4ec43ad507a"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-10-31"
  },
  "ki-tools-weitere-ki-tools.html": {
-  "date": "2026-11-02",
-  "hash": "c0325ae7898c79c9"
+  "erschienen": "2026-09-25",
+  "geaendert": "2026-10-31"
  },
  "ki-trends.html": {
-  "date": "2026-11-02",
-  "hash": "c7c8fa6e6408d50c"
+  "erschienen": "2026-10-27",
+  "geaendert": "2026-11-02"
  },
  "ratgeber-datenschutz-ki-tools.html": {
-  "date": "2026-11-02",
-  "hash": "845af3050517fef9"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-10-31"
  },
  "ratgeber-ki-agenten-sicher.html": {
-  "date": "2026-11-02",
-  "hash": "240dcf9e36f2e613"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-11-01"
  },
  "ratgeber-ki-crawler-robots-txt.html": {
-  "date": "2026-11-02",
-  "hash": "0507e87781bab756"
+  "erschienen": "2026-11-02",
+  "geaendert": "2026-11-02"
  },
  "ratgeber-ki-inhalte-kennzeichnen.html": {
-  "date": "2026-11-02",
-  "hash": "7dcf1529fb74ec94"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-10-31"
  },
  "ratgeber-ki-modelle-preise.html": {
-  "date": "2026-11-02",
-  "hash": "64b2e3f6bac103c7"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-11-01"
  },
  "ratgeber-ki-produktbilder-shops.html": {
-  "date": "2026-11-02",
-  "hash": "9827d753cbabafd6"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-10-31"
  },
  "ratgeber-ki-telefonagenten.html": {
-  "date": "2026-11-02",
-  "hash": "2f8daad6a9afd5c4"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-11-02"
  },
  "ratgeber-ki-uebersetzung-shops.html": {
-  "date": "2026-11-02",
-  "hash": "714f7ccc3d7f3bdb"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-11-02"
  },
  "ratgeber-lokale-ki-unternehmen.html": {
-  "date": "2026-11-02",
-  "hash": "e9190055c1e8068c"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-10-31"
  },
  "ratgeber-mcp-agent-skills.html": {
-  "date": "2026-11-02",
-  "hash": "34debab3d12d371a"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-11-02"
  },
  "ratgeber-sichtbar-in-ki-antworten.html": {
-  "date": "2026-11-02",
-  "hash": "a05ed169033b0706"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-11-02"
  },
  "ratgeber.html": {
-  "date": "2026-11-02",
-  "hash": "6e4423d5ff81e9ba"
+  "erschienen": "2026-10-28",
+  "geaendert": "2026-11-02"
  }
 }

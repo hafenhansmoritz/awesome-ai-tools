@@ -260,7 +260,7 @@
       res.innerHTML = '<p class="eyebrow">Dein Setup</p><h3 class="finder-q" tabindex="-1">' + list.length + ' Tools, die zu deinem Fall passen</h3>' +
         '<div class="result-tools">' + cards + "</div>" + notes +
         '<p style="margin-top:14px"><button type="button" class="btn btn-sm restart">' + svg("arrow") + 'Noch mal von vorn</button></p>';
-      // Formular samt Einwilligungstext steht einmal im HTML (<template>, vom Generator); hier nur klonen und befüllen
+      // Formular samt Einwilligungstext steht einmal im HTML (<template>); hier nur klonen und befüllen
       var tpl = document.getElementById("finder-form-tpl"), fForm = tpl && tpl.content && tpl.content.querySelector("form");
       if (fForm) {
         fForm = document.importNode(fForm, true);
@@ -616,7 +616,7 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") spClose(); });
     document.addEventListener("click", function (e) { if (!sp.contains(e.target) && e.target !== q) spHide(); });
   }
-  /* KI-Chat mit Werkstatt-Prompt (ops/llm-deeplinks.md): Der Button öffnet einen Dialog mit dem vollständigen Text.
+  /* KI-Chat mit Werkstatt-Prompt: Der Button öffnet einen Dialog mit dem vollständigen Text.
      Erst der Klick auf „In … öffnen“ gibt ihn an den Anbieter weiter, und zwar sichtbar in der Link-Adresse (?q=).
      Vorher geht keine Anfrage raus, gespeichert wird nichts. Der Link entsteht immer aus genau dem Text im Feld. */
   var LLM = jsonData("kw-llm");
