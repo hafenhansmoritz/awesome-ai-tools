@@ -67,6 +67,12 @@ def main():
         else:
             git("init", "--quiet", cwd=work)
     git("symbolic-ref", "HEAD", "refs/heads/main", cwd=work)  # auch bei leerem Repo und init.defaultBranch=master
+    # Nur ein reiner Publish-Klon darf weiterarbeiten: keine Quelldateien im Stand und in der gesamten Historie
+    hist_paths = set(git("log", "--all", "--format=", "--name-only", cwd=work, check=False).stdout.split())
+    foreign = sorted(x for x in hist_paths if not x.startswith("docs/") and x not in FILES)
+    if foreign:
+        raise SystemExit(f"{work}: Historie enthält Dateien außerhalb von docs/ und {', '.join(FILES)} (z. B. {foreign[0]}). "
+                         "Das ist kein reines Publish-Repo; bitte ein neues, leeres Repo verwenden. Nichts gelöscht.")
     if a.ref.startswith("origin/"):  # gemergten Stand holen, nicht den lokalen Zwischenstand
         git("fetch", "--quiet", "origin", a.ref.split("/", 1)[1])
     for p in work.iterdir():
@@ -74,16 +80,22 @@ def main():
             shutil.rmtree(p) if p.is_dir() else p.unlink()
     export(a.ref, work)
     git("add", "-A", cwd=work)
-    if not git("status", "--porcelain", cwd=work).stdout.strip():
-        print("Publish-Repo ist schon auf diesem Stand.")
-        return
-    name, mail = AUTHOR
-    msg = f"Website-Stand {date.today().strftime('%d.%m.%Y')}"
-    git("-c", f"user.name={name}", "-c", f"user.email={mail}", "commit", "--quiet", "-m", msg, cwd=work)
-    print(git("log", "--oneline", "-1", cwd=work).stdout.strip(), "|", git("ls-files", cwd=work).stdout.count("\n"), "Dateien")
+    if git("status", "--porcelain", cwd=work).stdout.strip():
+        name, mail = AUTHOR
+        msg = f"Website-Stand {date.today().strftime('%d.%m.%Y')}"
+        git("-c", f"user.name={name}", "-c", f"user.email={mail}", "commit", "--quiet", "-m", msg, cwd=work)
+        print(git("log", "--oneline", "-1", cwd=work).stdout.strip(), "|", git("ls-files", cwd=work).stdout.count("\n"), "Dateien")
+    else:
+        print("Keine neuen Änderungen.")
     if a.remote and not a.no_push:
-        git("push", "--quiet", "-u", "origin", "main", cwd=work)
-        print("gepusht:", a.remote)
+        has_remote_main = git("rev-parse", "--verify", "--quiet", "origin/main", cwd=work, check=False).returncode == 0
+        has_local = git("rev-parse", "--verify", "--quiet", "HEAD", cwd=work, check=False).returncode == 0
+        ahead = has_local and (not has_remote_main or git("rev-list", "--count", "origin/main..main", cwd=work).stdout.strip() != "0")
+        if ahead:  # auch Commits aus einem früheren --no-push-Lauf
+            git("push", "--quiet", "-u", "origin", "main", cwd=work)
+            print("gepusht:", a.remote)
+        else:
+            print("Publish-Repo ist schon auf diesem Stand.")
 
 
 if __name__ == "__main__":

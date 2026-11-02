@@ -2667,9 +2667,15 @@ def page_dates(sections):
         if shown:
             # Git-Historie der NEU-Einträge dieser Tools (auch Entfernen und geänderte Dauer); nur "zuletzt" zählt,
             # das Erscheinen der Seite bleibt bei ihren eigenen Quellen
-            r = hist.dates("data/neu.json", _json_part(lambda d, s=set(shown): {"tage": d.get("tage"),
-                           "tools": [x for x in d.get("tools") or [] if x.get("name") in s]}))
-            hits = [d for n, d in badge_days.items() if n in shown] + ([r[1]] if r else [])
+            def neu_part(d, s=set(shown)):  # wirksamer Zustand: nur Einträge der gezeigten Tools, Dauer nur wenn es welche gibt
+                tools = [x for x in d.get("tools") or [] if x.get("name") in s]
+                return {"tage": d.get("tage"), "tools": tools} if tools else {"tools": []}
+            r = hist.dates("data/neu.json", _json_part(neu_part), missing='{"tools": []}')
+            # Partnerlinks ändern Ziel, rel, Badge und Hinweistexte der gezeigten Tools
+            # (wirksam nur bei aktiv=true; Anlegen der inaktiven Datei ändert keine Seite)
+            rp = hist.dates("data/partner.json", _json_part(lambda d, s=set(shown): {"links": {k: v for k, v in (d.get("links") or {}).items()
+                            if k in s} if d.get("aktiv") else {}}), missing='{"links": {}}')
+            hits = [d for n, d in badge_days.items() if n in shown] + [x[1] for x in (r, rp) if x and x[1]]
             if hits:
                 last = max([last] + hits)
         DATES[pg] = (first, last)

@@ -115,9 +115,12 @@ MEDIA_AI_BYTES = (b"trainedAlgorithmicMedia", b"compositeSynthetic", b"urn:c2pa"
                   b"OpenAI", b"Adobe Firefly", b"Stable Diffusion", b"ComfyUI", b"Made with Google AI", b"SynthID", b"Imagen",
                   b"\"prompt\"", b"Negative prompt", b"sd-metadata", b"invokeai")
 
+PRIVATE_KEY = re.compile(rb"-----BEGIN (?:RSA |DSA |EC |OPENSSH |ENCRYPTED |PGP )?PRIVATE KEY(?: BLOCK)?-----|PuTTY-User-Key-File-")
+
 # Webroot-Dateien: (Muster, Schweregrad, Erklärung)
 WEBROOT_RULES = [
     (r"(^|/)\.env(\.|$)", "hoch", "Umgebungsdatei (Zugangsdaten möglich)"),
+    (r"(^|/)id_(rsa|dsa|ecdsa|ed25519)$|\.(pem|key|p12|pfx|ppk|jks|keystore|kdbx|asc|gpg)$", "hoch", "Schlüssel- oder Zertifikatsdatei (privater Schlüssel möglich)"),
     (r"(^|/)\.git(/|$)", "hoch", "Git-Ordner im Webroot (ganze Historie abrufbar)"),
     (r"(^|/)(CLAUDE|AGENTS|GEMINI|COPILOT)\.md$|(^|/)\.cursorrules$|(^|/)\.windsurfrules$|(^|/)copilot-instructions\.md$", "hoch", "Anweisungsdatei für KI-Assistenten"),
     (r"(^|/)\.(claude|cursor|aider[^/]*|continue|codex)(/|$)", "hoch", "Konfiguration eines KI-Assistenten"),
@@ -356,6 +359,36 @@ def webp_meta(data):
     return out
 
 
+def gif_meta(data):
+    """GIF: Kommentar- (0xFE) und Anwendungs-Erweiterungen (0xFF, z. B. XMP) als Textblöcke."""
+    out, i = [], 13
+    if data[10] & 0x80:  # globale Farbtabelle überspringen
+        i += 3 * (2 << (data[10] & 7))
+    while i < len(data):
+        b = data[i]
+        if b == 0x21:
+            label, i, body = data[i + 1], i + 2, b""
+            while i < len(data) and data[i]:
+                body += data[i + 1:i + 1 + data[i]]
+                i += 1 + data[i]
+            i += 1
+            if label == 0xFE:
+                out.append(("GIF-Kommentar", body[:4000]))
+            elif label == 0xFF:
+                out.append(("GIF-Anwendung", body[:4000]))
+        elif b == 0x2C:  # Bild: Deskriptor, ggf. lokale Farbtabelle, LZW-Daten
+            flags, i = data[i + 9], i + 10
+            if flags & 0x80:
+                i += 3 * (2 << (flags & 7))
+            i += 1
+            while i < len(data) and data[i]:
+                i += 1 + data[i]
+            i += 1
+        else:
+            break
+    return out
+
+
 def scan_image(path, rel):
     res = []
     data = path.read_bytes()
@@ -384,6 +417,12 @@ def scan_image(path, rel):
             chunks = jpeg_meta(data)
         elif data[:4] == b"RIFF" and data[8:12] == b"WEBP":
             chunks = webp_meta(data)
+        elif data[:6] in (b"GIF87a", b"GIF89a"):
+            chunks = gif_meta(data)
+        elif data[4:8] == b"ftyp":  # AVIF/HEIC (ISO-BMFF): XMP-Pakete und Exif-Kennung
+            chunks = [("XMP", x) for x in re.findall(rb"<x:xmpmeta.*?</x:xmpmeta>", data, re.S)]
+            if b"Exif\0\0" in data:
+                chunks.append(("EXIF", data[data.index(b"Exif\0\0"):][:4000]))
     except Exception:
         pass
     ai = sorted({m.decode("latin-1") for m in MEDIA_AI_BYTES if m in data})
@@ -447,6 +486,17 @@ class Scan:
             self.add("webroot-file", sev, "Technik", rs[0] if len(rs) == 1 else f"{len(rs)} Dateien", f"{why} im Webroot",
                      "Aus dem Veröffentlichungsordner entfernen bzw. vom Deployment ausschließen (Build-Ausgabe nur mit Besucher-Dateien).",
                      "auto", rs[:self.maxd])
+        keys = []  # private Schlüssel am Inhalt erkennen, egal wie die Datei heißt
+        for p in files:
+            try:
+                if p.is_file() and p.stat().st_size < 2_000_000 and PRIVATE_KEY.search(p.read_bytes()):
+                    keys.append(self.rel(p))
+            except OSError:
+                pass
+        if keys:
+            self.add("webroot-private-key", "hoch", "Technik", keys[0] if len(keys) == 1 else f"{len(keys)} Dateien",
+                     "Privater Schlüssel im Webroot (öffentlich abrufbar)",
+                     "Sofort entfernen, Schlüssel als kompromittiert behandeln und austauschen.", "auto", keys[:self.maxd])
         if (self.site / "llms.txt").exists():
             self.stats["llms_txt"] = "vorhanden (normaler Webstandard, bleibt)"
 

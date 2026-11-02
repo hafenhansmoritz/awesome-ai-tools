@@ -45,13 +45,22 @@ class History:
                 self.shallow = set(f.read_text().split())
 
     def log(self, path):
+        """Commits der Datei inklusive Umbenennungen: (sha, eltern, tag, pfad im commit, pfad im elternteil)."""
         if path not in self._log:
-            out = subprocess.run(["git", "-C", str(self.root), "log", "--format=%H%x09%P%x09%cs", "--", path],
+            out = subprocess.run(["git", "-C", str(self.root), "log", "--follow", "--format=\x01%H%x09%P%x09%cs", "--name-status", "--", path],
                                  capture_output=True, text=True, check=True).stdout
             rows = []
-            for line in out.splitlines():
-                sha, parents, day = line.split("\t")
-                rows.append((sha, parents.split()[0] if parents else None, day))
+            for block in out.split("\x01")[1:]:
+                head, *rest = block.strip("\n").split("\n")
+                sha, parents, day = head.split("\t")
+                cur = prev = path
+                for ln in rest:
+                    parts = ln.split("\t")
+                    if parts and parts[0][:1] in "RC" and len(parts) == 3:
+                        prev, cur = parts[1], parts[2]
+                    elif len(parts) == 2:
+                        cur = prev = parts[1]
+                rows.append((sha, parents.split()[0] if parents else None, day, cur, prev))
             self._log[path] = rows
         return self._log[path]
 
@@ -64,15 +73,16 @@ class History:
             self._show[key] = r.stdout.decode("utf-8", "replace") if r.returncode == 0 else None
         return self._show[key]
 
-    def dates(self, path, extract, today=None):
+    def dates(self, path, extract, today=None, missing=None):
         """(erstes Erscheinen, letzte inhaltliche Änderung) des Ausschnitts extract(dateitext) oder None ohne Git.
-        extract bekommt den Dateitext (oder None) und liefert einen Vergleichstext oder None (Ausschnitt fehlt)."""
+        extract bekommt den Dateitext und liefert einen Vergleichstext oder None (Ausschnitt fehlt). missing: Vergleichstext,
+        wenn die Datei in einer Fassung fehlt (z. B. der leere Zustand einer Konfiguration, deren Anlegen nichts ändert)."""
         if not self.ok:
             return None
 
         def ex(txt):
-            if txt is None:
-                return None
+            if txt is None:  # Datei fehlt: Wert für „nicht vorhanden“ (None = Ausschnitt fehlt)
+                return missing
             try:
                 v = extract(txt)
             except Exception:  # alte Dateiformate: Ausschnitt gilt als nicht vorhanden
@@ -80,13 +90,13 @@ class History:
             return None if v is None else normalize(v)
         first = last = None
         rows = self.log(path)
-        if any(sha in self.shallow for sha, _, _ in rows):
+        if any(r[0] in self.shallow for r in rows):
             return None  # Historie der Datei reicht über die Grenze eines flachen Klons: Datum unbekannt
-        for sha, parent, day in rows:
-            cur = ex(self.show(sha, path))
+        for sha, parent, day, cur_path, prev_path in rows:
+            cur = ex(self.show(sha, cur_path))
             if cur is None:
                 continue
-            prev = ex(self.show(parent, path))
+            prev = ex(self.show(parent, prev_path))  # bei Umbenennung: alter Pfad im Elternteil
             if cur != prev:
                 last = max(last or day, day)
                 if prev is None:
