@@ -626,6 +626,10 @@ form button[type=submit][disabled]{opacity:.6;cursor:wait}
 
 /* Neu & im Trend: Badge, Startseiten-Band, Trend-Seite */
 .badge.neu{background:var(--lime);color:var(--ink)}
+/* Partnerlink (data/partner.json, standardmäßig aus): neutral, gut lesbar, mit Legende vor der Fußzeile */
+.badge.partner{background:transparent;border:1px solid var(--line);color:var(--muted);gap:1px;cursor:help}
+ul.tools .name+.badge.partner,.stack li a+.badge.partner{margin-left:6px;vertical-align:middle}
+.partner-note{margin-top:28px;margin-bottom:28px;font-size:13px;color:var(--muted)}
 .trend-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:12px}
 .trend-card{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;text-decoration:none;color:var(--fg);box-shadow:var(--shadow);transition:border-color .2s,transform .2s}
 .trend-card b{display:block;font:700 17px var(--font-d);margin:2px 0 4px}

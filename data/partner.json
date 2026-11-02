@@ -1,0 +1,5 @@
+{
+  "_hinweis": "Partnerlinks (Affiliate-Links), standardmäßig aus. Anleitung und Regeln: ops/partnerlinks.md. Schlüssel = Tool-Name exakt wie in README.de.md, Wert = Partner-URL (nur http/https). Ein Partnerprogramm entscheidet nie über Aufnahme, Reihenfolge oder Beschreibung eines Tools.",
+  "aktiv": false,
+  "links": {}
+}
