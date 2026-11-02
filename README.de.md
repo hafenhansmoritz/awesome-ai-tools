@@ -7,7 +7,7 @@
 Gebaut für den deutschsprachigen Raum, auseinandergeschraubt, geputzt und nach Aufgaben sortiert:
 
 - **Ein Satz pro Tool.** Was es kann, wofür es taugt. Keine Werbetexte, die Beschreibungen bleiben sachlich. Gewitzelt wird drumherum.
-- **Link-Check (Stand: 01.11.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
+- **Link-Check (Stand: 02.11.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
 - **Was „geprüft“ heißt.** Ein Skript fragt jeden Link ab, Bot-Schutz zählt als erreichbar. Jede Beschreibung ist von Hand geschrieben. Ein Praxistest jedes einzelnen Tools ist das nicht, und das sagen wir auch so.
 - **Namen auf Stand.** Bing Chat heißt Copilot, Metaphor heißt Exa, Le Chat heißt Vibe. Eingestellte Dienste fliegen raus, aktuelle Standard-Tools sind ergänzt.
 - **DACH-Fokus.** Eigene Abschnitte für Übersetzung, SEO und Automatisierung. Anbieter mit Sitz in der EU tragen ein 🇪🇺. Das ist ein Hinweis auf den Firmensitz, keine Datenschutz-Prüfung. Für DSGVO zählen AVV, Serverstandort und Einstellungen.
@@ -257,6 +257,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Sybill](https://www.sybill.ai/) - Vertriebsassistent, der Calls, E-Mails und Slack-Verläufe mitliest, das CRM nach jedem Gespräch füllt und Fragen zum Stand eines Deals beantwortet. Wer Calls aufzeichnet, braucht vorher die Einwilligung der Gesprächspartner.
 - [Scribbl](https://www.scribbl.co) - KI-Meeting-Notizen für Google Meet.
 - [Teleprompter](https://github.com/danielgross/teleprompter) - Lokale KI, die in Meetings zuhört und Formulierungen vorschlägt. `OSS`
+- [Bluedot](https://www.bluedothq.com) - Schreibt Meetings in Zoom, Google Meet und Teams ohne Bot im Call mit, dazu Telefonate und Gespräche vor Ort, fasst auch auf Deutsch zusammen und schickt die Notizen etwa ins CRM oder nach Notion. Gratis sind fünf Meetings insgesamt, nicht pro Monat, und weil kein Bot sichtbar ist, kündigst du die Aufnahme selbst an.
 
 ### Wissenschaft und Recherche
 
@@ -283,6 +284,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Tiledesk](https://tiledesk.com/) - No-Code-Framework für Chatbots mit LLM-Anbindung, Open Source. `OSS`
 - [Gali Chat](https://www.galichat.com/) - KI-Support-Assistent für Websites, rund um die Uhr.
 - [Hexabot](https://hexabot.ai) - No-Code-Baukasten für mehrsprachige Chatbots und Agenten. `OSS`
+- [Tidio](https://www.tidio.com) - Live-Chat und Helpdesk für Shops mit dem KI-Agenten Lyro, der aus Shopdaten, FAQ und Website antwortet, den Bestellstatus nennt, Produkte empfiehlt und unsichere Fälle ans Team gibt. Läuft unter anderem mit Shopify, WordPress und Wix; die Gespräche, die Lyro führt, zählen gegen ein eigenes Monatskontingent.
 
 
 ## Automatisierung und KI-Agenten
@@ -302,6 +304,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Notte](https://github.com/nottelabs/notte) - Framework für Agenten, die den Browser bedienen. `OSS`
 - [goose](https://github.com/aaif-goose/goose) - Offener KI-Agent als Desktop-App und Kommandozeile, bindet Erweiterungen per MCP an und liegt heute bei der Agentic AI Foundation der Linux Foundation. `OSS`
 - [Mage-VL-Cowork](https://huggingface.co/microsoft/Mage-VL-Cowork) - Offenes Modell von Microsoft mit 4 Milliarden Parametern, das einen Rechner bedient: Es klickt und tippt in Programmen oder führt Befehle im Terminal aus und wählt bei jedem Schritt selbst den Weg. Für Entwickler, die Desktop-Agenten selbst hosten wollen; es gibt nur Gewichte und einen technischen Bericht, keine fertige App, und die Gewichte belegen rund 9,5 GB. `OSS`
+- [Apify](https://apify.com) - 🇪🇺 Plattform aus Prag mit Tausenden fertigen Programmen („Actors“), die Websites auslesen und Abläufe im Web automatisieren, startbar per API oder über einen MCP-Server direkt aus KI-Agenten. Viele Actors stammen von Drittentwicklern; gratis gibt es jeden Monat Guthaben für fünf Dollar, danach pausiert das Konto statt zu kosten.
 
 
 ## Entwickler-Tools und LLMOps
@@ -341,6 +344,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Agent Skills](https://agentskills.io) - Offener Standard für Agenten-Fähigkeiten: ein Ordner mit SKILL.md und Skripten, den über 70 Agenten-Plattformen lesen können.
 - [Timestral](https://mistral.ai/news/timestral/) - 🇪🇺 Kleine Zeitreihen-Modelle von Mistral für Prognosen zu Absatz, Energie oder Sensordaten, laufen ohne Grafikkarte. `OSS`
 - [Scale Spellbook](https://scale.com/spellbook) - LLM-Apps bauen, vergleichen und bereitstellen.
+- [Firecrawl](https://www.firecrawl.dev) - API, die Websites für KI-Anwendungen durchsucht, ausliest und als Markdown oder JSON zurückgibt, mit MCP-Server für Claude, Cursor und andere Agenten. Hält sich standardmäßig an die robots.txt; auch Seiten, die mit 403 oder 404 antworten, kosten einen Credit. [`OSS`](https://github.com/firecrawl/firecrawl)
 
 
 ## Programmieren mit KI
@@ -430,6 +434,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [PlantTattoosAI](https://www.planttattoosai.com/) - Tattoo-Designs mit Pflanzen und Blumen.
 - [Recraft](https://www.recraft.ai) - Bildgenerator mit Stil-Kontrolle, erzeugt auch Vektorgrafiken.
 - [Rupert AI](https://www.getrupert.com/) - Macht aus Produktdaten Katalogbilder, Texte und Katalogdaten, spezialisiert auf Möbelmarken. Darunter arbeiten fremde Modelle wie Nano Banana, Flux und Veo.
+- [Claid.ai](https://claid.ai) - Fotostudio für Produktbilder: stellt frei, rechnet hoch, korrigiert Licht und setzt Produkte in KI-Szenen oder Kleidung an KI-Models, per API auch für ganze Kataloge. Gratis sind 50 Credits, ein KI-Fotoshooting kostet vier davon.
 
 ### Grafikdesign
 
@@ -439,6 +444,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Text2Infographic](https://text2infographic.com/) - Infografiken aus Text generieren und bearbeiten.
 - [Seede.ai](https://seede.ai/) - Macht aus Text Poster, Social-Media-Grafiken, Infografiken und Folien. Die Ebenen bleiben getrennt, Texte und Bilder lassen sich danach einzeln ändern.
 - [Magic Patterns](https://www.magicpatterns.com/) - UI-Entwürfe mit Figma-Export und React-Code.
+- [Kittl](https://www.kittl.com) - 🇪🇺 Design-Plattform aus Berlin mit Vorlagen, Text-Effekten, Mockups und KI-Generatoren für Bilder und Vektoren, gedacht für Merch, Etiketten, Logos und Social Posts. Was im Gratis-Tarif entsteht, darfst du nur privat nutzen, nicht verkaufen.
 
 ### Bildarchive und Prompt-Sammlungen
 
@@ -541,6 +547,8 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [MarketMuse](https://www.marketmuse.com/) - Themen-Planung und Content-Optimierung mit KI.
 - [Luthor](https://luthor.ai/) - Programmatisches Content-Marketing in großem Umfang.
 - [Quick Creator](https://quickcreator.io) - KI-Blogplattform, die Beiträge entlang von Suchbegriffen aufbaut.
+- [SE Ranking](https://seranking.com) - SEO-Suite mit Rank-Tracking, Keyword- und Backlink-Recherche und Site-Audit; das Modul SE Visible verfolgt, wie oft deine Marke in AI Overviews, AI Mode, ChatGPT und Gemini auftaucht. Für Agenturen und Inhouse-Teams; der kleinste Tarif kostet 129 Dollar im Monat und prüft 25 Prompts am Tag.
+- [NeuronWriter](https://neuronwriter.com) - 🇪🇺 Content-Editor aus Polen, der Texte gegen die Top-Ergebnisse auf fehlende Begriffe prüft, Entwürfe schreibt und verfolgt, ob deine Marke in KI-Antworten genannt wird. Gedacht für Selbstständige und kleine Agenturen; der kleinste Tarif umfasst 25 Dokumente und fünf überwachte KI-Fragen.
 
 ### Werbung, Social und Personalisierung
 
@@ -563,6 +571,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Podify.io](https://podify.io) - Wachstum auf LinkedIn mit KI und Community.
 - [PressPulse AI](https://www.presspulse.ai/) - Jeden Morgen passende Medien-Anfragen für PR.
 - [GummySearch](https://gummysearch.com/) - Kundenrecherche auf Reddit: Probleme, Stimmungen und Kaufinteresse finden.
+- [Brevo](https://www.brevo.com) - 🇪🇺 Newsletter, Transaktions-E-Mails, SMS und WhatsApp mit CRM aus Paris, früher Sendinblue, mit KI für Betreffzeilen und Texte und einem MCP-Zugang für ChatGPT und Claude. Im Gratis-Tarif gehen höchstens 300 E-Mails am Tag raus, und erst, nachdem Brevo das Konto freigegeben hat.
 
 
 ## KI-Telefonagenten
@@ -575,6 +584,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Cognigy](https://www.cognigy.com) - 🇪🇺 Agenten-Plattform für Contact Center, aus Düsseldorf.
 - [Twig](https://www.twig.so/) - KI-Empfang für Telefon, SMS und Website-Chat, der Fragen beantwortet und Termine in den Kalender einträgt. Angebot, Preise und Beispiele richten sich an Betriebe in den USA.
 - [ElevenLabs Agents](https://elevenlabs.io/agents) - Sprach- und Chat-Agenten von ElevenLabs für Support, Terminvergabe und Vertrieb, in über 90 Sprachen. Zur Minute kommen die Kosten für das Sprachmodell dazu.
+- [Retell AI](https://www.retellai.com) - Baukasten für Telefonagenten, die Anrufe annehmen, Termine buchen, an Menschen weiterverbinden und Tastenmenüs bedienen, angebunden etwa über Twilio, Vonage, n8n oder HubSpot. Abgerechnet wird pro Minute ohne Jahresvertrag; welche Sprachen gehen, hängt vom gewählten Stimm- und Spracherkennungsanbieter ab, Deutsch also vorher testen.
 
 
 ## Weitere KI-Tools

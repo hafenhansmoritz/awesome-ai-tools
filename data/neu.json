@@ -3,6 +3,66 @@
  "tage": 60,
  "tools": [
   {
+   "name": "SE Ranking",
+   "seit": "2026-11-02",
+   "trend": "ki-suche",
+   "notiz": "Zählt, wie oft ChatGPT, Gemini und AI Mode deine Marke nennen."
+  },
+  {
+   "name": "NeuronWriter",
+   "seit": "2026-11-02",
+   "trend": "ki-suche",
+   "notiz": "Polnischer Texteditor, der Inhalte für Google und KI-Antworten durchmisst."
+  },
+  {
+   "name": "Claid.ai",
+   "seit": "2026-11-02",
+   "trend": "bild-video",
+   "notiz": "Freisteller, Hochrechner und Fotoshooting für Produktbilder unter einem Dach."
+  },
+  {
+   "name": "Kittl",
+   "seit": "2026-11-02",
+   "trend": "bild-video",
+   "notiz": "Berliner Designwerkzeug für Merch, Etiketten und Mockups."
+  },
+  {
+   "name": "Firecrawl",
+   "seit": "2026-11-02",
+   "trend": "offene-standards",
+   "notiz": "Liest Websites als Markdown für deine Agenten, MCP-Server inklusive."
+  },
+  {
+   "name": "Apify",
+   "seit": "2026-11-02",
+   "trend": "offene-standards",
+   "notiz": "Tausende fertige Scraper aus Prag, auch direkt aus dem Agenten startbar."
+  },
+  {
+   "name": "Retell AI",
+   "seit": "2026-11-02",
+   "trend": "sprache",
+   "notiz": "Telefonagent zum Minutenpreis, ohne Jahresvertrag."
+  },
+  {
+   "name": "Bluedot",
+   "seit": "2026-11-02",
+   "trend": "sprache",
+   "notiz": "Meeting-Protokoll auf Deutsch, ohne dass ein Bot im Call sitzt."
+  },
+  {
+   "name": "Brevo",
+   "seit": "2026-11-02",
+   "trend": "europa",
+   "notiz": "Newsletter, SMS und WhatsApp aus Paris, mit KI beim Texten."
+  },
+  {
+   "name": "Tidio",
+   "seit": "2026-11-02",
+   "trend": "agenten-hintergrund",
+   "notiz": "Shop-Chat, dessen KI-Agent den Bestellstatus nennt und Produkte empfiehlt."
+  },
+  {
    "name": "Nemotron 3.5 Transcribe",
    "seit": "2026-11-01",
    "trend": "sprache",

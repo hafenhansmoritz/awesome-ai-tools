@@ -791,6 +791,75 @@
    ],
    "cat": "programmieren-mit-ki",
    "spruch": "Bauen nach Gefühl. Die Statik prüft trotzdem jemand mit Zollstock."
+  },
+  {
+   "t": "SIP",
+   "icon": "phone",
+   "d": "Session Initiation Protocol: der Standard aus RFC 3261, mit dem Internet-Telefonate und andere Sitzungen aufgebaut, geändert und beendet werden. Die Stimme selbst fließt über andere Protokolle wie RTP, SIP kümmert sich um Klingeln, Annehmen und Auflegen. Viele Plattformen für KI-Telefonagenten binden darüber eine vorhandene Telefonanlage oder den SIP-Trunk des Telefonanbieters an.",
+   "see": [
+    "Speech-to-Text",
+    "Text-to-Speech",
+    "API"
+   ],
+   "tools": [],
+   "cat": "ki-telefonagenten",
+   "spruch": "Die Vermittlung am Klappenschrank: stellt die Verbindung her und hört beim Gespräch nicht mit.",
+   "auch": [
+    "Session Initiation Protocol",
+    "SIP-Trunk"
+   ]
+  },
+  {
+   "t": "OAuth",
+   "icon": "lock",
+   "d": "Offener Standard für Freigaben, für OAuth 2.0 festgelegt in RFC 6749: Eine App bekommt begrenzten Zugriff auf dein Konto bei einem anderen Dienst, ohne dass du ihr dein Passwort gibst. Stattdessen erhält sie ein Zugriffstoken mit festgelegtem Umfang und begrenzter Laufzeit. Für MCP-Server, die über HTTP erreichbar sind, sieht die MCP-Spezifikation eine Anmeldung auf Basis von OAuth 2.1 vor.",
+   "see": [
+    "MCP",
+    "API",
+    "Agent"
+   ],
+   "tools": [],
+   "cat": "entwickler-tools-und-llmops",
+   "spruch": "Die Schlüsselkarte im Hotel statt des Generalschlüssels: passt nur an die gebuchten Türen und läuft irgendwann ab.",
+   "auch": [
+    "OAuth 2.0",
+    "OAuth 2.1"
+   ]
+  },
+  {
+   "t": "Query Fan-out",
+   "icon": "search",
+   "d": "Technik, die Google für AI Overviews und AI Mode beschreibt: Das System zerlegt eine Frage in mehrere verwandte Suchen über Unterthemen und Datenquellen hinweg und baut aus den Treffern eine Antwort. Für Website-Betreiber heißt das, dass auch Seiten zu Teilfragen als Quelle in Frage kommen.",
+   "see": [
+    "AI Overviews",
+    "KI-Suchmaschine",
+    "RAG"
+   ],
+   "tools": [],
+   "cat": "marketing-und-seo",
+   "spruch": "Der Kollege, der für eine Frage fünf Schubladen gleichzeitig aufzieht und aus jeder ein Teil auf die Werkbank legt.",
+   "auch": [
+    "Query fan-out",
+    "Query-Fan-out"
+   ]
+  },
+  {
+   "t": "Translation Memory",
+   "icon": "globe",
+   "d": "Datenbank mit bereits übersetzten Sätzen und Absätzen, gespeichert als Segmente aus Ausgangs- und Zieltext. Bei einem neuen Text sucht das Werkzeug passende Segmente und setzt ab einer einstellbaren Ähnlichkeit die gespeicherte Übersetzung ein, bei DeepL standardmäßig ab 75 Prozent. Anders als ein Glossar, das einzelne Begriffe festlegt, hält sie ganze Formulierungen über viele Texte hinweg gleich.",
+   "see": [
+    "LLM",
+    "hreflang"
+   ],
+   "tools": [
+    "DeepL Übersetzer"
+   ],
+   "cat": "text-und-sprache",
+   "spruch": "Das Ersatzteillager für Sätze: Was einmal sauber übersetzt im Regal liegt, wird nicht neu gedreht.",
+   "auch": [
+    "Translation Memories",
+    "Übersetzungsspeicher"
+   ]
   }
  ]
 }
