@@ -2568,8 +2568,10 @@ def _copy(*funcs):
             found = {}
             for n in ast.parse(txt).body:
                 if isinstance(n, ast.FunctionDef):
-                    found[n.name] = "\n".join(c.value for c in ast.walk(n) if isinstance(c, ast.Constant) and isinstance(c.value, str)
-                                               and re.search(r"\s", c.value))  # Text und HTML, keine Schlüssel/Bezeichner
+                    doc = n.body[0].value if n.body and isinstance(n.body[0], ast.Expr) and isinstance(n.body[0].value, ast.Constant) else None
+                    text = "\n".join(c.value for c in ast.walk(n) if isinstance(c, ast.Constant) and isinstance(c.value, str)
+                                      and c is not doc and re.search(r"\s", c.value))  # Text und HTML, keine Schlüssel/Bezeichner
+                    found[n.name] = re.sub(r"(?is)<(script|style)\b.*?</\1>", "", text)  # Inline-Code ist kein sichtbarer Text
             _COPY_CACHE[key] = found
         parts = [_COPY_CACHE[key].get(f) for f in funcs]
         return None if any(x is None for x in parts) else "\n".join(parts)
@@ -2659,7 +2661,8 @@ def page_dates(sections):
         else:
             first = last = today.isoformat()
             WARN.append(f"{pg}: weder Git-Historie noch gespeichertes Datum, heutiges Datum als Erscheinen gesetzt")
-        src = "\n".join(current(path, ex) for path, ex in specs[pg])
+        # Welche Tools die Seite zeigt, nur aus Inhaltsquellen (Generator-Text nennt Tools auch beiläufig)
+        src = "\n".join(current(path, ex) for path, ex in specs[pg] if path != "scripts/build_de_page.py")
         shown = sorted(n for n in tool_names if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", src))
         if shown:
             # Git-Historie der NEU-Einträge dieser Tools (auch Entfernen und geänderte Dauer); nur "zuletzt" zählt,

@@ -45,17 +45,30 @@ def main():
     ap.add_argument("--dir", required=True, help="Arbeitsordner für den Publish-Klon")
     ap.add_argument("--no-push", action="store_true")
     a = ap.parse_args()
-    work = Path(a.dir)
-    if a.remote and not (work / ".git").exists():
-        shutil.rmtree(work, ignore_errors=True)
-        r = git("clone", "--quiet", a.remote, str(work), cwd=ROOT, check=False)
-        if r.returncode != 0:  # leeres oder neues Repo
-            work.mkdir(parents=True, exist_ok=True)
-            git("init", "--quiet", "-b", "main", cwd=work)
-            git("remote", "add", "origin", a.remote, cwd=work)
-    elif not (work / ".git").exists():
+    work = Path(a.dir).resolve()
+    # Schutz: nie im Quell-Repo oder in einem fremden Ordner löschen
+    if work == ROOT or ROOT in work.parents or work in ROOT.parents:
+        raise SystemExit(f"--dir {work} liegt im oder über dem Quell-Repo; bitte einen eigenen Publish-Ordner angeben")
+    if (work / ".git").exists():
+        url = git("remote", "get-url", "origin", cwd=work, check=False).stdout.strip()
+        if a.remote and url != a.remote:
+            raise SystemExit(f"{work} ist ein Klon von {url or '(kein origin)'}, nicht von {a.remote}")
+        if url:
+            git("fetch", "--quiet", "origin", cwd=work)
+            if git("rev-parse", "--verify", "--quiet", "origin/main", cwd=work, check=False).returncode == 0:
+                git("checkout", "--quiet", "-B", "main", "origin/main", cwd=work)
+                git("reset", "--quiet", "--hard", "origin/main", cwd=work)
+    else:
+        if work.exists() and any(work.iterdir()):
+            raise SystemExit(f"{work} ist nicht leer und kein Publish-Klon; nichts gelöscht")
         work.mkdir(parents=True, exist_ok=True)
-        git("init", "--quiet", "-b", "main", cwd=work)
+        if a.remote:
+            git("clone", "--quiet", a.remote, str(work), cwd=ROOT)  # Fehler (Zugriff, Tippfehler) brechen ab
+        else:
+            git("init", "--quiet", cwd=work)
+    git("symbolic-ref", "HEAD", "refs/heads/main", cwd=work)  # auch bei leerem Repo und init.defaultBranch=master
+    if a.ref.startswith("origin/"):  # gemergten Stand holen, nicht den lokalen Zwischenstand
+        git("fetch", "--quiet", "origin", a.ref.split("/", 1)[1])
     for p in work.iterdir():
         if p.name != ".git":
             shutil.rmtree(p) if p.is_dir() else p.unlink()
