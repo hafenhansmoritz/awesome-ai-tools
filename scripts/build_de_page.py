@@ -15,6 +15,14 @@ Ausgabe:  docs/index.html, docs/ki-tools-*.html (eine Seite je Kategorie), docs/
           docs/tools.json, docs/tools.csv, docs/sitemap.xml, docs/robots.txt, docs/llms.txt (llmstxt.org, nicht in der Sitemap)
 README.de.md bleibt die einzige Quelle für die Liste; docs/ nie von Hand bearbeiten.
 Am Ende prüft scripts/check_unique.py, dass kein Satz auf zwei Seiten steht.
+
+Pflichtprüfungen nach jeder Änderung an Generator, Daten, app.js oder style.css (alle aus dem Repo-Root):
+    python3 scripts/build_de_page.py                 # Build inkl. Uniqueness-Check
+    NODE_PATH=$(npm root -g) node scripts/smoke.js   # Browser-Smoke-Test, 0 Fehler
+    python3 scripts/layer_a.py                       # unsichtbare Zeichen, PNG-Metadaten
+    python3 scripts/seo_check.py                     # Title/Description, h1, Canonical, interne Links und Anker,
+                                                     # Sitemap, Waisen, JSON-LD; Exit 1 bei Fehlern
+    python3 scripts/check_links.py                   # nur wenn sich Links in README.de.md/data geändert haben
 """
 import base64
 import csv
@@ -1317,14 +1325,14 @@ def build_index(sections, head_md):
 
 
 def build_subpages(list_secs=()):
-    # Danke-Seite je Formular: ?typ=check (Stack-Check) oder ?typ=finder (Stack-Finder); app.js blendet die passende Fassung ein
+    # Danke-Seite je Formular: ?typ=check (Stack-Check) oder ?typ=finder (Stack-Finder); app.js blendet die passende Fassung ein.
+    # Eine einzige <h1> mit beiden Fassungen als <span data-typ>, damit die Seite nie zwei Hauptüberschriften hat (seo_check.py)
     danke = f"""{topbar("sub")}
 <div class="page page-kb page-danke"><div class="kb-say kb-hero duo">{hans("hm-lg", label="Hans Moritz zeigt den Daumen hoch", thumb=True)}{kurbel("kb-md", wink=True)}<p class="bubble">Angekommen! Kurbel sortiert so lange die Schrauben, ich setz schon mal Kaffee auf.</p></div>
 <p class="eyebrow">Angekommen</p>
-<div data-typ="check"><h1>Danke. Deine Anfrage liegt auf der Werkbank.</h1>
-<ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine Nachricht selbst, kein Bot und kein Callcenter.</span></li><li><b class="n">2</b><span>Danach legt Jean dir die Werkzeuge hin, die zu deinem Fall passen, mit je einem Satz, warum.</span></li><li><b class="n">3</b><span>Die Antwort kommt per E-Mail, ohne Verkaufsgespräch und ohne Kleingedrucktes.</span></li></ol></div>
-<div data-typ="finder" hidden><h1>Danke. Jean schaut jetzt über dein Setup.</h1>
-<ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine drei Antworten und die Tools, die der Finder dir vorgeschlagen hat.</span></li><li><b class="n">2</b><span>Was nicht zu deinem Fall passt, fliegt raus, und an seine Stelle kommt etwas Passenderes mit Begründung.</span></li><li><b class="n">3</b><span>Das überarbeitete Setup bekommst du per E-Mail, ohne Pitch und ohne Abo.</span></li></ol></div>
+<h1><span data-typ="check">Danke. Deine Anfrage liegt auf der Werkbank.</span><span data-typ="finder" hidden>Danke. Jean schaut jetzt über dein Setup.</span></h1>
+<div data-typ="check"><ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine Nachricht selbst, kein Bot und kein Callcenter.</span></li><li><b class="n">2</b><span>Danach legt Jean dir die Werkzeuge hin, die zu deinem Fall passen, mit je einem Satz, warum.</span></li><li><b class="n">3</b><span>Die Antwort kommt per E-Mail, ohne Verkaufsgespräch und ohne Kleingedrucktes.</span></li></ol></div>
+<div data-typ="finder" hidden><ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine drei Antworten und die Tools, die der Finder dir vorgeschlagen hat.</span></li><li><b class="n">2</b><span>Was nicht zu deinem Fall passt, fliegt raus, und an seine Stelle kommt etwas Passenderes mit Begründung.</span></li><li><b class="n">3</b><span>Das überarbeitete Setup bekommst du per E-Mail, ohne Pitch und ohne Abo.</span></li></ol></div>
 <p>Meist dauert das nur wenige Tage. Hörst du nichts, wirf einen Blick in den Spam-Ordner, manchmal versteckt sich die Post dort. Oder schreib direkt an {mail_link()}.</p>
 {pg_box("danke")}
 <p class="danke-more"><a class="btn" href="./#werkzeugkisten">{icon("layers")}Werkzeugkisten ansehen</a> <a class="btn" href="tools.csv" download>{icon("download")}Die Liste als CSV laden</a></p>
