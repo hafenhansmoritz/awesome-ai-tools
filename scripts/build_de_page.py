@@ -2598,6 +2598,8 @@ def page_dates(sections):
         days = [d for d in (start, start + timedelta(days=NEU["tage"])) if d <= today]
         if days:
             badge_days[t["name"]] = max(days).isoformat()
+    tool_names = {it["name"] for _, _, it in all_items(sections)} | {t["name"] for t in NEU["tools"]}
+
     def current(path, ex):
         try:
             return ex((ROOT / path).read_text(encoding="utf-8")) or ""
@@ -2613,9 +2615,14 @@ def page_dates(sections):
         else:
             first = last = today.isoformat()
             WARN.append(f"{pg}: weder Git-Historie noch gespeichertes Datum, heutiges Datum als Erscheinen gesetzt")
-        if badge_days:
-            src = "\n".join(current(path, ex) for path, ex in specs[pg])
-            hits = [d for n, d in badge_days.items() if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", src)]
+        src = "\n".join(current(path, ex) for path, ex in specs[pg])
+        shown = sorted(n for n in tool_names if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", src))
+        if shown:
+            # Git-Historie der NEU-Einträge dieser Tools (auch Entfernen und geänderte Dauer); nur "zuletzt" zählt,
+            # das Erscheinen der Seite bleibt bei ihren eigenen Quellen
+            r = hist.dates("data/neu.json", _json_part(lambda d, s=set(shown): {"tage": d.get("tage"),
+                           "tools": [x for x in d.get("tools") or [] if x.get("name") in s]}))
+            hits = [d for n, d in badge_days.items() if n in shown] + ([r[1]] if r else [])
             if hits:
                 last = max([last] + hits)
         DATES[pg] = (first, last)

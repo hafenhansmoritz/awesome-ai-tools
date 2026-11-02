@@ -639,7 +639,7 @@ class Scan:
         h2 = {r: sum(1 for l, _ in d["pg"].headings if l == 2) for r, d in idx.items()}
         val, n, share = top_share(list(h2.values()))
         self.stats["h2_verteilung"] = dict(Counter(h2.values()).most_common(8))
-        if share > self.thr:
+        if share >= self.thr:
             self.add("struct-h2", "mittel", "Struktur", f"{n} von {len(idx)} Seiten", f"{share:.0%} der Seiten haben genau {val} H2-Überschriften",
                      "Gliederung je Seite am Inhalt ausrichten (Jean-Entscheidung, keine Füll-Abschnitte).", "jean")
         faq = {}
@@ -653,7 +653,7 @@ class Scan:
         if len(faq) >= 5:
             val, n, share = top_share(list(faq.values()))
             self.stats["faq_verteilung"] = dict(Counter(faq.values()).most_common(8))
-            if share > self.thr:
+            if share >= self.thr:
                 self.add("struct-faq", "mittel", "Struktur", f"{n} von {len(faq)} FAQ-Seiten", f"{share:.0%} der FAQ-Blöcke haben genau {val} Fragen",
                          "FAQ-Anzahl nach echten Nutzerfragen richten; keine Fragen erfinden, schwache streichen (Jean).", "jean")
         paras = [sum(1 for b in d["main"] if b[0] == "p") for d in idx.values()]
@@ -676,7 +676,7 @@ class Scan:
             core = [t[:len(t) - len(suf)] if suf and len(suf) < len(t) else t for t in titles]
             shapes = [re.sub(r"[^:|–—\-#?!]", "", re.sub(r"\d+", "#", x)) for x in core]
             val, n, share = top_share(shapes)
-            if share > self.thr and val:
+            if share >= self.thr and val:
                 self.add("struct-title-pattern", "niedrig", "Struktur", f"{n} Titel", f"{share:.0%} der Titel folgen demselben Muster ({val!r})",
                          "Titel je Seite formulieren; Muster ist kein Fehler, nur auffällig in der Masse.", "jean")
         blk_pages = defaultdict(set)
@@ -713,7 +713,7 @@ class Scan:
             self.stats["sitemap_lastmod"] = dict(sorted(dist.items()))
             val, n, share = top_share(lm)
             future += [f"sitemap: {x}" for x in set(lm) if x > self.today]
-            if len(lm) >= 5 and share > thr:
+            if len(lm) >= 5 and share >= thr:
                 extra = " (= heutiges Datum, wahrscheinlich Build-Datum)" if val == self.today else ""
                 self.add("date-sitemap-uniform", "hoch", "Datum", "sitemap.xml", f"{share:.0%} der lastmod-Werte sind {val}{extra}",
                          "lastmod je Seite aus echten Ereignissen ableiten: letzter Commit, der den Inhalt der Quelle änderte "
@@ -739,7 +739,7 @@ class Scan:
             if vals:
                 self.stats[f"ld_{k}"] = dict(sorted(Counter(vals).items()))
             val, n, share = top_share(vals)
-            if len(vals) >= 5 and share > thr:
+            if len(vals) >= 5 and share >= thr:
                 self.add(f"date-ld-{k[4:].lower()}-uniform", sev, "Datum", f"{n} Seiten", f"{share:.0%} der {k}-Werte (JSON-LD/Meta) sind {val}",
                          "Aus der Git-Historie der jeweiligen Quelle ableiten (erstes Erscheinen / letzte inhaltliche Änderung). Nichts erfinden.",
                          "auto")
@@ -768,7 +768,7 @@ class Scan:
         if feed_dates:
             self.stats["feed_daten"] = dict(sorted(Counter(x[:10] if x[:4].isdigit() else x for x in feed_dates).items()))
             val, n, share = top_share(feed_dates)
-            if len(feed_dates) >= 5 and share > thr:
+            if len(feed_dates) >= 5 and share >= thr:
                 self.add("date-feed-uniform", "mittel", "Datum", "Feed", f"{share:.0%} der Feed-Einträge tragen denselben Zeitstempel ({val})",
                          "Je Eintrag das echte Datum (erstes Erscheinen / letzte Änderung des Eintrags) setzen.", "auto")
         # Sichtbare Stand-Daten
@@ -781,7 +781,7 @@ class Scan:
                 stand[r] = Counter(ds).most_common(1)[0][0]
         if len(stand) >= 5:
             val, n, share = top_share(list(stand.values()))
-            if share > thr:
+            if share >= thr:
                 self.add("date-stand-uniform", "mittel", "Datum", f"{n} Seiten", f"Sichtbares „Stand“-Datum auf {share:.0%} der Seiten gleich ({val})",
                          "Je Seite das Datum der letzten inhaltlichen Änderung zeigen (dasselbe wie dateModified).", "auto")
         if future:
