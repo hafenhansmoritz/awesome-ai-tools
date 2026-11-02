@@ -7,13 +7,22 @@ Keine Abhängigkeiten, nur Python 3.8+. Aufruf aus dem Repo-Root:
 Quellen:  README.de.md (Tool-Liste), brand/ki-werkstatt.json (Marke),
           data/stacks.json (Werkzeugkisten + Stack-Finder), data/rechner.json (Zeitspar-Rechner),
           data/glossar.json (KI-Glossar), data/kategorien.json (eigene Texte je Kategorie-Seite),
+          data/partner.json (Partnerlinks, standardmäßig aus; ops/partnerlinks.md),
           scripts/template/icons.svg
 Ausgabe:  docs/index.html, docs/ki-tools-*.html (eine Seite je Kategorie), docs/ki-glossar.html,
           docs/404.html, docs/danke.html, docs/impressum.html, docs/datenschutz.html, docs/img/*.svg,
           docs/ratgeber.html, docs/ki-einsatz.html (Übersichten), docs/seiten.json (Seitenindex fürs Such-Panel),
-          docs/tools.json, docs/tools.csv, docs/sitemap.xml, docs/robots.txt
+          docs/tools.json, docs/tools.csv, docs/sitemap.xml, docs/robots.txt, docs/llms.txt (llmstxt.org, nicht in der Sitemap)
 README.de.md bleibt die einzige Quelle für die Liste; docs/ nie von Hand bearbeiten.
 Am Ende prüft scripts/check_unique.py, dass kein Satz auf zwei Seiten steht.
+
+Pflichtprüfungen nach jeder Änderung an Generator, Daten, app.js oder style.css (alle aus dem Repo-Root):
+    python3 scripts/build_de_page.py                 # Build inkl. Uniqueness-Check
+    NODE_PATH=$(npm root -g) node scripts/smoke.js   # Browser-Smoke-Test, 0 Fehler
+    python3 scripts/layer_a.py                       # unsichtbare Zeichen, PNG-Metadaten
+    python3 scripts/seo_check.py                     # Title/Description, h1, Canonical, interne Links und Anker,
+                                                     # Sitemap, Waisen, JSON-LD; Exit 1 bei Fehlern
+    python3 scripts/check_links.py                   # nur wenn sich Links in README.de.md/data geändert haben
 """
 import base64
 import csv
@@ -179,6 +188,40 @@ def check_url(url, where, external=True):
     if not external and (url.startswith("mailto:") or not SCHEME.match(url)):
         return url
     raise SystemExit(f"Abbruch: unsicherer Link {url[:80]!r} in {where}. Erlaubt sind nur http(s)-Adressen.")
+
+
+# --------------------------------------------------------------------------- Partnerlinks (ops/partnerlinks.md)
+# data/partner.json: {"aktiv": false, "links": {"<Tool-Name wie in README.de.md>": "<Partner-URL>"}}. Standardmäßig aus.
+# Nur bei aktiv=true zeigt ein Tool-Link auf die Partner-URL, mit rel="sponsored noopener" und sichtbarem Badge;
+# Impressum, Fußzeile, Datenschutz und „So arbeitet die Werkstatt“ richten ihren Text nach PARTNER_N.
+# Die URLs werden immer geprüft (nur http(s)), auch wenn die Partnerlinks aus sind; unbekannte Tool-Namen prüft build_index.
+PARTNER = json.loads((ROOT / "data" / "partner.json").read_text(encoding="utf-8"))
+if not isinstance(PARTNER.get("aktiv"), bool) or not isinstance(PARTNER.get("links"), dict):
+    raise SystemExit('Abbruch: data/partner.json braucht "aktiv" (true/false) und "links" (Objekt Tool-Name -> URL).')
+PARTNER_LINKS = {n: check_url(str(u), f"data/partner.json ({n})") for n, u in PARTNER["links"].items()}
+PARTNER_ON = {n: u for n, u in PARTNER_LINKS.items() if PARTNER["aktiv"]}  # leer, solange aktiv=false
+PARTNER_N = len(PARTNER_ON)
+PARTNER_BY_URL = {}  # Original-URL -> Partner-URL; füllt build_index, damit dasselbe Tool unter jedem Namen (Favoriten, Schublade) gleich verlinkt
+PARTNER_TXT = ("" if not PARTNER_N else "Der Link zu einem Tool ist ein gekennzeichneter Partnerlink" if PARTNER_N == 1 else
+               f"Die Links zu {PARTNER_N} Tools sind gekennzeichnete Partnerlinks")
+PARTNER_TIP = "Partnerlink: Kaufst du darüber, bekommt die KI-Werkstatt eine Provision. Für dich ändert sich der Preis nicht."
+PARTNER_BADGE = f'<span class="badge partner" title="{PARTNER_TIP}">Partnerlink<span aria-hidden="true">*</span></span>'
+PARTNER_NOTE = ('<p class="partner-note wrap" data-chrome><span aria-hidden="true">*</span> Partnerlink: Kaufst du darüber, bekommt die '
+                'KI-Werkstatt eine Provision; für dich ändert sich der Preis nicht. Auswahl und Beschreibung hängen nicht davon ab. '
+                '<a href="impressum.html#unabhaengigkeit">Mehr dazu</a></p>')
+
+
+def tool_href(name, url):
+    """Ziel und rel eines Tool-Links: Partner-URL nur bei aktiven Partnerlinks, dann rel="sponsored noopener"."""
+    p = PARTNER_ON.get(name) or PARTNER_BY_URL.get(url)
+    return (p, "sponsored noopener", True) if p else (url, "noopener", False)
+
+
+def tool_a(name, url, cls="name"):
+    """Link zum Anbieter, bei Partnerlink mit Badge direkt dahinter (sichtbar, mit Tooltip und Text für Screenreader)."""
+    href, rel, partner = tool_href(name, url)
+    c = f' class="{cls}"' if cls else ""
+    return f'<a{c} href="{html.escape(href)}" target="_blank" rel="{rel}">{html.escape(name)}</a>' + (PARTNER_BADGE if partner else "")
 
 
 def plain(text):
@@ -409,9 +452,11 @@ def render_blocks(blocks, sec_id, sub_id, tools_map, ids=None):
                 if ids is not None and tool_id(it["name"]) not in ids:
                     ids.add(tool_id(it["name"]))
                     aid = f' id="{html.escape(tool_id(it["name"]))}"'
+                href, rel, partner = tool_href(it["name"], it["url"])
+                badges += PARTNER_BADGE if partner else ""
                 out.append(
                     f'<li{aid} data-eu="{int(eu)}" data-oss="{int(oss)}" data-search="{html.escape(search)}">{favicon(it["url"])}'
-                    f'<div><a class="name" href="{html.escape(it["url"])}" target="_blank" rel="noopener">{html.escape(it["name"])}</a>'
+                    f'<div><a class="name" href="{html.escape(href)}" target="_blank" rel="{rel}">{html.escape(it["name"])}</a>'
                     f'<span class="badges">{badges}</span><span class="desc">{desc_html}</span>{llm_tool_btn(it["url"])}</div></li>')
                 tools_map.setdefault(it["name"], {"u": it["url"], "d": clean, "eu": eu})
             out.append("</ul>")
@@ -462,9 +507,11 @@ def render_featured(sec, tools_map):
             eu, oss, clean = item_meta(it)
             tools_map.setdefault(it["name"], {"u": it["url"], "d": clean, "eu": eu})
             eu_badge = '<span class="badge eu">EU</span>' if eu else ""
+            href, rel, partner = tool_href(it["name"], it["url"])
+            eu_badge += PARTNER_BADGE if partner else ""
             cards.append(
                 f'<li data-eu="{int(eu)}" data-oss="{int(oss)}" data-search="{html.escape((it["name"] + " " + clean + " favoriten").lower())}">'
-                f'{favicon(it["url"])}<div><a class="name" href="{html.escape(it["url"])}" target="_blank" rel="noopener">{html.escape(it["name"])}</a>'
+                f'{favicon(it["url"])}<div><a class="name" href="{html.escape(href)}" target="_blank" rel="{rel}">{html.escape(it["name"])}</a>'
                 f'<span class="badges">{eu_badge}</span><span class="desc">{html.escape(clean)}</span>{llm_tool_btn(it["url"])}</div></li>')
     return "".join(cards)
 
@@ -493,7 +540,7 @@ def render_stacks(tools_map, stacks=None):
             t = tools_map.get(name)
             if not t:
                 raise SystemExit(f"Stack {st['id']}: Tool '{name}' nicht in README.de.md gefunden")
-            lis.append(f'<li>{favicon(t["u"])}<div><a href="{html.escape(t["u"])}" target="_blank" rel="noopener">{html.escape(name)}</a> '
+            lis.append(f'<li>{favicon(t["u"])}<div>{tool_a(name, t["u"], cls="")} '
                        f'<span>{html.escape(why)}</span></div></li>')
         pg = ""
         if st.get("promptgott"):
@@ -516,7 +563,7 @@ HONEY = '<div class="honey" aria-hidden="true"><label>Bitte leer lassen <input t
 # Seite und vorherige Seite füllt app.js beim Absenden (kein Speicher im Browser, kein Tracking)
 CONTEXT_FIELDS = '<input type="hidden" name="seite" value=""><input type="hidden" name="vorher" value="">'
 REQ = '<span class="req" aria-hidden="true"> *</span>'
-# Einwilligungstext für jedes Formular (Stack-Check und, wortgleich in app.js, Stack-Finder). Rechtsgrundlagen
+# Einwilligungstext für jedes Formular (Stack-Check und Stack-Finder, beide nur hier im Generator). Rechtsgrundlagen
 # und Empfänger erklärt datenschutz.html; Formulardienst und Postfach legt Jean noch fest (dann hier anpassen).
 CONSENT = ('Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen. Meine Angaben gehen über den Formulardienst '
            'FormSubmit per E-Mail an Jean Maurice Port und werden nur für die Antwort auf diese Anfrage genutzt. Dabei können sie '
@@ -549,6 +596,29 @@ def lead_form(source, subject, compact=False, rolle=""):
 <button class="btn" type="submit">{icon("mail")}Stack-Check anfragen</button>
 <p class="hint">Die Antwort kommt per E-Mail, meist innerhalb weniger Tage. Oder direkt an {mail_link("Stack-Check")}.</p>
 </form>"""
+
+
+FINDER_TPL = "finder-form-tpl"
+
+
+def finder_form():
+    """Formular unter dem Stack-Finder-Ergebnis, einmal als <template>: app.js klont es nach der letzten Frage und
+    trägt nur Antworten und Vorschlag ein. So stehen Einwilligungstext und Felder nur hier, nicht doppelt in app.js.
+    <template> ist inert: kein sichtbarer Text (check_unique.py überspringt es), keine doppelten IDs im Dokument."""
+    nxt = SITE_URL + "danke.html?typ=finder"
+    return f"""<template id="{FINDER_TPL}"><form class="form" action="https://formsubmit.co/{LEAD_TO}" method="POST" style="margin-top:18px;box-shadow:none;border:1px solid var(--line)">
+<input type="hidden" name="_subject" value="Stack-Check (Finder) – KI-Werkstatt"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="{nxt}">
+{HONEY}
+<input type="hidden" name="quelle" value="Stack-Finder">{CONTEXT_FIELDS}
+<input type="hidden" name="antworten" value=""><input type="hidden" name="vorschlag" value="">
+<p style="margin:0 0 4px;font:700 18px var(--font-d)">Soll Jean da noch mal drüberschauen?</p><p style="margin:0;color:#5B616B;font-size:14px">Du bekommst das Setup mit Anmerkungen zu deinem Fall per E-Mail. Kostenlos, ohne Pitch.</p>
+<p class="req-note" style="margin-top:10px">Felder mit * sind Pflicht.</p>
+<div class="row"><div><label for="f-name">Name (optional, Vorname reicht)</label><input id="f-name" name="name" autocomplete="given-name"></div><div><label for="f-mail">E-Mail{REQ}</label><input id="f-mail" type="email" name="email" required autocomplete="email"></div></div>
+<label for="f-proj">Was baust du gerade? (optional)</label><textarea id="f-proj" name="projekt" rows="3"></textarea>
+<label class="consent"><input type="checkbox" name="einwilligung" value="ja" required><span>{CONSENT}{REQ}</span></label>
+<button class="btn" type="submit">{icon("mail")}Stack-Check anfragen</button>
+<p class="hint">Oder direkt: {mail_link("Stack-Check")}</p></form></template>"""
 
 
 def absolutize(doc, base):
@@ -639,6 +709,9 @@ def page_shell(title, body, desc=DESCRIPTION, canonical=SITE_URL, extra_head="",
     if og_type == "article":
         og_extra = (f'<meta property="article:published_time" content="{published}">'
                     f'<meta property="article:modified_time" content="{modified or published}">')
+    if 'class="badge partner"' in body:  # Legende zum Partnerlink-Badge am Ende des Inhalts, vor der Fußzeile
+        i = body.index("<footer")
+        body = body[:i] + PARTNER_NOTE + "\n" + body[i:]
     main = main_landmark(body)
     if "data-llm=" in body and 'id="kw-llm"' not in body:
         raise SystemExit(f"{canonical}: Button mit data-llm ohne Prompt-Daten (llm_data)")
@@ -712,6 +785,13 @@ def topbar(here=""):
 </div></div>{TOPBAR_END}"""
 
 
+# Transparenz-Sätze: ohne aktive Partnerlinks der bisherige Wortlaut, mit aktiven ein ehrlicher (ops/partnerlinks.md)
+FOOT_PARTNER = ("Keine Affiliate-Links, keine bezahlten Platzierungen." if not PARTNER_N else
+                f"{PARTNER_TXT}, bezahlte Platzierungen gibt es keine.")
+FOOT_VERBINDUNG = ("Mit keinem Anbieter besteht eine Verbindung." if not PARTNER_N else
+                   "Außer über diese Partnerprogramme besteht mit keinem Anbieter eine Verbindung.")
+
+
 def footer(bar=True):
     """Fußzeile als Sitemap: alle Schubladen, Einsatzgebiete und Ratgeber. bar=False für Nebenseiten
     (Danke, 404, Rechtliches): ohne Sticky-Leiste und Merkliste."""
@@ -736,7 +816,7 @@ def footer(bar=True):
     out = f"""<footer><div class="wrap">
 <nav class="cols" aria-label="Alle Seiten">{"".join(cols)}</nav>
 <p class="screws" id="screws" hidden></p>
-<p>Letzter Link-Check: {LINK_CHECK} ({LINK_CHECK_N} Links). Keine Affiliate-Links, keine bezahlten Platzierungen. Tool-Namen und -Logos bezeichnen nur das jeweilige Produkt, Marken und Logos gehören ihren Inhabern; die Favicons liegen als Kopie auf dieser Seite. Mit keinem Anbieter besteht eine Verbindung. <a href="impressum.html#werkstatt">So entsteht die KI-Werkstatt</a></p>
+<p>Letzter Link-Check: {LINK_CHECK} ({LINK_CHECK_N} Links). {FOOT_PARTNER} Tool-Namen und -Logos bezeichnen nur das jeweilige Produkt, Marken und Logos gehören ihren Inhabern; die Favicons liegen als Kopie auf dieser Seite. {FOOT_VERBINDUNG} <a href="impressum.html#werkstatt">So entsteht die KI-Werkstatt</a></p>
 </div>
 <button id="totop" type="button" title="Nach oben" aria-label="Nach oben">{icon("up")}</button></footer>"""
     if not bar:
@@ -1060,12 +1140,20 @@ def build_index(sections, head_md):
     for s_, sub, it in all_items(list_secs + tail_secs):
         eu, oss, clean = item_meta(it)
         tools_map.setdefault(it["name"], {"u": it["url"], "d": clean, "eu": eu})
+    unknown = sorted(set(PARTNER_LINKS) - {it["name"] for _, _, it in all_items(sections)})
+    if unknown:
+        raise SystemExit(f"data/partner.json: Tool-Namen nicht in README.de.md gefunden (exakt wie dort schreiben): {unknown}")
+    for _, _, it in all_items(sections):
+        if it["name"] in PARTNER_ON:
+            PARTNER_BY_URL[it["url"]] = PARTNER_ON[it["name"]]
     # Nachschlagen statt Anhängsel: Lernen und Verwandte Listen stehen im Glossar, Mitmachen verlinkt die Fußzeile
     NAV["secs"] = list_secs
     NAV["lernen"] = [s for s in tail_secs if s["id"] in LERNEN_IDS]
     for s_, sub, it in all_items(list_secs):
         NAV["home"].setdefault(it["name"], cat_page(s_["id"]) + "#" + tool_id(it["name"]))
         NAV["sec"].setdefault(it["name"], s_["id"])
+    STEP_PARTNER = ("Affiliate- und Referral-Parameter bei Tool-Links fliegen auch raus." if not PARTNER_N else
+                    "Fremde Affiliate- und Referral-Parameter fliegen raus; eigene Partnerlinks stehen mit Badge am Tool.")
     featured_html = render_featured(featured, tools_map) if featured else ""
     pg_intro, pg_cards = render_pg(pg_sec) if pg_sec else ("", "")
     stacks_html = render_stacks(tools_map)
@@ -1102,7 +1190,7 @@ def build_index(sections, head_md):
 <ul class="drawer-tools">{tops}</ul>
 <span class="drawer-meta">{len(its)} Tools · {max(1, len(s["subs"]))} {"Fächer" if len(s["subs"]) > 1 else "Fach"}{eu_txt}</span><span class="drawer-cta">Schublade aufziehen{icon("arrow")}</span></span></a>""")
 
-    finder = dict(STACKS["finder"], to=LEAD_TO, next=SITE_URL + "danke.html?typ=finder")
+    finder = STACKS["finder"]  # Formular samt Empfänger und Danke-Adresse steht im <template> (finder_form)
     # Inline nur, was der Finder zeigen kann; die ganze Liste lädt app.js erst bei Bedarf aus tools.json
     f_names = {n for v in finder["base"].values() for n in v} | set(finder["eu_swap"].values()) | set(finder["firma_add"])
     missing = sorted(n for n in f_names if n not in tools_map)
@@ -1150,6 +1238,7 @@ def build_index(sections, head_md):
 <p class="intro">Welches Werkzeug? Kommt drauf an, was du baust. Der Finder fragt kurz nach und legt dir sechs bis acht Tools auf die Werkbank. Wenn du magst, schaut Jean danach noch einmal drüber.</p>
 <div class="finder reveal" id="finder"><p class="finder-q"></p><div class="opts"></div><div class="finder-result hidden"></div>
 <div class="finder-bar"><button type="button" class="btn btn-sm back hidden">{icon("arrow")}Zurück</button><div class="dots"></div><span class="steplbl"></span></div></div>
+{finder_form()}
 </div></section>
 
 <section class="band" id="favoriten"><div class="wrap">
@@ -1170,7 +1259,7 @@ def build_index(sections, head_md):
 <p class="intro">Kein Tool kommt in die Liste ohne funktionierenden Link und ohne eigene Beschreibung. Tote Links sind keine Tools, sondern Staubfänger.</p>
 <div class="steps">
 <div class="step reveal"><span class="n">1</span>{icon("search")}<h3>Sammeln</h3><p>Gesammelt wird, was in Projekten, Fachartikeln und Herstellerankündigungen auftaucht, mit besonderem Blick auf den DACH-Raum. Jeder Eintrag bekommt einen deutschen Satz, der sagt, wofür das Tool taugt. Ohne Werbeprosa.</p></div>
-<div class="step reveal"><span class="n">2</span>{icon("check")}<h3>Prüfen</h3><p>Jeder Link wird per HTTP abgeklopft. 404, Serverfehler oder Domain weg: ab in die Tonne. Affiliate- und Referral-Parameter bei Tool-Links fliegen auch raus. Nur Links zu PROMPTGOTT tragen UTM-Parameter, damit erkennbar ist, dass der Besuch von hier kam.</p></div>
+<div class="step reveal"><span class="n">2</span>{icon("check")}<h3>Prüfen</h3><p>Jeder Link wird per HTTP abgeklopft. 404, Serverfehler oder Domain weg: ab in die Tonne. {STEP_PARTNER} Nur Links zu PROMPTGOTT tragen UTM-Parameter, damit erkennbar ist, dass der Besuch von hier kam.</p></div>
 <div class="step reveal"><span class="n">3</span>{icon("layers")}<h3>Sortieren</h3><p>{n_cats} Schubladen nach Aufgabe, nicht nach Hype. EU-Sitz und Open Source als Badge. Dazu Werkzeugkisten für typische Jobs, damit du nicht alle {n_tools} Tools einzeln anfassen musst.</p></div>
 </div>
 <aside class="method-box reveal" id="methode"><h3>{icon("ruler")}Was „geprüft“ hier heißt</h3><ul>
@@ -1236,14 +1325,14 @@ def build_index(sections, head_md):
 
 
 def build_subpages(list_secs=()):
-    # Danke-Seite je Formular: ?typ=check (Stack-Check) oder ?typ=finder (Stack-Finder); app.js blendet die passende Fassung ein
+    # Danke-Seite je Formular: ?typ=check (Stack-Check) oder ?typ=finder (Stack-Finder); app.js blendet die passende Fassung ein.
+    # Eine einzige <h1> mit beiden Fassungen als <span data-typ>, damit die Seite nie zwei Hauptüberschriften hat (seo_check.py)
     danke = f"""{topbar("sub")}
 <div class="page page-kb page-danke"><div class="kb-say kb-hero duo">{hans("hm-lg", label="Hans Moritz zeigt den Daumen hoch", thumb=True)}{kurbel("kb-md", wink=True)}<p class="bubble">Angekommen! Kurbel sortiert so lange die Schrauben, ich setz schon mal Kaffee auf.</p></div>
 <p class="eyebrow">Angekommen</p>
-<div data-typ="check"><h1>Danke. Deine Anfrage liegt auf der Werkbank.</h1>
-<ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine Nachricht selbst, kein Bot und kein Callcenter.</span></li><li><b class="n">2</b><span>Danach legt Jean dir die Werkzeuge hin, die zu deinem Fall passen, mit je einem Satz, warum.</span></li><li><b class="n">3</b><span>Die Antwort kommt per E-Mail, ohne Verkaufsgespräch und ohne Kleingedrucktes.</span></li></ol></div>
-<div data-typ="finder" hidden><h1>Danke. Jean schaut jetzt über dein Setup.</h1>
-<ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine drei Antworten und die Tools, die der Finder dir vorgeschlagen hat.</span></li><li><b class="n">2</b><span>Was nicht zu deinem Fall passt, fliegt raus, und an seine Stelle kommt etwas Passenderes mit Begründung.</span></li><li><b class="n">3</b><span>Das überarbeitete Setup bekommst du per E-Mail, ohne Pitch und ohne Abo.</span></li></ol></div>
+<h1><span data-typ="check">Danke. Deine Anfrage liegt auf der Werkbank.</span> <span data-typ="finder" hidden>Danke. Jean schaut jetzt über dein Setup.</span></h1>
+<div data-typ="check"><ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine Nachricht selbst, kein Bot und kein Callcenter.</span></li><li><b class="n">2</b><span>Danach legt Jean dir die Werkzeuge hin, die zu deinem Fall passen, mit je einem Satz, warum.</span></li><li><b class="n">3</b><span>Die Antwort kommt per E-Mail, ohne Verkaufsgespräch und ohne Kleingedrucktes.</span></li></ol></div>
+<div data-typ="finder" hidden><ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine drei Antworten und die Tools, die der Finder dir vorgeschlagen hat.</span></li><li><b class="n">2</b><span>Was nicht zu deinem Fall passt, fliegt raus, und an seine Stelle kommt etwas Passenderes mit Begründung.</span></li><li><b class="n">3</b><span>Das überarbeitete Setup bekommst du per E-Mail, ohne Pitch und ohne Abo.</span></li></ol></div>
 <p>Meist dauert das nur wenige Tage. Hörst du nichts, wirf einen Blick in den Spam-Ordner, manchmal versteckt sich die Post dort. Oder schreib direkt an {mail_link()}.</p>
 {pg_box("danke")}
 <p class="danke-more"><a class="btn" href="./#werkzeugkisten">{icon("layers")}Werkzeugkisten ansehen</a> <a class="btn" href="tools.csv" download>{icon("download")}Die Liste als CSV laden</a></p>
@@ -1270,6 +1359,17 @@ def build_subpages(list_secs=()):
              'und geschäftlichem Zweck betreibt, braucht in Deutschland ein vollständiges Impressum nach § 5 DDG.</p>')
     needs_ds = ('<p class="needs"><b>[NEEDS_REVIEW]</b> Entwurf, vor dem Bewerben der Seite rechtlich prüfen lassen. Die Informationspflichten '
                 'nach Art. 13 DSGVO gelten ab dem ersten Formular, das Daten einsammelt.</p>')
+    if not PARTNER_N:
+        imp_partner = ("Die Liste enthält keine Affiliate-Links und keine bezahlten Platzierungen; für eine Nennung fließt kein Geld. "
+                       "Die KI-Werkstatt steht mit keinem der genannten Anbieter in Verbindung.")
+        imp_später = " Kommt später ein bezahlter oder Affiliate-Link dazu, wird er einzeln und sichtbar als Anzeige oder Affiliate-Link gekennzeichnet."
+    else:
+        imp_partner = (f"{PARTNER_TXT}, erkennbar am Zeichen „Partnerlink“ direkt am Tool. Anderswo heißen solche Links Affiliate-Links. "
+                       "Kaufst du über einen solchen Link, bekommt die KI-Werkstatt vom Anbieter oder einem Partnernetzwerk eine Provision; "
+                       "für dich ändert sich der Preis dadurch nicht. Ob ein Tool in die Liste kommt, an welcher Stelle es steht und wie es "
+                       "beschrieben wird, hängt nicht davon ab, ob es ein Partnerprogramm hat. Bezahlte Platzierungen gibt es keine. "
+                       "Mit den Anbietern dieser Partnerlinks verbindet die KI-Werkstatt nur die Provisionsvereinbarung, mit allen anderen nichts.")
+        imp_später = ""
     impressum = f"""{topbar("sub")}
 <div class="page legal"><p class="eyebrow">Rechtliches</p><h1>Impressum</h1>{needs}
 <p><b>Angaben gemäß § 5 DDG</b><br>[NAME, VORNAME]<br>[STRASSE, HAUSNUMMER]<br>[PLZ, ORT]<br>Deutschland</p>
@@ -1279,8 +1379,8 @@ def build_subpages(list_secs=()):
 <h2 id="werkstatt">So entsteht die KI-Werkstatt</h2>
 <p>Recherche und Textentwürfe entstehen mit KI-Unterstützung. Vor der Veröffentlichung wird jede Seite von einem Menschen geprüft und redaktionell verantwortet.</p>
 <p>„Geprüft“ heißt bei der Tool-Liste: Ein Skript fragt jeden Link regelmäßig ab, zuletzt am {LINK_CHECK}, und jede Beschreibung ist von Hand geschrieben. Ausprobiert wurde nicht jedes Tool. Angaben zu EU-Sitz und Open Source stammen von den Anbietern.</p>
-<h2>Unabhängigkeit und Werbung</h2>
-<p>Die Liste enthält keine Affiliate-Links und keine bezahlten Platzierungen; für eine Nennung fließt kein Geld. Die KI-Werkstatt steht mit keinem der genannten Anbieter in Verbindung. Links zu PROMPTGOTT (Substack) tragen UTM-Parameter, damit dort erkennbar ist, dass der Besuch von hier kam. <b>[NEEDS_REVIEW: Verhältnis zu PROMPTGOTT bestätigen, etwa „PROMPTGOTT ist Jeans eigener Newsletter; Links dorthin sind Eigenwerbung.“]</b> Kommt später ein bezahlter oder Affiliate-Link dazu, wird er einzeln und sichtbar als Anzeige oder Affiliate-Link gekennzeichnet.</p>
+<h2 id="unabhaengigkeit">Unabhängigkeit und Werbung</h2>
+<p>{imp_partner} Links zu PROMPTGOTT (Substack) tragen UTM-Parameter, damit dort erkennbar ist, dass der Besuch von hier kam. <b>[NEEDS_REVIEW: Verhältnis zu PROMPTGOTT bestätigen, etwa „PROMPTGOTT ist Jeans eigener Newsletter; Links dorthin sind Eigenwerbung.“]</b>{imp_später}</p>
 <h2>Haftung für Links</h2>
 <p>Die Liste verlinkt externe Websites, auf deren Inhalte wir keinen Einfluss haben; verantwortlich ist der jeweilige Anbieter. Regelmäßig geprüft wird nur, ob ein Link erreichbar ist, nicht was dahinter steht. Bei der Verlinkung waren keine Rechtsverstöße erkennbar. Wird uns eine Rechtsverletzung bekannt, entfernen wir den Link umgehend. Hinweise bitte an {mail_link("Hinweis auf einen Link")}.</p>
 <h2>Marken, Logos und Schriften</h2>
@@ -1306,6 +1406,12 @@ def build_subpages(list_secs=()):
         raise SystemExit(f"datenschutz.html: Speicher-Liste passt nicht zu app.js (app.js: {sorted(app_keys)}, Liste: {sorted(listed)})")
     speicher_html = "".join(f"<li><code>{html.escape(k)}</code>: {html.escape(t)}.</li>" for k, t in speicher)
     gh_privacy = "https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+    ds_partner = "" if not PARTNER_N else (
+        "\n<h2>Partnerlinks</h2>\n<p>Mit „Partnerlink“ gekennzeichnete Tool-Links führen über eine Adresse des Anbieters oder eines "
+        "Partnernetzwerks, die deinen Klick einer möglichen Provision zuordnet. Dabei erfährt der Anbieter oder das Netzwerk, dass du "
+        "von der KI-Werkstatt kommst, und kann auf seiner Seite ein Cookie oder eine ähnliche Kennung setzen. Das passiert erst nach "
+        "deinem Klick, auf der fremden Seite und nach deren Datenschutzregeln; diese Seite selbst speichert dafür nichts und bekommt "
+        "keine Angaben über dich. Willst du das nicht, ruf die Seite des Anbieters direkt über die Adresszeile auf.</p>")
     ds = f"""{topbar("sub")}
 <div class="page legal"><p class="eyebrow">Rechtliches</p><h1>Datenschutz</h1>{needs_ds}
 <p><b>Verantwortlicher:</b> [NAME, ANSCHRIFT wie im Impressum], E-Mail: {mail_link("Datenschutz")}</p>
@@ -1326,7 +1432,7 @@ def build_subpages(list_secs=()):
 <ul class="plain">{speicher_html}</ul>
 <p>Diese Einträge verlassen dein Gerät nicht. Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG, weil du die jeweilige Funktion selbst anforderst. Löschen kannst du sie jederzeit über die Website-Daten deines Browsers, Merkliste und Lesestand auch direkt auf der Seite. Zeitspar-Rechner und Trend-Radar rechnen nur in deinem Browser und speichern nichts. Merkliste, Rechner-Ergebnis und Radar bekommt Jean nur, wenn du sie an das Stack-Check-Formular hängst und es abschickst.</p>
 <h2>Externe Links</h2>
-<p>Links zu Tools, zu PROMPTGOTT (Substack) und zu GitHub führen auf fremde Seiten mit eigenen Datenschutzregeln. Links zu PROMPTGOTT enthalten UTM-Parameter, damit erkennbar ist, dass der Besuch von dieser Seite kam; persönliche Daten werden dabei nicht übertragen.</p>
+<p>Links zu Tools, zu PROMPTGOTT (Substack) und zu GitHub führen auf fremde Seiten mit eigenen Datenschutzregeln. Links zu PROMPTGOTT enthalten UTM-Parameter, damit erkennbar ist, dass der Besuch von dieser Seite kam; persönliche Daten werden dabei nicht übertragen.</p>{ds_partner}
 <h2>Buttons „Mit KI durchgehen“ und „Mit Werkstatt-Prompt“</h2>
 <p>Diese Buttons öffnen zuerst ein Fenster auf dieser Seite, das den vollständigen Text für einen KI-Chat zeigt. Bis dahin wird nichts übertragen und nichts gespeichert. Erst wenn du dort auf „In {html.escape(", ".join(t["name"] for t in LLM_ACTIVE) or "dem Chat")} öffnen“ klickst, öffnet sich die Seite des Anbieters in einem neuen Tab, und der angezeigte Text steht in der Adresse des Links. Damit erhält der Anbieter ihn wie eine Eingabe von dir; ab da gelten seine Datenschutzregeln, und eingeloggt kann er den Text auch gleich absenden. „Prompt kopieren“ legt den Text nur in deine Zwischenablage. Die Werkstatt-Links im Text tragen UTM-Parameter (utm_medium=llm-prompt) mit Anbieter und Ausgangsseite. Öffnest du einen davon und schickst auf derselben Seite das Stack-Check-Formular ab, stehen diese drei Angaben in der Anfrage an Jean.</p>
 <h2>Deine Rechte</h2>
@@ -1407,11 +1513,13 @@ def tool_chip(name, tools_map):
     t = tools_map[name]
     neu = NEU_BADGE if name in NEU_NAMES else ""
     home = NAV["home"].get(name)
+    href, rel, partner = tool_href(name, t["u"])
+    pb = PARTNER_BADGE if partner else ""
     if not home:
-        return f'<a class="chip tool" href="{html.escape(t["u"])}" target="_blank" rel="noopener">{favicon(t["u"])}{html.escape(name)}{neu}</a>'
+        return f'<a class="chip tool" href="{html.escape(href)}" target="_blank" rel="{rel}">{favicon(t["u"])}{html.escape(name)}{neu}{pb}</a>'
     return (f'<span class="chip tool"><a href="{html.escape(home)}">{favicon(t["u"])}{html.escape(name)}{neu}</a>'
-            f'<a class="chip-ext" href="{html.escape(t["u"])}" target="_blank" rel="noopener" title="Zum Anbieter" '
-            f'aria-label="{html.escape(name)} beim Anbieter öffnen (neues Fenster)">{icon("arrow")}</a></span>')
+            f'<a class="chip-ext" href="{html.escape(href)}" target="_blank" rel="{rel}" title="Zum Anbieter{" (Partnerlink)" if partner else ""}" '
+            f'aria-label="{html.escape(name)} beim Anbieter öffnen (neues Fenster{", Partnerlink" if partner else ""})">{icon("arrow")}</a>{pb}</span>')
 
 
 def cat_chip(sec_id):
@@ -2041,7 +2149,7 @@ def gl_autolink_html(markup, used):
 
 
 def render_md(md):
-    """Kleines Markdown: ## Kapitel, ### Unterkapitel, > Kasten, - und 1. Listen, | Tabellen, Absätze."""
+    """Kleines Markdown: ## Kapitel, ### Unterkapitel, > Kasten, - und 1. Listen, | Tabellen, ``` Codeblöcke, Absätze."""
     blocks, toc = [], []
     lines = md.strip().split("\n")
     i = 0
@@ -2055,6 +2163,19 @@ def render_md(md):
         if not ln.strip():
             para(buf)
             buf = []
+            i += 1
+            continue
+        if ln.startswith("```"):  # Codeblock, z. B. robots.txt-Vorlagen: wörtlich, ohne Inline-Formatierung
+            para(buf)
+            buf = []
+            code = []
+            i += 1
+            while i < len(lines) and not lines[i].startswith("```"):
+                code.append(lines[i].rstrip())
+                i += 1
+            if i >= len(lines):
+                raise SystemExit("Ratgeber: Codeblock ohne schließende ```")
+            blocks.append(f'<pre class="code" tabindex="0"><code>{html.escape(chr(10).join(code))}</code></pre>')
             i += 1
             continue
         if ln.startswith("## "):
@@ -2433,7 +2554,7 @@ def build_data(uniq, sections, pages=(), list_secs=()):
         else:
             seite = f"./#{s['id']}"
         rows.append({"name": it["name"], "url": it["url"], "beschreibung": clean, "kategorie": s["title"], "bereich": sub["title"] if sub else "",
-                     "eu": eu, "open_source": oss, "neu": it["name"] in NEU_NAMES, "seite": seite, "icon": fav_src(it["url"])})
+                     "eu": eu, "open_source": oss, "neu": it["name"] in NEU_NAMES, "partner": tool_href(it["name"], it["url"])[2], "seite": seite, "icon": fav_src(it["url"])})
     (DOCS / "tools.json").write_text(json.dumps({"gebaut": TODAY, "link_check": LINK_CHECK, "quelle": REPO_URL, "tools": rows}, ensure_ascii=False, indent=1), encoding="utf-8")
     with (DOCS / "tools.csv").open("w", encoding="utf-8-sig", newline="") as f:  # ohne Icon-Pfad: der hilft nur der Seite
         w = csv.DictWriter(f, fieldnames=[k for k in rows[0] if k != "icon"], delimiter=";", extrasaction="ignore")
@@ -2449,6 +2570,44 @@ def build_data(uniq, sections, pages=(), list_secs=()):
     (DOCS / "favicon.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#D7FF3C"/>'
                                       '<g transform="translate(10 10) scale(1.83)" fill="none" stroke="#0E1116" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
                                       + icon_body("wrench") + "</g></svg>", encoding="utf-8")
+
+
+def page_meta(pg):
+    """Titel (ohne Markenzusatz) und Meta-Description einer gebauten Seite, für llms.txt."""
+    doc = (DOCS / pg).read_text(encoding="utf-8")
+    t = html.unescape(re.search(r"<title>(.*?)</title>", doc, re.S).group(1)).strip()
+    d = html.unescape(re.search(r'<meta name="description" content="([^"]*)"', doc).group(1)).strip()
+    return (t[:-len(SUFFIX)] if t.endswith(SUFFIX) else t), d
+
+
+def build_llms(n_tools):
+    """docs/llms.txt nach llmstxt.org: H1, Kurzbeschreibung als Zitat, Abschnitte mit Markdown-Links und je einer Notiz.
+    Notizen stammen aus Title und Meta-Description der gebauten Seiten (bzw. dem Kurztext der Trends), nichts wird neu formuliert.
+    Nicht in der Sitemap, robots.txt bleibt unverändert."""
+    def md(x):  # eckige Klammern im Linktext würden die Markdown-Syntax brechen
+        return x.replace("[", "(").replace("]", ")")
+
+    def item(pg, anchor=""):
+        t, d = page_meta(pg)
+        return f"- [{md(t)}]({SITE_URL}{pg}{anchor}): {d}"
+    sections = [
+        ("Schubladen", [item(cat_page(sec["id"])) for sec in NAV["secs"]]),
+        ("Einsatzgebiete", [item(EINSATZ_PAGE)] + [item(e["page"]) for e in EINSATZ["seiten"]]),
+        ("Ratgeber", [item(RATGEBER_PAGE)] + [item(a["page"]) for a in RATGEBER["artikel"]]),
+        ("Trends", [item(TRENDS_PAGE)] + [f"- [{md(t['label'])}]({SITE_URL}{TRENDS_PAGE}#{t['id']}): {t['kurz']}" for t in TRENDS["trends"]]),
+        ("Glossar", [item(GLOSSAR_PAGE)]),
+        ("Rechtliches", [item("impressum.html"), item("datenschutz.html")]),
+        ("Optional", [f"- [Tool-Liste als JSON]({SITE_URL}tools.json): alle {n_tools} Tools mit Beschreibung, Schublade, EU- und Open-Source-Angabe",
+                      f"- [Tool-Liste als CSV]({SITE_URL}tools.csv): dieselbe Liste für Tabellenprogramme",
+                      f"- [Trends und Neuzugänge als Feed]({SITE_URL}feed.xml): Atom-Feed",
+                      f"- [Quelle der Liste]({REPO_URL}/blob/main/README.de.md): Markdown auf GitHub, Beiträge per Pull Request"]),
+    ]
+    out = ["# KI-Werkstatt", "", f"> {DESCRIPTION}", "",
+           f"Deutschsprachiges Verzeichnis mit {n_tools} KI-Tools in {len(NAV['secs'])} Schubladen, dazu Einsatzgebiete, Ratgeber, Trends und ein Glossar. "
+           f"Startseite: {SITE_URL}. Letzter Link-Check: {LINK_CHECK}."]
+    for title, lines in sections:
+        out += ["", f"## {title}", ""] + lines
+    (DOCS / "llms.txt").write_text("\n".join(out) + "\n", encoding="utf-8")
 
 
 OG_SRC = ROOT / ".build" / "og.html"
@@ -2505,6 +2664,7 @@ def main():
     build_feed(list_secs)
     build_subpages(list_secs)
     build_data(uniq, sections, pages, list_secs)
+    build_llms(n_tools)
     build_og(n_tools, n_cats)
     print(f"docs/index.html: {n_tools} Tools, {n_cats} Kategorien, {len(list(IMG.glob('cat-*.svg')))} Grafiken, {len(pages)} Unterseiten")
     from check_unique import find_duplicates

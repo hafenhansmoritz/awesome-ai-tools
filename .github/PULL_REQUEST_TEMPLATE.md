@@ -12,4 +12,4 @@
 - [ ] Tool steht noch nicht in der Liste
 - [ ] Am Ende der passenden Kategorie eingetragen
 - [ ] 🇪🇺 nur bei Firmensitz in der EU, `OSS` nur bei echtem Open-Source-Code
-- [ ] `python3 scripts/check_links.py` und `python3 scripts/build_de_page.py` laufen durch
+- [ ] `python3 scripts/check_links.py`, `python3 scripts/build_de_page.py` und `python3 scripts/seo_check.py` laufen durch
