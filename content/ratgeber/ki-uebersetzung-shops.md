@@ -47,6 +47,8 @@ Kein Modell kennt deine Produktnamen, deine Abkürzungen und die Begriffe, die i
 
 Bei DeepL ist das eine eingebaute Funktion mit klaren Grenzen je Tarif. In der kostenlosen Version und im Tarif Individual gibt es ein Glossar mit fünf Einträgen je Sprachpaar, im Tarif Team fünf Glossare mit je 1.000 Einträgen, in Business und Enterprise keine feste Grenze. Dazu listet DeepL Funktionen wie den Upload von Glossaren per CSV, geteilte Glossare, Translation Memory und die Wahl zwischen formeller und informeller Anrede; welche davon in welchem Tarif steckt, zeigt die Preisseite. Für einen Shop mit Hunderten Fachbegriffen ist der kleinste Tarif damit zu knapp.
 
+Die Translation Memory geht einen Schritt weiter als das Glossar und merkt sich ganze Sätze. Laut Entwickler-Doku vergleicht DeepL deinen Ausgangstext mit den gespeicherten Segmenten und übernimmt einen Treffer, wenn er zu mindestens 75 Prozent passt; die Schwelle lässt sich bis auf 50 Prozent senken. Hast du schon geprüfte Übersetzungen von Katalog oder Handbuch, lohnt es sich, sie dort hochzuladen, bevor die Maschine dieselben Sätze neu formuliert.
+
 Bei allgemeinen Sprachmodellen gibst du das Glossar als Teil der Anweisung mit, etwa als Tabelle am Anfang des Prompts. Das funktioniert gut, kostet aber bei jeder Anfrage Eingabe-Token. Wer viele Seiten übersetzt, profitiert hier stark vom Cache, den die großen Anbieter für wiederkehrende Anweisungen günstiger abrechnen.
 
 So baust du ein Glossar, das wirklich hilft:

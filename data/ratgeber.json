@@ -261,7 +261,8 @@
     "KI-Suchmaschine",
     "Halluzination",
     "RAG",
-    "Agent"
+    "Agent",
+    "Query Fan-out"
    ],
    "faq": [
     [
@@ -643,7 +644,8 @@
     "Token",
     "Kontextfenster",
     "API",
-    "Halluzination"
+    "Halluzination",
+    "Translation Memory"
    ],
    "faq": [
     [
@@ -697,6 +699,11 @@
     [
      "DeepL Help Center: Infrastructure and data protection",
      "https://support.deepl.com/hc/en-us/articles/26380849099932-DeepL-infrastructure-and-data-protection",
+     ""
+    ],
+    [
+     "DeepL Developer Docs: Using translation memories",
+     "https://developers.deepl.com/docs/customize/using-translation-memories",
      ""
     ]
    ],
@@ -883,7 +890,8 @@
     "EU AI Act",
     "Deepfake",
     "DSGVO",
-    "AVV"
+    "AVV",
+    "SIP"
    ],
    "faq": [
     [
@@ -1012,7 +1020,8 @@
     "Agent",
     "Tool Use",
     "Prompt Injection",
-    "API"
+    "API",
+    "OAuth"
    ],
    "faq": [
     [
