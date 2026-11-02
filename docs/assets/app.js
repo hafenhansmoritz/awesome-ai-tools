@@ -245,23 +245,17 @@
         return '<a href="' + esc(safeUrl(t.u)) + '" target="_blank" rel="noopener">' + favImg(t.i, 28) + '<span><b>' + esc(n) + (t.eu ? ' <span class="badge eu">EU</span>' : "") + '</b><small>' + esc(t.d) + '</small></span></a>';
       }).join("");
       var notes = [F.notes[ans.team], ans.daten === "eu" ? F.notes.eu : ""].filter(Boolean).map(function (n) { return '<p class="note">' + esc(n) + "</p>"; }).join("");
-      var stackText = list.join(", "), req = '<span class="req" aria-hidden="true"> *</span>';
       res.innerHTML = '<p class="eyebrow">Dein Setup</p><h3 class="finder-q" tabindex="-1">' + list.length + ' Tools, die zu deinem Fall passen</h3>' +
         '<div class="result-tools">' + cards + "</div>" + notes +
-        '<form class="form" action="https://formsubmit.co/' + esc(F.to) + '" method="POST" style="margin-top:18px;box-shadow:none;border:1px solid var(--line)">' +
-        '<input type="hidden" name="_subject" value="Stack-Check (Finder) – KI-Werkstatt"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">' +
-        '<input type="hidden" name="_next" value="' + esc(F.next) + '">' +
-        '<div class="honey" aria-hidden="true"><label>Bitte leer lassen <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>' +
-        '<input type="hidden" name="quelle" value="Stack-Finder"><input type="hidden" name="seite" value=""><input type="hidden" name="vorher" value="">' +
-        '<input type="hidden" name="antworten" value="' + esc([ans.ziel, ans.daten, ans.team].join(" / ")) + '"><input type="hidden" name="vorschlag" value="' + esc(stackText) + '">' +
-        '<p style="margin:0 0 4px;font:700 18px var(--font-d)">Soll Jean da noch mal drüberschauen?</p><p style="margin:0;color:#5B616B;font-size:14px">Du bekommst das Setup mit Anmerkungen zu deinem Fall per E-Mail. Kostenlos, ohne Pitch.</p>' +
-        '<p class="req-note" style="margin-top:10px">Felder mit * sind Pflicht.</p>' +
-        '<div class="row"><div><label for="f-name">Name (optional, Vorname reicht)</label><input id="f-name" name="name" autocomplete="given-name"></div><div><label for="f-mail">E-Mail' + req + '</label><input id="f-mail" type="email" name="email" required autocomplete="email"></div></div>' +
-        '<label for="f-proj">Was baust du gerade? (optional)</label><textarea id="f-proj" name="projekt" rows="3"></textarea>' +
-        '<label class="consent"><input type="checkbox" name="einwilligung" value="ja" required><span>Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen. Meine Angaben gehen über den Formulardienst FormSubmit per E-Mail an Jean Maurice Port und werden nur für die Antwort auf diese Anfrage genutzt. Dabei können sie in Länder ohne gleichwertigen Datenschutz wie die USA gelangen. Damit bin ich einverstanden; widerrufen kann ich das jederzeit per E-Mail.' + req + '</span></label>' +
-        '<button class="btn" type="submit">' + icon("mail") + 'Stack-Check anfragen</button>' +
-        '<p class="hint">Oder direkt: <a href="mailto:' + esc(F.to) + '?subject=Stack-Check">' + esc(F.to) + '</a></p></form>' +
         '<p style="margin-top:14px"><button type="button" class="btn btn-sm restart">' + icon("arrow") + 'Noch mal von vorn</button></p>';
+      // Formular samt Einwilligungstext steht einmal im HTML (<template>, vom Generator); hier nur klonen und befüllen
+      var tpl = document.getElementById("finder-form-tpl"), fForm = tpl && tpl.content && tpl.content.querySelector("form");
+      if (fForm) {
+        fForm = document.importNode(fForm, true);
+        fForm.querySelector("[name=antworten]").value = [ans.ziel, ans.daten, ans.team].join(" / ");
+        fForm.querySelector("[name=vorschlag]").value = list.join(", ");
+        res.insertBefore(fForm, $(".restart", res).parentNode);
+      }
       qEl.classList.add("hidden"); optsEl.classList.add("hidden"); res.classList.remove("hidden");
       dots.innerHTML = F.questions.map(function () { return '<i class="on"></i>'; }).join(""); stepLbl.textContent = "Fertig: " + list.length + " Tools vorgeschlagen"; back.classList.add("hidden");
       $(".restart", res).addEventListener("click", function () { ans = {}; stepIdx = 0; render(true); });

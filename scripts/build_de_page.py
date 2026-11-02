@@ -555,7 +555,7 @@ HONEY = '<div class="honey" aria-hidden="true"><label>Bitte leer lassen <input t
 # Seite und vorherige Seite füllt app.js beim Absenden (kein Speicher im Browser, kein Tracking)
 CONTEXT_FIELDS = '<input type="hidden" name="seite" value=""><input type="hidden" name="vorher" value="">'
 REQ = '<span class="req" aria-hidden="true"> *</span>'
-# Einwilligungstext für jedes Formular (Stack-Check und, wortgleich in app.js, Stack-Finder). Rechtsgrundlagen
+# Einwilligungstext für jedes Formular (Stack-Check und Stack-Finder, beide nur hier im Generator). Rechtsgrundlagen
 # und Empfänger erklärt datenschutz.html; Formulardienst und Postfach legt Jean noch fest (dann hier anpassen).
 CONSENT = ('Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen. Meine Angaben gehen über den Formulardienst '
            'FormSubmit per E-Mail an Jean Maurice Port und werden nur für die Antwort auf diese Anfrage genutzt. Dabei können sie '
@@ -588,6 +588,29 @@ def lead_form(source, subject, compact=False, rolle=""):
 <button class="btn" type="submit">{icon("mail")}Stack-Check anfragen</button>
 <p class="hint">Die Antwort kommt per E-Mail, meist innerhalb weniger Tage. Oder direkt an {mail_link("Stack-Check")}.</p>
 </form>"""
+
+
+FINDER_TPL = "finder-form-tpl"
+
+
+def finder_form():
+    """Formular unter dem Stack-Finder-Ergebnis, einmal als <template>: app.js klont es nach der letzten Frage und
+    trägt nur Antworten und Vorschlag ein. So stehen Einwilligungstext und Felder nur hier, nicht doppelt in app.js.
+    <template> ist inert: kein sichtbarer Text (check_unique.py überspringt es), keine doppelten IDs im Dokument."""
+    nxt = SITE_URL + "danke.html?typ=finder"
+    return f"""<template id="{FINDER_TPL}"><form class="form" action="https://formsubmit.co/{LEAD_TO}" method="POST" style="margin-top:18px;box-shadow:none;border:1px solid var(--line)">
+<input type="hidden" name="_subject" value="Stack-Check (Finder) – KI-Werkstatt"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="{nxt}">
+{HONEY}
+<input type="hidden" name="quelle" value="Stack-Finder">{CONTEXT_FIELDS}
+<input type="hidden" name="antworten" value=""><input type="hidden" name="vorschlag" value="">
+<p style="margin:0 0 4px;font:700 18px var(--font-d)">Soll Jean da noch mal drüberschauen?</p><p style="margin:0;color:#5B616B;font-size:14px">Du bekommst das Setup mit Anmerkungen zu deinem Fall per E-Mail. Kostenlos, ohne Pitch.</p>
+<p class="req-note" style="margin-top:10px">Felder mit * sind Pflicht.</p>
+<div class="row"><div><label for="f-name">Name (optional, Vorname reicht)</label><input id="f-name" name="name" autocomplete="given-name"></div><div><label for="f-mail">E-Mail{REQ}</label><input id="f-mail" type="email" name="email" required autocomplete="email"></div></div>
+<label for="f-proj">Was baust du gerade? (optional)</label><textarea id="f-proj" name="projekt" rows="3"></textarea>
+<label class="consent"><input type="checkbox" name="einwilligung" value="ja" required><span>{CONSENT}{REQ}</span></label>
+<button class="btn" type="submit">{icon("mail")}Stack-Check anfragen</button>
+<p class="hint">Oder direkt: {mail_link("Stack-Check")}</p></form></template>"""
 
 
 def absolutize(doc, base):
@@ -1159,7 +1182,7 @@ def build_index(sections, head_md):
 <ul class="drawer-tools">{tops}</ul>
 <span class="drawer-meta">{len(its)} Tools · {max(1, len(s["subs"]))} {"Fächer" if len(s["subs"]) > 1 else "Fach"}{eu_txt}</span><span class="drawer-cta">Schublade aufziehen{icon("arrow")}</span></span></a>""")
 
-    finder = dict(STACKS["finder"], to=LEAD_TO, next=SITE_URL + "danke.html?typ=finder")
+    finder = STACKS["finder"]  # Formular samt Empfänger und Danke-Adresse steht im <template> (finder_form)
     # Inline nur, was der Finder zeigen kann; die ganze Liste lädt app.js erst bei Bedarf aus tools.json
     f_names = {n for v in finder["base"].values() for n in v} | set(finder["eu_swap"].values()) | set(finder["firma_add"])
     missing = sorted(n for n in f_names if n not in tools_map)
@@ -1207,6 +1230,7 @@ def build_index(sections, head_md):
 <p class="intro">Welches Werkzeug? Kommt drauf an, was du baust. Der Finder fragt kurz nach und legt dir sechs bis acht Tools auf die Werkbank. Wenn du magst, schaut Jean danach noch einmal drüber.</p>
 <div class="finder reveal" id="finder"><p class="finder-q"></p><div class="opts"></div><div class="finder-result hidden"></div>
 <div class="finder-bar"><button type="button" class="btn btn-sm back hidden">{icon("arrow")}Zurück</button><div class="dots"></div><span class="steplbl"></span></div></div>
+{finder_form()}
 </div></section>
 
 <section class="band" id="favoriten"><div class="wrap">
