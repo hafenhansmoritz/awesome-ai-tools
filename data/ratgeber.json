@@ -1310,6 +1310,131 @@
    "lead_hook": "Welche Bilder sollen schneller fertig werden?",
    "lead_text": "Welche Bildtypen hast du, und in welche Kanäle lieferst du? Mit dem Shopsystem dazu schlägt Jean Werkzeuge, Ampelregeln und einen Metadaten-Check für deine Feeds vor.",
    "bubble": "Ich hab das Bild nur aufgeräumt. Der Kratzer ist trotzdem echt."
+  },
+  {
+   "id": "ki-crawler-robots-txt",
+   "page": "ratgeber-ki-crawler-robots-txt.html",
+   "icon": "shield",
+   "h1": "KI-Crawler in der robots.txt steuern: Training sperren, Suche behalten",
+   "label": "KI-Crawler in der robots.txt",
+   "seo_title": "KI-Crawler per robots.txt steuern",
+   "meta": "GPTBot, ClaudeBot, Google-Extended und Co.: welche KI-Crawler wofür abrufen, drei Vorlagen für die robots.txt, die Fristen bei Bing und eine Checkliste.",
+   "teaser": "Training, Suche, Abruf auf Zuruf: drei Zwecke, ein gutes Dutzend Kennungen und drei Vorlagen zum Anpassen.",
+   "hero": "OpenAI, Google, Anthropic, Microsoft, Perplexity, Apple und Common Crawl trennen Training und Suche unterschiedlich. Hier steht, welche Kennung was regelt, wie die robots.txt für dein Ziel aussieht und was sie nicht kann.",
+   "stand": "2026-11-02",
+   "rollen": [
+    "marketing",
+    "shop",
+    "entwicklung"
+   ],
+   "trend": "training-optout",
+   "tools": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Perplexity",
+    "Microsoft Copilot",
+    "Firecrawl"
+   ],
+   "glossar": [
+    "AI Overviews",
+    "KI-Suchmaschine",
+    "RAG",
+    "llms.txt"
+   ],
+   "faq": [
+    [
+     "Verschwinde ich aus AI Overviews, wenn ich Google-Extended sperre?",
+     "Nein. AI Overviews und AI Mode gehören zur Google-Suche und hängen am Googlebot, und Google-Extended hat laut Google keinen Einfluss auf die Aufnahme in die Suche. Wer dort nicht erscheinen will, nutzt die Einstellung für generative KI in der Search Console oder Snippet-Angaben wie nosnippet."
+    ],
+    [
+     "Reicht ein Disallow für alle Bots, um KI-Training abzulehnen?",
+     "Das sperrt jeden folgsamen Crawler, also auch Googlebot und Bingbot, und kostet dich damit die normale Suche. Nach dem IETF-Entwurf zählt eine Regel unter User-agent: * außerdem nicht als Nein zum Training. Besser sind die einzelnen Trainings-Kennungen und die Gruppe __usage_ai-training."
+    ],
+    [
+     "Holt eine neue Sperre schon genutzte Inhalte aus den Modellen zurück?",
+     "Darauf verlassen kannst du dich nicht. Anthropic bezieht eine Sperre von ClaudeBot ausdrücklich auf künftige Inhalte, und der IETF-Entwurf stellt auf die robots.txt zum Zeitpunkt des Abrufs ab. Eine Löschzusage für fertige Modelle findest du in keiner der zitierten Quellen."
+    ],
+    [
+     "Warum sehe ich ChatGPT-User in den Logs, obwohl ich GPTBot gesperrt habe?",
+     "Weil das zwei verschiedene Kennungen sind. ChatGPT-User ruft Seiten ab, wenn jemand in ChatGPT danach fragt, und laut OpenAI gilt die robots.txt dafür womöglich nicht. Mit dem Training durch GPTBot hat dieser Abruf nichts zu tun."
+    ]
+   ],
+   "quellen": [
+    [
+     "RFC 9309: Robots Exclusion Protocol (September 2022)",
+     "https://www.rfc-editor.org/rfc/rfc9309.html",
+     ""
+    ],
+    [
+     "OpenAI: Overview of OpenAI Crawlers",
+     "https://developers.openai.com/api/docs/bots",
+     ""
+    ],
+    [
+     "OpenAI: Making it easier for websites to express AI training preferences",
+     "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+     "2026-10-30"
+    ],
+    [
+     "Google Search Central: Google's common crawlers (Google-Extended), Stand der Seite",
+     "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+     "2026-10-30"
+    ],
+    [
+     "Google Search Central: AI features and your website, Stand der Seite",
+     "https://developers.google.com/search/docs/appearance/ai-features",
+     "2025-12-10"
+    ],
+    [
+     "Search Console-Hilfe: Search generative AI control",
+     "https://support.google.com/webmasters/answer/16908024",
+     ""
+    ],
+    [
+     "Search Console-Hilfe: robots.txt report",
+     "https://support.google.com/webmasters/answer/6062598",
+     ""
+    ],
+    [
+     "Google Search Central Blog: Supporting a shared AI training control for websites",
+     "https://developers.google.com/search/blog/2026/10/ai-training-control",
+     "2026-10-30"
+    ],
+    [
+     "Anthropic: Does Anthropic crawl data from the web, and how can site owners block the crawler?",
+     "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+     "2026-04-07"
+    ],
+    [
+     "Bing Blog: Clearer preferences for training and grounding",
+     "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+     "2026-10-30"
+    ],
+    [
+     "Perplexity: Perplexity Crawlers",
+     "https://docs.perplexity.ai/guides/bots",
+     ""
+    ],
+    [
+     "Apple Support: About Applebot",
+     "https://support.apple.com/en-us/119829",
+     "2026-09-04"
+    ],
+    [
+     "Common Crawl: CCBot",
+     "https://commoncrawl.org/ccbot",
+     ""
+    ],
+    [
+     "IETF: draft-kelley-aipref-training-preference-signal-00",
+     "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+     "2026-10-30"
+    ]
+   ],
+   "lead_hook": "Unsicher, was deine robots.txt gerade erlaubt?",
+   "lead_text": "Schick Jean die Adresse deiner robots.txt und sag, was ins Training darf und was nicht. Zurück kommt ein Vorschlag, welche Gruppen fehlen und welche Zeile mehr sperrt als gedacht.",
+   "bubble": "Ich hab ein Schild ans Tor gehängt. Die Höflichen lesen es."
   }
  ]
 }
