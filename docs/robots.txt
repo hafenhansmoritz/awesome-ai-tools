@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://jmp-collab.github.io/awesome-ai-tools/sitemap.xml
+Sitemap: https://ainterview.space/sitemap.xml

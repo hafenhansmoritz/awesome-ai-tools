@@ -55,7 +55,7 @@ RG_DIR = ROOT / "content" / "ratgeber"
 ZAHLWORT = {2: "Zwei", 3: "Drei", 4: "Vier", 5: "Fünf", 6: "Sechs", 7: "Sieben", 8: "Acht", 9: "Neun", 10: "Zehn", 11: "Elf", 12: "Zwölf"}
 ICONS = (ROOT / "scripts" / "template" / "icons.svg").read_text(encoding="utf-8")
 
-SITE_URL = "https://jmp-collab.github.io/awesome-ai-tools/"
+SITE_URL = "https://ainterview.space/"  # eigene Domain; GitHub Pages leitet jmp-collab.github.io/awesome-ai-tools/ dorthin um
 REPO_URL = "https://github.com/jmp-collab/awesome-ai-tools"
 TITLE = "KI-Werkstatt: KI-Tools auf Deutsch, sortiert und erklärt"
 DESCRIPTION = (  # höchstens 155 Zeichen, das Wichtigste zuerst
@@ -2567,6 +2567,12 @@ def build_data(uniq, sections, pages=(), list_secs=()):
     (DOCS / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
                                       f"{urls}</urlset>\n", encoding="utf-8")
     (DOCS / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}sitemap.xml\n", encoding="utf-8")
+    # Eigene Domain für GitHub Pages: CNAME im Veröffentlichungsordner, bei github.io-Adresse keine Datei
+    host = urlparse(SITE_URL).netloc
+    if host.endswith("github.io"):
+        (DOCS / "CNAME").unlink(missing_ok=True)
+    else:
+        (DOCS / "CNAME").write_text(host + "\n", encoding="utf-8")
     (DOCS / "favicon.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#D7FF3C"/>'
                                       '<g transform="translate(10 10) scale(1.83)" fill="none" stroke="#0E1116" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
                                       + icon_body("wrench") + "</g></svg>", encoding="utf-8")

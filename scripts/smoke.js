@@ -12,16 +12,22 @@ const { spawn } = require("child_process");
 const fs = require("fs"), os = require("os"), path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
+// Unter demselben Pfad testen wie live: SITE_URL im Generator bestimmt ihn (eigene Domain "/", github.io "/awesome-ai-tools/").
+// Die 404-Seite nutzt Pfade ab der Wurzel, die passen nur bei gleichem Präfix.
+const SITE_URL = (fs.readFileSync(path.join(ROOT, "scripts", "build_de_page.py"), "utf8").match(/^SITE_URL = "([^"]+)"/m) || [])[1];
+if (!SITE_URL) throw new Error("SITE_URL in scripts/build_de_page.py nicht gefunden");
+const PREFIX = new URL(SITE_URL).pathname.replace(/^\/|\/$/g, ""); // "" oder "awesome-ai-tools"
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "kw-smoke-"));
-fs.symlinkSync(path.join(ROOT, "docs"), path.join(tmp, "awesome-ai-tools"));
+const served = PREFIX ? tmp : path.join(ROOT, "docs");
+if (PREFIX) fs.symlinkSync(path.join(ROOT, "docs"), path.join(tmp, PREFIX));
 // Port 0: das Betriebssystem vergibt einen freien Port, der Server nennt ihn in seiner Startzeile
 let BASE = "";
-const server = spawn("python3", ["-u", "-m", "http.server", "0", "--bind", "127.0.0.1", "--directory", tmp], { stdio: ["ignore", "pipe", "pipe"] });
+const server = spawn("python3", ["-u", "-m", "http.server", "0", "--bind", "127.0.0.1", "--directory", served], { stdio: ["ignore", "pipe", "pipe"] });
 const ready = new Promise((resolve, reject) => {
   const t = setTimeout(() => reject(new Error("Testserver nicht gestartet")), 8000);
   server.stdout.on("data", (d) => {
     const m = String(d).match(/port (\d+)/);
-    if (m) { clearTimeout(t); BASE = `http://127.0.0.1:${m[1]}/awesome-ai-tools/`; resolve(); }
+    if (m) { clearTimeout(t); BASE = `http://127.0.0.1:${m[1]}/${PREFIX ? PREFIX + "/" : ""}`; resolve(); }
   });
   server.stderr.resume(); // Zugriffsprotokoll verwerfen, sonst läuft die Pipe voll und der Server blockiert
   server.on("exit", (code) => { clearTimeout(t); reject(new Error("Testserver beendet mit Code " + code)); });
