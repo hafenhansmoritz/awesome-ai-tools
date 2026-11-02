@@ -42,6 +42,9 @@ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 var(--font-b);
 a{color:var(--accent)}
 h1,h2,h3,.display{font-family:var(--font-d);letter-spacing:-.02em;line-height:1.08}
 code,.mono{font-family:var(--font-m);font-weight:500} /* nur Plex Mono 500 liegt bei, kein künstlicher Fettschnitt */
+pre.code{margin:16px 0;padding:14px 16px;overflow-x:auto;background:var(--card2);border:1px solid var(--line);border-radius:var(--r-s);font-size:14px;line-height:1.55}
+pre.code code{font-size:inherit;background:none;padding:0;white-space:pre}
+@media print{pre.code{background:#fff!important;border-color:#999!important;color:#000!important;white-space:pre-wrap}}
 .ico{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.18em;flex:none}
 .wrap{max-width:1180px;margin:auto;padding:0 16px}
 .hidden{display:none!important}

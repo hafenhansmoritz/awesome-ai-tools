@@ -85,45 +85,51 @@ Die Datei liegt immer unter `/robots.txt` im Wurzelverzeichnis und gilt nur für
 
 ### Ziel 1: Alles erlauben
 
-- `User-agent: *`
-- `Allow: /`
-- `Sitemap: https://www.example.de/sitemap.xml`
+```
+User-agent: *
+Allow: /
+Sitemap: https://www.example.de/sitemap.xml
+```
 
 Diese drei Zeilen erlauben jedem Crawler alles und nennen die Sitemap. Eine leere oder fehlende robots.txt hat für folgsame Crawler fast dieselbe Wirkung, die ausdrückliche Fassung ist aber leichter zu lesen. Für Microsoft und das Grounding brauchst du nichts zu tun, Erlauben ist dort die Voreinstellung.
 
 ### Ziel 2: Training sperren, Suche erlauben
 
-- `User-agent: GPTBot`
-- `User-agent: ClaudeBot`
-- `User-agent: Google-Extended`
-- `User-agent: Applebot-Extended`
-- `User-agent: CCBot`
-- `Disallow: /`
+```
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Disallow: /
 
-- `User-agent: __usage_ai-training`
-- `Disallow: /`
+User-agent: __usage_ai-training
+Disallow: /
 
-- `User-agent: *`
-- `Allow: /`
+User-agent: *
+Allow: /
+```
 
 Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot und PerplexityBot fallen hier unter die letzte Gruppe und dürfen weiter crawlen. Die gemeinsame Gruppe steht schon drin, damit du sie nicht vergisst, wenn die Anbieter sie umsetzen; bis dahin tragen die einzelnen Kennungen die Last. Bedenke den Preis von Google-Extended: Damit fällt auch das Grounding in der Gemini-App weg, denn Training und Grounding hängen bei Google an derselben Kennung. Wer dort gefunden werden will, nimmt Google-Extended aus der ersten Gruppe und gibt ihm eine eigene mit `Allow: /`. Nur dann liest Google das Nein der gemeinsamen Gruppe nicht als Sperre für Google-Extended, Gemini darf deine Inhalte dann aber auch fürs Training nutzen.
 
 ### Ziel 3: Nur bestimmte Bereiche sperren
 
-- `User-agent: GPTBot`
-- `User-agent: ClaudeBot`
-- `User-agent: Google-Extended`
-- `User-agent: Applebot-Extended`
-- `User-agent: CCBot`
-- `Disallow: /ratgeber/`
-- `Disallow: /bilder/`
+```
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Disallow: /ratgeber/
+Disallow: /bilder/
 
-- `User-agent: __usage_ai-training`
-- `Disallow: /ratgeber/`
-- `Disallow: /bilder/`
+User-agent: __usage_ai-training
+Disallow: /ratgeber/
+Disallow: /bilder/
 
-- `User-agent: *`
-- `Allow: /`
+User-agent: *
+Allow: /
+```
 
 So bleiben etwa deine Ratgebertexte und eigenen Fotos aus dem Training, während Produktseiten und Pressebereich offen sind. Umgekehrt geht es auch: `Disallow: /` sperrt alles, ein zusätzliches `Allow: /presse/` gibt einen einzelnen Ordner wieder frei, denn laut RFC 9309 gewinnt die längste passende Regel. Sind eine Allow- und eine Disallow-Regel gleich lang, soll die Allow-Regel gelten.
 

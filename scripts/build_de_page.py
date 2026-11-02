@@ -2149,7 +2149,7 @@ def gl_autolink_html(markup, used):
 
 
 def render_md(md):
-    """Kleines Markdown: ## Kapitel, ### Unterkapitel, > Kasten, - und 1. Listen, | Tabellen, Absätze."""
+    """Kleines Markdown: ## Kapitel, ### Unterkapitel, > Kasten, - und 1. Listen, | Tabellen, ``` Codeblöcke, Absätze."""
     blocks, toc = [], []
     lines = md.strip().split("\n")
     i = 0
@@ -2163,6 +2163,19 @@ def render_md(md):
         if not ln.strip():
             para(buf)
             buf = []
+            i += 1
+            continue
+        if ln.startswith("```"):  # Codeblock, z. B. robots.txt-Vorlagen: wörtlich, ohne Inline-Formatierung
+            para(buf)
+            buf = []
+            code = []
+            i += 1
+            while i < len(lines) and not lines[i].startswith("```"):
+                code.append(lines[i].rstrip())
+                i += 1
+            if i >= len(lines):
+                raise SystemExit("Ratgeber: Codeblock ohne schließende ```")
+            blocks.append(f'<pre class="code" tabindex="0"><code>{html.escape(chr(10).join(code))}</code></pre>')
             i += 1
             continue
         if ln.startswith("## "):
