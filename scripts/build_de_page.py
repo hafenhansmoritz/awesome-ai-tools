@@ -12,7 +12,7 @@ Quellen:  README.de.md (Tool-Liste), brand/ki-werkstatt.json (Marke),
 Ausgabe:  docs/index.html, docs/ki-tools-*.html (eine Seite je Kategorie), docs/ki-glossar.html,
           docs/404.html, docs/danke.html, docs/impressum.html, docs/datenschutz.html, docs/img/*.svg,
           docs/ratgeber.html, docs/ki-einsatz.html (Übersichten), docs/seiten.json (Seitenindex fürs Such-Panel),
-          docs/tools.json, docs/tools.csv, docs/sitemap.xml, docs/robots.txt
+          docs/tools.json, docs/tools.csv, docs/sitemap.xml, docs/robots.txt, docs/llms.txt (llmstxt.org, nicht in der Sitemap)
 README.de.md bleibt die einzige Quelle für die Liste; docs/ nie von Hand bearbeiten.
 Am Ende prüft scripts/check_unique.py, dass kein Satz auf zwei Seiten steht.
 """
@@ -2527,6 +2527,44 @@ def build_data(uniq, sections, pages=(), list_secs=()):
                                       + icon_body("wrench") + "</g></svg>", encoding="utf-8")
 
 
+def page_meta(pg):
+    """Titel (ohne Markenzusatz) und Meta-Description einer gebauten Seite, für llms.txt."""
+    doc = (DOCS / pg).read_text(encoding="utf-8")
+    t = html.unescape(re.search(r"<title>(.*?)</title>", doc, re.S).group(1)).strip()
+    d = html.unescape(re.search(r'<meta name="description" content="([^"]*)"', doc).group(1)).strip()
+    return (t[:-len(SUFFIX)] if t.endswith(SUFFIX) else t), d
+
+
+def build_llms(n_tools):
+    """docs/llms.txt nach llmstxt.org: H1, Kurzbeschreibung als Zitat, Abschnitte mit Markdown-Links und je einer Notiz.
+    Notizen stammen aus Title und Meta-Description der gebauten Seiten (bzw. dem Kurztext der Trends), nichts wird neu formuliert.
+    Nicht in der Sitemap, robots.txt bleibt unverändert."""
+    def md(x):  # eckige Klammern im Linktext würden die Markdown-Syntax brechen
+        return x.replace("[", "(").replace("]", ")")
+
+    def item(pg, anchor=""):
+        t, d = page_meta(pg)
+        return f"- [{md(t)}]({SITE_URL}{pg}{anchor}): {d}"
+    sections = [
+        ("Schubladen", [item(cat_page(sec["id"])) for sec in NAV["secs"]]),
+        ("Einsatzgebiete", [item(EINSATZ_PAGE)] + [item(e["page"]) for e in EINSATZ["seiten"]]),
+        ("Ratgeber", [item(RATGEBER_PAGE)] + [item(a["page"]) for a in RATGEBER["artikel"]]),
+        ("Trends", [item(TRENDS_PAGE)] + [f"- [{md(t['label'])}]({SITE_URL}{TRENDS_PAGE}#{t['id']}): {t['kurz']}" for t in TRENDS["trends"]]),
+        ("Glossar", [item(GLOSSAR_PAGE)]),
+        ("Rechtliches", [item("impressum.html"), item("datenschutz.html")]),
+        ("Optional", [f"- [Tool-Liste als JSON]({SITE_URL}tools.json): alle {n_tools} Tools mit Beschreibung, Schublade, EU- und Open-Source-Angabe",
+                      f"- [Tool-Liste als CSV]({SITE_URL}tools.csv): dieselbe Liste für Tabellenprogramme",
+                      f"- [Trends und Neuzugänge als Feed]({SITE_URL}feed.xml): Atom-Feed",
+                      f"- [Quelle der Liste]({REPO_URL}/blob/main/README.de.md): Markdown auf GitHub, Beiträge per Pull Request"]),
+    ]
+    out = ["# KI-Werkstatt", "", f"> {DESCRIPTION}", "",
+           f"Deutschsprachiges Verzeichnis mit {n_tools} KI-Tools in {len(NAV['secs'])} Schubladen, dazu Einsatzgebiete, Ratgeber, Trends und ein Glossar. "
+           f"Startseite: {SITE_URL}. Letzter Link-Check: {LINK_CHECK}."]
+    for title, lines in sections:
+        out += ["", f"## {title}", ""] + lines
+    (DOCS / "llms.txt").write_text("\n".join(out) + "\n", encoding="utf-8")
+
+
 OG_SRC = ROOT / ".build" / "og.html"
 
 
@@ -2581,6 +2619,7 @@ def main():
     build_feed(list_secs)
     build_subpages(list_secs)
     build_data(uniq, sections, pages, list_secs)
+    build_llms(n_tools)
     build_og(n_tools, n_cats)
     print(f"docs/index.html: {n_tools} Tools, {n_cats} Kategorien, {len(list(IMG.glob('cat-*.svg')))} Grafiken, {len(pages)} Unterseiten")
     from check_unique import find_duplicates
