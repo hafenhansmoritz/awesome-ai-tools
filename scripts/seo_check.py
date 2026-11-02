@@ -30,7 +30,11 @@ from urllib.parse import unquote, urljoin, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
-SITE_URL = "https://jmp-collab.github.io/awesome-ai-tools/"  # wie SITE_URL in scripts/build_de_page.py
+# Eine Quelle für die Adresse: SITE_URL steht im Generator, hier wird sie nur ausgelesen
+_m = re.search(r'^SITE_URL = "([^"]+)"', (ROOT / "scripts" / "build_de_page.py").read_text(encoding="utf-8"), re.M)
+if not _m:
+    sys.exit("seo_check: SITE_URL in scripts/build_de_page.py nicht gefunden")
+SITE_URL = _m.group(1)
 SITE_PATH = urlparse(SITE_URL).path  # /awesome-ai-tools/
 IGNORE = {"og.html"}
 TITLE_MAX, DESC_MAX = 60, 160
@@ -74,7 +78,7 @@ class Page(HTMLParser):
             self.links.append(("a", a["href"], tpl))
         elif tag in ("img", "script", "source") and "src" in a:
             self.links.append(("src", a["src"], tpl))
-        elif tag == "link" and "href" in a and a.get("rel") in ("stylesheet", "icon", "preload"):
+        elif tag == "link" and "href" in a and set((a.get("rel") or "").lower().split()) & {"stylesheet", "icon", "preload", "alternate", "manifest", "apple-touch-icon"}:
             self.links.append(("src", a["href"], tpl))
 
     def handle_endtag(self, tag):
@@ -104,7 +108,7 @@ def resolve(page, href):
         return ("javascript:", "")
     absu = urljoin(own_url(page), href)
     u = urlparse(absu)
-    if not absu.startswith(SITE_URL[:-1]) and not (u.scheme in ("", "http", "https") and not u.netloc):
+    if not (absu.startswith(SITE_URL) or absu == SITE_URL[:-1]) and not (u.scheme in ("", "http", "https") and not u.netloc):
         return None  # fremde Seite
     path = unquote(u.path)
     if not path.startswith(SITE_PATH):
@@ -179,7 +183,6 @@ def main():
             if target == "javascript:":
                 errors.append(f"{where}: javascript:-Link")
                 continue
-            target = target.split("?")[0]
             if not (DOCS / target).is_file():
                 errors.append(f"{where}: Datei {target} gibt es nicht")
                 continue

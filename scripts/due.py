@@ -70,12 +70,14 @@ def main():
             return
         print(f"Fällige Punkte aus der Wiedervorlage in `ops/backlog.md`, Stichtag bis {bis:%d.%m.%Y} (Stand {heute:%d.%m.%Y}).")
         print("Am Stichtag die Primärquelle prüfen, alle genannten Stellen gemeinsam anpassen, Zeile in `ops/backlog.md` abhaken.\n")
+        def safe(t):  # @name und #123 aus der Tabelle sollen im Issue niemanden anpingen und nichts verlinken
+            return re.sub(r"#(?=\d)", "&#35;", t).replace("@", "&#64;")  # erst #, sonst trifft es das # in &#64;
         for r in faellig:
             ueber = " **(überfällig)**" if r["datum"] < heute else ""
             arbeit = " _(in Arbeit)_" if r["status"] == "~" else ""
-            print(f"- [ ] **{r['datum']:%d.%m.%Y}**{ueber}{arbeit}: {r['was']}\n  Wo: {r['wo']}")
+            print(f"- [ ] **{r['datum']:%d.%m.%Y}**{ueber}{arbeit}: {safe(r['was'])}\n  Wo: {safe(r['wo'])}")
         for r in kaputt:
-            print(f"- [ ] Datum nicht lesbar ({r['datum_txt']!r}), bitte im Format TT.MM.JJJJ eintragen: {r['was'][:120]}")
+            print(f"- [ ] Datum nicht lesbar ({r['datum_txt']!r}), bitte im Format TT.MM.JJJJ eintragen: {safe(r['was'][:120])}")
         return
 
     if not faellig:

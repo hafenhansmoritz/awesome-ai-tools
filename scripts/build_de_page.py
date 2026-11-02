@@ -1330,7 +1330,7 @@ def build_subpages(list_secs=()):
     danke = f"""{topbar("sub")}
 <div class="page page-kb page-danke"><div class="kb-say kb-hero duo">{hans("hm-lg", label="Hans Moritz zeigt den Daumen hoch", thumb=True)}{kurbel("kb-md", wink=True)}<p class="bubble">Angekommen! Kurbel sortiert so lange die Schrauben, ich setz schon mal Kaffee auf.</p></div>
 <p class="eyebrow">Angekommen</p>
-<h1><span data-typ="check">Danke. Deine Anfrage liegt auf der Werkbank.</span><span data-typ="finder" hidden>Danke. Jean schaut jetzt über dein Setup.</span></h1>
+<h1><span data-typ="check">Danke. Deine Anfrage liegt auf der Werkbank.</span> <span data-typ="finder" hidden>Danke. Jean schaut jetzt über dein Setup.</span></h1>
 <div data-typ="check"><ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine Nachricht selbst, kein Bot und kein Callcenter.</span></li><li><b class="n">2</b><span>Danach legt Jean dir die Werkzeuge hin, die zu deinem Fall passen, mit je einem Satz, warum.</span></li><li><b class="n">3</b><span>Die Antwort kommt per E-Mail, ohne Verkaufsgespräch und ohne Kleingedrucktes.</span></li></ol></div>
 <div data-typ="finder" hidden><ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine drei Antworten und die Tools, die der Finder dir vorgeschlagen hat.</span></li><li><b class="n">2</b><span>Was nicht zu deinem Fall passt, fliegt raus, und an seine Stelle kommt etwas Passenderes mit Begründung.</span></li><li><b class="n">3</b><span>Das überarbeitete Setup bekommst du per E-Mail, ohne Pitch und ohne Abo.</span></li></ol></div>
 <p>Meist dauert das nur wenige Tage. Hörst du nichts, wirf einen Blick in den Spam-Ordner, manchmal versteckt sich die Post dort. Oder schreib direkt an {mail_link()}.</p>
@@ -1519,7 +1519,7 @@ def tool_chip(name, tools_map):
         return f'<a class="chip tool" href="{html.escape(href)}" target="_blank" rel="{rel}">{favicon(t["u"])}{html.escape(name)}{neu}{pb}</a>'
     return (f'<span class="chip tool"><a href="{html.escape(home)}">{favicon(t["u"])}{html.escape(name)}{neu}</a>'
             f'<a class="chip-ext" href="{html.escape(href)}" target="_blank" rel="{rel}" title="Zum Anbieter{" (Partnerlink)" if partner else ""}" '
-            f'aria-label="{html.escape(name)} beim Anbieter öffnen (neues Fenster{", Partnerlink" if partner else ""})">{icon("arrow")}{pb}</a></span>')
+            f'aria-label="{html.escape(name)} beim Anbieter öffnen (neues Fenster{", Partnerlink" if partner else ""})">{icon("arrow")}</a>{pb}</span>')
 
 
 def cat_chip(sec_id):

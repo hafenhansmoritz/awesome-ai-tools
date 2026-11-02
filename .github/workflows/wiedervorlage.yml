@@ -36,9 +36,9 @@ jobs:
           GH_REPO: ${{ github.repository }}
           TITEL: ${{ steps.due.outputs.titel }}
         run: |
-          # Steht noch ein offenes Wiedervorlage-Issue, bekommt es einen Kommentar statt eines neuen Issues
-          open_issue=$(gh issue list --state open --search 'in:title "Wiedervorlage"' --json number,title \
-            --jq '[.[] | select(.title | startswith("Wiedervorlage"))][0].number // empty')
+          # Gibt es das Issue dieses Monats schon (z. B. nach einem zweiten Lauf), bekommt es einen Kommentar; sonst ein neues Issue
+          open_issue=$(gh issue list --state open --search "in:title \"$TITEL\"" --json number,title \
+            --jq '[.[] | select(.title == env.TITEL)][0].number // empty')
           if [ -n "$open_issue" ]; then
             gh issue comment "$open_issue" --body-file due.md
           else
