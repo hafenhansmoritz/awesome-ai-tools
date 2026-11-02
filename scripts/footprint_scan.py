@@ -42,12 +42,12 @@ IMG_EXT = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".avif", ".heic", ".svg"}
 # Unsichtbare Zeichen (wie layer_a.py); BOM nur am Anfang von CSV erlaubt. NBSP (U+00A0) ist normale Typografie.
 INVISIBLE = re.compile("[\u200b-\u200f\u202a-\u202e\u2060-\u2064\ufeff\u00ad\u180e\u2066-\u2069\u2028\u2029]")
 
-AI_NAMES = (r"claude|chatgpt|gpt-?[345](?:\.\d)?o?|openai|anthropic|copilot|cursor(?:rules)?|codex|gemini|bard|llama|"
+AI_NAMES = (r"claude|chatgpt|gpt-?\d+(?:\.\d+)?o?|openai|anthropic|copilot|cursor(?:rules)?|codex|gemini|bard|llama|"
             r"mistral|perplexity|midjourney|dall[-·\s]?e|stable[\s-]?diffusion|comfyui|firefly|windsurf|aider|devin|"
             r"ai[\s-]generated|ki[\s-]generiert|generated (?:by|with)|erstellt mit|prompt|\bllm\b|as an ai|language model|sprachmodell")
 AI_RE = re.compile(AI_NAMES, re.I)
 # Für ausgelieferte CSS/JS-Kommentare nur Werkzeugnamen und Generator-Hinweise (Produktbegriffe wie „Prompt“ sind dort oft Feature-Namen)
-AI_TOOL_RE = re.compile(r"\b(?:claude|chatgpt|gpt-?[345]|openai|anthropic|copilot|codex|gemini|midjourney|windsurf|aider|devin)\b|"
+AI_TOOL_RE = re.compile(r"\b(?:claude|chatgpt|gpt-?\d+(?:\.\d+)?|openai|anthropic|copilot|codex|gemini|midjourney|windsurf|aider|devin)\b|"
                         r"ai[\s-]generated|ki[\s-]generiert|generated (?:by|with)|as an ai", re.I)
 
 # Floskeln, die in KI-Texten überdurchschnittlich oft stehen (DE/EN). Treffer sind Hinweise, keine Beweise.
@@ -305,6 +305,15 @@ def png_meta(data):
                 try:
                     k, rest = body.split(b"\0", 1)
                     txt = k + b" " + zlib.decompress(rest[1:])
+                except Exception:
+                    pass
+            elif typ == "iTXt":  # Schlüssel\0 Flag Methode Sprache\0 übersetzter Schlüssel\0 Text (Flag 1 = zlib)
+                try:
+                    k, rest = body.split(b"\0", 1)
+                    flag, lang_rest = rest[0], rest[2:]
+                    lang, rest2 = lang_rest.split(b"\0", 1)
+                    tkey, text = rest2.split(b"\0", 1)
+                    txt = b" ".join((k, lang, tkey, zlib.decompress(text) if flag == 1 else text))
                 except Exception:
                     pass
             out.append((typ, txt[:4000]))

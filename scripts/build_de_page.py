@@ -2464,7 +2464,7 @@ def build_feed(list_secs):
     # Nur bereits gestartete Neuzugänge; abgelaufene bleiben als Historie im Feed
     neu = [t for t in NEU["tools"] if date.fromisoformat(t["seit"]) <= date.today()]
     # Je Eintrag das echte Datum: erstes Erscheinen und letzte Änderung des Eintrags laut Git (page_dates)
-    stamp = max([TREND_DATES[t["id"]][1] for t in TRENDS["trends"]] + [t["seit"] for t in neu]
+    stamp = max([TREND_DATES[t["id"]][1] for t in TRENDS["trends"]] + [NEU_DATES[t["name"]][1] for t in neu]
                 + [DATES[a["page"]][1] for a in RATGEBER["artikel"]]) + "T00:00:00Z"
     x = html.escape
     entries = []
@@ -2479,7 +2479,7 @@ def build_feed(list_secs):
     for t in neu:
         u = SITE_URL + home[t["name"]]
         entries.append(f'<entry><title>Neu in der Liste: {x(t["name"])}</title><link href="{x(u)}"/><id>{x(SITE_URL)}neu/{slug(t["name"])}</id>'
-                       f'<updated>{t["seit"]}T00:00:00Z</updated><summary>{x(t["notiz"])}</summary></entry>')
+                       f'<published>{t["seit"]}T00:00:00Z</published><updated>{NEU_DATES[t["name"]][1]}T00:00:00Z</updated><summary>{x(t["notiz"])}</summary></entry>')
     (DOCS / "feed.xml").write_text(f"""<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de"><title>KI-Werkstatt: Trends und Neuzugänge</title>
 <link href="{SITE_URL}feed.xml" rel="self"/><link href="{SITE_URL}{TRENDS_PAGE}"/><id>{SITE_URL}feed.xml</id><updated>{stamp}</updated>
@@ -2552,6 +2552,37 @@ def _readme(*ids):
     return ex
 
 
+_COPY_CACHE = {}
+
+
+def _copy(*funcs):
+    """Extraktor für Seitentext, der direkt im Generator steht: nur Zeichenketten mit Leerraum (sichtbarer Text, HTML)
+    aus den genannten Funktionen. Code-Umbauten, Schlüssel und Bezeichner zählen nicht. Funktion fehlt in einer alten
+    Fassung: None."""
+    import ast
+    import hashlib as _h
+
+    def ex(txt):
+        key = _h.sha1(txt.encode("utf-8")).hexdigest()
+        if key not in _COPY_CACHE:
+            found = {}
+            for n in ast.parse(txt).body:
+                if isinstance(n, ast.FunctionDef):
+                    found[n.name] = "\n".join(c.value for c in ast.walk(n) if isinstance(c, ast.Constant) and isinstance(c.value, str)
+                                               and re.search(r"\s", c.value))  # Text und HTML, keine Schlüssel/Bezeichner
+            _COPY_CACHE[key] = found
+        parts = [_COPY_CACHE[key].get(f) for f in funcs]
+        return None if any(x is None for x in parts) else "\n".join(parts)
+    return ex
+
+
+# Seiten mit eigenem Text im Generator (nur seiteneigene Funktionen; gemeinsame Vorlagen wie Fußzeile zählen nicht)
+PAGE_COPY = {"index.html": ("build_index", "rechner_band", "einsatz_band", "neu_band", "ratgeber_band"),
+             GLOSSAR_PAGE: ("build_glossar",), TRENDS_PAGE: ("build_trends",),
+             EINSATZ_PAGE: ("build_hubs",), RATGEBER_PAGE: ("build_hubs",)}
+NEU_DATES = {}  # Tool -> (seit, letzte Änderung des NEU-Eintrags), für den Feed
+
+
 def page_dates(sections):
     """Datum je Seite aus der Git-Historie ihrer Quellen (scripts/source_dates.py), nie aus dem Build-Datum.
 
@@ -2587,8 +2618,15 @@ def page_dates(sections):
         specs[RATGEBER_PAGE] += specs[a["page"]]
     for e in RATGEBER["artikel"] + EINSATZ["seiten"]:
         specs["index.html"] += specs[e["page"]][:1]
-    out, trends_out = {}, {}
-    stored_trends = stored.get("_trends", {})
+    for pg, funcs in PAGE_COPY.items():
+        specs[pg] = specs[pg] + [("scripts/build_de_page.py", _copy(*funcs))]
+    out, trends_out, neu_out = {}, {}, {}
+    stored_trends, stored_neu = stored.get("_trends", {}), stored.get("_neu", {})
+    for t in NEU["tools"]:
+        r = hist.dates("data/neu.json", _json_part(lambda d, n=t["name"]: next((x for x in d.get("tools") or [] if x.get("name") == n), None)))
+        last = r[1] if r else stored_neu.get(t["name"], {}).get("geaendert", t["seit"])
+        NEU_DATES[t["name"]] = (t["seit"], max(t["seit"], last))  # Eintrag erscheint am „seit“-Tag, nie früher
+        neu_out[t["name"]] = {"erschienen": NEU_DATES[t["name"]][0], "geaendert": NEU_DATES[t["name"]][1]}
     for t in TRENDS["trends"]:
         r = hist.dates("data/trends.json", _json_part(_entry("trends", t["id"])))
         if not r and t["id"] in stored_trends:  # ohne Historie: gespeichertes Datum je Trend, nicht das Seitendatum
@@ -2633,7 +2671,7 @@ def page_dates(sections):
                 last = max([last] + hits)
         DATES[pg] = (first, last)
         out[pg] = {"erschienen": first, "geaendert": last}
-    out["_trends"] = trends_out
+    out["_trends"], out["_neu"] = trends_out, neu_out
     if out != stored:
         LASTMOD.write_text(json.dumps(out, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     return DATES
