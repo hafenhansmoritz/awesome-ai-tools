@@ -2,73 +2,73 @@
 
 > Über 400 KI-Tools auf Deutsch, jedes in einem Satz erklärt: Chatbots, Texte, Bilder, Video, Automatisierung, SEO. EU-Anbieter markiert, mit Stack-Finder.
 
-Deutschsprachiges Verzeichnis mit 418 KI-Tools in 10 Schubladen, dazu Einsatzgebiete, Ratgeber, Trends und ein Glossar. Startseite: https://jmp-collab.github.io/awesome-ai-tools/. Letzter Link-Check: 02.11.2026.
+Deutschsprachiges Verzeichnis mit 418 KI-Tools in 10 Schubladen, dazu Einsatzgebiete, Ratgeber, Trends und ein Glossar. Startseite: https://ainterview.space/. Letzter Link-Check: 02.11.2026.
 
 ## Schubladen
 
-- [KI-Tools für Text: 151 Chatbots und Helfer](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-text-und-sprache.html): 151 KI-Tools für Text im Verzeichnis: Chatbots wie ChatGPT, Claude und Vibe, Übersetzer wie DeepL, KI-Suche, Schreibhilfen und lokale Modelle, EU markiert.
-- [KI-Automatisierung: 12 Tools und Agenten](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-automatisierung-und-ki-agenten.html): 12 Tools für Automatisierung und KI-Agenten im Verzeichnis: n8n, Make, Zapier und mehr. Welche du selbst hosten kannst und welche aus der EU kommen.
-- [KI-Entwickler-Tools: 36 für Bau und Betrieb](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-entwickler-tools-und-llmops.html): 36 Werkzeuge für alle, die KI-Anwendungen bauen: LangChain, LlamaIndex, Haystack, Langfuse und mehr. Frameworks, Tracing und Tests im Verzeichnis.
-- [Programmieren mit KI: 35 Code-Tools](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-programmieren-mit-ki.html): 35 KI-Tools fürs Programmieren im Verzeichnis: Cursor, Claude Code, GitHub Copilot, Kiro, Lovable, v0 und mehr, vom Code-Assistenten bis zum App-Baukasten.
-- [KI-Bildgeneratoren: 50 Bild-Tools](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-bilder.html): 50 KI-Tools für Bilder im Verzeichnis: Bildgeneratoren wie FLUX, Midjourney und Adobe Firefly, Freisteller, Grafikdesign und Stable-Diffusion-Ressourcen.
-- [KI-Video-Tools: 15 Generatoren und Helfer](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-video.html): 15 KI-Tools für Video im Verzeichnis: Google Veo, Kling, Runway, Synthesia, HeyGen, Descript und mehr, vom generierten Clip bis zum fertigen Short.
-- [KI-Audio-Tools: 34 für Stimme und Musik](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-audio.html): 34 KI-Tools für Audio im Verzeichnis: Stimmen und Voice Cloning mit ElevenLabs, Transkription auf Basis von Whisper, Musik mit Suno, Udio, Lyria und mehr.
-- [KI für Marketing und SEO: 29 Tools](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-marketing-und-seo.html): 29 KI-Tools für Marketing und SEO im Verzeichnis: Semrush, Ahrefs, Surfer, Frase, neuroflash und mehr, für Content, Keywords, Anzeigen und Social Media.
-- [KI-Telefonagenten: 9 Anbieter im Überblick](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-ki-telefonagenten.html): 9 KI-Telefonagenten im Verzeichnis: Dienste, die Anrufe annehmen, Termine eintragen und an Menschen weiterleiten, mit Hinweisen zu Einwilligung und AI Act.
-- [Weitere KI-Tools: 24 Spezialisten](https://jmp-collab.github.io/awesome-ai-tools/ki-tools-weitere-ki-tools.html): 24 KI-Tools, die in keine andere Schublade passen: Prompt-Marktplätze, Bewerbungshelfer, Finanz-Chat, Begleiter-Apps, Spiele und Kurioses im Verzeichnis.
+- [KI-Tools für Text: 151 Chatbots und Helfer](https://ainterview.space/ki-tools-text-und-sprache.html): 151 KI-Tools für Text im Verzeichnis: Chatbots wie ChatGPT, Claude und Vibe, Übersetzer wie DeepL, KI-Suche, Schreibhilfen und lokale Modelle, EU markiert.
+- [KI-Automatisierung: 12 Tools und Agenten](https://ainterview.space/ki-tools-automatisierung-und-ki-agenten.html): 12 Tools für Automatisierung und KI-Agenten im Verzeichnis: n8n, Make, Zapier und mehr. Welche du selbst hosten kannst und welche aus der EU kommen.
+- [KI-Entwickler-Tools: 36 für Bau und Betrieb](https://ainterview.space/ki-tools-entwickler-tools-und-llmops.html): 36 Werkzeuge für alle, die KI-Anwendungen bauen: LangChain, LlamaIndex, Haystack, Langfuse und mehr. Frameworks, Tracing und Tests im Verzeichnis.
+- [Programmieren mit KI: 35 Code-Tools](https://ainterview.space/ki-tools-programmieren-mit-ki.html): 35 KI-Tools fürs Programmieren im Verzeichnis: Cursor, Claude Code, GitHub Copilot, Kiro, Lovable, v0 und mehr, vom Code-Assistenten bis zum App-Baukasten.
+- [KI-Bildgeneratoren: 50 Bild-Tools](https://ainterview.space/ki-tools-bilder.html): 50 KI-Tools für Bilder im Verzeichnis: Bildgeneratoren wie FLUX, Midjourney und Adobe Firefly, Freisteller, Grafikdesign und Stable-Diffusion-Ressourcen.
+- [KI-Video-Tools: 15 Generatoren und Helfer](https://ainterview.space/ki-tools-video.html): 15 KI-Tools für Video im Verzeichnis: Google Veo, Kling, Runway, Synthesia, HeyGen, Descript und mehr, vom generierten Clip bis zum fertigen Short.
+- [KI-Audio-Tools: 34 für Stimme und Musik](https://ainterview.space/ki-tools-audio.html): 34 KI-Tools für Audio im Verzeichnis: Stimmen und Voice Cloning mit ElevenLabs, Transkription auf Basis von Whisper, Musik mit Suno, Udio, Lyria und mehr.
+- [KI für Marketing und SEO: 29 Tools](https://ainterview.space/ki-tools-marketing-und-seo.html): 29 KI-Tools für Marketing und SEO im Verzeichnis: Semrush, Ahrefs, Surfer, Frase, neuroflash und mehr, für Content, Keywords, Anzeigen und Social Media.
+- [KI-Telefonagenten: 9 Anbieter im Überblick](https://ainterview.space/ki-tools-ki-telefonagenten.html): 9 KI-Telefonagenten im Verzeichnis: Dienste, die Anrufe annehmen, Termine eintragen und an Menschen weiterleiten, mit Hinweisen zu Einwilligung und AI Act.
+- [Weitere KI-Tools: 24 Spezialisten](https://ainterview.space/ki-tools-weitere-ki-tools.html): 24 KI-Tools, die in keine andere Schublade passen: Prompt-Marktplätze, Bewerbungshelfer, Finanz-Chat, Begleiter-Apps, Spiele und Kurioses im Verzeichnis.
 
 ## Einsatzgebiete
 
-- [KI nach Einsatzgebiet: 6 Arbeitsfelder](https://jmp-collab.github.io/awesome-ai-tools/ki-einsatz.html): KI nach Einsatzgebiet: 6 Arbeitsfelder von Online-Shop bis Büro, jedes mit Aufgaben, passenden Tools, Trends und Ratgebern. Einstieg nach Rolle.
-- [KI im Online-Shop einsetzen: Aufgaben](https://jmp-collab.github.io/awesome-ai-tools/ki-fuer-online-shops.html): Wo KI im Online-Shop mit anpackt: Produkttexte, Freisteller, Übersetzungen, Absatzprognose und Support, je Aufgabe mit passenden Werkzeugen und Hinweisen.
-- [KI im Marketing einsetzen: Aufgaben, Regeln](https://jmp-collab.github.io/awesome-ai-tools/ki-im-marketing.html): Wie KI im Marketing hilft: Recherche, Briefing, Texte mit Markenstimme, Visuals und Sichtbarkeit in KI-Antworten, mit Werkzeugen und Regeln je Aufgabe.
-- [KI für Entwickler: Agenten richtig einsetzen](https://jmp-collab.github.io/awesome-ai-tools/ki-fuer-entwickler.html): Wie Entwickler Coding-Agenten, KI-Editoren, App-Baukästen und lokale Modelle sinnvoll einsetzen, mit Leitplanken, MCP und Agent Skills je Aufgabe erklärt.
-- [KI im Kundenservice einsetzen: Bot, Telefon](https://jmp-collab.github.io/awesome-ai-tools/ki-im-kundenservice.html): Wo KI im Kundenservice entlastet: Support-Bot, Telefonagent, Postfach und Gesprächsnotizen, mit Hinweisen zu Kennzeichnung, Einwilligung und DSGVO.
-- [KI für Content Creator: Bild, Clip, Ton](https://jmp-collab.github.io/awesome-ai-tools/ki-fuer-content-creator.html): Wie Creator KI für Thumbnails, Clips, Voiceover und Musik einsetzen, welche Werkzeuge sich die Arbeit teilen und was bei Lizenz und Kennzeichnung gilt.
-- [KI im Büro einsetzen: Meetings, E-Mail, Daten](https://jmp-collab.github.io/awesome-ai-tools/ki-im-buero.html): Wo KI im Büro Routine abnimmt: ein Assistent für alle, Protokolle, Recherche mit Belegen und Tabellen, mit EU-Alternativen und klaren Regeln für Daten.
+- [KI nach Einsatzgebiet: 6 Arbeitsfelder](https://ainterview.space/ki-einsatz.html): KI nach Einsatzgebiet: 6 Arbeitsfelder von Online-Shop bis Büro, jedes mit Aufgaben, passenden Tools, Trends und Ratgebern. Einstieg nach Rolle.
+- [KI im Online-Shop einsetzen: Aufgaben](https://ainterview.space/ki-fuer-online-shops.html): Wo KI im Online-Shop mit anpackt: Produkttexte, Freisteller, Übersetzungen, Absatzprognose und Support, je Aufgabe mit passenden Werkzeugen und Hinweisen.
+- [KI im Marketing einsetzen: Aufgaben, Regeln](https://ainterview.space/ki-im-marketing.html): Wie KI im Marketing hilft: Recherche, Briefing, Texte mit Markenstimme, Visuals und Sichtbarkeit in KI-Antworten, mit Werkzeugen und Regeln je Aufgabe.
+- [KI für Entwickler: Agenten richtig einsetzen](https://ainterview.space/ki-fuer-entwickler.html): Wie Entwickler Coding-Agenten, KI-Editoren, App-Baukästen und lokale Modelle sinnvoll einsetzen, mit Leitplanken, MCP und Agent Skills je Aufgabe erklärt.
+- [KI im Kundenservice einsetzen: Bot, Telefon](https://ainterview.space/ki-im-kundenservice.html): Wo KI im Kundenservice entlastet: Support-Bot, Telefonagent, Postfach und Gesprächsnotizen, mit Hinweisen zu Kennzeichnung, Einwilligung und DSGVO.
+- [KI für Content Creator: Bild, Clip, Ton](https://ainterview.space/ki-fuer-content-creator.html): Wie Creator KI für Thumbnails, Clips, Voiceover und Musik einsetzen, welche Werkzeuge sich die Arbeit teilen und was bei Lizenz und Kennzeichnung gilt.
+- [KI im Büro einsetzen: Meetings, E-Mail, Daten](https://ainterview.space/ki-im-buero.html): Wo KI im Büro Routine abnimmt: ein Assistent für alle, Protokolle, Recherche mit Belegen und Tabellen, mit EU-Alternativen und klaren Regeln für Daten.
 
 ## Ratgeber
 
-- [KI-Ratgeber: Recht, Kosten und Praxis](https://jmp-collab.github.io/awesome-ai-tools/ratgeber.html): 11 KI-Ratgeber auf Deutsch: AI Act und Kennzeichnung, Datenschutz, Modellpreise, sichere Agenten, lokale KI. Mit Stand, Quellen und Filter nach Rolle.
-- [KI-Inhalte kennzeichnen: AI Act Artikel 50](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-ki-inhalte-kennzeichnen.html): Wann Chatbots, KI-Bilder, Deepfakes und KI-Texte nach Artikel 50 AI Act ein Label brauchen, was Anbieter und Betreiber tun müssen, mit Checkliste.
-- [KI-API-Preise 2026: Modelle im Vergleich](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-ki-modelle-preise.html): API-Preise von OpenAI, Anthropic, Google und Mistral im Vergleich, ein Rechenbeispiel mit 2.000 Produkttexten und wann sich ein lokales Modell rechnet.
-- [AI-SEO: Sichtbar in AI Mode und ChatGPT](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-sichtbar-in-ki-antworten.html): Was Google und OpenAI offiziell zu KI-Suchen sagen: Voraussetzungen für AI Overviews, der Schalter in der Search Console, ChatGPT-Crawler, Checkliste.
-- [KI-Agenten sicher einsetzen: 5 Schalter](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-ki-agenten-sicher.html): Wie du KI-Agenten sicher arbeiten lässt: Aufgabe, Rechte, Freigaben, Protokolle und Notbremse, dazu Prompt Injection und ein Fahrplan in vier Wochen.
-- [Datenschutz bei KI-Tools: Training, AVV, EU](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-datenschutz-ki-tools.html): Was die Datenschutzkonferenz beim KI-Einsatz erwartet, wo bei OpenAI, Anthropic, Google, Mistral und DeepL der Trainingsschalter sitzt, plus zehn Fragen.
-- [KI-Übersetzung für Shops: hreflang, Glossar](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-ki-uebersetzung-shops.html): Wie Shops mit DeepL oder Sprachmodellen mehrsprachig werden: was Google zu Übersetzungen sagt, URLs und hreflang, Glossar, Prüfstufen und Kosten.
-- [Lokale KI im Unternehmen: Ollama und Co.](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-lokale-ki-unternehmen.html): Sprachmodelle auf eigenen Rechnern: Speicher und Quantisierung, drei Hardware-Stufen, Ollama, LM Studio und Open WebUI im Vergleich, Lizenzen und Pilot.
-- [KI-Telefonagenten: Preise, Pflichten, Start](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-ki-telefonagenten.html): Was Sprachagenten am Telefon kosten, wie der KI-Hinweis nach AI Act klingen sollte, wann eine Aufzeichnung strafbar ist und wie du in vier Wochen startest.
-- [MCP und Agent Skills: Shop an KI anschließen](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-mcp-agent-skills.html): Was MCP und Agent Skills sind, welche Anschlüsse Shopify, Shopware, Stripe und PayPal liefern, welche Sicherheitsregeln gelten und wie du startest.
-- [KI-Produktbilder: Regeln, Recht, Werkzeuge](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-ki-produktbilder-shops.html): Was Merchant Center, Amazon und eBay bei KI-Produktbildern erlauben, welche Metadaten bleiben müssen, was AI Act und UWG sagen und was Werkzeuge kosten.
-- [KI-Crawler per robots.txt steuern](https://jmp-collab.github.io/awesome-ai-tools/ratgeber-ki-crawler-robots-txt.html): GPTBot, ClaudeBot, Google-Extended und Co.: welche KI-Crawler wofür abrufen, drei Vorlagen für die robots.txt, die Fristen bei Bing und eine Checkliste.
+- [KI-Ratgeber: Recht, Kosten und Praxis](https://ainterview.space/ratgeber.html): 11 KI-Ratgeber auf Deutsch: AI Act und Kennzeichnung, Datenschutz, Modellpreise, sichere Agenten, lokale KI. Mit Stand, Quellen und Filter nach Rolle.
+- [KI-Inhalte kennzeichnen: AI Act Artikel 50](https://ainterview.space/ratgeber-ki-inhalte-kennzeichnen.html): Wann Chatbots, KI-Bilder, Deepfakes und KI-Texte nach Artikel 50 AI Act ein Label brauchen, was Anbieter und Betreiber tun müssen, mit Checkliste.
+- [KI-API-Preise 2026: Modelle im Vergleich](https://ainterview.space/ratgeber-ki-modelle-preise.html): API-Preise von OpenAI, Anthropic, Google und Mistral im Vergleich, ein Rechenbeispiel mit 2.000 Produkttexten und wann sich ein lokales Modell rechnet.
+- [AI-SEO: Sichtbar in AI Mode und ChatGPT](https://ainterview.space/ratgeber-sichtbar-in-ki-antworten.html): Was Google und OpenAI offiziell zu KI-Suchen sagen: Voraussetzungen für AI Overviews, der Schalter in der Search Console, ChatGPT-Crawler, Checkliste.
+- [KI-Agenten sicher einsetzen: 5 Schalter](https://ainterview.space/ratgeber-ki-agenten-sicher.html): Wie du KI-Agenten sicher arbeiten lässt: Aufgabe, Rechte, Freigaben, Protokolle und Notbremse, dazu Prompt Injection und ein Fahrplan in vier Wochen.
+- [Datenschutz bei KI-Tools: Training, AVV, EU](https://ainterview.space/ratgeber-datenschutz-ki-tools.html): Was die Datenschutzkonferenz beim KI-Einsatz erwartet, wo bei OpenAI, Anthropic, Google, Mistral und DeepL der Trainingsschalter sitzt, plus zehn Fragen.
+- [KI-Übersetzung für Shops: hreflang, Glossar](https://ainterview.space/ratgeber-ki-uebersetzung-shops.html): Wie Shops mit DeepL oder Sprachmodellen mehrsprachig werden: was Google zu Übersetzungen sagt, URLs und hreflang, Glossar, Prüfstufen und Kosten.
+- [Lokale KI im Unternehmen: Ollama und Co.](https://ainterview.space/ratgeber-lokale-ki-unternehmen.html): Sprachmodelle auf eigenen Rechnern: Speicher und Quantisierung, drei Hardware-Stufen, Ollama, LM Studio und Open WebUI im Vergleich, Lizenzen und Pilot.
+- [KI-Telefonagenten: Preise, Pflichten, Start](https://ainterview.space/ratgeber-ki-telefonagenten.html): Was Sprachagenten am Telefon kosten, wie der KI-Hinweis nach AI Act klingen sollte, wann eine Aufzeichnung strafbar ist und wie du in vier Wochen startest.
+- [MCP und Agent Skills: Shop an KI anschließen](https://ainterview.space/ratgeber-mcp-agent-skills.html): Was MCP und Agent Skills sind, welche Anschlüsse Shopify, Shopware, Stripe und PayPal liefern, welche Sicherheitsregeln gelten und wie du startest.
+- [KI-Produktbilder: Regeln, Recht, Werkzeuge](https://ainterview.space/ratgeber-ki-produktbilder-shops.html): Was Merchant Center, Amazon und eBay bei KI-Produktbildern erlauben, welche Metadaten bleiben müssen, was AI Act und UWG sagen und was Werkzeuge kosten.
+- [KI-Crawler per robots.txt steuern](https://ainterview.space/ratgeber-ki-crawler-robots-txt.html): GPTBot, ClaudeBot, Google-Extended und Co.: welche KI-Crawler wofür abrufen, drei Vorlagen für die robots.txt, die Fristen bei Bing und eine Checkliste.
 
 ## Trends
 
-- [KI-Trends Herbst 2026: 11 Entwicklungen eingeordnet](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html): 11 KI-Trends auf Deutsch eingeordnet, von günstigeren Spitzenmodellen über Agenten-Standards bis zum AI Act. Mit Herstellerquellen und Tools.
-- [Preisrutsch](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#preisrutsch): Die neue Claude-Generation kostet bei gleicher Leistung deutlich weniger. Projekte, die an den API-Kosten gescheitert sind, gehören neu durchgerechnet.
-- [Agenten im Hintergrund](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#agenten-hintergrund): Gemini hat einen Aufgaben-Modus, Claude Opus 5.5 hält stundenlange Arbeitsaufträge durch. Aus dem Chatpartner wird jemand mit eigenem Schreibtisch und eigener Aufgabenliste.
-- [Offene Standards](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#offene-standards): MCP, Agent Skills und der Agent goose liegen jetzt bei einer neutralen Stiftung der Linux Foundation. Was du einmal für einen Agenten baust, läuft zunehmend auch beim nächsten.
-- [Europa holt auf](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#europa): Mistral bringt ein Modell mit einer Billion Parametern, trainiert in Europa, und eröffnet einen Standort in München. Für Firmen mit Datenbedenken wird die EU-Option ernst.
-- [Kleine Modelle lokal](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#lokal): Liquid AI und NVIDIA bringen offene Modelle, die mit ein bis vier Gigabyte Speicher auskommen. Vertrauliches muss damit seltener in die Cloud.
-- [KI im Browser](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#browser): Firefox bekommt einen Assistenten mit Mistral-Modellen, die Claude-Werkzeuge können Browser steuern. Die KI sieht künftig, was in deinen Tabs steht.
-- [Sichtbar in KI-Suchen](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#ki-suche): Google lässt Websites seit Ende August selbst entscheiden, ob sie in AI Overviews und AI Mode erscheinen, und liefert Zahlen dazu. Sichtbarkeit in KI-Antworten wird messbar.
-- [Nein zum Training](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#training-optout): Google, Microsoft und OpenAI wollen eine gemeinsame Gruppe in der robots.txt beachten, mit der Websites KI-Training ablehnen. Eine Regel für alle drei statt einer pro Crawler, nur die Starttermine liegen auseinander.
-- [Sprache in Echtzeit](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#sprache): Neue Sprachmodelle schreiben in Echtzeit mit und sprechen über 35 Sprachen. Telefonagenten und Meeting-Protokolle werden damit zum Massenprodukt.
-- [Bild, Video, Ton](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#bild-video): Black Forest Labs aus Freiburg baut Modelle, die Bilder, Videos mit Ton und sogar Roboter-Bewegungen erzeugen, und gibt ein kleines Bildmodell offen frei.
-- [EU AI Act](https://jmp-collab.github.io/awesome-ai-tools/ki-trends.html#ai-act): Die EU hat die Pflichten für Hochrisiko-Systeme verschoben. Chatbots müssen sich seit August als KI zeigen und Deepfakes ein Label tragen, nur die maschinenlesbare Markierung älterer Generatoren bekommt eine kurze Übergangsfrist.
+- [KI-Trends Herbst 2026: 11 Entwicklungen eingeordnet](https://ainterview.space/ki-trends.html): 11 KI-Trends auf Deutsch eingeordnet, von günstigeren Spitzenmodellen über Agenten-Standards bis zum AI Act. Mit Herstellerquellen und Tools.
+- [Preisrutsch](https://ainterview.space/ki-trends.html#preisrutsch): Die neue Claude-Generation kostet bei gleicher Leistung deutlich weniger. Projekte, die an den API-Kosten gescheitert sind, gehören neu durchgerechnet.
+- [Agenten im Hintergrund](https://ainterview.space/ki-trends.html#agenten-hintergrund): Gemini hat einen Aufgaben-Modus, Claude Opus 5.5 hält stundenlange Arbeitsaufträge durch. Aus dem Chatpartner wird jemand mit eigenem Schreibtisch und eigener Aufgabenliste.
+- [Offene Standards](https://ainterview.space/ki-trends.html#offene-standards): MCP, Agent Skills und der Agent goose liegen jetzt bei einer neutralen Stiftung der Linux Foundation. Was du einmal für einen Agenten baust, läuft zunehmend auch beim nächsten.
+- [Europa holt auf](https://ainterview.space/ki-trends.html#europa): Mistral bringt ein Modell mit einer Billion Parametern, trainiert in Europa, und eröffnet einen Standort in München. Für Firmen mit Datenbedenken wird die EU-Option ernst.
+- [Kleine Modelle lokal](https://ainterview.space/ki-trends.html#lokal): Liquid AI und NVIDIA bringen offene Modelle, die mit ein bis vier Gigabyte Speicher auskommen. Vertrauliches muss damit seltener in die Cloud.
+- [KI im Browser](https://ainterview.space/ki-trends.html#browser): Firefox bekommt einen Assistenten mit Mistral-Modellen, die Claude-Werkzeuge können Browser steuern. Die KI sieht künftig, was in deinen Tabs steht.
+- [Sichtbar in KI-Suchen](https://ainterview.space/ki-trends.html#ki-suche): Google lässt Websites seit Ende August selbst entscheiden, ob sie in AI Overviews und AI Mode erscheinen, und liefert Zahlen dazu. Sichtbarkeit in KI-Antworten wird messbar.
+- [Nein zum Training](https://ainterview.space/ki-trends.html#training-optout): Google, Microsoft und OpenAI wollen eine gemeinsame Gruppe in der robots.txt beachten, mit der Websites KI-Training ablehnen. Eine Regel für alle drei statt einer pro Crawler, nur die Starttermine liegen auseinander.
+- [Sprache in Echtzeit](https://ainterview.space/ki-trends.html#sprache): Neue Sprachmodelle schreiben in Echtzeit mit und sprechen über 35 Sprachen. Telefonagenten und Meeting-Protokolle werden damit zum Massenprodukt.
+- [Bild, Video, Ton](https://ainterview.space/ki-trends.html#bild-video): Black Forest Labs aus Freiburg baut Modelle, die Bilder, Videos mit Ton und sogar Roboter-Bewegungen erzeugen, und gibt ein kleines Bildmodell offen frei.
+- [EU AI Act](https://ainterview.space/ki-trends.html#ai-act): Die EU hat die Pflichten für Hochrisiko-Systeme verschoben. Chatbots müssen sich seit August als KI zeigen und Deepfakes ein Label tragen, nur die maschinenlesbare Markierung älterer Generatoren bekommt eine kurze Übergangsfrist.
 
 ## Glossar
 
-- [KI-Glossar: 57 Begriffe auf Deutsch erklärt](https://jmp-collab.github.io/awesome-ai-tools/ki-glossar.html): 57 KI-Begriffe auf Deutsch erklärt, von Agent bis Zero-Shot: Token, RAG, MCP, DSGVO, AI Act. Jeder mit Werkstatt-Übersetzung und passenden Tools.
+- [KI-Glossar: 57 Begriffe auf Deutsch erklärt](https://ainterview.space/ki-glossar.html): 57 KI-Begriffe auf Deutsch erklärt, von Agent bis Zero-Shot: Token, RAG, MCP, DSGVO, AI Act. Jeder mit Werkstatt-Übersetzung und passenden Tools.
 
 ## Rechtliches
 
-- [Impressum](https://jmp-collab.github.io/awesome-ai-tools/impressum.html): Impressum der KI-Werkstatt.
-- [Datenschutz](https://jmp-collab.github.io/awesome-ai-tools/datenschutz.html): Datenschutzerklärung der KI-Werkstatt.
+- [Impressum](https://ainterview.space/impressum.html): Impressum der KI-Werkstatt.
+- [Datenschutz](https://ainterview.space/datenschutz.html): Datenschutzerklärung der KI-Werkstatt.
 
 ## Optional
 
-- [Tool-Liste als JSON](https://jmp-collab.github.io/awesome-ai-tools/tools.json): alle 418 Tools mit Beschreibung, Schublade, EU- und Open-Source-Angabe
-- [Tool-Liste als CSV](https://jmp-collab.github.io/awesome-ai-tools/tools.csv): dieselbe Liste für Tabellenprogramme
-- [Trends und Neuzugänge als Feed](https://jmp-collab.github.io/awesome-ai-tools/feed.xml): Atom-Feed
+- [Tool-Liste als JSON](https://ainterview.space/tools.json): alle 418 Tools mit Beschreibung, Schublade, EU- und Open-Source-Angabe
+- [Tool-Liste als CSV](https://ainterview.space/tools.csv): dieselbe Liste für Tabellenprogramme
+- [Trends und Neuzugänge als Feed](https://ainterview.space/feed.xml): Atom-Feed
 - [Quelle der Liste](https://github.com/jmp-collab/awesome-ai-tools/blob/main/README.de.md): Markdown auf GitHub, Beiträge per Pull Request
