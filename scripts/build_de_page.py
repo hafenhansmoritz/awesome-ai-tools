@@ -1816,7 +1816,7 @@ def neu_band(list_secs):
 <a class="neu-trend" href="{TRENDS_PAGE}#{t['trend']}">{icon("spark")}{html.escape(trend_ids[t["trend"]]["label"])}</a></li>""" for t in NEU_AKTIV[:6])
     neu_html = f"""<div class="neu-box reveal"><h3>{icon("plus")}Frisch in den Schubladen</h3><ul class="neu-list">{neu}</ul></div>""" if neu else ""
     return f"""<section class="band" id="neu-und-trends"><div class="wrap">
-<p class="eyebrow">Neu &amp; im Trend · Stand {de_date(TRENDS["stand"])}</p><h2>Frisch in der Werkstatt angekommen</h2>
+<p class="eyebrow">Neu &amp; im Trend · Stand {de_date(DATES[TRENDS_PAGE][1])}</p><h2>Frisch in der Werkstatt angekommen</h2>
 <p class="intro">{ZAHLWORT.get(len(TRENDS["trends"]), str(len(TRENDS["trends"])))} Entwicklungen, die wir beim Hersteller nachgelesen haben, und die Tools, die deshalb neu in der Liste stehen. Die ausführliche Einordnung mit Quellen liegt auf der Trend-Seite.</p>
 <div class="trend-cards">{cards}</div>
 {neu_html}
@@ -1851,7 +1851,7 @@ def gl_autolink(txt, used):
 
 
 def build_trends(tools_map, list_secs):
-    stand = de_date(TRENDS["stand"])
+    stand = de_date(DATES[TRENDS_PAGE][1])  # dasselbe Datum wie dateModified und sitemap-lastmod
     url = SITE_URL + TRENDS_PAGE
     n = len(TRENDS["trends"])
     ids = [t["id"] for t in TRENDS["trends"]]
@@ -2581,10 +2581,28 @@ def page_dates(sections):
         specs[RATGEBER_PAGE] += specs[a["page"]]
     for e in RATGEBER["artikel"] + EINSATZ["seiten"]:
         specs["index.html"] += specs[e["page"]][:1]
-    out = {}
+    out, trends_out = {}, {}
+    stored_trends = stored.get("_trends", {})
     for t in TRENDS["trends"]:
         r = hist.dates("data/trends.json", _json_part(_entry("trends", t["id"])))
+        if not r and t["id"] in stored_trends:  # ohne Historie: gespeichertes Datum je Trend, nicht das Seitendatum
+            r = (stored_trends[t["id"]]["erschienen"], stored_trends[t["id"]]["geaendert"])
         TREND_DATES[t["id"]] = r or (TRENDS["stand"], TRENDS["stand"])
+        trends_out[t["id"]] = {"erschienen": TREND_DATES[t["id"]][0], "geaendert": TREND_DATES[t["id"]][1]}
+    # NEU-Badge: Ein- und Ausblenden ändern den sichtbaren Inhalt jeder Seite, die das Tool zeigt (Tool-Liste, Chips,
+    # Neu-Band). Diese Tage zählen als Änderung, aber nur bis heute.
+    today = date.today()
+    badge_days = {}
+    for t in NEU["tools"]:
+        start = date.fromisoformat(t["seit"])
+        days = [d for d in (start, start + timedelta(days=NEU["tage"])) if d <= today]
+        if days:
+            badge_days[t["name"]] = max(days).isoformat()
+    def current(path, ex):
+        try:
+            return ex((ROOT / path).read_text(encoding="utf-8")) or ""
+        except (FileNotFoundError, ValueError):
+            return ""
     for pg in specs:
         res = [hist.dates(path, ex) for path, ex in specs[pg]]
         if res and all(res):
@@ -2593,10 +2611,16 @@ def page_dates(sections):
             first, last = stored[pg].get("erschienen", stored[pg]["geaendert"]), stored[pg]["geaendert"]
             WARN.append(f"{pg}: Datum aus data/lastmod.json (keine Git-Historie für die Quellen)")
         else:
-            first = last = date.today().isoformat()
+            first = last = today.isoformat()
             WARN.append(f"{pg}: weder Git-Historie noch gespeichertes Datum, heutiges Datum als Erscheinen gesetzt")
+        if badge_days:
+            src = "\n".join(current(path, ex) for path, ex in specs[pg])
+            hits = [d for n, d in badge_days.items() if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", src)]
+            if hits:
+                last = max([last] + hits)
         DATES[pg] = (first, last)
         out[pg] = {"erschienen": first, "geaendert": last}
+    out["_trends"] = trends_out
     if out != stored:
         LASTMOD.write_text(json.dumps(out, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     return DATES

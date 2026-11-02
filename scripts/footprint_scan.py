@@ -559,9 +559,12 @@ class Scan:
         if leaks:
             self.add("lang-ai-leak", "hoch", "Sprache", f"{len(leaks)} Stellen", "Typische Chatbot-Reste im Text",
                      "Satz löschen oder neu formulieren (Inhalt prüfen).", "jean", leaks[:self.maxd])
-        if placeholders:
-            self.add("lang-placeholder", "hoch", "Sprache", f"{len(placeholders)} Stellen", "Platzhalter oder Prüfmarker im sichtbaren Text",
-                     "Mit echten Angaben füllen oder entfernen; nichts erfinden.", "jean", placeholders[:self.maxd])
+        by_page = defaultdict(list)  # je Seite ein Befund, damit --accept auf einzelne Seiten zielen kann
+        for x in placeholders:
+            by_page[x.split(": ", 1)[0]].append(x)
+        for r, xs in sorted(by_page.items()):
+            self.add("lang-placeholder", "hoch", "Sprache", r, f"{len(xs)} Platzhalter oder Prüfmarker im sichtbaren Text",
+                     "Mit echten Angaben füllen oder entfernen; nichts erfinden.", "jean", xs[:self.maxd])
         if build:
             self.add("date-build-visible", "mittel", "Datum", f"{len(build)} Seiten", "Build-/Generierungsdatum in der Fußzeile",
                      "Entfernen oder durch ein inhaltlich echtes Datum ersetzen (letzte Änderung der Seite).", "auto", build[:self.maxd])
@@ -758,7 +761,8 @@ class Scan:
             if "<feed" not in xml and "<rss" not in xml:
                 continue
             for e in re.findall(r"<(?:entry|item)\b.*?</(?:entry|item)>", xml, re.S):
-                m = re.search(r"<(?:updated|pubDate|published)>\s*([^<]+)", e)
+                # Änderungsdatum zuerst: genau dort steht ein einheitliches Build-Datum, auch wenn published variiert
+                m = re.search(r"<(?:updated|lastBuildDate)>\s*([^<]+)", e) or re.search(r"<(?:pubDate|published)>\s*([^<]+)", e)
                 if m:
                     feed_dates.append(m.group(1).strip()[:16])
         if feed_dates:

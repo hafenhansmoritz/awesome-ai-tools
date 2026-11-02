@@ -1,4 +1,50 @@
 {
+ "_trends": {
+  "agenten-hintergrund": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "ai-act": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-31"
+  },
+  "bild-video": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-28"
+  },
+  "browser": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "europa": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-10-31"
+  },
+  "ki-suche": {
+   "erschienen": "2026-10-28",
+   "geaendert": "2026-11-01"
+  },
+  "lokal": {
+   "erschienen": "2026-10-28",
+   "geaendert": "2026-11-01"
+  },
+  "offene-standards": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "preisrutsch": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "sprache": {
+   "erschienen": "2026-10-27",
+   "geaendert": "2026-11-01"
+  },
+  "training-optout": {
+   "erschienen": "2026-11-01",
+   "geaendert": "2026-11-02"
+  }
+ },
  "index.html": {
   "erschienen": "2026-09-25",
   "geaendert": "2026-11-02"
