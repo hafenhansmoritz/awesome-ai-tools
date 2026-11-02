@@ -1420,7 +1420,7 @@ def build_subpages(list_secs=()):
     ds = f"""{topbar("sub")}
 <div class="page legal"><p class="eyebrow">Rechtliches</p><h1>Datenschutz</h1>{needs_ds}
 <p><b>Verantwortlicher:</b> [NAME, ANSCHRIFT wie im Impressum], E-Mail: {mail_link("Datenschutz")}</p>
-<p class="ds-kurz">Kurz gesagt: keine Cookies, kein Tracking, keine Analyse-Tools, keine fremden Skripte, Schriften oder Bilder. Persönliche Angaben verlassen deinen Browser nur, wenn du ein Formular abschickst.</p>
+<p class="ds-kurz">Keine Cookies, kein Tracking, keine Analyse-Tools, keine fremden Skripte, Schriften oder Bilder. Persönliche Angaben verlassen deinen Browser nur, wenn du ein Formular abschickst.</p>
 <h2>Hosting (GitHub Pages)</h2>
 <p>Die Seite wird über GitHub Pages ausgeliefert (GitHub, Inc., USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie IP-Adresse, Zeitpunkt und aufgerufene Adresse, um die Seite auszuliefern und vor Angriffen zu schützen. Wie lange GitHub diese Protokolle aufbewahrt, legt GitHub fest (<a href="{gh_privacy}" target="_blank" rel="noopener">GitHub-Datenschutzerklärung</a>). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, das berechtigte Interesse an einer sicheren Auslieferung der Seite.</p>
 <p>GitHub gibt in dieser Datenschutzerklärung an, nach dem EU-US Data Privacy Framework zertifiziert zu sein. Die Übermittlung in die USA stützt sich damit auf den Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO).</p>
@@ -2117,9 +2117,15 @@ def rg_words(md):
     return len(re.findall(r"\w+", md))
 
 
+def rg_md(a):
+    """Ratgeber-Markdown ohne das alte Kasten-Etikett „Kurz gesagt:“ (Vorlage, kein Inhalt: der Kasten spricht für sich)."""
+    md = (RG_DIR / f"{a['id']}.md").read_text(encoding="utf-8")
+    return re.sub(r"\A> \*\*Kurz gesagt:\*\* ", "> ", md)
+
+
 def rg_total_words(a):
     """Wörter aus Text und FAQ; Grundlage für Lesezeit auf Karte und Seite."""
-    md = (RG_DIR / f"{a['id']}.md").read_text(encoding="utf-8")
+    md = rg_md(a)
     return rg_words(md) + sum(rg_words(q + " " + x) for q, x in a["faq"])
 
 
@@ -2252,7 +2258,7 @@ def build_ratgeber(tools_map):
             raise SystemExit(f"{where}: Trend '{a['trend']}' fehlt")
         if not a["quellen"]:
             raise SystemExit(f"{where}: keine Quellen")
-        md = (RG_DIR / f"{a['id']}.md").read_text(encoding="utf-8")
+        md = rg_md(a)
         body_html, toc = render_md(md)
         body_html = gl_autolink_html(body_html, set())
         words = rg_total_words(a)

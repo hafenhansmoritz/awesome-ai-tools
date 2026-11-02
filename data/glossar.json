@@ -120,7 +120,7 @@
   {
    "t": "Diffusionsmodell",
    "icon": "image",
-   "d": "Bildmodell, das aus Rauschen Schritt für Schritt ein Bild formt, gesteuert durch deinen Prompt. Stable Diffusion und FLUX arbeiten so.",
+   "d": "Bildmodell, das ein Bild in vielen kleinen Durchgängen aus Rauschen herausarbeitet, gesteuert durch deinen Prompt. Stable Diffusion und FLUX arbeiten so.",
    "see": [
     "LoRA",
     "Prompt"

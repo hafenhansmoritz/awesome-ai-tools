@@ -2060,7 +2060,7 @@
   {
    "name": "Nekton AI",
    "url": "https://nekton.ai",
-   "beschreibung": "Workflows Schritt für Schritt in Alltagssprache beschreiben.",
+   "beschreibung": "Workflows in Alltagssprache beschreiben, einen Arbeitsschritt nach dem anderen.",
    "kategorie": "Automatisierung und KI-Agenten",
    "bereich": "",
    "eu": false,
@@ -3100,7 +3100,7 @@
   {
    "name": "Nano Banana",
    "url": "https://deepmind.google/models/gemini-image/",
-   "beschreibung": "Googles Bildmodelle auf Gemini-Basis, die Bilder im Gespräch erzeugen und Schritt für Schritt nachbearbeiten. Das ältere Imagen ist in der Gemini-API abgeschaltet.",
+   "beschreibung": "Googles Bildmodelle auf Gemini-Basis, die Bilder im Gespräch erzeugen und über mehrere Rückfragen nachbearbeiten. Das ältere Imagen ist in der Gemini-API abgeschaltet.",
    "kategorie": "Bilder",
    "bereich": "Bildmodelle",
    "eu": false,
