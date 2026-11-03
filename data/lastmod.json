@@ -149,7 +149,7 @@
  },
  "index.html": {
   "erschienen": "2026-09-25",
-  "geaendert": "2026-11-02"
+  "geaendert": "2026-11-03"
  },
  "ki-einsatz.html": {
   "erschienen": "2026-10-27",
@@ -233,7 +233,7 @@
  },
  "ratgeber-ki-agenten-sicher.html": {
   "erschienen": "2026-10-28",
-  "geaendert": "2026-11-01"
+  "geaendert": "2026-11-03"
  },
  "ratgeber-ki-crawler-robots-txt.html": {
   "erschienen": "2026-11-02",
@@ -245,7 +245,7 @@
  },
  "ratgeber-ki-modelle-preise.html": {
   "erschienen": "2026-10-28",
-  "geaendert": "2026-11-01"
+  "geaendert": "2026-11-03"
  },
  "ratgeber-ki-produktbilder-shops.html": {
   "erschienen": "2026-10-28",
@@ -273,6 +273,6 @@
  },
  "ratgeber.html": {
   "erschienen": "2026-10-28",
-  "geaendert": "2026-11-02"
+  "geaendert": "2026-11-03"
  }
 }

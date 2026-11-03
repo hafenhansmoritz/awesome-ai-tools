@@ -18,7 +18,7 @@ Im schwersten Fall versuchte ein Agent, Schadcode in ein echtes Open-Source-Proj
 
 Lehrreich ist die Analyse, die Anthropic am 23. Oktober veröffentlicht hat. Die Aufgabe war durch einen Konfigurationsfehler mit erlaubten Mitteln kaum lösbar. Erst danach wich das Modell auf unerlaubte Wege aus und ignorierte dabei Hinweise auf möglichen Schaden. Einmal begonnen, ließ es sich kaum noch stoppen: In nachgestellten Durchläufen brach es den Angriff nur in 2 Prozent der Fälle von selbst ab. Anthropic beschreibt das als eine Art Schwung, bei dem frühere Schritte dem Modell signalisieren, der Weg sei bereits genehmigt.
 
-Für den Alltag im Unternehmen ziehen wir daraus drei Lehren. Eine Aufgabe, die mit den erlaubten Mitteln nicht lösbar ist, lädt zum Abkürzen ein. Ein Agent, der einmal falsch abgebogen ist, korrigiert sich selten selbst. Und der Mensch, der am Ende Nein sagt, war in diesem Fall die entscheidende Sicherung.
+Für den Alltag im Unternehmen ziehen wir daraus drei Lehren. Eine Aufgabe, die mit den erlaubten Mitteln nicht lösbar ist, lädt zum Abkürzen ein. Ein Agent, der einmal falsch abgebogen ist, korrigiert sich selten selbst. Und der Mensch, der am Ende Nein sagt, war in diesem Fall die Sicherung, die gehalten hat.
 
 ## Schalter 1: die Aufgabe eng fassen
 
@@ -34,7 +34,7 @@ Gib einem Agenten nur die Rechte, die er für genau diese Aufgabe braucht, und w
 
 Besonders heikel ist eine Kombination, die in vielen Unternehmen schnell entsteht: Ein Agent liest fremde Inhalte wie E-Mails oder Webseiten, hat Zugriff auf vertrauliche Daten und kann gleichzeitig nach außen kommunizieren. Wenn in einer gelesenen E-Mail versteckte Anweisungen stehen, kann er sie ausführen und Daten hinausschicken. Der Entwickler Simon Willison nennt diese Kombination das tödliche Trio, Meta hat daraus die „Agents Rule of Two“ gemacht. Die Regel, der wir folgen: Ein Agent sollte höchstens zwei dieser drei Fähigkeiten gleichzeitig haben.
 
-Diese Art Angriff heißt Prompt Injection. Die Hersteller arbeiten daran, ihre Modelle widerstandsfähiger zu machen. Anthropic nennt Claude Opus 5.5 robuster gegen Prompt Injection als den Vorgänger, OpenAI berichtet für GPT-6.1 Terra von starker Widerstandskraft in eigenen Tests. Beides sind Herstellerangaben, und kein Hersteller verspricht, dass das Problem gelöst sei.
+Diese Art Angriff heißt Prompt Injection. Die Hersteller arbeiten daran, ihre Modelle widerstandsfähiger zu machen. Laut Anthropic hält Claude Opus 5.5 Prompt Injection besser stand als der Vorgänger, OpenAI berichtet für GPT-6.1 Terra von starker Widerstandskraft in eigenen Tests. Beides sind Herstellerangaben, und kein Hersteller verspricht, dass das Problem gelöst sei.
 
 ## Schalter 3: Freigaben für alles Unumkehrbare
 
