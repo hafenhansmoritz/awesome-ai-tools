@@ -4,7 +4,7 @@ Die Angaben stammen aus den Dokumentationen von Ollama, LM Studio, Open WebUI un
 
 ## Warum überhaupt lokal
 
-Der stärkste Grund ist Datenschutz. Die Datenschutzkonferenz unterscheidet in ihrer Orientierungshilfe zu KI zwischen offenen Systemen, die ein Anbieter für einen unbestimmten Nutzerkreis in der Cloud betreibt, und geschlossenen Systemen in einer technisch abgegrenzten Umgebung. Ihr Fazit steht dort wörtlich: „Technisch geschlossene Systeme sind daher aus datenschutzrechtlicher Sicht vorzugswürdig.“ Ein Modell auf dem eigenen Server ist genau so ein System, sofern du es richtig abschottest.
+Der stärkste Grund ist Datenschutz. Die Datenschutzkonferenz unterscheidet in ihrer Orientierungshilfe zu KI zwischen offenen Systemen, die ein Anbieter für einen unbestimmten Nutzerkreis in der Cloud betreibt, und geschlossenen Systemen in einer technisch abgegrenzten Umgebung. Ihr Schluss daraus, wörtlich: „Technisch geschlossene Systeme sind daher aus datenschutzrechtlicher Sicht vorzugswürdig.“ Ein Modell auf dem eigenen Server ist genau so ein System, sofern du es richtig abschottest.
 
 Der zweite Grund ist Geld, allerdings mit Einschränkung. Lokal fällt keine Rechnung pro Token an, dafür Hardware, Strom und Arbeitszeit. Bei den heutigen Cloud-Preisen kleiner Modelle rechnet sich das selten über die Token-Kosten allein, sondern über Mengen, die sonst niemand freigeben würde: Tausende Support-E-Mails, interne Protokolle, Personalunterlagen.
 
