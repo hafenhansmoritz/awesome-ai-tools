@@ -27,7 +27,7 @@ Ein Chat-Widget im Shop, ein Telefonagent an der Hotline oder ein E-Mail-Assiste
 
 Kaufst du ein fertiges Widget oder einen Telefonagenten ein, bist du Betreiber. Dann muss der Hinweis vom Hersteller kommen, und deine Aufgabe ist, ihn eingeschaltet zu lassen und nicht mit einem Fantasienamen zu entwerten, der einen echten Mitarbeiter vortäuscht. Baust du den Bot selbst oder bietest ihn unter eigenem Namen an, wirst du selbst zum Anbieter und trägst die Pflicht direkt.
 
-Die finalen Leitlinien vom 20. Juli 2026 gehen bei Agenten weiter als der Entwurf. Ein Agent soll nicht nur sagen, dass er eine KI ist, sondern auch, in wessen Auftrag er handelt. Bei Systemen aus mehreren Agenten verlangt die Kommission den Hinweis an den kritischen Stellen, etwa bei Freigaben, Berichten und Bestätigungen. Wer Agenten baut, sollte diese Offenlegung deshalb gleich in die Architektur einplanen und nicht später in einen Prompt kleben.
+Die finalen Leitlinien vom 20. Juli 2026 gehen bei Agenten weiter als der Entwurf. Ein Agent soll nicht nur sagen, dass er eine KI ist, sondern auch, in wessen Auftrag er handelt. Bei Systemen aus mehreren Agenten verlangt die Kommission den Hinweis bei zentralen Schritten, etwa bei Freigaben, Berichten und Bestätigungen. Wer Agenten baut, sollte diese Offenlegung deshalb gleich in die Architektur einplanen und nicht später in einen Prompt kleben.
 
 Bei reinen Audio-Inhalten gilt ein Grundsatz, den die Leitlinien ausdrücklich verallgemeinert haben: Wenn absehbar ist, dass jemand erst mitten im Inhalt einsteigt, reicht ein einziger Hinweis am Anfang nicht. Für Podcasts, Telefonschleifen und Hintergrundbeschallung heißt das, den Hinweis in sinnvollen Abständen zu wiederholen.
 
