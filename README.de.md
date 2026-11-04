@@ -7,7 +7,7 @@
 Gebaut für den deutschsprachigen Raum, auseinandergeschraubt, geputzt und nach Aufgaben sortiert:
 
 - **Ein Satz pro Tool.** Was es kann, wofür es taugt. Keine Werbetexte, die Beschreibungen bleiben sachlich. Gewitzelt wird drumherum.
-- **Link-Check (Stand: 03.11.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
+- **Link-Check (Stand: 04.11.2026).** Tote Tools (404, Serverfehler, Domain weg) sind raus. Affiliate- und Referral-Parameter bei Tool-Links auch; nur Links zu PROMPTGOTT tragen UTM-Parameter.
 - **Was „geprüft“ heißt.** Ein Skript fragt jeden Link ab, Bot-Schutz zählt als erreichbar. Jede Beschreibung ist auf Deutsch formuliert und an der Herstellerseite abgeglichen. Ein Praxistest jedes einzelnen Tools ist das nicht, und das sagen wir auch so.
 - **Namen auf Stand.** Bing Chat heißt Copilot, Metaphor heißt Exa, Le Chat heißt Vibe. Eingestellte Dienste fliegen raus, aktuelle Standard-Tools sind ergänzt.
 - **DACH-Fokus.** Eigene Abschnitte für Übersetzung, SEO und Automatisierung. Anbieter mit Sitz in der EU tragen ein 🇪🇺. Das ist ein Hinweis auf den Firmensitz, keine Datenschutz-Prüfung. Für DSGVO zählen AVV, Serverstandort und Einstellungen.
