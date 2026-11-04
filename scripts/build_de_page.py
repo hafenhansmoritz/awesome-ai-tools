@@ -815,7 +815,7 @@ def footer(bar=True):
         col("Projekt", [a(REPO_URL, "GitHub-Repository"), a(REPO_URL + "/blob/main/README.de.md#mitmachen", "Mitmachen: Tool vorschlagen"),
                         a(REPO_URL + "/blob/main/README.de.md", "Liste als Markdown"), f'{a("tools.csv", "Liste als CSV")} · {a("tools.json", "JSON")}',
                         a("feed.xml", "Trends als Feed (Atom)"), a(REPO_URL + "/blob/main/README.md", "About (English)")]),
-        col("Praxis", [a(f"{SUBSTACK}?{utm('footer')}", "PROMPTGOTT auf Substack", True), a(pg_sub("footer"), "Newsletter abonnieren", True)]),
+        col("Praxis", [a(f"{SUBSTACK}?{utm('footer')}", "PROMPTGOTT auf Substack", True), a(pg_sub("footer"), "PROMPTGOTT-Newsletter abonnieren", True)]),
         col("Rechtliches", [a("impressum.html", "Impressum"), a("datenschutz.html", "Datenschutz"), a(REPO_URL + "/blob/main/LICENSE", "MIT-Lizenz")]),
     ]
     out = f"""<footer><div class="wrap">
@@ -972,13 +972,18 @@ PG_BOX = {  # ein Satz je Platzierung; Takt und Versprechen des Newsletters legt
     "geschafft": "Noch Luft für mehr? PROMPTGOTT geht bei solchen Themen eine Ebene tiefer, mit Praxis statt Produktliste.",
     "trends": "Wer tiefer als eine Trendkarte einsteigen will: PROMPTGOTT zeigt in Deep Dives, wie aus Neuerungen Arbeitsabläufe werden.",
     "glossar": "Vokabeln sind der Anfang. Wie daraus Abläufe werden, die jeden Tag laufen, zeigt PROMPTGOTT in Deep Dives.",
+    "schublade": "Die Schublade liefert das Werkzeug. Wie aus mehreren Werkzeugen ein Ablauf wird, der ohne dich weiterläuft, steht bei PROMPTGOTT.",
+    "einsatz": "Die Aufgaben sind sortiert. Wie man sie zu einem Ablauf verkettet, der Woche für Woche läuft, zeigt PROMPTGOTT in Deep Dives.",
+    "ratgeber-hub": "Die Ratgeber klären Regeln und Kosten. Was man danach damit baut, zeigt PROMPTGOTT in Deep Dives.",
+    "einsatz-hub": "Erst das Arbeitsfeld, dann das System: PROMPTGOTT geht in Deep Dives eine Ebene weiter als jede Tool-Liste.",
 }
 
 
-def pg_box(placement):
-    """Abo-Box für PROMPTGOTT: nur ein Link (kein Substack-Embed, also keine Dritt-Requests), utm_content je Platzierung."""
+def pg_box(placement, content=None):
+    """Abo-Box für PROMPTGOTT: nur ein Link (kein Substack-Embed, also keine Dritt-Requests), utm_content je Platzierung.
+    content überschreibt utm_content, wenn eine Platzierung auf mehreren Seiten steht (etwa schublade-audio)."""
     return (f'<div class="pg-box" data-chrome><p>{icon("flame")}<span>{html.escape(PG_BOX[placement])}</span></p>'
-            f'<a class="btn btn-pg" href="{html.escape(pg_sub(placement))}" target="_blank" rel="noopener">{icon("flame")}PROMPTGOTT abonnieren</a></div>')
+            f'<a class="btn btn-pg" href="{html.escape(pg_sub(content or placement))}" target="_blank" rel="noopener">{icon("flame")}PROMPTGOTT abonnieren</a></div>')
 
 
 # --------------------------------------------------------------------------- KI-Chat mit Werkstatt-Prompt
@@ -1663,6 +1668,7 @@ def build_category_pages(list_secs, tools_map):
 <section class="band faq" id="faq"><div class="wrap">
 <p class="eyebrow">Fragen aus der Werkstatt · {html.escape(sec["title"])}</p><h2>Kurz gefragt, kurz beantwortet</h2>
 <div class="faq-list">{faq_html(faq)}</div>
+{pg_box("schublade", "schublade-" + sec["id"])}
 </div></section>
 
 {stacks_html}
@@ -2067,6 +2073,7 @@ def build_einsatz(tools_map, list_secs, sections):
 <p class="eyebrow">Fragen aus der Werkstatt · {html.escape(e["h1"])}</p><h2>Kurz gefragt, kurz beantwortet</h2>
 <div class="faq-list">{faq_html(faq)}</div>
 {legal_note()}
+{pg_box("einsatz", "einsatz-" + e["page"].removesuffix(".html"))}
 </div></section>
 
 <section class="band lead" id="stack-check"><div class="wrap">
@@ -2405,6 +2412,7 @@ def build_hubs():
 <fieldset class="rg-filter"><legend>Nach Rolle filtern</legend><div class="chips">{radios}</div></fieldset>
 <div class="rg-cards">{"".join(cards)}</div>
 <p class="bridge" data-chrome>{icon("mail")}<span>Deine Frage ist nicht dabei? <a href="./#stack-check">Schreib sie Jean beim Stack-Check.</a></span></p>
+{pg_box("ratgeber-hub")}
 </div></section>
 {footer()}
 """
@@ -2449,6 +2457,7 @@ def build_hubs():
 <p class="eyebrow">Rollen, Trends, Ratgeber</p><h2>Wie die Arbeitsfelder mit dem Rest zusammenhängen</h2>
 <p class="intro">Jedes Arbeitsfeld entspricht einer Rolle im Trend-Radar. Die Rolle bestimmt, welche drei Trends auf der Einsatzseite oben stehen und welche Ratgeber dort zum Weiterlesen auftauchen. Wer mehrere Hüte trägt, liest einfach zwei Seiten und nimmt von beiden das Passende mit.</p>
 <p class="bridge" data-chrome>{icon("mail")}<span>Kein Feld passt genau? <a href="./#stack-check">Beschreib Jean deinen Alltag beim Stack-Check.</a></span></p>
+{pg_box("einsatz-hub")}
 </div></section>
 {footer()}
 """
