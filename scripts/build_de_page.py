@@ -69,7 +69,7 @@ DESCRIPTION = (  # höchstens 155 Zeichen, das Wichtigste zuerst
     "Automatisierung, SEO. EU-Anbieter markiert, mit Stack-Finder."
 )
 SUBSTACK = "https://promptgott.substack.com/"
-UTM = "utm_source=github-pages&utm_medium=referral&utm_campaign=awesome-ki-tools-de"
+UTM = "utm_source=ainterview&utm_medium=referral&utm_campaign=awesome-ki-tools-de"  # bis 04.11.2026: utm_source=github-pages
 
 
 def utm(placement):
@@ -1365,6 +1365,17 @@ def build_subpages(list_secs=()):
     (DOCS / "404.html").write_text(absolutize(page_shell("Schublade nicht gefunden – KI-Werkstatt", nf, "Diese Seite gibt es nicht.", SITE_URL + "404.html",
                                                          '<meta name="robots" content="noindex">'), base), encoding="utf-8")
 
+    # Altpfade: Unter ainterview.space lief bis 2026 die App „AInterview“ (/interview, /dashboard). GitHub Pages kann keine
+    # 301, deshalb kleine Seiten mit Canonical auf die Startseite und Meta-Refresh nach 3 s. Nicht in der Sitemap.
+    for alt in ("interview", "dashboard"):
+        lp = f"""{topbar("sub")}
+<div class="page"><p class="eyebrow">Umgezogen</p><h1 data-chrome>AInterview ist jetzt die KI-Werkstatt</h1>
+<p data-chrome>AInterview ist jetzt die KI-Werkstatt. Du wirst in drei Sekunden zur Startseite weitergeleitet.</p>
+<p data-chrome><a class="btn btn-lime" href="{SITE_URL}">{icon("wrench")}Zur KI-Werkstatt</a></p></div>
+{footer(bar=False)}"""
+        (DOCS / f"{alt}.html").write_text(page_shell("AInterview ist jetzt die KI-Werkstatt", lp, "AInterview ist umgezogen: Hier steht jetzt die KI-Werkstatt.",
+                                                     SITE_URL, f'<meta http-equiv="refresh" content="3; url={SITE_URL}">'), encoding="utf-8")
+
     needs = ('<p class="needs"><b>[NEEDS_REVIEW]</b> Platzhalter: Name und Anschrift fehlen noch. Wer eine Seite mit Kontaktformular '
              'und geschäftlichem Zweck betreibt, braucht in Deutschland ein vollständiges Impressum nach § 5 DDG.</p>')
     needs_ds = ('<p class="needs"><b>[NEEDS_REVIEW]</b> Entwurf, vor dem Bewerben der Seite rechtlich prüfen lassen. Die Informationspflichten '
@@ -1390,7 +1401,7 @@ def build_subpages(list_secs=()):
 <p>Vor der Veröffentlichung wird jede Seite redaktionell geprüft. Die redaktionelle Verantwortung für alle Inhalte trägt Jean, die Angaben dazu stehen oben.</p>
 <p>„Geprüft“ heißt bei der Tool-Liste: Ein Skript fragt jeden Link regelmäßig ab, zuletzt am {LINK_CHECK}, und jede Beschreibung ist auf Deutsch formuliert und mit der Herstellerseite abgeglichen. Ausprobiert wurde nicht jedes Tool. Angaben zu EU-Sitz und Open Source stammen von den Anbietern.</p>
 <h2 id="unabhaengigkeit">Unabhängigkeit und Werbung</h2>
-<p>{imp_partner} Links zu PROMPTGOTT (Substack) tragen UTM-Parameter, damit dort erkennbar ist, dass der Besuch von hier kam. <b>[NEEDS_REVIEW: Verhältnis zu PROMPTGOTT bestätigen, etwa „PROMPTGOTT ist Jeans eigener Newsletter; Links dorthin sind Eigenwerbung.“]</b>{imp_später}</p>
+<p>{imp_partner} Links zu PROMPTGOTT (Substack) tragen UTM-Parameter, damit dort erkennbar ist, dass der Besuch von hier kam. PROMPTGOTT ist der eigene Newsletter des Betreibers dieser Seite. Hinweise darauf sind Eigenwerbung, Dritte zahlen dafür nichts.{imp_später}</p>
 <h2>Haftung für Links</h2>
 <p>Die Liste verlinkt externe Websites, auf deren Inhalte wir keinen Einfluss haben; verantwortlich ist der jeweilige Anbieter. Regelmäßig geprüft wird nur, ob ein Link erreichbar ist, nicht was dahinter steht. Bei der Verlinkung waren keine Rechtsverstöße erkennbar. Wird uns eine Rechtsverletzung bekannt, entfernen wir den Link umgehend. Hinweise bitte an {mail_link("Hinweis auf einen Link")}.</p>
 <h2>Marken, Logos und Schriften</h2>
