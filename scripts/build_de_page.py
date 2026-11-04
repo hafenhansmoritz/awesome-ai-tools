@@ -79,6 +79,55 @@ def utm(placement):
 
 def pg_sub(placement):
     return f"{SUBSTACK}subscribe?{utm(placement)}"
+
+
+# PROMPTGOTT nur dort bewerben, wo das Seitenthema zum Newsletter passt (Regel des Betreibers, 04.11.2026).
+# Themen laut promptgott.substack.com: Systeme statt Taktiken, Programmatic SEO, KI-SEO, Datensätze als Währung,
+# Automatisierung und Workflows, für Fortgeschrittene, die Systeme bauen. Abo-Box, Sticky-Button und der
+# Newsletter-Link im Werkstatt-Prompt erscheinen nur auf Seiten, die hier unter einem Thema stehen. Der Footer trägt
+# auf allen Seiten genau einen dezenten Link. Neue Seiten bleiben ohne Werbung, bis sie hier oder in PG_FREMD stehen;
+# der Build nennt sie dann als Warnung.
+PG_TOPICS = {
+    "seo": ("index.html", "ki-tools-marketing-und-seo.html", "ki-im-marketing.html",
+            "ratgeber-sichtbar-in-ki-antworten.html", "ratgeber-ki-crawler-robots-txt.html"),
+    "content-systeme": ("ratgeber-ki-inhalte-kennzeichnen.html", "ratgeber-ki-uebersetzung-shops.html"),
+    "daten": ("ki-fuer-online-shops.html", "ratgeber-ki-modelle-preise.html"),
+    "automatisierung": ("ki-tools-automatisierung-und-ki-agenten.html", "ki-tools-entwickler-tools-und-llmops.html",
+                        "ki-tools-programmieren-mit-ki.html", "ki-fuer-entwickler.html"),
+    "agenten": ("ratgeber-ki-agenten-sicher.html", "ratgeber-mcp-agent-skills.html"),
+}
+PG_FREMD = {  # bewusst ohne PROMPTGOTT, mit Grund
+    "ki-tools-bilder.html": "Bild-Tools", "ki-tools-video.html": "Video-Tools", "ki-tools-audio.html": "Audio, Stimme, Musik",
+    "ki-tools-text-und-sprache.html": "Chatbots und Schreibhilfen für alle", "ki-tools-ki-telefonagenten.html": "Telefonie",
+    "ki-tools-weitere-ki-tools.html": "Gemischtes", "ki-fuer-content-creator.html": "Bilder, Clips, Stimme, Musik",
+    "ki-im-kundenservice.html": "Support und Telefon", "ki-im-buero.html": "Büroalltag",
+    "ratgeber-datenschutz-ki-tools.html": "Datenschutz", "ratgeber-lokale-ki-unternehmen.html": "lokaler Betrieb",
+    "ratgeber-ki-telefonagenten.html": "Telefonie", "ratgeber-ki-produktbilder-shops.html": "Produktfotos",
+    "ki-glossar.html": "Grundbegriffe für alle", "ki-trends.html": "Neuheiten für alle", "ratgeber.html": "Übersicht aller Ratgeber",
+    "ki-einsatz.html": "Übersicht aller Arbeitsfelder", "danke.html": "Bestätigung nach dem Stack-Check",
+}
+PG_PAGES = {pg: topic for topic, pages in PG_TOPICS.items() for pg in pages}
+assert not set(PG_PAGES) & set(PG_FREMD), "Seite steht in PG_TOPICS und PG_FREMD"
+PG_ASKED = set()  # Seiten, für die der Build gefragt hat; main() prüft sie gegen beide Listen
+
+
+def pg_fits(page):
+    """True, wenn die Seite PROMPTGOTT zeigen darf (Thema in PG_TOPICS)."""
+    PG_ASKED.add(page)
+    return page in PG_PAGES
+
+
+def pg_check():
+    """Tippfehler in den Listen brechen ab, ungeklärte Seiten erscheinen als Warnung."""
+    built = {f.name for f in DOCS.glob("*.html")}
+    typo = sorted((set(PG_PAGES) | set(PG_FREMD)) - built)
+    if typo:
+        raise SystemExit(f"Abbruch: PG_TOPICS/PG_FREMD nennen Seiten, die es nicht gibt: {', '.join(typo)}")
+    open_ = sorted(PG_ASKED - set(PG_PAGES) - set(PG_FREMD))
+    if open_:
+        WARN.append(f"PROMPTGOTT: {len(open_)} Seiten ohne Themen-Entscheidung, daher ohne Werbung: {', '.join(open_)}. "
+                    "In PG_TOPICS oder PG_FREMD eintragen.")
+    print(f"PROMPTGOTT: {len(PG_PAGES)} Seiten mit Themenbezug, {len(PG_FREMD)} bewusst ohne")
 LEAD_TO = BRAND["lead_offer"]["recipient"]
 # Sichtbare Adresse zeichenweise als HTML-Entities: Browser zeigen sie normal, einfache Scraper finden sie nicht.
 # Der FormSubmit-Endpunkt im form action trägt sie noch im Klartext, bis Jean den Alias aus FormSubmit liefert.
@@ -797,9 +846,10 @@ FOOT_VERBINDUNG = ("Mit keinem Anbieter besteht eine Verbindung." if not PARTNER
                    "Außer über diese Partnerprogramme besteht mit keinem Anbieter eine Verbindung.")
 
 
-def footer(bar=True):
+def footer(bar=True, page=""):
     """Fußzeile als Sitemap: alle Schubladen, Einsatzgebiete und Ratgeber. bar=False für Nebenseiten
-    (Danke, 404, Rechtliches): ohne Sticky-Leiste und Merkliste."""
+    (Danke, 404, Rechtliches): ohne Sticky-Leiste und Merkliste. page entscheidet über den PROMPTGOTT-Button
+    in der Sticky-Leiste (pg_fits); ohne Themenbezug bleibt dort nur der CSV-Download."""
     def col(title, links, cls=""):
         return f'<div class="fcol{cls}"><h2 class="fh">{title}</h2><ul>' + "".join(f"<li>{x}</li>" for x in links) + "</ul></div>"
     ext_attr = ' target="_blank" rel="noopener"'
@@ -815,7 +865,7 @@ def footer(bar=True):
         col("Projekt", [a(REPO_URL, "GitHub-Repository"), a(REPO_URL + "/blob/main/README.de.md#mitmachen", "Mitmachen: Tool vorschlagen"),
                         a(REPO_URL + "/blob/main/README.de.md", "Liste als Markdown"), f'{a("tools.csv", "Liste als CSV")} · {a("tools.json", "JSON")}',
                         a("feed.xml", "Trends als Feed (Atom)"), a(REPO_URL + "/blob/main/README.md", "About (English)")]),
-        col("Praxis", [a(f"{SUBSTACK}?{utm('footer')}", "PROMPTGOTT auf Substack", True), a(pg_sub("footer"), "PROMPTGOTT-Newsletter abonnieren", True)]),
+        col("Praxis", [a(f"{SUBSTACK}?{utm('footer')}", "PROMPTGOTT-Newsletter", True)]),  # ein dezenter Link, überall
         col("Rechtliches", [a("impressum.html", "Impressum"), a("datenschutz.html", "Datenschutz"), a(REPO_URL + "/blob/main/LICENSE", "MIT-Lizenz")]),
     ]
     out = f"""<footer><div class="wrap">
@@ -826,14 +876,16 @@ def footer(bar=True):
 <button id="totop" type="button" title="Nach oben" aria-label="Nach oben">{icon("up")}</button></footer>"""
     if not bar:
         return out
-    # Sticky-Leiste ohne Formular: CSV direkt laden oder PROMPTGOTT abonnieren. app.js zeigt sie ab 60 % Scrolltiefe,
-    # nie neben einem Lead-Formular oder dem Footer. Eigene Landmarks, damit nichts außerhalb von Regionen steht.
+    # Sticky-Leiste ohne Formular: CSV direkt laden, PROMPTGOTT nur auf Seiten mit Themenbezug. app.js zeigt sie ab 60 %
+    # Scrolltiefe, nie neben einem Lead-Formular oder dem Footer. Eigene Landmarks, damit nichts außerhalb von Regionen steht.
+    pg = pg_fits(page)
+    pg_btn = (f'<a class="btn btn-pg btn-sm" href="{html.escape(pg_sub("sticky-" + page.removesuffix(".html")))}" target="_blank" '
+              f'rel="noopener">{icon("flame")}PROMPTGOTT abonnieren</a>\n') if pg else ""
     return out + f"""
-<aside class="stickybar" id="stickybar" aria-label="Liste und Newsletter"><div class="wrap in">
+<aside class="stickybar" id="stickybar" aria-label="{"Liste und Newsletter" if pg else "Liste zum Mitnehmen"}"><div class="wrap in">
 <p class="sb-txt">Alle Tools zum Mitnehmen</p>
 <a class="btn btn-lime btn-sm" href="tools.csv" download>{icon("download")}<span><span class="sb-long">Liste als </span>CSV laden</span></a>
-<a class="btn btn-pg btn-sm" href="{html.escape(pg_sub("sticky"))}" target="_blank" rel="noopener">{icon("flame")}PROMPTGOTT abonnieren</a>
-<button class="close" type="button" title="Ausblenden" aria-label="Leiste ausblenden">{icon("x")}</button>
+{pg_btn}<button class="close" type="button" title="Ausblenden" aria-label="Leiste ausblenden">{icon("x")}</button>
 </div></aside>
 <aside class="merk-dock" aria-label="Merkliste">
 <button id="merk-pill" class="merk-pill hidden" type="button" aria-controls="merk" aria-expanded="false">{icon("bookmark")}Merkliste <b id="merk-n">0</b></button>
@@ -979,9 +1031,12 @@ PG_BOX = {  # ein Satz je Platzierung; Takt und Versprechen des Newsletters legt
 }
 
 
-def pg_box(placement, content=None):
+def pg_box(placement, page, content=None):
     """Abo-Box für PROMPTGOTT: nur ein Link (kein Substack-Embed, also keine Dritt-Requests), utm_content je Platzierung.
-    content überschreibt utm_content, wenn eine Platzierung auf mehreren Seiten steht (etwa schublade-audio)."""
+    Leer, wenn die Seite keinen Themenbezug hat (pg_fits). content überschreibt utm_content, wenn eine Platzierung
+    auf mehreren Seiten steht (etwa schublade-marketing-und-seo)."""
+    if not pg_fits(page):
+        return ""
     return (f'<div class="pg-box" data-chrome><p>{icon("flame")}<span>{html.escape(PG_BOX[placement])}</span></p>'
             f'<a class="btn btn-pg" href="{html.escape(pg_sub(content or placement))}" target="_blank" rel="noopener">{icon("flame")}PROMPTGOTT abonnieren</a></div>')
 
@@ -1325,7 +1380,7 @@ def build_index(sections, head_md):
 </div></section>
 
 {llm_data({"tool": llm_tool_prompt("Startseite", "")}) if 'data-llm="tool"' in featured_html else ""}
-{footer()}
+{footer(page="index.html")}
 <script type="application/json" id="kw-finder">{finder_js}</script>
 """
     ld_js = json.dumps(ld, ensure_ascii=False).replace("</", "<\\/")
@@ -1344,7 +1399,7 @@ def build_subpages(list_secs=()):
 <div data-typ="check"><ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine Nachricht selbst, kein Bot und kein Callcenter.</span></li><li><b class="n">2</b><span>Danach legt Jean dir die Werkzeuge hin, die zu deinem Fall passen, mit je einem Satz, warum.</span></li><li><b class="n">3</b><span>Die Antwort kommt per E-Mail, ohne Verkaufsgespräch und ohne Kleingedrucktes.</span></li></ol></div>
 <div data-typ="finder" hidden><ol class="steps-mini"><li><b class="n">1</b><span>Jean liest deine drei Antworten und die Tools, die der Finder dir vorgeschlagen hat.</span></li><li><b class="n">2</b><span>Was nicht zu deinem Fall passt, fliegt raus, und an seine Stelle kommt etwas Passenderes mit Begründung.</span></li><li><b class="n">3</b><span>Das überarbeitete Setup bekommst du per E-Mail, ohne Pitch und ohne Abo.</span></li></ol></div>
 <p>Meist dauert das nur wenige Tage. Hörst du nichts, wirf einen Blick in den Spam-Ordner, manchmal versteckt sich die Post dort. Oder schreib direkt an {mail_link()}.</p>
-{pg_box("danke")}
+{pg_box("danke", "danke.html")}
 <p class="danke-more"><a class="btn" href="./#werkzeugkisten">{icon("layers")}Werkzeugkisten ansehen</a> <a class="btn" href="tools.csv" download>{icon("download")}Die Liste als CSV laden</a></p>
 <p><a href="./">Zurück in die Werkstatt</a></p></div>
 {footer(bar=False)}"""
@@ -1640,8 +1695,8 @@ def build_category_pages(list_secs, tools_map):
         llm = {"seite": llm_prompt(f"Schublade „{h1}“", page, "schublade",
                                    "Hilf mir, hier das passende Werkzeug zu finden. Frag zuerst nach Einsatz, Budget und ob ein EU-Sitz zählt."
                                    + (f" Klär dabei auch: {faq_q}" if faq_q else ""),
-                                   [(rel[0], llm_to(rel[1])), ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(page, "stack-check")),
-                                    ("PROMPTGOTT-Newsletter", llm_pg)])}
+                                   [(rel[0], llm_to(rel[1])), ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(page, "stack-check"))]
+                                   + ([("PROMPTGOTT-Newsletter", llm_pg)] if pg_fits(page) else []))}
         if 'data-llm="tool"' in section_html:
             llm["tool"] = llm_tool_prompt(f"Schublade „{h1}“", page)
         body = f"""{topbar("kategorien")}
@@ -1679,7 +1734,7 @@ def build_category_pages(list_secs, tools_map):
 <section class="band faq" id="faq"><div class="wrap">
 <p class="eyebrow">Fragen aus der Werkstatt · {html.escape(sec["title"])}</p><h2>Kurz gefragt, kurz beantwortet</h2>
 <div class="faq-list">{faq_html(faq)}</div>
-{pg_box("schublade", "schublade-" + sec["id"])}
+{pg_box("schublade", page, "schublade-" + sec["id"])}
 </div></section>
 
 {stacks_html}
@@ -1698,7 +1753,7 @@ def build_category_pages(list_secs, tools_map):
 <div class="catgrid">{"".join(others)}</div>
 </div></section>
 {llm_data(llm)}
-{footer()}
+{footer(page=page)}
 """
         title = seo_title(kat_text(sec, "seo_title"))
         (DOCS / page).write_text(page_shell(title, body, desc, SITE_URL + page, f'<script type="application/ld+json">{ld_js}</script>'), encoding="utf-8")
@@ -1789,7 +1844,7 @@ def build_glossar(tools_map, list_secs, sections):
 <label class="sr" for="gq">Begriffe filtern</label><input type="search" id="gq" placeholder="Begriff filtern: Token, RAG, DSGVO …" autocomplete="off"><span id="gcount" aria-live="polite">{n} Begriffe</span></div></nav>
 <div class="wrap gl" id="begriffe">{"".join(cards)}<div class="gl-empty hidden">{kurbel("kb-sm", wink=True)}<p><b>Die Schublade klemmt.</b> Diesen Begriff kennt Kurbel noch nicht. Fehlt einer? Schreib an {mail_link("Glossar")}.</p></div></div>
 {lern_band}
-<div class="wrap">{legal_note()}{pg_box("glossar")}</div>
+<div class="wrap">{legal_note()}{pg_box("glossar", GLOSSAR_PAGE)}</div>
 
 <section class="band lead" id="stack-check"><div class="wrap">
 <div class="lead-grid"><div>
@@ -1798,7 +1853,7 @@ def build_glossar(tools_map, list_secs, sections):
 <div class="kb-say">{hans("hm-md")}<p class="bubble">Ich hab das Glossar übrigens auswendig gelernt. Fast.</p></div></div>
 <div>{lead_form("Glossar", "Stack-Check (Glossar) – KI-Werkstatt")}</div></div>
 </div></section>
-{footer()}
+{footer(page=GLOSSAR_PAGE)}
 """
     desc = f"{n} KI-Begriffe auf Deutsch erklärt, von Agent bis Zero-Shot: Token, RAG, MCP, DSGVO, AI Act. Jeder mit Werkstatt-Übersetzung und passenden Tools."
     (DOCS / GLOSSAR_PAGE).write_text(page_shell(seo_title(f"KI-Glossar: {n} Begriffe auf Deutsch erklärt"), body, desc, url,
@@ -1941,7 +1996,7 @@ def build_trends(tools_map, list_secs):
 <div class="radar-roles" role="group" aria-label="Deine Rolle">{radar_btns}</div>
 <div class="radar-out" aria-live="polite"></div></section>
 {"".join(arts)}
-{pg_box("trends")}
+{pg_box("trends", TRENDS_PAGE)}
 </div>
 
 <section class="band lead" id="stack-check"><div class="wrap">
@@ -1951,7 +2006,7 @@ def build_trends(tools_map, list_secs):
 <div class="kb-say">{hans("hm-md")}<p class="bubble">Ich hab alle Quellen gelesen. Zweimal. Kurbel hatte danach trotzdem eine Schraube übrig.</p></div></div>
 <div>{lead_form("Trends", "Stack-Check (Trends) – KI-Werkstatt")}</div></div>
 </div></section>
-{footer()}
+{footer(page=TRENDS_PAGE)}
 <script type="application/json" id="kw-radar">{radar_js}</script>
 """
     desc = (f"{n} KI-Trends auf Deutsch eingeordnet, von günstigeren Spitzenmodellen über Agenten-Standards bis zum AI Act. "
@@ -2043,8 +2098,8 @@ def build_einsatz(tools_map, list_secs, sections):
         llm = {"seite": llm_prompt(f"Einsatzgebiet „{e['h1']}“", e["page"], "einsatz",
                                    "Hilf mir zu entscheiden, welche Aufgabe ich zuerst an KI abgebe: "
                                    + "; ".join(titel) + ". Frag nach meinem Alltag, bevor du Werkzeuge empfiehlst.",
-                                   [(rel[0], llm_to(rel[1])), ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(e["page"], "stack-check")),
-                                    ("PROMPTGOTT-Newsletter", llm_pg)])}
+                                   [(rel[0], llm_to(rel[1])), ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(e["page"], "stack-check"))]
+                                   + ([("PROMPTGOTT-Newsletter", llm_pg)] if pg_fits(e["page"]) else []))}
         body = f"""{topbar("einsatz")}
 <section class="hero cat-hero"><div class="hero-art">{hero_floats()}</div><div class="wrap">
 {crumb_html}
@@ -2084,7 +2139,7 @@ def build_einsatz(tools_map, list_secs, sections):
 <p class="eyebrow">Fragen aus der Werkstatt · {html.escape(e["h1"])}</p><h2>Kurz gefragt, kurz beantwortet</h2>
 <div class="faq-list">{faq_html(faq)}</div>
 {legal_note()}
-{pg_box("einsatz", "einsatz-" + e["page"].removesuffix(".html"))}
+{pg_box("einsatz", e["page"], "einsatz-" + e["page"].removesuffix(".html"))}
 </div></section>
 
 <section class="band lead" id="stack-check"><div class="wrap">
@@ -2099,7 +2154,7 @@ def build_einsatz(tools_map, list_secs, sections):
 <p class="eyebrow">Andere Einsatzgebiete</p><div class="einsatz-minis" data-chrome>{others}</div>
 </div></section>
 {llm_data(llm)}
-{footer()}
+{footer(page=e["page"])}
 """
         (DOCS / e["page"]).write_text(page_shell(seo_title(e["seo_title"]), body, e["meta"], url,
                                                 f'<script type="application/ld+json">{ld_js}</script>'), encoding="utf-8")
@@ -2304,8 +2359,8 @@ def build_ratgeber(tools_map):
                                    "Geh das Thema mit mir durch, frag zuerst, wo ich stehe."
                                    + (" Klär vor allem: " + " ".join(rq) if rq else ""),
                                    [(f"Ratgeber „{ranked[0]['label']}“", llm_to(ranked[0]["page"])),
-                                    ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(a["page"], "stack-check")),
-                                    ("PROMPTGOTT-Newsletter", llm_pg)])}
+                                    ("Stack-Check, kostenlose Tool-Empfehlung", llm_to(a["page"], "stack-check"))]
+                                   + ([("PROMPTGOTT-Newsletter", llm_pg)] if pg_fits(a["page"]) else []))}
         trend_btn = ""
         if a.get("trend"):
             t = next(t for t in TRENDS["trends"] if t["id"] == a["trend"])
@@ -2351,7 +2406,7 @@ def build_ratgeber(tools_map):
 <div class="row"><span>War das hilfreich?</span><button type="button" class="btn btn-sm" data-hilf="ja">{icon("heart")}Ja</button><button type="button" class="btn btn-sm" data-hilf="nein">{icon("x")}Eher nicht</button>
 <button type="button" class="btn btn-sm" data-share>{icon("share")}Weitersagen</button><button type="button" class="btn btn-sm" data-print>{icon("print")}Für die Werkstattwand drucken</button></div>
 <p class="hilf-a" aria-live="polite"></p>
-{pg_box("geschafft")}</div></section>
+{pg_box("geschafft", a["page"], "geschafft-" + a["page"].removesuffix(".html"))}</div></section>
 <p class="print-foot" data-chrome>Ausgedruckt aus der KI-Werkstatt. Die aktuelle Fassung steht unter {url}</p>
 </article>
 </div>
@@ -2368,7 +2423,7 @@ def build_ratgeber(tools_map):
 <p class="eyebrow">Weitere Ratgeber</p><div class="einsatz-minis" data-chrome>{others}</div>
 </div></section>
 {llm_data(llm)}
-{footer()}
+{footer(page=a["page"])}
 """
         (DOCS / a["page"]).write_text(page_shell(seo_title(a["seo_title"]), body, a["meta"], url,
                                                 f'<script type="application/ld+json">{ld_js}</script>', og_type="article",
@@ -2423,9 +2478,9 @@ def build_hubs():
 <fieldset class="rg-filter"><legend>Nach Rolle filtern</legend><div class="chips">{radios}</div></fieldset>
 <div class="rg-cards">{"".join(cards)}</div>
 <p class="bridge" data-chrome>{icon("mail")}<span>Deine Frage ist nicht dabei? <a href="./#stack-check">Schreib sie Jean beim Stack-Check.</a></span></p>
-{pg_box("ratgeber-hub")}
+{pg_box("ratgeber-hub", RATGEBER_PAGE)}
 </div></section>
-{footer()}
+{footer(page=RATGEBER_PAGE)}
 """
     desc = (f"{n} KI-Ratgeber auf Deutsch: AI Act und Kennzeichnung, Datenschutz, Modellpreise, sichere Agenten, lokale KI. "
             "Mit Stand, Quellen und Filter nach Rolle.")
@@ -2468,9 +2523,9 @@ def build_hubs():
 <p class="eyebrow">Rollen, Trends, Ratgeber</p><h2>Wie die Arbeitsfelder mit dem Rest zusammenhängen</h2>
 <p class="intro">Jedes Arbeitsfeld entspricht einer Rolle im Trend-Radar. Die Rolle bestimmt, welche drei Trends auf der Einsatzseite oben stehen und welche Ratgeber dort zum Weiterlesen auftauchen. Wer mehrere Hüte trägt, liest einfach zwei Seiten und nimmt von beiden das Passende mit.</p>
 <p class="bridge" data-chrome>{icon("mail")}<span>Kein Feld passt genau? <a href="./#stack-check">Beschreib Jean deinen Alltag beim Stack-Check.</a></span></p>
-{pg_box("einsatz-hub")}
+{pg_box("einsatz-hub", EINSATZ_PAGE)}
 </div></section>
-{footer()}
+{footer(page=EINSATZ_PAGE)}
 """
     desc = (f"KI nach Einsatzgebiet: {len(seiten)} Arbeitsfelder von Online-Shop bis Büro, jedes mit Aufgaben, passenden Tools, "
             "Trends und Ratgebern. Einstieg nach Rolle.")
@@ -2843,6 +2898,7 @@ def main():
     build_data(uniq, sections, pages, list_secs)
     build_llms(n_tools)
     build_og(n_tools, n_cats)
+    pg_check()
     print(f"docs/index.html: {n_tools} Tools, {n_cats} Kategorien, {len(list(IMG.glob('cat-*.svg')))} Grafiken, {len(pages)} Unterseiten")
     from check_unique import find_duplicates
     dups = find_duplicates(DOCS)
