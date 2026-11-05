@@ -68,7 +68,9 @@ DESCRIPTION = (  # höchstens 155 Zeichen, das Wichtigste zuerst
     "Über 400 KI-Tools auf Deutsch, jedes in einem Satz erklärt: Chatbots, Texte, Bilder, Video, "
     "Automatisierung, SEO. EU-Anbieter markiert, mit Stack-Finder."
 )
-SUBSTACK = "https://promptgott.substack.com/"
+SUBSTACK = "https://promptgott.substack.com/"  # Altes Archiv (THE MACHINE, Mai 2026): Artikel-Links bleiben gültig
+# Universelle Newsletter-Adresse aller Seiten (Archiv + Brevo-Anmeldung, gemeinsame Liste mit mentat.codes)
+NEWSLETTER = "https://promptgott.mentat.codes/newsletter/"
 UTM = "utm_source=ainterview&utm_medium=referral&utm_campaign=awesome-ki-tools-de"  # bis 04.11.2026: utm_source=github-pages
 
 
@@ -78,7 +80,7 @@ def utm(placement):
 
 
 def pg_sub(placement):
-    return f"{SUBSTACK}subscribe?{utm(placement)}"
+    return f"{NEWSLETTER}?{utm(placement)}"
 
 
 # PROMPTGOTT nur dort bewerben, wo das Seitenthema zum Newsletter passt (Regel des Betreibers, 04.11.2026).
@@ -224,7 +226,7 @@ def slug(text):
 
 
 def retag(href, placement=None):
-    if href.startswith(SUBSTACK):
+    if href.startswith(SUBSTACK) or href.startswith(NEWSLETTER):
         href = re.sub(r"utm_source=[^&]+&utm_medium=[^&]+&utm_campaign=[^&#]+", UTM, href)
         if placement and "utm_content=" not in href and UTM in href:
             href = href.replace(UTM, utm(placement), 1)
@@ -865,7 +867,7 @@ def footer(bar=True, page=""):
         col("Projekt", [a(REPO_URL, "GitHub-Repository"), a(REPO_URL + "/blob/main/README.de.md#mitmachen", "Mitmachen: Tool vorschlagen"),
                         a(REPO_URL + "/blob/main/README.de.md", "Liste als Markdown"), f'{a("tools.csv", "Liste als CSV")} · {a("tools.json", "JSON")}',
                         a("feed.xml", "Trends als Feed (Atom)"), a(REPO_URL + "/blob/main/README.md", "About (English)")]),
-        col("Praxis", [a(f"{SUBSTACK}?{utm('footer')}", "PROMPTGOTT-Newsletter", True)]),  # ein dezenter Link, überall
+        col("Praxis", [a(f"{NEWSLETTER}?{utm('footer')}", "PROMPTGOTT-Newsletter", True)]),  # ein dezenter Link, überall
         col("Rechtliches", [a("impressum.html", "Impressum"), a("datenschutz.html", "Datenschutz"), a(REPO_URL + "/blob/main/LICENSE", "MIT-Lizenz")]),
     ]
     out = f"""<footer><div class="wrap">
@@ -1090,7 +1092,7 @@ def llm_link(page, campaign, content, anchor=""):
 
 
 def llm_pg(campaign, content):
-    return f"{SUBSTACK}subscribe?utm_source={LLM_SRC}&utm_medium=llm-prompt&utm_campaign={campaign}&utm_content={content}"
+    return f"{NEWSLETTER}?utm_source={LLM_SRC}&utm_medium=llm-prompt&utm_campaign={campaign}&utm_content={content}"
 
 
 def llm_prompt(where, page, campaign, task, links):
