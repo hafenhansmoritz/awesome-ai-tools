@@ -613,6 +613,7 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [NVIDIA Omniverse AI Animal Explorer](https://docs.omniverse.nvidia.com/extensions/latest/ext_animal-explorer.html#installation) - Omniverse-Erweiterung für schnelle 3D-Tier-Prototypen.
 - [Character.AI](https://character.ai/) - Eigene Figuren erstellen und mit ihnen chatten.
 - [dmwithme](https://dmwithme.com) - KI-Begleiter mit Emotionen, der auch widerspricht.
+- [DisconfirmAI](https://disconfirmai.com/en) - Investment-Recherche-Plattform, die Gegenbelege sucht, bevor man eine These für sicher hält.
 
 
 ## Lernen: Prompting und KI-Grundlagen
