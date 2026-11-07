@@ -469,6 +469,8 @@ Für alle, die Daten nicht in eine Cloud geben wollen oder dürfen.
 - [Pika](https://pika.art) - Kurze, verspielte KI-Videos und Effekte.
 - [Synthesia](https://www.synthesia.io/) - Videos mit KI-Sprechern aus reinem Text, über 100 Sprachen inklusive Deutsch.
 - [HeyGen](https://www.heygen.com) - Avatar-Videos und Video-Übersetzung mit Lippensynchronisation.
+- [Cyanvid](https://cyanvid.com/?utm_source=hafenhansmoritz-awesome-ai-tools&utm_medium=directory&utm_campaign=backlinks) - KI-Videogenerator aus Text oder Bildern; Kreditquote vor dem Generieren.
+- [Barz Studio](https://barzvideo.com/?utm_source=hafenhansmoritz-awesome-ai-tools&utm_medium=directory&utm_campaign=backlinks) - Kostenloser Browser-Rap-Lyric-Video-Maker; beat-reaktive Untertitel, Export 9:16 WebM.
 - [D-ID](https://www.d-id.com/) - Sprechende, interaktive Avatare per Klick.
 - [Descript](https://www.descript.com) - Videos und Podcasts bearbeiten wie ein Textdokument.
 - [Opus Clip](https://www.opus.pro) - Sucht in langen Videos passende Stellen, schneidet sie zu kurzen Clips und bringt sie ins Hochformat, wobei das Motiv im Bild bleibt. Welche Stelle zählt, entscheidet die KI, also vor dem Posten drüberschauen.
